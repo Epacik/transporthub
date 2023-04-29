@@ -20,11 +20,12 @@ pub async fn context() -> Rbatis {
     rb
 }
 
-#[derive(FromPrimitive)]
+#[derive(Copy, Clone, FromPrimitive)]
 pub enum UserType {
-    Admin = 1,
+    Invalid = -1,
+    User = 1,
     Manager = 2,
-    User = 3,
+    Admin = 3,
 }
 
 pub enum PasswordVerificationResult {
@@ -41,7 +42,7 @@ pub struct User {
     pub password_salt: String,
     pub password_hash: String,
     pub password_expiration_date: Option<DateTime>,
-    pub r#type: i16,
+    user_type: i16,
     pub multi_login: bool,
     pub disabled: bool
 }
@@ -60,23 +61,23 @@ impl User {
     pub fn make_salt() -> String {
         Alphanumeric.sample_string(&mut rand::thread_rng(), 64)
     }
-    
-    
+
+
     pub async fn create<S: AsRef<str>>(
         context: &mut dyn rbatis::executor::Executor,
         name: S,
         picture: Option<String>,
         password: S,
         password_expiration_date: Option<fastdate::DateTime>,
-        r#type: UserType,
+        usertype: UserType,
         multi_login: bool,
         disabled: bool
     ) {
         let config = config::config();
-    
+
         let salt = User::make_salt();
         let mut hasher = Hasher::default();
-    
+
         let hash = hasher
             .with_password(password.as_ref())
             .with_secret_key(config.pass_secret())
@@ -96,7 +97,7 @@ impl User {
             password_salt: salt,
             password_hash: hash,
             password_expiration_date: exp_date,
-            r#type: r#type as i16,
+            usertype: usertype as i16,
             multi_login,
             disabled,
         };
@@ -112,7 +113,7 @@ impl User {
                 return PasswordVerificationResult::Expired;
             }
         }
-        
+
 
         let config = config::config();
         let mut verifier = Verifier::default();
@@ -131,6 +132,14 @@ impl User {
         }
     }
 
+
+    pub fn get_type(&self) -> UserType {
+        num::FromPrimitive::from_i16(self.usertype).unwrap_or(UserType::Invalid)
+    }
+
+    pub fn set_type(&mut self, usertype: UserType) {
+        self.usertype = usertype as i16;
+    }
 }
 
 #[derive(Clone, Debug, Serialize, Deserialize)]

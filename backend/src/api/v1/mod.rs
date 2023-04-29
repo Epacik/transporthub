@@ -3,9 +3,9 @@ use actix_web::http::header::HeaderMap;
 
 use actix_web::{
     HttpResponse,
-    get, 
-    Responder, 
-    HttpRequest, 
+    get,
+    Responder,
+    HttpRequest,
     dev::HttpServiceFactory,
 };
 use fastdate::DurationFrom;
@@ -13,6 +13,7 @@ use hash_ids::HashIds;
 use rbatis::rbdc::datetime::DateTime;
 use base64::{Engine as _, engine::general_purpose};
 
+use crate::db_model::User;
 use crate::errors;
 use crate::{config, db_model::UserAccessKeys};
 
@@ -151,4 +152,12 @@ fn get_user_info(req: &HttpRequest) -> Result<UserInfo, errors::ErrorResponse> {
     };
 
     Ok(UserInfo { user_id, access_key, ip })
+}
+
+
+async fn can_access(user_info: &UserInfo, required_type: crate::db_model::UserType) -> Result<bool, errors::ErrorResponse> {
+    let mut context = crate::db_model::context();
+    //let user = User::se
+
+    Ok(true)
 }

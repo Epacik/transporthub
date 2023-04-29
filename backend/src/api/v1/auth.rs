@@ -48,13 +48,13 @@ pub async fn authenticate(body: web::Json<LoginRequest>, req: HttpRequest) -> Re
 
     log::trace!("Checking number of users");
     let count = User::count(&context).await.unwrap();
-    
+
     if count == 0 {
         log::info!("This database contains no users, creating an `admin` user");
 
         User::create(&mut context, "admin", None, "admin", None, UserType::Admin, true, false).await;
     }
-    
+
 
     let user = &body.user;
     log::info!("Looking for `{}`", user);
@@ -73,11 +73,11 @@ pub async fn authenticate(body: web::Json<LoginRequest>, req: HttpRequest) -> Re
     match user.check_password(&body.password).await {
         PasswordVerificationResult::InvalidPassword => Err(errors::auth::invalid_password()),
         PasswordVerificationResult::Expired => Err(errors::auth::password_expired()),
-        PasswordVerificationResult::Authorized => authorize_user(&mut context, &user, &body.disconnect_other_sessions, &ip).await,
+        PasswordVerificationResult::Authorized => login_user(&mut context, &user, &body.disconnect_other_sessions, &ip).await,
     }
 }
 
-async fn authorize_user(context: &mut dyn Executor, user: &User, disconnect_others: &Option<bool>, device_id: &String) -> Response {
+async fn login_user(context: &mut dyn Executor, user: &User, disconnect_others: &Option<bool>, device_id: &String) -> Response {
     let disconnect_others = disconnect_others.unwrap_or(false);
 
     // is user already logged in?
@@ -89,7 +89,7 @@ async fn authorize_user(context: &mut dyn Executor, user: &User, disconnect_othe
         };
 
         let already_logged_in = access_keys.len() >= 1;
-        
+
         if already_logged_in && !disconnect_others {
             log::info!("User is already logged in");
             return Err(errors::auth::multi_login_not_allowed());
@@ -108,7 +108,7 @@ async fn authorize_user(context: &mut dyn Executor, user: &User, disconnect_othe
                 return Err(errors::database_error(&err));
             }
         }
-    
+
     }
 
     // find a key that's not in use
@@ -158,12 +158,12 @@ async fn get_access_key(context: &mut Rbatis, user_info: &UserInfo) -> Result<Us
 
 #[post("/refresh-token")]
 pub async fn refresh_token(req: HttpRequest) -> Response {
-    
+
     let user_info = match super::get_user_info(&req) {
         Ok(val) => val,
         Err(err) => return Err(err),
     };
-    
+
     let mut context = context().await;
     let mut access_key = match get_access_key(&mut context, &user_info).await {
         Ok(val) => val,
@@ -176,7 +176,7 @@ pub async fn refresh_token(req: HttpRequest) -> Response {
         Ok(_) => Ok(HttpResponse::Ok().body("")),
         Err(err) => Err(errors::database_error(&err)),
     }
-    
+
 }
 
 #[post("/logout")]
@@ -192,14 +192,14 @@ pub async fn logout(req: HttpRequest) -> Response {
         Ok(val) => val,
         Err(err) => return Err(err),
     };
-    
-    
+
+
     if let Some(id) = access_key.id {
         if let Err(err) = UserAccessKeys::delete(&mut context, id).await {
             return Err(errors::database_error(&err));
         }
     }
- 
+
 
     Ok(HttpResponse::Ok().body("logged out"))
 

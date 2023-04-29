@@ -110,7 +110,7 @@ COMMENT ON COLUMN conf.clients.location IS 'within a country';
 CREATE TABLE conf.clients_contact_info (
     id integer NOT NULL,
     client integer NOT NULL,
-    type integer NOT NULL,
+    contact_type integer NOT NULL,
     other_type_name character varying,
     value character varying NOT NULL,
     description character varying NOT NULL,
@@ -389,7 +389,7 @@ CREATE TABLE conf.users (
     password_salt character varying NOT NULL,
     password_hash character varying NOT NULL,
     password_expiration_date date,
-    type smallint NOT NULL,
+    user_type smallint NOT NULL,
     multi_login boolean DEFAULT false NOT NULL,
     disabled boolean NOT NULL
 );
@@ -429,7 +429,7 @@ ALTER TABLE conf.users ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (
 CREATE TABLE conf.vehicles (
     id integer NOT NULL,
     name character varying NOT NULL,
-    type smallint NOT NULL,
+    vehicle_type smallint NOT NULL,
     picture character varying NOT NULL,
     required_license integer NOT NULL,
     registration_number character varying NOT NULL,
@@ -497,7 +497,7 @@ CREATE TABLE orders.documents (
     name character varying NOT NULL,
     description character varying NOT NULL,
     value bytea NOT NULL,
-    type smallint NOT NULL
+    document_type smallint NOT NULL
 );
 
 
