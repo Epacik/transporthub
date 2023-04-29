@@ -1,0 +1,35 @@
+[package]
+name = "transporthub"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+actix-web = "*"
+argonautica = { version = "*", features = ["simd"] }
+fastdate = "*"
+rand = "*"
+rand_distr = "*"
+num-traits = "*"
+num-derive = "*"
+lazy_static = "*"
+hash-ids = "*"
+futures = "0.3.28"
+futures-util = "*"
+base64 = "0.21.0"
+derive_more = "0.99.17"
+
+#db
+rbs = { version = "4.3"}
+rbatis = { version = "4.3", features = ["debug_mode"]}
+rbdc-pg={version="4.3"}
+
+serde = { version = "*", features = ["derive"] }
+serde_json = "*"
+tokio = { version = "*", features = ["full"] }
+
+#logging
+log = "0.4"
+fast_log = { version = "1.5", features = ["lz4","zip","gzip"] }
