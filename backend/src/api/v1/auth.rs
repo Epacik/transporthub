@@ -3,7 +3,7 @@ use rand::distributions::DistString;
 use rand_distr::Alphanumeric;
 use rbatis::{executor::Executor, rbdc::datetime::DateTime, Rbatis};
 use serde::{Deserialize, Serialize};
-use crate::{db_model::{ context, User, UserType, PasswordVerificationResult, UserAccessKeys }, errors::{self, ErrorResponse}};
+use crate::{db_model::{ context, User, UserType, PasswordVerificationResult, UserAccessKeys, UserCreateError }, errors::{self, ErrorResponse}};
 
 use super::{UserInfo, Response};
 
@@ -16,7 +16,8 @@ pub fn scope() -> impl HttpServiceFactory {
 
 
 #[derive(Deserialize)]
-pub struct LoginRequest {
+#[serde(rename_all = "camelCase")]
+pub struct LoginRequestDto {
     pub user: String,
     pub password: String,
     //pub device_id: String, // change that to IP later (remember about cloudflare)
@@ -24,14 +25,15 @@ pub struct LoginRequest {
 }
 
 #[derive(Serialize)]
-pub struct LoginResponse {
+#[serde(rename_all = "camelCase")]
+pub struct LoginResponseDto {
     pub user: String,
     pub key: String,
 }
 
-impl LoginResponse {
-    fn new(user: String, key: String) -> LoginResponse {
-        LoginResponse {
+impl LoginResponseDto {
+    fn new(user: String, key: String) -> LoginResponseDto {
+        LoginResponseDto {
             user,
             key,
         }
@@ -39,7 +41,7 @@ impl LoginResponse {
 }
 
 #[post("/login")]
-pub async fn authenticate(body: web::Json<LoginRequest>, req: HttpRequest) -> Response {
+pub async fn authenticate(body: web::Json<LoginRequestDto>, req: HttpRequest) -> Response {
     let mut context = context().await;
     let ip = match super::get_ip_address(&req) {
         Err(_) => return Err(errors::ip_unobtainable()),
@@ -52,7 +54,12 @@ pub async fn authenticate(body: web::Json<LoginRequest>, req: HttpRequest) -> Re
     if count == 0 {
         log::info!("This database contains no users, creating an `admin` user");
 
-        User::create(&mut context, "admin", None, "admin", None, UserType::Admin, true, false).await;
+        if let Err(err) = User::create(&mut context, "admin", None, "admin", None, UserType::Admin, true, false).await {
+            return Err(match err {
+                UserCreateError::HashError(hr) => errors::hashing_error(&hr),
+                UserCreateError::DatabaseError(dr) => errors::database_error(&dr),
+            })
+        };
     }
 
 
@@ -133,7 +140,7 @@ async fn login_user(context: &mut dyn Executor, user: &User, disconnect_others: 
 
     let hash_id = super::get_hashid().encode(&[user.id.unwrap() as u64]);
 
-    Ok(HttpResponse::Ok().json(&LoginResponse::new(hash_id, key)))
+    Ok(HttpResponse::Ok().json(&LoginResponseDto::new(hash_id, key)))
 }
 
 

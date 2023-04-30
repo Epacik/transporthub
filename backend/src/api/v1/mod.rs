@@ -155,9 +155,19 @@ fn get_user_info(req: &HttpRequest) -> Result<UserInfo, errors::ErrorResponse> {
 }
 
 
-async fn can_access(user_info: &UserInfo, required_type: crate::db_model::UserType) -> Result<bool, errors::ErrorResponse> {
-    let mut context = crate::db_model::context();
-    //let user = User::se
+pub async fn can_access(user_info: &UserInfo, required_type: crate::db_model::UserType) -> Result<bool, errors::ErrorResponse> {
+    let mut context = crate::db_model::context().await;
 
-    Ok(true)
+    let user = match User::select_by_id(&mut context, user_info.user_id()).await {
+        Ok(val) => val,
+        Err(err) => return Err(errors::database_error(&err)),
+    };
+
+    let user = match user {
+        Some(val) => val,
+        None => return Err(errors::invalid_user()),
+    };
+
+
+    Ok((user.user_type() as i16) >= (required_type as i16))
 }

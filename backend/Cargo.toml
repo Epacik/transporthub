@@ -24,7 +24,7 @@ derive_more = "0.99.17"
 
 #db
 rbs = { version = "4.3"}
-rbatis = { version = "4.3", features = ["debug_mode"]}
+rbatis = { version = "4.3"} #, features = ["debug_mode"]}
 rbdc-pg={version="4.3"}
 
 serde = { version = "*", features = ["derive"] }

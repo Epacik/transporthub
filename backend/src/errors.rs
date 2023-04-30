@@ -1,6 +1,6 @@
 use actix_web::{
     error,
-    http::{header::ContentType, StatusCode}, 
+    http::{header::ContentType, StatusCode},
     HttpResponse,
 };
 
@@ -42,18 +42,18 @@ impl ErrorResponse {
 }
 
 pub fn database_error(err: &rbatis::rbdc::Error) -> ErrorResponse {
-    
+
     log::error!("An error occured while retreiving data from a database\n{0}", err);
 
 
     let body = if *DEBUG { format!("Internal server error:\n {0}", err) } else { String::from("Internal server error") };
-    
+
     ErrorResponse::new(StatusCode::INTERNAL_SERVER_ERROR, body)
 }
 
 pub fn ip_unobtainable() -> ErrorResponse {
-    
-    let body = if *DEBUG { 
+
+    let body = if *DEBUG {
         "Cannot obtain IP address"
     }
     else {
@@ -62,6 +62,33 @@ pub fn ip_unobtainable() -> ErrorResponse {
 
     ErrorResponse::new(StatusCode::INTERNAL_SERVER_ERROR, body)
 }
+
+pub(crate) fn invalid_user() -> ErrorResponse {
+    ErrorResponse::new(StatusCode::INTERNAL_SERVER_ERROR, "unknown user")
+}
+
+pub(crate) fn insufficient_privileges(user_id: i32) -> ErrorResponse {
+    let body = if *DEBUG {
+        format!("User with id `{0}` has insufficient privileges to perform this action", user_id)
+    }
+    else {
+        String::from("User has insufficient privileges to perform this action")
+    };
+
+    ErrorResponse::new(StatusCode::FORBIDDEN, body)
+}
+
+pub(crate) fn hashing_error(err: &argonautica::Error) -> ErrorResponse {
+    let body = if *DEBUG {
+        format!("Hashing password returned an error\n {0}", err)
+    }
+    else {
+        String::from("Internal server error")
+    };
+
+    ErrorResponse::new(StatusCode::INTERNAL_SERVER_ERROR, body)
+}
+
 
 pub mod auth {
     use actix_web::http::StatusCode;
@@ -112,4 +139,21 @@ pub mod auth {
         ErrorResponse::new(StatusCode::FORBIDDEN, body)
     }
 }
+
+pub mod users {
+    use actix_web::http::StatusCode;
+
+    use super::{ErrorResponse, DEBUG};
+
+    pub(crate) fn already_exists() -> ErrorResponse {
+        ErrorResponse::new(StatusCode::CONFLICT, "User already exists")
+    }
+
+    pub(crate) fn creation_error() -> ErrorResponse {
+        ErrorResponse::new(StatusCode::INTERNAL_SERVER_ERROR, if *DEBUG { "Problem creading user" } else { "Internal server error" })
+    }
+
+
+}
+
 

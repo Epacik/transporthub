@@ -1,6 +1,5 @@
 extern crate argonautica;
 extern crate base64;
-#[macro_use]
 extern crate num_derive;
 use std::time::Duration;
 

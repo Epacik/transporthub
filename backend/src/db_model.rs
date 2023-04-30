@@ -20,7 +20,7 @@ pub async fn context() -> Rbatis {
     rb
 }
 
-#[derive(Copy, Clone, FromPrimitive)]
+#[derive(Copy, Clone, FromPrimitive, Serialize, Deserialize)]
 pub enum UserType {
     Invalid = -1,
     User = 1,
@@ -49,7 +49,14 @@ pub struct User {
 
 crud!(User {}, table_names::USERS);
 impl_select!(User { select_by_name(name: &str) -> Option => "`where name = #{name} limit 1`"}, table_names::USERS);
+impl_select!(User { select_by_id(id: i32) -> Option => "`where id = #{id} limit 1`"}, table_names::USERS);
 
+
+
+pub enum UserCreateError {
+    HashError(argonautica::Error),
+    DatabaseError(rbatis::rbdc::Error),
+}
 
 
 impl User {
@@ -72,7 +79,7 @@ impl User {
         usertype: UserType,
         multi_login: bool,
         disabled: bool
-    ) {
+    ) -> std::result::Result<rbatis::rbdc::db::ExecResult, UserCreateError> {
         let config = config::config();
 
         let salt = User::make_salt();
@@ -82,8 +89,12 @@ impl User {
             .with_password(password.as_ref())
             .with_secret_key(config.pass_secret())
             .with_salt(&salt)
-            .hash()
-            .unwrap();
+            .hash();
+
+        let hash = match hash {
+            Ok(val) => val,
+            Err(err) => return Err(UserCreateError::HashError(err)),
+        };
 
         let exp_date = match password_expiration_date {
             Some(d) => Some(DateTime(d)),
@@ -97,12 +108,15 @@ impl User {
             password_salt: salt,
             password_hash: hash,
             password_expiration_date: exp_date,
-            usertype: usertype as i16,
+            user_type: usertype as i16,
             multi_login,
             disabled,
         };
 
-        User::insert( context, &admin).await.unwrap();
+        match User::insert( context, &admin).await {
+            Ok(ok) => Ok(ok),
+            Err(err) => Err(UserCreateError::DatabaseError(err)),
+        }
     }
 
     pub async fn check_password<S: AsRef<str>>(&self, password: S) -> PasswordVerificationResult {
@@ -132,13 +146,11 @@ impl User {
         }
     }
 
-
-    pub fn get_type(&self) -> UserType {
-        num::FromPrimitive::from_i16(self.usertype).unwrap_or(UserType::Invalid)
+    pub fn user_type(&self) -> UserType {
+        num::FromPrimitive::from_i16(self.user_type).unwrap_or(UserType::Invalid)
     }
-
-    pub fn set_type(&mut self, usertype: UserType) {
-        self.usertype = usertype as i16;
+    pub fn set_user_type(&mut self, user_type: UserType) {
+        self.user_type = user_type as i16;
     }
 }
 
