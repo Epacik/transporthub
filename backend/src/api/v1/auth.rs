@@ -2,9 +2,8 @@ use actix_web::{post, web, Result, HttpResponse, HttpRequest, dev::HttpServiceFa
 use rand::distributions::DistString;
 use rand_distr::Alphanumeric;
 use rbatis::{executor::Executor, rbdc::datetime::DateTime, Rbatis};
-use serde::{Deserialize, Serialize};
 use crate::{db_model::{ context, User, UserType, PasswordVerificationResult, UserAccessKeys, UserCreateError }, errors::{self, ErrorResponse}};
-
+use crate::api::v1::dto;
 use super::{UserInfo, Response};
 
 pub fn scope() -> impl HttpServiceFactory {
@@ -14,34 +13,8 @@ pub fn scope() -> impl HttpServiceFactory {
     .service(logout)
 }
 
-
-#[derive(Deserialize)]
-#[serde(rename_all = "camelCase")]
-pub struct LoginRequestDto {
-    pub user: String,
-    pub password: String,
-    //pub device_id: String, // change that to IP later (remember about cloudflare)
-    pub disconnect_other_sessions: Option<bool>,
-}
-
-#[derive(Serialize)]
-#[serde(rename_all = "camelCase")]
-pub struct LoginResponseDto {
-    pub user: String,
-    pub key: String,
-}
-
-impl LoginResponseDto {
-    fn new(user: String, key: String) -> LoginResponseDto {
-        LoginResponseDto {
-            user,
-            key,
-        }
-    }
-}
-
 #[post("/login")]
-pub async fn authenticate(body: web::Json<LoginRequestDto>, req: HttpRequest) -> Response {
+pub async fn authenticate(body: web::Json<dto::LoginRequestDto>, req: HttpRequest) -> Response {
     let mut context = context().await;
     let ip = match super::get_ip_address(&req) {
         Err(_) => return Err(errors::ip_unobtainable()),
@@ -138,9 +111,9 @@ async fn login_user(context: &mut dyn Executor, user: &User, disconnect_others: 
         return Err(errors::database_error(&err));
     }
 
-    let hash_id = super::get_hashid().encode(&[user.id.unwrap() as u64]);
+    let hash_id = super::encode_id(user.id.unwrap_or_default());
 
-    Ok(HttpResponse::Ok().json(&LoginResponseDto::new(hash_id, key)))
+    Ok(HttpResponse::Ok().json(&dto::LoginResponseDto::new(hash_id, key)))
 }
 
 

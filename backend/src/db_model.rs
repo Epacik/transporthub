@@ -1,7 +1,7 @@
 
 use argonautica::{Hasher, Verifier};
 use num_derive::FromPrimitive;
-use rbatis::{Rbatis, rbdc::{Error, datetime::DateTime}, crud, impl_select, impl_delete};
+use rbatis::{Rbatis, rbdc::{Error, datetime::DateTime}, crud, impl_select, impl_delete, impl_update};
 use rbdc_pg::driver::PgDriver;
 use serde::{Deserialize, Serialize};
 use rand::distributions::{Alphanumeric, DistString};
@@ -50,6 +50,7 @@ pub struct User {
 crud!(User {}, table_names::USERS);
 impl_select!(User { select_by_name(name: &str) -> Option => "`where name = #{name} limit 1`"}, table_names::USERS);
 impl_select!(User { select_by_id(id: i32) -> Option => "`where id = #{id} limit 1`"}, table_names::USERS);
+impl_update!(User { update_by_id(id: i32) => "`where id = #{id}`"});
 
 
 

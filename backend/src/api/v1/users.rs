@@ -1,6 +1,6 @@
+use actix_web::{delete, patch};
 use actix_web::{dev::HttpServiceFactory, HttpRequest, HttpResponse, get, put, web};
-use fastdate::DateTime;
-use serde::{Deserialize, Serialize};
+use crate::api::v1::dto;
 
 use crate::{db_model::{UserType, User, self, UserCreateError}, errors};
 
@@ -9,21 +9,12 @@ use super::Response;
 pub fn scope() -> impl HttpServiceFactory {
     actix_web::web::scope("/users")
     .service(list)
+    .service(get_user)
     .service(add)
+    .service(remove)
+    .service(update)
 }
 
-
-#[derive(Serialize)]
-#[serde(rename_all = "camelCase")]
-pub struct UserDto {
-    pub id: String,
-    pub name: String,
-    pub picture: Option<String>,
-    pub password_expiration_date: Option<DateTime>,
-    pub user_type: UserType,
-    pub multi_login: bool,
-    pub disabled: bool,
-}
 
 #[get("/list")]
 pub async fn list(req: HttpRequest) -> Response {
@@ -47,11 +38,10 @@ pub async fn list(req: HttpRequest) -> Response {
         Err(err) => return Err(errors::database_error(&err)),
     };
 
-    let hash_ids = super::get_hashid();
 
     let users = users.iter()
-        .map(|x| UserDto {
-            id: hash_ids.encode(&[x.id.unwrap_or_default() as u64]),
+        .map(|x| dto::UserDto {
+            id: super::encode_id(x.id.unwrap_or_default()),
             name: x.name.clone(),
             picture: x.picture.clone(),
             password_expiration_date: match x.password_expiration_date.clone() {
@@ -67,19 +57,41 @@ pub async fn list(req: HttpRequest) -> Response {
     Ok(HttpResponse::Ok().json(users))
 }
 
-#[derive(Deserialize)]
-#[serde(rename_all = "camelCase")]
-pub struct UserAddDto {
-    pub name: String,
-    pub picture: Option<String>,
-    pub password: String,
-    pub password_expiration_date: Option<DateTime>,
-    pub user_type: UserType,
-    pub multi_login: bool,
+
+#[get("/{user_id}")]
+pub async fn get_user(user_id: web::Path<String>, req: HttpRequest) -> Response {
+    let user_id = user_id.clone();
+    let user_info = match super::get_user_info(&req) {
+        Ok(val) => val,
+        Err(err) => return Err(err),
+    };
+
+    let can_access = match super::can_access(&user_info, UserType::Admin).await {
+        Ok(val) => val,
+        Err(err) => return Err(err),
+    };
+
+    let user_id = super::decode_id(&user_id);
+
+    if user_info.user_id != user_id && !can_access {
+        return Err(errors::insufficient_privileges(user_id));
+    }
+
+    let mut context = db_model::context().await;
+    let user = match User::select_by_id(&mut context, user_id).await {
+        Ok(val) => val,
+        Err(err) => return Err(errors::database_error(&err)),
+    };
+
+    match user {
+        None => Err(errors::not_found()),
+        Some(val) => Ok(HttpResponse::Ok().json(val)),
+    }
+
 }
 
 #[put("/add")]
-pub async fn add(body: web::Json<UserAddDto>, req: HttpRequest) -> Response {
+pub async fn add(body: web::Json<dto::UserAddDto>, req: HttpRequest) -> Response {
     let user_info = match super::get_user_info(&req) {
         Ok(val) => val,
         Err(err) => return Err(err),
@@ -105,7 +117,7 @@ pub async fn add(body: web::Json<UserAddDto>, req: HttpRequest) -> Response {
         return Err(errors::users::already_exists());
     }
 
-    let result = match User::create(
+    let _result = match User::create(
         &mut context,
         body.name.clone(),
         body.picture.clone(),
@@ -128,14 +140,13 @@ pub async fn add(body: web::Json<UserAddDto>, req: HttpRequest) -> Response {
         Err(err) => return Err(errors::database_error(&err)),
     };
 
-    let hash_ids = super::get_hashid();
 
     match user {
         None => Err(errors::users::creation_error()),
         Some(user) => {
-            let id = hash_ids.encode(&[user.id.unwrap_or_default() as u64]);
+            let id = super::encode_id(user.id.unwrap_or_default());
 
-            let dto = UserDto {
+            let dto = dto::UserDto {
                 id,
                 name: user.name.clone(),
                 picture: user.picture.clone(),
@@ -152,4 +163,71 @@ pub async fn add(body: web::Json<UserAddDto>, req: HttpRequest) -> Response {
         },
     }
 
+}
+
+#[delete("/{user_id}/delete")]
+pub async fn remove(user_id: web::Path<String>, req: HttpRequest) -> Response {
+    let user_id = user_id.clone();
+    let user_info = match super::get_user_info(&req) {
+        Ok(val) => val,
+        Err(err) => return Err(err),
+    };
+
+    let can_access = match super::can_access(&user_info, UserType::Admin).await {
+        Ok(val) => val,
+        Err(err) => return Err(err),
+    };
+
+    if !can_access {
+        return Err(errors::insufficient_privileges(user_info.user_id()));
+    }
+
+    let user_id = super::decode_id(&user_id);
+
+    let mut context = db_model::context().await;
+    if let Err(err) = User::delete_by_column(&mut context, "id", user_id).await {
+        return Err(errors::database_error(&err));
+    }
+
+    Ok(HttpResponse::Ok().finish())
+}
+
+#[patch("/{user_id}/update")]
+pub async fn update(user_id: web::Path<String>, body: web::Json<dto::UserUpdateDto>, req: HttpRequest) -> Response {
+    let user_id = user_id.clone();
+    let user_info = match super::get_user_info(&req) {
+        Ok(val) => val,
+        Err(err) => return Err(err),
+    };
+
+    let can_access = match super::can_access(&user_info, UserType::Admin).await {
+        Ok(val) => val,
+        Err(err) => return Err(err),
+    };
+
+    let user_id = super::decode_id(&user_id);
+
+    if user_info.user_id != user_id && !can_access {
+        return Err(errors::insufficient_privileges(user_id));
+    }
+
+    let mut context = db_model::context().await;
+    let user = match User::select_by_id(&mut context, user_id).await {
+        Err(err) => return Err(errors::database_error(&err)),
+        Ok(val) => val,
+    };
+
+    let mut user = match user {
+        Some(val) => val,
+        None => return Err(errors::not_found()),
+    };
+
+    user.name = body.0.name.clone();
+    user.picture = body.0.picture.clone();
+
+    if let Err(err) = User::update_by_id(&mut context, &user, user_id).await {
+        return Err(errors::database_error(&err));
+    }
+
+    Ok(HttpResponse::Ok().finish())
 }

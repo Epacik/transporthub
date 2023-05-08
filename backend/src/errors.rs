@@ -89,6 +89,10 @@ pub(crate) fn hashing_error(err: &argonautica::Error) -> ErrorResponse {
     ErrorResponse::new(StatusCode::INTERNAL_SERVER_ERROR, body)
 }
 
+pub(crate) fn not_found() -> ErrorResponse {
+    ErrorResponse::new(StatusCode::NOT_FOUND, "Not found")
+}
+
 
 pub mod auth {
     use actix_web::http::StatusCode;
@@ -152,8 +156,6 @@ pub mod users {
     pub(crate) fn creation_error() -> ErrorResponse {
         ErrorResponse::new(StatusCode::INTERNAL_SERVER_ERROR, if *DEBUG { "Problem creading user" } else { "Internal server error" })
     }
-
-
 }
 
 
