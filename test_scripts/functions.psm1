@@ -29,3 +29,8 @@ function Decode-Base64([string]$content) {
     $bytes = [System.Convert]::FromBase64String($content);
     return [System.Text.Encoding]::Unicode.GetString($bytes);
 }
+
+function ClearAndWrite-Host([string]$message) {
+    Clear-Host;
+    Write-Host $message;
+}

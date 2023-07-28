@@ -1,4 +1,5 @@
-Import-Module "$PSScriptRoot/functions.psm1"
+#Import-Module "$PSScriptRoot/functions.psm1"
+using module ./functions.psm1
 
 
 class LoginInfo {
@@ -15,18 +16,29 @@ class LoginInfo {
     }
 }
 
-function Login([string]$user, [string]$pass, [bool]$disconnectOtherSessions) {
+function LoginRequest() {
     [OutputType([LoginInfo])]
+    param([string]$user, [string]$pass, [bool]$disconnectOtherSessions)
+
+    $disconnect = "false";
+    if ($disconnectOtherSessions) {
+        $disconnect = "true"
+    }
+
     $body = @"
 {
     "user": "$user",
     "password": "$pass",
-    "disconnectOtherSessions": true
+    "disconnectOtherSessions": $disconnect
 }
 "@;
+
+    Write-host "Body: $body"
     $response = SendRequest "/auth/login" "Post" $body;
     $isSuccessful = $response.StatusCode -eq 200;
     $body = ConvertFrom-Json $response.Content
 
     return [LoginInfo]::new($isSuccessful, $response.StatusCode, $body.user, $body.key);
 }
+
+
