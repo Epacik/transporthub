@@ -33,4 +33,9 @@ public partial class LoginViewModel : ObservableObject
     {
         await _navigationService.NavigateToAsync(Routes.StartupSettings);
     }
+
+    public async Task LoginUser()
+    {
+
+    }
 }

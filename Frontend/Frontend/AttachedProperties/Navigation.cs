@@ -19,14 +19,14 @@ public class Navigation : AvaloniaObject
         HeaderProperty.Changed.AddClassHandler<Button>(HandleHeaderChanged);
     }
 
-    public static readonly AttachedProperty<string?> HeaderProperty =
-        AvaloniaProperty.RegisterAttached<Navigation, Button, string?> ("Header", default, false, Avalonia.Data.BindingMode.OneWay);
+    public static readonly AttachedProperty<Control?> HeaderProperty =
+        AvaloniaProperty.RegisterAttached<Navigation, Button, Control?> ("Header", default, false, Avalonia.Data.BindingMode.OneWay);
 
-    public static void SetHeader(AvaloniaObject element, string value)
+    public static void SetHeader(AvaloniaObject element, Control value)
     {
         element.SetValue(HeaderProperty, value);
     }
-    public static string? GetHeader(AvaloniaObject element)
+    public static Control? GetHeader(AvaloniaObject element)
     {
         return element.GetValue(HeaderProperty);
     }

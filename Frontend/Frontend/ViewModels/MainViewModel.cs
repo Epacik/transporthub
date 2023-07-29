@@ -26,7 +26,7 @@ public partial class MainViewModel : ObservableObject
     public bool _showPane = false;
     public bool ShowBackButton => _navigationStack.Count >= 2;
     public double TitleMargin => _navigationStack.Count >= 2 ? 44 : 0;
-    public string? Header => Content is not null ? Navigation.GetHeader(Content) : null;
+    public Control? Header => Content is not null ? Navigation.GetHeader(Content) : null;
 
     [ObservableProperty]
     public Control? _content;
@@ -34,9 +34,12 @@ public partial class MainViewModel : ObservableObject
     partial void OnContentChanged(Control? value)
     {
         OnPropertyChanged(nameof(Header));
+        HeaderChanged?.Invoke(this, EventArgs.Empty);
     }
 
     #endregion properties
+
+    public event EventHandler HeaderChanged;
 
     public MainViewModel(
         IAuthorizationService authorizationService,
@@ -80,7 +83,7 @@ public partial class MainViewModel : ObservableObject
 
         if (Content.DataContext is INavigationAwareViewModel model)
         {
-            await model.OnNavigatedTo(parameters);
+            await model.OnNavigatedTo(parameters ?? next.parameters);
         }
 
         _navigationStack.Push((next.Route, next.Page, parameters));
