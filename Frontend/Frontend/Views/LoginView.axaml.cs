@@ -7,8 +7,6 @@ namespace Frontend.Views;
 
 public partial class LoginView : UserControl
 {
-    private Thickness _originalHeaderMargin;
-
     public LoginView()
     {
         InitializeComponent();

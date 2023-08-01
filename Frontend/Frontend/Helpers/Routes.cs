@@ -10,6 +10,5 @@ internal static class Routes
 {
     public const string Login = $"//{nameof(Login)}";
     public const string StartupSettings = $"{Login}/{nameof(StartupSettings)}";
-
     public const string Dashboard = $"//{nameof(Dashboard)}";
 }

@@ -20,9 +20,10 @@
                 </Rectangle.Transitions>
             </Rectangle>
             <Grid Grid.Column="1">
-                <TextBlock Text="{StaticResource AppName}"
-                           VerticalAlignment="Center"
-                           Margin="10,0"/>
+                <ContentControl ContentTemplate="{StaticResource AppNameStyled}"
+                                VerticalAlignment="Center"
+                                Margin="10,0"
+                                IsVisible="{Binding ShowTitle}"/>
             </Grid>
         </StackPanel>
         <fac:NavigationView

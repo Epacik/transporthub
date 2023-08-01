@@ -11,6 +11,24 @@
     <AvaloniaResource Include="Assets\**" />
   </ItemGroup>
 
+  
+  <ItemGroup>
+    <AvaloniaXaml Remove="Resources\Icons\**" />
+    <Compile Remove="Resources\Icons\**" />
+    <EmbeddedResource Remove="Resources\Icons\**" />
+    <None Remove="Resources\Icons\**" />
+  </ItemGroup>
+
+  
+  <ItemGroup>
+    <Compile Remove="Assets\Icons\tabler\TablerIcons.cs" />
+  </ItemGroup>
+
+  
+  <ItemGroup>
+    <AvaloniaResource Include="Generated\generateFontDictionary.ps1" />
+  </ItemGroup>
+
   <ItemGroup>
     <PackageReference Include="Autofac" Version="7.0.1" />
     <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="8.0.0" />
@@ -33,11 +51,28 @@
   <ItemGroup>
     <Folder Include="Converters\" />
     <Folder Include="Modules\" />
+    <Folder Include="Services\Impl\API\Nowy folder\" />
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Resources\Licenses.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Licenses.resx</DependentUpon>
+    </Compile>
     <Compile Update="Views\MainView.axaml.cs">
       <DependentUpon>MainView.axaml</DependentUpon>
     </Compile>
   </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\Licenses.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Licenses.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="pwsh -f $(ProjectDir)/Generated/generateFontDictionary.ps1" />
+  </Target>
 </Project>

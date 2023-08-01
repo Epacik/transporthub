@@ -11,13 +11,17 @@
         <ResourceDictionary>
             <Thickness x:Key="NavigationViewContentMargin">0,44,0,0</Thickness>
             <system:String x:Key="AppName">transporthub</system:String>
-            <StackPanel x:Key="AppNameStyled" Orientation="Horizontal">
-                <TextBlock Text="transport" FontWeight="Bold"/>
-                <TextBlock Text="hub" Foreground="{StaticResource AppColor}" FontWeight="Bold"/>
-            </StackPanel>
 
+            <DataTemplate x:Key="AppNameStyled">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="transport" FontWeight="Bold"/>
+                    <TextBlock Text="hub" Foreground="{StaticResource AppColor}" FontWeight="Bold"/>
+                </StackPanel>
+            </DataTemplate>
+            
             <ResourceDictionary.MergedDictionaries>
                 <ResourceInclude Source="avares://Frontend/Styles/Colors.axaml"/>
+                <ResourceInclude Source="avares://Frontend/Styles/Fonts.axaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

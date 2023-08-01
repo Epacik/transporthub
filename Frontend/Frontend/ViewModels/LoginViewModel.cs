@@ -1,3 +1,4 @@
+using Avalonia.Threading;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Frontend.Helpers;
@@ -15,6 +16,7 @@ public partial class LoginViewModel : ObservableObject
 {
     private readonly IAuthorizationService _authorizationService;
     private readonly INavigationService _navigationService;
+
     [ObservableProperty]
     private string? _login;
 
@@ -27,6 +29,7 @@ public partial class LoginViewModel : ObservableObject
     {
         _authorizationService = authorizationService;
         _navigationService = navigationService;
+
     }
 
     public async Task OpenStartupSettings()

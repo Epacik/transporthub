@@ -4,20 +4,24 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:ap="using:Frontend.AttachedProperties"
              xmlns:vm="using:Frontend.ViewModels"
+             xmlns:controls="using:Frontend.Controls"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="Frontend.Views.LoginView"
              x:DataType="vm:LoginViewModel">
     <ap:Navigation.Header>
-        <Border Child="{StaticResource AppNameStyled}"
+        <ContentControl ContentTemplate="{StaticResource AppNameStyled}"
                 Margin="40,0,0,0"/>
     </ap:Navigation.Header>
     <Grid RowDefinitions="80,*">
-        
+
         <Button VerticalAlignment="Top"
-                HorizontalAlignment="Right"
-                Command="{Binding OpenStartupSettings}">
-            Settings
+            HorizontalAlignment="Right"
+            Command="{Binding OpenStartupSettings}"
+            VerticalContentAlignment="Center"
+            HorizontalContentAlignment="Center">
+            <controls:TablerIcon Icon="settings" Size="24"/>
         </Button>
+        
 
         <StackPanel Width="300"
                     HorizontalAlignment="Left"

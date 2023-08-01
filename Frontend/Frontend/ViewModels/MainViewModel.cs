@@ -7,6 +7,7 @@ using Frontend.AttachedProperties;
 using Frontend.Helpers;
 using Frontend.Services;
 using Frontend.Services.API;
+using Frontend.Views;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -26,6 +27,7 @@ public partial class MainViewModel : ObservableObject
     public bool _showPane = false;
     public bool ShowBackButton => _navigationStack.Count >= 2;
     public double TitleMargin => _navigationStack.Count >= 2 ? 44 : 0;
+    public bool ShowTitle => Content is not LoginView;
     public Control? Header => Content is not null ? Navigation.GetHeader(Content) : null;
 
     [ObservableProperty]
@@ -34,6 +36,7 @@ public partial class MainViewModel : ObservableObject
     partial void OnContentChanged(Control? value)
     {
         OnPropertyChanged(nameof(Header));
+        OnPropertyChanged(nameof(ShowTitle));
         HeaderChanged?.Invoke(this, EventArgs.Empty);
     }
 
