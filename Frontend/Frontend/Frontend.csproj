@@ -51,7 +51,6 @@
   <ItemGroup>
     <Folder Include="Converters\" />
     <Folder Include="Modules\" />
-    <Folder Include="Services\Impl\API\Nowy folder\" />
   </ItemGroup>
 
   <ItemGroup>

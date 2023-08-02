@@ -1,14 +1,12 @@
 using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace Frontend.Helpers;
 
-internal static class Settings
+internal enum Settings
 {
-    public const string IpAddress = nameof(IpAddress);
-    public const string DemoMode = nameof(DemoMode);
-
-    static Dictionary<string, string> a = new()
-    {
-        { "key", "value" },
-    };
+    [DefaultValue("127.0.0.1:8080")]
+    IpAddress,
+    [DefaultValue(false)]
+    DemoMode,
 }

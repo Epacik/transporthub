@@ -9,4 +9,5 @@ namespace Frontend.Services;
 public interface IDialogService
 {
     Task ShowAlertAsync(string title, string message);
+    Task<bool> ShowConfirmation(string title, string message);
 }
