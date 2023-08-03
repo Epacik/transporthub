@@ -26,7 +26,12 @@ public partial class MainViewModel : ObservableObject
     [ObservableProperty]
     public bool _showPane = false;
     public bool ShowBackButton => _navigationStack.Count >= 2;
-    public double TitleMargin => _navigationStack.Count >= 2 ? 44 : 0;
+    public double TitleMargin => (_navigationStack.Count >= 2, ShowPane) switch
+    {
+        (true, true) => 88,
+        (true, false) or (false, true) => 44,
+        _ => 0
+    };
     public bool ShowTitle => Content is not LoginView;
     public Control? Header => Content is not null ? Navigation.GetHeader(Content) : null;
 
@@ -67,6 +72,8 @@ public partial class MainViewModel : ObservableObject
     private void AuthorizationService_Authorized(object? sender, System.EventArgs e)
     {
         ShowPane = true;
+        _navigationStack.Clear();
+        UpdateHeaderAndBackButton();
     }
 
     internal async Task NavigateBackAsync(Dictionary<string, object>? parameters)

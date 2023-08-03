@@ -9,6 +9,11 @@
     mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
     x:Class="Frontend.Views.MainView"
     x:DataType="vm:MainViewModel">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <Thickness x:Key="NavigationViewContentMargin">0,44,0,0</Thickness>
+        </ResourceDictionary>
+    </UserControl.Resources>
 
     <Grid RowDefinitions="Auto,*">
         <StackPanel Height="44" Orientation="Horizontal">
@@ -35,7 +40,6 @@
             Header="{Binding Header}"
             IsBackButtonVisible="{Binding ShowBackButton}"
             IsBackEnabled="True"
-           
             Classes.PaneToggleButtonVisible="{Binding ShowPane}"
             Padding="15">
             <fac:NavigationView.Styles>

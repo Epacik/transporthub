@@ -12,19 +12,19 @@ namespace Frontend.Services.InMemory.API
     {
         public bool IsAuthorized { get; set; }
 
-        public event EventHandler Authorized;
+        public event EventHandler? Authorized;
 
-        public async Task<Result<bool, Exception>> Authorize(string login, string password, bool closeOtherSessions)
+        public async Task<Result<bool, Exception>> Authorize(string? login, string? password, bool closeOtherSessions)
         {
             await Task.Yield();
             if (string.IsNullOrWhiteSpace(login))
             {
-                return new ArgumentException("Login cannot be empty", nameof(login));
+                return new ArgumentException("Login nie może być pusty", nameof(login));
             }
 
             if (string.IsNullOrWhiteSpace(password))
             {
-                return new ArgumentException("Password cannot be empty", nameof(password));
+                return new ArgumentException("Hasło nie może być puste", nameof(password));
             }
 
             IsAuthorized = true;

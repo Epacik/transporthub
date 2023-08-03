@@ -53,7 +53,7 @@ internal class SettingsService : ISettingsService
     public string? Read(Settings path, string? defaultValue)
     {
         var key = path.ToString();
-        var configFile = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+        var configFile = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.PerUserRoaming);
         var settings = configFile.AppSettings.Settings;
         if (HasKey(settings, key))
         {

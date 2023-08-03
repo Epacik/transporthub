@@ -24,9 +24,9 @@ internal class AuthorizationService : IAuthorizationService
     }
     public bool IsAuthorized => false;
 
-    public event EventHandler Authorized;
+    public event EventHandler? Authorized;
 
-    public async Task<Result<bool, Exception>> Authorize(string login, string password, bool closeOtherSessions)
+    public async Task<Result<bool, Exception>> Authorize(string? login, string? password, bool closeOtherSessions)
     {
         var uri = _settingsService.Read(Settings.IpAddress, "127.0.0.1");
         var client = _httpClientFactory.Create();

@@ -11,7 +11,7 @@ public interface IAuthorizationService
 {
     bool IsAuthorized { get; }
 
-    event EventHandler Authorized;
+    event EventHandler? Authorized;
 
-    Task<Result<bool, Exception>> Authorize(string login, string password, bool closeOtherSessions);
+    Task<Result<bool, Exception>> Authorize(string? login, string? password, bool closeOtherSessions);
 }

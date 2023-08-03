@@ -3,6 +3,8 @@ using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 using FluentAvalonia.UI.Controls;
+using Frontend.Extensions;
+using Frontend.Services.API;
 using Frontend.ViewModels;
 using System;
 
@@ -10,46 +12,35 @@ namespace Frontend.Views;
 
 public partial class MainView : UserControl
 {
+    private readonly IAuthorizationService _authorizationService;
 
     private MainViewModel? ViewModel => DataContext as MainViewModel;
 
-    public MainView()
+    public MainView(IAuthorizationService authorizationService)
     {
         InitializeComponent();
         nvSample.BackRequested += NvSample_BackRequested;
-        //nvSample.Header
+        _authorizationService = authorizationService;
+        _authorizationService.Authorized += AuthorizationService_Authorized;
+    }
 
-        if (ViewModel is null)
+    private void AuthorizationService_Authorized(object? sender, EventArgs e)
+    {
+
+        var borderResult = this.FindVisualDescendant<Border>("ContentGridBorder");
+
+        if (borderResult is null)
             return;
 
-        ViewModel.HeaderChanged += ViewModel_HeaderChanged;
-    }
-
-    protected override void OnDataContextChanged(EventArgs e)
-    {
-        base.OnDataContextChanged(e);
-
-        if (ViewModel is null)
+        if (borderResult.IsError)
             return;
 
-        ViewModel.HeaderChanged += ViewModel_HeaderChanged;
-        UpdateHeader();
-    }
+        var border = borderResult.Unwrap();
 
-    private void ViewModel_HeaderChanged(object? sender, EventArgs e)
-    {
-        UpdateHeader();
-    }
+        if (border is null)
+            return;
 
-    protected override void OnAttachedToVisualTree(VisualTreeAttachmentEventArgs e)
-    {
-        base.OnAttachedToVisualTree(e);
-        UpdateHeader();
-    }
-
-    void UpdateHeader()
-    {
-        var header = this.FindNameScope()?.Find<ContentControl>("HeaderContent");
+        border.Margin = new Thickness(0, 44, 0, 0);
     }
 
     private async void NvSample_BackRequested(object? sender, NavigationViewBackRequestedEventArgs e)
