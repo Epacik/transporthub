@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0-android</TargetFramework>
+    <SupportedOSPlatformVersion>27.0</SupportedOSPlatformVersion>
+    <Nullable>enable</Nullable>
+    <ApplicationId>xyz.epat.transporthub</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
+    <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+    <AndroidPackageFormat>apk</AndroidPackageFormat>
+    <AndroidEnableProfiledAot>False</AndroidEnableProfiledAot>
+    <AssemblyName>TransportHub</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Icon.png" />
+    <None Remove="Resources\drawable\icon.svg" />
+    <None Remove="Resources\drawable\icon_bg.xml" />
+    <None Remove="Resources\drawable\icon_fg.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AvaloniaResource Include="Resources\drawable\icon.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Avalonia.Android" Version="11.0.3" />
+    <PackageReference Include="Xamarin.AndroidX.Core.SplashScreen" Version="1.0.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TransportHub.Core\TransportHub.Core.csproj" />
+  </ItemGroup>
+</Project>

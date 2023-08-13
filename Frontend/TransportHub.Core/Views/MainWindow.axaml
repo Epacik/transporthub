@@ -1,0 +1,16 @@
+<win:AppWindow
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vm="using:TransportHub.ViewModels"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ui="using:FluentAvalonia.UI.Controls"
+    xmlns:win="using:FluentAvalonia.UI.Windowing"
+    xmlns:views="clr-namespace:TransportHub.Views"
+    mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+    x:Class="TransportHub.Views.MainWindow"
+    Icon="/Assets/th.ico"
+    Title="{StaticResource AppName}"
+    TransparencyLevelHint="Mica">
+    
+</win:AppWindow>

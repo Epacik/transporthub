@@ -5,3 +5,6 @@ backend/config.json
 /ConsoleFrontend/ConsoleFrontend/obj
 /Frontend/Frontend/BuildAppExtensions.cs
 /backend/.vs
+/Dashboard/.vs/Dashboard
+/Dashboard/Dashboard/bin/Debug/net7.0
+/Dashboard/Dashboard/obj

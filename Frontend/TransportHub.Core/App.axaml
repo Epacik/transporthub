@@ -1,0 +1,34 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="using:TransportHub"
+             xmlns:sty="using:FluentAvalonia.Styling"
+             xmlns:system="using:System"
+             x:Class="TransportHub.App"
+             RequestedThemeVariant="Default">
+             <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <Thickness x:Key="NavigationViewContentMargin">0,44,0,0</Thickness>
+            <system:String x:Key="AppName">transporthub</system:String>
+
+            <DataTemplate x:Key="AppNameStyled">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="transport" FontWeight="Bold"/>
+                    <TextBlock Text="hub" Foreground="{StaticResource AppColor}" FontWeight="Bold"/>
+                </StackPanel>
+            </DataTemplate>
+            
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceInclude Source="avares://TransportHub.Core/Styles/Colors.axaml"/>
+                <ResourceInclude Source="avares://TransportHub.Core/Styles/Fonts.axaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+
+    <Application.Styles>
+        <!--<FluentTheme />-->
+        <sty:FluentAvaloniaTheme />
+        
+    </Application.Styles>
+</Application>

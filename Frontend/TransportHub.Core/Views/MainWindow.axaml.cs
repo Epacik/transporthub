@@ -1,0 +1,20 @@
+using Avalonia;
+using Avalonia.Controls;
+using Avalonia.Media;
+using FluentAvalonia.UI.Windowing;
+using TransportHub.Extensions;
+
+namespace TransportHub.Views;
+
+public partial class MainWindow : AppWindow
+{
+    public MainWindow()
+    {
+        InitializeComponent();
+        TitleBar.ExtendsContentIntoTitleBar = true;
+        TitleBar.TitleBarHitTestType = TitleBarHitTestType.Complex;
+        TitleBar.Height = 44;
+
+        Background = (Background as ISolidColorBrush)?.WithOpacity(0.7f);
+    }
+}

@@ -1,0 +1,77 @@
+<UserControl
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ap="using:TransportHub.AttachedProperties"
+    xmlns:fac="using:FluentAvalonia.UI.Controls"
+    xmlns:vm="using:TransportHub.ViewModels"
+    mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+    x:Class="TransportHub.Views.MainView"
+    x:DataType="vm:MainViewModel">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <Thickness x:Key="NavigationViewContentMargin">0,44,0,0</Thickness>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid RowDefinitions="Auto,*">
+        <StackPanel Height="44" Orientation="Horizontal">
+            <Rectangle Width="{Binding TitleMargin}" >
+                <Rectangle.Transitions>
+                    <Transitions>
+                        <DoubleTransition Property="Width" Duration="0:0:0.05"/>
+                    </Transitions>
+                </Rectangle.Transitions>
+            </Rectangle>
+            <Grid Grid.Column="1">
+                <ContentControl ContentTemplate="{StaticResource AppNameStyled}"
+                                VerticalAlignment="Center"
+                                Margin="10,0"
+                                IsVisible="{Binding ShowTitle}"/>
+            </Grid>
+        </StackPanel>
+        <fac:NavigationView
+            Grid.RowSpan="2"
+            x:Name="nvSample"
+            IsPaneToggleButtonVisible="{Binding ShowPane}"
+            PaneDisplayMode="LeftMinimal"
+            AlwaysShowHeader="True"
+            Header="{Binding Header}"
+            IsBackButtonVisible="{Binding ShowBackButton}"
+            IsBackEnabled="True"
+            Classes.PaneToggleButtonVisible="{Binding ShowPane}"
+            Padding="15">
+            <fac:NavigationView.Styles>
+                <Style Selector="fac|NavigationView.PaneToggleButtonVisible">
+                    <Setter Property="PaneDisplayMode" Value="Auto"/>
+                </Style>
+            </fac:NavigationView.Styles>
+            <!--<fac:NavigationView.Header>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="transport" FontWeight="Bold"/>
+                    <TextBlock Text="hub" Foreground="{StaticResource AppColor}" FontWeight="Bold"/>
+                </StackPanel>
+            </fac:NavigationView.Header>-->
+
+            <fac:NavigationView.Content>
+                <Border Padding="15" Child="{Binding Content}"/>
+            </fac:NavigationView.Content>
+
+            <!--<fac:NavigationView.Content>
+                <TransitioningContentControl Content="{Binding Content}" Padding="10"  >
+                    <TransitioningContentControl.PageTransition>
+                        <PageSlide Duration="0:00:00.050" Orientation="Horizontal"/>
+                    </TransitioningContentControl.PageTransition>
+                </TransitioningContentControl>
+            </fac:NavigationView.Content>-->
+
+            <fac:NavigationView.MenuItems>
+                <fac:NavigationViewItem Content="Menu Item1" Tag="SamplePage1" IconSource="Play" />
+                <fac:NavigationViewItem Content="Menu Item2" Tag="SamplePage2" IconSource="Save" />
+                <fac:NavigationViewItem Content="Menu Item3" Tag="SamplePage3" IconSource="Refresh" />
+                <fac:NavigationViewItem Content="Menu Item4" Tag="SamplePage4" IconSource="Download" />
+            </fac:NavigationView.MenuItems>
+        </fac:NavigationView>
+    </Grid>
+</UserControl>

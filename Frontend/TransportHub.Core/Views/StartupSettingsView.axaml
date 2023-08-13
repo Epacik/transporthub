@@ -1,0 +1,30 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ap="using:TransportHub.AttachedProperties"
+             xmlns:vm="using:TransportHub.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="TransportHub.Views.StartupSettingsView"
+             x:DataType="vm:StartupSettingsViewModel">
+    <ap:Navigation.Header>
+        <TextBlock>Ustawienia startowe</TextBlock>
+    </ap:Navigation.Header>
+    <StackPanel Spacing="20">
+        <StackPanel.Styles>
+            <Style Selector="TextBox">
+                <Setter Property="UseFloatingWatermark" Value="True"/>
+                <Setter Property="MaxLines" Value="1"/>
+                <Setter Property="Height" Value="49"/>
+                <Setter Property="VerticalContentAlignment" Value="Center"/>
+            </Style>
+        </StackPanel.Styles>
+        <TextBox Watermark="Adres serwera" Text="{Binding ServerAddress}"/>
+        <CheckBox Content="Tryb demonstracyjny" IsChecked="{Binding DemoMode}"/>
+
+        <StackPanel Orientation="Horizontal" Spacing="20">
+            <Button Background="{StaticResource AppColor}" Content="Zapisz" Command="{Binding SaveSettings}" />
+            <Button Content="Przywróć ustawienia domyślne" Command="{Binding ResetSettings}"/>
+        </StackPanel>
+    </StackPanel>
+</UserControl>
