@@ -1,6 +1,6 @@
 using Avalonia;
 using CommunityToolkit.Mvvm.ComponentModel;
-using TransportHub.Extensions;
+using TransportHub.Core.Extensions;
 using TransportHub.Common;
 using TransportHub.Services;
 using System;
@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TransportHub.ViewModels;
+namespace TransportHub.Core.ViewModels;
 
 internal partial class StartupSettingsViewModel : ObservableObject
 {

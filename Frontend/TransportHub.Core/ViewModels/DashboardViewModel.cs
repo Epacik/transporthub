@@ -1,6 +1,6 @@
 using CommunityToolkit.Mvvm.ComponentModel;
 
-namespace TransportHub.ViewModels;
+namespace TransportHub.Core.ViewModels;
 
 internal class DashboardViewModel : ObservableObject
 {

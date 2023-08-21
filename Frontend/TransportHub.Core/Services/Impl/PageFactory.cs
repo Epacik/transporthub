@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TransportHub.Services.Impl;
+namespace TransportHub.Core.Services.Impl;
 
 internal class PageFactory : IPageFactory
 {

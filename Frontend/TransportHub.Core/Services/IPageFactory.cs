@@ -2,7 +2,7 @@ using Avalonia.Controls;
 using Lindronics.OneOf.Result;
 using System;
 
-namespace TransportHub.Services;
+namespace TransportHub.Core.Services;
 
 public interface IPageFactory
 {

@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Lindronics.OneOf.Result" Version="0.2.0" />
+    <PackageReference Include="OneOf" Version="3.0.255" />
+  </ItemGroup>
+
 </Project>

@@ -1,8 +1,9 @@
 using TransportHub.Common;
 using System;
 using System.Net.Http;
+using TransportHub.Services;
 
-namespace TransportHub.Services.Impl;
+namespace TransportHub.Core.Services.Impl;
 
 internal class HttpClientFactory : IHttpClientFactory
 {

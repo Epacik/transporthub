@@ -1,11 +1,11 @@
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
-using TransportHub.Assets.Icons;
+using TransportHub.Core.Assets.Icons;
 using System;
 using System.Linq;
 
-namespace TransportHub.Controls;
+namespace TransportHub.Core.Controls;
 
 public partial class TablerIcon : UserControl
 {
@@ -19,7 +19,13 @@ public partial class TablerIcon : UserControl
 
     private static string? Coerce(AvaloniaObject @object, string? value)
     {
-        return value is not null ? Tabler.IconMap[value] : value;
+        if (value is null)
+            return null;
+
+        if (Tabler.IconMap.TryGetValue(value, out string? o))
+            return o;
+
+        return value;
     }
 
     public string? Icon

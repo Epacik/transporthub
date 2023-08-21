@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TransportHub.Api.Dtos;
 
 namespace TransportHub.Api;
 
@@ -14,7 +15,7 @@ public interface IAuthorizationService
     event Action? LoggedIn;
     event Action? LoggedOut;
 
-    Task<Result<bool, Exception>> Login(string? login, string? password, bool closeOtherSessions);
+    Task<Result<LoginResponseDto, Exception>> Login(string? login, string? password, bool closeOtherSessions);
     Task<Result<bool, Exception>> RefreshSession();
     Task<Result<bool, Exception>> Logout();
 }

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TransportHub.Extensions;
+namespace TransportHub.Core.Extensions;
 
 internal static class ColorExtensions
 {

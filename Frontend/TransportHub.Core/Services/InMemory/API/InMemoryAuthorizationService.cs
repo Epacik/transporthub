@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TransportHub.Api.Dtos;
 
 namespace TransportHub.Services.InMemory.API
 {
@@ -15,7 +16,7 @@ namespace TransportHub.Services.InMemory.API
         public event Action? LoggedIn;
         public event Action? LoggedOut;
 
-        public async Task<Result<bool, Exception>> Login(string? login, string? password, bool closeOtherSessions)
+        public async Task<Result<LoginResponseDto, Exception>> Login(string? login, string? password, bool closeOtherSessions)
         {
             await Task.Yield();
             if (string.IsNullOrWhiteSpace(login))
@@ -31,7 +32,11 @@ namespace TransportHub.Services.InMemory.API
             IsLoggedIn = true;
             LoggedIn?.Invoke();
 
-            return true;
+            return new LoginResponseDto
+            {
+                User = login,
+                Key = "",
+            };
         }
 
         public async Task<Result<bool, Exception>> Logout()

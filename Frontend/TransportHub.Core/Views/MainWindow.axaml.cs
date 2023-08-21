@@ -2,9 +2,9 @@ using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Media;
 using FluentAvalonia.UI.Windowing;
-using TransportHub.Extensions;
+using TransportHub.Core.Extensions;
 
-namespace TransportHub.Views;
+namespace TransportHub.Core.Views;
 
 public partial class MainWindow : AppWindow
 {

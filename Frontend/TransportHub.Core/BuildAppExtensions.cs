@@ -1,8 +1,8 @@
 using Autofac;
 using Avalonia;
-using TransportHub.Extensions;
-using TransportHub.ViewModels;
-using TransportHub.Views;
+using TransportHub.Core.Extensions;
+using TransportHub.Core.ViewModels;
+using TransportHub.Core.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,38 +10,40 @@ using System.Text;
 using System.Threading.Tasks;
 using TransportHub.Common;
 using System.Net.Http;
-using TransportHub.Services.Impl;
+using TransportHub.Core.Services.Impl;
 using TransportHub.Services;
 using FluentAvalonia.UI.Controls;
 using System.Configuration;
 using TransportHub.Services.InMemory.API;
 using TransportHub.Api;
 using TransportHub.Api.Impl;
+using TransportHub.Core.Views;
+using TransportHub.Core.ViewModels;
+using TransportHub.Services.Impl;
+using TransportHub.Core.Services;
 
-namespace TransportHub;
+namespace TransportHub.Core;
 
 public static class BuildAppExtensions
 {
     public static AppBuilder ConfigureTransportHub(
         this AppBuilder builder,
-        Action<ContainerBuilder>? addServices = null)
+        Action<ContainerBuilder>? addServices = null,
+        bool isDemoMode = false)
     {
-        builder.ConfigureAutofac(addServices);
+        builder.ConfigureAutofac(addServices, isDemoMode);
         return builder;
     }
 
-    public static AppBuilder ConfigureAutofac(this AppBuilder builder, Action<ContainerBuilder>? addServices)
+    public static AppBuilder ConfigureAutofac(
+        this AppBuilder builder,
+        Action<ContainerBuilder>? addServices,
+        bool isDemoMode)
     {
-        var configFile = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.PerUserRoaming);
-        var settings = configFile.AppSettings.Settings;
-        var key = Settings.DemoMode.ToString();
-
-        
 
         var containerBuilder = new ContainerBuilder();
 
-        if (settings.AllKeys.Contains(key) &&
-            string.Equals(settings[key].Value, bool.TrueString, StringComparison.OrdinalIgnoreCase))
+        if (isDemoMode)
         {
             containerBuilder = containerBuilder.LoadMockServices();
         }
@@ -77,10 +79,8 @@ public static class BuildAppExtensions
 
     public static ContainerBuilder LoadCommonServices(this ContainerBuilder builder)
     {
-        builder.RegisterType<SettingsService>().As<ISettingsService>();
         builder.RegisterType<HttpClientFactory>().As<IHttpClientFactory>();
         builder.RegisterType<PageFactory>().As<IPageFactory>();
-        builder.RegisterType<DialogService>().As<IDialogService>();
         builder.RegisterType<NavigationService>().As<INavigationService>();
         builder.RegisterType<SystemInfoService>().As<ISystemInfoService>();
 
@@ -93,8 +93,11 @@ public static class BuildAppExtensions
         builder.RegisterType<MainViewModel>().AsSelf().SingleInstance();
         builder.RegisterType<MainView>().BindToViewModel<MainView, MainViewModel>().SingleInstance();
         builder.RegisterViewModelBinding<LoginView, LoginViewModel>(Routes.Login);
-        builder.RegisterViewModelBinding<DashboardView, DashboardViewModel>(Routes.Dashboard);
         builder.RegisterViewModelBinding<StartupSettingsView, StartupSettingsViewModel>(Routes.StartupSettings);
+        builder.RegisterViewModelBinding<DashboardView, DashboardViewModel>(Routes.Dashboard);
+        builder.RegisterViewModelBinding<OrdersView, OrdersViewModel>(Routes.Orders);
+        builder.RegisterViewModelBinding<SettingsView, SettingsViewModel>(Routes.Settings);
+        builder.RegisterViewModelBinding<UsersView, UsersViewModel>(Routes.Users);
         return builder;
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TransportHub.Exceptions;
+namespace TransportHub.Core.Exceptions;
 
 internal class ItemNotFoundException : Exception
 {

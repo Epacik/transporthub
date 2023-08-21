@@ -3,7 +3,7 @@ using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 using System.Resources;
 
-namespace TransportHub.Views;
+namespace TransportHub.Core.Views;
 
 public partial class AboutView : UserControl
 {
@@ -12,7 +12,7 @@ public partial class AboutView : UserControl
     public AboutView()
     {
         InitializeComponent();
-       // _resourceManager = new ResourceManager("TransportHub.Resources.Licenses", typeof(AboutView).Assembly);
+       // _resourceManager = new ResourceManager("TransportHub.Core.Resources.Licenses", typeof(AboutView).Assembly);
 
     }
 }

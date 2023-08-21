@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Autofac.Core.Resolving.Pipeline;
 using Avalonia.Controls;
 
-namespace TransportHub.Extensions;
+namespace TransportHub.Core.Extensions;
 
 internal static class AutofacExtensions
 {

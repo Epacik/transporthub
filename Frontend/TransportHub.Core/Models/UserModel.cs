@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TransportHub.Models
+namespace TransportHub.Core.Models
 {
     internal class UserModel
     {

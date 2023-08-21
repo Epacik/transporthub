@@ -20,9 +20,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TransportHub.Api", "TransportHub.Api\TransportHub.Api.csproj", "{A2D0F915-180A-46A7-B2C0-BB44F7C020A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransportHub.Common", "TransportHub.Common\TransportHub.Common.csproj", "{3B7084BB-E7C2-4977-80F9-F2EB07153089}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TransportHub.Common", "TransportHub.Common\TransportHub.Common.csproj", "{3B7084BB-E7C2-4977-80F9-F2EB07153089}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransportHub.Services", "TransportHub.Services\TransportHub.Services.csproj", "{9F5D0451-8C19-4AFB-A461-6E2B63455832}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TransportHub.Services", "TransportHub.Services\TransportHub.Services.csproj", "{9F5D0451-8C19-4AFB-A461-6E2B63455832}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,6 +48,7 @@ Global
 		{EBD9022F-BC83-4846-9A11-6F7F3772DC64}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7AD1DAC8-7FBE-49D5-8614-7321233DB82E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7AD1DAC8-7FBE-49D5-8614-7321233DB82E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AD1DAC8-7FBE-49D5-8614-7321233DB82E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{7AD1DAC8-7FBE-49D5-8614-7321233DB82E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7AD1DAC8-7FBE-49D5-8614-7321233DB82E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A2D0F915-180A-46A7-B2C0-BB44F7C020A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU

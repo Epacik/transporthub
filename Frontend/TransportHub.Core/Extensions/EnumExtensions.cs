@@ -7,9 +7,9 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TransportHub.Extensions;
+namespace TransportHub.Core.Extensions;
 
-internal static class EnumExtensions
+public static class EnumExtensions
 {
     public static T? DefaultValue<T>(this Settings setting)
     {

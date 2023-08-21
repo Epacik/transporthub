@@ -1,4 +1,4 @@
-using TransportHub.Extensions;
+using TransportHub.Core.Extensions;
 using TransportHub.Common;
 using System;
 using System.Collections.Generic;
@@ -8,9 +8,9 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+using TransportHub.Services;
 
-namespace TransportHub.Services.Impl;
+namespace TransportHub.Desktop.Services;
 
 internal class SettingsService : ISettingsService
 {

@@ -8,15 +8,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using TransportHub.Views;
+using TransportHub.Core.Views;
+using FluentAvalonia.UI.Controls;
 
-namespace TransportHub.AttachedProperties;
+namespace TransportHub.Core.AttachedProperties;
 
 public class Navigation : AvaloniaObject
 {
     static Navigation()
     {
-        HeaderProperty.Changed.AddClassHandler<Button>(HandleHeaderChanged);
+        
     }
 
     public static readonly AttachedProperty<Control?> HeaderProperty =
@@ -31,7 +32,16 @@ public class Navigation : AvaloniaObject
         return element.GetValue(HeaderProperty);
     }
 
-    private static void HandleHeaderChanged(AvaloniaObject target, AvaloniaPropertyChangedEventArgs args)
+    public static readonly AttachedProperty<string?> RouteProperty =
+        AvaloniaProperty.RegisterAttached<Navigation, NavigationViewItem, string?>("Route", inherits: false);
+
+    public static void SetRoute(NavigationViewItem element, string? route)
     {
+        element.SetValue(RouteProperty, route);
+    }
+
+    public static string? GetRoute(NavigationViewItem element)
+    {
+        return element.GetValue(RouteProperty);
     }
 }

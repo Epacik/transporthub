@@ -3,15 +3,15 @@ using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
-using TransportHub.ViewModels;
-using TransportHub.Views;
+using TransportHub.Core.ViewModels;
+using TransportHub.Core.Views;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Reflection;
 using System.Threading.Tasks;
 
-namespace TransportHub;
+namespace TransportHub.Core;
 
 public partial class App : Application, IDisposable
 {

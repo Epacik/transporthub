@@ -2,11 +2,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:ap="using:TransportHub.AttachedProperties"
-             xmlns:vm="using:TransportHub.ViewModels"
-             xmlns:controls="using:TransportHub.Controls"
+             xmlns:ap="using:TransportHub.Core.AttachedProperties"
+             xmlns:vm="using:TransportHub.Core.ViewModels"
+             xmlns:controls="using:TransportHub.Core.Controls"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="TransportHub.Views.LoginView"
+             x:Class="TransportHub.Core.Views.LoginView"
              x:DataType="vm:LoginViewModel">
     <ap:Navigation.Header>
         <ContentControl ContentTemplate="{StaticResource AppNameStyled}"
@@ -38,8 +38,12 @@
             </StackPanel.Styles>
             <TextBlock FontSize="40">logowanie</TextBlock>
             <TextBox Watermark="Login" Text="{Binding Login}"/>
-            <TextBox Watermark="Hasło" PasswordChar="*" Text="{Binding Password}"/> 
-            <Button Background="{StaticResource AppColor}" Command="{Binding LoginUser}">Zaloguj</Button>
+            <TextBox Watermark="Hasło" PasswordChar="*" Text="{Binding Password}" KeyDown="PassBox_KeyDown" />
+            <Button Background="{StaticResource AppColor}"
+                    Command="{Binding LoginUser}"
+                    Padding="10">
+                    Zaloguj
+                </Button>
         </StackPanel>
 
     </Grid>

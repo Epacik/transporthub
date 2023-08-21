@@ -1,9 +1,9 @@
 <Application xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="using:TransportHub"
+             xmlns:local="using:TransportHub.Core"
              xmlns:sty="using:FluentAvalonia.Styling"
              xmlns:system="using:System"
-             x:Class="TransportHub.App"
+             x:Class="TransportHub.Core.App"
              RequestedThemeVariant="Default">
              <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
 

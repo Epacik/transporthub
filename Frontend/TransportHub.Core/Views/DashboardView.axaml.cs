@@ -2,7 +2,7 @@ using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
-namespace TransportHub.Views;
+namespace TransportHub.Core.Views;
 
 public partial class DashboardView : UserControl
 {

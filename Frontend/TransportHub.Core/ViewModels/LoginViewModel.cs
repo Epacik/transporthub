@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 using Serilog;
 using Serilog.Events;
 
-namespace TransportHub.ViewModels;
+namespace TransportHub.Core.ViewModels;
 
 public partial class LoginViewModel : ObservableObject
 {
@@ -50,22 +50,30 @@ public partial class LoginViewModel : ObservableObject
 
     public async Task LoginUser()
     {
-        var result = await _authorizationService.Login(Login, Password, true);
-
-        if (result.IsError)
+        try
         {
-            await _dialogService.ShowAlertAsync("Błąd logowania", result.UnwrapErr().Message);
-            return;
+            var result = await _authorizationService.Login(Login, Password, true);
+
+            if (result.IsError)
+            {
+                await _dialogService.ShowAlertAsync("Błąd logowania", result.UnwrapErr().Message);
+                return;
+            }
+
+            var isLoggedIn = result.Unwrap();
+
+            //if (!isLoggedIn)
+            //{
+            //    await _dialogService.ShowAlertAsync("Błąd logowania", "Logowanie nie powiodło się");
+            //    return;
+            //}
+
+            await _navigationService.NavigateToAsync(Routes.Dashboard);
         }
-
-        var isLoggedIn = result.Unwrap();
-
-        if (!isLoggedIn)
+        catch (Exception ex)
         {
-            await _dialogService.ShowAlertAsync("Błąd logowania", "Logowanie nie powiodło się");
-            return;
+            _logger.Error(ex, "An error occured");
+            throw;
         }
-
-        await _navigationService.NavigateToAsync(Routes.Dashboard);
     }
 }

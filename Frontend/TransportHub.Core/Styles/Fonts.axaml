@@ -1,5 +1,5 @@
 <ResourceDictionary xmlns="https://github.com/avaloniaui"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <!-- Add Resources Here -->
-    <FontFamily x:Key="TablerIcons">avares://TransportHub/Assets/Icons/tabler/tabler-icons.ttf?assembly=TransportHub#tabler-icons</FontFamily>
+    <FontFamily x:Key="TablerIcons">avares://TransportHub.Core/Assets/Icons/tabler/tabler-icons.ttf?assembly=TransportHub.Core#tabler-icons</FontFamily>
 </ResourceDictionary>

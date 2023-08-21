@@ -2,9 +2,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:local="using:TransportHub.Controls"
+             xmlns:local="using:TransportHub.Core.Controls"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="TransportHub.Controls.TablerIcon"
+             x:Class="TransportHub.Core.Controls.TablerIcon"
              x:Name="Self">
   <TextBlock FontFamily="../Assets/Icons/tabler/tabler-icons.ttf#tabler-icons"
              Text="{CompiledBinding Icon, Source={ResolveByName Self}, DataType={x:Type local:TablerIcon}}"

@@ -3,12 +3,13 @@ using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 using FluentAvalonia.UI.Controls;
-using TransportHub.Extensions;
+using TransportHub.Core.Extensions;
 using TransportHub.Api;
-using TransportHub.ViewModels;
+using TransportHub.Core.ViewModels;
 using System;
+using System.ComponentModel;
 
-namespace TransportHub.Views;
+namespace TransportHub.Core.Views;
 
 public partial class MainView : UserControl
 {
@@ -19,9 +20,43 @@ public partial class MainView : UserControl
     public MainView(IAuthorizationService authorizationService)
     {
         InitializeComponent();
-        nvSample.BackRequested += NvSample_BackRequested;
+        Navigation.BackRequested += NvSample_BackRequested;
+        Navigation.PaneClosed += (s, e) => ResetIconSize();
+        Navigation.PaneOpened += (s, e) => ResetIconSize();
         _authorizationService = authorizationService;
         _authorizationService.LoggedIn += AuthorizationService_Authorized;
+    }
+
+    protected override void OnSizeChanged(SizeChangedEventArgs e)
+    {
+        base.OnSizeChanged(e);
+
+        if (ViewModel != null )
+        {
+            ViewModel.VerticalButtons = e.NewSize.Width >= 640;
+        } 
+    }
+
+    private void Navigation_PropertyChanged(object? sender, AvaloniaPropertyChangedEventArgs e)
+    {
+        var prop = e.Property.Name;
+        if(prop == nameof(NavigationView.MenuItemsSource) || prop == nameof(NavigationView.FooterMenuItemsSource))
+        {
+            ResetIconSize();
+        }
+    }
+
+    private void ResetIconSize()
+    {
+        var desc = Navigation.FindVisualDescendants<Viewbox>();
+
+        if (desc.IsOk)
+        {
+            foreach (var box in desc.Unwrap())
+            {
+                box.Height = 24;
+            }
+        }
     }
 
     private void AuthorizationService_Authorized()

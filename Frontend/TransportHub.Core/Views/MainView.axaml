@@ -3,19 +3,29 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:ap="using:TransportHub.AttachedProperties"
+    xmlns:ap="using:TransportHub.Core.AttachedProperties"
     xmlns:fac="using:FluentAvalonia.UI.Controls"
-    xmlns:vm="using:TransportHub.ViewModels"
+    xmlns:ctrl="using:TransportHub.Core.Controls"
+    xmlns:vm="using:TransportHub.Core.ViewModels"
+    xmlns:models="using:TransportHub.Core.Models"
     mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-    x:Class="TransportHub.Views.MainView"
-    x:DataType="vm:MainViewModel">
+    x:Class="TransportHub.Core.Views.MainView"
+    x:DataType="vm:MainViewModel"
+    x:Name="NavigationControl">
+
+    <UserControl.Styles>
+        <Style Selector="UserControl#NavigationControl">
+            
+        </Style>
+    </UserControl.Styles>
+    
     <UserControl.Resources>
         <ResourceDictionary>
             <Thickness x:Key="NavigationViewContentMargin">0,44,0,0</Thickness>
         </ResourceDictionary>
     </UserControl.Resources>
 
-    <Grid RowDefinitions="Auto,*">
+    <Grid RowDefinitions="Auto,*" Margin="{Binding ContentMargin}">
         <StackPanel Height="44" Orientation="Horizontal">
             <Rectangle Width="{Binding TitleMargin}" >
                 <Rectangle.Transitions>
@@ -33,45 +43,42 @@
         </StackPanel>
         <fac:NavigationView
             Grid.RowSpan="2"
-            x:Name="nvSample"
+            x:Name="Navigation"
             IsPaneToggleButtonVisible="{Binding ShowPane}"
-            PaneDisplayMode="LeftMinimal"
             AlwaysShowHeader="True"
             Header="{Binding Header}"
             IsBackButtonVisible="{Binding ShowBackButton}"
             IsBackEnabled="True"
             Classes.PaneToggleButtonVisible="{Binding ShowPane}"
+            SelectedItem="{Binding SelectedNavItem}"
+            MenuItemsSource="{Binding NavItems}"
+            FooterMenuItemsSource="{Binding FooterItems}"
+            IsSettingsVisible="False"
+            OpenPaneLength="200"
             Padding="15">
             <fac:NavigationView.Styles>
+                <Style Selector="fac|NavigationView">
+                    <Setter Property="PaneDisplayMode" Value="LeftMinimal"/>
+                </Style>
                 <Style Selector="fac|NavigationView.PaneToggleButtonVisible">
                     <Setter Property="PaneDisplayMode" Value="Auto"/>
                 </Style>
             </fac:NavigationView.Styles>
-            <!--<fac:NavigationView.Header>
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="transport" FontWeight="Bold"/>
-                    <TextBlock Text="hub" Foreground="{StaticResource AppColor}" FontWeight="Bold"/>
-                </StackPanel>
-            </fac:NavigationView.Header>-->
 
             <fac:NavigationView.Content>
                 <Border Padding="15" Child="{Binding Content}"/>
             </fac:NavigationView.Content>
-
-            <!--<fac:NavigationView.Content>
-                <TransitioningContentControl Content="{Binding Content}" Padding="10"  >
-                    <TransitioningContentControl.PageTransition>
-                        <PageSlide Duration="0:00:00.050" Orientation="Horizontal"/>
-                    </TransitioningContentControl.PageTransition>
-                </TransitioningContentControl>
-            </fac:NavigationView.Content>-->
-
-            <fac:NavigationView.MenuItems>
-                <fac:NavigationViewItem Content="Menu Item1" Tag="SamplePage1" IconSource="Play" />
-                <fac:NavigationViewItem Content="Menu Item2" Tag="SamplePage2" IconSource="Save" />
-                <fac:NavigationViewItem Content="Menu Item3" Tag="SamplePage3" IconSource="Refresh" />
-                <fac:NavigationViewItem Content="Menu Item4" Tag="SamplePage4" IconSource="Download" />
-            </fac:NavigationView.MenuItems>
+            <fac:NavigationView.MenuItemTemplate>
+                <DataTemplate>
+                    <fac:NavigationViewItem Content="{Binding Text}" x:DataType="models:NavItem">
+                        
+                        <fac:NavigationViewItem.IconSource>
+                            <ctrl:TablerIconSource Glyph="{Binding Icon}"
+                                                   FontWeight="ExtraLight"/>
+                        </fac:NavigationViewItem.IconSource>
+                    </fac:NavigationViewItem>
+                </DataTemplate>
+            </fac:NavigationView.MenuItemTemplate>
         </fac:NavigationView>
     </Grid>
 </UserControl>

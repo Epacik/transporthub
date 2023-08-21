@@ -7,6 +7,15 @@ using Serilog;
 using Serilog.Enrichers.Sensitive;
 using Serilog.Exceptions;
 using Serilog.Sinks.Discord;
+using System.Configuration;
+using System;
+using TransportHub.Android.Services;
+using TransportHub.Services;
+using TransportHub.Common;
+using Android.Views;
+using Android.Graphics;
+using AndroidX.Core.View;
+using TransportHub.Core;
 
 namespace TransportHub.Android;
 
@@ -18,10 +27,17 @@ namespace TransportHub.Android;
     ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize | ConfigChanges.UiMode)]
 public class MainActivity : AvaloniaMainActivity<App>
 {
+    public MainActivity()
+    {
+        Current = this;
+        this.Window?.SetSoftInputMode(SoftInput.AdjustResize);
+        Window?.SetStatusBarColor(Color.White);
+    }
+
     protected override AppBuilder CustomizeAppBuilder(AppBuilder builder)
     {
         return base.CustomizeAppBuilder(builder)
-            .ConfigureTransportHub(AddServices)
+            .ConfigureTransportHub(AddServices, IsDemoMode)
             .WithInterFont();
     }
 
@@ -46,5 +62,18 @@ public class MainActivity : AvaloniaMainActivity<App>
             .Enrich.WithSensitiveDataMasking(options)
             .Enrich.FromLogContext()
             .CreateLogger());
+
+        builder.RegisterType<DialogService>().As<IDialogService>();
+        builder.RegisterType<SettingsService>().As<ISettingsService>();
+        builder.Register<IOnScreenKeyboardService>(x =>
+        {
+            var rootView = this.Window!.DecorView!.RootView;
+            var listener = new LayoutListener(rootView!);
+            return new OnScreenKayboardService(listener);
+        });
     }
+
+    private static bool IsDemoMode => new SettingsService().ReadBool(Settings.DemoMode);
+
+    public static MainActivity? Current { get; private set; }
 }
