@@ -2,6 +2,7 @@ using TransportHub.Common;
 using System;
 using System.Net.Http;
 using TransportHub.Services;
+using System.Net.Http.Headers;
 
 namespace TransportHub.Core.Services.Impl;
 
@@ -16,17 +17,29 @@ internal class HttpClientFactory : IHttpClientFactory
 
     public HttpClient Create()
     {
-        var uri = _settingsService.Read(Settings.IpAddress, "http://127.0.0.1:8080");
+        var uri = _settingsService.Read(Settings.IpAddress, DefaultValues.ServerAddress);
         return Create(uri);
     }
 
-    public HttpClient Create(Uri uri)
+    public HttpClient Create(Uri uri, string? username = null, string? password = null)
     {
-        return new HttpClient
+        var client = new HttpClient
         {
             BaseAddress = uri,
         };
+
+        if (username is not null || password is not null)
+        {
+            var val = $"{username}:{password}";
+            var valueBytes = System.Text.Encoding.UTF8.GetBytes(val);
+            var base64 = System.Convert.ToBase64String(valueBytes);
+            client.DefaultRequestHeaders.Authorization =
+                 new AuthenticationHeaderValue("Bearer", base64);
+        }
+
+        return client;
     }
 
-    public HttpClient Create(string uri) => Create(new Uri(uri));
+    public HttpClient Create(string uri, string? username = null, string? password = null)
+        => Create(new Uri(uri), username, password);
 }

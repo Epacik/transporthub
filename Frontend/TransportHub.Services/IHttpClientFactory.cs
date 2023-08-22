@@ -6,6 +6,6 @@ namespace TransportHub.Services;
 public interface IHttpClientFactory
 {
     HttpClient Create();
-    HttpClient Create(Uri uri);
-    HttpClient Create(string uri);
+    HttpClient Create(Uri uri, string? username = null, string? password = null);
+    HttpClient Create(string uri, string? username = null, string? password = null);
 }

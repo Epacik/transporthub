@@ -8,6 +8,7 @@ using TransportHub.Api;
 using TransportHub.Core.ViewModels;
 using System;
 using System.ComponentModel;
+using TransportHub.Api.Dtos;
 
 namespace TransportHub.Core.Views;
 
@@ -59,7 +60,7 @@ public partial class MainView : UserControl
         }
     }
 
-    private void AuthorizationService_Authorized()
+    private void AuthorizationService_Authorized(LoginResponseDto responseDto)
     {
 
         var borderResult = this.FindVisualDescendant<Border>("ContentGridBorder");

@@ -13,7 +13,7 @@ namespace TransportHub.Services.InMemory.API
     {
         public bool IsLoggedIn { get; set; }
 
-        public event Action? LoggedIn;
+        public event Action<LoginResponseDto>? LoggedIn;
         public event Action? LoggedOut;
 
         public async Task<Result<LoginResponseDto, Exception>> Login(string? login, string? password, bool closeOtherSessions)
@@ -29,21 +29,25 @@ namespace TransportHub.Services.InMemory.API
                 return new ArgumentException("Hasło nie może być puste", nameof(password));
             }
 
-            IsLoggedIn = true;
-            LoggedIn?.Invoke();
 
-            return new LoginResponseDto
+            IsLoggedIn = true;
+
+            var response = new LoginResponseDto
             {
                 User = login,
                 Key = "",
             };
+
+            LoggedIn?.Invoke(response);
+
+            return response;
         }
 
         public async Task<Result<bool, Exception>> Logout()
         {
             await Task.Delay(1000);
-            IsLoggedIn = true;
-            LoggedIn?.Invoke();
+            IsLoggedIn = false;
+            LoggedOut?.Invoke();
             return true;
         }
 

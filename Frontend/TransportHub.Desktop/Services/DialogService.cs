@@ -38,7 +38,6 @@ public class DialogService : IDialogService
             var box = MessageBoxManager
                 .GetMessageBoxStandard(title, message, ButtonEnum.Ok);
 
-
             try
             {
                 if (Avalonia.Application.Current.ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)

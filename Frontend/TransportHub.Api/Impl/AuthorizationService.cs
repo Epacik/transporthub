@@ -12,6 +12,7 @@ public class AuthorizationService : IAuthorizationService
 {
     private readonly ISettingsService _settingsService;
     private readonly IHttpClientFactory _httpClientFactory;
+    private LoginResponseDto? _userData;
 
     public AuthorizationService(
         ISettingsService settingsService,
@@ -22,7 +23,7 @@ public class AuthorizationService : IAuthorizationService
     }
     public bool IsLoggedIn => false;
 
-    public event Action? LoggedIn;
+    public event Action<LoginResponseDto>? LoggedIn;
     public event Action? LoggedOut;
 
     public async Task<Result<LoginResponseDto, Exception>> Login(string? login, string? password, bool closeOtherSessions)
@@ -34,8 +35,8 @@ public class AuthorizationService : IAuthorizationService
             return new ArgumentNullException(nameof(password));
 
 
-        var uri = _settingsService.Read(Settings.IpAddress, "127.0.0.1");
-        var client = _httpClientFactory.Create($"http://{uri}/api/v1/");
+        var uri = _settingsService.Read(Settings.IpAddress, DefaultValues.ServerAddress);
+        var client = _httpClientFactory.Create(uri);
 
         var dto = new LoginRequestDto
         {
@@ -70,22 +71,46 @@ public class AuthorizationService : IAuthorizationService
             return new LoginFailedException(content);
         }
 
-        var res = Throwable.ToResult(() => JsonSerializer.Deserialize<LoginResponseDto>(content));
+        var res = Throwable.ToResult(() => JsonSerializer.Deserialize<LoginResponseDto>(content, Serializer.GetSerializerOptions()));
 
         return res.Match<Result<LoginResponseDto, Exception>>(
             ok =>
             {
                 if (ok is not null)
+                {
+                    LoggedIn?.Invoke(ok);
+                    _userData = ok;
                     return ok;
+                }
 
                 return new InvalidResponseException();
             },
             err => err);
     }
 
-    public Task<Result<bool, Exception>> Logout()
+    public async Task<Result<bool, Exception>> Logout()
     {
-        throw new NotImplementedException();
+        var uri = _settingsService.Read(Settings.IpAddress, DefaultValues.ServerAddress);
+        var client = _httpClientFactory.Create(uri, _userData?.User, _userData?.Key);
+
+        var response = await Throwable.ToResultAsync(
+            async () => await client.PostAsync(
+                "auth/logout",
+                new StringContent("")));
+
+        if (response.IsError)
+            return response.UnwrapErr();
+
+        var message = response.Unwrap();
+
+        var content = await message.Content.ReadAsStringAsync();
+
+        if (!message.IsSuccessStatusCode)
+        {
+            return new LogoutFailedException(content);
+        }
+
+        return true;
     }
 
     public Task<Result<bool, Exception>> RefreshSession()

@@ -22,6 +22,7 @@
     <UserControl.Resources>
         <ResourceDictionary>
             <Thickness x:Key="NavigationViewContentMargin">0,44,0,0</Thickness>
+            <Thickness x:Key="NavigationViewMinimalContentMargin">0,44,0,0</Thickness>
         </ResourceDictionary>
     </UserControl.Resources>
 

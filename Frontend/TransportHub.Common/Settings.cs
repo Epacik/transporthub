@@ -5,7 +5,7 @@ namespace TransportHub.Common;
 
 public enum Settings
 {
-    [DefaultValue("127.0.0.1:8080")]
+    [DefaultValue(DefaultValues.ServerAddress)]
     IpAddress,
     [DefaultValue(false)]
     DemoMode,

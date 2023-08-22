@@ -19,6 +19,8 @@ using TransportHub.Core.Models;
 using TransportHub.Core.Services;
 using Avalonia.Threading;
 using System.Linq;
+using TransportHub.Api.Dtos;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace TransportHub.Core.ViewModels;
 
@@ -31,6 +33,7 @@ public partial class MainViewModel : ObservableObject
     private readonly IOnScreenKeyboardService _onScreenKeyboardService;
     private readonly Stack<(string Route, Control Page, Dictionary<string, object>? parameters)> _navigationStack = new();
 
+    private string? _currentRoute;
     private bool _disableOnSelectedNavItemChanged = false;
     #region properties
 
@@ -38,12 +41,13 @@ public partial class MainViewModel : ObservableObject
     public bool _showPane = false;
     public bool ShowBackButton => _navigationStack.Count >= 2;
     //public NavigationViewPaneDisplayMode PaneDisplayMode => ShowPane ? NavigationViewPaneDisplayMode.Auto : NavigationViewPaneDisplayMode.LeftMinimal;
-    public double TitleMargin => (_navigationStack.Count >= 2 && !VerticalButtons, ShowPane) switch
-    {
-        (true, true) => 88,
-        (true, false) or (false, true) => 44,
-        _ => 0
-    };
+    public double TitleMargin =>
+        ((_navigationStack.Count >= 2 && !VerticalButtons) || _currentRoute == Routes.StartupSettings, ShowPane) switch
+        {
+            (true, true) => 88,
+            (true, false) or (false, true) => 44,
+            _ => 0
+        };
     public bool ShowTitle => Content is not LoginView && _systemInfoService.IsDesktop;
     public Control? Header => Content is not null ? Navigation.GetHeader(Content) : null;
 
@@ -53,12 +57,30 @@ public partial class MainViewModel : ObservableObject
     [ObservableProperty]
     private NavItem? _selectedNavItem;
 
-    partial void OnSelectedNavItemChanged(NavItem? value)
+    partial void OnSelectedNavItemChanged(NavItem? oldValue, NavItem? newValue)
     {
         if (_disableOnSelectedNavItemChanged)
             return;
 
-        Task.Run(async () => await NavigateToAsync(value?.Route, null, false))
+        if (string.IsNullOrEmpty(newValue?.Route))
+        {
+            _disableOnSelectedNavItemChanged = true;
+            SelectedNavItem = oldValue;
+            _disableOnSelectedNavItemChanged = false;
+
+            Task.Run(() => _dialogService.ShowConfirmation("Wyloguj się", "Czy chcesz się wylogować?"))
+                .ContinueWith(async t =>
+                {
+                    if (t.IsCompleted && t.Result)
+                    {
+                        _ = await _authorizationService.Logout();
+                        await NavigateToAsync(Routes.Login, null);
+                    }
+                });
+            return;
+        }
+
+        Task.Run(async () => await NavigateToAsync(newValue?.Route, null, false))
             .ContinueWith(t =>
             {
             });
@@ -76,6 +98,7 @@ public partial class MainViewModel : ObservableObject
     {
         new("Użytkownicy", Tabler.Users, Routes.Users),
         new("Ustawienia", Tabler.Settings, Routes.Settings),
+        new("Wyloguj", Tabler.Logout, ""),
     };
 
     partial void OnContentChanged(Control? value)
@@ -130,7 +153,7 @@ public partial class MainViewModel : ObservableObject
         ContentMargin = new Thickness(0, 0, 0, obj);
     }
 
-    private void AuthorizationService_Authorized()
+    private void AuthorizationService_Authorized(LoginResponseDto responseDto)
     {
         ShowPane = true;
         _navigationStack.Clear();
@@ -151,6 +174,7 @@ public partial class MainViewModel : ObservableObject
         }
 
         Content = next.Page;
+        _currentRoute = next.Route;
 
         if (Content.DataContext is INavigationAwareViewModel model)
         {
@@ -167,10 +191,22 @@ public partial class MainViewModel : ObservableObject
     {
         return Dispatcher.UIThread.InvokeAsync(async () =>
         {
-            if (_navigationStack.TryPeek(out var old) &&
-           old.Page.DataContext is INavigationAwareViewModel oldModel)
+            if (_navigationStack.TryPeek(out var old))
             {
-                await oldModel.OnNavigatedFrom();
+                if (old.Page.DataContext is INavigationAwareViewModel oldModel)
+                {
+                    await oldModel.OnNavigatedFrom();
+                }
+
+                if (old.Route == Routes.Login && route != Routes.StartupSettings)
+                {
+                    _navigationStack.Clear();
+                }
+
+                if (old.Route == route)
+                {
+                    return;
+                }
             }
 
             var page = _pageFactory
@@ -180,6 +216,7 @@ public partial class MainViewModel : ObservableObject
                     err => _pageFactory.GetInvalidPage(err.Message));
 
             Content = page;
+            _currentRoute = route;
 
             if (page.DataContext is INavigationAwareViewModel model)
             {
@@ -211,7 +248,7 @@ public partial class MainViewModel : ObservableObject
     private void UpdateHeaderAndBackButton()
     {
         OnPropertyChanged(nameof(ShowBackButton));
-        //OnPropertyChanged(nameof(PaneDisplayMode));
+        OnPropertyChanged(nameof(ShowPane));
         OnPropertyChanged(nameof(TitleMargin));
     }
 }

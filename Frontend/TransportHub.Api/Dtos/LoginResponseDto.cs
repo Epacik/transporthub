@@ -8,6 +8,6 @@ namespace TransportHub.Api.Dtos;
 
 public class LoginResponseDto
 {
-    public required string User { get; set; }
-    public required string Key { get; set; }
+    public string? User { get; set; }
+    public string? Key { get; set; }
 }

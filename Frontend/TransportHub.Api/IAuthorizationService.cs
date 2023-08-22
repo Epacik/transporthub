@@ -12,7 +12,7 @@ public interface IAuthorizationService
 {
     bool IsLoggedIn { get; }
 
-    event Action? LoggedIn;
+    event Action<LoginResponseDto>? LoggedIn;
     event Action? LoggedOut;
 
     Task<Result<LoginResponseDto, Exception>> Login(string? login, string? password, bool closeOtherSessions);

@@ -14,7 +14,7 @@ using Serilog.Events;
 
 namespace TransportHub.Core.ViewModels;
 
-public partial class LoginViewModel : ObservableObject
+public partial class LoginViewModel : ObservableObject, INavigationAwareViewModel
 {
     private readonly IAuthorizationService _authorizationService;
     private readonly INavigationService _navigationService;
@@ -25,6 +25,9 @@ public partial class LoginViewModel : ObservableObject
 
     [ObservableProperty]
     private string? _password;
+
+    [ObservableProperty]
+    private bool _enableLogin = true;
 
     public LoginViewModel(
         IAuthorizationService authorizationService,
@@ -52,6 +55,7 @@ public partial class LoginViewModel : ObservableObject
     {
         try
         {
+            EnableLogin = false;
             var result = await _authorizationService.Login(Login, Password, true);
 
             if (result.IsError)
@@ -75,5 +79,21 @@ public partial class LoginViewModel : ObservableObject
             _logger.Error(ex, "An error occured");
             throw;
         }
+        finally
+        {
+            EnableLogin = true;
+        }
+    }
+
+    public Task OnNavigatedTo(Dictionary<string, object>? parameters = null)
+    {
+        return Task.FromResult(true);
+    }
+
+    public async Task OnNavigatedFrom()
+    {
+        await Task.Yield();
+        Login = "";
+        Password = "";
     }
 }

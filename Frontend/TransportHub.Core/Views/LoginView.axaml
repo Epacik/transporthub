@@ -41,7 +41,8 @@
             <TextBox Watermark="Hasło" PasswordChar="*" Text="{Binding Password}" KeyDown="PassBox_KeyDown" />
             <Button Background="{StaticResource AppColor}"
                     Command="{Binding LoginUser}"
-                    Padding="10">
+                    Padding="10"
+                    IsEnabled="{Binding EnableLogin}">
                     Zaloguj
                 </Button>
         </StackPanel>
