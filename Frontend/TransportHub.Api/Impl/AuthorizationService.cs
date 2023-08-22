@@ -12,14 +12,22 @@ public class AuthorizationService : IAuthorizationService
 {
     private readonly ISettingsService _settingsService;
     private readonly IHttpClientFactory _httpClientFactory;
+    private readonly IJsonSerializer _jsonSerializer;
     private LoginResponseDto? _userData;
+
+    private PeriodicTimer _periodicTimer;
+    private CancellationTokenSource? _cancellationTokenSource;
 
     public AuthorizationService(
         ISettingsService settingsService,
-        IHttpClientFactory httpClientFactory)
+        IHttpClientFactory httpClientFactory,
+        IJsonSerializer jsonSerializer)
     {
         _settingsService = settingsService;
         _httpClientFactory = httpClientFactory;
+        _jsonSerializer = jsonSerializer;
+
+        _periodicTimer = new PeriodicTimer(TimeSpan.FromSeconds(10));
     }
     public bool IsLoggedIn => false;
 
@@ -46,8 +54,7 @@ public class AuthorizationService : IAuthorizationService
         };
 
 
-        var jsonResult = Throwable.ToResult(
-            () => JsonSerializer.Serialize(dto, Serializer.GetSerializerOptions()));
+        var jsonResult = _jsonSerializer.Serialize(dto);
 
         if (jsonResult.IsError)
             return jsonResult.UnwrapErr();
@@ -71,7 +78,7 @@ public class AuthorizationService : IAuthorizationService
             return new LoginFailedException(content);
         }
 
-        var res = Throwable.ToResult(() => JsonSerializer.Deserialize<LoginResponseDto>(content, Serializer.GetSerializerOptions()));
+        var res = _jsonSerializer.Deserialize<LoginResponseDto>(content);
 
         return res.Match<Result<LoginResponseDto, Exception>>(
             ok =>
@@ -80,6 +87,9 @@ public class AuthorizationService : IAuthorizationService
                 {
                     LoggedIn?.Invoke(ok);
                     _userData = ok;
+
+                    StartRefreshing();
+                    
                     return ok;
                 }
 
@@ -110,11 +120,59 @@ public class AuthorizationService : IAuthorizationService
             return new LogoutFailedException(content);
         }
 
+        LoggedOut?.Invoke();
+        _cancellationTokenSource?.Cancel();
+
         return true;
     }
 
-    public Task<Result<bool, Exception>> RefreshSession()
+    public async Task<Result<bool, Exception>> RefreshSession()
     {
-        throw new NotImplementedException();
+        var uri = _settingsService.Read(Settings.IpAddress, DefaultValues.ServerAddress);
+        var client = _httpClientFactory.Create(uri, _userData?.User, _userData?.Key);
+
+        var response = await Throwable.ToResultAsync(
+           async () => await client.PostAsync(
+               "auth/refresh-token",
+               new StringContent("")));
+
+        if (response.IsError)
+            return response.UnwrapErr();
+
+        var message = response.Unwrap();
+
+        var content = await message.Content.ReadAsStringAsync();
+
+        if (!message.IsSuccessStatusCode)
+        {
+            return new RefreshTokenFailedException(content);
+        }
+
+        return true;
+    }
+
+    private void StartRefreshing()
+    {
+        async Task run()
+        {
+            while(_cancellationTokenSource?.IsCancellationRequested == false)
+            {
+                try
+                {
+                    await _periodicTimer.WaitForNextTickAsync(_cancellationTokenSource.Token);
+                    await RefreshSession();
+                    Console.Write("refreshed");
+                }
+                catch (OperationCanceledException)
+                {
+                    //swallow
+                }
+            }
+        }
+
+        _cancellationTokenSource = new CancellationTokenSource();
+
+        new Thread(async () => await run())
+        .Start();
     }
 }

@@ -83,6 +83,7 @@ public static class BuildAppExtensions
         builder.RegisterType<PageFactory>().As<IPageFactory>();
         builder.RegisterType<NavigationService>().As<INavigationService>();
         builder.RegisterType<SystemInfoService>().As<ISystemInfoService>();
+        builder.RegisterType<Serializer>().As<IJsonSerializer>();
 
         return builder;
     }

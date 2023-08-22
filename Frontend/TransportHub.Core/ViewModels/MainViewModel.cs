@@ -74,7 +74,6 @@ public partial class MainViewModel : ObservableObject
                     if (t.IsCompleted && t.Result)
                     {
                         _ = await _authorizationService.Logout();
-                        await NavigateToAsync(Routes.Login, null);
                     }
                 });
             return;
@@ -136,6 +135,7 @@ public partial class MainViewModel : ObservableObject
         _systemInfoService = systemInfoService;
         _onScreenKeyboardService = onScreenKeyboardService;
         _authorizationService.LoggedIn += AuthorizationService_Authorized;
+        _authorizationService.LoggedOut += AuthorizationService_LoggedOut;
         _onScreenKeyboardService.HeightChanged += OnScreenKeyboardService_HeightChanged;
 
         NavigateToAsync(Routes.Login, null)
@@ -146,6 +146,14 @@ public partial class MainViewModel : ObservableObject
                     await _dialogService.ShowAlertAsync("Error", t.Exception?.Message ?? "");
                 }
             });
+    }
+
+    private async void AuthorizationService_LoggedOut()
+    {
+        ShowPane = false;
+        _navigationStack.Clear();
+        UpdateHeaderAndBackButton();
+        await NavigateToAsync(Routes.Login, null);
     }
 
     private void OnScreenKeyboardService_HeightChanged(double obj)
