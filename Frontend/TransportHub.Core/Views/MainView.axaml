@@ -5,6 +5,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:ap="using:TransportHub.Core.AttachedProperties"
     xmlns:fac="using:FluentAvalonia.UI.Controls"
+    xmlns:progRing="clr-namespace:AvaloniaProgressRing;assembly=AvaloniaProgressRing"
     xmlns:ctrl="using:TransportHub.Core.Controls"
     xmlns:vm="using:TransportHub.Core.ViewModels"
     xmlns:models="using:TransportHub.Core.Models"
@@ -49,7 +50,7 @@
             AlwaysShowHeader="True"
             Header="{Binding Header}"
             IsBackButtonVisible="{Binding ShowBackButton}"
-            IsBackEnabled="True"
+            IsBackEnabled="{Binding !LoadingVisible}"
             Classes.PaneToggleButtonVisible="{Binding ShowPane}"
             SelectedItem="{Binding SelectedNavItem}"
             MenuItemsSource="{Binding NavItems}"
@@ -81,5 +82,30 @@
                 </DataTemplate>
             </fac:NavigationView.MenuItemTemplate>
         </fac:NavigationView>
+
+        <Rectangle Grid.Row="1"
+                   Fill="#44000000"
+                   IsVisible="{Binding LoadingVisible}"/>
+
+        <Border Grid.Row="1"
+                CornerRadius="5"
+                Background="White"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                IsVisible="{Binding LoadingVisible}"
+                Padding="15"
+                BoxShadow="0 5 25 2 #66000000">
+            <StackPanel Spacing="10"
+                        VerticalAlignment="Center">
+                <TextBlock Text="{Binding LoadingMessage}"
+                           HorizontalAlignment="Center"
+                           FontSize="15"/>
+                <progRing:ProgressRing Width="50" 
+                                       Height="50"
+                                       IsActive="True"
+                                       HorizontalAlignment="Center"
+                                       Foreground="Violet"/>
+            </StackPanel>
+        </Border>
     </Grid>
 </UserControl>

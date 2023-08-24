@@ -8,7 +8,7 @@ using TransportHub.Api.Dtos;
 
 namespace TransportHub.Api;
 
-internal interface IUsersService
+public interface IUsersService
 {
     Task<Result<IEnumerable<UserDto>, Exception>> ListUsers();
     Task<Result<UserDto, Exception>> GetUser(string id);

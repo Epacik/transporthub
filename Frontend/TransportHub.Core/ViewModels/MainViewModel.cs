@@ -95,7 +95,7 @@ public partial class MainViewModel : ObservableObject
     [ObservableProperty]
     private NavItem[] _footerItems =
     {
-        new("Użytkownicy", Tabler.Users, Routes.Users),
+        new("Administruj", Tabler.FileSettings, Routes.Administer),
         new("Ustawienia", Tabler.Settings, Routes.Settings),
         new("Wyloguj", Tabler.Logout, ""),
     };
@@ -117,6 +117,12 @@ public partial class MainViewModel : ObservableObject
     {
         UpdateHeaderAndBackButton();
     }
+
+    [ObservableProperty]
+    private bool _loadingVisible;
+
+    [ObservableProperty]
+    private string _loadingMessage;
 
     #endregion properties
 

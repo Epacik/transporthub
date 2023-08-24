@@ -66,6 +66,7 @@ public static class BuildAppExtensions
     public static ContainerBuilder LoadServices(this ContainerBuilder builder)
     {
         builder.RegisterType<AuthorizationService>().As<IAuthorizationService>().SingleInstance();
+        builder.RegisterType<UsersService>().As<IUsersService>();
 
         return builder.LoadCommonServices();
     }
@@ -84,6 +85,7 @@ public static class BuildAppExtensions
         builder.RegisterType<NavigationService>().As<INavigationService>();
         builder.RegisterType<SystemInfoService>().As<ISystemInfoService>();
         builder.RegisterType<Serializer>().As<IJsonSerializer>();
+        builder.RegisterType<LoadingPopupService>().As<ILoadingPopupService>();
 
         return builder;
     }
@@ -98,7 +100,10 @@ public static class BuildAppExtensions
         builder.RegisterViewModelBinding<DashboardView, DashboardViewModel>(Routes.Dashboard);
         builder.RegisterViewModelBinding<OrdersView, OrdersViewModel>(Routes.Orders);
         builder.RegisterViewModelBinding<SettingsView, SettingsViewModel>(Routes.Settings);
+        builder.RegisterViewModelBinding<AdministerView, AdministerViewModel>(Routes.Administer);
         builder.RegisterViewModelBinding<UsersView, UsersViewModel>(Routes.Users);
+        builder.RegisterViewModelBinding<DriversView, DriversViewModel>(Routes.Drivers);
+        builder.RegisterViewModelBinding<VehiclesView, VehiclesViewModel>(Routes.Vehicles);
         return builder;
     }
 }

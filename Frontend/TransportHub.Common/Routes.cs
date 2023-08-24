@@ -14,5 +14,8 @@ public static class Routes
     public const string Dashboard = "//Dashboard";
     public const string Orders = "//Orders";
     public const string Settings = "//Settings";
-    public const string Users = "//Users";
+    public const string Administer = "//Administer";
+    public const string Users = "//Administer/Users";
+    public const string Drivers = "//Administer/Drivers";
+    public const string Vehicles = "//Administer/Vehicles";
 }

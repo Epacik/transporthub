@@ -33,14 +33,14 @@ public class Navigation : AvaloniaObject
     }
 
     public static readonly AttachedProperty<string?> RouteProperty =
-        AvaloniaProperty.RegisterAttached<Navigation, NavigationViewItem, string?>("Route", inherits: false);
+        AvaloniaProperty.RegisterAttached<Navigation, Control, string?>("Route", inherits: true);
 
-    public static void SetRoute(NavigationViewItem element, string? route)
+    public static void SetRoute(Control element, string? route)
     {
         element.SetValue(RouteProperty, route);
     }
 
-    public static string? GetRoute(NavigationViewItem element)
+    public static string? GetRoute(Control element)
     {
         return element.GetValue(RouteProperty);
     }

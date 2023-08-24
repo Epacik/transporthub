@@ -11,6 +11,7 @@ namespace TransportHub.Api;
 public interface IAuthorizationService
 {
     bool IsLoggedIn { get; }
+    LoginResponseDto? UserData { get; }
 
     event Action<LoginResponseDto>? LoggedIn;
     event Action? LoggedOut;

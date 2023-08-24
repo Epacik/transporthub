@@ -13,7 +13,7 @@ public class AuthorizationService : IAuthorizationService
     private readonly ISettingsService _settingsService;
     private readonly IHttpClientFactory _httpClientFactory;
     private readonly IJsonSerializer _jsonSerializer;
-    private LoginResponseDto? _userData;
+    public LoginResponseDto? UserData { get; private set; }
 
     private PeriodicTimer _periodicTimer;
     private CancellationTokenSource? _cancellationTokenSource;
@@ -86,7 +86,7 @@ public class AuthorizationService : IAuthorizationService
                 if (ok is not null)
                 {
                     LoggedIn?.Invoke(ok);
-                    _userData = ok;
+                    UserData = ok;
 
                     StartRefreshing();
                     
@@ -101,7 +101,7 @@ public class AuthorizationService : IAuthorizationService
     public async Task<Result<bool, Exception>> Logout()
     {
         var uri = _settingsService.Read(Settings.IpAddress, DefaultValues.ServerAddress);
-        var client = _httpClientFactory.Create(uri, _userData?.User, _userData?.Key);
+        var client = _httpClientFactory.Create(uri, UserData?.User, UserData?.Key);
 
         var response = await Throwable.ToResultAsync(
             async () => await client.PostAsync(
@@ -129,7 +129,7 @@ public class AuthorizationService : IAuthorizationService
     public async Task<Result<bool, Exception>> RefreshSession()
     {
         var uri = _settingsService.Read(Settings.IpAddress, DefaultValues.ServerAddress);
-        var client = _httpClientFactory.Create(uri, _userData?.User, _userData?.Key);
+        var client = _httpClientFactory.Create(uri, UserData?.User, UserData?.Key);
 
         var response = await Throwable.ToResultAsync(
            async () => await client.PostAsync(
@@ -166,6 +166,7 @@ public class AuthorizationService : IAuthorizationService
                 catch (OperationCanceledException)
                 {
                     //swallow
+                    return;
                 }
             }
         }
@@ -173,6 +174,6 @@ public class AuthorizationService : IAuthorizationService
         _cancellationTokenSource = new CancellationTokenSource();
 
         new Thread(async () => await run())
-        .Start();
+            .Start();
     }
 }

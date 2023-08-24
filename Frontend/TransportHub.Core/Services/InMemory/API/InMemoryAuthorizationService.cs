@@ -13,6 +13,8 @@ namespace TransportHub.Services.InMemory.API
     {
         public bool IsLoggedIn { get; set; }
 
+        public LoginResponseDto? UserData => null;
+
         public event Action<LoginResponseDto>? LoggedIn;
         public event Action? LoggedOut;
 

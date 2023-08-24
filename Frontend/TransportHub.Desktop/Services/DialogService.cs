@@ -12,6 +12,7 @@ using Lindronics.OneOf.Result;
 using Serilog;
 using Serilog.Events;
 using TransportHub.Services;
+using Avalonia;
 
 namespace TransportHub.Desktop.Services;
 

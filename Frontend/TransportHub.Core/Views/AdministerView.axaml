@@ -1,0 +1,35 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:views="using:TransportHub.Core.Views"
+             xmlns:vm="using:TransportHub.Core.ViewModels"
+             xmlns:ap="using:TransportHub.Core.AttachedProperties"
+             xmlns:common="using:TransportHub.Common"
+             xmlns:conv="using:TransportHub.Core.Converters"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="TransportHub.Core.Views.AdministerView"
+             x:DataType="vm:AdministerViewModel">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <conv:ViewToRouteConverter x:Key="ViewToRouteConverter"/>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <TabControl SelectedContent="{Binding
+                    SelectedTab,
+                    Mode=OneWayToSource,
+                    Converter={StaticResource ViewToRouteConverter}}">
+        <TabItem Header="Użytkownicy"
+                 ap:Navigation.Route="{x:Static common:Routes.Users}">
+            <views:UsersView />
+        </TabItem>
+        <TabItem Header="Kierowcy"
+                 ap:Navigation.Route="{x:Static common:Routes.Drivers}">
+            <views:DriversView />
+        </TabItem>
+        <TabItem Header="Pojazdy"
+                 ap:Navigation.Route="{x:Static common:Routes.Vehicles}">
+            <views:VehiclesView />
+        </TabItem>
+    </TabControl>
+</UserControl>

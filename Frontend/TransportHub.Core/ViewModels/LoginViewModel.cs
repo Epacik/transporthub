@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Serilog;
 using Serilog.Events;
+using TransportHub.Core.Services;
 
 namespace TransportHub.Core.ViewModels;
 
@@ -20,6 +21,8 @@ public partial class LoginViewModel : ObservableObject, INavigationAwareViewMode
     private readonly INavigationService _navigationService;
     private readonly IDialogService _dialogService;
     private readonly ILogger _logger;
+    private readonly ILoadingPopupService _loadingPopupService;
+
     [ObservableProperty]
     private string? _login;
 
@@ -33,13 +36,14 @@ public partial class LoginViewModel : ObservableObject, INavigationAwareViewMode
         IAuthorizationService authorizationService,
         INavigationService navigationService,
         IDialogService dialogService,
-        ILogger logger)
+        ILogger logger,
+        ILoadingPopupService loadingPopupService)
     {
         _authorizationService = authorizationService;
         _navigationService = navigationService;
         _dialogService = dialogService;
         _logger = logger;
-
+        _loadingPopupService = loadingPopupService;
         if (logger.IsEnabled(LogEventLevel.Information))
         {
             logger.Information("Opening Login page");
@@ -55,6 +59,7 @@ public partial class LoginViewModel : ObservableObject, INavigationAwareViewMode
     {
         try
         {
+            await _loadingPopupService.Show("Logowanie");
             EnableLogin = false;
             var result = await _authorizationService.Login(Login, Password, true);
 
@@ -82,6 +87,7 @@ public partial class LoginViewModel : ObservableObject, INavigationAwareViewMode
         finally
         {
             EnableLogin = true;
+            await _loadingPopupService.Hide();
         }
     }
 

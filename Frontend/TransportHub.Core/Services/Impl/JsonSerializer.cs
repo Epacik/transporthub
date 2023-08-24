@@ -1,6 +1,7 @@
 using Lindronics.OneOf.Result;
 using System;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 using TransportHub.Common;
 
 namespace TransportHub.Core.Services.Impl;
@@ -10,6 +11,10 @@ internal class Serializer : IJsonSerializer
     private readonly JsonSerializerOptions _options = new()
     {
         PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+        Converters =
+        {
+            new JsonStringEnumConverter( JsonNamingPolicy.CamelCase),
+        }
     };
 
     public Result<T?, Exception> Deserialize<T>(string json)

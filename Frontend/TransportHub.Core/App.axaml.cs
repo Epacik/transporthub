@@ -64,6 +64,18 @@ public partial class App : Application, IDisposable
     {
         return _mainViewModel?.NavigateToAsync(route, parameters) ?? Task.FromResult(0);
     }
+
+    public void ShowLoadingPopup(string message)
+    {
+        _mainViewModel!.LoadingVisible = true;
+        _mainViewModel!.LoadingMessage = message;
+    }
+
+    public void HideLoadingPopup()
+    {
+        _mainViewModel!.LoadingVisible = false;
+    }
+
     private static bool IsProduction()
     {
 #if DEBUG
