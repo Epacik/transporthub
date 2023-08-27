@@ -21,7 +21,7 @@
                     Converter={StaticResource ViewToRouteConverter}}">
         <TabItem Header="Użytkownicy"
                  ap:Navigation.Route="{x:Static common:Routes.Users}">
-            <views:UsersView />
+            <views:UsersView DataContext="{Binding UsersViewModel}" />
         </TabItem>
         <TabItem Header="Kierowcy"
                  ap:Navigation.Route="{x:Static common:Routes.Drivers}">

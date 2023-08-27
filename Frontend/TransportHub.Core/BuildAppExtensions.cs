@@ -17,10 +17,9 @@ using System.Configuration;
 using TransportHub.Services.InMemory.API;
 using TransportHub.Api;
 using TransportHub.Api.Impl;
-using TransportHub.Core.Views;
-using TransportHub.Core.ViewModels;
 using TransportHub.Services.Impl;
 using TransportHub.Core.Services;
+using TransportHub.Core.Services.InMemory.API;
 
 namespace TransportHub.Core;
 
@@ -74,6 +73,7 @@ public static class BuildAppExtensions
     public static ContainerBuilder LoadMockServices(this ContainerBuilder builder)
     {
         builder.RegisterType<InMemoryAuthorizationService>().As<IAuthorizationService>().SingleInstance();
+        builder.RegisterType<InMemoryUsersService>().As<IUsersService>();
 
         return builder.LoadCommonServices();
     }

@@ -21,6 +21,7 @@ using Avalonia.Threading;
 using System.Linq;
 using TransportHub.Api.Dtos;
 using static System.Net.Mime.MediaTypeNames;
+using System.Diagnostics;
 
 namespace TransportHub.Core.ViewModels;
 
@@ -88,16 +89,16 @@ public partial class MainViewModel : ObservableObject
     [ObservableProperty]
     private NavItem[] _navItems =
     {
-        new("Przegląd", Tabler.Home, Routes.Dashboard),
-        new("Zamówienia", Tabler.TruckDelivery, Routes.Orders)
+        new("Przegląd", Tabler.IconHome, Routes.Dashboard),
+        new("Zamówienia", Tabler.IconTruckDelivery, Routes.Orders)
     };
 
     [ObservableProperty]
     private NavItem[] _footerItems =
     {
-        new("Administruj", Tabler.FileSettings, Routes.Administer),
-        new("Ustawienia", Tabler.Settings, Routes.Settings),
-        new("Wyloguj", Tabler.Logout, ""),
+        new("Administruj", Tabler.IconFileSettings, Routes.Administer),
+        new("Ustawienia", Tabler.IconSettings, Routes.Settings),
+        new("Wyloguj", Tabler.IconLogout, ""),
     };
 
     partial void OnContentChanged(Control? value)
@@ -227,7 +228,7 @@ public partial class MainViewModel : ObservableObject
                 .GetPage(route)
                 .Match(
                     page => page,
-                    err => _pageFactory.GetInvalidPage(err.Message));
+                    err => _pageFactory.GetInvalidPage(err.ToStringDemystified()));
 
             Content = page;
             _currentRoute = route;

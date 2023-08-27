@@ -19,7 +19,7 @@
             Command="{Binding OpenStartupSettings}"
             VerticalContentAlignment="Center"
             HorizontalContentAlignment="Center">
-            <controls:TablerIcon Icon="settings" Size="24"/>
+            <controls:TablerIcon Icon="IconSettings" Size="24"/>
         </Button>
         
 

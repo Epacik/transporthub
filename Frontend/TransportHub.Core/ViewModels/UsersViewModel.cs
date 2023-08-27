@@ -1,4 +1,6 @@
+using Avalonia.Threading;
 using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 using Serilog;
 using Serilog.Events;
 using System;
@@ -9,6 +11,8 @@ using System.Text;
 using System.Threading.Tasks;
 using TransportHub.Api;
 using TransportHub.Api.Dtos;
+using TransportHub.Core.Mappers;
+using TransportHub.Core.Models;
 using TransportHub.Core.Services;
 using TransportHub.Services;
 
@@ -31,10 +35,57 @@ public partial class UsersViewModel : ObservableObject, INavigationAwareViewMode
         _logger = logger;
         _loadingPopupService = loadingPopupService;
         _dialogService = dialogService;
+
+        UserTypes = new ObservableCollection<UserType>
+        {
+            UserType.User,
+            UserType.Manager,
+            UserType.Admin,
+        };
     }
 
     [ObservableProperty]
-    private ObservableCollection<UserDto> _users = new();
+    private ObservableCollection<UserModel> _users = new();
+
+    [ObservableProperty]
+    private UserModel? _selectedUser;
+
+    async partial void OnSelectedUserChanging(UserModel? oldValue, UserModel? newValue)
+    {
+        if (newValue is null)
+            return;
+
+        await Dispatcher.UIThread.InvokeAsync(async () => {
+            if (oldValue is not null && oldValue.IsDirty && !(await ConfirmUnsavedChanges()))
+            {
+                SelectedUser = oldValue;
+                return;
+            }
+        });
+    }
+
+
+    [ObservableProperty]
+    private ObservableCollection<UserType> _userTypes;
+
+    [RelayCommand]
+    public async Task CloseUser()
+    {
+        if (SelectedUser is null ||
+            (SelectedUser.IsDirty && !(await ConfirmUnsavedChanges())))
+        {
+            return;
+        }
+       
+        SelectedUser = null;
+        await OnNavigatedFrom();
+        await OnNavigatedTo();
+    }
+
+    private Task<bool> ConfirmUnsavedChanges()
+    {
+        return _dialogService.ShowConfirmation("Niezapisane zmiany", "Istnieją niezapisane zmiany.\nCzy kontynuować?");
+    }
 
     public Task OnNavigatedFrom()
     {
@@ -60,7 +111,7 @@ public partial class UsersViewModel : ObservableObject, INavigationAwareViewMode
             return;
         }
 
-        var users = result.Unwrap();
+        var users = result.Unwrap().ToUserModels();
 
         foreach (var user in users)
         {

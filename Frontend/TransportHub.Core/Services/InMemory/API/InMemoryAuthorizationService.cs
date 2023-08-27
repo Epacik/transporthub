@@ -6,6 +6,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TransportHub.Api.Dtos;
+using TransportHub.Core.Services.InMemory.API;
+using TransportHub.Api.Exceptions;
 
 namespace TransportHub.Services.InMemory.API
 {
@@ -29,6 +31,11 @@ namespace TransportHub.Services.InMemory.API
             if (string.IsNullOrWhiteSpace(password))
             {
                 return new ArgumentException("Hasło nie może być puste", nameof(password));
+            }
+
+            if (!InMemoryUsersService.StaticUsers.Any(x => x.Name == login))
+            {
+                return new LoginFailedException($"Nie znaleziono użytkownika \"{login}\"");
             }
 
 

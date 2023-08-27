@@ -30,6 +30,8 @@ public partial class App : Application, IDisposable
         var mainView = ContainerLifetime?.Resolve<MainView>();
         _mainViewModel = mainView!.DataContext as MainViewModel;
 
+        NavigationView = mainView;
+
         if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
         {
             desktop.MainWindow = new MainWindow
@@ -45,7 +47,7 @@ public partial class App : Application, IDisposable
     }
 
     bool _disposed = false;
-    private MainView? _navigationView;
+    public MainView? NavigationView;
     private MainViewModel? _mainViewModel;
 
     public void Dispose()

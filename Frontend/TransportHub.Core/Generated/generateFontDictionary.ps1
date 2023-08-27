@@ -12,7 +12,26 @@ function ConvertTo-PascalCase
     return [regex]::replace($Value.ToLower(), '(^|[_-])(.)', { $args[0].Groups[2].Value.ToUpper()})
 }
 
-$content = Get-Content "$PSScriptRoot/../Assets/Icons/tabler/tabler-icons.css";
+$source = "$PSScriptRoot/../Assets/Icons/tabler/tabler-icons.css";
+$target = "$PSScriptRoot/TablerIcons.g.cs";
+$sourceHash = (Get-FileHash $source).Hash
+
+if (Test-Path -Path $target -PathType Leaf)
+{
+    $currentContent = Get-Content $target;
+    if ($null -ne $currentContent -and $currentContent.Length -gt 9000) {
+        $currentHash = ($currentContent[2] ?? "").Replace("// ", "");
+
+        if ($currentHash -eq $sourceHash)
+        {
+            Write-Host "Source has not change, exiting"
+            exit 0;
+        }
+    }
+}
+
+
+$content = Get-Content $source;
 
 $pattern = '(?:\.ti-)([A-Za-z0-9\-]+)(?:\:before\s+\{\s+content:\s+"\\)([0-9a-f]+)(?:";\s+})';
 $options = [RegexOptions]::Multiline;
@@ -27,21 +46,17 @@ foreach ($match in $matches)
     $key = $match.Groups[1].Value;
     $value = $match.Groups[2].Value;
 
-    $lines += "        { `"$key`", `"\u$value`" },`n";
-
-    $first = $key[0];
-    if ($first -ge [char]"0" -and $first -le [char]"9") {
-        $key = "T" + $key;
-    }
-
     $key = ConvertTo-PascalCase $key
 
-    $constants += "    public const string $key = `"\u$value`";`n"
+    $lines += "        { `"Icon$key`", `"\u$value`" },`n";
+
+    $constants += "    public const string Icon$key = `"\u$value`";`n"
 }
 
 $out = @"
 // THIS FILE IS AUTOGENERATER
 // CHANGES WITHIN WILL BE LOST
+// $sourceHash
 
 using System.Collections.Generic;
 
@@ -49,7 +64,7 @@ namespace TransportHub.Core.Assets.Icons;
 
 internal class Tabler
 {
-    public static Dictionary<string, string> IconMap = new()
+    public static Dictionary<string, string> IconsMap = new()
     {
 $lines
     };
@@ -58,4 +73,4 @@ $constants
 }
 "@
 
-Out-File -FilePath "$PSScriptRoot/TablerIcons.g.cs" -InputObject $out
+Out-File -FilePath $target -InputObject $out

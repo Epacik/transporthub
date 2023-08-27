@@ -22,7 +22,7 @@ public partial class TablerIcon : UserControl
         if (value is null)
             return null;
 
-        if (Tabler.IconMap.TryGetValue(value, out string? o))
+        if (Tabler.IconsMap.TryGetValue(value, out string? o))
             return o;
 
         return value;

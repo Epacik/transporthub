@@ -1,5 +1,6 @@
 // THIS FILE IS AUTOGENERATER
 // CHANGES WITHIN WILL BE LOST
+// F5CEFB6C9AAFC26E5533ADD3316DEE1AFB2E2025CBD4ACCEA39C5F40C35488F4
 
 using System.Collections.Generic;
 
@@ -7,9212 +8,9212 @@ namespace TransportHub.Core.Assets.Icons;
 
 internal class Tabler
 {
-    public static Dictionary<string, string> IconMap = new()
+    public static Dictionary<string, string> IconsMap = new()
     {
-        { "123", "\uf554" },
-        { "24-hours", "\uf5e7" },
-        { "2fa", "\ueca0" },
-        { "360", "\uf62f" },
-        { "360-view", "\uf566" },
-        { "3d-cube-sphere", "\uecd7" },
-        { "3d-cube-sphere-off", "\uf3b5" },
-        { "3d-rotate", "\uf020" },
-        { "a-b", "\uec36" },
-        { "a-b-2", "\uf25f" },
-        { "a-b-off", "\uf0a6" },
-        { "abacus", "\uf05c" },
-        { "abacus-off", "\uf3b6" },
-        { "abc", "\uf567" },
-        { "access-point", "\ued1b" },
-        { "access-point-off", "\ued1a" },
-        { "accessible", "\ueba9" },
-        { "accessible-off", "\uf0a7" },
-        { "accessible-off-filled", "\uf6ea" },
-        { "activity", "\ued23" },
-        { "activity-heartbeat", "\uf0db" },
-        { "ad", "\uea02" },
-        { "ad-2", "\uef1f" },
-        { "ad-circle", "\uf79e" },
-        { "ad-circle-filled", "\uf7d3" },
-        { "ad-circle-off", "\uf79d" },
-        { "ad-filled", "\uf6eb" },
-        { "ad-off", "\uf3b7" },
-        { "address-book", "\uf021" },
-        { "address-book-off", "\uf3b8" },
-        { "adjustments", "\uea03" },
-        { "adjustments-alt", "\uec37" },
-        { "adjustments-bolt", "\uf7fb" },
-        { "adjustments-cancel", "\uf7fc" },
-        { "adjustments-check", "\uf7fd" },
-        { "adjustments-code", "\uf7fe" },
-        { "adjustments-cog", "\uf7ff" },
-        { "adjustments-dollar", "\uf800" },
-        { "adjustments-down", "\uf801" },
-        { "adjustments-exclamation", "\uf802" },
-        { "adjustments-filled", "\uf6ec" },
-        { "adjustments-heart", "\uf803" },
-        { "adjustments-horizontal", "\uec38" },
-        { "adjustments-minus", "\uf804" },
-        { "adjustments-off", "\uf0a8" },
-        { "adjustments-pause", "\uf805" },
-        { "adjustments-pin", "\uf806" },
-        { "adjustments-plus", "\uf807" },
-        { "adjustments-question", "\uf808" },
-        { "adjustments-search", "\uf809" },
-        { "adjustments-share", "\uf80a" },
-        { "adjustments-star", "\uf80b" },
-        { "adjustments-up", "\uf80c" },
-        { "adjustments-x", "\uf80d" },
-        { "aerial-lift", "\uedfe" },
-        { "affiliate", "\uedff" },
-        { "affiliate-filled", "\uf6ed" },
-        { "air-balloon", "\uf4a6" },
-        { "air-conditioning", "\uf3a2" },
-        { "air-conditioning-disabled", "\uf542" },
-        { "air-traffic-control", "\ufb01" },
-        { "alarm", "\uea04" },
-        { "alarm-filled", "\uf709" },
-        { "alarm-minus", "\uf630" },
-        { "alarm-minus-filled", "\uf70a" },
-        { "alarm-off", "\uf0a9" },
-        { "alarm-plus", "\uf631" },
-        { "alarm-plus-filled", "\uf70b" },
-        { "alarm-snooze", "\uf632" },
-        { "alarm-snooze-filled", "\uf70c" },
-        { "album", "\uf022" },
-        { "album-off", "\uf3b9" },
-        { "alert-circle", "\uea05" },
-        { "alert-circle-filled", "\uf6ee" },
-        { "alert-hexagon", "\uf80e" },
-        { "alert-hexagon-filled", "\ufa34" },
-        { "alert-octagon", "\uecc6" },
-        { "alert-octagon-filled", "\uf6ef" },
-        { "alert-small", "\uf80f" },
-        { "alert-square", "\uf811" },
-        { "alert-square-filled", "\ufa35" },
-        { "alert-square-rounded", "\uf810" },
-        { "alert-square-rounded-filled", "\ufa36" },
-        { "alert-triangle", "\uea06" },
-        { "alert-triangle-filled", "\uf6f0" },
-        { "alien", "\uebde" },
-        { "alien-filled", "\uf70d" },
-        { "align-box-bottom-center", "\uf530" },
-        { "align-box-bottom-center-filled", "\uf70e" },
-        { "align-box-bottom-left", "\uf531" },
-        { "align-box-bottom-left-filled", "\uf70f" },
-        { "align-box-bottom-right", "\uf532" },
-        { "align-box-bottom-right-filled", "\uf710" },
-        { "align-box-center-bottom", "\ufacb" },
-        { "align-box-center-middle", "\uf79f" },
-        { "align-box-center-middle-filled", "\uf7d4" },
-        { "align-box-center-stretch", "\ufacc" },
-        { "align-box-center-top", "\ufacd" },
-        { "align-box-left-bottom", "\uf533" },
-        { "align-box-left-bottom-filled", "\uf711" },
-        { "align-box-left-middle", "\uf534" },
-        { "align-box-left-middle-filled", "\uf712" },
-        { "align-box-left-stretch", "\uface" },
-        { "align-box-left-top", "\uf535" },
-        { "align-box-left-top-filled", "\uf713" },
-        { "align-box-right-bottom", "\uf536" },
-        { "align-box-right-bottom-filled", "\uf714" },
-        { "align-box-right-middle", "\uf537" },
-        { "align-box-right-middle-filled", "\uf7d5" },
-        { "align-box-right-stretch", "\ufacf" },
-        { "align-box-right-top", "\uf538" },
-        { "align-box-right-top-filled", "\uf715" },
-        { "align-box-top-center", "\uf539" },
-        { "align-box-top-center-filled", "\uf716" },
-        { "align-box-top-left", "\uf53a" },
-        { "align-box-top-left-filled", "\uf717" },
-        { "align-box-top-right", "\uf53b" },
-        { "align-box-top-right-filled", "\uf718" },
-        { "align-center", "\uea07" },
-        { "align-justified", "\uea08" },
-        { "align-left", "\uea09" },
-        { "align-right", "\uea0a" },
-        { "alpha", "\uf543" },
-        { "alphabet-cyrillic", "\uf1df" },
-        { "alphabet-greek", "\uf1e0" },
-        { "alphabet-latin", "\uf1e1" },
-        { "ambulance", "\uebf5" },
-        { "ampersand", "\uf229" },
-        { "analyze", "\uf3a3" },
-        { "analyze-filled", "\uf719" },
-        { "analyze-off", "\uf3ba" },
-        { "anchor", "\ueb76" },
-        { "anchor-off", "\uf0f7" },
-        { "angle", "\uef20" },
-        { "ankh", "\uf1cd" },
-        { "antenna", "\uf094" },
-        { "antenna-bars-1", "\uecc7" },
-        { "antenna-bars-2", "\uecc8" },
-        { "antenna-bars-3", "\uecc9" },
-        { "antenna-bars-4", "\uecca" },
-        { "antenna-bars-5", "\ueccb" },
-        { "antenna-bars-off", "\uf0aa" },
-        { "antenna-off", "\uf3bb" },
-        { "aperture", "\ueb58" },
-        { "aperture-off", "\uf3bc" },
-        { "api", "\ueffd" },
-        { "api-app", "\ueffc" },
-        { "api-app-off", "\uf0ab" },
-        { "api-off", "\uf0f8" },
-        { "app-window", "\uefe6" },
-        { "app-window-filled", "\uf71a" },
-        { "apple", "\uef21" },
-        { "apps", "\uebb6" },
-        { "apps-filled", "\uf6f1" },
-        { "apps-off", "\uf0ac" },
-        { "archive", "\uea0b" },
-        { "archive-filled", "\ufa82" },
-        { "archive-off", "\uf0ad" },
-        { "armchair", "\uef9e" },
-        { "armchair-2", "\uefe7" },
-        { "armchair-2-off", "\uf3bd" },
-        { "armchair-off", "\uf3be" },
-        { "arrow-autofit-content", "\uef31" },
-        { "arrow-autofit-content-filled", "\uf6f2" },
-        { "arrow-autofit-down", "\uef32" },
-        { "arrow-autofit-height", "\uef33" },
-        { "arrow-autofit-left", "\uef34" },
-        { "arrow-autofit-right", "\uef35" },
-        { "arrow-autofit-up", "\uef36" },
-        { "arrow-autofit-width", "\uef37" },
-        { "arrow-back", "\uea0c" },
-        { "arrow-back-up", "\ueb77" },
-        { "arrow-back-up-double", "\uf9ec" },
-        { "arrow-badge-down", "\uf60b" },
-        { "arrow-badge-down-filled", "\uf7d6" },
-        { "arrow-badge-left", "\uf60c" },
-        { "arrow-badge-left-filled", "\uf7d7" },
-        { "arrow-badge-right", "\uf60d" },
-        { "arrow-badge-right-filled", "\uf7d8" },
-        { "arrow-badge-up", "\uf60e" },
-        { "arrow-badge-up-filled", "\uf7d9" },
-        { "arrow-bar-both", "\ufadd" },
-        { "arrow-bar-down", "\uea0d" },
-        { "arrow-bar-left", "\uea0e" },
-        { "arrow-bar-right", "\uea0f" },
-        { "arrow-bar-to-down", "\uec88" },
-        { "arrow-bar-to-left", "\uec89" },
-        { "arrow-bar-to-right", "\uec8a" },
-        { "arrow-bar-to-up", "\uec8b" },
-        { "arrow-bar-up", "\uea10" },
-        { "arrow-bear-left", "\uf045" },
-        { "arrow-bear-left-2", "\uf044" },
-        { "arrow-bear-right", "\uf047" },
-        { "arrow-bear-right-2", "\uf046" },
-        { "arrow-big-down", "\uedda" },
-        { "arrow-big-down-filled", "\uf6c6" },
-        { "arrow-big-down-line", "\uefe8" },
-        { "arrow-big-down-line-filled", "\uf6c7" },
-        { "arrow-big-down-lines", "\uefe9" },
-        { "arrow-big-down-lines-filled", "\uf6c8" },
-        { "arrow-big-left", "\ueddb" },
-        { "arrow-big-left-filled", "\uf6c9" },
-        { "arrow-big-left-line", "\uefea" },
-        { "arrow-big-left-line-filled", "\uf6ca" },
-        { "arrow-big-left-lines", "\uefeb" },
-        { "arrow-big-left-lines-filled", "\uf6cb" },
-        { "arrow-big-right", "\ueddc" },
-        { "arrow-big-right-filled", "\uf6cc" },
-        { "arrow-big-right-line", "\uefec" },
-        { "arrow-big-right-line-filled", "\uf6cd" },
-        { "arrow-big-right-lines", "\uefed" },
-        { "arrow-big-right-lines-filled", "\uf6ce" },
-        { "arrow-big-up", "\ueddd" },
-        { "arrow-big-up-filled", "\uf6cf" },
-        { "arrow-big-up-line", "\uefee" },
-        { "arrow-big-up-line-filled", "\uf6d0" },
-        { "arrow-big-up-lines", "\uefef" },
-        { "arrow-big-up-lines-filled", "\uf6d1" },
-        { "arrow-bounce", "\uf3a4" },
-        { "arrow-capsule", "\ufade" },
-        { "arrow-curve-left", "\uf048" },
-        { "arrow-curve-right", "\uf049" },
-        { "arrow-down", "\uea16" },
-        { "arrow-down-bar", "\ued98" },
-        { "arrow-down-circle", "\uea11" },
-        { "arrow-down-left", "\uea13" },
-        { "arrow-down-left-circle", "\uea12" },
-        { "arrow-down-rhombus", "\uf61d" },
-        { "arrow-down-right", "\uea15" },
-        { "arrow-down-right-circle", "\uea14" },
-        { "arrow-down-square", "\ued9a" },
-        { "arrow-down-tail", "\ued9b" },
-        { "arrow-elbow-left", "\uf9ed" },
-        { "arrow-elbow-right", "\uf9ee" },
-        { "arrow-fork", "\uf04a" },
-        { "arrow-forward", "\uea17" },
-        { "arrow-forward-up", "\ueb78" },
-        { "arrow-forward-up-double", "\uf9ef" },
-        { "arrow-guide", "\uf22a" },
-        { "arrow-iteration", "\uf578" },
-        { "arrow-left", "\uea19" },
-        { "arrow-left-bar", "\ued9c" },
-        { "arrow-left-circle", "\uea18" },
-        { "arrow-left-rhombus", "\uf61e" },
-        { "arrow-left-right", "\uf04b" },
-        { "arrow-left-square", "\ued9d" },
-        { "arrow-left-tail", "\ued9e" },
-        { "arrow-loop-left", "\ued9f" },
-        { "arrow-loop-left-2", "\uf04c" },
-        { "arrow-loop-right", "\ueda0" },
-        { "arrow-loop-right-2", "\uf04d" },
-        { "arrow-merge", "\uf04e" },
-        { "arrow-merge-both", "\uf23b" },
-        { "arrow-merge-left", "\uf23c" },
-        { "arrow-merge-right", "\uf23d" },
-        { "arrow-move-down", "\uf2ba" },
-        { "arrow-move-left", "\uf2bb" },
-        { "arrow-move-right", "\uf2bc" },
-        { "arrow-move-up", "\uf2bd" },
-        { "arrow-narrow-down", "\uea1a" },
-        { "arrow-narrow-left", "\uea1b" },
-        { "arrow-narrow-right", "\uea1c" },
-        { "arrow-narrow-up", "\uea1d" },
-        { "arrow-ramp-left", "\ued3c" },
-        { "arrow-ramp-left-2", "\uf04f" },
-        { "arrow-ramp-left-3", "\uf050" },
-        { "arrow-ramp-right", "\ued3d" },
-        { "arrow-ramp-right-2", "\uf051" },
-        { "arrow-ramp-right-3", "\uf052" },
-        { "arrow-right", "\uea1f" },
-        { "arrow-right-bar", "\ueda1" },
-        { "arrow-right-circle", "\uea1e" },
-        { "arrow-right-rhombus", "\uf61f" },
-        { "arrow-right-square", "\ueda2" },
-        { "arrow-right-tail", "\ueda3" },
-        { "arrow-rotary-first-left", "\uf053" },
-        { "arrow-rotary-first-right", "\uf054" },
-        { "arrow-rotary-last-left", "\uf055" },
-        { "arrow-rotary-last-right", "\uf056" },
-        { "arrow-rotary-left", "\uf057" },
-        { "arrow-rotary-right", "\uf058" },
-        { "arrow-rotary-straight", "\uf059" },
-        { "arrow-roundabout-left", "\uf22b" },
-        { "arrow-roundabout-right", "\uf22c" },
-        { "arrow-sharp-turn-left", "\uf05a" },
-        { "arrow-sharp-turn-right", "\uf05b" },
-        { "arrow-up", "\uea25" },
-        { "arrow-up-bar", "\ueda4" },
-        { "arrow-up-circle", "\uea20" },
-        { "arrow-up-left", "\uea22" },
-        { "arrow-up-left-circle", "\uea21" },
-        { "arrow-up-rhombus", "\uf620" },
-        { "arrow-up-right", "\uea24" },
-        { "arrow-up-right-circle", "\uea23" },
-        { "arrow-up-square", "\ueda6" },
-        { "arrow-up-tail", "\ueda7" },
-        { "arrow-wave-left-down", "\ueda8" },
-        { "arrow-wave-left-up", "\ueda9" },
-        { "arrow-wave-right-down", "\uedaa" },
-        { "arrow-wave-right-up", "\uedab" },
-        { "arrow-zig-zag", "\uf4a7" },
-        { "arrows-cross", "\ueffe" },
-        { "arrows-diagonal", "\uea27" },
-        { "arrows-diagonal-2", "\uea26" },
-        { "arrows-diagonal-minimize", "\uef39" },
-        { "arrows-diagonal-minimize-2", "\uef38" },
-        { "arrows-diff", "\uf296" },
-        { "arrows-double-ne-sw", "\uedde" },
-        { "arrows-double-nw-se", "\ueddf" },
-        { "arrows-double-se-nw", "\uede0" },
-        { "arrows-double-sw-ne", "\uede1" },
-        { "arrows-down", "\uedad" },
-        { "arrows-down-up", "\uedac" },
-        { "arrows-exchange", "\uf1f4" },
-        { "arrows-exchange-2", "\uf1f3" },
-        { "arrows-horizontal", "\ueb59" },
-        { "arrows-join", "\uedaf" },
-        { "arrows-join-2", "\uedae" },
-        { "arrows-left", "\uedb1" },
-        { "arrows-left-down", "\uee00" },
-        { "arrows-left-right", "\uedb0" },
-        { "arrows-maximize", "\uea28" },
-        { "arrows-minimize", "\uea29" },
-        { "arrows-move", "\uf22f" },
-        { "arrows-move-horizontal", "\uf22d" },
-        { "arrows-move-vertical", "\uf22e" },
-        { "arrows-random", "\uf095" },
-        { "arrows-right", "\uedb3" },
-        { "arrows-right-down", "\uee01" },
-        { "arrows-right-left", "\uedb2" },
-        { "arrows-shuffle", "\uf000" },
-        { "arrows-shuffle-2", "\uefff" },
-        { "arrows-sort", "\ueb5a" },
-        { "arrows-split", "\uedb5" },
-        { "arrows-split-2", "\uedb4" },
-        { "arrows-transfer-down", "\uf2cc" },
-        { "arrows-transfer-up", "\uf2cd" },
-        { "arrows-up", "\uedb7" },
-        { "arrows-up-down", "\uedb6" },
-        { "arrows-up-left", "\uee02" },
-        { "arrows-up-right", "\uee03" },
-        { "arrows-vertical", "\ueb5b" },
-        { "artboard", "\uea2a" },
-        { "artboard-filled", "\ufa83" },
-        { "artboard-off", "\uf0ae" },
-        { "article", "\uf1e2" },
-        { "article-filled-filled", "\uf7da" },
-        { "article-off", "\uf3bf" },
-        { "aspect-ratio", "\ued30" },
-        { "aspect-ratio-filled", "\uf7db" },
-        { "aspect-ratio-off", "\uf0af" },
-        { "assembly", "\uf24d" },
-        { "assembly-off", "\uf3c0" },
-        { "asset", "\uf1ce" },
-        { "asterisk", "\uefd5" },
-        { "asterisk-simple", "\uefd4" },
-        { "at", "\uea2b" },
-        { "at-off", "\uf0b0" },
-        { "atom", "\ueb79" },
-        { "atom-2", "\uebdf" },
-        { "atom-2-filled", "\uf71b" },
-        { "atom-off", "\uf0f9" },
-        { "augmented-reality", "\uf023" },
-        { "augmented-reality-2", "\uf37e" },
-        { "augmented-reality-off", "\uf3c1" },
-        { "award", "\uea2c" },
-        { "award-filled", "\uf71c" },
-        { "award-off", "\uf0fa" },
-        { "axe", "\uef9f" },
-        { "axis-x", "\uef45" },
-        { "axis-y", "\uef46" },
-        { "baby-bottle", "\uf5d2" },
-        { "baby-carriage", "\uf05d" },
-        { "backhoe", "\ued86" },
-        { "backpack", "\uef47" },
-        { "backpack-off", "\uf3c2" },
-        { "backslash", "\ufab9" },
-        { "backspace", "\uea2d" },
-        { "backspace-filled", "\uf7dc" },
-        { "badge", "\uefc2" },
-        { "badge-3d", "\uf555" },
-        { "badge-4k", "\uf556" },
-        { "badge-8k", "\uf557" },
-        { "badge-ad", "\uf558" },
-        { "badge-ar", "\uf559" },
-        { "badge-cc", "\uf55a" },
-        { "badge-filled", "\uf667" },
-        { "badge-hd", "\uf55b" },
-        { "badge-off", "\uf0fb" },
-        { "badge-sd", "\uf55c" },
-        { "badge-tm", "\uf55d" },
-        { "badge-vo", "\uf55e" },
-        { "badge-vr", "\uf55f" },
-        { "badge-wc", "\uf560" },
-        { "badges", "\uefc3" },
-        { "badges-filled", "\uf7dd" },
-        { "badges-off", "\uf0fc" },
-        { "baguette", "\uf3a5" },
-        { "ball-american-football", "\uee04" },
-        { "ball-american-football-off", "\uf3c3" },
-        { "ball-baseball", "\uefa0" },
-        { "ball-basketball", "\uec28" },
-        { "ball-bowling", "\uec29" },
-        { "ball-football", "\uee06" },
-        { "ball-football-off", "\uee05" },
-        { "ball-tennis", "\uec2a" },
-        { "ball-volleyball", "\uec2b" },
-        { "balloon", "\uef3a" },
-        { "balloon-filled", "\ufa84" },
-        { "balloon-off", "\uf0fd" },
-        { "ballpen", "\uf06e" },
-        { "ballpen-filled", "\ufa85" },
-        { "ballpen-off", "\uf0b1" },
-        { "ban", "\uea2e" },
-        { "bandage", "\ueb7a" },
-        { "bandage-filled", "\uf7de" },
-        { "bandage-off", "\uf3c4" },
-        { "barbell", "\ueff0" },
-        { "barbell-off", "\uf0b2" },
-        { "barcode", "\uebc6" },
-        { "barcode-off", "\uf0b3" },
-        { "barrel", "\uf0b4" },
-        { "barrel-off", "\uf0fe" },
-        { "barrier-block", "\uf00e" },
-        { "barrier-block-off", "\uf0b5" },
-        { "baseline", "\uf024" },
-        { "baseline-density-large", "\uf9f0" },
-        { "baseline-density-medium", "\uf9f1" },
-        { "baseline-density-small", "\uf9f2" },
-        { "basket", "\uebe1" },
-        { "basket-bolt", "\ufb43" },
-        { "basket-cancel", "\ufb44" },
-        { "basket-check", "\ufb45" },
-        { "basket-code", "\ufb46" },
-        { "basket-cog", "\ufb47" },
-        { "basket-discount", "\ufb48" },
-        { "basket-dollar", "\ufb49" },
-        { "basket-down", "\ufb4a" },
-        { "basket-exclamation", "\ufb4b" },
-        { "basket-filled", "\uf7df" },
-        { "basket-heart", "\ufb4c" },
-        { "basket-minus", "\ufb4d" },
-        { "basket-off", "\uf0b6" },
-        { "basket-pause", "\ufb4e" },
-        { "basket-pin", "\ufb4f" },
-        { "basket-plus", "\ufb50" },
-        { "basket-question", "\ufb51" },
-        { "basket-search", "\ufb52" },
-        { "basket-share", "\ufb53" },
-        { "basket-star", "\ufb54" },
-        { "basket-up", "\ufb55" },
-        { "basket-x", "\ufb56" },
-        { "bat", "\uf284" },
-        { "bath", "\uef48" },
-        { "bath-filled", "\uf71d" },
-        { "bath-off", "\uf0ff" },
-        { "battery", "\uea34" },
-        { "battery-1", "\uea2f" },
-        { "battery-1-filled", "\uf71e" },
-        { "battery-2", "\uea30" },
-        { "battery-2-filled", "\uf71f" },
-        { "battery-3", "\uea31" },
-        { "battery-3-filled", "\uf720" },
-        { "battery-4", "\uea32" },
-        { "battery-4-filled", "\uf721" },
-        { "battery-automotive", "\uee07" },
-        { "battery-charging", "\uea33" },
-        { "battery-charging-2", "\uef3b" },
-        { "battery-eco", "\uef3c" },
-        { "battery-filled", "\uf668" },
-        { "battery-off", "\ued1c" },
-        { "beach", "\uef3d" },
-        { "beach-off", "\uf0b7" },
-        { "bed", "\ueb5c" },
-        { "bed-filled", "\uf7e0" },
-        { "bed-off", "\uf100" },
-        { "beer", "\uefa1" },
-        { "beer-filled", "\uf7e1" },
-        { "beer-off", "\uf101" },
-        { "bell", "\uea35" },
-        { "bell-bolt", "\uf812" },
-        { "bell-cancel", "\uf813" },
-        { "bell-check", "\uf814" },
-        { "bell-code", "\uf815" },
-        { "bell-cog", "\uf816" },
-        { "bell-dollar", "\uf817" },
-        { "bell-down", "\uf818" },
-        { "bell-exclamation", "\uf819" },
-        { "bell-filled", "\uf669" },
-        { "bell-heart", "\uf81a" },
-        { "bell-minus", "\uede2" },
-        { "bell-minus-filled", "\uf722" },
-        { "bell-off", "\uece9" },
-        { "bell-pause", "\uf81b" },
-        { "bell-pin", "\uf81c" },
-        { "bell-plus", "\uede3" },
-        { "bell-plus-filled", "\uf723" },
-        { "bell-question", "\uf81d" },
-        { "bell-ringing", "\ued07" },
-        { "bell-ringing-2", "\uede4" },
-        { "bell-ringing-2-filled", "\uf724" },
-        { "bell-ringing-filled", "\uf725" },
-        { "bell-school", "\uf05e" },
-        { "bell-search", "\uf81e" },
-        { "bell-share", "\uf81f" },
-        { "bell-star", "\uf820" },
-        { "bell-up", "\uf821" },
-        { "bell-x", "\uede5" },
-        { "bell-x-filled", "\uf726" },
-        { "bell-z", "\ueff1" },
-        { "bell-z-filled", "\uf727" },
-        { "beta", "\uf544" },
-        { "bible", "\uefc4" },
-        { "bike", "\uea36" },
-        { "bike-off", "\uf0b8" },
-        { "binary", "\uee08" },
-        { "binary-off", "\uf3c5" },
-        { "binary-tree", "\uf5d4" },
-        { "binary-tree-2", "\uf5d3" },
-        { "biohazard", "\uecb8" },
-        { "biohazard-off", "\uf0b9" },
-        { "blade", "\uf4bd" },
-        { "blade-filled", "\uf7e2" },
-        { "bleach", "\uf2f3" },
-        { "bleach-chlorine", "\uf2f0" },
-        { "bleach-no-chlorine", "\uf2f1" },
-        { "bleach-off", "\uf2f2" },
-        { "blockquote", "\uee09" },
-        { "bluetooth", "\uea37" },
-        { "bluetooth-connected", "\uecea" },
-        { "bluetooth-off", "\ueceb" },
-        { "bluetooth-x", "\uf081" },
-        { "blur", "\uef8c" },
-        { "blur-off", "\uf3c6" },
-        { "bmp", "\uf3a6" },
-        { "bold", "\ueb7b" },
-        { "bold-off", "\uf0ba" },
-        { "bolt", "\uea38" },
-        { "bolt-off", "\uecec" },
-        { "bomb", "\uf59c" },
-        { "bomb-filled", "\ufa86" },
-        { "bone", "\uedb8" },
-        { "bone-off", "\uf0bb" },
-        { "bong", "\uf3a7" },
-        { "bong-off", "\uf3c7" },
-        { "book", "\uea39" },
-        { "book-2", "\uefc5" },
-        { "book-download", "\uf070" },
-        { "book-filled", "\ufa87" },
-        { "book-off", "\uf0bc" },
-        { "book-upload", "\uf071" },
-        { "bookmark", "\uea3a" },
-        { "bookmark-edit", "\ufa5e" },
-        { "bookmark-filled", "\ufa88" },
-        { "bookmark-minus", "\ufa5f" },
-        { "bookmark-off", "\ueced" },
-        { "bookmark-plus", "\ufa60" },
-        { "bookmark-question", "\ufa61" },
-        { "bookmarks", "\ued08" },
-        { "bookmarks-filled", "\ufb1f" },
-        { "bookmarks-off", "\uf0bd" },
-        { "books", "\ueff2" },
-        { "books-off", "\uf0be" },
-        { "border-all", "\uea3b" },
-        { "border-bottom", "\uea3c" },
-        { "border-corners", "\uf7a0" },
-        { "border-horizontal", "\uea3d" },
-        { "border-inner", "\uea3e" },
-        { "border-left", "\uea3f" },
-        { "border-none", "\uea40" },
-        { "border-outer", "\uea41" },
-        { "border-radius", "\ueb7c" },
-        { "border-right", "\uea42" },
-        { "border-sides", "\uf7a1" },
-        { "border-style", "\uee0a" },
-        { "border-style-2", "\uef22" },
-        { "border-top", "\uea43" },
-        { "border-vertical", "\uea44" },
-        { "bottle", "\uef0b" },
-        { "bottle-filled", "\ufa89" },
-        { "bottle-off", "\uf3c8" },
-        { "bounce-left", "\uf59d" },
-        { "bounce-left-filled", "\ufb20" },
-        { "bounce-right", "\uf59e" },
-        { "bounce-right-filled", "\ufb21" },
-        { "bow", "\uf096" },
-        { "bowl", "\uf4fa" },
-        { "bowl-filled", "\ufb22" },
-        { "box", "\uea45" },
-        { "box-align-bottom", "\uf2a8" },
-        { "box-align-bottom-filled", "\ufa8a" },
-        { "box-align-bottom-left", "\uf2ce" },
-        { "box-align-bottom-left-filled", "\ufa8b" },
-        { "box-align-bottom-right", "\uf2cf" },
-        { "box-align-bottom-right-filled", "\ufa8c" },
-        { "box-align-left", "\uf2a9" },
-        { "box-align-left-filled", "\ufa8d" },
-        { "box-align-right", "\uf2aa" },
-        { "box-align-right-filled", "\ufa8e" },
-        { "box-align-top", "\uf2ab" },
-        { "box-align-top-filled", "\ufa8f" },
-        { "box-align-top-left", "\uf2d0" },
-        { "box-align-top-left-filled", "\ufa90" },
-        { "box-align-top-right", "\uf2d1" },
-        { "box-align-top-right-filled", "\ufa91" },
-        { "box-margin", "\uee0b" },
-        { "box-model", "\uee0c" },
-        { "box-model-2", "\uef23" },
-        { "box-model-2-off", "\uf3c9" },
-        { "box-model-off", "\uf3ca" },
-        { "box-multiple", "\uee17" },
-        { "box-multiple-0", "\uee0d" },
-        { "box-multiple-1", "\uee0e" },
-        { "box-multiple-2", "\uee0f" },
-        { "box-multiple-3", "\uee10" },
-        { "box-multiple-4", "\uee11" },
-        { "box-multiple-5", "\uee12" },
-        { "box-multiple-6", "\uee13" },
-        { "box-multiple-7", "\uee14" },
-        { "box-multiple-8", "\uee15" },
-        { "box-multiple-9", "\uee16" },
-        { "box-off", "\uf102" },
-        { "box-padding", "\uee18" },
-        { "box-seam", "\uf561" },
-        { "braces", "\uebcc" },
-        { "braces-off", "\uf0bf" },
-        { "brackets", "\uebcd" },
-        { "brackets-contain", "\uf1e5" },
-        { "brackets-contain-end", "\uf1e3" },
-        { "brackets-contain-start", "\uf1e4" },
-        { "brackets-off", "\uf0c0" },
-        { "braille", "\uf545" },
-        { "brain", "\uf59f" },
-        { "brand-4chan", "\uf494" },
-        { "brand-abstract", "\uf495" },
-        { "brand-adobe", "\uf0dc" },
-        { "brand-adonis-js", "\uf496" },
-        { "brand-airbnb", "\ued68" },
-        { "brand-airtable", "\uef6a" },
-        { "brand-algolia", "\uf390" },
-        { "brand-alipay", "\uf7a2" },
-        { "brand-alpine-js", "\uf324" },
-        { "brand-amazon", "\uf230" },
-        { "brand-amd", "\uf653" },
-        { "brand-amigo", "\uf5f9" },
-        { "brand-among-us", "\uf205" },
-        { "brand-android", "\uec16" },
-        { "brand-angular", "\uef6b" },
-        { "brand-ansible", "\ufa70" },
-        { "brand-ao3", "\uf5e8" },
-        { "brand-appgallery", "\uf231" },
-        { "brand-apple", "\uec17" },
-        { "brand-apple-arcade", "\ued69" },
-        { "brand-apple-podcast", "\uf1e6" },
-        { "brand-appstore", "\ued24" },
-        { "brand-asana", "\uedc5" },
-        { "brand-aws", "\ufa4c" },
-        { "brand-azure", "\ufa4d" },
-        { "brand-backbone", "\uf325" },
-        { "brand-badoo", "\uf206" },
-        { "brand-baidu", "\uf5e9" },
-        { "brand-bandcamp", "\uf207" },
-        { "brand-bandlab", "\uf5fa" },
-        { "brand-beats", "\uf208" },
-        { "brand-behance", "\uec6e" },
-        { "brand-bilibili", "\uf6d2" },
-        { "brand-binance", "\uf5a0" },
-        { "brand-bing", "\uedc6" },
-        { "brand-bitbucket", "\uedc7" },
-        { "brand-blackberry", "\uf568" },
-        { "brand-blender", "\uf326" },
-        { "brand-blogger", "\uf35a" },
-        { "brand-booking", "\uedc8" },
-        { "brand-bootstrap", "\uef3e" },
-        { "brand-bulma", "\uf327" },
-        { "brand-bumble", "\uf5fb" },
-        { "brand-bunpo", "\uf4cf" },
-        { "brand-c-sharp", "\uf003" },
-        { "brand-cake", "\uf7a3" },
-        { "brand-cakephp", "\uf7af" },
-        { "brand-campaignmonitor", "\uf328" },
-        { "brand-carbon", "\uf348" },
-        { "brand-cashapp", "\uf391" },
-        { "brand-chrome", "\uec18" },
-        { "brand-cinema-4d", "\ufa71" },
-        { "brand-citymapper", "\uf5fc" },
-        { "brand-cloudflare", "\ufa4e" },
-        { "brand-codecov", "\uf329" },
-        { "brand-codepen", "\uec6f" },
-        { "brand-codesandbox", "\ued6a" },
-        { "brand-cohost", "\uf5d5" },
-        { "brand-coinbase", "\uf209" },
-        { "brand-comedy-central", "\uf217" },
-        { "brand-coreos", "\uf5fd" },
-        { "brand-couchdb", "\uf60f" },
-        { "brand-couchsurfing", "\uf392" },
-        { "brand-cpp", "\uf5fe" },
-        { "brand-craft", "\ufa72" },
-        { "brand-crunchbase", "\uf7e3" },
-        { "brand-css3", "\ued6b" },
-        { "brand-ctemplar", "\uf4d0" },
-        { "brand-cucumber", "\uef6c" },
-        { "brand-cupra", "\uf4d1" },
-        { "brand-cypress", "\uf333" },
-        { "brand-d3", "\uf24e" },
-        { "brand-days-counter", "\uf4d2" },
-        { "brand-dcos", "\uf32a" },
-        { "brand-debian", "\uef57" },
-        { "brand-deezer", "\uf78b" },
-        { "brand-deliveroo", "\uf4d3" },
-        { "brand-deno", "\uf24f" },
-        { "brand-denodo", "\uf610" },
-        { "brand-deviantart", "\uecfb" },
-        { "brand-digg", "\ufa73" },
-        { "brand-dingtalk", "\uf5ea" },
-        { "brand-discord", "\uece3" },
-        { "brand-discord-filled", "\uf7e4" },
-        { "brand-disney", "\uf20a" },
-        { "brand-disqus", "\uedc9" },
-        { "brand-django", "\uf349" },
-        { "brand-docker", "\uedca" },
-        { "brand-doctrine", "\uef6d" },
-        { "brand-dolby-digital", "\uf4d4" },
-        { "brand-douban", "\uf5ff" },
-        { "brand-dribbble", "\uec19" },
-        { "brand-dribbble-filled", "\uf7e5" },
-        { "brand-drops", "\uf4d5" },
-        { "brand-drupal", "\uf393" },
-        { "brand-edge", "\uecfc" },
-        { "brand-elastic", "\uf611" },
-        { "brand-electronic-arts", "\ufa74" },
-        { "brand-ember", "\uf497" },
-        { "brand-envato", "\uf394" },
-        { "brand-etsy", "\uf654" },
-        { "brand-evernote", "\uf600" },
-        { "brand-facebook", "\uec1a" },
-        { "brand-facebook-filled", "\uf7e6" },
-        { "brand-feedly", "\ufa75" },
-        { "brand-figma", "\uec93" },
-        { "brand-filezilla", "\ufa76" },
-        { "brand-finder", "\uf218" },
-        { "brand-firebase", "\uef6e" },
-        { "brand-firefox", "\uecfd" },
-        { "brand-fiverr", "\uf7a4" },
-        { "brand-flickr", "\uecfe" },
-        { "brand-flightradar24", "\uf4d6" },
-        { "brand-flipboard", "\uf20b" },
-        { "brand-flutter", "\uf395" },
-        { "brand-fortnite", "\uf260" },
-        { "brand-foursquare", "\uecff" },
-        { "brand-framer", "\uec1b" },
-        { "brand-framer-motion", "\uf78c" },
-        { "brand-funimation", "\uf655" },
-        { "brand-gatsby", "\uf396" },
-        { "brand-git", "\uef6f" },
-        { "brand-github", "\uec1c" },
-        { "brand-github-copilot", "\uf4a8" },
-        { "brand-github-filled", "\uf7e7" },
-        { "brand-gitlab", "\uec1d" },
-        { "brand-gmail", "\uefa2" },
-        { "brand-golang", "\uf78d" },
-        { "brand-google", "\uec1f" },
-        { "brand-google-analytics", "\uedcb" },
-        { "brand-google-big-query", "\uf612" },
-        { "brand-google-drive", "\uec1e" },
-        { "brand-google-fit", "\uf297" },
-        { "brand-google-home", "\uf601" },
-        { "brand-google-maps", "\ufa4f" },
-        { "brand-google-one", "\uf232" },
-        { "brand-google-photos", "\uf20c" },
-        { "brand-google-play", "\ued25" },
-        { "brand-google-podcasts", "\uf656" },
-        { "brand-grammarly", "\uf32b" },
-        { "brand-graphql", "\uf32c" },
-        { "brand-gravatar", "\uedcc" },
-        { "brand-grindr", "\uf20d" },
-        { "brand-guardian", "\uf4fb" },
-        { "brand-gumroad", "\uf5d6" },
-        { "brand-hbo", "\uf657" },
-        { "brand-headlessui", "\uf32d" },
-        { "brand-hexo", "\ufa50" },
-        { "brand-hipchat", "\uedcd" },
-        { "brand-html5", "\ued6c" },
-        { "brand-inertia", "\uf34a" },
-        { "brand-instagram", "\uec20" },
-        { "brand-intercom", "\uf1cf" },
-        { "brand-itch", "\ufa22" },
-        { "brand-javascript", "\uef0c" },
-        { "brand-juejin", "\uf7b0" },
-        { "brand-kbin", "\ufad0" },
-        { "brand-kick", "\ufa23" },
-        { "brand-kickstarter", "\uedce" },
-        { "brand-kotlin", "\ued6d" },
-        { "brand-laravel", "\uf34b" },
-        { "brand-lastfm", "\uf001" },
-        { "brand-leetcode", "\ufa51" },
-        { "brand-letterboxd", "\ufa24" },
-        { "brand-line", "\uf7e8" },
-        { "brand-linkedin", "\uec8c" },
-        { "brand-linktree", "\uf1e7" },
-        { "brand-linqpad", "\uf562" },
-        { "brand-loom", "\uef70" },
-        { "brand-mailgun", "\uf32e" },
-        { "brand-mantine", "\uf32f" },
-        { "brand-mastercard", "\uef49" },
-        { "brand-mastodon", "\uf250" },
-        { "brand-matrix", "\uf5eb" },
-        { "brand-mcdonalds", "\uf251" },
-        { "brand-medium", "\uec70" },
-        { "brand-mercedes", "\uf072" },
-        { "brand-messenger", "\uec71" },
-        { "brand-meta", "\uefb0" },
-        { "brand-microsoft-teams", "\ufadf" },
-        { "brand-minecraft", "\ufaef" },
-        { "brand-miniprogram", "\uf602" },
-        { "brand-mixpanel", "\uf397" },
-        { "brand-monday", "\uf219" },
-        { "brand-mongodb", "\uf613" },
-        { "brand-my-oppo", "\uf4d7" },
-        { "brand-mysql", "\uf614" },
-        { "brand-national-geographic", "\uf603" },
-        { "brand-nem", "\uf5a1" },
-        { "brand-netbeans", "\uef71" },
-        { "brand-netease-music", "\uf604" },
-        { "brand-netflix", "\uedcf" },
-        { "brand-nexo", "\uf5a2" },
-        { "brand-nextcloud", "\uf4d8" },
-        { "brand-nextjs", "\uf0dd" },
-        { "brand-nodejs", "\ufae0" },
-        { "brand-nord-vpn", "\uf37f" },
-        { "brand-notion", "\uef7b" },
-        { "brand-npm", "\uf569" },
-        { "brand-nuxt", "\uf0de" },
-        { "brand-nytimes", "\uef8d" },
-        { "brand-oauth", "\ufa52" },
-        { "brand-office", "\uf398" },
-        { "brand-ok-ru", "\uf399" },
-        { "brand-onedrive", "\uf5d7" },
-        { "brand-onlyfans", "\uf605" },
-        { "brand-open-source", "\uedd0" },
-        { "brand-openai", "\uf78e" },
-        { "brand-openvpn", "\uf39a" },
-        { "brand-opera", "\uec21" },
-        { "brand-pagekit", "\uedd1" },
-        { "brand-patreon", "\uedd2" },
-        { "brand-paypal", "\uec22" },
-        { "brand-paypal-filled", "\uf7e9" },
-        { "brand-paypay", "\uf5ec" },
-        { "brand-peanut", "\uf39b" },
-        { "brand-pepsi", "\uf261" },
-        { "brand-php", "\uef72" },
-        { "brand-picsart", "\uf4d9" },
-        { "brand-pinterest", "\uec8d" },
-        { "brand-planetscale", "\uf78f" },
-        { "brand-pocket", "\ued00" },
-        { "brand-polymer", "\uf498" },
-        { "brand-powershell", "\uf5ed" },
-        { "brand-prisma", "\uf499" },
-        { "brand-producthunt", "\uedd3" },
-        { "brand-pushbullet", "\uf330" },
-        { "brand-pushover", "\uf20e" },
-        { "brand-python", "\ued01" },
-        { "brand-qq", "\uf606" },
-        { "brand-radix-ui", "\uf790" },
-        { "brand-react", "\uf34c" },
-        { "brand-react-native", "\uef73" },
-        { "brand-reason", "\uf49a" },
-        { "brand-reddit", "\uec8e" },
-        { "brand-redhat", "\uf331" },
-        { "brand-redux", "\uf3a8" },
-        { "brand-revolut", "\uf4da" },
-        { "brand-rumble", "\ufad1" },
-        { "brand-rust", "\ufa53" },
-        { "brand-safari", "\uec23" },
-        { "brand-samsungpass", "\uf4db" },
-        { "brand-sass", "\uedd4" },
-        { "brand-sentry", "\uedd5" },
-        { "brand-sharik", "\uf4dc" },
-        { "brand-shazam", "\uedd6" },
-        { "brand-shopee", "\uf252" },
-        { "brand-sketch", "\uec24" },
-        { "brand-skype", "\ued02" },
-        { "brand-slack", "\uec72" },
-        { "brand-snapchat", "\uec25" },
-        { "brand-snapseed", "\uf253" },
-        { "brand-snowflake", "\uf615" },
-        { "brand-socket-io", "\uf49b" },
-        { "brand-solidjs", "\uf5ee" },
-        { "brand-soundcloud", "\ued6e" },
-        { "brand-spacehey", "\uf4fc" },
-        { "brand-speedtest", "\ufa77" },
-        { "brand-spotify", "\ued03" },
-        { "brand-stackoverflow", "\uef58" },
-        { "brand-stackshare", "\uf607" },
-        { "brand-steam", "\ued6f" },
-        { "brand-storj", "\ufa54" },
-        { "brand-storybook", "\uf332" },
-        { "brand-storytel", "\uf608" },
-        { "brand-strava", "\uf254" },
-        { "brand-stripe", "\uedd7" },
-        { "brand-sublime-text", "\uef74" },
-        { "brand-sugarizer", "\uf7a5" },
-        { "brand-supabase", "\uf6d3" },
-        { "brand-superhuman", "\uf50c" },
-        { "brand-supernova", "\uf49c" },
-        { "brand-surfshark", "\uf255" },
-        { "brand-svelte", "\uf0df" },
-        { "brand-swift", "\ufa55" },
-        { "brand-symfony", "\uf616" },
-        { "brand-tabler", "\uec8f" },
-        { "brand-tailwind", "\ueca1" },
-        { "brand-taobao", "\uf5ef" },
-        { "brand-ted", "\uf658" },
-        { "brand-telegram", "\uec26" },
-        { "brand-terraform", "\ufa56" },
-        { "brand-tether", "\uf5a3" },
-        { "brand-threads", "\ufb02" },
-        { "brand-threejs", "\uf5f0" },
-        { "brand-tidal", "\ued70" },
-        { "brand-tikto-filled", "\uf7ea" },
-        { "brand-tiktok", "\uec73" },
-        { "brand-tinder", "\ued71" },
-        { "brand-topbuzz", "\uf50d" },
-        { "brand-torchain", "\uf5a4" },
-        { "brand-toyota", "\uf262" },
-        { "brand-trello", "\uf39d" },
-        { "brand-tripadvisor", "\uf002" },
-        { "brand-tumblr", "\ued04" },
-        { "brand-twilio", "\uf617" },
-        { "brand-twitch", "\ued05" },
-        { "brand-twitter", "\uec27" },
-        { "brand-twitter-filled", "\uf7eb" },
-        { "brand-typescript", "\uf5f1" },
-        { "brand-uber", "\uef75" },
-        { "brand-ubuntu", "\uef59" },
-        { "brand-unity", "\uf49d" },
-        { "brand-unsplash", "\uedd8" },
-        { "brand-upwork", "\uf39e" },
-        { "brand-valorant", "\uf39f" },
-        { "brand-vercel", "\uef24" },
-        { "brand-vimeo", "\ued06" },
-        { "brand-vinted", "\uf20f" },
-        { "brand-visa", "\uf380" },
-        { "brand-visual-studio", "\uef76" },
-        { "brand-vite", "\uf5f2" },
-        { "brand-vivaldi", "\uf210" },
-        { "brand-vk", "\ued72" },
-        { "brand-vlc", "\ufa78" },
-        { "brand-volkswagen", "\uf50e" },
-        { "brand-vsco", "\uf334" },
-        { "brand-vscode", "\uf3a0" },
-        { "brand-vue", "\uf0e0" },
-        { "brand-walmart", "\uf211" },
-        { "brand-waze", "\uf5d8" },
-        { "brand-webflow", "\uf2d2" },
-        { "brand-wechat", "\uf5f3" },
-        { "brand-weibo", "\uf609" },
-        { "brand-whatsapp", "\uec74" },
-        { "brand-wikipedia", "\ufa79" },
-        { "brand-windows", "\uecd8" },
-        { "brand-windy", "\uf4dd" },
-        { "brand-wish", "\uf212" },
-        { "brand-wix", "\uf3a1" },
-        { "brand-wordpress", "\uf2d3" },
-        { "brand-x", "\ufc0f" },
-        { "brand-x-filled", "\ufc21" },
-        { "brand-xamarin", "\ufa7a" },
-        { "brand-xbox", "\uf298" },
-        { "brand-xdeep", "\ufc10" },
-        { "brand-xing", "\uf21a" },
-        { "brand-yahoo", "\ued73" },
-        { "brand-yandex", "\ufae1" },
-        { "brand-yatse", "\uf213" },
-        { "brand-ycombinator", "\uedd9" },
-        { "brand-youtube", "\uec90" },
-        { "brand-youtube-filled", "\ufc22" },
-        { "brand-youtube-kids", "\uf214" },
-        { "brand-zalando", "\uf49e" },
-        { "brand-zapier", "\uf49f" },
-        { "brand-zeit", "\uf335" },
-        { "brand-zhihu", "\uf60a" },
-        { "brand-zoom", "\uf215" },
-        { "brand-zulip", "\uf4de" },
-        { "brand-zwift", "\uf216" },
-        { "bread", "\uefa3" },
-        { "bread-off", "\uf3cb" },
-        { "briefcase", "\uea46" },
-        { "briefcase-2", "\ufb03" },
-        { "briefcase-off", "\uf3cc" },
-        { "brightness", "\ueb7f" },
-        { "brightness-2", "\uee19" },
-        { "brightness-down", "\ueb7d" },
-        { "brightness-down-filled", "\ufb23" },
-        { "brightness-half", "\uee1a" },
-        { "brightness-off", "\uf3cd" },
-        { "brightness-up", "\ueb7e" },
-        { "brightness-up-filled", "\ufb24" },
-        { "broadcast", "\uf1e9" },
-        { "broadcast-off", "\uf1e8" },
-        { "browser", "\uebb7" },
-        { "browser-check", "\uefd6" },
-        { "browser-off", "\uf0c1" },
-        { "browser-plus", "\uefd7" },
-        { "browser-x", "\uefd8" },
-        { "brush", "\uebb8" },
-        { "brush-off", "\uf0c2" },
-        { "bucket", "\uea47" },
-        { "bucket-droplet", "\uf56a" },
-        { "bucket-off", "\uf103" },
-        { "bug", "\uea48" },
-        { "bug-off", "\uf0c3" },
-        { "building", "\uea4f" },
-        { "building-arch", "\uea49" },
-        { "building-bank", "\uebe2" },
-        { "building-bridge", "\uea4b" },
-        { "building-bridge-2", "\uea4a" },
-        { "building-broadcast-tower", "\uf4be" },
-        { "building-carousel", "\ued87" },
-        { "building-castle", "\ued88" },
-        { "building-church", "\uea4c" },
-        { "building-circus", "\uf4bf" },
-        { "building-community", "\uebf6" },
-        { "building-cottage", "\uee1b" },
-        { "building-estate", "\uf5a5" },
-        { "building-factory", "\uee1c" },
-        { "building-factory-2", "\uf082" },
-        { "building-fortress", "\ued89" },
-        { "building-hospital", "\uea4d" },
-        { "building-lighthouse", "\ued8a" },
-        { "building-monument", "\ued26" },
-        { "building-mosque", "\ufa57" },
-        { "building-pavilion", "\uebf7" },
-        { "building-skyscraper", "\uec39" },
-        { "building-stadium", "\uf641" },
-        { "building-store", "\uea4e" },
-        { "building-tunnel", "\uf5a6" },
-        { "building-warehouse", "\uebe3" },
-        { "building-wind-turbine", "\uf4c0" },
-        { "bulb", "\uea51" },
-        { "bulb-filled", "\uf66a" },
-        { "bulb-off", "\uea50" },
-        { "bulldozer", "\uee1d" },
-        { "bus", "\uebe4" },
-        { "bus-off", "\uf3ce" },
-        { "bus-stop", "\uf2d4" },
-        { "businessplan", "\uee1e" },
-        { "butterfly", "\uefd9" },
-        { "cactus", "\uf21b" },
-        { "cactus-filled", "\ufb25" },
-        { "cactus-off", "\uf3cf" },
-        { "cake", "\uf00f" },
-        { "cake-off", "\uf104" },
-        { "calculator", "\ueb80" },
-        { "calculator-filled", "\ufb26" },
-        { "calculator-off", "\uf0c4" },
-        { "calendar", "\uea53" },
-        { "calendar-bolt", "\uf822" },
-        { "calendar-cancel", "\uf823" },
-        { "calendar-check", "\uf824" },
-        { "calendar-code", "\uf825" },
-        { "calendar-cog", "\uf826" },
-        { "calendar-dollar", "\uf827" },
-        { "calendar-down", "\uf828" },
-        { "calendar-due", "\uf621" },
-        { "calendar-event", "\uea52" },
-        { "calendar-exclamation", "\uf829" },
-        { "calendar-filled", "\ufb27" },
-        { "calendar-heart", "\uf82a" },
-        { "calendar-minus", "\uebb9" },
-        { "calendar-off", "\uee1f" },
-        { "calendar-pause", "\uf82b" },
-        { "calendar-pin", "\uf82c" },
-        { "calendar-plus", "\uebba" },
-        { "calendar-question", "\uf82d" },
-        { "calendar-repeat", "\ufad2" },
-        { "calendar-search", "\uf82e" },
-        { "calendar-share", "\uf82f" },
-        { "calendar-star", "\uf830" },
-        { "calendar-stats", "\uee20" },
-        { "calendar-time", "\uee21" },
-        { "calendar-up", "\uf831" },
-        { "calendar-x", "\uf832" },
-        { "camera", "\uea54" },
-        { "camera-bolt", "\uf833" },
-        { "camera-cancel", "\uf834" },
-        { "camera-check", "\uf835" },
-        { "camera-code", "\uf836" },
-        { "camera-cog", "\uf837" },
-        { "camera-dollar", "\uf838" },
-        { "camera-down", "\uf839" },
-        { "camera-exclamation", "\uf83a" },
-        { "camera-filled", "\ufa37" },
-        { "camera-heart", "\uf83b" },
-        { "camera-minus", "\uec3a" },
-        { "camera-off", "\uecee" },
-        { "camera-pause", "\uf83c" },
-        { "camera-pin", "\uf83d" },
-        { "camera-plus", "\uec3b" },
-        { "camera-question", "\uf83e" },
-        { "camera-rotate", "\uee22" },
-        { "camera-search", "\uf83f" },
-        { "camera-selfie", "\uee23" },
-        { "camera-share", "\uf840" },
-        { "camera-star", "\uf841" },
-        { "camera-up", "\uf842" },
-        { "camera-x", "\uf843" },
-        { "camper", "\ufa25" },
-        { "campfire", "\uf5a7" },
-        { "campfire-filled", "\ufb28" },
-        { "candle", "\uefc6" },
-        { "candle-filled", "\ufc23" },
-        { "candy", "\uef0d" },
-        { "candy-off", "\uf0c5" },
-        { "cane", "\uf50f" },
-        { "cannabis", "\uf4c1" },
-        { "capsule", "\ufae3" },
-        { "capsule-filled", "\ufc24" },
-        { "capsule-horizontal", "\ufae2" },
-        { "capsule-horizontal-filled", "\ufc25" },
-        { "capture", "\uec3c" },
-        { "capture-filled", "\ufb29" },
-        { "capture-off", "\uf0c6" },
-        { "car", "\uebbb" },
-        { "car-crane", "\uef25" },
-        { "car-crash", "\uefa4" },
-        { "car-off", "\uf0c7" },
-        { "car-turbine", "\uf4fd" },
-        { "caravan", "\uec7c" },
-        { "cardboards", "\ued74" },
-        { "cardboards-off", "\uf0c8" },
-        { "cards", "\uf510" },
-        { "cards-filled", "\ufc26" },
-        { "caret-down", "\ueb5d" },
-        { "caret-down-filled", "\ufb2a" },
-        { "caret-left", "\ueb5e" },
-        { "caret-left-filled", "\ufb2b" },
-        { "caret-right", "\ueb5f" },
-        { "caret-right-filled", "\ufb2c" },
-        { "caret-up", "\ueb60" },
-        { "caret-up-filled", "\ufb2d" },
-        { "carousel-horizontal", "\uf659" },
-        { "carousel-horizontal-filled", "\ufa92" },
-        { "carousel-vertical", "\uf65a" },
-        { "carousel-vertical-filled", "\ufa93" },
-        { "carrot", "\uf21c" },
-        { "carrot-off", "\uf3d0" },
-        { "cash", "\uea55" },
-        { "cash-banknote", "\uee25" },
-        { "cash-banknote-off", "\uee24" },
-        { "cash-off", "\uf105" },
-        { "cast", "\uea56" },
-        { "cast-off", "\uf0c9" },
-        { "cat", "\uf65b" },
-        { "category", "\uf1f6" },
-        { "category-2", "\uf1f5" },
-        { "category-filled", "\ufb2e" },
-        { "ce", "\ued75" },
-        { "ce-off", "\uf0ca" },
-        { "cell", "\uf05f" },
-        { "cell-signal-1", "\uf083" },
-        { "cell-signal-2", "\uf084" },
-        { "cell-signal-3", "\uf085" },
-        { "cell-signal-4", "\uf086" },
-        { "cell-signal-5", "\uf087" },
-        { "cell-signal-off", "\uf088" },
-        { "certificate", "\ued76" },
-        { "certificate-2", "\uf073" },
-        { "certificate-2-off", "\uf0cb" },
-        { "certificate-off", "\uf0cc" },
-        { "chair-director", "\uf2d5" },
-        { "chalkboard", "\uf34d" },
-        { "chalkboard-off", "\uf3d1" },
-        { "charging-pile", "\uee26" },
-        { "chart-arcs", "\uee28" },
-        { "chart-arcs-3", "\uee27" },
-        { "chart-area", "\uea58" },
-        { "chart-area-filled", "\uf66b" },
-        { "chart-area-line", "\uea57" },
-        { "chart-area-line-filled", "\uf66c" },
-        { "chart-arrows", "\uee2a" },
-        { "chart-arrows-vertical", "\uee29" },
-        { "chart-bar", "\uea59" },
-        { "chart-bar-off", "\uf3d2" },
-        { "chart-bubble", "\uec75" },
-        { "chart-bubble-filled", "\uf66d" },
-        { "chart-candle", "\uea5a" },
-        { "chart-candle-filled", "\uf66e" },
-        { "chart-circles", "\uee2b" },
-        { "chart-donut", "\uea5b" },
-        { "chart-donut-2", "\uee2c" },
-        { "chart-donut-3", "\uee2d" },
-        { "chart-donut-4", "\uee2e" },
-        { "chart-donut-filled", "\uf66f" },
-        { "chart-dots", "\uee2f" },
-        { "chart-dots-2", "\uf097" },
-        { "chart-dots-3", "\uf098" },
-        { "chart-grid-dots", "\uf4c2" },
-        { "chart-histogram", "\uf65c" },
-        { "chart-infographic", "\uee30" },
-        { "chart-line", "\uea5c" },
-        { "chart-pie", "\uea5d" },
-        { "chart-pie-2", "\uee31" },
-        { "chart-pie-3", "\uee32" },
-        { "chart-pie-4", "\uee33" },
-        { "chart-pie-filled", "\uf670" },
-        { "chart-pie-off", "\uf3d3" },
-        { "chart-ppf", "\uf618" },
-        { "chart-radar", "\ued77" },
-        { "chart-sankey", "\uf619" },
-        { "chart-treemap", "\uf381" },
-        { "check", "\uea5e" },
-        { "checkbox", "\ueba6" },
-        { "checklist", "\uf074" },
-        { "checks", "\uebaa" },
-        { "checkup-list", "\uef5a" },
-        { "cheese", "\uef26" },
-        { "chef-hat", "\uf21d" },
-        { "chef-hat-off", "\uf3d4" },
-        { "cherry", "\uf511" },
-        { "cherry-filled", "\uf728" },
-        { "chess", "\uf382" },
-        { "chess-bishop", "\uf56b" },
-        { "chess-bishop-filled", "\uf729" },
-        { "chess-filled", "\uf72a" },
-        { "chess-king", "\uf56c" },
-        { "chess-king-filled", "\uf72b" },
-        { "chess-knight", "\uf56d" },
-        { "chess-knight-filled", "\uf72c" },
-        { "chess-queen", "\uf56e" },
-        { "chess-queen-filled", "\uf72d" },
-        { "chess-rook", "\uf56f" },
-        { "chess-rook-filled", "\uf72e" },
-        { "chevron-compact-down", "\ufaf0" },
-        { "chevron-compact-left", "\ufaf1" },
-        { "chevron-compact-right", "\ufaf2" },
-        { "chevron-compact-up", "\ufaf3" },
-        { "chevron-down", "\uea5f" },
-        { "chevron-down-left", "\ued09" },
-        { "chevron-down-right", "\ued0a" },
-        { "chevron-left", "\uea60" },
-        { "chevron-left-pipe", "\ufae4" },
-        { "chevron-right", "\uea61" },
-        { "chevron-right-pipe", "\ufae5" },
-        { "chevron-up", "\uea62" },
-        { "chevron-up-left", "\ued0b" },
-        { "chevron-up-right", "\ued0c" },
-        { "chevrons-down", "\uea63" },
-        { "chevrons-down-left", "\ued0d" },
-        { "chevrons-down-right", "\ued0e" },
-        { "chevrons-left", "\uea64" },
-        { "chevrons-right", "\uea65" },
-        { "chevrons-up", "\uea66" },
-        { "chevrons-up-left", "\ued0f" },
-        { "chevrons-up-right", "\ued10" },
-        { "chisel", "\uf383" },
-        { "christmas-tree", "\ued78" },
-        { "christmas-tree-off", "\uf3d5" },
-        { "circle", "\uea6b" },
-        { "circle-0-filled", "\uf72f" },
-        { "circle-1-filled", "\uf730" },
-        { "circle-2-filled", "\uf731" },
-        { "circle-3-filled", "\uf732" },
-        { "circle-4-filled", "\uf733" },
-        { "circle-5-filled", "\uf734" },
-        { "circle-6-filled", "\uf735" },
-        { "circle-7-filled", "\uf736" },
-        { "circle-8-filled", "\uf737" },
-        { "circle-9-filled", "\uf738" },
-        { "circle-arrow-down", "\uf6f9" },
-        { "circle-arrow-down-filled", "\uf6f4" },
-        { "circle-arrow-down-left", "\uf6f6" },
-        { "circle-arrow-down-left-filled", "\uf6f5" },
-        { "circle-arrow-down-right", "\uf6f8" },
-        { "circle-arrow-down-right-filled", "\uf6f7" },
-        { "circle-arrow-left", "\uf6fb" },
-        { "circle-arrow-left-filled", "\uf6fa" },
-        { "circle-arrow-right", "\uf6fd" },
-        { "circle-arrow-right-filled", "\uf6fc" },
-        { "circle-arrow-up", "\uf703" },
-        { "circle-arrow-up-filled", "\uf6fe" },
-        { "circle-arrow-up-left", "\uf700" },
-        { "circle-arrow-up-left-filled", "\uf6ff" },
-        { "circle-arrow-up-right", "\uf702" },
-        { "circle-arrow-up-right-filled", "\uf701" },
-        { "circle-caret-down", "\uf4a9" },
-        { "circle-caret-left", "\uf4aa" },
-        { "circle-caret-right", "\uf4ab" },
-        { "circle-caret-up", "\uf4ac" },
-        { "circle-check", "\uea67" },
-        { "circle-check-filled", "\uf704" },
-        { "circle-chevron-down", "\uf622" },
-        { "circle-chevron-left", "\uf623" },
-        { "circle-chevron-right", "\uf624" },
-        { "circle-chevron-up", "\uf625" },
-        { "circle-chevrons-down", "\uf642" },
-        { "circle-chevrons-left", "\uf643" },
-        { "circle-chevrons-right", "\uf644" },
-        { "circle-chevrons-up", "\uf645" },
-        { "circle-dashed", "\ued27" },
-        { "circle-dot", "\uefb1" },
-        { "circle-dot-filled", "\uf705" },
-        { "circle-dotted", "\ued28" },
-        { "circle-filled", "\uf671" },
-        { "circle-half", "\uee3f" },
-        { "circle-half-2", "\ueff3" },
-        { "circle-half-vertical", "\uee3e" },
-        { "circle-key", "\uf633" },
-        { "circle-key-filled", "\uf706" },
-        { "circle-letter-a", "\uf441" },
-        { "circle-letter-b", "\uf442" },
-        { "circle-letter-c", "\uf443" },
-        { "circle-letter-d", "\uf444" },
-        { "circle-letter-e", "\uf445" },
-        { "circle-letter-f", "\uf446" },
-        { "circle-letter-g", "\uf447" },
-        { "circle-letter-h", "\uf448" },
-        { "circle-letter-i", "\uf449" },
-        { "circle-letter-j", "\uf44a" },
-        { "circle-letter-k", "\uf44b" },
-        { "circle-letter-l", "\uf44c" },
-        { "circle-letter-m", "\uf44d" },
-        { "circle-letter-n", "\uf44e" },
-        { "circle-letter-o", "\uf44f" },
-        { "circle-letter-p", "\uf450" },
-        { "circle-letter-q", "\uf451" },
-        { "circle-letter-r", "\uf452" },
-        { "circle-letter-s", "\uf453" },
-        { "circle-letter-t", "\uf454" },
-        { "circle-letter-u", "\uf455" },
-        { "circle-letter-v", "\uf4ad" },
-        { "circle-letter-w", "\uf456" },
-        { "circle-letter-x", "\uf4ae" },
-        { "circle-letter-y", "\uf457" },
-        { "circle-letter-z", "\uf458" },
-        { "circle-minus", "\uea68" },
-        { "circle-number-0", "\uee34" },
-        { "circle-number-1", "\uee35" },
-        { "circle-number-2", "\uee36" },
-        { "circle-number-3", "\uee37" },
-        { "circle-number-4", "\uee38" },
-        { "circle-number-5", "\uee39" },
-        { "circle-number-6", "\uee3a" },
-        { "circle-number-7", "\uee3b" },
-        { "circle-number-8", "\uee3c" },
-        { "circle-number-9", "\uee3d" },
-        { "circle-off", "\uee40" },
-        { "circle-plus", "\uea69" },
-        { "circle-rectangle", "\uf010" },
-        { "circle-rectangle-off", "\uf0cd" },
-        { "circle-square", "\uece4" },
-        { "circle-triangle", "\uf011" },
-        { "circle-x", "\uea6a" },
-        { "circle-x-filled", "\uf739" },
-        { "circles", "\uece5" },
-        { "circles-filled", "\uf672" },
-        { "circles-relation", "\uf4c3" },
-        { "circuit-ammeter", "\uf271" },
-        { "circuit-battery", "\uf272" },
-        { "circuit-bulb", "\uf273" },
-        { "circuit-capacitor", "\uf275" },
-        { "circuit-capacitor-polarized", "\uf274" },
-        { "circuit-cell", "\uf277" },
-        { "circuit-cell-plus", "\uf276" },
-        { "circuit-changeover", "\uf278" },
-        { "circuit-diode", "\uf27a" },
-        { "circuit-diode-zener", "\uf279" },
-        { "circuit-ground", "\uf27c" },
-        { "circuit-ground-digital", "\uf27b" },
-        { "circuit-inductor", "\uf27d" },
-        { "circuit-motor", "\uf27e" },
-        { "circuit-pushbutton", "\uf27f" },
-        { "circuit-resistor", "\uf280" },
-        { "circuit-switch-closed", "\uf281" },
-        { "circuit-switch-open", "\uf282" },
-        { "circuit-voltmeter", "\uf283" },
-        { "clear-all", "\uee41" },
-        { "clear-formatting", "\uebe5" },
-        { "click", "\uebbc" },
-        { "clipboard", "\uea6f" },
-        { "clipboard-check", "\uea6c" },
-        { "clipboard-copy", "\uf299" },
-        { "clipboard-data", "\uf563" },
-        { "clipboard-heart", "\uf34e" },
-        { "clipboard-list", "\uea6d" },
-        { "clipboard-off", "\uf0ce" },
-        { "clipboard-plus", "\uefb2" },
-        { "clipboard-text", "\uf089" },
-        { "clipboard-typography", "\uf34f" },
-        { "clipboard-x", "\uea6e" },
-        { "clock", "\uea70" },
-        { "clock-2", "\uf099" },
-        { "clock-bolt", "\uf844" },
-        { "clock-cancel", "\uf546" },
-        { "clock-check", "\uf7c1" },
-        { "clock-code", "\uf845" },
-        { "clock-cog", "\uf7c2" },
-        { "clock-dollar", "\uf846" },
-        { "clock-down", "\uf7c3" },
-        { "clock-edit", "\uf547" },
-        { "clock-exclamation", "\uf847" },
-        { "clock-filled", "\uf73a" },
-        { "clock-heart", "\uf7c4" },
-        { "clock-hour-1", "\uf313" },
-        { "clock-hour-10", "\uf314" },
-        { "clock-hour-11", "\uf315" },
-        { "clock-hour-12", "\uf316" },
-        { "clock-hour-2", "\uf317" },
-        { "clock-hour-3", "\uf318" },
-        { "clock-hour-4", "\uf319" },
-        { "clock-hour-5", "\uf31a" },
-        { "clock-hour-6", "\uf31b" },
-        { "clock-hour-7", "\uf31c" },
-        { "clock-hour-8", "\uf31d" },
-        { "clock-hour-9", "\uf31e" },
-        { "clock-minus", "\uf848" },
-        { "clock-off", "\uf0cf" },
-        { "clock-pause", "\uf548" },
-        { "clock-pin", "\uf849" },
-        { "clock-play", "\uf549" },
-        { "clock-plus", "\uf7c5" },
-        { "clock-question", "\uf7c6" },
-        { "clock-record", "\uf54a" },
-        { "clock-search", "\uf7c7" },
-        { "clock-share", "\uf84a" },
-        { "clock-shield", "\uf7c8" },
-        { "clock-star", "\uf7c9" },
-        { "clock-stop", "\uf54b" },
-        { "clock-up", "\uf7ca" },
-        { "clock-x", "\uf7cb" },
-        { "clothes-rack", "\uf285" },
-        { "clothes-rack-off", "\uf3d6" },
-        { "cloud", "\uea76" },
-        { "cloud-bolt", "\uf84b" },
-        { "cloud-cancel", "\uf84c" },
-        { "cloud-check", "\uf84d" },
-        { "cloud-code", "\uf84e" },
-        { "cloud-cog", "\uf84f" },
-        { "cloud-computing", "\uf1d0" },
-        { "cloud-data-connection", "\uf1d1" },
-        { "cloud-dollar", "\uf850" },
-        { "cloud-down", "\uf851" },
-        { "cloud-download", "\uea71" },
-        { "cloud-exclamation", "\uf852" },
-        { "cloud-filled", "\uf673" },
-        { "cloud-fog", "\uecd9" },
-        { "cloud-heart", "\uf853" },
-        { "cloud-lock", "\uefdb" },
-        { "cloud-lock-open", "\uefda" },
-        { "cloud-minus", "\uf854" },
-        { "cloud-off", "\ued3e" },
-        { "cloud-pause", "\uf855" },
-        { "cloud-pin", "\uf856" },
-        { "cloud-plus", "\uf857" },
-        { "cloud-question", "\uf858" },
-        { "cloud-rain", "\uea72" },
-        { "cloud-search", "\uf859" },
-        { "cloud-share", "\uf85a" },
-        { "cloud-snow", "\uea73" },
-        { "cloud-star", "\uf85b" },
-        { "cloud-storm", "\uea74" },
-        { "cloud-up", "\uf85c" },
-        { "cloud-upload", "\uea75" },
-        { "cloud-x", "\uf85d" },
-        { "clover", "\uf1ea" },
-        { "clover-2", "\uf21e" },
-        { "clubs", "\ueff4" },
-        { "clubs-filled", "\uf674" },
-        { "code", "\uea77" },
-        { "code-asterix", "\uf312" },
-        { "code-circle", "\uf4ff" },
-        { "code-circle-2", "\uf4fe" },
-        { "code-dots", "\uf61a" },
-        { "code-minus", "\uee42" },
-        { "code-off", "\uf0d0" },
-        { "code-plus", "\uee43" },
-        { "coffee", "\uef0e" },
-        { "coffee-off", "\uf106" },
-        { "coffin", "\uf579" },
-        { "coin", "\ueb82" },
-        { "coin-bitcoin", "\uf2be" },
-        { "coin-euro", "\uf2bf" },
-        { "coin-monero", "\uf4a0" },
-        { "coin-off", "\uf0d1" },
-        { "coin-pound", "\uf2c0" },
-        { "coin-rupee", "\uf2c1" },
-        { "coin-yen", "\uf2c2" },
-        { "coin-yuan", "\uf2c3" },
-        { "coins", "\uf65d" },
-        { "color-filter", "\uf5a8" },
-        { "color-picker", "\uebe6" },
-        { "color-picker-off", "\uf0d2" },
-        { "color-swatch", "\ueb61" },
-        { "color-swatch-off", "\uf0d3" },
-        { "column-insert-left", "\uee44" },
-        { "column-insert-right", "\uee45" },
-        { "column-remove", "\ufaf4" },
-        { "columns", "\ueb83" },
-        { "columns-1", "\uf6d4" },
-        { "columns-2", "\uf6d5" },
-        { "columns-3", "\uf6d6" },
-        { "columns-off", "\uf0d4" },
-        { "comet", "\uec76" },
-        { "command", "\uea78" },
-        { "command-off", "\uf3d7" },
-        { "compass", "\uea79" },
-        { "compass-off", "\uf0d5" },
-        { "components", "\uefa5" },
-        { "components-off", "\uf0d6" },
-        { "cone", "\uefdd" },
-        { "cone-2", "\uefdc" },
-        { "cone-off", "\uf3d8" },
-        { "cone-plus", "\ufa94" },
-        { "confetti", "\uee46" },
-        { "confetti-off", "\uf3d9" },
-        { "confucius", "\uf58a" },
-        { "container", "\uee47" },
-        { "container-off", "\uf107" },
-        { "contrast", "\uec4e" },
-        { "contrast-2", "\uefc7" },
-        { "contrast-2-off", "\uf3da" },
-        { "contrast-off", "\uf3db" },
-        { "cooker", "\uf57a" },
-        { "cookie", "\uef0f" },
-        { "cookie-man", "\uf4c4" },
-        { "cookie-off", "\uf0d7" },
-        { "copy", "\uea7a" },
-        { "copy-off", "\uf0d8" },
-        { "copyleft", "\uec3d" },
-        { "copyleft-filled", "\uf73b" },
-        { "copyleft-off", "\uf0d9" },
-        { "copyright", "\uea7b" },
-        { "copyright-filled", "\uf73c" },
-        { "copyright-off", "\uf0da" },
-        { "corner-down-left", "\uea7c" },
-        { "corner-down-left-double", "\uee48" },
-        { "corner-down-right", "\uea7d" },
-        { "corner-down-right-double", "\uee49" },
-        { "corner-left-down", "\uea7e" },
-        { "corner-left-down-double", "\uee4a" },
-        { "corner-left-up", "\uea7f" },
-        { "corner-left-up-double", "\uee4b" },
-        { "corner-right-down", "\uea80" },
-        { "corner-right-down-double", "\uee4c" },
-        { "corner-right-up", "\uea81" },
-        { "corner-right-up-double", "\uee4d" },
-        { "corner-up-left", "\uea82" },
-        { "corner-up-left-double", "\uee4e" },
-        { "corner-up-right", "\uea83" },
-        { "corner-up-right-double", "\uee4f" },
-        { "cpu", "\uef8e" },
-        { "cpu-2", "\uf075" },
-        { "cpu-off", "\uf108" },
-        { "crane", "\uef27" },
-        { "crane-off", "\uf109" },
-        { "creative-commons", "\uefb3" },
-        { "creative-commons-by", "\uf21f" },
-        { "creative-commons-nc", "\uf220" },
-        { "creative-commons-nd", "\uf221" },
-        { "creative-commons-off", "\uf10a" },
-        { "creative-commons-sa", "\uf222" },
-        { "creative-commons-zero", "\uf223" },
-        { "credit-card", "\uea84" },
-        { "credit-card-off", "\ued11" },
-        { "cricket", "\uf09a" },
-        { "crop", "\uea85" },
-        { "cross", "\uef8f" },
-        { "cross-filled", "\uf675" },
-        { "cross-off", "\uf10b" },
-        { "crosshair", "\uec3e" },
-        { "crown", "\ued12" },
-        { "crown-off", "\uee50" },
-        { "crutches", "\uef5b" },
-        { "crutches-off", "\uf10c" },
-        { "crystal-ball", "\uf57b" },
-        { "csv", "\uf791" },
-        { "cube", "\ufa97" },
-        { "cube-off", "\ufa95" },
-        { "cube-plus", "\ufa96" },
-        { "cube-send", "\uf61b" },
-        { "cube-unfolded", "\uf61c" },
-        { "cup", "\uef28" },
-        { "cup-off", "\uf10d" },
-        { "curling", "\uefc8" },
-        { "curly-loop", "\uecda" },
-        { "currency", "\uefa6" },
-        { "currency-afghani", "\uf65e" },
-        { "currency-bahraini", "\uee51" },
-        { "currency-baht", "\uf08a" },
-        { "currency-bitcoin", "\uebab" },
-        { "currency-cent", "\uee53" },
-        { "currency-dinar", "\uee54" },
-        { "currency-dirham", "\uee55" },
-        { "currency-dogecoin", "\uef4b" },
-        { "currency-dollar", "\ueb84" },
-        { "currency-dollar-australian", "\uee56" },
-        { "currency-dollar-brunei", "\uf36c" },
-        { "currency-dollar-canadian", "\uee57" },
-        { "currency-dollar-guyanese", "\uf36d" },
-        { "currency-dollar-off", "\uf3dc" },
-        { "currency-dollar-singapore", "\uee58" },
-        { "currency-dollar-zimbabwean", "\uf36e" },
-        { "currency-dong", "\uf36f" },
-        { "currency-dram", "\uf370" },
-        { "currency-ethereum", "\uee59" },
-        { "currency-euro", "\ueb85" },
-        { "currency-euro-off", "\uf3dd" },
-        { "currency-florin", "\ufaf5" },
-        { "currency-forint", "\uee5a" },
-        { "currency-frank", "\uee5b" },
-        { "currency-guarani", "\uf371" },
-        { "currency-hryvnia", "\uf372" },
-        { "currency-iranian-rial", "\ufa58" },
-        { "currency-kip", "\uf373" },
-        { "currency-krone-czech", "\uee5c" },
-        { "currency-krone-danish", "\uee5d" },
-        { "currency-krone-swedish", "\uee5e" },
-        { "currency-lari", "\uf374" },
-        { "currency-leu", "\uee5f" },
-        { "currency-lira", "\uee60" },
-        { "currency-litecoin", "\uee61" },
-        { "currency-lyd", "\uf375" },
-        { "currency-manat", "\uf376" },
-        { "currency-monero", "\uf377" },
-        { "currency-naira", "\uee62" },
-        { "currency-nano", "\uf7a6" },
-        { "currency-off", "\uf3de" },
-        { "currency-paanga", "\uf378" },
-        { "currency-peso", "\uf65f" },
-        { "currency-pound", "\uebac" },
-        { "currency-pound-off", "\uf3df" },
-        { "currency-quetzal", "\uf379" },
-        { "currency-real", "\uee63" },
-        { "currency-renminbi", "\uee64" },
-        { "currency-ripple", "\uee65" },
-        { "currency-riyal", "\uee66" },
-        { "currency-rubel", "\uee67" },
-        { "currency-rufiyaa", "\uf37a" },
-        { "currency-rupee", "\uebad" },
-        { "currency-rupee-nepalese", "\uf37b" },
-        { "currency-shekel", "\uee68" },
-        { "currency-solana", "\uf4a1" },
-        { "currency-som", "\uf37c" },
-        { "currency-taka", "\uee69" },
-        { "currency-tenge", "\uf37d" },
-        { "currency-tugrik", "\uee6a" },
-        { "currency-won", "\uee6b" },
-        { "currency-yen", "\uebae" },
-        { "currency-yen-off", "\uf3e0" },
-        { "currency-yuan", "\uf29a" },
-        { "currency-zloty", "\uee6c" },
-        { "current-location", "\uecef" },
-        { "current-location-off", "\uf10e" },
-        { "cursor-off", "\uf10f" },
-        { "cursor-text", "\uee6d" },
-        { "cut", "\uea86" },
-        { "cylinder", "\uf54c" },
-        { "cylinder-off", "\ufa98" },
-        { "cylinder-plus", "\ufa99" },
-        { "dashboard", "\uea87" },
-        { "dashboard-off", "\uf3e1" },
-        { "database", "\uea88" },
-        { "database-cog", "\ufa10" },
-        { "database-dollar", "\ufa11" },
-        { "database-edit", "\ufa12" },
-        { "database-exclamation", "\ufa13" },
-        { "database-export", "\uee6e" },
-        { "database-heart", "\ufa14" },
-        { "database-import", "\uee6f" },
-        { "database-leak", "\ufa15" },
-        { "database-minus", "\ufa16" },
-        { "database-off", "\uee70" },
-        { "database-plus", "\ufa17" },
-        { "database-search", "\ufa18" },
-        { "database-share", "\ufa19" },
-        { "database-star", "\ufa1a" },
-        { "database-x", "\ufa1b" },
-        { "decimal", "\ufa26" },
-        { "deer", "\uf4c5" },
-        { "delta", "\uf53c" },
-        { "dental", "\uf025" },
-        { "dental-broken", "\uf286" },
-        { "dental-off", "\uf110" },
-        { "deselect", "\uf9f3" },
-        { "details", "\uee71" },
-        { "details-off", "\uf3e2" },
-        { "device-airpods", "\uf5a9" },
-        { "device-airpods-case", "\uf646" },
-        { "device-airtag", "\ufae6" },
-        { "device-analytics", "\uee72" },
-        { "device-audio-tape", "\uee73" },
-        { "device-camera-phone", "\uf233" },
-        { "device-cctv", "\uee74" },
-        { "device-cctv-off", "\uf3e3" },
-        { "device-computer-camera", "\uee76" },
-        { "device-computer-camera-off", "\uee75" },
-        { "device-desktop", "\uea89" },
-        { "device-desktop-analytics", "\uee77" },
-        { "device-desktop-bolt", "\uf85e" },
-        { "device-desktop-cancel", "\uf85f" },
-        { "device-desktop-check", "\uf860" },
-        { "device-desktop-code", "\uf861" },
-        { "device-desktop-cog", "\uf862" },
-        { "device-desktop-dollar", "\uf863" },
-        { "device-desktop-down", "\uf864" },
-        { "device-desktop-exclamation", "\uf865" },
-        { "device-desktop-heart", "\uf866" },
-        { "device-desktop-minus", "\uf867" },
-        { "device-desktop-off", "\uee78" },
-        { "device-desktop-pause", "\uf868" },
-        { "device-desktop-pin", "\uf869" },
-        { "device-desktop-plus", "\uf86a" },
-        { "device-desktop-question", "\uf86b" },
-        { "device-desktop-search", "\uf86c" },
-        { "device-desktop-share", "\uf86d" },
-        { "device-desktop-star", "\uf86e" },
-        { "device-desktop-up", "\uf86f" },
-        { "device-desktop-x", "\uf870" },
-        { "device-floppy", "\ueb62" },
-        { "device-gamepad", "\ueb63" },
-        { "device-gamepad-2", "\uf1d2" },
-        { "device-heart-monitor", "\uf060" },
-        { "device-heart-monitor-filled", "\ufa38" },
-        { "device-imac", "\uf7a7" },
-        { "device-imac-bolt", "\uf871" },
-        { "device-imac-cancel", "\uf872" },
-        { "device-imac-check", "\uf873" },
-        { "device-imac-code", "\uf874" },
-        { "device-imac-cog", "\uf875" },
-        { "device-imac-dollar", "\uf876" },
-        { "device-imac-down", "\uf877" },
-        { "device-imac-exclamation", "\uf878" },
-        { "device-imac-heart", "\uf879" },
-        { "device-imac-minus", "\uf87a" },
-        { "device-imac-off", "\uf87b" },
-        { "device-imac-pause", "\uf87c" },
-        { "device-imac-pin", "\uf87d" },
-        { "device-imac-plus", "\uf87e" },
-        { "device-imac-question", "\uf87f" },
-        { "device-imac-search", "\uf880" },
-        { "device-imac-share", "\uf881" },
-        { "device-imac-star", "\uf882" },
-        { "device-imac-up", "\uf883" },
-        { "device-imac-x", "\uf884" },
-        { "device-ipad", "\uf648" },
-        { "device-ipad-bolt", "\uf885" },
-        { "device-ipad-cancel", "\uf886" },
-        { "device-ipad-check", "\uf887" },
-        { "device-ipad-code", "\uf888" },
-        { "device-ipad-cog", "\uf889" },
-        { "device-ipad-dollar", "\uf88a" },
-        { "device-ipad-down", "\uf88b" },
-        { "device-ipad-exclamation", "\uf88c" },
-        { "device-ipad-heart", "\uf88d" },
-        { "device-ipad-horizontal", "\uf647" },
-        { "device-ipad-horizontal-bolt", "\uf88e" },
-        { "device-ipad-horizontal-cancel", "\uf88f" },
-        { "device-ipad-horizontal-check", "\uf890" },
-        { "device-ipad-horizontal-code", "\uf891" },
-        { "device-ipad-horizontal-cog", "\uf892" },
-        { "device-ipad-horizontal-dollar", "\uf893" },
-        { "device-ipad-horizontal-down", "\uf894" },
-        { "device-ipad-horizontal-exclamation", "\uf895" },
-        { "device-ipad-horizontal-heart", "\uf896" },
-        { "device-ipad-horizontal-minus", "\uf897" },
-        { "device-ipad-horizontal-off", "\uf898" },
-        { "device-ipad-horizontal-pause", "\uf899" },
-        { "device-ipad-horizontal-pin", "\uf89a" },
-        { "device-ipad-horizontal-plus", "\uf89b" },
-        { "device-ipad-horizontal-question", "\uf89c" },
-        { "device-ipad-horizontal-search", "\uf89d" },
-        { "device-ipad-horizontal-share", "\uf89e" },
-        { "device-ipad-horizontal-star", "\uf89f" },
-        { "device-ipad-horizontal-up", "\uf8a0" },
-        { "device-ipad-horizontal-x", "\uf8a1" },
-        { "device-ipad-minus", "\uf8a2" },
-        { "device-ipad-off", "\uf8a3" },
-        { "device-ipad-pause", "\uf8a4" },
-        { "device-ipad-pin", "\uf8a5" },
-        { "device-ipad-plus", "\uf8a6" },
-        { "device-ipad-question", "\uf8a7" },
-        { "device-ipad-search", "\uf8a8" },
-        { "device-ipad-share", "\uf8a9" },
-        { "device-ipad-star", "\uf8aa" },
-        { "device-ipad-up", "\uf8ab" },
-        { "device-ipad-x", "\uf8ac" },
-        { "device-landline-phone", "\uf649" },
-        { "device-laptop", "\ueb64" },
-        { "device-laptop-off", "\uf061" },
-        { "device-mobile", "\uea8a" },
-        { "device-mobile-bolt", "\uf8ad" },
-        { "device-mobile-cancel", "\uf8ae" },
-        { "device-mobile-charging", "\uf224" },
-        { "device-mobile-check", "\uf8af" },
-        { "device-mobile-code", "\uf8b0" },
-        { "device-mobile-cog", "\uf8b1" },
-        { "device-mobile-dollar", "\uf8b2" },
-        { "device-mobile-down", "\uf8b3" },
-        { "device-mobile-exclamation", "\uf8b4" },
-        { "device-mobile-filled", "\ufa39" },
-        { "device-mobile-heart", "\uf8b5" },
-        { "device-mobile-message", "\uee79" },
-        { "device-mobile-minus", "\uf8b6" },
-        { "device-mobile-off", "\uf062" },
-        { "device-mobile-pause", "\uf8b7" },
-        { "device-mobile-pin", "\uf8b8" },
-        { "device-mobile-plus", "\uf8b9" },
-        { "device-mobile-question", "\uf8ba" },
-        { "device-mobile-rotated", "\uecdb" },
-        { "device-mobile-search", "\uf8bb" },
-        { "device-mobile-share", "\uf8bc" },
-        { "device-mobile-star", "\uf8bd" },
-        { "device-mobile-up", "\uf8be" },
-        { "device-mobile-vibration", "\ueb86" },
-        { "device-mobile-x", "\uf8bf" },
-        { "device-nintendo", "\uf026" },
-        { "device-nintendo-off", "\uf111" },
-        { "device-projector", "\ufc11" },
-        { "device-remote", "\uf792" },
-        { "device-sd-card", "\uf384" },
-        { "device-sim", "\uf4b2" },
-        { "device-sim-1", "\uf4af" },
-        { "device-sim-2", "\uf4b0" },
-        { "device-sim-3", "\uf4b1" },
-        { "device-speaker", "\uea8b" },
-        { "device-speaker-off", "\uf112" },
-        { "device-tablet", "\uea8c" },
-        { "device-tablet-bolt", "\uf8c0" },
-        { "device-tablet-cancel", "\uf8c1" },
-        { "device-tablet-check", "\uf8c2" },
-        { "device-tablet-code", "\uf8c3" },
-        { "device-tablet-cog", "\uf8c4" },
-        { "device-tablet-dollar", "\uf8c5" },
-        { "device-tablet-down", "\uf8c6" },
-        { "device-tablet-exclamation", "\uf8c7" },
-        { "device-tablet-filled", "\ufa3a" },
-        { "device-tablet-heart", "\uf8c8" },
-        { "device-tablet-minus", "\uf8c9" },
-        { "device-tablet-off", "\uf063" },
-        { "device-tablet-pause", "\uf8ca" },
-        { "device-tablet-pin", "\uf8cb" },
-        { "device-tablet-plus", "\uf8cc" },
-        { "device-tablet-question", "\uf8cd" },
-        { "device-tablet-search", "\uf8ce" },
-        { "device-tablet-share", "\uf8cf" },
-        { "device-tablet-star", "\uf8d0" },
-        { "device-tablet-up", "\uf8d1" },
-        { "device-tablet-x", "\uf8d2" },
-        { "device-tv", "\uea8d" },
-        { "device-tv-off", "\uf064" },
-        { "device-tv-old", "\uf1d3" },
-        { "device-vision-pro", "\ufae7" },
-        { "device-watch", "\uebf9" },
-        { "device-watch-bolt", "\uf8d3" },
-        { "device-watch-cancel", "\uf8d4" },
-        { "device-watch-check", "\uf8d5" },
-        { "device-watch-code", "\uf8d6" },
-        { "device-watch-cog", "\uf8d7" },
-        { "device-watch-dollar", "\uf8d8" },
-        { "device-watch-down", "\uf8d9" },
-        { "device-watch-exclamation", "\uf8da" },
-        { "device-watch-heart", "\uf8db" },
-        { "device-watch-minus", "\uf8dc" },
-        { "device-watch-off", "\uf065" },
-        { "device-watch-pause", "\uf8dd" },
-        { "device-watch-pin", "\uf8de" },
-        { "device-watch-plus", "\uf8df" },
-        { "device-watch-question", "\uf8e0" },
-        { "device-watch-search", "\uf8e1" },
-        { "device-watch-share", "\uf8e2" },
-        { "device-watch-star", "\uf8e3" },
-        { "device-watch-stats", "\uef7d" },
-        { "device-watch-stats-2", "\uef7c" },
-        { "device-watch-up", "\uf8e4" },
-        { "device-watch-x", "\uf8e5" },
-        { "devices", "\ueb87" },
-        { "devices-2", "\ued29" },
-        { "devices-bolt", "\uf8e6" },
-        { "devices-cancel", "\uf8e7" },
-        { "devices-check", "\uf8e8" },
-        { "devices-code", "\uf8e9" },
-        { "devices-cog", "\uf8ea" },
-        { "devices-dollar", "\uf8eb" },
-        { "devices-down", "\uf8ec" },
-        { "devices-exclamation", "\uf8ed" },
-        { "devices-heart", "\uf8ee" },
-        { "devices-minus", "\uf8ef" },
-        { "devices-off", "\uf3e4" },
-        { "devices-pause", "\uf8f0" },
-        { "devices-pc", "\uee7a" },
-        { "devices-pc-off", "\uf113" },
-        { "devices-pin", "\uf8f1" },
-        { "devices-plus", "\uf8f2" },
-        { "devices-question", "\uf8f3" },
-        { "devices-search", "\uf8f4" },
-        { "devices-share", "\uf8f5" },
-        { "devices-star", "\uf8f6" },
-        { "devices-up", "\uf8f7" },
-        { "devices-x", "\uf8f8" },
-        { "diabolo", "\ufa9c" },
-        { "diabolo-off", "\ufa9a" },
-        { "diabolo-plus", "\ufa9b" },
-        { "dialpad", "\uf067" },
-        { "dialpad-filled", "\ufa3b" },
-        { "dialpad-off", "\uf114" },
-        { "diamond", "\ueb65" },
-        { "diamond-filled", "\uf73d" },
-        { "diamond-off", "\uf115" },
-        { "diamonds", "\ueff5" },
-        { "diamonds-filled", "\uf676" },
-        { "dice", "\ueb66" },
-        { "dice-1", "\uf08b" },
-        { "dice-1-filled", "\uf73e" },
-        { "dice-2", "\uf08c" },
-        { "dice-2-filled", "\uf73f" },
-        { "dice-3", "\uf08d" },
-        { "dice-3-filled", "\uf740" },
-        { "dice-4", "\uf08e" },
-        { "dice-4-filled", "\uf741" },
-        { "dice-5", "\uf08f" },
-        { "dice-5-filled", "\uf742" },
-        { "dice-6", "\uf090" },
-        { "dice-6-filled", "\uf743" },
-        { "dice-filled", "\uf744" },
-        { "dimensions", "\uee7b" },
-        { "direction", "\uebfb" },
-        { "direction-horizontal", "\uebfa" },
-        { "direction-sign", "\uf1f7" },
-        { "direction-sign-filled", "\uf745" },
-        { "direction-sign-off", "\uf3e5" },
-        { "directions", "\uea8e" },
-        { "directions-off", "\uf116" },
-        { "disabled", "\uea8f" },
-        { "disabled-2", "\uebaf" },
-        { "disabled-off", "\uf117" },
-        { "disc", "\uea90" },
-        { "disc-golf", "\uf385" },
-        { "disc-off", "\uf118" },
-        { "discount", "\uebbd" },
-        { "discount-2", "\uee7c" },
-        { "discount-2-off", "\uf3e6" },
-        { "discount-check", "\uf1f8" },
-        { "discount-check-filled", "\uf746" },
-        { "discount-off", "\uf3e7" },
-        { "divide", "\ued5c" },
-        { "dna", "\uee7d" },
-        { "dna-2", "\uef5c" },
-        { "dna-2-off", "\uf119" },
-        { "dna-off", "\uf11a" },
-        { "dog", "\uf660" },
-        { "dog-bowl", "\uef29" },
-        { "door", "\uef4e" },
-        { "door-enter", "\uef4c" },
-        { "door-exit", "\uef4d" },
-        { "door-off", "\uf11b" },
-        { "dots", "\uea95" },
-        { "dots-circle-horizontal", "\uea91" },
-        { "dots-diagonal", "\uea93" },
-        { "dots-diagonal-2", "\uea92" },
-        { "dots-vertical", "\uea94" },
-        { "download", "\uea96" },
-        { "download-off", "\uf11c" },
-        { "drag-drop", "\ueb89" },
-        { "drag-drop-2", "\ueb88" },
-        { "drone", "\ued79" },
-        { "drone-off", "\uee7e" },
-        { "drop-circle", "\uefde" },
-        { "droplet", "\uea97" },
-        { "droplet-bolt", "\uf8f9" },
-        { "droplet-cancel", "\uf8fa" },
-        { "droplet-check", "\uf8fb" },
-        { "droplet-code", "\uf8fc" },
-        { "droplet-cog", "\uf8fd" },
-        { "droplet-dollar", "\uf8fe" },
-        { "droplet-down", "\uf8ff" },
-        { "droplet-exclamation", "\uf900" },
-        { "droplet-filled", "\uee80" },
-        { "droplet-half", "\uee82" },
-        { "droplet-half-2", "\uee81" },
-        { "droplet-half-2-filled", "\ufb6c" },
-        { "droplet-half-filled", "\uf6c5" },
-        { "droplet-heart", "\uf901" },
-        { "droplet-minus", "\uf902" },
-        { "droplet-off", "\uee83" },
-        { "droplet-pause", "\uf903" },
-        { "droplet-pin", "\uf904" },
-        { "droplet-plus", "\uf905" },
-        { "droplet-question", "\uf906" },
-        { "droplet-search", "\uf907" },
-        { "droplet-share", "\uf908" },
-        { "droplet-star", "\uf909" },
-        { "droplet-up", "\uf90a" },
-        { "droplet-x", "\uf90b" },
-        { "droplets", "\ufc12" },
-        { "dual-screen", "\ufa59" },
-        { "e-passport", "\uf4df" },
-        { "ear", "\uebce" },
-        { "ear-off", "\uee84" },
-        { "ease-in", "\uf573" },
-        { "ease-in-control-point", "\uf570" },
-        { "ease-in-out", "\uf572" },
-        { "ease-in-out-control-points", "\uf571" },
-        { "ease-out", "\uf575" },
-        { "ease-out-control-point", "\uf574" },
-        { "edit", "\uea98" },
-        { "edit-circle", "\uee85" },
-        { "edit-circle-off", "\uf11d" },
-        { "edit-off", "\uf11e" },
-        { "egg", "\ueb8a" },
-        { "egg-cracked", "\uf2d6" },
-        { "egg-filled", "\uf678" },
-        { "egg-fried", "\uf386" },
-        { "egg-off", "\uf11f" },
-        { "eggs", "\uf500" },
-        { "elevator", "\uefdf" },
-        { "elevator-off", "\uf3e8" },
-        { "emergency-bed", "\uef5d" },
-        { "empathize", "\uf29b" },
-        { "empathize-off", "\uf3e9" },
-        { "emphasis", "\uebcf" },
-        { "engine", "\uef7e" },
-        { "engine-off", "\uf120" },
-        { "equal", "\uee87" },
-        { "equal-double", "\uf4e1" },
-        { "equal-not", "\uee86" },
-        { "eraser", "\ueb8b" },
-        { "eraser-off", "\uf121" },
-        { "error-404", "\uf027" },
-        { "error-404-off", "\uf122" },
-        { "escalator", "\ufb06" },
-        { "escalator-down", "\ufb04" },
-        { "escalator-up", "\ufb05" },
-        { "exchange", "\uebe7" },
-        { "exchange-off", "\uf123" },
-        { "exclamation-circle", "\uf634" },
-        { "exclamation-mark", "\uefb4" },
-        { "exclamation-mark-off", "\uf124" },
-        { "explicit", "\uf256" },
-        { "explicit-off", "\uf3ea" },
-        { "exposure", "\ueb8c" },
-        { "exposure-0", "\uf29c" },
-        { "exposure-minus-1", "\uf29d" },
-        { "exposure-minus-2", "\uf29e" },
-        { "exposure-off", "\uf3eb" },
-        { "exposure-plus-1", "\uf29f" },
-        { "exposure-plus-2", "\uf2a0" },
-        { "external-link", "\uea99" },
-        { "external-link-off", "\uf125" },
-        { "eye", "\uea9a" },
-        { "eye-bolt", "\ufb6d" },
-        { "eye-cancel", "\ufb6e" },
-        { "eye-check", "\uee88" },
-        { "eye-closed", "\uf7ec" },
-        { "eye-code", "\ufb6f" },
-        { "eye-cog", "\uf7ed" },
-        { "eye-discount", "\ufb70" },
-        { "eye-dollar", "\ufb71" },
-        { "eye-down", "\ufb72" },
-        { "eye-edit", "\uf7ee" },
-        { "eye-exclamation", "\uf7ef" },
-        { "eye-filled", "\uf679" },
-        { "eye-heart", "\uf7f0" },
-        { "eye-minus", "\ufb73" },
-        { "eye-off", "\uecf0" },
-        { "eye-pause", "\ufb74" },
-        { "eye-pin", "\ufb75" },
-        { "eye-plus", "\ufb76" },
-        { "eye-question", "\ufb77" },
-        { "eye-search", "\ufb78" },
-        { "eye-share", "\ufb79" },
-        { "eye-star", "\ufb7a" },
-        { "eye-table", "\uef5e" },
-        { "eye-up", "\ufb7b" },
-        { "eye-x", "\uf7f1" },
-        { "eyeglass", "\uee8a" },
-        { "eyeglass-2", "\uee89" },
-        { "eyeglass-off", "\uf126" },
-        { "face-id", "\uea9b" },
-        { "face-id-error", "\uefa7" },
-        { "face-mask", "\uefb5" },
-        { "face-mask-off", "\uf127" },
-        { "fall", "\uecb9" },
-        { "feather", "\uee8b" },
-        { "feather-off", "\uf128" },
-        { "fence", "\uef2a" },
-        { "fence-off", "\uf129" },
-        { "fidget-spinner", "\uf068" },
-        { "file", "\ueaa4" },
-        { "file-3d", "\uf032" },
-        { "file-alert", "\uede6" },
-        { "file-analytics", "\uede7" },
-        { "file-arrow-left", "\uf033" },
-        { "file-arrow-right", "\uf034" },
-        { "file-barcode", "\uf035" },
-        { "file-broken", "\uf501" },
-        { "file-certificate", "\ued4d" },
-        { "file-chart", "\uf036" },
-        { "file-check", "\uea9c" },
-        { "file-code", "\uebd0" },
-        { "file-code-2", "\uede8" },
-        { "file-cv", "\ufa5a" },
-        { "file-database", "\uf037" },
-        { "file-delta", "\uf53d" },
-        { "file-description", "\uf028" },
-        { "file-diff", "\uecf1" },
-        { "file-digit", "\uefa8" },
-        { "file-dislike", "\ued2a" },
-        { "file-dollar", "\uefe0" },
-        { "file-dots", "\uf038" },
-        { "file-download", "\uea9d" },
-        { "file-euro", "\uefe1" },
-        { "file-export", "\uede9" },
-        { "file-filled", "\uf747" },
-        { "file-function", "\uf53e" },
-        { "file-horizontal", "\uebb0" },
-        { "file-import", "\uedea" },
-        { "file-infinity", "\uf502" },
-        { "file-info", "\uedec" },
-        { "file-invoice", "\ueb67" },
-        { "file-lambda", "\uf53f" },
-        { "file-like", "\ued2b" },
-        { "file-minus", "\uea9e" },
-        { "file-music", "\uea9f" },
-        { "file-off", "\uecf2" },
-        { "file-orientation", "\uf2a1" },
-        { "file-pencil", "\uf039" },
-        { "file-percent", "\uf540" },
-        { "file-phone", "\uecdc" },
-        { "file-plus", "\ueaa0" },
-        { "file-power", "\uf03a" },
-        { "file-report", "\ueded" },
-        { "file-rss", "\uf03b" },
-        { "file-scissors", "\uf03c" },
-        { "file-search", "\ued5d" },
-        { "file-settings", "\uf029" },
-        { "file-shredder", "\ueaa1" },
-        { "file-signal", "\uf03d" },
-        { "file-spreadsheet", "\uf03e" },
-        { "file-stack", "\uf503" },
-        { "file-star", "\uf03f" },
-        { "file-symlink", "\ued53" },
-        { "file-text", "\ueaa2" },
-        { "file-text-ai", "\ufa27" },
-        { "file-time", "\uf040" },
-        { "file-type-bmp", "\ufb07" },
-        { "file-type-css", "\ufb08" },
-        { "file-type-csv", "\ufb09" },
-        { "file-type-doc", "\ufb0a" },
-        { "file-type-docx", "\ufb0b" },
-        { "file-type-html", "\ufb0c" },
-        { "file-type-jpg", "\ufb0d" },
-        { "file-type-js", "\ufb0e" },
-        { "file-type-jsx", "\ufb0f" },
-        { "file-type-pdf", "\ufb10" },
-        { "file-type-php", "\ufb11" },
-        { "file-type-png", "\ufb12" },
-        { "file-type-ppt", "\ufb13" },
-        { "file-type-rs", "\ufb14" },
-        { "file-type-sql", "\ufb15" },
-        { "file-type-svg", "\ufb16" },
-        { "file-type-ts", "\ufb17" },
-        { "file-type-tsx", "\ufb18" },
-        { "file-type-txt", "\ufb19" },
-        { "file-type-vue", "\ufb1a" },
-        { "file-type-xls", "\ufb1b" },
-        { "file-type-xml", "\ufb1c" },
-        { "file-type-zip", "\ufb1d" },
-        { "file-typography", "\uf041" },
-        { "file-unknown", "\uf042" },
-        { "file-upload", "\uec91" },
-        { "file-vector", "\uf043" },
-        { "file-x", "\ueaa3" },
-        { "file-x-filled", "\uf748" },
-        { "file-zip", "\ued4e" },
-        { "files", "\uedef" },
-        { "files-off", "\uedee" },
-        { "filter", "\ueaa5" },
-        { "filter-bolt", "\ufb7c" },
-        { "filter-cancel", "\ufb7d" },
-        { "filter-check", "\ufb7e" },
-        { "filter-code", "\ufb7f" },
-        { "filter-cog", "\uf9fe" },
-        { "filter-discount", "\ufb80" },
-        { "filter-dollar", "\uf9ff" },
-        { "filter-down", "\ufb81" },
-        { "filter-edit", "\ufa00" },
-        { "filter-exclamation", "\ufb82" },
-        { "filter-filled", "\ufc27" },
-        { "filter-heart", "\ufb83" },
-        { "filter-minus", "\ufa01" },
-        { "filter-off", "\ued2c" },
-        { "filter-pause", "\ufb84" },
-        { "filter-pin", "\ufb85" },
-        { "filter-plus", "\ufa02" },
-        { "filter-question", "\ufb86" },
-        { "filter-search", "\ufb87" },
-        { "filter-share", "\ufb88" },
-        { "filter-star", "\ufa03" },
-        { "filter-up", "\ufb89" },
-        { "filter-x", "\ufa04" },
-        { "filters", "\uf793" },
-        { "fingerprint", "\uebd1" },
-        { "fingerprint-off", "\uf12a" },
-        { "fire-extinguisher", "\ufaf6" },
-        { "fire-hydrant", "\uf3a9" },
-        { "fire-hydrant-off", "\uf3ec" },
-        { "firetruck", "\uebe8" },
-        { "first-aid-kit", "\uef5f" },
-        { "first-aid-kit-off", "\uf3ed" },
-        { "fish", "\uef2b" },
-        { "fish-bone", "\uf287" },
-        { "fish-christianity", "\uf58b" },
-        { "fish-hook", "\uf1f9" },
-        { "fish-hook-off", "\uf3ee" },
-        { "fish-off", "\uf12b" },
-        { "flag", "\ueaa6" },
-        { "flag-2", "\uee8c" },
-        { "flag-2-filled", "\uf707" },
-        { "flag-2-off", "\uf12c" },
-        { "flag-3", "\uee8d" },
-        { "flag-3-filled", "\uf708" },
-        { "flag-bolt", "\ufb8a" },
-        { "flag-cancel", "\ufb8b" },
-        { "flag-check", "\ufb8c" },
-        { "flag-code", "\ufb8d" },
-        { "flag-cog", "\ufb8e" },
-        { "flag-discount", "\ufb8f" },
-        { "flag-dollar", "\ufb90" },
-        { "flag-down", "\ufb91" },
-        { "flag-exclamation", "\ufb92" },
-        { "flag-filled", "\uf67a" },
-        { "flag-heart", "\ufb93" },
-        { "flag-minus", "\ufb94" },
-        { "flag-off", "\uf12d" },
-        { "flag-pause", "\ufb95" },
-        { "flag-pin", "\ufb96" },
-        { "flag-plus", "\ufb97" },
-        { "flag-question", "\ufb98" },
-        { "flag-search", "\ufb99" },
-        { "flag-share", "\ufb9a" },
-        { "flag-star", "\ufb9b" },
-        { "flag-up", "\ufb9c" },
-        { "flag-x", "\ufb9d" },
-        { "flame", "\uec2c" },
-        { "flame-off", "\uf12e" },
-        { "flare", "\uee8e" },
-        { "flask", "\uebd2" },
-        { "flask-2", "\uef60" },
-        { "flask-2-off", "\uf12f" },
-        { "flask-off", "\uf130" },
-        { "flip-flops", "\uf564" },
-        { "flip-horizontal", "\ueaa7" },
-        { "flip-vertical", "\ueaa8" },
-        { "float-center", "\uebb1" },
-        { "float-left", "\uebb2" },
-        { "float-none", "\ued13" },
-        { "float-right", "\uebb3" },
-        { "flower", "\ueff6" },
-        { "flower-off", "\uf131" },
-        { "focus", "\ueb8d" },
-        { "focus-2", "\uebd3" },
-        { "focus-auto", "\ufa62" },
-        { "focus-centered", "\uf02a" },
-        { "fold", "\ued56" },
-        { "fold-down", "\ued54" },
-        { "fold-up", "\ued55" },
-        { "folder", "\ueaad" },
-        { "folder-bolt", "\uf90c" },
-        { "folder-cancel", "\uf90d" },
-        { "folder-check", "\uf90e" },
-        { "folder-code", "\uf90f" },
-        { "folder-cog", "\uf910" },
-        { "folder-dollar", "\uf911" },
-        { "folder-down", "\uf912" },
-        { "folder-exclamation", "\uf913" },
-        { "folder-filled", "\uf749" },
-        { "folder-heart", "\uf914" },
-        { "folder-minus", "\ueaaa" },
-        { "folder-off", "\ued14" },
-        { "folder-open", "\ufaf7" },
-        { "folder-pause", "\uf915" },
-        { "folder-pin", "\uf916" },
-        { "folder-plus", "\ueaab" },
-        { "folder-question", "\uf917" },
-        { "folder-search", "\uf918" },
-        { "folder-share", "\uf919" },
-        { "folder-star", "\uf91a" },
-        { "folder-symlink", "\uf91b" },
-        { "folder-up", "\uf91c" },
-        { "folder-x", "\ueaac" },
-        { "folders", "\ueaae" },
-        { "folders-off", "\uf133" },
-        { "forbid", "\uebd5" },
-        { "forbid-2", "\uebd4" },
-        { "forbid-2-filled", "\ufc28" },
-        { "forbid-filled", "\ufc29" },
-        { "forklift", "\uebe9" },
-        { "forms", "\uee8f" },
-        { "fountain", "\uf09b" },
-        { "fountain-filled", "\ufc2a" },
-        { "fountain-off", "\uf134" },
-        { "frame", "\ueaaf" },
-        { "frame-off", "\uf135" },
-        { "free-rights", "\uefb6" },
-        { "freeze-column", "\ufa63" },
-        { "freeze-row", "\ufa65" },
-        { "freeze-row-column", "\ufa64" },
-        { "fridge", "\uf1fa" },
-        { "fridge-off", "\uf3ef" },
-        { "friends", "\ueab0" },
-        { "friends-off", "\uf136" },
-        { "frustum", "\ufa9f" },
-        { "frustum-off", "\ufa9d" },
-        { "frustum-plus", "\ufa9e" },
-        { "function", "\uf225" },
-        { "function-filled", "\ufc2b" },
-        { "function-off", "\uf3f0" },
-        { "garden-cart", "\uf23e" },
-        { "garden-cart-off", "\uf3f1" },
-        { "gas-station", "\uec7d" },
-        { "gas-station-off", "\uf137" },
-        { "gauge", "\ueab1" },
-        { "gauge-filled", "\ufc2c" },
-        { "gauge-off", "\uf138" },
-        { "gavel", "\uef90" },
-        { "gender-agender", "\uf0e1" },
-        { "gender-androgyne", "\uf0e2" },
-        { "gender-bigender", "\uf0e3" },
-        { "gender-demiboy", "\uf0e4" },
-        { "gender-demigirl", "\uf0e5" },
-        { "gender-epicene", "\uf0e6" },
-        { "gender-female", "\uf0e7" },
-        { "gender-femme", "\uf0e8" },
-        { "gender-genderfluid", "\uf0e9" },
-        { "gender-genderless", "\uf0ea" },
-        { "gender-genderqueer", "\uf0eb" },
-        { "gender-hermaphrodite", "\uf0ec" },
-        { "gender-intergender", "\uf0ed" },
-        { "gender-male", "\uf0ee" },
-        { "gender-neutrois", "\uf0ef" },
-        { "gender-third", "\uf0f0" },
-        { "gender-transgender", "\uf0f1" },
-        { "gender-trasvesti", "\uf0f2" },
-        { "geometry", "\uee90" },
-        { "ghost", "\ueb8e" },
-        { "ghost-2", "\uf57c" },
-        { "ghost-2-filled", "\uf74a" },
-        { "ghost-3", "\ufc13" },
-        { "ghost-filled", "\uf74b" },
-        { "ghost-off", "\uf3f2" },
-        { "gif", "\uf257" },
-        { "gift", "\ueb68" },
-        { "gift-card", "\uf3aa" },
-        { "gift-card-filled", "\ufc2d" },
-        { "gift-off", "\uf3f3" },
-        { "git-branch", "\ueab2" },
-        { "git-branch-deleted", "\uf57d" },
-        { "git-cherry-pick", "\uf57e" },
-        { "git-commit", "\ueab3" },
-        { "git-compare", "\ueab4" },
-        { "git-fork", "\ueb8f" },
-        { "git-merge", "\ueab5" },
-        { "git-pull-request", "\ueab6" },
-        { "git-pull-request-closed", "\uef7f" },
-        { "git-pull-request-draft", "\uefb7" },
-        { "gizmo", "\uf02b" },
-        { "glass", "\ueab8" },
-        { "glass-full", "\ueab7" },
-        { "glass-full-filled", "\ufc2e" },
-        { "glass-off", "\uee91" },
-        { "globe", "\ueab9" },
-        { "globe-filled", "\ufc2f" },
-        { "globe-off", "\uf139" },
-        { "go-game", "\uf512" },
-        { "golf", "\ued8c" },
-        { "golf-off", "\uf13a" },
-        { "gps", "\ued7a" },
-        { "gradienter", "\uf3ab" },
-        { "grain", "\uee92" },
-        { "graph", "\uf288" },
-        { "graph-off", "\uf3f4" },
-        { "grave", "\uf580" },
-        { "grave-2", "\uf57f" },
-        { "grid-dots", "\ueaba" },
-        { "grid-pattern", "\uefc9" },
-        { "grill", "\uefa9" },
-        { "grill-fork", "\uf35b" },
-        { "grill-off", "\uf3f5" },
-        { "grill-spatula", "\uf35c" },
-        { "grip-horizontal", "\uec00" },
-        { "grip-vertical", "\uec01" },
-        { "growth", "\uee93" },
-        { "guitar-pick", "\uf4c6" },
-        { "guitar-pick-filled", "\uf67b" },
-        { "h-1", "\uec94" },
-        { "h-2", "\uec95" },
-        { "h-3", "\uec96" },
-        { "h-4", "\uec97" },
-        { "h-5", "\uec98" },
-        { "h-6", "\uec99" },
-        { "hammer", "\uef91" },
-        { "hammer-off", "\uf13c" },
-        { "hand-click", "\uef4f" },
-        { "hand-finger", "\uee94" },
-        { "hand-finger-off", "\uf13d" },
-        { "hand-grab", "\uf091" },
-        { "hand-little-finger", "\uee95" },
-        { "hand-middle-finger", "\uec2d" },
-        { "hand-move", "\uef50" },
-        { "hand-off", "\ued15" },
-        { "hand-ring-finger", "\uee96" },
-        { "hand-rock", "\uee97" },
-        { "hand-sanitizer", "\uf5f4" },
-        { "hand-stop", "\uec2e" },
-        { "hand-three-fingers", "\uee98" },
-        { "hand-two-fingers", "\uee99" },
-        { "hanger", "\uee9a" },
-        { "hanger-2", "\uf09c" },
-        { "hanger-off", "\uf13e" },
-        { "hash", "\ueabc" },
-        { "haze", "\uefaa" },
-        { "haze-moon", "\ufaf8" },
-        { "hdr", "\ufa7b" },
-        { "heading", "\uee9b" },
-        { "heading-off", "\uf13f" },
-        { "headphones", "\ueabd" },
-        { "headphones-filled", "\ufa3c" },
-        { "headphones-off", "\ued1d" },
-        { "headset", "\ueb90" },
-        { "headset-off", "\uf3f6" },
-        { "health-recognition", "\uf1fb" },
-        { "heart", "\ueabe" },
-        { "heart-bolt", "\ufb9e" },
-        { "heart-broken", "\uecba" },
-        { "heart-cancel", "\ufb9f" },
-        { "heart-check", "\ufba0" },
-        { "heart-code", "\ufba1" },
-        { "heart-cog", "\ufba2" },
-        { "heart-discount", "\ufba3" },
-        { "heart-dollar", "\ufba4" },
-        { "heart-down", "\ufba5" },
-        { "heart-exclamation", "\ufba6" },
-        { "heart-filled", "\uf67c" },
-        { "heart-handshake", "\uf0f3" },
-        { "heart-minus", "\uf140" },
-        { "heart-off", "\uf141" },
-        { "heart-pause", "\ufba7" },
-        { "heart-pin", "\ufba8" },
-        { "heart-plus", "\uf142" },
-        { "heart-question", "\ufba9" },
-        { "heart-rate-monitor", "\uef61" },
-        { "heart-search", "\ufbaa" },
-        { "heart-share", "\ufbab" },
-        { "heart-star", "\ufbac" },
-        { "heart-up", "\ufbad" },
-        { "heart-x", "\ufbae" },
-        { "heartbeat", "\uef92" },
-        { "hearts", "\uf387" },
-        { "hearts-off", "\uf3f7" },
-        { "helicopter", "\ued8e" },
-        { "helicopter-landing", "\ued8d" },
-        { "helmet", "\uefca" },
-        { "helmet-off", "\uf143" },
-        { "help", "\ueabf" },
-        { "help-circle", "\uf91d" },
-        { "help-circle-filled", "\ufa3d" },
-        { "help-hexagon", "\uf7a8" },
-        { "help-hexagon-filled", "\ufa3e" },
-        { "help-octagon", "\uf7a9" },
-        { "help-octagon-filled", "\ufa3f" },
-        { "help-off", "\uf3f8" },
-        { "help-small", "\uf91e" },
-        { "help-square", "\uf920" },
-        { "help-square-filled", "\ufa40" },
-        { "help-square-rounded", "\uf91f" },
-        { "help-square-rounded-filled", "\ufa41" },
-        { "help-triangle", "\uf921" },
-        { "help-triangle-filled", "\ufa42" },
-        { "hemisphere", "\ufaa2" },
-        { "hemisphere-off", "\ufaa0" },
-        { "hemisphere-plus", "\ufaa1" },
-        { "hexagon", "\uec02" },
-        { "hexagon-0-filled", "\uf74c" },
-        { "hexagon-1-filled", "\uf74d" },
-        { "hexagon-2-filled", "\uf74e" },
-        { "hexagon-3-filled", "\uf74f" },
-        { "hexagon-3d", "\uf4c7" },
-        { "hexagon-4-filled", "\uf750" },
-        { "hexagon-5-filled", "\uf751" },
-        { "hexagon-6-filled", "\uf752" },
-        { "hexagon-7-filled", "\uf753" },
-        { "hexagon-8-filled", "\uf754" },
-        { "hexagon-9-filled", "\uf755" },
-        { "hexagon-filled", "\uf67d" },
-        { "hexagon-letter-a", "\uf463" },
-        { "hexagon-letter-b", "\uf464" },
-        { "hexagon-letter-c", "\uf465" },
-        { "hexagon-letter-d", "\uf466" },
-        { "hexagon-letter-e", "\uf467" },
-        { "hexagon-letter-f", "\uf468" },
-        { "hexagon-letter-g", "\uf469" },
-        { "hexagon-letter-h", "\uf46a" },
-        { "hexagon-letter-i", "\uf46b" },
-        { "hexagon-letter-j", "\uf46c" },
-        { "hexagon-letter-k", "\uf46d" },
-        { "hexagon-letter-l", "\uf46e" },
-        { "hexagon-letter-m", "\uf46f" },
-        { "hexagon-letter-n", "\uf470" },
-        { "hexagon-letter-o", "\uf471" },
-        { "hexagon-letter-p", "\uf472" },
-        { "hexagon-letter-q", "\uf473" },
-        { "hexagon-letter-r", "\uf474" },
-        { "hexagon-letter-s", "\uf475" },
-        { "hexagon-letter-t", "\uf476" },
-        { "hexagon-letter-u", "\uf477" },
-        { "hexagon-letter-v", "\uf4b3" },
-        { "hexagon-letter-w", "\uf478" },
-        { "hexagon-letter-x", "\uf479" },
-        { "hexagon-letter-y", "\uf47a" },
-        { "hexagon-letter-z", "\uf47b" },
-        { "hexagon-number-0", "\uf459" },
-        { "hexagon-number-1", "\uf45a" },
-        { "hexagon-number-2", "\uf45b" },
-        { "hexagon-number-3", "\uf45c" },
-        { "hexagon-number-4", "\uf45d" },
-        { "hexagon-number-5", "\uf45e" },
-        { "hexagon-number-6", "\uf45f" },
-        { "hexagon-number-7", "\uf460" },
-        { "hexagon-number-8", "\uf461" },
-        { "hexagon-number-9", "\uf462" },
-        { "hexagon-off", "\uee9c" },
-        { "hexagonal-prism", "\ufaa5" },
-        { "hexagonal-prism-off", "\ufaa3" },
-        { "hexagonal-prism-plus", "\ufaa4" },
-        { "hexagonal-pyramid", "\ufaa8" },
-        { "hexagonal-pyramid-off", "\ufaa6" },
-        { "hexagonal-pyramid-plus", "\ufaa7" },
-        { "hexagons", "\uf09d" },
-        { "hexagons-off", "\uf3f9" },
-        { "hierarchy", "\uee9e" },
-        { "hierarchy-2", "\uee9d" },
-        { "hierarchy-3", "\uf289" },
-        { "hierarchy-off", "\uf3fa" },
-        { "highlight", "\uef3f" },
-        { "highlight-off", "\uf144" },
-        { "history", "\uebea" },
-        { "history-off", "\uf3fb" },
-        { "history-toggle", "\uf1fc" },
-        { "home", "\ueac1" },
-        { "home-2", "\ueac0" },
-        { "home-bolt", "\uf336" },
-        { "home-cancel", "\uf350" },
-        { "home-check", "\uf337" },
-        { "home-cog", "\uf338" },
-        { "home-dollar", "\uf339" },
-        { "home-dot", "\uf33a" },
-        { "home-down", "\uf33b" },
-        { "home-eco", "\uf351" },
-        { "home-edit", "\uf352" },
-        { "home-exclamation", "\uf33c" },
-        { "home-hand", "\uf504" },
-        { "home-heart", "\uf353" },
-        { "home-infinity", "\uf505" },
-        { "home-link", "\uf354" },
-        { "home-minus", "\uf33d" },
-        { "home-move", "\uf33e" },
-        { "home-off", "\uf145" },
-        { "home-plus", "\uf33f" },
-        { "home-question", "\uf340" },
-        { "home-ribbon", "\uf355" },
-        { "home-search", "\uf341" },
-        { "home-share", "\uf342" },
-        { "home-shield", "\uf343" },
-        { "home-signal", "\uf356" },
-        { "home-star", "\uf344" },
-        { "home-stats", "\uf345" },
-        { "home-up", "\uf346" },
-        { "home-x", "\uf347" },
-        { "horse-toy", "\uf28a" },
-        { "hotel-service", "\uef80" },
-        { "hourglass", "\uef93" },
-        { "hourglass-empty", "\uf146" },
-        { "hourglass-filled", "\uf756" },
-        { "hourglass-high", "\uf092" },
-        { "hourglass-low", "\uf093" },
-        { "hourglass-off", "\uf147" },
-        { "html", "\uf7b1" },
-        { "http-connect", "\ufa28" },
-        { "http-delete", "\ufa29" },
-        { "http-get", "\ufa2a" },
-        { "http-head", "\ufa2b" },
-        { "http-options", "\ufa2c" },
-        { "http-patch", "\ufa2d" },
-        { "http-post", "\ufa2e" },
-        { "http-put", "\ufa2f" },
-        { "http-que", "\ufa5b" },
-        { "http-trace", "\ufa30" },
-        { "ice-cream", "\ueac2" },
-        { "ice-cream-2", "\uee9f" },
-        { "ice-cream-off", "\uf148" },
-        { "ice-skating", "\uefcb" },
-        { "icons", "\uf1d4" },
-        { "icons-off", "\uf3fc" },
-        { "id", "\ueac3" },
-        { "id-badge", "\ueff7" },
-        { "id-badge-2", "\uf076" },
-        { "id-badge-off", "\uf3fd" },
-        { "id-off", "\uf149" },
-        { "inbox", "\ueac4" },
-        { "inbox-off", "\uf14a" },
-        { "indent-decrease", "\ueb91" },
-        { "indent-increase", "\ueb92" },
-        { "infinity", "\ueb69" },
-        { "infinity-off", "\uf3fe" },
-        { "info-circle", "\ueac5" },
-        { "info-circle-filled", "\uf6d8" },
-        { "info-hexagon", "\uf7aa" },
-        { "info-hexagon-filled", "\ufa43" },
-        { "info-octagon", "\uf7ab" },
-        { "info-octagon-filled", "\ufa44" },
-        { "info-small", "\uf922" },
-        { "info-square", "\ueac6" },
-        { "info-square-filled", "\ufa45" },
-        { "info-square-rounded", "\uf635" },
-        { "info-square-rounded-filled", "\uf6d9" },
-        { "info-triangle", "\uf923" },
-        { "info-triangle-filled", "\ufa46" },
-        { "inner-shadow-bottom", "\uf520" },
-        { "inner-shadow-bottom-filled", "\uf757" },
-        { "inner-shadow-bottom-left", "\uf51e" },
-        { "inner-shadow-bottom-left-filled", "\uf758" },
-        { "inner-shadow-bottom-right", "\uf51f" },
-        { "inner-shadow-bottom-right-filled", "\uf759" },
-        { "inner-shadow-left", "\uf521" },
-        { "inner-shadow-left-filled", "\uf75a" },
-        { "inner-shadow-right", "\uf522" },
-        { "inner-shadow-right-filled", "\uf75b" },
-        { "inner-shadow-top", "\uf525" },
-        { "inner-shadow-top-filled", "\uf75c" },
-        { "inner-shadow-top-left", "\uf523" },
-        { "inner-shadow-top-left-filled", "\uf75d" },
-        { "inner-shadow-top-right", "\uf524" },
-        { "inner-shadow-top-right-filled", "\uf75e" },
-        { "input-search", "\uf2a2" },
-        { "ironing", "\ufa7c" },
-        { "ironing-1", "\uf2f4" },
-        { "ironing-2", "\uf2f5" },
-        { "ironing-3", "\uf2f6" },
-        { "ironing-off", "\uf2f7" },
-        { "ironing-steam", "\uf2f9" },
-        { "ironing-steam-off", "\uf2f8" },
-        { "irregular-polyhedron", "\ufaab" },
-        { "irregular-polyhedron-off", "\ufaa9" },
-        { "irregular-polyhedron-plus", "\ufaaa" },
-        { "italic", "\ueb93" },
-        { "jacket", "\uf661" },
-        { "jetpack", "\uf581" },
-        { "jewish-star", "\uf3ff" },
-        { "jewish-star-filled", "\uf67e" },
-        { "jpg", "\uf3ac" },
-        { "json", "\uf7b2" },
-        { "jump-rope", "\ued8f" },
-        { "karate", "\ued32" },
-        { "kayak", "\uf1d6" },
-        { "kering", "\uefb8" },
-        { "key", "\ueac7" },
-        { "key-off", "\uf14b" },
-        { "keyboard", "\uebd6" },
-        { "keyboard-hide", "\uec7e" },
-        { "keyboard-off", "\ueea0" },
-        { "keyboard-show", "\uec7f" },
-        { "keyframe", "\uf576" },
-        { "keyframe-align-center", "\uf582" },
-        { "keyframe-align-center-filled", "\ufc30" },
-        { "keyframe-align-horizontal", "\uf583" },
-        { "keyframe-align-horizontal-filled", "\ufc31" },
-        { "keyframe-align-vertical", "\uf584" },
-        { "keyframe-align-vertical-filled", "\ufc32" },
-        { "keyframe-filled", "\ufc33" },
-        { "keyframes", "\uf585" },
-        { "keyframes-filled", "\ufc34" },
-        { "ladder", "\uefe2" },
-        { "ladder-off", "\uf14c" },
-        { "ladle", "\ufc14" },
-        { "lambda", "\uf541" },
-        { "lamp", "\uefab" },
-        { "lamp-2", "\uf09e" },
-        { "lamp-off", "\uf14d" },
-        { "lane", "\ufaf9" },
-        { "language", "\uebbe" },
-        { "language-hiragana", "\uef77" },
-        { "language-katakana", "\uef78" },
-        { "language-off", "\uf14e" },
-        { "lasso", "\uefac" },
-        { "lasso-off", "\uf14f" },
-        { "lasso-polygon", "\uf388" },
-        { "layers-difference", "\ueac8" },
-        { "layers-intersect", "\ueac9" },
-        { "layers-intersect-2", "\ueff8" },
-        { "layers-linked", "\ueea1" },
-        { "layers-off", "\uf150" },
-        { "layers-subtract", "\ueaca" },
-        { "layers-union", "\ueacb" },
-        { "layout", "\ueadb" },
-        { "layout-2", "\ueacc" },
-        { "layout-align-bottom", "\ueacd" },
-        { "layout-align-center", "\ueace" },
-        { "layout-align-left", "\ueacf" },
-        { "layout-align-middle", "\uead0" },
-        { "layout-align-right", "\uead1" },
-        { "layout-align-top", "\uead2" },
-        { "layout-board", "\uef95" },
-        { "layout-board-split", "\uef94" },
-        { "layout-bottombar", "\uead3" },
-        { "layout-bottombar-collapse", "\uf28b" },
-        { "layout-bottombar-collapse-filled", "\ufc35" },
-        { "layout-bottombar-expand", "\uf28c" },
-        { "layout-bottombar-expand-filled", "\ufc36" },
-        { "layout-bottombar-filled", "\ufc37" },
-        { "layout-cards", "\uec13" },
-        { "layout-collage", "\uf389" },
-        { "layout-columns", "\uead4" },
-        { "layout-dashboard", "\uf02c" },
-        { "layout-distribute-horizontal", "\uead5" },
-        { "layout-distribute-vertical", "\uead6" },
-        { "layout-grid", "\uedba" },
-        { "layout-grid-add", "\uedb9" },
-        { "layout-grid-remove", "\ufa7d" },
-        { "layout-kanban", "\uec3f" },
-        { "layout-list", "\uec14" },
-        { "layout-navbar", "\uead7" },
-        { "layout-navbar-collapse", "\uf28d" },
-        { "layout-navbar-collapse-filled", "\ufc38" },
-        { "layout-navbar-expand", "\uf28e" },
-        { "layout-navbar-expand-filled", "\ufc39" },
-        { "layout-navbar-filled", "\ufc3a" },
-        { "layout-off", "\uf151" },
-        { "layout-rows", "\uead8" },
-        { "layout-sidebar", "\ueada" },
-        { "layout-sidebar-left-collapse", "\uf004" },
-        { "layout-sidebar-left-collapse-filled", "\ufc3b" },
-        { "layout-sidebar-left-expand", "\uf005" },
-        { "layout-sidebar-left-expand-filled", "\ufc3c" },
-        { "layout-sidebar-right", "\uead9" },
-        { "layout-sidebar-right-collapse", "\uf006" },
-        { "layout-sidebar-right-collapse-filled", "\ufc3d" },
-        { "layout-sidebar-right-expand", "\uf007" },
-        { "layout-sidebar-right-expand-filled", "\ufc3e" },
-        { "leaf", "\ued4f" },
-        { "leaf-off", "\uf400" },
-        { "lego", "\ueadc" },
-        { "lego-off", "\uf401" },
-        { "lemon", "\uef10" },
-        { "lemon-2", "\uef81" },
-        { "letter-a", "\uec50" },
-        { "letter-b", "\uec51" },
-        { "letter-c", "\uec52" },
-        { "letter-case", "\ueea5" },
-        { "letter-case-lower", "\ueea2" },
-        { "letter-case-toggle", "\ueea3" },
-        { "letter-case-upper", "\ueea4" },
-        { "letter-d", "\uec53" },
-        { "letter-e", "\uec54" },
-        { "letter-f", "\uec55" },
-        { "letter-g", "\uec56" },
-        { "letter-h", "\uec57" },
-        { "letter-i", "\uec58" },
-        { "letter-j", "\uec59" },
-        { "letter-k", "\uec5a" },
-        { "letter-l", "\uec5b" },
-        { "letter-m", "\uec5c" },
-        { "letter-n", "\uec5d" },
-        { "letter-o", "\uec5e" },
-        { "letter-p", "\uec5f" },
-        { "letter-q", "\uec60" },
-        { "letter-r", "\uec61" },
-        { "letter-s", "\uec62" },
-        { "letter-spacing", "\ueea6" },
-        { "letter-t", "\uec63" },
-        { "letter-u", "\uec64" },
-        { "letter-v", "\uec65" },
-        { "letter-w", "\uec66" },
-        { "letter-x", "\uec67" },
-        { "letter-y", "\uec68" },
-        { "letter-z", "\uec69" },
-        { "license", "\uebc0" },
-        { "license-off", "\uf153" },
-        { "lifebuoy", "\ueadd" },
-        { "lifebuoy-off", "\uf154" },
-        { "lighter", "\uf794" },
-        { "line", "\uec40" },
-        { "line-dashed", "\ueea7" },
-        { "line-dotted", "\ueea8" },
-        { "line-height", "\ueb94" },
-        { "link", "\ueade" },
-        { "link-off", "\uf402" },
-        { "list", "\ueb6b" },
-        { "list-check", "\ueb6a" },
-        { "list-details", "\uef40" },
-        { "list-numbers", "\uef11" },
-        { "list-search", "\ueea9" },
-        { "list-tree", "\ufafa" },
-        { "live-photo", "\ueadf" },
-        { "live-photo-off", "\uf403" },
-        { "live-view", "\uec6b" },
-        { "load-balancer", "\ufa5c" },
-        { "loader", "\ueca3" },
-        { "loader-2", "\uf226" },
-        { "loader-3", "\uf513" },
-        { "loader-quarter", "\ueca2" },
-        { "location", "\ueae0" },
-        { "location-bolt", "\ufbaf" },
-        { "location-broken", "\uf2c4" },
-        { "location-cancel", "\ufbb0" },
-        { "location-check", "\ufbb1" },
-        { "location-code", "\ufbb2" },
-        { "location-cog", "\ufbb3" },
-        { "location-discount", "\ufbb4" },
-        { "location-dollar", "\ufbb5" },
-        { "location-down", "\ufbb6" },
-        { "location-exclamation", "\ufbb7" },
-        { "location-filled", "\uf67f" },
-        { "location-heart", "\ufbb8" },
-        { "location-minus", "\ufbb9" },
-        { "location-off", "\uf155" },
-        { "location-pause", "\ufbba" },
-        { "location-pin", "\ufbbb" },
-        { "location-plus", "\ufbbc" },
-        { "location-question", "\ufbbd" },
-        { "location-search", "\ufbbe" },
-        { "location-share", "\ufbbf" },
-        { "location-star", "\ufbc0" },
-        { "location-up", "\ufbc1" },
-        { "location-x", "\ufbc2" },
-        { "lock", "\ueae2" },
-        { "lock-access", "\ueeaa" },
-        { "lock-access-off", "\uf404" },
-        { "lock-bolt", "\uf924" },
-        { "lock-cancel", "\uf925" },
-        { "lock-check", "\uf926" },
-        { "lock-code", "\uf927" },
-        { "lock-cog", "\uf928" },
-        { "lock-dollar", "\uf929" },
-        { "lock-down", "\uf92a" },
-        { "lock-exclamation", "\uf92b" },
-        { "lock-heart", "\uf92c" },
-        { "lock-minus", "\uf92d" },
-        { "lock-off", "\ued1e" },
-        { "lock-open", "\ueae1" },
-        { "lock-open-off", "\uf156" },
-        { "lock-pause", "\uf92e" },
-        { "lock-pin", "\uf92f" },
-        { "lock-plus", "\uf930" },
-        { "lock-question", "\uf931" },
-        { "lock-search", "\uf932" },
-        { "lock-share", "\uf933" },
-        { "lock-square", "\uef51" },
-        { "lock-square-rounded", "\uf636" },
-        { "lock-square-rounded-filled", "\uf6da" },
-        { "lock-star", "\uf934" },
-        { "lock-up", "\uf935" },
-        { "lock-x", "\uf936" },
-        { "logic-and", "\uf240" },
-        { "logic-buffer", "\uf241" },
-        { "logic-nand", "\uf242" },
-        { "logic-nor", "\uf243" },
-        { "logic-not", "\uf244" },
-        { "logic-or", "\uf245" },
-        { "logic-xnor", "\uf246" },
-        { "logic-xor", "\uf247" },
-        { "login", "\ueba7" },
-        { "logout", "\ueba8" },
-        { "logout-2", "\ufa7e" },
-        { "lollipop", "\uefcc" },
-        { "lollipop-off", "\uf157" },
-        { "luggage", "\uefad" },
-        { "luggage-off", "\uf158" },
-        { "lungs", "\uef62" },
-        { "lungs-off", "\uf405" },
-        { "macro", "\ueeab" },
-        { "macro-off", "\uf406" },
-        { "magnet", "\ueae3" },
-        { "magnet-off", "\uf159" },
-        { "mail", "\ueae5" },
-        { "mail-ai", "\ufa31" },
-        { "mail-bolt", "\uf937" },
-        { "mail-cancel", "\uf938" },
-        { "mail-check", "\uf939" },
-        { "mail-code", "\uf93a" },
-        { "mail-cog", "\uf93b" },
-        { "mail-dollar", "\uf93c" },
-        { "mail-down", "\uf93d" },
-        { "mail-exclamation", "\uf93e" },
-        { "mail-fast", "\uf069" },
-        { "mail-filled", "\ufa47" },
-        { "mail-forward", "\ueeac" },
-        { "mail-heart", "\uf93f" },
-        { "mail-minus", "\uf940" },
-        { "mail-off", "\uf15a" },
-        { "mail-opened", "\ueae4" },
-        { "mail-opened-filled", "\ufa48" },
-        { "mail-pause", "\uf941" },
-        { "mail-pin", "\uf942" },
-        { "mail-plus", "\uf943" },
-        { "mail-question", "\uf944" },
-        { "mail-search", "\uf945" },
-        { "mail-share", "\uf946" },
-        { "mail-star", "\uf947" },
-        { "mail-up", "\uf948" },
-        { "mail-x", "\uf949" },
-        { "mailbox", "\ueead" },
-        { "mailbox-off", "\uf15b" },
-        { "man", "\ueae6" },
-        { "manual-gearbox", "\ued7b" },
-        { "map", "\ueae9" },
-        { "map-2", "\ueae7" },
-        { "map-bolt", "\ufbc3" },
-        { "map-cancel", "\ufbc4" },
-        { "map-check", "\ufbc5" },
-        { "map-code", "\ufbc6" },
-        { "map-cog", "\ufbc7" },
-        { "map-discount", "\ufbc8" },
-        { "map-dollar", "\ufbc9" },
-        { "map-down", "\ufbca" },
-        { "map-exclamation", "\ufbcb" },
-        { "map-heart", "\ufbcc" },
-        { "map-minus", "\ufbcd" },
-        { "map-off", "\uf15c" },
-        { "map-pause", "\ufbce" },
-        { "map-pin", "\ueae8" },
-        { "map-pin-bolt", "\uf94a" },
-        { "map-pin-cancel", "\uf94b" },
-        { "map-pin-check", "\uf94c" },
-        { "map-pin-code", "\uf94d" },
-        { "map-pin-cog", "\uf94e" },
-        { "map-pin-dollar", "\uf94f" },
-        { "map-pin-down", "\uf950" },
-        { "map-pin-exclamation", "\uf951" },
-        { "map-pin-filled", "\uf680" },
-        { "map-pin-heart", "\uf952" },
-        { "map-pin-minus", "\uf953" },
-        { "map-pin-off", "\uecf3" },
-        { "map-pin-pause", "\uf954" },
-        { "map-pin-pin", "\uf955" },
-        { "map-pin-plus", "\uf956" },
-        { "map-pin-question", "\uf957" },
-        { "map-pin-search", "\uf958" },
-        { "map-pin-share", "\uf795" },
-        { "map-pin-star", "\uf959" },
-        { "map-pin-up", "\uf95a" },
-        { "map-pin-x", "\uf95b" },
-        { "map-pins", "\ued5e" },
-        { "map-plus", "\ufbcf" },
-        { "map-question", "\ufbd0" },
-        { "map-search", "\uef82" },
-        { "map-share", "\ufbd1" },
-        { "map-star", "\ufbd2" },
-        { "map-up", "\ufbd3" },
-        { "map-x", "\ufbd4" },
-        { "markdown", "\uec41" },
-        { "markdown-off", "\uf407" },
-        { "marquee", "\uec77" },
-        { "marquee-2", "\ueeae" },
-        { "marquee-off", "\uf15d" },
-        { "mars", "\uec80" },
-        { "mask", "\ueeb0" },
-        { "mask-off", "\ueeaf" },
-        { "masks-theater", "\uf263" },
-        { "masks-theater-off", "\uf408" },
-        { "massage", "\ueeb1" },
-        { "matchstick", "\uf577" },
-        { "math", "\uebeb" },
-        { "math-1-divide-2", "\uf4e2" },
-        { "math-1-divide-3", "\uf4e3" },
-        { "math-avg", "\uf0f4" },
-        { "math-equal-greater", "\uf4e4" },
-        { "math-equal-lower", "\uf4e5" },
-        { "math-function", "\ueeb2" },
-        { "math-function-off", "\uf15e" },
-        { "math-function-y", "\uf4e6" },
-        { "math-greater", "\uf4e7" },
-        { "math-integral", "\uf4e9" },
-        { "math-integral-x", "\uf4e8" },
-        { "math-integrals", "\uf4ea" },
-        { "math-lower", "\uf4eb" },
-        { "math-max", "\uf0f5" },
-        { "math-min", "\uf0f6" },
-        { "math-not", "\uf4ec" },
-        { "math-off", "\uf409" },
-        { "math-pi", "\uf4ee" },
-        { "math-pi-divide-2", "\uf4ed" },
-        { "math-symbols", "\ueeb3" },
-        { "math-x-divide-2", "\uf4ef" },
-        { "math-x-divide-y", "\uf4f1" },
-        { "math-x-divide-y-2", "\uf4f0" },
-        { "math-x-minus-x", "\uf4f2" },
-        { "math-x-minus-y", "\uf4f3" },
-        { "math-x-plus-x", "\uf4f4" },
-        { "math-x-plus-y", "\uf4f5" },
-        { "math-xy", "\uf4f6" },
-        { "math-y-minus-y", "\uf4f7" },
-        { "math-y-plus-y", "\uf4f8" },
-        { "maximize", "\ueaea" },
-        { "maximize-off", "\uf15f" },
-        { "meat", "\uef12" },
-        { "meat-off", "\uf40a" },
-        { "medal", "\uec78" },
-        { "medal-2", "\uefcd" },
-        { "medical-cross", "\uec2f" },
-        { "medical-cross-circle", "\ufae8" },
-        { "medical-cross-filled", "\uf681" },
-        { "medical-cross-off", "\uf160" },
-        { "medicine-syrup", "\uef63" },
-        { "meeple", "\uf514" },
-        { "menorah", "\uf58c" },
-        { "menu", "\ueaeb" },
-        { "menu-2", "\uec42" },
-        { "menu-deep", "\ufafb" },
-        { "menu-order", "\uf5f5" },
-        { "message", "\ueaef" },
-        { "message-2", "\ueaec" },
-        { "message-2-bolt", "\uf95c" },
-        { "message-2-cancel", "\uf95d" },
-        { "message-2-check", "\uf95e" },
-        { "message-2-code", "\uf012" },
-        { "message-2-cog", "\uf95f" },
-        { "message-2-dollar", "\uf960" },
-        { "message-2-down", "\uf961" },
-        { "message-2-exclamation", "\uf962" },
-        { "message-2-heart", "\uf963" },
-        { "message-2-minus", "\uf964" },
-        { "message-2-off", "\uf40b" },
-        { "message-2-pause", "\uf965" },
-        { "message-2-pin", "\uf966" },
-        { "message-2-plus", "\uf967" },
-        { "message-2-question", "\uf968" },
-        { "message-2-search", "\uf969" },
-        { "message-2-share", "\uf077" },
-        { "message-2-star", "\uf96a" },
-        { "message-2-up", "\uf96b" },
-        { "message-2-x", "\uf96c" },
-        { "message-bolt", "\uf96d" },
-        { "message-cancel", "\uf96e" },
-        { "message-chatbot", "\uf38a" },
-        { "message-check", "\uf96f" },
-        { "message-circle", "\ueaed" },
-        { "message-circle-2", "\ued3f" },
-        { "message-circle-2-filled", "\uf682" },
-        { "message-circle-bolt", "\uf970" },
-        { "message-circle-cancel", "\uf971" },
-        { "message-circle-check", "\uf972" },
-        { "message-circle-code", "\uf973" },
-        { "message-circle-cog", "\uf974" },
-        { "message-circle-dollar", "\uf975" },
-        { "message-circle-down", "\uf976" },
-        { "message-circle-exclamation", "\uf977" },
-        { "message-circle-heart", "\uf978" },
-        { "message-circle-minus", "\uf979" },
-        { "message-circle-off", "\ued40" },
-        { "message-circle-pause", "\uf97a" },
-        { "message-circle-pin", "\uf97b" },
-        { "message-circle-plus", "\uf97c" },
-        { "message-circle-question", "\uf97d" },
-        { "message-circle-search", "\uf97e" },
-        { "message-circle-share", "\uf97f" },
-        { "message-circle-star", "\uf980" },
-        { "message-circle-up", "\uf981" },
-        { "message-circle-x", "\uf982" },
-        { "message-code", "\uf013" },
-        { "message-cog", "\uf983" },
-        { "message-dollar", "\uf984" },
-        { "message-dots", "\ueaee" },
-        { "message-down", "\uf985" },
-        { "message-exclamation", "\uf986" },
-        { "message-forward", "\uf28f" },
-        { "message-heart", "\uf987" },
-        { "message-language", "\uefae" },
-        { "message-minus", "\uf988" },
-        { "message-off", "\ued41" },
-        { "message-pause", "\uf989" },
-        { "message-pin", "\uf98a" },
-        { "message-plus", "\uec9a" },
-        { "message-question", "\uf98b" },
-        { "message-report", "\uec9b" },
-        { "message-search", "\uf98c" },
-        { "message-share", "\uf078" },
-        { "message-star", "\uf98d" },
-        { "message-up", "\uf98e" },
-        { "message-x", "\uf98f" },
-        { "messages", "\ueb6c" },
-        { "messages-off", "\ued42" },
-        { "meteor", "\uf1fd" },
-        { "meteor-off", "\uf40c" },
-        { "michelin-bib-gourmand", "\ufae9" },
-        { "michelin-star", "\ufaeb" },
-        { "michelin-star-green", "\ufaea" },
-        { "mickey", "\uf2a3" },
-        { "mickey-filled", "\uf683" },
-        { "microphone", "\ueaf0" },
-        { "microphone-2", "\uef2c" },
-        { "microphone-2-off", "\uf40d" },
-        { "microphone-off", "\ued16" },
-        { "microscope", "\uef64" },
-        { "microscope-off", "\uf40e" },
-        { "microwave", "\uf248" },
-        { "microwave-off", "\uf264" },
-        { "military-award", "\uf079" },
-        { "military-rank", "\uefcf" },
-        { "milk", "\uef13" },
-        { "milk-off", "\uf40f" },
-        { "milkshake", "\uf4c8" },
-        { "minimize", "\ueaf1" },
-        { "minus", "\ueaf2" },
-        { "minus-vertical", "\ueeb4" },
-        { "mist", "\uec30" },
-        { "mist-off", "\uf410" },
-        { "mobiledata", "\uf9f5" },
-        { "mobiledata-off", "\uf9f4" },
-        { "moneybag", "\uf506" },
-        { "mood-angry", "\uf2de" },
-        { "mood-annoyed", "\uf2e0" },
-        { "mood-annoyed-2", "\uf2df" },
-        { "mood-boy", "\ued2d" },
-        { "mood-check", "\uf7b3" },
-        { "mood-cog", "\uf7b4" },
-        { "mood-confuzed", "\ueaf3" },
-        { "mood-confuzed-filled", "\uf7f2" },
-        { "mood-crazy-happy", "\ued90" },
-        { "mood-cry", "\uecbb" },
-        { "mood-dollar", "\uf7b5" },
-        { "mood-edit", "\ufa05" },
-        { "mood-empty", "\ueeb5" },
-        { "mood-empty-filled", "\uf7f3" },
-        { "mood-happy", "\ueaf4" },
-        { "mood-happy-filled", "\uf7f4" },
-        { "mood-heart", "\uf7b6" },
-        { "mood-kid", "\uec03" },
-        { "mood-kid-filled", "\uf7f5" },
-        { "mood-look-left", "\uf2c5" },
-        { "mood-look-right", "\uf2c6" },
-        { "mood-minus", "\uf7b7" },
-        { "mood-nerd", "\uf2e1" },
-        { "mood-nervous", "\uef96" },
-        { "mood-neutral", "\ueaf5" },
-        { "mood-neutral-filled", "\uf7f6" },
-        { "mood-off", "\uf161" },
-        { "mood-pin", "\uf7b8" },
-        { "mood-plus", "\uf7b9" },
-        { "mood-sad", "\ueaf6" },
-        { "mood-sad-2", "\uf2e2" },
-        { "mood-sad-dizzy", "\uf2e3" },
-        { "mood-sad-filled", "\uf7f7" },
-        { "mood-sad-squint", "\uf2e4" },
-        { "mood-search", "\uf7ba" },
-        { "mood-share", "\ufa06" },
-        { "mood-sick", "\uf2e5" },
-        { "mood-silence", "\uf2e6" },
-        { "mood-sing", "\uf2c7" },
-        { "mood-smile", "\ueaf7" },
-        { "mood-smile-beam", "\uf2e7" },
-        { "mood-smile-dizzy", "\uf2e8" },
-        { "mood-smile-filled", "\uf7f8" },
-        { "mood-suprised", "\uec04" },
-        { "mood-tongue", "\ueb95" },
-        { "mood-tongue-wink", "\uf2ea" },
-        { "mood-tongue-wink-2", "\uf2e9" },
-        { "mood-unamused", "\uf2eb" },
-        { "mood-up", "\uf7bb" },
-        { "mood-wink", "\uf2ed" },
-        { "mood-wink-2", "\uf2ec" },
-        { "mood-wrrr", "\uf2ee" },
-        { "mood-x", "\uf7bc" },
-        { "mood-xd", "\uf2ef" },
-        { "moon", "\ueaf8" },
-        { "moon-2", "\uece6" },
-        { "moon-filled", "\uf684" },
-        { "moon-off", "\uf162" },
-        { "moon-stars", "\uece7" },
-        { "moped", "\uecbc" },
-        { "motorbike", "\ueeb6" },
-        { "mountain", "\uef97" },
-        { "mountain-off", "\uf411" },
-        { "mouse", "\ueaf9" },
-        { "mouse-2", "\uf1d7" },
-        { "mouse-filled", "\ufb2f" },
-        { "mouse-off", "\uf163" },
-        { "moustache", "\uf4c9" },
-        { "movie", "\ueafa" },
-        { "movie-off", "\uf164" },
-        { "mug", "\ueafb" },
-        { "mug-off", "\uf165" },
-        { "multiplier-0-5x", "\uef41" },
-        { "multiplier-1-5x", "\uef42" },
-        { "multiplier-1x", "\uef43" },
-        { "multiplier-2x", "\uef44" },
-        { "mushroom", "\uef14" },
-        { "mushroom-filled", "\uf7f9" },
-        { "mushroom-off", "\uf412" },
-        { "music", "\ueafc" },
-        { "music-bolt", "\ufbd5" },
-        { "music-cancel", "\ufbd6" },
-        { "music-check", "\ufbd7" },
-        { "music-code", "\ufbd8" },
-        { "music-cog", "\ufbd9" },
-        { "music-discount", "\ufbda" },
-        { "music-dollar", "\ufbdb" },
-        { "music-down", "\ufbdc" },
-        { "music-exclamation", "\ufbdd" },
-        { "music-heart", "\ufbde" },
-        { "music-minus", "\ufbdf" },
-        { "music-off", "\uf166" },
-        { "music-pause", "\ufbe0" },
-        { "music-pin", "\ufbe1" },
-        { "music-plus", "\ufbe2" },
-        { "music-question", "\ufbe3" },
-        { "music-search", "\ufbe4" },
-        { "music-share", "\ufbe5" },
-        { "music-star", "\ufbe6" },
-        { "music-up", "\ufbe7" },
-        { "music-x", "\ufbe8" },
-        { "navigation", "\uf2c8" },
-        { "navigation-bolt", "\ufbe9" },
-        { "navigation-cancel", "\ufbea" },
-        { "navigation-check", "\ufbeb" },
-        { "navigation-code", "\ufbec" },
-        { "navigation-cog", "\ufbed" },
-        { "navigation-discount", "\ufbee" },
-        { "navigation-dollar", "\ufbef" },
-        { "navigation-down", "\ufbf0" },
-        { "navigation-exclamation", "\ufbf1" },
-        { "navigation-filled", "\uf685" },
-        { "navigation-heart", "\ufbf2" },
-        { "navigation-minus", "\ufbf3" },
-        { "navigation-north", "\ufaec" },
-        { "navigation-off", "\uf413" },
-        { "navigation-pause", "\ufbf4" },
-        { "navigation-pin", "\ufbf5" },
-        { "navigation-plus", "\ufbf6" },
-        { "navigation-question", "\ufbf7" },
-        { "navigation-search", "\ufbf8" },
-        { "navigation-share", "\ufbf9" },
-        { "navigation-star", "\ufbfa" },
-        { "navigation-up", "\ufbfb" },
-        { "navigation-x", "\ufbfc" },
-        { "needle", "\uf508" },
-        { "needle-thread", "\uf507" },
-        { "network", "\uf09f" },
-        { "network-off", "\uf414" },
-        { "new-section", "\uebc1" },
-        { "news", "\ueafd" },
-        { "news-off", "\uf167" },
-        { "nfc", "\ueeb7" },
-        { "nfc-off", "\uf168" },
-        { "no-copyright", "\uefb9" },
-        { "no-creative-commons", "\uefba" },
-        { "no-derivatives", "\uefbb" },
-        { "north-star", "\uf014" },
-        { "note", "\ueb6d" },
-        { "note-off", "\uf169" },
-        { "notebook", "\ueb96" },
-        { "notebook-off", "\uf415" },
-        { "notes", "\ueb6e" },
-        { "notes-off", "\uf16a" },
-        { "notification", "\ueafe" },
-        { "notification-off", "\uf16b" },
-        { "number", "\uf1fe" },
-        { "number-0", "\uedf0" },
-        { "number-1", "\uedf1" },
-        { "number-2", "\uedf2" },
-        { "number-3", "\uedf3" },
-        { "number-4", "\uedf4" },
-        { "number-5", "\uedf5" },
-        { "number-6", "\uedf6" },
-        { "number-7", "\uedf7" },
-        { "number-8", "\uedf8" },
-        { "number-9", "\uedf9" },
-        { "numbers", "\uf015" },
-        { "nurse", "\uef65" },
-        { "octagon", "\uecbd" },
-        { "octagon-filled", "\uf686" },
-        { "octagon-off", "\ueeb8" },
-        { "octahedron", "\ufaae" },
-        { "octahedron-off", "\ufaac" },
-        { "octahedron-plus", "\ufaad" },
-        { "old", "\ueeb9" },
-        { "olympics", "\ueeba" },
-        { "olympics-off", "\uf416" },
-        { "om", "\uf58d" },
-        { "omega", "\ueb97" },
-        { "outbound", "\uf249" },
-        { "outlet", "\uebd7" },
-        { "oval", "\uf02e" },
-        { "oval-filled", "\uf687" },
-        { "oval-vertical", "\uf02d" },
-        { "oval-vertical-filled", "\uf688" },
-        { "overline", "\ueebb" },
-        { "package", "\ueaff" },
-        { "package-export", "\uf07a" },
-        { "package-import", "\uf07b" },
-        { "package-off", "\uf16c" },
-        { "packages", "\uf2c9" },
-        { "pacman", "\ueebc" },
-        { "page-break", "\uec81" },
-        { "paint", "\ueb00" },
-        { "paint-filled", "\uf75f" },
-        { "paint-off", "\uf16d" },
-        { "palette", "\ueb01" },
-        { "palette-off", "\uf16e" },
-        { "panorama-horizontal", "\ued33" },
-        { "panorama-horizontal-off", "\uf417" },
-        { "panorama-vertical", "\ued34" },
-        { "panorama-vertical-off", "\uf418" },
-        { "paper-bag", "\uf02f" },
-        { "paper-bag-off", "\uf16f" },
-        { "paperclip", "\ueb02" },
-        { "parachute", "\ued7c" },
-        { "parachute-off", "\uf170" },
-        { "parentheses", "\uebd8" },
-        { "parentheses-off", "\uf171" },
-        { "parking", "\ueb03" },
-        { "parking-off", "\uf172" },
-        { "password", "\uf4ca" },
-        { "paw", "\ueff9" },
-        { "paw-filled", "\uf689" },
-        { "paw-off", "\uf419" },
-        { "pdf", "\uf7ac" },
-        { "peace", "\uecbe" },
-        { "pencil", "\ueb04" },
-        { "pencil-bolt", "\ufbfd" },
-        { "pencil-cancel", "\ufbfe" },
-        { "pencil-check", "\ufbff" },
-        { "pencil-code", "\ufc00" },
-        { "pencil-cog", "\ufc01" },
-        { "pencil-discount", "\ufc02" },
-        { "pencil-dollar", "\ufc03" },
-        { "pencil-down", "\ufc04" },
-        { "pencil-exclamation", "\ufc05" },
-        { "pencil-heart", "\ufc06" },
-        { "pencil-minus", "\uf1eb" },
-        { "pencil-off", "\uf173" },
-        { "pencil-pause", "\ufc07" },
-        { "pencil-pin", "\ufc08" },
-        { "pencil-plus", "\uf1ec" },
-        { "pencil-question", "\ufc09" },
-        { "pencil-search", "\ufc0a" },
-        { "pencil-share", "\ufc0b" },
-        { "pencil-star", "\ufc0c" },
-        { "pencil-up", "\ufc0d" },
-        { "pencil-x", "\ufc0e" },
-        { "pennant", "\ued7d" },
-        { "pennant-2", "\uf06a" },
-        { "pennant-2-filled", "\uf68a" },
-        { "pennant-filled", "\uf68b" },
-        { "pennant-off", "\uf174" },
-        { "pentagon", "\uefe3" },
-        { "pentagon-filled", "\uf68c" },
-        { "pentagon-off", "\uf41a" },
-        { "pentagram", "\uf586" },
-        { "pepper", "\uef15" },
-        { "pepper-off", "\uf175" },
-        { "percentage", "\uecf4" },
-        { "perfume", "\uf509" },
-        { "perspective", "\ueebd" },
-        { "perspective-off", "\uf176" },
-        { "phone", "\ueb09" },
-        { "phone-call", "\ueb05" },
-        { "phone-calling", "\uec43" },
-        { "phone-check", "\uec05" },
-        { "phone-filled", "\ufa49" },
-        { "phone-incoming", "\ueb06" },
-        { "phone-off", "\uecf5" },
-        { "phone-outgoing", "\ueb07" },
-        { "phone-pause", "\ueb08" },
-        { "phone-plus", "\uec06" },
-        { "phone-x", "\uec07" },
-        { "photo", "\ueb0a" },
-        { "photo-ai", "\ufa32" },
-        { "photo-bolt", "\uf990" },
-        { "photo-cancel", "\uf35d" },
-        { "photo-check", "\uf35e" },
-        { "photo-code", "\uf991" },
-        { "photo-cog", "\uf992" },
-        { "photo-dollar", "\uf993" },
-        { "photo-down", "\uf35f" },
-        { "photo-edit", "\uf360" },
-        { "photo-exclamation", "\uf994" },
-        { "photo-filled", "\ufa4a" },
-        { "photo-heart", "\uf361" },
-        { "photo-minus", "\uf362" },
-        { "photo-off", "\uecf6" },
-        { "photo-pause", "\uf995" },
-        { "photo-pin", "\uf996" },
-        { "photo-plus", "\uf363" },
-        { "photo-question", "\uf997" },
-        { "photo-search", "\uf364" },
-        { "photo-sensor", "\uf798" },
-        { "photo-sensor-2", "\uf796" },
-        { "photo-sensor-3", "\uf797" },
-        { "photo-share", "\uf998" },
-        { "photo-shield", "\uf365" },
-        { "photo-star", "\uf366" },
-        { "photo-up", "\uf38b" },
-        { "photo-x", "\uf367" },
-        { "physotherapist", "\ueebe" },
-        { "piano", "\ufad3" },
-        { "pick", "\ufafc" },
-        { "picture-in-picture", "\ued35" },
-        { "picture-in-picture-off", "\ued43" },
-        { "picture-in-picture-on", "\ued44" },
-        { "picture-in-picture-top", "\uefe4" },
-        { "pig", "\uef52" },
-        { "pig-money", "\uf38c" },
-        { "pig-off", "\uf177" },
-        { "pilcrow", "\uf5f6" },
-        { "pill", "\uec44" },
-        { "pill-off", "\uf178" },
-        { "pills", "\uef66" },
-        { "pin", "\uec9c" },
-        { "pin-filled", "\uf68d" },
-        { "ping-pong", "\uf38d" },
-        { "pinned", "\ued60" },
-        { "pinned-filled", "\uf68e" },
-        { "pinned-off", "\ued5f" },
-        { "pizza", "\uedbb" },
-        { "pizza-off", "\uf179" },
-        { "placeholder", "\uf626" },
-        { "plane", "\ueb6f" },
-        { "plane-arrival", "\ueb99" },
-        { "plane-departure", "\ueb9a" },
-        { "plane-inflight", "\uef98" },
-        { "plane-off", "\uf17a" },
-        { "plane-tilt", "\uf1ed" },
-        { "planet", "\uec08" },
-        { "planet-off", "\uf17b" },
-        { "plant", "\ued50" },
-        { "plant-2", "\ued7e" },
-        { "plant-2-off", "\uf17c" },
-        { "plant-off", "\uf17d" },
-        { "play-basketball", "\ufa66" },
-        { "play-card", "\ueebf" },
-        { "play-card-off", "\uf17e" },
-        { "play-football", "\ufa67" },
-        { "play-handball", "\ufa68" },
-        { "play-volleyball", "\ufa69" },
-        { "player-eject", "\uefbc" },
-        { "player-eject-filled", "\uf68f" },
-        { "player-pause", "\ued45" },
-        { "player-pause-filled", "\uf690" },
-        { "player-play", "\ued46" },
-        { "player-play-filled", "\uf691" },
-        { "player-record", "\ued47" },
-        { "player-record-filled", "\uf692" },
-        { "player-skip-back", "\ued48" },
-        { "player-skip-back-filled", "\uf693" },
-        { "player-skip-forward", "\ued49" },
-        { "player-skip-forward-filled", "\uf694" },
-        { "player-stop", "\ued4a" },
-        { "player-stop-filled", "\uf695" },
-        { "player-track-next", "\ued4b" },
-        { "player-track-next-filled", "\uf696" },
-        { "player-track-prev", "\ued4c" },
-        { "player-track-prev-filled", "\uf697" },
-        { "playlist", "\ueec0" },
-        { "playlist-add", "\uf008" },
-        { "playlist-off", "\uf17f" },
-        { "playlist-x", "\uf009" },
-        { "playstation-circle", "\uf2ad" },
-        { "playstation-square", "\uf2ae" },
-        { "playstation-triangle", "\uf2af" },
-        { "playstation-x", "\uf2b0" },
-        { "plug", "\uebd9" },
-        { "plug-connected", "\uf00a" },
-        { "plug-connected-x", "\uf0a0" },
-        { "plug-off", "\uf180" },
-        { "plug-x", "\uf0a1" },
-        { "plus", "\ueb0b" },
-        { "plus-equal", "\uf7ad" },
-        { "plus-minus", "\uf7ae" },
-        { "png", "\uf3ad" },
-        { "podium", "\uf1d8" },
-        { "podium-off", "\uf41b" },
-        { "point", "\ueb0c" },
-        { "point-filled", "\uf698" },
-        { "point-off", "\uf181" },
-        { "pointer", "\uf265" },
-        { "pointer-bolt", "\uf999" },
-        { "pointer-cancel", "\uf99a" },
-        { "pointer-check", "\uf99b" },
-        { "pointer-code", "\uf99c" },
-        { "pointer-cog", "\uf99d" },
-        { "pointer-dollar", "\uf99e" },
-        { "pointer-down", "\uf99f" },
-        { "pointer-exclamation", "\uf9a0" },
-        { "pointer-filled", "\ufb30" },
-        { "pointer-heart", "\uf9a1" },
-        { "pointer-minus", "\uf9a2" },
-        { "pointer-off", "\uf9a3" },
-        { "pointer-pause", "\uf9a4" },
-        { "pointer-pin", "\uf9a5" },
-        { "pointer-plus", "\uf9a6" },
-        { "pointer-question", "\uf9a7" },
-        { "pointer-search", "\uf9a8" },
-        { "pointer-share", "\uf9a9" },
-        { "pointer-star", "\uf9aa" },
-        { "pointer-up", "\uf9ab" },
-        { "pointer-x", "\uf9ac" },
-        { "pokeball", "\ueec1" },
-        { "pokeball-off", "\uf41c" },
-        { "poker-chip", "\uf515" },
-        { "polaroid", "\ueec2" },
-        { "polaroid-filled", "\ufa4b" },
-        { "polygon", "\uefd0" },
-        { "polygon-off", "\uf182" },
-        { "poo", "\uf258" },
-        { "pool", "\ued91" },
-        { "pool-off", "\uf41d" },
-        { "power", "\ueb0d" },
-        { "pray", "\uecbf" },
-        { "premium-rights", "\uefbd" },
-        { "prescription", "\uef99" },
-        { "presentation", "\ueb70" },
-        { "presentation-analytics", "\ueec3" },
-        { "presentation-off", "\uf183" },
-        { "printer", "\ueb0e" },
-        { "printer-off", "\uf184" },
-        { "prism", "\ufab1" },
-        { "prism-off", "\ufaaf" },
-        { "prism-plus", "\ufab0" },
-        { "prison", "\uef79" },
-        { "progress", "\ufa0d" },
-        { "progress-alert", "\ufa07" },
-        { "progress-bolt", "\ufa08" },
-        { "progress-check", "\ufa09" },
-        { "progress-down", "\ufa0a" },
-        { "progress-help", "\ufa0b" },
-        { "progress-x", "\ufa0c" },
-        { "prompt", "\ueb0f" },
-        { "propeller", "\ueec4" },
-        { "propeller-off", "\uf185" },
-        { "pumpkin-scary", "\uf587" },
-        { "puzzle", "\ueb10" },
-        { "puzzle-2", "\uef83" },
-        { "puzzle-filled", "\uf699" },
-        { "puzzle-off", "\uf186" },
-        { "pyramid", "\ueec5" },
-        { "pyramid-off", "\uf187" },
-        { "pyramid-plus", "\ufab2" },
-        { "qrcode", "\ueb11" },
-        { "qrcode-off", "\uf41e" },
-        { "question-mark", "\uec9d" },
-        { "quote", "\uefbe" },
-        { "quote-off", "\uf188" },
-        { "quotes", "\ufb1e" },
-        { "radar", "\uf017" },
-        { "radar-2", "\uf016" },
-        { "radar-off", "\uf41f" },
-        { "radio", "\uef2d" },
-        { "radio-off", "\uf420" },
-        { "radioactive", "\uecc0" },
-        { "radioactive-filled", "\uf760" },
-        { "radioactive-off", "\uf189" },
-        { "radius-bottom-left", "\ueec6" },
-        { "radius-bottom-right", "\ueec7" },
-        { "radius-top-left", "\ueec8" },
-        { "radius-top-right", "\ueec9" },
-        { "rainbow", "\uedbc" },
-        { "rainbow-off", "\uf18a" },
-        { "rating-12-plus", "\uf266" },
-        { "rating-14-plus", "\uf267" },
-        { "rating-16-plus", "\uf268" },
-        { "rating-18-plus", "\uf269" },
-        { "rating-21-plus", "\uf26a" },
-        { "razor", "\uf4b5" },
-        { "razor-electric", "\uf4b4" },
-        { "receipt", "\uedfd" },
-        { "receipt-2", "\uedfa" },
-        { "receipt-off", "\uedfb" },
-        { "receipt-refund", "\uedfc" },
-        { "receipt-tax", "\uedbd" },
-        { "recharging", "\ueeca" },
-        { "record-mail", "\ueb12" },
-        { "record-mail-off", "\uf18b" },
-        { "rectangle", "\ued37" },
-        { "rectangle-filled", "\uf69a" },
-        { "rectangle-rounded-bottom", "\ufaed" },
-        { "rectangle-rounded-top", "\ufaee" },
-        { "rectangle-vertical", "\ued36" },
-        { "rectangle-vertical-filled", "\uf69b" },
-        { "rectangular-prism", "\ufab5" },
-        { "rectangular-prism-off", "\ufab3" },
-        { "rectangular-prism-plus", "\ufab4" },
-        { "recycle", "\ueb9b" },
-        { "recycle-off", "\uf18c" },
-        { "refresh", "\ueb13" },
-        { "refresh-alert", "\ued57" },
-        { "refresh-dot", "\uefbf" },
-        { "refresh-off", "\uf18d" },
-        { "regex", "\uf31f" },
-        { "regex-off", "\uf421" },
-        { "registered", "\ueb14" },
-        { "relation-many-to-many", "\ued7f" },
-        { "relation-one-to-many", "\ued80" },
-        { "relation-one-to-one", "\ued81" },
-        { "reload", "\uf3ae" },
-        { "reorder", "\ufc15" },
-        { "repeat", "\ueb72" },
-        { "repeat-off", "\uf18e" },
-        { "repeat-once", "\ueb71" },
-        { "replace", "\uebc7" },
-        { "replace-filled", "\uf69c" },
-        { "replace-off", "\uf422" },
-        { "report", "\ueece" },
-        { "report-analytics", "\ueecb" },
-        { "report-medical", "\ueecc" },
-        { "report-money", "\ueecd" },
-        { "report-off", "\uf18f" },
-        { "report-search", "\uef84" },
-        { "reserved-line", "\uf9f6" },
-        { "resize", "\ueecf" },
-        { "restore", "\ufafd" },
-        { "rewind-backward-10", "\ufaba" },
-        { "rewind-backward-15", "\ufabb" },
-        { "rewind-backward-20", "\ufabc" },
-        { "rewind-backward-30", "\ufabd" },
-        { "rewind-backward-40", "\ufabe" },
-        { "rewind-backward-5", "\ufabf" },
-        { "rewind-backward-50", "\ufac0" },
-        { "rewind-backward-60", "\ufac1" },
-        { "rewind-forward-10", "\ufac2" },
-        { "rewind-forward-15", "\ufac3" },
-        { "rewind-forward-20", "\ufac4" },
-        { "rewind-forward-30", "\ufac5" },
-        { "rewind-forward-40", "\ufac6" },
-        { "rewind-forward-5", "\ufac7" },
-        { "rewind-forward-50", "\ufac8" },
-        { "rewind-forward-60", "\ufac9" },
-        { "ribbon-health", "\uf58e" },
-        { "rings", "\ufa6a" },
-        { "ripple", "\ued82" },
-        { "ripple-off", "\uf190" },
-        { "road", "\uf018" },
-        { "road-off", "\uf191" },
-        { "road-sign", "\uecdd" },
-        { "robot", "\uf00b" },
-        { "robot-off", "\uf192" },
-        { "rocket", "\uec45" },
-        { "rocket-off", "\uf193" },
-        { "roller-skating", "\uefd1" },
-        { "rollercoaster", "\uf0a2" },
-        { "rollercoaster-off", "\uf423" },
-        { "rosette", "\uf599" },
-        { "rosette-filled", "\uf69d" },
-        { "rosette-number-0", "\uf58f" },
-        { "rosette-number-1", "\uf590" },
-        { "rosette-number-2", "\uf591" },
-        { "rosette-number-3", "\uf592" },
-        { "rosette-number-4", "\uf593" },
-        { "rosette-number-5", "\uf594" },
-        { "rosette-number-6", "\uf595" },
-        { "rosette-number-7", "\uf596" },
-        { "rosette-number-8", "\uf597" },
-        { "rosette-number-9", "\uf598" },
-        { "rotate", "\ueb16" },
-        { "rotate-2", "\uebb4" },
-        { "rotate-360", "\uef85" },
-        { "rotate-clockwise", "\ueb15" },
-        { "rotate-clockwise-2", "\uebb5" },
-        { "rotate-dot", "\uefe5" },
-        { "rotate-rectangle", "\uec15" },
-        { "route", "\ueb17" },
-        { "route-2", "\uf4b6" },
-        { "route-off", "\uf194" },
-        { "router", "\ueb18" },
-        { "router-off", "\uf424" },
-        { "row-insert-bottom", "\ueed0" },
-        { "row-insert-top", "\ueed1" },
-        { "row-remove", "\ufafe" },
-        { "rss", "\ueb19" },
-        { "rubber-stamp", "\uf5ab" },
-        { "rubber-stamp-off", "\uf5aa" },
-        { "ruler", "\ueb1a" },
-        { "ruler-2", "\ueed2" },
-        { "ruler-2-off", "\uf195" },
-        { "ruler-3", "\uf290" },
-        { "ruler-measure", "\uf291" },
-        { "ruler-off", "\uf196" },
-        { "run", "\uec82" },
-        { "s-turn-down", "\uf516" },
-        { "s-turn-left", "\uf517" },
-        { "s-turn-right", "\uf518" },
-        { "s-turn-up", "\uf519" },
-        { "sailboat", "\uec83" },
-        { "sailboat-2", "\uf5f7" },
-        { "sailboat-off", "\uf425" },
-        { "salad", "\uf50a" },
-        { "salt", "\uef16" },
-        { "satellite", "\ueed3" },
-        { "satellite-off", "\uf197" },
-        { "sausage", "\uef17" },
-        { "scale", "\uebc2" },
-        { "scale-off", "\uf198" },
-        { "scale-outline", "\uef53" },
-        { "scale-outline-off", "\uf199" },
-        { "scan", "\uebc8" },
-        { "scan-eye", "\uf1ff" },
-        { "schema", "\uf200" },
-        { "schema-off", "\uf426" },
-        { "school", "\uecf7" },
-        { "school-bell", "\uf64a" },
-        { "school-off", "\uf19a" },
-        { "scissors", "\ueb1b" },
-        { "scissors-off", "\uf19b" },
-        { "scooter", "\uec6c" },
-        { "scooter-electric", "\uecc1" },
-        { "scoreboard", "\ufa6b" },
-        { "screen-share", "\ued18" },
-        { "screen-share-off", "\ued17" },
-        { "screenshot", "\uf201" },
-        { "scribble", "\uf0a3" },
-        { "scribble-off", "\uf427" },
-        { "script", "\uf2da" },
-        { "script-minus", "\uf2d7" },
-        { "script-plus", "\uf2d8" },
-        { "script-x", "\uf2d9" },
-        { "scuba-mask", "\ueed4" },
-        { "scuba-mask-off", "\uf428" },
-        { "sdk", "\uf3af" },
-        { "search", "\ueb1c" },
-        { "search-off", "\uf19c" },
-        { "section", "\ueed5" },
-        { "section-sign", "\uf019" },
-        { "seeding", "\ued51" },
-        { "seeding-off", "\uf19d" },
-        { "select", "\uec9e" },
-        { "select-all", "\uf9f7" },
-        { "selector", "\ueb1d" },
-        { "send", "\ueb1e" },
-        { "send-off", "\uf429" },
-        { "seo", "\uf26b" },
-        { "separator", "\uebda" },
-        { "separator-horizontal", "\uec79" },
-        { "separator-vertical", "\uec7a" },
-        { "server", "\ueb1f" },
-        { "server-2", "\uf07c" },
-        { "server-bolt", "\uf320" },
-        { "server-cog", "\uf321" },
-        { "server-off", "\uf19e" },
-        { "servicemark", "\uec09" },
-        { "settings", "\ueb20" },
-        { "settings-2", "\uf5ac" },
-        { "settings-automation", "\ueed6" },
-        { "settings-bolt", "\uf9ad" },
-        { "settings-cancel", "\uf9ae" },
-        { "settings-check", "\uf9af" },
-        { "settings-code", "\uf9b0" },
-        { "settings-cog", "\uf9b1" },
-        { "settings-dollar", "\uf9b2" },
-        { "settings-down", "\uf9b3" },
-        { "settings-exclamation", "\uf9b4" },
-        { "settings-filled", "\uf69e" },
-        { "settings-heart", "\uf9b5" },
-        { "settings-minus", "\uf9b6" },
-        { "settings-off", "\uf19f" },
-        { "settings-pause", "\uf9b7" },
-        { "settings-pin", "\uf9b8" },
-        { "settings-plus", "\uf9b9" },
-        { "settings-question", "\uf9ba" },
-        { "settings-search", "\uf9bb" },
-        { "settings-share", "\uf9bc" },
-        { "settings-star", "\uf9bd" },
-        { "settings-up", "\uf9be" },
-        { "settings-x", "\uf9bf" },
-        { "shadow", "\ueed8" },
-        { "shadow-off", "\ueed7" },
-        { "shape", "\ueb9c" },
-        { "shape-2", "\ueed9" },
-        { "shape-3", "\ueeda" },
-        { "shape-off", "\uf1a0" },
-        { "share", "\ueb21" },
-        { "share-2", "\uf799" },
-        { "share-3", "\uf7bd" },
-        { "share-off", "\uf1a1" },
-        { "shi-jumping", "\ufa6c" },
-        { "shield", "\ueb24" },
-        { "shield-bolt", "\uf9c0" },
-        { "shield-cancel", "\uf9c1" },
-        { "shield-check", "\ueb22" },
-        { "shield-check-filled", "\uf761" },
-        { "shield-checkered", "\uef9a" },
-        { "shield-checkered-filled", "\uf762" },
-        { "shield-chevron", "\uef9b" },
-        { "shield-code", "\uf9c2" },
-        { "shield-cog", "\uf9c3" },
-        { "shield-dollar", "\uf9c4" },
-        { "shield-down", "\uf9c5" },
-        { "shield-exclamation", "\uf9c6" },
-        { "shield-filled", "\uf69f" },
-        { "shield-half", "\uf358" },
-        { "shield-half-filled", "\uf357" },
-        { "shield-heart", "\uf9c7" },
-        { "shield-lock", "\ued58" },
-        { "shield-lock-filled", "\uf763" },
-        { "shield-minus", "\uf9c8" },
-        { "shield-off", "\uecf8" },
-        { "shield-pause", "\uf9c9" },
-        { "shield-pin", "\uf9ca" },
-        { "shield-plus", "\uf9cb" },
-        { "shield-question", "\uf9cc" },
-        { "shield-search", "\uf9cd" },
-        { "shield-share", "\uf9ce" },
-        { "shield-star", "\uf9cf" },
-        { "shield-up", "\uf9d0" },
-        { "shield-x", "\ueb23" },
-        { "ship", "\uec84" },
-        { "ship-off", "\uf42a" },
-        { "shirt", "\uec0a" },
-        { "shirt-filled", "\uf6a0" },
-        { "shirt-off", "\uf1a2" },
-        { "shirt-sport", "\uf26c" },
-        { "shoe", "\uefd2" },
-        { "shoe-off", "\uf1a4" },
-        { "shopping-bag", "\uf5f8" },
-        { "shopping-bag-check", "\ufc16" },
-        { "shopping-bag-discount", "\ufc17" },
-        { "shopping-bag-edit", "\ufc18" },
-        { "shopping-bag-exclamation", "\ufc19" },
-        { "shopping-bag-minus", "\ufc1a" },
-        { "shopping-bag-plus", "\ufc1b" },
-        { "shopping-bag-search", "\ufc1c" },
-        { "shopping-bag-x", "\ufc1d" },
-        { "shopping-cart", "\ueb25" },
-        { "shopping-cart-bolt", "\ufb57" },
-        { "shopping-cart-cancel", "\ufb58" },
-        { "shopping-cart-check", "\ufb59" },
-        { "shopping-cart-code", "\ufb5a" },
-        { "shopping-cart-cog", "\ufb5b" },
-        { "shopping-cart-copy", "\ufb5c" },
-        { "shopping-cart-discount", "\ufb5d" },
-        { "shopping-cart-dollar", "\ufb5e" },
-        { "shopping-cart-down", "\ufb5f" },
-        { "shopping-cart-exclamation", "\ufb60" },
-        { "shopping-cart-filled", "\ufc3f" },
-        { "shopping-cart-heart", "\ufb61" },
-        { "shopping-cart-minus", "\ufb62" },
-        { "shopping-cart-off", "\ueedc" },
-        { "shopping-cart-pause", "\ufb63" },
-        { "shopping-cart-pin", "\ufb64" },
-        { "shopping-cart-plus", "\ufb65" },
-        { "shopping-cart-question", "\ufb66" },
-        { "shopping-cart-search", "\ufb67" },
-        { "shopping-cart-share", "\ufb68" },
-        { "shopping-cart-star", "\ufb69" },
-        { "shopping-cart-up", "\ufb6a" },
-        { "shopping-cart-x", "\ufb6b" },
-        { "shovel", "\uf1d9" },
-        { "shredder", "\ueedf" },
-        { "sign-left", "\uf06b" },
-        { "sign-left-filled", "\uf6a1" },
-        { "sign-right", "\uf06c" },
-        { "sign-right-filled", "\uf6a2" },
-        { "signal-2g", "\uf79a" },
-        { "signal-3g", "\uf1ee" },
-        { "signal-4g", "\uf1ef" },
-        { "signal-4g-plus", "\uf259" },
-        { "signal-5g", "\uf1f0" },
-        { "signal-6g", "\uf9f8" },
-        { "signal-e", "\uf9f9" },
-        { "signal-g", "\uf9fa" },
-        { "signal-h", "\uf9fc" },
-        { "signal-h-plus", "\uf9fb" },
-        { "signal-lte", "\uf9fd" },
-        { "signature", "\ueee0" },
-        { "signature-off", "\uf1a5" },
-        { "sitemap", "\ueb9d" },
-        { "sitemap-off", "\uf1a6" },
-        { "skateboard", "\uecc2" },
-        { "skateboard-off", "\uf42b" },
-        { "skateboarding", "\ufaca" },
-        { "skull", "\uf292" },
-        { "slash", "\uf4f9" },
-        { "slashes", "\uf588" },
-        { "sleigh", "\uef9c" },
-        { "slice", "\uebdb" },
-        { "slideshow", "\uebc9" },
-        { "smart-home", "\uecde" },
-        { "smart-home-off", "\uf1a7" },
-        { "smoking", "\uecc4" },
-        { "smoking-no", "\uecc3" },
-        { "snowflake", "\uec0b" },
-        { "snowflake-off", "\uf1a8" },
-        { "snowman", "\uf26d" },
-        { "soccer-field", "\ued92" },
-        { "social", "\uebec" },
-        { "social-off", "\uf1a9" },
-        { "sock", "\ueee1" },
-        { "sofa", "\uefaf" },
-        { "sofa-off", "\uf42c" },
-        { "solar-panel", "\uf7bf" },
-        { "solar-panel-2", "\uf7be" },
-        { "sort-0-9", "\uf54d" },
-        { "sort-9-0", "\uf54e" },
-        { "sort-a-z", "\uf54f" },
-        { "sort-ascending", "\ueb26" },
-        { "sort-ascending-2", "\ueee2" },
-        { "sort-ascending-letters", "\uef18" },
-        { "sort-ascending-numbers", "\uef19" },
-        { "sort-descending", "\ueb27" },
-        { "sort-descending-2", "\ueee3" },
-        { "sort-descending-letters", "\uef1a" },
-        { "sort-descending-numbers", "\uef1b" },
-        { "sort-z-a", "\uf550" },
-        { "sos", "\uf24a" },
-        { "soup", "\uef2e" },
-        { "soup-off", "\uf42d" },
-        { "source-code", "\uf4a2" },
-        { "space", "\uec0c" },
-        { "space-off", "\uf1aa" },
-        { "spacing-horizontal", "\uef54" },
-        { "spacing-vertical", "\uef55" },
-        { "spade", "\ueffa" },
-        { "spade-filled", "\uf6a3" },
-        { "sparkles", "\uf6d7" },
-        { "speakerphone", "\ued61" },
-        { "speedboat", "\ued93" },
-        { "sphere", "\ufab8" },
-        { "sphere-off", "\ufab6" },
-        { "sphere-plus", "\ufab7" },
-        { "spider", "\uf293" },
-        { "spiral", "\uf294" },
-        { "spiral-off", "\uf42e" },
-        { "sport-billard", "\ueee4" },
-        { "spray", "\uf50b" },
-        { "spy", "\uf227" },
-        { "spy-off", "\uf42f" },
-        { "sql", "\uf7c0" },
-        { "square", "\ueb2c" },
-        { "square-0-filled", "\uf764" },
-        { "square-1-filled", "\uf765" },
-        { "square-2-filled", "\uf7fa" },
-        { "square-3-filled", "\uf766" },
-        { "square-4-filled", "\uf767" },
-        { "square-5-filled", "\uf768" },
-        { "square-6-filled", "\uf769" },
-        { "square-7-filled", "\uf76a" },
-        { "square-8-filled", "\uf76b" },
-        { "square-9-filled", "\uf76c" },
-        { "square-arrow-down", "\uf4b7" },
-        { "square-arrow-down-filled", "\ufb31" },
-        { "square-arrow-left", "\uf4b8" },
-        { "square-arrow-left-filled", "\ufb32" },
-        { "square-arrow-right", "\uf4b9" },
-        { "square-arrow-right-filled", "\ufb33" },
-        { "square-arrow-up", "\uf4ba" },
-        { "square-arrow-up-filled", "\ufb34" },
-        { "square-asterisk", "\uf01a" },
-        { "square-asterisk-filled", "\ufb35" },
-        { "square-check", "\ueb28" },
-        { "square-check-filled", "\uf76d" },
-        { "square-chevron-down", "\uf627" },
-        { "square-chevron-down-filled", "\ufb36" },
-        { "square-chevron-left", "\uf628" },
-        { "square-chevron-left-filled", "\ufb37" },
-        { "square-chevron-right", "\uf629" },
-        { "square-chevron-right-filled", "\ufb38" },
-        { "square-chevron-up", "\uf62a" },
-        { "square-chevron-up-filled", "\ufb39" },
-        { "square-chevrons-down", "\uf64b" },
-        { "square-chevrons-down-filled", "\ufb3a" },
-        { "square-chevrons-left", "\uf64c" },
-        { "square-chevrons-left-filled", "\ufb3b" },
-        { "square-chevrons-right", "\uf64d" },
-        { "square-chevrons-right-filled", "\ufb3c" },
-        { "square-chevrons-up", "\uf64e" },
-        { "square-chevrons-up-filled", "\ufb3d" },
-        { "square-dot", "\ued59" },
-        { "square-dot-filled", "\ufb3e" },
-        { "square-f0", "\uf526" },
-        { "square-f0-filled", "\uf76e" },
-        { "square-f1", "\uf527" },
-        { "square-f1-filled", "\uf76f" },
-        { "square-f2", "\uf528" },
-        { "square-f2-filled", "\uf770" },
-        { "square-f3", "\uf529" },
-        { "square-f3-filled", "\uf771" },
-        { "square-f4", "\uf52a" },
-        { "square-f4-filled", "\uf772" },
-        { "square-f5", "\uf52b" },
-        { "square-f5-filled", "\uf773" },
-        { "square-f6", "\uf52c" },
-        { "square-f6-filled", "\uf774" },
-        { "square-f7", "\uf52d" },
-        { "square-f7-filled", "\uf775" },
-        { "square-f8", "\uf52e" },
-        { "square-f8-filled", "\uf776" },
-        { "square-f9", "\uf52f" },
-        { "square-f9-filled", "\uf777" },
-        { "square-filled", "\ufc40" },
-        { "square-forbid", "\ued5b" },
-        { "square-forbid-2", "\ued5a" },
-        { "square-half", "\ueffb" },
-        { "square-key", "\uf638" },
-        { "square-letter-a", "\uf47c" },
-        { "square-letter-b", "\uf47d" },
-        { "square-letter-c", "\uf47e" },
-        { "square-letter-d", "\uf47f" },
-        { "square-letter-e", "\uf480" },
-        { "square-letter-f", "\uf481" },
-        { "square-letter-g", "\uf482" },
-        { "square-letter-h", "\uf483" },
-        { "square-letter-i", "\uf484" },
-        { "square-letter-j", "\uf485" },
-        { "square-letter-k", "\uf486" },
-        { "square-letter-l", "\uf487" },
-        { "square-letter-m", "\uf488" },
-        { "square-letter-n", "\uf489" },
-        { "square-letter-o", "\uf48a" },
-        { "square-letter-p", "\uf48b" },
-        { "square-letter-q", "\uf48c" },
-        { "square-letter-r", "\uf48d" },
-        { "square-letter-s", "\uf48e" },
-        { "square-letter-t", "\uf48f" },
-        { "square-letter-u", "\uf490" },
-        { "square-letter-v", "\uf4bb" },
-        { "square-letter-w", "\uf491" },
-        { "square-letter-x", "\uf4bc" },
-        { "square-letter-y", "\uf492" },
-        { "square-letter-z", "\uf493" },
-        { "square-minus", "\ueb29" },
-        { "square-minus-filled", "\ufb3f" },
-        { "square-number-0", "\ueee5" },
-        { "square-number-1", "\ueee6" },
-        { "square-number-2", "\ueee7" },
-        { "square-number-3", "\ueee8" },
-        { "square-number-4", "\ueee9" },
-        { "square-number-5", "\ueeea" },
-        { "square-number-6", "\ueeeb" },
-        { "square-number-7", "\ueeec" },
-        { "square-number-8", "\ueeed" },
-        { "square-number-9", "\ueeee" },
-        { "square-off", "\ueeef" },
-        { "square-plus", "\ueb2a" },
-        { "square-root", "\ueef1" },
-        { "square-root-2", "\ueef0" },
-        { "square-rotated", "\uecdf" },
-        { "square-rotated-filled", "\uf6a4" },
-        { "square-rotated-forbid", "\uf01c" },
-        { "square-rotated-forbid-2", "\uf01b" },
-        { "square-rotated-off", "\ueef2" },
-        { "square-rounded", "\uf59a" },
-        { "square-rounded-arrow-down", "\uf639" },
-        { "square-rounded-arrow-down-filled", "\uf6db" },
-        { "square-rounded-arrow-left", "\uf63a" },
-        { "square-rounded-arrow-left-filled", "\uf6dc" },
-        { "square-rounded-arrow-right", "\uf63b" },
-        { "square-rounded-arrow-right-filled", "\uf6dd" },
-        { "square-rounded-arrow-up", "\uf63c" },
-        { "square-rounded-arrow-up-filled", "\uf6de" },
-        { "square-rounded-check", "\uf63d" },
-        { "square-rounded-check-filled", "\uf6df" },
-        { "square-rounded-chevron-down", "\uf62b" },
-        { "square-rounded-chevron-down-filled", "\uf6e0" },
-        { "square-rounded-chevron-left", "\uf62c" },
-        { "square-rounded-chevron-left-filled", "\uf6e1" },
-        { "square-rounded-chevron-right", "\uf62d" },
-        { "square-rounded-chevron-right-filled", "\uf6e2" },
-        { "square-rounded-chevron-up", "\uf62e" },
-        { "square-rounded-chevron-up-filled", "\uf6e3" },
-        { "square-rounded-chevrons-down", "\uf64f" },
-        { "square-rounded-chevrons-down-filled", "\uf6e4" },
-        { "square-rounded-chevrons-left", "\uf650" },
-        { "square-rounded-chevrons-left-filled", "\uf6e5" },
-        { "square-rounded-chevrons-right", "\uf651" },
-        { "square-rounded-chevrons-right-filled", "\uf6e6" },
-        { "square-rounded-chevrons-up", "\uf652" },
-        { "square-rounded-chevrons-up-filled", "\uf6e7" },
-        { "square-rounded-filled", "\uf6a5" },
-        { "square-rounded-letter-a", "\uf5ae" },
-        { "square-rounded-letter-b", "\uf5af" },
-        { "square-rounded-letter-c", "\uf5b0" },
-        { "square-rounded-letter-d", "\uf5b1" },
-        { "square-rounded-letter-e", "\uf5b2" },
-        { "square-rounded-letter-f", "\uf5b3" },
-        { "square-rounded-letter-g", "\uf5b4" },
-        { "square-rounded-letter-h", "\uf5b5" },
-        { "square-rounded-letter-i", "\uf5b6" },
-        { "square-rounded-letter-j", "\uf5b7" },
-        { "square-rounded-letter-k", "\uf5b8" },
-        { "square-rounded-letter-l", "\uf5b9" },
-        { "square-rounded-letter-m", "\uf5ba" },
-        { "square-rounded-letter-n", "\uf5bb" },
-        { "square-rounded-letter-o", "\uf5bc" },
-        { "square-rounded-letter-p", "\uf5bd" },
-        { "square-rounded-letter-q", "\uf5be" },
-        { "square-rounded-letter-r", "\uf5bf" },
-        { "square-rounded-letter-s", "\uf5c0" },
-        { "square-rounded-letter-t", "\uf5c1" },
-        { "square-rounded-letter-u", "\uf5c2" },
-        { "square-rounded-letter-v", "\uf5c3" },
-        { "square-rounded-letter-w", "\uf5c4" },
-        { "square-rounded-letter-x", "\uf5c5" },
-        { "square-rounded-letter-y", "\uf5c6" },
-        { "square-rounded-letter-z", "\uf5c7" },
-        { "square-rounded-minus", "\uf63e" },
-        { "square-rounded-minus-filled", "\ufb40" },
-        { "square-rounded-number-0", "\uf5c8" },
-        { "square-rounded-number-0-filled", "\uf778" },
-        { "square-rounded-number-1", "\uf5c9" },
-        { "square-rounded-number-1-filled", "\uf779" },
-        { "square-rounded-number-2", "\uf5ca" },
-        { "square-rounded-number-2-filled", "\uf77a" },
-        { "square-rounded-number-3", "\uf5cb" },
-        { "square-rounded-number-3-filled", "\uf77b" },
-        { "square-rounded-number-4", "\uf5cc" },
-        { "square-rounded-number-4-filled", "\uf77c" },
-        { "square-rounded-number-5", "\uf5cd" },
-        { "square-rounded-number-5-filled", "\uf77d" },
-        { "square-rounded-number-6", "\uf5ce" },
-        { "square-rounded-number-6-filled", "\uf77e" },
-        { "square-rounded-number-7", "\uf5cf" },
-        { "square-rounded-number-7-filled", "\uf77f" },
-        { "square-rounded-number-8", "\uf5d0" },
-        { "square-rounded-number-8-filled", "\uf780" },
-        { "square-rounded-number-9", "\uf5d1" },
-        { "square-rounded-number-9-filled", "\uf781" },
-        { "square-rounded-plus", "\uf63f" },
-        { "square-rounded-plus-filled", "\uf6e8" },
-        { "square-rounded-x", "\uf640" },
-        { "square-rounded-x-filled", "\uf6e9" },
-        { "square-toggle", "\ueef4" },
-        { "square-toggle-horizontal", "\ueef3" },
-        { "square-x", "\ueb2b" },
-        { "square-x-filled", "\ufb41" },
-        { "squares-diagonal", "\ueef5" },
-        { "squares-filled", "\ueef6" },
-        { "stack", "\ueb2d" },
-        { "stack-2", "\ueef7" },
-        { "stack-3", "\uef9d" },
-        { "stack-pop", "\uf234" },
-        { "stack-push", "\uf235" },
-        { "stairs", "\ueca6" },
-        { "stairs-down", "\ueca4" },
-        { "stairs-up", "\ueca5" },
-        { "star", "\ueb2e" },
-        { "star-filled", "\uf6a6" },
-        { "star-half", "\ued19" },
-        { "star-half-filled", "\uf6a7" },
-        { "star-off", "\ued62" },
-        { "stars", "\ued38" },
-        { "stars-filled", "\uf6a8" },
-        { "stars-off", "\uf430" },
-        { "status-change", "\uf3b0" },
-        { "steam", "\uf24b" },
-        { "steering-wheel", "\uec7b" },
-        { "steering-wheel-off", "\uf431" },
-        { "step-into", "\uece0" },
-        { "step-out", "\uece1" },
-        { "stereo-glasses", "\uf4cb" },
-        { "stethoscope", "\uedbe" },
-        { "stethoscope-off", "\uf432" },
-        { "sticker", "\ueb2f" },
-        { "storm", "\uf24c" },
-        { "storm-off", "\uf433" },
-        { "stretching", "\uf2db" },
-        { "stretching-2", "\ufa6d" },
-        { "strikethrough", "\ueb9e" },
-        { "submarine", "\ued94" },
-        { "subscript", "\ueb9f" },
-        { "subtask", "\uec9f" },
-        { "sum", "\ueb73" },
-        { "sum-off", "\uf1ab" },
-        { "sun", "\ueb30" },
-        { "sun-filled", "\uf6a9" },
-        { "sun-high", "\uf236" },
-        { "sun-low", "\uf237" },
-        { "sun-moon", "\uf4a3" },
-        { "sun-off", "\ued63" },
-        { "sun-wind", "\uf238" },
-        { "sunglasses", "\uf239" },
-        { "sunrise", "\uef1c" },
-        { "sunset", "\uec31" },
-        { "sunset-2", "\uf23a" },
-        { "superscript", "\ueba0" },
-        { "svg", "\uf25a" },
-        { "swimming", "\uec92" },
-        { "swipe", "\uf551" },
-        { "switch", "\ueb33" },
-        { "switch-2", "\uedbf" },
-        { "switch-3", "\uedc0" },
-        { "switch-horizontal", "\ueb31" },
-        { "switch-vertical", "\ueb32" },
-        { "sword", "\uf030" },
-        { "sword-off", "\uf434" },
-        { "swords", "\uf132" },
-        { "table", "\ueba1" },
-        { "table-alias", "\uf25b" },
-        { "table-column", "\ufaff" },
-        { "table-down", "\ufa1c" },
-        { "table-export", "\ueef8" },
-        { "table-filled", "\uf782" },
-        { "table-heart", "\ufa1d" },
-        { "table-import", "\ueef9" },
-        { "table-minus", "\ufa1e" },
-        { "table-off", "\ueefa" },
-        { "table-options", "\uf25c" },
-        { "table-plus", "\ufa1f" },
-        { "table-row", "\ufb00" },
-        { "table-share", "\ufa20" },
-        { "table-shortcut", "\uf25d" },
-        { "tag", "\ueb34" },
-        { "tag-off", "\uefc0" },
-        { "tags", "\uef86" },
-        { "tags-off", "\uefc1" },
-        { "tallymark-1", "\uec46" },
-        { "tallymark-2", "\uec47" },
-        { "tallymark-3", "\uec48" },
-        { "tallymark-4", "\uec49" },
-        { "tallymarks", "\uec4a" },
-        { "tank", "\ued95" },
-        { "target", "\ueb35" },
-        { "target-arrow", "\uf51a" },
-        { "target-off", "\uf1ad" },
-        { "teapot", "\uf552" },
-        { "telescope", "\uf07d" },
-        { "telescope-off", "\uf1ae" },
-        { "temperature", "\ueb38" },
-        { "temperature-celsius", "\ueb36" },
-        { "temperature-fahrenheit", "\ueb37" },
-        { "temperature-minus", "\uebed" },
-        { "temperature-off", "\uf1af" },
-        { "temperature-plus", "\uebee" },
-        { "template", "\ueb39" },
-        { "template-off", "\uf1b0" },
-        { "tent", "\ueefb" },
-        { "tent-off", "\uf435" },
-        { "terminal", "\uebdc" },
-        { "terminal-2", "\uebef" },
-        { "test-pipe", "\ueb3a" },
-        { "test-pipe-2", "\uf0a4" },
-        { "test-pipe-off", "\uf1b1" },
-        { "tex", "\uf4e0" },
-        { "text-caption", "\uf4a4" },
-        { "text-color", "\uf2dc" },
-        { "text-decrease", "\uf202" },
-        { "text-direction-ltr", "\ueefc" },
-        { "text-direction-rtl", "\ueefd" },
-        { "text-increase", "\uf203" },
-        { "text-orientation", "\uf2a4" },
-        { "text-plus", "\uf2a5" },
-        { "text-recognition", "\uf204" },
-        { "text-resize", "\uef87" },
-        { "text-size", "\uf2b1" },
-        { "text-spellcheck", "\uf2a6" },
-        { "text-wrap", "\uebdd" },
-        { "text-wrap-disabled", "\ueca7" },
-        { "texture", "\uf51b" },
-        { "theater", "\uf79b" },
-        { "thermometer", "\uef67" },
-        { "thumb-down", "\ueb3b" },
-        { "thumb-down-filled", "\uf6aa" },
-        { "thumb-down-off", "\uf436" },
-        { "thumb-up", "\ueb3c" },
-        { "thumb-up-filled", "\uf6ab" },
-        { "thumb-up-off", "\uf437" },
-        { "tic-tac", "\uf51c" },
-        { "ticket", "\ueb3d" },
-        { "ticket-off", "\uf1b2" },
-        { "tie", "\uf07e" },
-        { "tilde", "\uf4a5" },
-        { "tilt-shift", "\ueefe" },
-        { "tilt-shift-off", "\uf1b3" },
-        { "time-duration-0", "\ufad4" },
-        { "time-duration-10", "\ufad5" },
-        { "time-duration-15", "\ufad6" },
-        { "time-duration-30", "\ufad7" },
-        { "time-duration-45", "\ufad8" },
-        { "time-duration-5", "\ufad9" },
-        { "time-duration-60", "\ufada" },
-        { "time-duration-90", "\ufadb" },
-        { "time-duration-off", "\ufadc" },
-        { "timeline", "\uf031" },
-        { "timeline-event", "\uf553" },
-        { "timeline-event-exclamation", "\uf662" },
-        { "timeline-event-minus", "\uf663" },
-        { "timeline-event-plus", "\uf664" },
-        { "timeline-event-text", "\uf665" },
-        { "timeline-event-x", "\uf666" },
-        { "tir", "\uebf0" },
-        { "toggle-left", "\ueb3e" },
-        { "toggle-right", "\ueb3f" },
-        { "toilet-paper", "\uefd3" },
-        { "toilet-paper-off", "\uf1b4" },
-        { "toml", "\ufa5d" },
-        { "tool", "\ueb40" },
-        { "tools", "\uebca" },
-        { "tools-kitchen", "\ued64" },
-        { "tools-kitchen-2", "\ueeff" },
-        { "tools-kitchen-2-off", "\uf1b5" },
-        { "tools-kitchen-off", "\uf1b6" },
-        { "tools-off", "\uf1b7" },
-        { "tooltip", "\uf2dd" },
-        { "topology-bus", "\uf5d9" },
-        { "topology-complex", "\uf5da" },
-        { "topology-full", "\uf5dc" },
-        { "topology-full-hierarchy", "\uf5db" },
-        { "topology-ring", "\uf5df" },
-        { "topology-ring-2", "\uf5dd" },
-        { "topology-ring-3", "\uf5de" },
-        { "topology-star", "\uf5e5" },
-        { "topology-star-2", "\uf5e0" },
-        { "topology-star-3", "\uf5e1" },
-        { "topology-star-ring", "\uf5e4" },
-        { "topology-star-ring-2", "\uf5e2" },
-        { "topology-star-ring-3", "\uf5e3" },
-        { "torii", "\uf59b" },
-        { "tornado", "\uece2" },
-        { "tournament", "\uecd0" },
-        { "tower", "\uf2cb" },
-        { "tower-off", "\uf2ca" },
-        { "track", "\uef00" },
-        { "tractor", "\uec0d" },
-        { "trademark", "\uec0e" },
-        { "traffic-cone", "\uec0f" },
-        { "traffic-cone-off", "\uf1b8" },
-        { "traffic-lights", "\ued39" },
-        { "traffic-lights-off", "\uf1b9" },
-        { "train", "\ued96" },
-        { "transfer", "\ufc1f" },
-        { "transfer-in", "\uef2f" },
-        { "transfer-out", "\uef30" },
-        { "transfer-vertical", "\ufc1e" },
-        { "transform", "\uf38e" },
-        { "transform-filled", "\uf6ac" },
-        { "transition-bottom", "\uf2b2" },
-        { "transition-left", "\uf2b3" },
-        { "transition-right", "\uf2b4" },
-        { "transition-top", "\uf2b5" },
-        { "trash", "\ueb41" },
-        { "trash-filled", "\uf783" },
-        { "trash-off", "\ued65" },
-        { "trash-x", "\uef88" },
-        { "trash-x-filled", "\uf784" },
-        { "treadmill", "\ufa6e" },
-        { "tree", "\uef01" },
-        { "trees", "\uec10" },
-        { "trekking", "\uf5ad" },
-        { "trending-down", "\ueb42" },
-        { "trending-down-2", "\uedc1" },
-        { "trending-down-3", "\uedc2" },
-        { "trending-up", "\ueb43" },
-        { "trending-up-2", "\uedc3" },
-        { "trending-up-3", "\uedc4" },
-        { "triangle", "\ueb44" },
-        { "triangle-filled", "\uf6ad" },
-        { "triangle-inverted", "\uf01d" },
-        { "triangle-inverted-filled", "\uf6ae" },
-        { "triangle-off", "\uef02" },
-        { "triangle-square-circle", "\uece8" },
-        { "triangle-square-circle-filled", "\ufb42" },
-        { "triangles", "\uf0a5" },
-        { "trident", "\uecc5" },
-        { "trolley", "\uf4cc" },
-        { "trophy", "\ueb45" },
-        { "trophy-filled", "\uf6af" },
-        { "trophy-off", "\uf438" },
-        { "trowel", "\uf368" },
-        { "truck", "\uebc4" },
-        { "truck-delivery", "\uec4b" },
-        { "truck-loading", "\uf1da" },
-        { "truck-off", "\uef03" },
-        { "truck-return", "\uec4c" },
-        { "txt", "\uf3b1" },
-        { "typography", "\uebc5" },
-        { "typography-off", "\uf1ba" },
-        { "ufo", "\uf26f" },
-        { "ufo-off", "\uf26e" },
-        { "umbrella", "\uebf1" },
-        { "umbrella-filled", "\uf6b0" },
-        { "umbrella-off", "\uf1bb" },
-        { "underline", "\ueba2" },
-        { "unlink", "\ueb46" },
-        { "upload", "\ueb47" },
-        { "urgent", "\ueb48" },
-        { "usb", "\uf00c" },
-        { "user", "\ueb4d" },
-        { "user-bolt", "\uf9d1" },
-        { "user-cancel", "\uf9d2" },
-        { "user-check", "\ueb49" },
-        { "user-circle", "\uef68" },
-        { "user-code", "\uf9d3" },
-        { "user-cog", "\uf9d4" },
-        { "user-dollar", "\uf9d5" },
-        { "user-down", "\uf9d6" },
-        { "user-edit", "\uf7cc" },
-        { "user-exclamation", "\uec12" },
-        { "user-heart", "\uf7cd" },
-        { "user-minus", "\ueb4a" },
-        { "user-off", "\uecf9" },
-        { "user-pause", "\uf9d7" },
-        { "user-pin", "\uf7ce" },
-        { "user-plus", "\ueb4b" },
-        { "user-question", "\uf7cf" },
-        { "user-search", "\uef89" },
-        { "user-share", "\uf9d8" },
-        { "user-shield", "\uf7d0" },
-        { "user-star", "\uf7d1" },
-        { "user-up", "\uf7d2" },
-        { "user-x", "\ueb4c" },
-        { "users", "\uebf2" },
-        { "users-group", "\ufa21" },
-        { "users-minus", "\ufa0e" },
-        { "users-plus", "\ufa0f" },
-        { "uv-index", "\uf3b2" },
-        { "ux-circle", "\uf369" },
-        { "vaccine", "\uef04" },
-        { "vaccine-bottle", "\uef69" },
-        { "vaccine-bottle-off", "\uf439" },
-        { "vaccine-off", "\uf1bc" },
-        { "vacuum-cleaner", "\uf5e6" },
-        { "variable", "\uef05" },
-        { "variable-minus", "\uf36a" },
-        { "variable-off", "\uf1bd" },
-        { "variable-plus", "\uf36b" },
-        { "vector", "\ueca9" },
-        { "vector-bezier", "\uef1d" },
-        { "vector-bezier-2", "\uf1a3" },
-        { "vector-bezier-arc", "\uf4cd" },
-        { "vector-bezier-circle", "\uf4ce" },
-        { "vector-off", "\uf1be" },
-        { "vector-spline", "\uf565" },
-        { "vector-triangle", "\ueca8" },
-        { "vector-triangle-off", "\uf1bf" },
-        { "venus", "\uec86" },
-        { "versions", "\ued52" },
-        { "versions-filled", "\uf6b1" },
-        { "versions-off", "\uf1c0" },
-        { "video", "\ued22" },
-        { "video-minus", "\ued1f" },
-        { "video-off", "\ued20" },
-        { "video-plus", "\ued21" },
-        { "view-360", "\ued84" },
-        { "view-360-off", "\uf1c1" },
-        { "viewfinder", "\ueb4e" },
-        { "viewfinder-off", "\uf1c2" },
-        { "viewport-narrow", "\uebf3" },
-        { "viewport-wide", "\uebf4" },
-        { "vinyl", "\uf00d" },
-        { "vip", "\uf3b3" },
-        { "vip-off", "\uf43a" },
-        { "virus", "\ueb74" },
-        { "virus-off", "\ued66" },
-        { "virus-search", "\ued67" },
-        { "vocabulary", "\uef1e" },
-        { "vocabulary-off", "\uf43b" },
-        { "volcano", "\uf79c" },
-        { "volume", "\ueb51" },
-        { "volume-2", "\ueb4f" },
-        { "volume-3", "\ueb50" },
-        { "volume-off", "\uf1c3" },
-        { "walk", "\uec87" },
-        { "wall", "\uef7a" },
-        { "wall-off", "\uf43c" },
-        { "wallet", "\ueb75" },
-        { "wallet-off", "\uf1c4" },
-        { "wallpaper", "\uef56" },
-        { "wallpaper-off", "\uf1c5" },
-        { "wand", "\uebcb" },
-        { "wand-off", "\uf1c6" },
-        { "wash", "\uf311" },
-        { "wash-dry", "\uf304" },
-        { "wash-dry-1", "\uf2fa" },
-        { "wash-dry-2", "\uf2fb" },
-        { "wash-dry-3", "\uf2fc" },
-        { "wash-dry-a", "\uf2fd" },
-        { "wash-dry-dip", "\uf2fe" },
-        { "wash-dry-f", "\uf2ff" },
-        { "wash-dry-flat", "\ufa7f" },
-        { "wash-dry-hang", "\uf300" },
-        { "wash-dry-off", "\uf301" },
-        { "wash-dry-p", "\uf302" },
-        { "wash-dry-shade", "\uf303" },
-        { "wash-dry-w", "\uf322" },
-        { "wash-dryclean", "\uf305" },
-        { "wash-dryclean-off", "\uf323" },
-        { "wash-eco", "\ufa80" },
-        { "wash-gentle", "\uf306" },
-        { "wash-hand", "\ufa81" },
-        { "wash-machine", "\uf25e" },
-        { "wash-off", "\uf307" },
-        { "wash-press", "\uf308" },
-        { "wash-temperature-1", "\uf309" },
-        { "wash-temperature-2", "\uf30a" },
-        { "wash-temperature-3", "\uf30b" },
-        { "wash-temperature-4", "\uf30c" },
-        { "wash-temperature-5", "\uf30d" },
-        { "wash-temperature-6", "\uf30e" },
-        { "wash-tumble-dry", "\uf30f" },
-        { "wash-tumble-off", "\uf310" },
-        { "waterpolo", "\ufa6f" },
-        { "wave-saw-tool", "\uecd3" },
-        { "wave-sine", "\uecd4" },
-        { "wave-square", "\uecd5" },
-        { "webhook", "\uf01e" },
-        { "webhook-off", "\uf43d" },
-        { "weight", "\uf589" },
-        { "wheelchair", "\uf1db" },
-        { "wheelchair-off", "\uf43e" },
-        { "whirl", "\uf51d" },
-        { "wifi", "\ueb52" },
-        { "wifi-0", "\ueba3" },
-        { "wifi-1", "\ueba4" },
-        { "wifi-2", "\ueba5" },
-        { "wifi-off", "\uecfa" },
-        { "wind", "\uec34" },
-        { "wind-off", "\uf1c7" },
-        { "windmill", "\ued85" },
-        { "windmill-filled", "\uf6b2" },
-        { "windmill-off", "\uf1c8" },
-        { "window", "\uef06" },
-        { "window-maximize", "\uf1f1" },
-        { "window-minimize", "\uf1f2" },
-        { "window-off", "\uf1c9" },
-        { "windsock", "\uf06d" },
-        { "wiper", "\uecab" },
-        { "wiper-wash", "\uecaa" },
-        { "woman", "\ueb53" },
-        { "wood", "\uf359" },
-        { "world", "\ueb54" },
-        { "world-bolt", "\uf9d9" },
-        { "world-cancel", "\uf9da" },
-        { "world-check", "\uf9db" },
-        { "world-code", "\uf9dc" },
-        { "world-cog", "\uf9dd" },
-        { "world-dollar", "\uf9de" },
-        { "world-down", "\uf9df" },
-        { "world-download", "\uef8a" },
-        { "world-exclamation", "\uf9e0" },
-        { "world-heart", "\uf9e1" },
-        { "world-latitude", "\ued2e" },
-        { "world-longitude", "\ued2f" },
-        { "world-minus", "\uf9e2" },
-        { "world-off", "\uf1ca" },
-        { "world-pause", "\uf9e3" },
-        { "world-pin", "\uf9e4" },
-        { "world-plus", "\uf9e5" },
-        { "world-question", "\uf9e6" },
-        { "world-search", "\uf9e7" },
-        { "world-share", "\uf9e8" },
-        { "world-star", "\uf9e9" },
-        { "world-up", "\uf9ea" },
-        { "world-upload", "\uef8b" },
-        { "world-www", "\uf38f" },
-        { "world-x", "\uf9eb" },
-        { "wrecking-ball", "\ued97" },
-        { "writing", "\uef08" },
-        { "writing-off", "\uf1cb" },
-        { "writing-sign", "\uef07" },
-        { "writing-sign-off", "\uf1cc" },
-        { "x", "\ueb55" },
-        { "xbox-a", "\uf2b6" },
-        { "xbox-b", "\uf2b7" },
-        { "xbox-x", "\uf2b8" },
-        { "xbox-y", "\uf2b9" },
-        { "xd", "\ufa33" },
-        { "xxx", "\ufc20" },
-        { "yin-yang", "\uec35" },
-        { "yin-yang-filled", "\uf785" },
-        { "yoga", "\uf01f" },
-        { "zeppelin", "\uf270" },
-        { "zeppelin-off", "\uf43f" },
-        { "zip", "\uf3b4" },
-        { "zodiac-aquarius", "\uecac" },
-        { "zodiac-aries", "\uecad" },
-        { "zodiac-cancer", "\uecae" },
-        { "zodiac-capricorn", "\uecaf" },
-        { "zodiac-gemini", "\uecb0" },
-        { "zodiac-leo", "\uecb1" },
-        { "zodiac-libra", "\uecb2" },
-        { "zodiac-pisces", "\uecb3" },
-        { "zodiac-sagittarius", "\uecb4" },
-        { "zodiac-scorpio", "\uecb5" },
-        { "zodiac-taurus", "\uecb6" },
-        { "zodiac-virgo", "\uecb7" },
-        { "zoom-cancel", "\uec4d" },
-        { "zoom-check", "\uef09" },
-        { "zoom-check-filled", "\uf786" },
-        { "zoom-code", "\uf07f" },
-        { "zoom-exclamation", "\uf080" },
-        { "zoom-filled", "\uf787" },
-        { "zoom-in", "\ueb56" },
-        { "zoom-in-area", "\uf1dc" },
-        { "zoom-in-area-filled", "\uf788" },
-        { "zoom-in-filled", "\uf789" },
-        { "zoom-money", "\uef0a" },
-        { "zoom-out", "\ueb57" },
-        { "zoom-out-area", "\uf1dd" },
-        { "zoom-out-filled", "\uf78a" },
-        { "zoom-pan", "\uf1de" },
-        { "zoom-question", "\uedeb" },
-        { "zoom-replace", "\uf2a7" },
-        { "zoom-reset", "\uf295" },
-        { "zzz", "\uf228" },
-        { "zzz-off", "\uf440" },
+        { "Icon123", "\uf554" },
+        { "Icon24Hours", "\uf5e7" },
+        { "Icon2fa", "\ueca0" },
+        { "Icon360", "\uf62f" },
+        { "Icon360View", "\uf566" },
+        { "Icon3dCubeSphere", "\uecd7" },
+        { "Icon3dCubeSphereOff", "\uf3b5" },
+        { "Icon3dRotate", "\uf020" },
+        { "IconAB", "\uec36" },
+        { "IconAB2", "\uf25f" },
+        { "IconABOff", "\uf0a6" },
+        { "IconAbacus", "\uf05c" },
+        { "IconAbacusOff", "\uf3b6" },
+        { "IconAbc", "\uf567" },
+        { "IconAccessPoint", "\ued1b" },
+        { "IconAccessPointOff", "\ued1a" },
+        { "IconAccessible", "\ueba9" },
+        { "IconAccessibleOff", "\uf0a7" },
+        { "IconAccessibleOffFilled", "\uf6ea" },
+        { "IconActivity", "\ued23" },
+        { "IconActivityHeartbeat", "\uf0db" },
+        { "IconAd", "\uea02" },
+        { "IconAd2", "\uef1f" },
+        { "IconAdCircle", "\uf79e" },
+        { "IconAdCircleFilled", "\uf7d3" },
+        { "IconAdCircleOff", "\uf79d" },
+        { "IconAdFilled", "\uf6eb" },
+        { "IconAdOff", "\uf3b7" },
+        { "IconAddressBook", "\uf021" },
+        { "IconAddressBookOff", "\uf3b8" },
+        { "IconAdjustments", "\uea03" },
+        { "IconAdjustmentsAlt", "\uec37" },
+        { "IconAdjustmentsBolt", "\uf7fb" },
+        { "IconAdjustmentsCancel", "\uf7fc" },
+        { "IconAdjustmentsCheck", "\uf7fd" },
+        { "IconAdjustmentsCode", "\uf7fe" },
+        { "IconAdjustmentsCog", "\uf7ff" },
+        { "IconAdjustmentsDollar", "\uf800" },
+        { "IconAdjustmentsDown", "\uf801" },
+        { "IconAdjustmentsExclamation", "\uf802" },
+        { "IconAdjustmentsFilled", "\uf6ec" },
+        { "IconAdjustmentsHeart", "\uf803" },
+        { "IconAdjustmentsHorizontal", "\uec38" },
+        { "IconAdjustmentsMinus", "\uf804" },
+        { "IconAdjustmentsOff", "\uf0a8" },
+        { "IconAdjustmentsPause", "\uf805" },
+        { "IconAdjustmentsPin", "\uf806" },
+        { "IconAdjustmentsPlus", "\uf807" },
+        { "IconAdjustmentsQuestion", "\uf808" },
+        { "IconAdjustmentsSearch", "\uf809" },
+        { "IconAdjustmentsShare", "\uf80a" },
+        { "IconAdjustmentsStar", "\uf80b" },
+        { "IconAdjustmentsUp", "\uf80c" },
+        { "IconAdjustmentsX", "\uf80d" },
+        { "IconAerialLift", "\uedfe" },
+        { "IconAffiliate", "\uedff" },
+        { "IconAffiliateFilled", "\uf6ed" },
+        { "IconAirBalloon", "\uf4a6" },
+        { "IconAirConditioning", "\uf3a2" },
+        { "IconAirConditioningDisabled", "\uf542" },
+        { "IconAirTrafficControl", "\ufb01" },
+        { "IconAlarm", "\uea04" },
+        { "IconAlarmFilled", "\uf709" },
+        { "IconAlarmMinus", "\uf630" },
+        { "IconAlarmMinusFilled", "\uf70a" },
+        { "IconAlarmOff", "\uf0a9" },
+        { "IconAlarmPlus", "\uf631" },
+        { "IconAlarmPlusFilled", "\uf70b" },
+        { "IconAlarmSnooze", "\uf632" },
+        { "IconAlarmSnoozeFilled", "\uf70c" },
+        { "IconAlbum", "\uf022" },
+        { "IconAlbumOff", "\uf3b9" },
+        { "IconAlertCircle", "\uea05" },
+        { "IconAlertCircleFilled", "\uf6ee" },
+        { "IconAlertHexagon", "\uf80e" },
+        { "IconAlertHexagonFilled", "\ufa34" },
+        { "IconAlertOctagon", "\uecc6" },
+        { "IconAlertOctagonFilled", "\uf6ef" },
+        { "IconAlertSmall", "\uf80f" },
+        { "IconAlertSquare", "\uf811" },
+        { "IconAlertSquareFilled", "\ufa35" },
+        { "IconAlertSquareRounded", "\uf810" },
+        { "IconAlertSquareRoundedFilled", "\ufa36" },
+        { "IconAlertTriangle", "\uea06" },
+        { "IconAlertTriangleFilled", "\uf6f0" },
+        { "IconAlien", "\uebde" },
+        { "IconAlienFilled", "\uf70d" },
+        { "IconAlignBoxBottomCenter", "\uf530" },
+        { "IconAlignBoxBottomCenterFilled", "\uf70e" },
+        { "IconAlignBoxBottomLeft", "\uf531" },
+        { "IconAlignBoxBottomLeftFilled", "\uf70f" },
+        { "IconAlignBoxBottomRight", "\uf532" },
+        { "IconAlignBoxBottomRightFilled", "\uf710" },
+        { "IconAlignBoxCenterBottom", "\ufacb" },
+        { "IconAlignBoxCenterMiddle", "\uf79f" },
+        { "IconAlignBoxCenterMiddleFilled", "\uf7d4" },
+        { "IconAlignBoxCenterStretch", "\ufacc" },
+        { "IconAlignBoxCenterTop", "\ufacd" },
+        { "IconAlignBoxLeftBottom", "\uf533" },
+        { "IconAlignBoxLeftBottomFilled", "\uf711" },
+        { "IconAlignBoxLeftMiddle", "\uf534" },
+        { "IconAlignBoxLeftMiddleFilled", "\uf712" },
+        { "IconAlignBoxLeftStretch", "\uface" },
+        { "IconAlignBoxLeftTop", "\uf535" },
+        { "IconAlignBoxLeftTopFilled", "\uf713" },
+        { "IconAlignBoxRightBottom", "\uf536" },
+        { "IconAlignBoxRightBottomFilled", "\uf714" },
+        { "IconAlignBoxRightMiddle", "\uf537" },
+        { "IconAlignBoxRightMiddleFilled", "\uf7d5" },
+        { "IconAlignBoxRightStretch", "\ufacf" },
+        { "IconAlignBoxRightTop", "\uf538" },
+        { "IconAlignBoxRightTopFilled", "\uf715" },
+        { "IconAlignBoxTopCenter", "\uf539" },
+        { "IconAlignBoxTopCenterFilled", "\uf716" },
+        { "IconAlignBoxTopLeft", "\uf53a" },
+        { "IconAlignBoxTopLeftFilled", "\uf717" },
+        { "IconAlignBoxTopRight", "\uf53b" },
+        { "IconAlignBoxTopRightFilled", "\uf718" },
+        { "IconAlignCenter", "\uea07" },
+        { "IconAlignJustified", "\uea08" },
+        { "IconAlignLeft", "\uea09" },
+        { "IconAlignRight", "\uea0a" },
+        { "IconAlpha", "\uf543" },
+        { "IconAlphabetCyrillic", "\uf1df" },
+        { "IconAlphabetGreek", "\uf1e0" },
+        { "IconAlphabetLatin", "\uf1e1" },
+        { "IconAmbulance", "\uebf5" },
+        { "IconAmpersand", "\uf229" },
+        { "IconAnalyze", "\uf3a3" },
+        { "IconAnalyzeFilled", "\uf719" },
+        { "IconAnalyzeOff", "\uf3ba" },
+        { "IconAnchor", "\ueb76" },
+        { "IconAnchorOff", "\uf0f7" },
+        { "IconAngle", "\uef20" },
+        { "IconAnkh", "\uf1cd" },
+        { "IconAntenna", "\uf094" },
+        { "IconAntennaBars1", "\uecc7" },
+        { "IconAntennaBars2", "\uecc8" },
+        { "IconAntennaBars3", "\uecc9" },
+        { "IconAntennaBars4", "\uecca" },
+        { "IconAntennaBars5", "\ueccb" },
+        { "IconAntennaBarsOff", "\uf0aa" },
+        { "IconAntennaOff", "\uf3bb" },
+        { "IconAperture", "\ueb58" },
+        { "IconApertureOff", "\uf3bc" },
+        { "IconApi", "\ueffd" },
+        { "IconApiApp", "\ueffc" },
+        { "IconApiAppOff", "\uf0ab" },
+        { "IconApiOff", "\uf0f8" },
+        { "IconAppWindow", "\uefe6" },
+        { "IconAppWindowFilled", "\uf71a" },
+        { "IconApple", "\uef21" },
+        { "IconApps", "\uebb6" },
+        { "IconAppsFilled", "\uf6f1" },
+        { "IconAppsOff", "\uf0ac" },
+        { "IconArchive", "\uea0b" },
+        { "IconArchiveFilled", "\ufa82" },
+        { "IconArchiveOff", "\uf0ad" },
+        { "IconArmchair", "\uef9e" },
+        { "IconArmchair2", "\uefe7" },
+        { "IconArmchair2Off", "\uf3bd" },
+        { "IconArmchairOff", "\uf3be" },
+        { "IconArrowAutofitContent", "\uef31" },
+        { "IconArrowAutofitContentFilled", "\uf6f2" },
+        { "IconArrowAutofitDown", "\uef32" },
+        { "IconArrowAutofitHeight", "\uef33" },
+        { "IconArrowAutofitLeft", "\uef34" },
+        { "IconArrowAutofitRight", "\uef35" },
+        { "IconArrowAutofitUp", "\uef36" },
+        { "IconArrowAutofitWidth", "\uef37" },
+        { "IconArrowBack", "\uea0c" },
+        { "IconArrowBackUp", "\ueb77" },
+        { "IconArrowBackUpDouble", "\uf9ec" },
+        { "IconArrowBadgeDown", "\uf60b" },
+        { "IconArrowBadgeDownFilled", "\uf7d6" },
+        { "IconArrowBadgeLeft", "\uf60c" },
+        { "IconArrowBadgeLeftFilled", "\uf7d7" },
+        { "IconArrowBadgeRight", "\uf60d" },
+        { "IconArrowBadgeRightFilled", "\uf7d8" },
+        { "IconArrowBadgeUp", "\uf60e" },
+        { "IconArrowBadgeUpFilled", "\uf7d9" },
+        { "IconArrowBarBoth", "\ufadd" },
+        { "IconArrowBarDown", "\uea0d" },
+        { "IconArrowBarLeft", "\uea0e" },
+        { "IconArrowBarRight", "\uea0f" },
+        { "IconArrowBarToDown", "\uec88" },
+        { "IconArrowBarToLeft", "\uec89" },
+        { "IconArrowBarToRight", "\uec8a" },
+        { "IconArrowBarToUp", "\uec8b" },
+        { "IconArrowBarUp", "\uea10" },
+        { "IconArrowBearLeft", "\uf045" },
+        { "IconArrowBearLeft2", "\uf044" },
+        { "IconArrowBearRight", "\uf047" },
+        { "IconArrowBearRight2", "\uf046" },
+        { "IconArrowBigDown", "\uedda" },
+        { "IconArrowBigDownFilled", "\uf6c6" },
+        { "IconArrowBigDownLine", "\uefe8" },
+        { "IconArrowBigDownLineFilled", "\uf6c7" },
+        { "IconArrowBigDownLines", "\uefe9" },
+        { "IconArrowBigDownLinesFilled", "\uf6c8" },
+        { "IconArrowBigLeft", "\ueddb" },
+        { "IconArrowBigLeftFilled", "\uf6c9" },
+        { "IconArrowBigLeftLine", "\uefea" },
+        { "IconArrowBigLeftLineFilled", "\uf6ca" },
+        { "IconArrowBigLeftLines", "\uefeb" },
+        { "IconArrowBigLeftLinesFilled", "\uf6cb" },
+        { "IconArrowBigRight", "\ueddc" },
+        { "IconArrowBigRightFilled", "\uf6cc" },
+        { "IconArrowBigRightLine", "\uefec" },
+        { "IconArrowBigRightLineFilled", "\uf6cd" },
+        { "IconArrowBigRightLines", "\uefed" },
+        { "IconArrowBigRightLinesFilled", "\uf6ce" },
+        { "IconArrowBigUp", "\ueddd" },
+        { "IconArrowBigUpFilled", "\uf6cf" },
+        { "IconArrowBigUpLine", "\uefee" },
+        { "IconArrowBigUpLineFilled", "\uf6d0" },
+        { "IconArrowBigUpLines", "\uefef" },
+        { "IconArrowBigUpLinesFilled", "\uf6d1" },
+        { "IconArrowBounce", "\uf3a4" },
+        { "IconArrowCapsule", "\ufade" },
+        { "IconArrowCurveLeft", "\uf048" },
+        { "IconArrowCurveRight", "\uf049" },
+        { "IconArrowDown", "\uea16" },
+        { "IconArrowDownBar", "\ued98" },
+        { "IconArrowDownCircle", "\uea11" },
+        { "IconArrowDownLeft", "\uea13" },
+        { "IconArrowDownLeftCircle", "\uea12" },
+        { "IconArrowDownRhombus", "\uf61d" },
+        { "IconArrowDownRight", "\uea15" },
+        { "IconArrowDownRightCircle", "\uea14" },
+        { "IconArrowDownSquare", "\ued9a" },
+        { "IconArrowDownTail", "\ued9b" },
+        { "IconArrowElbowLeft", "\uf9ed" },
+        { "IconArrowElbowRight", "\uf9ee" },
+        { "IconArrowFork", "\uf04a" },
+        { "IconArrowForward", "\uea17" },
+        { "IconArrowForwardUp", "\ueb78" },
+        { "IconArrowForwardUpDouble", "\uf9ef" },
+        { "IconArrowGuide", "\uf22a" },
+        { "IconArrowIteration", "\uf578" },
+        { "IconArrowLeft", "\uea19" },
+        { "IconArrowLeftBar", "\ued9c" },
+        { "IconArrowLeftCircle", "\uea18" },
+        { "IconArrowLeftRhombus", "\uf61e" },
+        { "IconArrowLeftRight", "\uf04b" },
+        { "IconArrowLeftSquare", "\ued9d" },
+        { "IconArrowLeftTail", "\ued9e" },
+        { "IconArrowLoopLeft", "\ued9f" },
+        { "IconArrowLoopLeft2", "\uf04c" },
+        { "IconArrowLoopRight", "\ueda0" },
+        { "IconArrowLoopRight2", "\uf04d" },
+        { "IconArrowMerge", "\uf04e" },
+        { "IconArrowMergeBoth", "\uf23b" },
+        { "IconArrowMergeLeft", "\uf23c" },
+        { "IconArrowMergeRight", "\uf23d" },
+        { "IconArrowMoveDown", "\uf2ba" },
+        { "IconArrowMoveLeft", "\uf2bb" },
+        { "IconArrowMoveRight", "\uf2bc" },
+        { "IconArrowMoveUp", "\uf2bd" },
+        { "IconArrowNarrowDown", "\uea1a" },
+        { "IconArrowNarrowLeft", "\uea1b" },
+        { "IconArrowNarrowRight", "\uea1c" },
+        { "IconArrowNarrowUp", "\uea1d" },
+        { "IconArrowRampLeft", "\ued3c" },
+        { "IconArrowRampLeft2", "\uf04f" },
+        { "IconArrowRampLeft3", "\uf050" },
+        { "IconArrowRampRight", "\ued3d" },
+        { "IconArrowRampRight2", "\uf051" },
+        { "IconArrowRampRight3", "\uf052" },
+        { "IconArrowRight", "\uea1f" },
+        { "IconArrowRightBar", "\ueda1" },
+        { "IconArrowRightCircle", "\uea1e" },
+        { "IconArrowRightRhombus", "\uf61f" },
+        { "IconArrowRightSquare", "\ueda2" },
+        { "IconArrowRightTail", "\ueda3" },
+        { "IconArrowRotaryFirstLeft", "\uf053" },
+        { "IconArrowRotaryFirstRight", "\uf054" },
+        { "IconArrowRotaryLastLeft", "\uf055" },
+        { "IconArrowRotaryLastRight", "\uf056" },
+        { "IconArrowRotaryLeft", "\uf057" },
+        { "IconArrowRotaryRight", "\uf058" },
+        { "IconArrowRotaryStraight", "\uf059" },
+        { "IconArrowRoundaboutLeft", "\uf22b" },
+        { "IconArrowRoundaboutRight", "\uf22c" },
+        { "IconArrowSharpTurnLeft", "\uf05a" },
+        { "IconArrowSharpTurnRight", "\uf05b" },
+        { "IconArrowUp", "\uea25" },
+        { "IconArrowUpBar", "\ueda4" },
+        { "IconArrowUpCircle", "\uea20" },
+        { "IconArrowUpLeft", "\uea22" },
+        { "IconArrowUpLeftCircle", "\uea21" },
+        { "IconArrowUpRhombus", "\uf620" },
+        { "IconArrowUpRight", "\uea24" },
+        { "IconArrowUpRightCircle", "\uea23" },
+        { "IconArrowUpSquare", "\ueda6" },
+        { "IconArrowUpTail", "\ueda7" },
+        { "IconArrowWaveLeftDown", "\ueda8" },
+        { "IconArrowWaveLeftUp", "\ueda9" },
+        { "IconArrowWaveRightDown", "\uedaa" },
+        { "IconArrowWaveRightUp", "\uedab" },
+        { "IconArrowZigZag", "\uf4a7" },
+        { "IconArrowsCross", "\ueffe" },
+        { "IconArrowsDiagonal", "\uea27" },
+        { "IconArrowsDiagonal2", "\uea26" },
+        { "IconArrowsDiagonalMinimize", "\uef39" },
+        { "IconArrowsDiagonalMinimize2", "\uef38" },
+        { "IconArrowsDiff", "\uf296" },
+        { "IconArrowsDoubleNeSw", "\uedde" },
+        { "IconArrowsDoubleNwSe", "\ueddf" },
+        { "IconArrowsDoubleSeNw", "\uede0" },
+        { "IconArrowsDoubleSwNe", "\uede1" },
+        { "IconArrowsDown", "\uedad" },
+        { "IconArrowsDownUp", "\uedac" },
+        { "IconArrowsExchange", "\uf1f4" },
+        { "IconArrowsExchange2", "\uf1f3" },
+        { "IconArrowsHorizontal", "\ueb59" },
+        { "IconArrowsJoin", "\uedaf" },
+        { "IconArrowsJoin2", "\uedae" },
+        { "IconArrowsLeft", "\uedb1" },
+        { "IconArrowsLeftDown", "\uee00" },
+        { "IconArrowsLeftRight", "\uedb0" },
+        { "IconArrowsMaximize", "\uea28" },
+        { "IconArrowsMinimize", "\uea29" },
+        { "IconArrowsMove", "\uf22f" },
+        { "IconArrowsMoveHorizontal", "\uf22d" },
+        { "IconArrowsMoveVertical", "\uf22e" },
+        { "IconArrowsRandom", "\uf095" },
+        { "IconArrowsRight", "\uedb3" },
+        { "IconArrowsRightDown", "\uee01" },
+        { "IconArrowsRightLeft", "\uedb2" },
+        { "IconArrowsShuffle", "\uf000" },
+        { "IconArrowsShuffle2", "\uefff" },
+        { "IconArrowsSort", "\ueb5a" },
+        { "IconArrowsSplit", "\uedb5" },
+        { "IconArrowsSplit2", "\uedb4" },
+        { "IconArrowsTransferDown", "\uf2cc" },
+        { "IconArrowsTransferUp", "\uf2cd" },
+        { "IconArrowsUp", "\uedb7" },
+        { "IconArrowsUpDown", "\uedb6" },
+        { "IconArrowsUpLeft", "\uee02" },
+        { "IconArrowsUpRight", "\uee03" },
+        { "IconArrowsVertical", "\ueb5b" },
+        { "IconArtboard", "\uea2a" },
+        { "IconArtboardFilled", "\ufa83" },
+        { "IconArtboardOff", "\uf0ae" },
+        { "IconArticle", "\uf1e2" },
+        { "IconArticleFilledFilled", "\uf7da" },
+        { "IconArticleOff", "\uf3bf" },
+        { "IconAspectRatio", "\ued30" },
+        { "IconAspectRatioFilled", "\uf7db" },
+        { "IconAspectRatioOff", "\uf0af" },
+        { "IconAssembly", "\uf24d" },
+        { "IconAssemblyOff", "\uf3c0" },
+        { "IconAsset", "\uf1ce" },
+        { "IconAsterisk", "\uefd5" },
+        { "IconAsteriskSimple", "\uefd4" },
+        { "IconAt", "\uea2b" },
+        { "IconAtOff", "\uf0b0" },
+        { "IconAtom", "\ueb79" },
+        { "IconAtom2", "\uebdf" },
+        { "IconAtom2Filled", "\uf71b" },
+        { "IconAtomOff", "\uf0f9" },
+        { "IconAugmentedReality", "\uf023" },
+        { "IconAugmentedReality2", "\uf37e" },
+        { "IconAugmentedRealityOff", "\uf3c1" },
+        { "IconAward", "\uea2c" },
+        { "IconAwardFilled", "\uf71c" },
+        { "IconAwardOff", "\uf0fa" },
+        { "IconAxe", "\uef9f" },
+        { "IconAxisX", "\uef45" },
+        { "IconAxisY", "\uef46" },
+        { "IconBabyBottle", "\uf5d2" },
+        { "IconBabyCarriage", "\uf05d" },
+        { "IconBackhoe", "\ued86" },
+        { "IconBackpack", "\uef47" },
+        { "IconBackpackOff", "\uf3c2" },
+        { "IconBackslash", "\ufab9" },
+        { "IconBackspace", "\uea2d" },
+        { "IconBackspaceFilled", "\uf7dc" },
+        { "IconBadge", "\uefc2" },
+        { "IconBadge3d", "\uf555" },
+        { "IconBadge4k", "\uf556" },
+        { "IconBadge8k", "\uf557" },
+        { "IconBadgeAd", "\uf558" },
+        { "IconBadgeAr", "\uf559" },
+        { "IconBadgeCc", "\uf55a" },
+        { "IconBadgeFilled", "\uf667" },
+        { "IconBadgeHd", "\uf55b" },
+        { "IconBadgeOff", "\uf0fb" },
+        { "IconBadgeSd", "\uf55c" },
+        { "IconBadgeTm", "\uf55d" },
+        { "IconBadgeVo", "\uf55e" },
+        { "IconBadgeVr", "\uf55f" },
+        { "IconBadgeWc", "\uf560" },
+        { "IconBadges", "\uefc3" },
+        { "IconBadgesFilled", "\uf7dd" },
+        { "IconBadgesOff", "\uf0fc" },
+        { "IconBaguette", "\uf3a5" },
+        { "IconBallAmericanFootball", "\uee04" },
+        { "IconBallAmericanFootballOff", "\uf3c3" },
+        { "IconBallBaseball", "\uefa0" },
+        { "IconBallBasketball", "\uec28" },
+        { "IconBallBowling", "\uec29" },
+        { "IconBallFootball", "\uee06" },
+        { "IconBallFootballOff", "\uee05" },
+        { "IconBallTennis", "\uec2a" },
+        { "IconBallVolleyball", "\uec2b" },
+        { "IconBalloon", "\uef3a" },
+        { "IconBalloonFilled", "\ufa84" },
+        { "IconBalloonOff", "\uf0fd" },
+        { "IconBallpen", "\uf06e" },
+        { "IconBallpenFilled", "\ufa85" },
+        { "IconBallpenOff", "\uf0b1" },
+        { "IconBan", "\uea2e" },
+        { "IconBandage", "\ueb7a" },
+        { "IconBandageFilled", "\uf7de" },
+        { "IconBandageOff", "\uf3c4" },
+        { "IconBarbell", "\ueff0" },
+        { "IconBarbellOff", "\uf0b2" },
+        { "IconBarcode", "\uebc6" },
+        { "IconBarcodeOff", "\uf0b3" },
+        { "IconBarrel", "\uf0b4" },
+        { "IconBarrelOff", "\uf0fe" },
+        { "IconBarrierBlock", "\uf00e" },
+        { "IconBarrierBlockOff", "\uf0b5" },
+        { "IconBaseline", "\uf024" },
+        { "IconBaselineDensityLarge", "\uf9f0" },
+        { "IconBaselineDensityMedium", "\uf9f1" },
+        { "IconBaselineDensitySmall", "\uf9f2" },
+        { "IconBasket", "\uebe1" },
+        { "IconBasketBolt", "\ufb43" },
+        { "IconBasketCancel", "\ufb44" },
+        { "IconBasketCheck", "\ufb45" },
+        { "IconBasketCode", "\ufb46" },
+        { "IconBasketCog", "\ufb47" },
+        { "IconBasketDiscount", "\ufb48" },
+        { "IconBasketDollar", "\ufb49" },
+        { "IconBasketDown", "\ufb4a" },
+        { "IconBasketExclamation", "\ufb4b" },
+        { "IconBasketFilled", "\uf7df" },
+        { "IconBasketHeart", "\ufb4c" },
+        { "IconBasketMinus", "\ufb4d" },
+        { "IconBasketOff", "\uf0b6" },
+        { "IconBasketPause", "\ufb4e" },
+        { "IconBasketPin", "\ufb4f" },
+        { "IconBasketPlus", "\ufb50" },
+        { "IconBasketQuestion", "\ufb51" },
+        { "IconBasketSearch", "\ufb52" },
+        { "IconBasketShare", "\ufb53" },
+        { "IconBasketStar", "\ufb54" },
+        { "IconBasketUp", "\ufb55" },
+        { "IconBasketX", "\ufb56" },
+        { "IconBat", "\uf284" },
+        { "IconBath", "\uef48" },
+        { "IconBathFilled", "\uf71d" },
+        { "IconBathOff", "\uf0ff" },
+        { "IconBattery", "\uea34" },
+        { "IconBattery1", "\uea2f" },
+        { "IconBattery1Filled", "\uf71e" },
+        { "IconBattery2", "\uea30" },
+        { "IconBattery2Filled", "\uf71f" },
+        { "IconBattery3", "\uea31" },
+        { "IconBattery3Filled", "\uf720" },
+        { "IconBattery4", "\uea32" },
+        { "IconBattery4Filled", "\uf721" },
+        { "IconBatteryAutomotive", "\uee07" },
+        { "IconBatteryCharging", "\uea33" },
+        { "IconBatteryCharging2", "\uef3b" },
+        { "IconBatteryEco", "\uef3c" },
+        { "IconBatteryFilled", "\uf668" },
+        { "IconBatteryOff", "\ued1c" },
+        { "IconBeach", "\uef3d" },
+        { "IconBeachOff", "\uf0b7" },
+        { "IconBed", "\ueb5c" },
+        { "IconBedFilled", "\uf7e0" },
+        { "IconBedOff", "\uf100" },
+        { "IconBeer", "\uefa1" },
+        { "IconBeerFilled", "\uf7e1" },
+        { "IconBeerOff", "\uf101" },
+        { "IconBell", "\uea35" },
+        { "IconBellBolt", "\uf812" },
+        { "IconBellCancel", "\uf813" },
+        { "IconBellCheck", "\uf814" },
+        { "IconBellCode", "\uf815" },
+        { "IconBellCog", "\uf816" },
+        { "IconBellDollar", "\uf817" },
+        { "IconBellDown", "\uf818" },
+        { "IconBellExclamation", "\uf819" },
+        { "IconBellFilled", "\uf669" },
+        { "IconBellHeart", "\uf81a" },
+        { "IconBellMinus", "\uede2" },
+        { "IconBellMinusFilled", "\uf722" },
+        { "IconBellOff", "\uece9" },
+        { "IconBellPause", "\uf81b" },
+        { "IconBellPin", "\uf81c" },
+        { "IconBellPlus", "\uede3" },
+        { "IconBellPlusFilled", "\uf723" },
+        { "IconBellQuestion", "\uf81d" },
+        { "IconBellRinging", "\ued07" },
+        { "IconBellRinging2", "\uede4" },
+        { "IconBellRinging2Filled", "\uf724" },
+        { "IconBellRingingFilled", "\uf725" },
+        { "IconBellSchool", "\uf05e" },
+        { "IconBellSearch", "\uf81e" },
+        { "IconBellShare", "\uf81f" },
+        { "IconBellStar", "\uf820" },
+        { "IconBellUp", "\uf821" },
+        { "IconBellX", "\uede5" },
+        { "IconBellXFilled", "\uf726" },
+        { "IconBellZ", "\ueff1" },
+        { "IconBellZFilled", "\uf727" },
+        { "IconBeta", "\uf544" },
+        { "IconBible", "\uefc4" },
+        { "IconBike", "\uea36" },
+        { "IconBikeOff", "\uf0b8" },
+        { "IconBinary", "\uee08" },
+        { "IconBinaryOff", "\uf3c5" },
+        { "IconBinaryTree", "\uf5d4" },
+        { "IconBinaryTree2", "\uf5d3" },
+        { "IconBiohazard", "\uecb8" },
+        { "IconBiohazardOff", "\uf0b9" },
+        { "IconBlade", "\uf4bd" },
+        { "IconBladeFilled", "\uf7e2" },
+        { "IconBleach", "\uf2f3" },
+        { "IconBleachChlorine", "\uf2f0" },
+        { "IconBleachNoChlorine", "\uf2f1" },
+        { "IconBleachOff", "\uf2f2" },
+        { "IconBlockquote", "\uee09" },
+        { "IconBluetooth", "\uea37" },
+        { "IconBluetoothConnected", "\uecea" },
+        { "IconBluetoothOff", "\ueceb" },
+        { "IconBluetoothX", "\uf081" },
+        { "IconBlur", "\uef8c" },
+        { "IconBlurOff", "\uf3c6" },
+        { "IconBmp", "\uf3a6" },
+        { "IconBold", "\ueb7b" },
+        { "IconBoldOff", "\uf0ba" },
+        { "IconBolt", "\uea38" },
+        { "IconBoltOff", "\uecec" },
+        { "IconBomb", "\uf59c" },
+        { "IconBombFilled", "\ufa86" },
+        { "IconBone", "\uedb8" },
+        { "IconBoneOff", "\uf0bb" },
+        { "IconBong", "\uf3a7" },
+        { "IconBongOff", "\uf3c7" },
+        { "IconBook", "\uea39" },
+        { "IconBook2", "\uefc5" },
+        { "IconBookDownload", "\uf070" },
+        { "IconBookFilled", "\ufa87" },
+        { "IconBookOff", "\uf0bc" },
+        { "IconBookUpload", "\uf071" },
+        { "IconBookmark", "\uea3a" },
+        { "IconBookmarkEdit", "\ufa5e" },
+        { "IconBookmarkFilled", "\ufa88" },
+        { "IconBookmarkMinus", "\ufa5f" },
+        { "IconBookmarkOff", "\ueced" },
+        { "IconBookmarkPlus", "\ufa60" },
+        { "IconBookmarkQuestion", "\ufa61" },
+        { "IconBookmarks", "\ued08" },
+        { "IconBookmarksFilled", "\ufb1f" },
+        { "IconBookmarksOff", "\uf0bd" },
+        { "IconBooks", "\ueff2" },
+        { "IconBooksOff", "\uf0be" },
+        { "IconBorderAll", "\uea3b" },
+        { "IconBorderBottom", "\uea3c" },
+        { "IconBorderCorners", "\uf7a0" },
+        { "IconBorderHorizontal", "\uea3d" },
+        { "IconBorderInner", "\uea3e" },
+        { "IconBorderLeft", "\uea3f" },
+        { "IconBorderNone", "\uea40" },
+        { "IconBorderOuter", "\uea41" },
+        { "IconBorderRadius", "\ueb7c" },
+        { "IconBorderRight", "\uea42" },
+        { "IconBorderSides", "\uf7a1" },
+        { "IconBorderStyle", "\uee0a" },
+        { "IconBorderStyle2", "\uef22" },
+        { "IconBorderTop", "\uea43" },
+        { "IconBorderVertical", "\uea44" },
+        { "IconBottle", "\uef0b" },
+        { "IconBottleFilled", "\ufa89" },
+        { "IconBottleOff", "\uf3c8" },
+        { "IconBounceLeft", "\uf59d" },
+        { "IconBounceLeftFilled", "\ufb20" },
+        { "IconBounceRight", "\uf59e" },
+        { "IconBounceRightFilled", "\ufb21" },
+        { "IconBow", "\uf096" },
+        { "IconBowl", "\uf4fa" },
+        { "IconBowlFilled", "\ufb22" },
+        { "IconBox", "\uea45" },
+        { "IconBoxAlignBottom", "\uf2a8" },
+        { "IconBoxAlignBottomFilled", "\ufa8a" },
+        { "IconBoxAlignBottomLeft", "\uf2ce" },
+        { "IconBoxAlignBottomLeftFilled", "\ufa8b" },
+        { "IconBoxAlignBottomRight", "\uf2cf" },
+        { "IconBoxAlignBottomRightFilled", "\ufa8c" },
+        { "IconBoxAlignLeft", "\uf2a9" },
+        { "IconBoxAlignLeftFilled", "\ufa8d" },
+        { "IconBoxAlignRight", "\uf2aa" },
+        { "IconBoxAlignRightFilled", "\ufa8e" },
+        { "IconBoxAlignTop", "\uf2ab" },
+        { "IconBoxAlignTopFilled", "\ufa8f" },
+        { "IconBoxAlignTopLeft", "\uf2d0" },
+        { "IconBoxAlignTopLeftFilled", "\ufa90" },
+        { "IconBoxAlignTopRight", "\uf2d1" },
+        { "IconBoxAlignTopRightFilled", "\ufa91" },
+        { "IconBoxMargin", "\uee0b" },
+        { "IconBoxModel", "\uee0c" },
+        { "IconBoxModel2", "\uef23" },
+        { "IconBoxModel2Off", "\uf3c9" },
+        { "IconBoxModelOff", "\uf3ca" },
+        { "IconBoxMultiple", "\uee17" },
+        { "IconBoxMultiple0", "\uee0d" },
+        { "IconBoxMultiple1", "\uee0e" },
+        { "IconBoxMultiple2", "\uee0f" },
+        { "IconBoxMultiple3", "\uee10" },
+        { "IconBoxMultiple4", "\uee11" },
+        { "IconBoxMultiple5", "\uee12" },
+        { "IconBoxMultiple6", "\uee13" },
+        { "IconBoxMultiple7", "\uee14" },
+        { "IconBoxMultiple8", "\uee15" },
+        { "IconBoxMultiple9", "\uee16" },
+        { "IconBoxOff", "\uf102" },
+        { "IconBoxPadding", "\uee18" },
+        { "IconBoxSeam", "\uf561" },
+        { "IconBraces", "\uebcc" },
+        { "IconBracesOff", "\uf0bf" },
+        { "IconBrackets", "\uebcd" },
+        { "IconBracketsContain", "\uf1e5" },
+        { "IconBracketsContainEnd", "\uf1e3" },
+        { "IconBracketsContainStart", "\uf1e4" },
+        { "IconBracketsOff", "\uf0c0" },
+        { "IconBraille", "\uf545" },
+        { "IconBrain", "\uf59f" },
+        { "IconBrand4chan", "\uf494" },
+        { "IconBrandAbstract", "\uf495" },
+        { "IconBrandAdobe", "\uf0dc" },
+        { "IconBrandAdonisJs", "\uf496" },
+        { "IconBrandAirbnb", "\ued68" },
+        { "IconBrandAirtable", "\uef6a" },
+        { "IconBrandAlgolia", "\uf390" },
+        { "IconBrandAlipay", "\uf7a2" },
+        { "IconBrandAlpineJs", "\uf324" },
+        { "IconBrandAmazon", "\uf230" },
+        { "IconBrandAmd", "\uf653" },
+        { "IconBrandAmigo", "\uf5f9" },
+        { "IconBrandAmongUs", "\uf205" },
+        { "IconBrandAndroid", "\uec16" },
+        { "IconBrandAngular", "\uef6b" },
+        { "IconBrandAnsible", "\ufa70" },
+        { "IconBrandAo3", "\uf5e8" },
+        { "IconBrandAppgallery", "\uf231" },
+        { "IconBrandApple", "\uec17" },
+        { "IconBrandAppleArcade", "\ued69" },
+        { "IconBrandApplePodcast", "\uf1e6" },
+        { "IconBrandAppstore", "\ued24" },
+        { "IconBrandAsana", "\uedc5" },
+        { "IconBrandAws", "\ufa4c" },
+        { "IconBrandAzure", "\ufa4d" },
+        { "IconBrandBackbone", "\uf325" },
+        { "IconBrandBadoo", "\uf206" },
+        { "IconBrandBaidu", "\uf5e9" },
+        { "IconBrandBandcamp", "\uf207" },
+        { "IconBrandBandlab", "\uf5fa" },
+        { "IconBrandBeats", "\uf208" },
+        { "IconBrandBehance", "\uec6e" },
+        { "IconBrandBilibili", "\uf6d2" },
+        { "IconBrandBinance", "\uf5a0" },
+        { "IconBrandBing", "\uedc6" },
+        { "IconBrandBitbucket", "\uedc7" },
+        { "IconBrandBlackberry", "\uf568" },
+        { "IconBrandBlender", "\uf326" },
+        { "IconBrandBlogger", "\uf35a" },
+        { "IconBrandBooking", "\uedc8" },
+        { "IconBrandBootstrap", "\uef3e" },
+        { "IconBrandBulma", "\uf327" },
+        { "IconBrandBumble", "\uf5fb" },
+        { "IconBrandBunpo", "\uf4cf" },
+        { "IconBrandCSharp", "\uf003" },
+        { "IconBrandCake", "\uf7a3" },
+        { "IconBrandCakephp", "\uf7af" },
+        { "IconBrandCampaignmonitor", "\uf328" },
+        { "IconBrandCarbon", "\uf348" },
+        { "IconBrandCashapp", "\uf391" },
+        { "IconBrandChrome", "\uec18" },
+        { "IconBrandCinema4d", "\ufa71" },
+        { "IconBrandCitymapper", "\uf5fc" },
+        { "IconBrandCloudflare", "\ufa4e" },
+        { "IconBrandCodecov", "\uf329" },
+        { "IconBrandCodepen", "\uec6f" },
+        { "IconBrandCodesandbox", "\ued6a" },
+        { "IconBrandCohost", "\uf5d5" },
+        { "IconBrandCoinbase", "\uf209" },
+        { "IconBrandComedyCentral", "\uf217" },
+        { "IconBrandCoreos", "\uf5fd" },
+        { "IconBrandCouchdb", "\uf60f" },
+        { "IconBrandCouchsurfing", "\uf392" },
+        { "IconBrandCpp", "\uf5fe" },
+        { "IconBrandCraft", "\ufa72" },
+        { "IconBrandCrunchbase", "\uf7e3" },
+        { "IconBrandCss3", "\ued6b" },
+        { "IconBrandCtemplar", "\uf4d0" },
+        { "IconBrandCucumber", "\uef6c" },
+        { "IconBrandCupra", "\uf4d1" },
+        { "IconBrandCypress", "\uf333" },
+        { "IconBrandD3", "\uf24e" },
+        { "IconBrandDaysCounter", "\uf4d2" },
+        { "IconBrandDcos", "\uf32a" },
+        { "IconBrandDebian", "\uef57" },
+        { "IconBrandDeezer", "\uf78b" },
+        { "IconBrandDeliveroo", "\uf4d3" },
+        { "IconBrandDeno", "\uf24f" },
+        { "IconBrandDenodo", "\uf610" },
+        { "IconBrandDeviantart", "\uecfb" },
+        { "IconBrandDigg", "\ufa73" },
+        { "IconBrandDingtalk", "\uf5ea" },
+        { "IconBrandDiscord", "\uece3" },
+        { "IconBrandDiscordFilled", "\uf7e4" },
+        { "IconBrandDisney", "\uf20a" },
+        { "IconBrandDisqus", "\uedc9" },
+        { "IconBrandDjango", "\uf349" },
+        { "IconBrandDocker", "\uedca" },
+        { "IconBrandDoctrine", "\uef6d" },
+        { "IconBrandDolbyDigital", "\uf4d4" },
+        { "IconBrandDouban", "\uf5ff" },
+        { "IconBrandDribbble", "\uec19" },
+        { "IconBrandDribbbleFilled", "\uf7e5" },
+        { "IconBrandDrops", "\uf4d5" },
+        { "IconBrandDrupal", "\uf393" },
+        { "IconBrandEdge", "\uecfc" },
+        { "IconBrandElastic", "\uf611" },
+        { "IconBrandElectronicArts", "\ufa74" },
+        { "IconBrandEmber", "\uf497" },
+        { "IconBrandEnvato", "\uf394" },
+        { "IconBrandEtsy", "\uf654" },
+        { "IconBrandEvernote", "\uf600" },
+        { "IconBrandFacebook", "\uec1a" },
+        { "IconBrandFacebookFilled", "\uf7e6" },
+        { "IconBrandFeedly", "\ufa75" },
+        { "IconBrandFigma", "\uec93" },
+        { "IconBrandFilezilla", "\ufa76" },
+        { "IconBrandFinder", "\uf218" },
+        { "IconBrandFirebase", "\uef6e" },
+        { "IconBrandFirefox", "\uecfd" },
+        { "IconBrandFiverr", "\uf7a4" },
+        { "IconBrandFlickr", "\uecfe" },
+        { "IconBrandFlightradar24", "\uf4d6" },
+        { "IconBrandFlipboard", "\uf20b" },
+        { "IconBrandFlutter", "\uf395" },
+        { "IconBrandFortnite", "\uf260" },
+        { "IconBrandFoursquare", "\uecff" },
+        { "IconBrandFramer", "\uec1b" },
+        { "IconBrandFramerMotion", "\uf78c" },
+        { "IconBrandFunimation", "\uf655" },
+        { "IconBrandGatsby", "\uf396" },
+        { "IconBrandGit", "\uef6f" },
+        { "IconBrandGithub", "\uec1c" },
+        { "IconBrandGithubCopilot", "\uf4a8" },
+        { "IconBrandGithubFilled", "\uf7e7" },
+        { "IconBrandGitlab", "\uec1d" },
+        { "IconBrandGmail", "\uefa2" },
+        { "IconBrandGolang", "\uf78d" },
+        { "IconBrandGoogle", "\uec1f" },
+        { "IconBrandGoogleAnalytics", "\uedcb" },
+        { "IconBrandGoogleBigQuery", "\uf612" },
+        { "IconBrandGoogleDrive", "\uec1e" },
+        { "IconBrandGoogleFit", "\uf297" },
+        { "IconBrandGoogleHome", "\uf601" },
+        { "IconBrandGoogleMaps", "\ufa4f" },
+        { "IconBrandGoogleOne", "\uf232" },
+        { "IconBrandGooglePhotos", "\uf20c" },
+        { "IconBrandGooglePlay", "\ued25" },
+        { "IconBrandGooglePodcasts", "\uf656" },
+        { "IconBrandGrammarly", "\uf32b" },
+        { "IconBrandGraphql", "\uf32c" },
+        { "IconBrandGravatar", "\uedcc" },
+        { "IconBrandGrindr", "\uf20d" },
+        { "IconBrandGuardian", "\uf4fb" },
+        { "IconBrandGumroad", "\uf5d6" },
+        { "IconBrandHbo", "\uf657" },
+        { "IconBrandHeadlessui", "\uf32d" },
+        { "IconBrandHexo", "\ufa50" },
+        { "IconBrandHipchat", "\uedcd" },
+        { "IconBrandHtml5", "\ued6c" },
+        { "IconBrandInertia", "\uf34a" },
+        { "IconBrandInstagram", "\uec20" },
+        { "IconBrandIntercom", "\uf1cf" },
+        { "IconBrandItch", "\ufa22" },
+        { "IconBrandJavascript", "\uef0c" },
+        { "IconBrandJuejin", "\uf7b0" },
+        { "IconBrandKbin", "\ufad0" },
+        { "IconBrandKick", "\ufa23" },
+        { "IconBrandKickstarter", "\uedce" },
+        { "IconBrandKotlin", "\ued6d" },
+        { "IconBrandLaravel", "\uf34b" },
+        { "IconBrandLastfm", "\uf001" },
+        { "IconBrandLeetcode", "\ufa51" },
+        { "IconBrandLetterboxd", "\ufa24" },
+        { "IconBrandLine", "\uf7e8" },
+        { "IconBrandLinkedin", "\uec8c" },
+        { "IconBrandLinktree", "\uf1e7" },
+        { "IconBrandLinqpad", "\uf562" },
+        { "IconBrandLoom", "\uef70" },
+        { "IconBrandMailgun", "\uf32e" },
+        { "IconBrandMantine", "\uf32f" },
+        { "IconBrandMastercard", "\uef49" },
+        { "IconBrandMastodon", "\uf250" },
+        { "IconBrandMatrix", "\uf5eb" },
+        { "IconBrandMcdonalds", "\uf251" },
+        { "IconBrandMedium", "\uec70" },
+        { "IconBrandMercedes", "\uf072" },
+        { "IconBrandMessenger", "\uec71" },
+        { "IconBrandMeta", "\uefb0" },
+        { "IconBrandMicrosoftTeams", "\ufadf" },
+        { "IconBrandMinecraft", "\ufaef" },
+        { "IconBrandMiniprogram", "\uf602" },
+        { "IconBrandMixpanel", "\uf397" },
+        { "IconBrandMonday", "\uf219" },
+        { "IconBrandMongodb", "\uf613" },
+        { "IconBrandMyOppo", "\uf4d7" },
+        { "IconBrandMysql", "\uf614" },
+        { "IconBrandNationalGeographic", "\uf603" },
+        { "IconBrandNem", "\uf5a1" },
+        { "IconBrandNetbeans", "\uef71" },
+        { "IconBrandNeteaseMusic", "\uf604" },
+        { "IconBrandNetflix", "\uedcf" },
+        { "IconBrandNexo", "\uf5a2" },
+        { "IconBrandNextcloud", "\uf4d8" },
+        { "IconBrandNextjs", "\uf0dd" },
+        { "IconBrandNodejs", "\ufae0" },
+        { "IconBrandNordVpn", "\uf37f" },
+        { "IconBrandNotion", "\uef7b" },
+        { "IconBrandNpm", "\uf569" },
+        { "IconBrandNuxt", "\uf0de" },
+        { "IconBrandNytimes", "\uef8d" },
+        { "IconBrandOauth", "\ufa52" },
+        { "IconBrandOffice", "\uf398" },
+        { "IconBrandOkRu", "\uf399" },
+        { "IconBrandOnedrive", "\uf5d7" },
+        { "IconBrandOnlyfans", "\uf605" },
+        { "IconBrandOpenSource", "\uedd0" },
+        { "IconBrandOpenai", "\uf78e" },
+        { "IconBrandOpenvpn", "\uf39a" },
+        { "IconBrandOpera", "\uec21" },
+        { "IconBrandPagekit", "\uedd1" },
+        { "IconBrandPatreon", "\uedd2" },
+        { "IconBrandPaypal", "\uec22" },
+        { "IconBrandPaypalFilled", "\uf7e9" },
+        { "IconBrandPaypay", "\uf5ec" },
+        { "IconBrandPeanut", "\uf39b" },
+        { "IconBrandPepsi", "\uf261" },
+        { "IconBrandPhp", "\uef72" },
+        { "IconBrandPicsart", "\uf4d9" },
+        { "IconBrandPinterest", "\uec8d" },
+        { "IconBrandPlanetscale", "\uf78f" },
+        { "IconBrandPocket", "\ued00" },
+        { "IconBrandPolymer", "\uf498" },
+        { "IconBrandPowershell", "\uf5ed" },
+        { "IconBrandPrisma", "\uf499" },
+        { "IconBrandProducthunt", "\uedd3" },
+        { "IconBrandPushbullet", "\uf330" },
+        { "IconBrandPushover", "\uf20e" },
+        { "IconBrandPython", "\ued01" },
+        { "IconBrandQq", "\uf606" },
+        { "IconBrandRadixUi", "\uf790" },
+        { "IconBrandReact", "\uf34c" },
+        { "IconBrandReactNative", "\uef73" },
+        { "IconBrandReason", "\uf49a" },
+        { "IconBrandReddit", "\uec8e" },
+        { "IconBrandRedhat", "\uf331" },
+        { "IconBrandRedux", "\uf3a8" },
+        { "IconBrandRevolut", "\uf4da" },
+        { "IconBrandRumble", "\ufad1" },
+        { "IconBrandRust", "\ufa53" },
+        { "IconBrandSafari", "\uec23" },
+        { "IconBrandSamsungpass", "\uf4db" },
+        { "IconBrandSass", "\uedd4" },
+        { "IconBrandSentry", "\uedd5" },
+        { "IconBrandSharik", "\uf4dc" },
+        { "IconBrandShazam", "\uedd6" },
+        { "IconBrandShopee", "\uf252" },
+        { "IconBrandSketch", "\uec24" },
+        { "IconBrandSkype", "\ued02" },
+        { "IconBrandSlack", "\uec72" },
+        { "IconBrandSnapchat", "\uec25" },
+        { "IconBrandSnapseed", "\uf253" },
+        { "IconBrandSnowflake", "\uf615" },
+        { "IconBrandSocketIo", "\uf49b" },
+        { "IconBrandSolidjs", "\uf5ee" },
+        { "IconBrandSoundcloud", "\ued6e" },
+        { "IconBrandSpacehey", "\uf4fc" },
+        { "IconBrandSpeedtest", "\ufa77" },
+        { "IconBrandSpotify", "\ued03" },
+        { "IconBrandStackoverflow", "\uef58" },
+        { "IconBrandStackshare", "\uf607" },
+        { "IconBrandSteam", "\ued6f" },
+        { "IconBrandStorj", "\ufa54" },
+        { "IconBrandStorybook", "\uf332" },
+        { "IconBrandStorytel", "\uf608" },
+        { "IconBrandStrava", "\uf254" },
+        { "IconBrandStripe", "\uedd7" },
+        { "IconBrandSublimeText", "\uef74" },
+        { "IconBrandSugarizer", "\uf7a5" },
+        { "IconBrandSupabase", "\uf6d3" },
+        { "IconBrandSuperhuman", "\uf50c" },
+        { "IconBrandSupernova", "\uf49c" },
+        { "IconBrandSurfshark", "\uf255" },
+        { "IconBrandSvelte", "\uf0df" },
+        { "IconBrandSwift", "\ufa55" },
+        { "IconBrandSymfony", "\uf616" },
+        { "IconBrandTabler", "\uec8f" },
+        { "IconBrandTailwind", "\ueca1" },
+        { "IconBrandTaobao", "\uf5ef" },
+        { "IconBrandTed", "\uf658" },
+        { "IconBrandTelegram", "\uec26" },
+        { "IconBrandTerraform", "\ufa56" },
+        { "IconBrandTether", "\uf5a3" },
+        { "IconBrandThreads", "\ufb02" },
+        { "IconBrandThreejs", "\uf5f0" },
+        { "IconBrandTidal", "\ued70" },
+        { "IconBrandTiktoFilled", "\uf7ea" },
+        { "IconBrandTiktok", "\uec73" },
+        { "IconBrandTinder", "\ued71" },
+        { "IconBrandTopbuzz", "\uf50d" },
+        { "IconBrandTorchain", "\uf5a4" },
+        { "IconBrandToyota", "\uf262" },
+        { "IconBrandTrello", "\uf39d" },
+        { "IconBrandTripadvisor", "\uf002" },
+        { "IconBrandTumblr", "\ued04" },
+        { "IconBrandTwilio", "\uf617" },
+        { "IconBrandTwitch", "\ued05" },
+        { "IconBrandTwitter", "\uec27" },
+        { "IconBrandTwitterFilled", "\uf7eb" },
+        { "IconBrandTypescript", "\uf5f1" },
+        { "IconBrandUber", "\uef75" },
+        { "IconBrandUbuntu", "\uef59" },
+        { "IconBrandUnity", "\uf49d" },
+        { "IconBrandUnsplash", "\uedd8" },
+        { "IconBrandUpwork", "\uf39e" },
+        { "IconBrandValorant", "\uf39f" },
+        { "IconBrandVercel", "\uef24" },
+        { "IconBrandVimeo", "\ued06" },
+        { "IconBrandVinted", "\uf20f" },
+        { "IconBrandVisa", "\uf380" },
+        { "IconBrandVisualStudio", "\uef76" },
+        { "IconBrandVite", "\uf5f2" },
+        { "IconBrandVivaldi", "\uf210" },
+        { "IconBrandVk", "\ued72" },
+        { "IconBrandVlc", "\ufa78" },
+        { "IconBrandVolkswagen", "\uf50e" },
+        { "IconBrandVsco", "\uf334" },
+        { "IconBrandVscode", "\uf3a0" },
+        { "IconBrandVue", "\uf0e0" },
+        { "IconBrandWalmart", "\uf211" },
+        { "IconBrandWaze", "\uf5d8" },
+        { "IconBrandWebflow", "\uf2d2" },
+        { "IconBrandWechat", "\uf5f3" },
+        { "IconBrandWeibo", "\uf609" },
+        { "IconBrandWhatsapp", "\uec74" },
+        { "IconBrandWikipedia", "\ufa79" },
+        { "IconBrandWindows", "\uecd8" },
+        { "IconBrandWindy", "\uf4dd" },
+        { "IconBrandWish", "\uf212" },
+        { "IconBrandWix", "\uf3a1" },
+        { "IconBrandWordpress", "\uf2d3" },
+        { "IconBrandX", "\ufc0f" },
+        { "IconBrandXFilled", "\ufc21" },
+        { "IconBrandXamarin", "\ufa7a" },
+        { "IconBrandXbox", "\uf298" },
+        { "IconBrandXdeep", "\ufc10" },
+        { "IconBrandXing", "\uf21a" },
+        { "IconBrandYahoo", "\ued73" },
+        { "IconBrandYandex", "\ufae1" },
+        { "IconBrandYatse", "\uf213" },
+        { "IconBrandYcombinator", "\uedd9" },
+        { "IconBrandYoutube", "\uec90" },
+        { "IconBrandYoutubeFilled", "\ufc22" },
+        { "IconBrandYoutubeKids", "\uf214" },
+        { "IconBrandZalando", "\uf49e" },
+        { "IconBrandZapier", "\uf49f" },
+        { "IconBrandZeit", "\uf335" },
+        { "IconBrandZhihu", "\uf60a" },
+        { "IconBrandZoom", "\uf215" },
+        { "IconBrandZulip", "\uf4de" },
+        { "IconBrandZwift", "\uf216" },
+        { "IconBread", "\uefa3" },
+        { "IconBreadOff", "\uf3cb" },
+        { "IconBriefcase", "\uea46" },
+        { "IconBriefcase2", "\ufb03" },
+        { "IconBriefcaseOff", "\uf3cc" },
+        { "IconBrightness", "\ueb7f" },
+        { "IconBrightness2", "\uee19" },
+        { "IconBrightnessDown", "\ueb7d" },
+        { "IconBrightnessDownFilled", "\ufb23" },
+        { "IconBrightnessHalf", "\uee1a" },
+        { "IconBrightnessOff", "\uf3cd" },
+        { "IconBrightnessUp", "\ueb7e" },
+        { "IconBrightnessUpFilled", "\ufb24" },
+        { "IconBroadcast", "\uf1e9" },
+        { "IconBroadcastOff", "\uf1e8" },
+        { "IconBrowser", "\uebb7" },
+        { "IconBrowserCheck", "\uefd6" },
+        { "IconBrowserOff", "\uf0c1" },
+        { "IconBrowserPlus", "\uefd7" },
+        { "IconBrowserX", "\uefd8" },
+        { "IconBrush", "\uebb8" },
+        { "IconBrushOff", "\uf0c2" },
+        { "IconBucket", "\uea47" },
+        { "IconBucketDroplet", "\uf56a" },
+        { "IconBucketOff", "\uf103" },
+        { "IconBug", "\uea48" },
+        { "IconBugOff", "\uf0c3" },
+        { "IconBuilding", "\uea4f" },
+        { "IconBuildingArch", "\uea49" },
+        { "IconBuildingBank", "\uebe2" },
+        { "IconBuildingBridge", "\uea4b" },
+        { "IconBuildingBridge2", "\uea4a" },
+        { "IconBuildingBroadcastTower", "\uf4be" },
+        { "IconBuildingCarousel", "\ued87" },
+        { "IconBuildingCastle", "\ued88" },
+        { "IconBuildingChurch", "\uea4c" },
+        { "IconBuildingCircus", "\uf4bf" },
+        { "IconBuildingCommunity", "\uebf6" },
+        { "IconBuildingCottage", "\uee1b" },
+        { "IconBuildingEstate", "\uf5a5" },
+        { "IconBuildingFactory", "\uee1c" },
+        { "IconBuildingFactory2", "\uf082" },
+        { "IconBuildingFortress", "\ued89" },
+        { "IconBuildingHospital", "\uea4d" },
+        { "IconBuildingLighthouse", "\ued8a" },
+        { "IconBuildingMonument", "\ued26" },
+        { "IconBuildingMosque", "\ufa57" },
+        { "IconBuildingPavilion", "\uebf7" },
+        { "IconBuildingSkyscraper", "\uec39" },
+        { "IconBuildingStadium", "\uf641" },
+        { "IconBuildingStore", "\uea4e" },
+        { "IconBuildingTunnel", "\uf5a6" },
+        { "IconBuildingWarehouse", "\uebe3" },
+        { "IconBuildingWindTurbine", "\uf4c0" },
+        { "IconBulb", "\uea51" },
+        { "IconBulbFilled", "\uf66a" },
+        { "IconBulbOff", "\uea50" },
+        { "IconBulldozer", "\uee1d" },
+        { "IconBus", "\uebe4" },
+        { "IconBusOff", "\uf3ce" },
+        { "IconBusStop", "\uf2d4" },
+        { "IconBusinessplan", "\uee1e" },
+        { "IconButterfly", "\uefd9" },
+        { "IconCactus", "\uf21b" },
+        { "IconCactusFilled", "\ufb25" },
+        { "IconCactusOff", "\uf3cf" },
+        { "IconCake", "\uf00f" },
+        { "IconCakeOff", "\uf104" },
+        { "IconCalculator", "\ueb80" },
+        { "IconCalculatorFilled", "\ufb26" },
+        { "IconCalculatorOff", "\uf0c4" },
+        { "IconCalendar", "\uea53" },
+        { "IconCalendarBolt", "\uf822" },
+        { "IconCalendarCancel", "\uf823" },
+        { "IconCalendarCheck", "\uf824" },
+        { "IconCalendarCode", "\uf825" },
+        { "IconCalendarCog", "\uf826" },
+        { "IconCalendarDollar", "\uf827" },
+        { "IconCalendarDown", "\uf828" },
+        { "IconCalendarDue", "\uf621" },
+        { "IconCalendarEvent", "\uea52" },
+        { "IconCalendarExclamation", "\uf829" },
+        { "IconCalendarFilled", "\ufb27" },
+        { "IconCalendarHeart", "\uf82a" },
+        { "IconCalendarMinus", "\uebb9" },
+        { "IconCalendarOff", "\uee1f" },
+        { "IconCalendarPause", "\uf82b" },
+        { "IconCalendarPin", "\uf82c" },
+        { "IconCalendarPlus", "\uebba" },
+        { "IconCalendarQuestion", "\uf82d" },
+        { "IconCalendarRepeat", "\ufad2" },
+        { "IconCalendarSearch", "\uf82e" },
+        { "IconCalendarShare", "\uf82f" },
+        { "IconCalendarStar", "\uf830" },
+        { "IconCalendarStats", "\uee20" },
+        { "IconCalendarTime", "\uee21" },
+        { "IconCalendarUp", "\uf831" },
+        { "IconCalendarX", "\uf832" },
+        { "IconCamera", "\uea54" },
+        { "IconCameraBolt", "\uf833" },
+        { "IconCameraCancel", "\uf834" },
+        { "IconCameraCheck", "\uf835" },
+        { "IconCameraCode", "\uf836" },
+        { "IconCameraCog", "\uf837" },
+        { "IconCameraDollar", "\uf838" },
+        { "IconCameraDown", "\uf839" },
+        { "IconCameraExclamation", "\uf83a" },
+        { "IconCameraFilled", "\ufa37" },
+        { "IconCameraHeart", "\uf83b" },
+        { "IconCameraMinus", "\uec3a" },
+        { "IconCameraOff", "\uecee" },
+        { "IconCameraPause", "\uf83c" },
+        { "IconCameraPin", "\uf83d" },
+        { "IconCameraPlus", "\uec3b" },
+        { "IconCameraQuestion", "\uf83e" },
+        { "IconCameraRotate", "\uee22" },
+        { "IconCameraSearch", "\uf83f" },
+        { "IconCameraSelfie", "\uee23" },
+        { "IconCameraShare", "\uf840" },
+        { "IconCameraStar", "\uf841" },
+        { "IconCameraUp", "\uf842" },
+        { "IconCameraX", "\uf843" },
+        { "IconCamper", "\ufa25" },
+        { "IconCampfire", "\uf5a7" },
+        { "IconCampfireFilled", "\ufb28" },
+        { "IconCandle", "\uefc6" },
+        { "IconCandleFilled", "\ufc23" },
+        { "IconCandy", "\uef0d" },
+        { "IconCandyOff", "\uf0c5" },
+        { "IconCane", "\uf50f" },
+        { "IconCannabis", "\uf4c1" },
+        { "IconCapsule", "\ufae3" },
+        { "IconCapsuleFilled", "\ufc24" },
+        { "IconCapsuleHorizontal", "\ufae2" },
+        { "IconCapsuleHorizontalFilled", "\ufc25" },
+        { "IconCapture", "\uec3c" },
+        { "IconCaptureFilled", "\ufb29" },
+        { "IconCaptureOff", "\uf0c6" },
+        { "IconCar", "\uebbb" },
+        { "IconCarCrane", "\uef25" },
+        { "IconCarCrash", "\uefa4" },
+        { "IconCarOff", "\uf0c7" },
+        { "IconCarTurbine", "\uf4fd" },
+        { "IconCaravan", "\uec7c" },
+        { "IconCardboards", "\ued74" },
+        { "IconCardboardsOff", "\uf0c8" },
+        { "IconCards", "\uf510" },
+        { "IconCardsFilled", "\ufc26" },
+        { "IconCaretDown", "\ueb5d" },
+        { "IconCaretDownFilled", "\ufb2a" },
+        { "IconCaretLeft", "\ueb5e" },
+        { "IconCaretLeftFilled", "\ufb2b" },
+        { "IconCaretRight", "\ueb5f" },
+        { "IconCaretRightFilled", "\ufb2c" },
+        { "IconCaretUp", "\ueb60" },
+        { "IconCaretUpFilled", "\ufb2d" },
+        { "IconCarouselHorizontal", "\uf659" },
+        { "IconCarouselHorizontalFilled", "\ufa92" },
+        { "IconCarouselVertical", "\uf65a" },
+        { "IconCarouselVerticalFilled", "\ufa93" },
+        { "IconCarrot", "\uf21c" },
+        { "IconCarrotOff", "\uf3d0" },
+        { "IconCash", "\uea55" },
+        { "IconCashBanknote", "\uee25" },
+        { "IconCashBanknoteOff", "\uee24" },
+        { "IconCashOff", "\uf105" },
+        { "IconCast", "\uea56" },
+        { "IconCastOff", "\uf0c9" },
+        { "IconCat", "\uf65b" },
+        { "IconCategory", "\uf1f6" },
+        { "IconCategory2", "\uf1f5" },
+        { "IconCategoryFilled", "\ufb2e" },
+        { "IconCe", "\ued75" },
+        { "IconCeOff", "\uf0ca" },
+        { "IconCell", "\uf05f" },
+        { "IconCellSignal1", "\uf083" },
+        { "IconCellSignal2", "\uf084" },
+        { "IconCellSignal3", "\uf085" },
+        { "IconCellSignal4", "\uf086" },
+        { "IconCellSignal5", "\uf087" },
+        { "IconCellSignalOff", "\uf088" },
+        { "IconCertificate", "\ued76" },
+        { "IconCertificate2", "\uf073" },
+        { "IconCertificate2Off", "\uf0cb" },
+        { "IconCertificateOff", "\uf0cc" },
+        { "IconChairDirector", "\uf2d5" },
+        { "IconChalkboard", "\uf34d" },
+        { "IconChalkboardOff", "\uf3d1" },
+        { "IconChargingPile", "\uee26" },
+        { "IconChartArcs", "\uee28" },
+        { "IconChartArcs3", "\uee27" },
+        { "IconChartArea", "\uea58" },
+        { "IconChartAreaFilled", "\uf66b" },
+        { "IconChartAreaLine", "\uea57" },
+        { "IconChartAreaLineFilled", "\uf66c" },
+        { "IconChartArrows", "\uee2a" },
+        { "IconChartArrowsVertical", "\uee29" },
+        { "IconChartBar", "\uea59" },
+        { "IconChartBarOff", "\uf3d2" },
+        { "IconChartBubble", "\uec75" },
+        { "IconChartBubbleFilled", "\uf66d" },
+        { "IconChartCandle", "\uea5a" },
+        { "IconChartCandleFilled", "\uf66e" },
+        { "IconChartCircles", "\uee2b" },
+        { "IconChartDonut", "\uea5b" },
+        { "IconChartDonut2", "\uee2c" },
+        { "IconChartDonut3", "\uee2d" },
+        { "IconChartDonut4", "\uee2e" },
+        { "IconChartDonutFilled", "\uf66f" },
+        { "IconChartDots", "\uee2f" },
+        { "IconChartDots2", "\uf097" },
+        { "IconChartDots3", "\uf098" },
+        { "IconChartGridDots", "\uf4c2" },
+        { "IconChartHistogram", "\uf65c" },
+        { "IconChartInfographic", "\uee30" },
+        { "IconChartLine", "\uea5c" },
+        { "IconChartPie", "\uea5d" },
+        { "IconChartPie2", "\uee31" },
+        { "IconChartPie3", "\uee32" },
+        { "IconChartPie4", "\uee33" },
+        { "IconChartPieFilled", "\uf670" },
+        { "IconChartPieOff", "\uf3d3" },
+        { "IconChartPpf", "\uf618" },
+        { "IconChartRadar", "\ued77" },
+        { "IconChartSankey", "\uf619" },
+        { "IconChartTreemap", "\uf381" },
+        { "IconCheck", "\uea5e" },
+        { "IconCheckbox", "\ueba6" },
+        { "IconChecklist", "\uf074" },
+        { "IconChecks", "\uebaa" },
+        { "IconCheckupList", "\uef5a" },
+        { "IconCheese", "\uef26" },
+        { "IconChefHat", "\uf21d" },
+        { "IconChefHatOff", "\uf3d4" },
+        { "IconCherry", "\uf511" },
+        { "IconCherryFilled", "\uf728" },
+        { "IconChess", "\uf382" },
+        { "IconChessBishop", "\uf56b" },
+        { "IconChessBishopFilled", "\uf729" },
+        { "IconChessFilled", "\uf72a" },
+        { "IconChessKing", "\uf56c" },
+        { "IconChessKingFilled", "\uf72b" },
+        { "IconChessKnight", "\uf56d" },
+        { "IconChessKnightFilled", "\uf72c" },
+        { "IconChessQueen", "\uf56e" },
+        { "IconChessQueenFilled", "\uf72d" },
+        { "IconChessRook", "\uf56f" },
+        { "IconChessRookFilled", "\uf72e" },
+        { "IconChevronCompactDown", "\ufaf0" },
+        { "IconChevronCompactLeft", "\ufaf1" },
+        { "IconChevronCompactRight", "\ufaf2" },
+        { "IconChevronCompactUp", "\ufaf3" },
+        { "IconChevronDown", "\uea5f" },
+        { "IconChevronDownLeft", "\ued09" },
+        { "IconChevronDownRight", "\ued0a" },
+        { "IconChevronLeft", "\uea60" },
+        { "IconChevronLeftPipe", "\ufae4" },
+        { "IconChevronRight", "\uea61" },
+        { "IconChevronRightPipe", "\ufae5" },
+        { "IconChevronUp", "\uea62" },
+        { "IconChevronUpLeft", "\ued0b" },
+        { "IconChevronUpRight", "\ued0c" },
+        { "IconChevronsDown", "\uea63" },
+        { "IconChevronsDownLeft", "\ued0d" },
+        { "IconChevronsDownRight", "\ued0e" },
+        { "IconChevronsLeft", "\uea64" },
+        { "IconChevronsRight", "\uea65" },
+        { "IconChevronsUp", "\uea66" },
+        { "IconChevronsUpLeft", "\ued0f" },
+        { "IconChevronsUpRight", "\ued10" },
+        { "IconChisel", "\uf383" },
+        { "IconChristmasTree", "\ued78" },
+        { "IconChristmasTreeOff", "\uf3d5" },
+        { "IconCircle", "\uea6b" },
+        { "IconCircle0Filled", "\uf72f" },
+        { "IconCircle1Filled", "\uf730" },
+        { "IconCircle2Filled", "\uf731" },
+        { "IconCircle3Filled", "\uf732" },
+        { "IconCircle4Filled", "\uf733" },
+        { "IconCircle5Filled", "\uf734" },
+        { "IconCircle6Filled", "\uf735" },
+        { "IconCircle7Filled", "\uf736" },
+        { "IconCircle8Filled", "\uf737" },
+        { "IconCircle9Filled", "\uf738" },
+        { "IconCircleArrowDown", "\uf6f9" },
+        { "IconCircleArrowDownFilled", "\uf6f4" },
+        { "IconCircleArrowDownLeft", "\uf6f6" },
+        { "IconCircleArrowDownLeftFilled", "\uf6f5" },
+        { "IconCircleArrowDownRight", "\uf6f8" },
+        { "IconCircleArrowDownRightFilled", "\uf6f7" },
+        { "IconCircleArrowLeft", "\uf6fb" },
+        { "IconCircleArrowLeftFilled", "\uf6fa" },
+        { "IconCircleArrowRight", "\uf6fd" },
+        { "IconCircleArrowRightFilled", "\uf6fc" },
+        { "IconCircleArrowUp", "\uf703" },
+        { "IconCircleArrowUpFilled", "\uf6fe" },
+        { "IconCircleArrowUpLeft", "\uf700" },
+        { "IconCircleArrowUpLeftFilled", "\uf6ff" },
+        { "IconCircleArrowUpRight", "\uf702" },
+        { "IconCircleArrowUpRightFilled", "\uf701" },
+        { "IconCircleCaretDown", "\uf4a9" },
+        { "IconCircleCaretLeft", "\uf4aa" },
+        { "IconCircleCaretRight", "\uf4ab" },
+        { "IconCircleCaretUp", "\uf4ac" },
+        { "IconCircleCheck", "\uea67" },
+        { "IconCircleCheckFilled", "\uf704" },
+        { "IconCircleChevronDown", "\uf622" },
+        { "IconCircleChevronLeft", "\uf623" },
+        { "IconCircleChevronRight", "\uf624" },
+        { "IconCircleChevronUp", "\uf625" },
+        { "IconCircleChevronsDown", "\uf642" },
+        { "IconCircleChevronsLeft", "\uf643" },
+        { "IconCircleChevronsRight", "\uf644" },
+        { "IconCircleChevronsUp", "\uf645" },
+        { "IconCircleDashed", "\ued27" },
+        { "IconCircleDot", "\uefb1" },
+        { "IconCircleDotFilled", "\uf705" },
+        { "IconCircleDotted", "\ued28" },
+        { "IconCircleFilled", "\uf671" },
+        { "IconCircleHalf", "\uee3f" },
+        { "IconCircleHalf2", "\ueff3" },
+        { "IconCircleHalfVertical", "\uee3e" },
+        { "IconCircleKey", "\uf633" },
+        { "IconCircleKeyFilled", "\uf706" },
+        { "IconCircleLetterA", "\uf441" },
+        { "IconCircleLetterB", "\uf442" },
+        { "IconCircleLetterC", "\uf443" },
+        { "IconCircleLetterD", "\uf444" },
+        { "IconCircleLetterE", "\uf445" },
+        { "IconCircleLetterF", "\uf446" },
+        { "IconCircleLetterG", "\uf447" },
+        { "IconCircleLetterH", "\uf448" },
+        { "IconCircleLetterI", "\uf449" },
+        { "IconCircleLetterJ", "\uf44a" },
+        { "IconCircleLetterK", "\uf44b" },
+        { "IconCircleLetterL", "\uf44c" },
+        { "IconCircleLetterM", "\uf44d" },
+        { "IconCircleLetterN", "\uf44e" },
+        { "IconCircleLetterO", "\uf44f" },
+        { "IconCircleLetterP", "\uf450" },
+        { "IconCircleLetterQ", "\uf451" },
+        { "IconCircleLetterR", "\uf452" },
+        { "IconCircleLetterS", "\uf453" },
+        { "IconCircleLetterT", "\uf454" },
+        { "IconCircleLetterU", "\uf455" },
+        { "IconCircleLetterV", "\uf4ad" },
+        { "IconCircleLetterW", "\uf456" },
+        { "IconCircleLetterX", "\uf4ae" },
+        { "IconCircleLetterY", "\uf457" },
+        { "IconCircleLetterZ", "\uf458" },
+        { "IconCircleMinus", "\uea68" },
+        { "IconCircleNumber0", "\uee34" },
+        { "IconCircleNumber1", "\uee35" },
+        { "IconCircleNumber2", "\uee36" },
+        { "IconCircleNumber3", "\uee37" },
+        { "IconCircleNumber4", "\uee38" },
+        { "IconCircleNumber5", "\uee39" },
+        { "IconCircleNumber6", "\uee3a" },
+        { "IconCircleNumber7", "\uee3b" },
+        { "IconCircleNumber8", "\uee3c" },
+        { "IconCircleNumber9", "\uee3d" },
+        { "IconCircleOff", "\uee40" },
+        { "IconCirclePlus", "\uea69" },
+        { "IconCircleRectangle", "\uf010" },
+        { "IconCircleRectangleOff", "\uf0cd" },
+        { "IconCircleSquare", "\uece4" },
+        { "IconCircleTriangle", "\uf011" },
+        { "IconCircleX", "\uea6a" },
+        { "IconCircleXFilled", "\uf739" },
+        { "IconCircles", "\uece5" },
+        { "IconCirclesFilled", "\uf672" },
+        { "IconCirclesRelation", "\uf4c3" },
+        { "IconCircuitAmmeter", "\uf271" },
+        { "IconCircuitBattery", "\uf272" },
+        { "IconCircuitBulb", "\uf273" },
+        { "IconCircuitCapacitor", "\uf275" },
+        { "IconCircuitCapacitorPolarized", "\uf274" },
+        { "IconCircuitCell", "\uf277" },
+        { "IconCircuitCellPlus", "\uf276" },
+        { "IconCircuitChangeover", "\uf278" },
+        { "IconCircuitDiode", "\uf27a" },
+        { "IconCircuitDiodeZener", "\uf279" },
+        { "IconCircuitGround", "\uf27c" },
+        { "IconCircuitGroundDigital", "\uf27b" },
+        { "IconCircuitInductor", "\uf27d" },
+        { "IconCircuitMotor", "\uf27e" },
+        { "IconCircuitPushbutton", "\uf27f" },
+        { "IconCircuitResistor", "\uf280" },
+        { "IconCircuitSwitchClosed", "\uf281" },
+        { "IconCircuitSwitchOpen", "\uf282" },
+        { "IconCircuitVoltmeter", "\uf283" },
+        { "IconClearAll", "\uee41" },
+        { "IconClearFormatting", "\uebe5" },
+        { "IconClick", "\uebbc" },
+        { "IconClipboard", "\uea6f" },
+        { "IconClipboardCheck", "\uea6c" },
+        { "IconClipboardCopy", "\uf299" },
+        { "IconClipboardData", "\uf563" },
+        { "IconClipboardHeart", "\uf34e" },
+        { "IconClipboardList", "\uea6d" },
+        { "IconClipboardOff", "\uf0ce" },
+        { "IconClipboardPlus", "\uefb2" },
+        { "IconClipboardText", "\uf089" },
+        { "IconClipboardTypography", "\uf34f" },
+        { "IconClipboardX", "\uea6e" },
+        { "IconClock", "\uea70" },
+        { "IconClock2", "\uf099" },
+        { "IconClockBolt", "\uf844" },
+        { "IconClockCancel", "\uf546" },
+        { "IconClockCheck", "\uf7c1" },
+        { "IconClockCode", "\uf845" },
+        { "IconClockCog", "\uf7c2" },
+        { "IconClockDollar", "\uf846" },
+        { "IconClockDown", "\uf7c3" },
+        { "IconClockEdit", "\uf547" },
+        { "IconClockExclamation", "\uf847" },
+        { "IconClockFilled", "\uf73a" },
+        { "IconClockHeart", "\uf7c4" },
+        { "IconClockHour1", "\uf313" },
+        { "IconClockHour10", "\uf314" },
+        { "IconClockHour11", "\uf315" },
+        { "IconClockHour12", "\uf316" },
+        { "IconClockHour2", "\uf317" },
+        { "IconClockHour3", "\uf318" },
+        { "IconClockHour4", "\uf319" },
+        { "IconClockHour5", "\uf31a" },
+        { "IconClockHour6", "\uf31b" },
+        { "IconClockHour7", "\uf31c" },
+        { "IconClockHour8", "\uf31d" },
+        { "IconClockHour9", "\uf31e" },
+        { "IconClockMinus", "\uf848" },
+        { "IconClockOff", "\uf0cf" },
+        { "IconClockPause", "\uf548" },
+        { "IconClockPin", "\uf849" },
+        { "IconClockPlay", "\uf549" },
+        { "IconClockPlus", "\uf7c5" },
+        { "IconClockQuestion", "\uf7c6" },
+        { "IconClockRecord", "\uf54a" },
+        { "IconClockSearch", "\uf7c7" },
+        { "IconClockShare", "\uf84a" },
+        { "IconClockShield", "\uf7c8" },
+        { "IconClockStar", "\uf7c9" },
+        { "IconClockStop", "\uf54b" },
+        { "IconClockUp", "\uf7ca" },
+        { "IconClockX", "\uf7cb" },
+        { "IconClothesRack", "\uf285" },
+        { "IconClothesRackOff", "\uf3d6" },
+        { "IconCloud", "\uea76" },
+        { "IconCloudBolt", "\uf84b" },
+        { "IconCloudCancel", "\uf84c" },
+        { "IconCloudCheck", "\uf84d" },
+        { "IconCloudCode", "\uf84e" },
+        { "IconCloudCog", "\uf84f" },
+        { "IconCloudComputing", "\uf1d0" },
+        { "IconCloudDataConnection", "\uf1d1" },
+        { "IconCloudDollar", "\uf850" },
+        { "IconCloudDown", "\uf851" },
+        { "IconCloudDownload", "\uea71" },
+        { "IconCloudExclamation", "\uf852" },
+        { "IconCloudFilled", "\uf673" },
+        { "IconCloudFog", "\uecd9" },
+        { "IconCloudHeart", "\uf853" },
+        { "IconCloudLock", "\uefdb" },
+        { "IconCloudLockOpen", "\uefda" },
+        { "IconCloudMinus", "\uf854" },
+        { "IconCloudOff", "\ued3e" },
+        { "IconCloudPause", "\uf855" },
+        { "IconCloudPin", "\uf856" },
+        { "IconCloudPlus", "\uf857" },
+        { "IconCloudQuestion", "\uf858" },
+        { "IconCloudRain", "\uea72" },
+        { "IconCloudSearch", "\uf859" },
+        { "IconCloudShare", "\uf85a" },
+        { "IconCloudSnow", "\uea73" },
+        { "IconCloudStar", "\uf85b" },
+        { "IconCloudStorm", "\uea74" },
+        { "IconCloudUp", "\uf85c" },
+        { "IconCloudUpload", "\uea75" },
+        { "IconCloudX", "\uf85d" },
+        { "IconClover", "\uf1ea" },
+        { "IconClover2", "\uf21e" },
+        { "IconClubs", "\ueff4" },
+        { "IconClubsFilled", "\uf674" },
+        { "IconCode", "\uea77" },
+        { "IconCodeAsterix", "\uf312" },
+        { "IconCodeCircle", "\uf4ff" },
+        { "IconCodeCircle2", "\uf4fe" },
+        { "IconCodeDots", "\uf61a" },
+        { "IconCodeMinus", "\uee42" },
+        { "IconCodeOff", "\uf0d0" },
+        { "IconCodePlus", "\uee43" },
+        { "IconCoffee", "\uef0e" },
+        { "IconCoffeeOff", "\uf106" },
+        { "IconCoffin", "\uf579" },
+        { "IconCoin", "\ueb82" },
+        { "IconCoinBitcoin", "\uf2be" },
+        { "IconCoinEuro", "\uf2bf" },
+        { "IconCoinMonero", "\uf4a0" },
+        { "IconCoinOff", "\uf0d1" },
+        { "IconCoinPound", "\uf2c0" },
+        { "IconCoinRupee", "\uf2c1" },
+        { "IconCoinYen", "\uf2c2" },
+        { "IconCoinYuan", "\uf2c3" },
+        { "IconCoins", "\uf65d" },
+        { "IconColorFilter", "\uf5a8" },
+        { "IconColorPicker", "\uebe6" },
+        { "IconColorPickerOff", "\uf0d2" },
+        { "IconColorSwatch", "\ueb61" },
+        { "IconColorSwatchOff", "\uf0d3" },
+        { "IconColumnInsertLeft", "\uee44" },
+        { "IconColumnInsertRight", "\uee45" },
+        { "IconColumnRemove", "\ufaf4" },
+        { "IconColumns", "\ueb83" },
+        { "IconColumns1", "\uf6d4" },
+        { "IconColumns2", "\uf6d5" },
+        { "IconColumns3", "\uf6d6" },
+        { "IconColumnsOff", "\uf0d4" },
+        { "IconComet", "\uec76" },
+        { "IconCommand", "\uea78" },
+        { "IconCommandOff", "\uf3d7" },
+        { "IconCompass", "\uea79" },
+        { "IconCompassOff", "\uf0d5" },
+        { "IconComponents", "\uefa5" },
+        { "IconComponentsOff", "\uf0d6" },
+        { "IconCone", "\uefdd" },
+        { "IconCone2", "\uefdc" },
+        { "IconConeOff", "\uf3d8" },
+        { "IconConePlus", "\ufa94" },
+        { "IconConfetti", "\uee46" },
+        { "IconConfettiOff", "\uf3d9" },
+        { "IconConfucius", "\uf58a" },
+        { "IconContainer", "\uee47" },
+        { "IconContainerOff", "\uf107" },
+        { "IconContrast", "\uec4e" },
+        { "IconContrast2", "\uefc7" },
+        { "IconContrast2Off", "\uf3da" },
+        { "IconContrastOff", "\uf3db" },
+        { "IconCooker", "\uf57a" },
+        { "IconCookie", "\uef0f" },
+        { "IconCookieMan", "\uf4c4" },
+        { "IconCookieOff", "\uf0d7" },
+        { "IconCopy", "\uea7a" },
+        { "IconCopyOff", "\uf0d8" },
+        { "IconCopyleft", "\uec3d" },
+        { "IconCopyleftFilled", "\uf73b" },
+        { "IconCopyleftOff", "\uf0d9" },
+        { "IconCopyright", "\uea7b" },
+        { "IconCopyrightFilled", "\uf73c" },
+        { "IconCopyrightOff", "\uf0da" },
+        { "IconCornerDownLeft", "\uea7c" },
+        { "IconCornerDownLeftDouble", "\uee48" },
+        { "IconCornerDownRight", "\uea7d" },
+        { "IconCornerDownRightDouble", "\uee49" },
+        { "IconCornerLeftDown", "\uea7e" },
+        { "IconCornerLeftDownDouble", "\uee4a" },
+        { "IconCornerLeftUp", "\uea7f" },
+        { "IconCornerLeftUpDouble", "\uee4b" },
+        { "IconCornerRightDown", "\uea80" },
+        { "IconCornerRightDownDouble", "\uee4c" },
+        { "IconCornerRightUp", "\uea81" },
+        { "IconCornerRightUpDouble", "\uee4d" },
+        { "IconCornerUpLeft", "\uea82" },
+        { "IconCornerUpLeftDouble", "\uee4e" },
+        { "IconCornerUpRight", "\uea83" },
+        { "IconCornerUpRightDouble", "\uee4f" },
+        { "IconCpu", "\uef8e" },
+        { "IconCpu2", "\uf075" },
+        { "IconCpuOff", "\uf108" },
+        { "IconCrane", "\uef27" },
+        { "IconCraneOff", "\uf109" },
+        { "IconCreativeCommons", "\uefb3" },
+        { "IconCreativeCommonsBy", "\uf21f" },
+        { "IconCreativeCommonsNc", "\uf220" },
+        { "IconCreativeCommonsNd", "\uf221" },
+        { "IconCreativeCommonsOff", "\uf10a" },
+        { "IconCreativeCommonsSa", "\uf222" },
+        { "IconCreativeCommonsZero", "\uf223" },
+        { "IconCreditCard", "\uea84" },
+        { "IconCreditCardOff", "\ued11" },
+        { "IconCricket", "\uf09a" },
+        { "IconCrop", "\uea85" },
+        { "IconCross", "\uef8f" },
+        { "IconCrossFilled", "\uf675" },
+        { "IconCrossOff", "\uf10b" },
+        { "IconCrosshair", "\uec3e" },
+        { "IconCrown", "\ued12" },
+        { "IconCrownOff", "\uee50" },
+        { "IconCrutches", "\uef5b" },
+        { "IconCrutchesOff", "\uf10c" },
+        { "IconCrystalBall", "\uf57b" },
+        { "IconCsv", "\uf791" },
+        { "IconCube", "\ufa97" },
+        { "IconCubeOff", "\ufa95" },
+        { "IconCubePlus", "\ufa96" },
+        { "IconCubeSend", "\uf61b" },
+        { "IconCubeUnfolded", "\uf61c" },
+        { "IconCup", "\uef28" },
+        { "IconCupOff", "\uf10d" },
+        { "IconCurling", "\uefc8" },
+        { "IconCurlyLoop", "\uecda" },
+        { "IconCurrency", "\uefa6" },
+        { "IconCurrencyAfghani", "\uf65e" },
+        { "IconCurrencyBahraini", "\uee51" },
+        { "IconCurrencyBaht", "\uf08a" },
+        { "IconCurrencyBitcoin", "\uebab" },
+        { "IconCurrencyCent", "\uee53" },
+        { "IconCurrencyDinar", "\uee54" },
+        { "IconCurrencyDirham", "\uee55" },
+        { "IconCurrencyDogecoin", "\uef4b" },
+        { "IconCurrencyDollar", "\ueb84" },
+        { "IconCurrencyDollarAustralian", "\uee56" },
+        { "IconCurrencyDollarBrunei", "\uf36c" },
+        { "IconCurrencyDollarCanadian", "\uee57" },
+        { "IconCurrencyDollarGuyanese", "\uf36d" },
+        { "IconCurrencyDollarOff", "\uf3dc" },
+        { "IconCurrencyDollarSingapore", "\uee58" },
+        { "IconCurrencyDollarZimbabwean", "\uf36e" },
+        { "IconCurrencyDong", "\uf36f" },
+        { "IconCurrencyDram", "\uf370" },
+        { "IconCurrencyEthereum", "\uee59" },
+        { "IconCurrencyEuro", "\ueb85" },
+        { "IconCurrencyEuroOff", "\uf3dd" },
+        { "IconCurrencyFlorin", "\ufaf5" },
+        { "IconCurrencyForint", "\uee5a" },
+        { "IconCurrencyFrank", "\uee5b" },
+        { "IconCurrencyGuarani", "\uf371" },
+        { "IconCurrencyHryvnia", "\uf372" },
+        { "IconCurrencyIranianRial", "\ufa58" },
+        { "IconCurrencyKip", "\uf373" },
+        { "IconCurrencyKroneCzech", "\uee5c" },
+        { "IconCurrencyKroneDanish", "\uee5d" },
+        { "IconCurrencyKroneSwedish", "\uee5e" },
+        { "IconCurrencyLari", "\uf374" },
+        { "IconCurrencyLeu", "\uee5f" },
+        { "IconCurrencyLira", "\uee60" },
+        { "IconCurrencyLitecoin", "\uee61" },
+        { "IconCurrencyLyd", "\uf375" },
+        { "IconCurrencyManat", "\uf376" },
+        { "IconCurrencyMonero", "\uf377" },
+        { "IconCurrencyNaira", "\uee62" },
+        { "IconCurrencyNano", "\uf7a6" },
+        { "IconCurrencyOff", "\uf3de" },
+        { "IconCurrencyPaanga", "\uf378" },
+        { "IconCurrencyPeso", "\uf65f" },
+        { "IconCurrencyPound", "\uebac" },
+        { "IconCurrencyPoundOff", "\uf3df" },
+        { "IconCurrencyQuetzal", "\uf379" },
+        { "IconCurrencyReal", "\uee63" },
+        { "IconCurrencyRenminbi", "\uee64" },
+        { "IconCurrencyRipple", "\uee65" },
+        { "IconCurrencyRiyal", "\uee66" },
+        { "IconCurrencyRubel", "\uee67" },
+        { "IconCurrencyRufiyaa", "\uf37a" },
+        { "IconCurrencyRupee", "\uebad" },
+        { "IconCurrencyRupeeNepalese", "\uf37b" },
+        { "IconCurrencyShekel", "\uee68" },
+        { "IconCurrencySolana", "\uf4a1" },
+        { "IconCurrencySom", "\uf37c" },
+        { "IconCurrencyTaka", "\uee69" },
+        { "IconCurrencyTenge", "\uf37d" },
+        { "IconCurrencyTugrik", "\uee6a" },
+        { "IconCurrencyWon", "\uee6b" },
+        { "IconCurrencyYen", "\uebae" },
+        { "IconCurrencyYenOff", "\uf3e0" },
+        { "IconCurrencyYuan", "\uf29a" },
+        { "IconCurrencyZloty", "\uee6c" },
+        { "IconCurrentLocation", "\uecef" },
+        { "IconCurrentLocationOff", "\uf10e" },
+        { "IconCursorOff", "\uf10f" },
+        { "IconCursorText", "\uee6d" },
+        { "IconCut", "\uea86" },
+        { "IconCylinder", "\uf54c" },
+        { "IconCylinderOff", "\ufa98" },
+        { "IconCylinderPlus", "\ufa99" },
+        { "IconDashboard", "\uea87" },
+        { "IconDashboardOff", "\uf3e1" },
+        { "IconDatabase", "\uea88" },
+        { "IconDatabaseCog", "\ufa10" },
+        { "IconDatabaseDollar", "\ufa11" },
+        { "IconDatabaseEdit", "\ufa12" },
+        { "IconDatabaseExclamation", "\ufa13" },
+        { "IconDatabaseExport", "\uee6e" },
+        { "IconDatabaseHeart", "\ufa14" },
+        { "IconDatabaseImport", "\uee6f" },
+        { "IconDatabaseLeak", "\ufa15" },
+        { "IconDatabaseMinus", "\ufa16" },
+        { "IconDatabaseOff", "\uee70" },
+        { "IconDatabasePlus", "\ufa17" },
+        { "IconDatabaseSearch", "\ufa18" },
+        { "IconDatabaseShare", "\ufa19" },
+        { "IconDatabaseStar", "\ufa1a" },
+        { "IconDatabaseX", "\ufa1b" },
+        { "IconDecimal", "\ufa26" },
+        { "IconDeer", "\uf4c5" },
+        { "IconDelta", "\uf53c" },
+        { "IconDental", "\uf025" },
+        { "IconDentalBroken", "\uf286" },
+        { "IconDentalOff", "\uf110" },
+        { "IconDeselect", "\uf9f3" },
+        { "IconDetails", "\uee71" },
+        { "IconDetailsOff", "\uf3e2" },
+        { "IconDeviceAirpods", "\uf5a9" },
+        { "IconDeviceAirpodsCase", "\uf646" },
+        { "IconDeviceAirtag", "\ufae6" },
+        { "IconDeviceAnalytics", "\uee72" },
+        { "IconDeviceAudioTape", "\uee73" },
+        { "IconDeviceCameraPhone", "\uf233" },
+        { "IconDeviceCctv", "\uee74" },
+        { "IconDeviceCctvOff", "\uf3e3" },
+        { "IconDeviceComputerCamera", "\uee76" },
+        { "IconDeviceComputerCameraOff", "\uee75" },
+        { "IconDeviceDesktop", "\uea89" },
+        { "IconDeviceDesktopAnalytics", "\uee77" },
+        { "IconDeviceDesktopBolt", "\uf85e" },
+        { "IconDeviceDesktopCancel", "\uf85f" },
+        { "IconDeviceDesktopCheck", "\uf860" },
+        { "IconDeviceDesktopCode", "\uf861" },
+        { "IconDeviceDesktopCog", "\uf862" },
+        { "IconDeviceDesktopDollar", "\uf863" },
+        { "IconDeviceDesktopDown", "\uf864" },
+        { "IconDeviceDesktopExclamation", "\uf865" },
+        { "IconDeviceDesktopHeart", "\uf866" },
+        { "IconDeviceDesktopMinus", "\uf867" },
+        { "IconDeviceDesktopOff", "\uee78" },
+        { "IconDeviceDesktopPause", "\uf868" },
+        { "IconDeviceDesktopPin", "\uf869" },
+        { "IconDeviceDesktopPlus", "\uf86a" },
+        { "IconDeviceDesktopQuestion", "\uf86b" },
+        { "IconDeviceDesktopSearch", "\uf86c" },
+        { "IconDeviceDesktopShare", "\uf86d" },
+        { "IconDeviceDesktopStar", "\uf86e" },
+        { "IconDeviceDesktopUp", "\uf86f" },
+        { "IconDeviceDesktopX", "\uf870" },
+        { "IconDeviceFloppy", "\ueb62" },
+        { "IconDeviceGamepad", "\ueb63" },
+        { "IconDeviceGamepad2", "\uf1d2" },
+        { "IconDeviceHeartMonitor", "\uf060" },
+        { "IconDeviceHeartMonitorFilled", "\ufa38" },
+        { "IconDeviceImac", "\uf7a7" },
+        { "IconDeviceImacBolt", "\uf871" },
+        { "IconDeviceImacCancel", "\uf872" },
+        { "IconDeviceImacCheck", "\uf873" },
+        { "IconDeviceImacCode", "\uf874" },
+        { "IconDeviceImacCog", "\uf875" },
+        { "IconDeviceImacDollar", "\uf876" },
+        { "IconDeviceImacDown", "\uf877" },
+        { "IconDeviceImacExclamation", "\uf878" },
+        { "IconDeviceImacHeart", "\uf879" },
+        { "IconDeviceImacMinus", "\uf87a" },
+        { "IconDeviceImacOff", "\uf87b" },
+        { "IconDeviceImacPause", "\uf87c" },
+        { "IconDeviceImacPin", "\uf87d" },
+        { "IconDeviceImacPlus", "\uf87e" },
+        { "IconDeviceImacQuestion", "\uf87f" },
+        { "IconDeviceImacSearch", "\uf880" },
+        { "IconDeviceImacShare", "\uf881" },
+        { "IconDeviceImacStar", "\uf882" },
+        { "IconDeviceImacUp", "\uf883" },
+        { "IconDeviceImacX", "\uf884" },
+        { "IconDeviceIpad", "\uf648" },
+        { "IconDeviceIpadBolt", "\uf885" },
+        { "IconDeviceIpadCancel", "\uf886" },
+        { "IconDeviceIpadCheck", "\uf887" },
+        { "IconDeviceIpadCode", "\uf888" },
+        { "IconDeviceIpadCog", "\uf889" },
+        { "IconDeviceIpadDollar", "\uf88a" },
+        { "IconDeviceIpadDown", "\uf88b" },
+        { "IconDeviceIpadExclamation", "\uf88c" },
+        { "IconDeviceIpadHeart", "\uf88d" },
+        { "IconDeviceIpadHorizontal", "\uf647" },
+        { "IconDeviceIpadHorizontalBolt", "\uf88e" },
+        { "IconDeviceIpadHorizontalCancel", "\uf88f" },
+        { "IconDeviceIpadHorizontalCheck", "\uf890" },
+        { "IconDeviceIpadHorizontalCode", "\uf891" },
+        { "IconDeviceIpadHorizontalCog", "\uf892" },
+        { "IconDeviceIpadHorizontalDollar", "\uf893" },
+        { "IconDeviceIpadHorizontalDown", "\uf894" },
+        { "IconDeviceIpadHorizontalExclamation", "\uf895" },
+        { "IconDeviceIpadHorizontalHeart", "\uf896" },
+        { "IconDeviceIpadHorizontalMinus", "\uf897" },
+        { "IconDeviceIpadHorizontalOff", "\uf898" },
+        { "IconDeviceIpadHorizontalPause", "\uf899" },
+        { "IconDeviceIpadHorizontalPin", "\uf89a" },
+        { "IconDeviceIpadHorizontalPlus", "\uf89b" },
+        { "IconDeviceIpadHorizontalQuestion", "\uf89c" },
+        { "IconDeviceIpadHorizontalSearch", "\uf89d" },
+        { "IconDeviceIpadHorizontalShare", "\uf89e" },
+        { "IconDeviceIpadHorizontalStar", "\uf89f" },
+        { "IconDeviceIpadHorizontalUp", "\uf8a0" },
+        { "IconDeviceIpadHorizontalX", "\uf8a1" },
+        { "IconDeviceIpadMinus", "\uf8a2" },
+        { "IconDeviceIpadOff", "\uf8a3" },
+        { "IconDeviceIpadPause", "\uf8a4" },
+        { "IconDeviceIpadPin", "\uf8a5" },
+        { "IconDeviceIpadPlus", "\uf8a6" },
+        { "IconDeviceIpadQuestion", "\uf8a7" },
+        { "IconDeviceIpadSearch", "\uf8a8" },
+        { "IconDeviceIpadShare", "\uf8a9" },
+        { "IconDeviceIpadStar", "\uf8aa" },
+        { "IconDeviceIpadUp", "\uf8ab" },
+        { "IconDeviceIpadX", "\uf8ac" },
+        { "IconDeviceLandlinePhone", "\uf649" },
+        { "IconDeviceLaptop", "\ueb64" },
+        { "IconDeviceLaptopOff", "\uf061" },
+        { "IconDeviceMobile", "\uea8a" },
+        { "IconDeviceMobileBolt", "\uf8ad" },
+        { "IconDeviceMobileCancel", "\uf8ae" },
+        { "IconDeviceMobileCharging", "\uf224" },
+        { "IconDeviceMobileCheck", "\uf8af" },
+        { "IconDeviceMobileCode", "\uf8b0" },
+        { "IconDeviceMobileCog", "\uf8b1" },
+        { "IconDeviceMobileDollar", "\uf8b2" },
+        { "IconDeviceMobileDown", "\uf8b3" },
+        { "IconDeviceMobileExclamation", "\uf8b4" },
+        { "IconDeviceMobileFilled", "\ufa39" },
+        { "IconDeviceMobileHeart", "\uf8b5" },
+        { "IconDeviceMobileMessage", "\uee79" },
+        { "IconDeviceMobileMinus", "\uf8b6" },
+        { "IconDeviceMobileOff", "\uf062" },
+        { "IconDeviceMobilePause", "\uf8b7" },
+        { "IconDeviceMobilePin", "\uf8b8" },
+        { "IconDeviceMobilePlus", "\uf8b9" },
+        { "IconDeviceMobileQuestion", "\uf8ba" },
+        { "IconDeviceMobileRotated", "\uecdb" },
+        { "IconDeviceMobileSearch", "\uf8bb" },
+        { "IconDeviceMobileShare", "\uf8bc" },
+        { "IconDeviceMobileStar", "\uf8bd" },
+        { "IconDeviceMobileUp", "\uf8be" },
+        { "IconDeviceMobileVibration", "\ueb86" },
+        { "IconDeviceMobileX", "\uf8bf" },
+        { "IconDeviceNintendo", "\uf026" },
+        { "IconDeviceNintendoOff", "\uf111" },
+        { "IconDeviceProjector", "\ufc11" },
+        { "IconDeviceRemote", "\uf792" },
+        { "IconDeviceSdCard", "\uf384" },
+        { "IconDeviceSim", "\uf4b2" },
+        { "IconDeviceSim1", "\uf4af" },
+        { "IconDeviceSim2", "\uf4b0" },
+        { "IconDeviceSim3", "\uf4b1" },
+        { "IconDeviceSpeaker", "\uea8b" },
+        { "IconDeviceSpeakerOff", "\uf112" },
+        { "IconDeviceTablet", "\uea8c" },
+        { "IconDeviceTabletBolt", "\uf8c0" },
+        { "IconDeviceTabletCancel", "\uf8c1" },
+        { "IconDeviceTabletCheck", "\uf8c2" },
+        { "IconDeviceTabletCode", "\uf8c3" },
+        { "IconDeviceTabletCog", "\uf8c4" },
+        { "IconDeviceTabletDollar", "\uf8c5" },
+        { "IconDeviceTabletDown", "\uf8c6" },
+        { "IconDeviceTabletExclamation", "\uf8c7" },
+        { "IconDeviceTabletFilled", "\ufa3a" },
+        { "IconDeviceTabletHeart", "\uf8c8" },
+        { "IconDeviceTabletMinus", "\uf8c9" },
+        { "IconDeviceTabletOff", "\uf063" },
+        { "IconDeviceTabletPause", "\uf8ca" },
+        { "IconDeviceTabletPin", "\uf8cb" },
+        { "IconDeviceTabletPlus", "\uf8cc" },
+        { "IconDeviceTabletQuestion", "\uf8cd" },
+        { "IconDeviceTabletSearch", "\uf8ce" },
+        { "IconDeviceTabletShare", "\uf8cf" },
+        { "IconDeviceTabletStar", "\uf8d0" },
+        { "IconDeviceTabletUp", "\uf8d1" },
+        { "IconDeviceTabletX", "\uf8d2" },
+        { "IconDeviceTv", "\uea8d" },
+        { "IconDeviceTvOff", "\uf064" },
+        { "IconDeviceTvOld", "\uf1d3" },
+        { "IconDeviceVisionPro", "\ufae7" },
+        { "IconDeviceWatch", "\uebf9" },
+        { "IconDeviceWatchBolt", "\uf8d3" },
+        { "IconDeviceWatchCancel", "\uf8d4" },
+        { "IconDeviceWatchCheck", "\uf8d5" },
+        { "IconDeviceWatchCode", "\uf8d6" },
+        { "IconDeviceWatchCog", "\uf8d7" },
+        { "IconDeviceWatchDollar", "\uf8d8" },
+        { "IconDeviceWatchDown", "\uf8d9" },
+        { "IconDeviceWatchExclamation", "\uf8da" },
+        { "IconDeviceWatchHeart", "\uf8db" },
+        { "IconDeviceWatchMinus", "\uf8dc" },
+        { "IconDeviceWatchOff", "\uf065" },
+        { "IconDeviceWatchPause", "\uf8dd" },
+        { "IconDeviceWatchPin", "\uf8de" },
+        { "IconDeviceWatchPlus", "\uf8df" },
+        { "IconDeviceWatchQuestion", "\uf8e0" },
+        { "IconDeviceWatchSearch", "\uf8e1" },
+        { "IconDeviceWatchShare", "\uf8e2" },
+        { "IconDeviceWatchStar", "\uf8e3" },
+        { "IconDeviceWatchStats", "\uef7d" },
+        { "IconDeviceWatchStats2", "\uef7c" },
+        { "IconDeviceWatchUp", "\uf8e4" },
+        { "IconDeviceWatchX", "\uf8e5" },
+        { "IconDevices", "\ueb87" },
+        { "IconDevices2", "\ued29" },
+        { "IconDevicesBolt", "\uf8e6" },
+        { "IconDevicesCancel", "\uf8e7" },
+        { "IconDevicesCheck", "\uf8e8" },
+        { "IconDevicesCode", "\uf8e9" },
+        { "IconDevicesCog", "\uf8ea" },
+        { "IconDevicesDollar", "\uf8eb" },
+        { "IconDevicesDown", "\uf8ec" },
+        { "IconDevicesExclamation", "\uf8ed" },
+        { "IconDevicesHeart", "\uf8ee" },
+        { "IconDevicesMinus", "\uf8ef" },
+        { "IconDevicesOff", "\uf3e4" },
+        { "IconDevicesPause", "\uf8f0" },
+        { "IconDevicesPc", "\uee7a" },
+        { "IconDevicesPcOff", "\uf113" },
+        { "IconDevicesPin", "\uf8f1" },
+        { "IconDevicesPlus", "\uf8f2" },
+        { "IconDevicesQuestion", "\uf8f3" },
+        { "IconDevicesSearch", "\uf8f4" },
+        { "IconDevicesShare", "\uf8f5" },
+        { "IconDevicesStar", "\uf8f6" },
+        { "IconDevicesUp", "\uf8f7" },
+        { "IconDevicesX", "\uf8f8" },
+        { "IconDiabolo", "\ufa9c" },
+        { "IconDiaboloOff", "\ufa9a" },
+        { "IconDiaboloPlus", "\ufa9b" },
+        { "IconDialpad", "\uf067" },
+        { "IconDialpadFilled", "\ufa3b" },
+        { "IconDialpadOff", "\uf114" },
+        { "IconDiamond", "\ueb65" },
+        { "IconDiamondFilled", "\uf73d" },
+        { "IconDiamondOff", "\uf115" },
+        { "IconDiamonds", "\ueff5" },
+        { "IconDiamondsFilled", "\uf676" },
+        { "IconDice", "\ueb66" },
+        { "IconDice1", "\uf08b" },
+        { "IconDice1Filled", "\uf73e" },
+        { "IconDice2", "\uf08c" },
+        { "IconDice2Filled", "\uf73f" },
+        { "IconDice3", "\uf08d" },
+        { "IconDice3Filled", "\uf740" },
+        { "IconDice4", "\uf08e" },
+        { "IconDice4Filled", "\uf741" },
+        { "IconDice5", "\uf08f" },
+        { "IconDice5Filled", "\uf742" },
+        { "IconDice6", "\uf090" },
+        { "IconDice6Filled", "\uf743" },
+        { "IconDiceFilled", "\uf744" },
+        { "IconDimensions", "\uee7b" },
+        { "IconDirection", "\uebfb" },
+        { "IconDirectionHorizontal", "\uebfa" },
+        { "IconDirectionSign", "\uf1f7" },
+        { "IconDirectionSignFilled", "\uf745" },
+        { "IconDirectionSignOff", "\uf3e5" },
+        { "IconDirections", "\uea8e" },
+        { "IconDirectionsOff", "\uf116" },
+        { "IconDisabled", "\uea8f" },
+        { "IconDisabled2", "\uebaf" },
+        { "IconDisabledOff", "\uf117" },
+        { "IconDisc", "\uea90" },
+        { "IconDiscGolf", "\uf385" },
+        { "IconDiscOff", "\uf118" },
+        { "IconDiscount", "\uebbd" },
+        { "IconDiscount2", "\uee7c" },
+        { "IconDiscount2Off", "\uf3e6" },
+        { "IconDiscountCheck", "\uf1f8" },
+        { "IconDiscountCheckFilled", "\uf746" },
+        { "IconDiscountOff", "\uf3e7" },
+        { "IconDivide", "\ued5c" },
+        { "IconDna", "\uee7d" },
+        { "IconDna2", "\uef5c" },
+        { "IconDna2Off", "\uf119" },
+        { "IconDnaOff", "\uf11a" },
+        { "IconDog", "\uf660" },
+        { "IconDogBowl", "\uef29" },
+        { "IconDoor", "\uef4e" },
+        { "IconDoorEnter", "\uef4c" },
+        { "IconDoorExit", "\uef4d" },
+        { "IconDoorOff", "\uf11b" },
+        { "IconDots", "\uea95" },
+        { "IconDotsCircleHorizontal", "\uea91" },
+        { "IconDotsDiagonal", "\uea93" },
+        { "IconDotsDiagonal2", "\uea92" },
+        { "IconDotsVertical", "\uea94" },
+        { "IconDownload", "\uea96" },
+        { "IconDownloadOff", "\uf11c" },
+        { "IconDragDrop", "\ueb89" },
+        { "IconDragDrop2", "\ueb88" },
+        { "IconDrone", "\ued79" },
+        { "IconDroneOff", "\uee7e" },
+        { "IconDropCircle", "\uefde" },
+        { "IconDroplet", "\uea97" },
+        { "IconDropletBolt", "\uf8f9" },
+        { "IconDropletCancel", "\uf8fa" },
+        { "IconDropletCheck", "\uf8fb" },
+        { "IconDropletCode", "\uf8fc" },
+        { "IconDropletCog", "\uf8fd" },
+        { "IconDropletDollar", "\uf8fe" },
+        { "IconDropletDown", "\uf8ff" },
+        { "IconDropletExclamation", "\uf900" },
+        { "IconDropletFilled", "\uee80" },
+        { "IconDropletHalf", "\uee82" },
+        { "IconDropletHalf2", "\uee81" },
+        { "IconDropletHalf2Filled", "\ufb6c" },
+        { "IconDropletHalfFilled", "\uf6c5" },
+        { "IconDropletHeart", "\uf901" },
+        { "IconDropletMinus", "\uf902" },
+        { "IconDropletOff", "\uee83" },
+        { "IconDropletPause", "\uf903" },
+        { "IconDropletPin", "\uf904" },
+        { "IconDropletPlus", "\uf905" },
+        { "IconDropletQuestion", "\uf906" },
+        { "IconDropletSearch", "\uf907" },
+        { "IconDropletShare", "\uf908" },
+        { "IconDropletStar", "\uf909" },
+        { "IconDropletUp", "\uf90a" },
+        { "IconDropletX", "\uf90b" },
+        { "IconDroplets", "\ufc12" },
+        { "IconDualScreen", "\ufa59" },
+        { "IconEPassport", "\uf4df" },
+        { "IconEar", "\uebce" },
+        { "IconEarOff", "\uee84" },
+        { "IconEaseIn", "\uf573" },
+        { "IconEaseInControlPoint", "\uf570" },
+        { "IconEaseInOut", "\uf572" },
+        { "IconEaseInOutControlPoints", "\uf571" },
+        { "IconEaseOut", "\uf575" },
+        { "IconEaseOutControlPoint", "\uf574" },
+        { "IconEdit", "\uea98" },
+        { "IconEditCircle", "\uee85" },
+        { "IconEditCircleOff", "\uf11d" },
+        { "IconEditOff", "\uf11e" },
+        { "IconEgg", "\ueb8a" },
+        { "IconEggCracked", "\uf2d6" },
+        { "IconEggFilled", "\uf678" },
+        { "IconEggFried", "\uf386" },
+        { "IconEggOff", "\uf11f" },
+        { "IconEggs", "\uf500" },
+        { "IconElevator", "\uefdf" },
+        { "IconElevatorOff", "\uf3e8" },
+        { "IconEmergencyBed", "\uef5d" },
+        { "IconEmpathize", "\uf29b" },
+        { "IconEmpathizeOff", "\uf3e9" },
+        { "IconEmphasis", "\uebcf" },
+        { "IconEngine", "\uef7e" },
+        { "IconEngineOff", "\uf120" },
+        { "IconEqual", "\uee87" },
+        { "IconEqualDouble", "\uf4e1" },
+        { "IconEqualNot", "\uee86" },
+        { "IconEraser", "\ueb8b" },
+        { "IconEraserOff", "\uf121" },
+        { "IconError404", "\uf027" },
+        { "IconError404Off", "\uf122" },
+        { "IconEscalator", "\ufb06" },
+        { "IconEscalatorDown", "\ufb04" },
+        { "IconEscalatorUp", "\ufb05" },
+        { "IconExchange", "\uebe7" },
+        { "IconExchangeOff", "\uf123" },
+        { "IconExclamationCircle", "\uf634" },
+        { "IconExclamationMark", "\uefb4" },
+        { "IconExclamationMarkOff", "\uf124" },
+        { "IconExplicit", "\uf256" },
+        { "IconExplicitOff", "\uf3ea" },
+        { "IconExposure", "\ueb8c" },
+        { "IconExposure0", "\uf29c" },
+        { "IconExposureMinus1", "\uf29d" },
+        { "IconExposureMinus2", "\uf29e" },
+        { "IconExposureOff", "\uf3eb" },
+        { "IconExposurePlus1", "\uf29f" },
+        { "IconExposurePlus2", "\uf2a0" },
+        { "IconExternalLink", "\uea99" },
+        { "IconExternalLinkOff", "\uf125" },
+        { "IconEye", "\uea9a" },
+        { "IconEyeBolt", "\ufb6d" },
+        { "IconEyeCancel", "\ufb6e" },
+        { "IconEyeCheck", "\uee88" },
+        { "IconEyeClosed", "\uf7ec" },
+        { "IconEyeCode", "\ufb6f" },
+        { "IconEyeCog", "\uf7ed" },
+        { "IconEyeDiscount", "\ufb70" },
+        { "IconEyeDollar", "\ufb71" },
+        { "IconEyeDown", "\ufb72" },
+        { "IconEyeEdit", "\uf7ee" },
+        { "IconEyeExclamation", "\uf7ef" },
+        { "IconEyeFilled", "\uf679" },
+        { "IconEyeHeart", "\uf7f0" },
+        { "IconEyeMinus", "\ufb73" },
+        { "IconEyeOff", "\uecf0" },
+        { "IconEyePause", "\ufb74" },
+        { "IconEyePin", "\ufb75" },
+        { "IconEyePlus", "\ufb76" },
+        { "IconEyeQuestion", "\ufb77" },
+        { "IconEyeSearch", "\ufb78" },
+        { "IconEyeShare", "\ufb79" },
+        { "IconEyeStar", "\ufb7a" },
+        { "IconEyeTable", "\uef5e" },
+        { "IconEyeUp", "\ufb7b" },
+        { "IconEyeX", "\uf7f1" },
+        { "IconEyeglass", "\uee8a" },
+        { "IconEyeglass2", "\uee89" },
+        { "IconEyeglassOff", "\uf126" },
+        { "IconFaceId", "\uea9b" },
+        { "IconFaceIdError", "\uefa7" },
+        { "IconFaceMask", "\uefb5" },
+        { "IconFaceMaskOff", "\uf127" },
+        { "IconFall", "\uecb9" },
+        { "IconFeather", "\uee8b" },
+        { "IconFeatherOff", "\uf128" },
+        { "IconFence", "\uef2a" },
+        { "IconFenceOff", "\uf129" },
+        { "IconFidgetSpinner", "\uf068" },
+        { "IconFile", "\ueaa4" },
+        { "IconFile3d", "\uf032" },
+        { "IconFileAlert", "\uede6" },
+        { "IconFileAnalytics", "\uede7" },
+        { "IconFileArrowLeft", "\uf033" },
+        { "IconFileArrowRight", "\uf034" },
+        { "IconFileBarcode", "\uf035" },
+        { "IconFileBroken", "\uf501" },
+        { "IconFileCertificate", "\ued4d" },
+        { "IconFileChart", "\uf036" },
+        { "IconFileCheck", "\uea9c" },
+        { "IconFileCode", "\uebd0" },
+        { "IconFileCode2", "\uede8" },
+        { "IconFileCv", "\ufa5a" },
+        { "IconFileDatabase", "\uf037" },
+        { "IconFileDelta", "\uf53d" },
+        { "IconFileDescription", "\uf028" },
+        { "IconFileDiff", "\uecf1" },
+        { "IconFileDigit", "\uefa8" },
+        { "IconFileDislike", "\ued2a" },
+        { "IconFileDollar", "\uefe0" },
+        { "IconFileDots", "\uf038" },
+        { "IconFileDownload", "\uea9d" },
+        { "IconFileEuro", "\uefe1" },
+        { "IconFileExport", "\uede9" },
+        { "IconFileFilled", "\uf747" },
+        { "IconFileFunction", "\uf53e" },
+        { "IconFileHorizontal", "\uebb0" },
+        { "IconFileImport", "\uedea" },
+        { "IconFileInfinity", "\uf502" },
+        { "IconFileInfo", "\uedec" },
+        { "IconFileInvoice", "\ueb67" },
+        { "IconFileLambda", "\uf53f" },
+        { "IconFileLike", "\ued2b" },
+        { "IconFileMinus", "\uea9e" },
+        { "IconFileMusic", "\uea9f" },
+        { "IconFileOff", "\uecf2" },
+        { "IconFileOrientation", "\uf2a1" },
+        { "IconFilePencil", "\uf039" },
+        { "IconFilePercent", "\uf540" },
+        { "IconFilePhone", "\uecdc" },
+        { "IconFilePlus", "\ueaa0" },
+        { "IconFilePower", "\uf03a" },
+        { "IconFileReport", "\ueded" },
+        { "IconFileRss", "\uf03b" },
+        { "IconFileScissors", "\uf03c" },
+        { "IconFileSearch", "\ued5d" },
+        { "IconFileSettings", "\uf029" },
+        { "IconFileShredder", "\ueaa1" },
+        { "IconFileSignal", "\uf03d" },
+        { "IconFileSpreadsheet", "\uf03e" },
+        { "IconFileStack", "\uf503" },
+        { "IconFileStar", "\uf03f" },
+        { "IconFileSymlink", "\ued53" },
+        { "IconFileText", "\ueaa2" },
+        { "IconFileTextAi", "\ufa27" },
+        { "IconFileTime", "\uf040" },
+        { "IconFileTypeBmp", "\ufb07" },
+        { "IconFileTypeCss", "\ufb08" },
+        { "IconFileTypeCsv", "\ufb09" },
+        { "IconFileTypeDoc", "\ufb0a" },
+        { "IconFileTypeDocx", "\ufb0b" },
+        { "IconFileTypeHtml", "\ufb0c" },
+        { "IconFileTypeJpg", "\ufb0d" },
+        { "IconFileTypeJs", "\ufb0e" },
+        { "IconFileTypeJsx", "\ufb0f" },
+        { "IconFileTypePdf", "\ufb10" },
+        { "IconFileTypePhp", "\ufb11" },
+        { "IconFileTypePng", "\ufb12" },
+        { "IconFileTypePpt", "\ufb13" },
+        { "IconFileTypeRs", "\ufb14" },
+        { "IconFileTypeSql", "\ufb15" },
+        { "IconFileTypeSvg", "\ufb16" },
+        { "IconFileTypeTs", "\ufb17" },
+        { "IconFileTypeTsx", "\ufb18" },
+        { "IconFileTypeTxt", "\ufb19" },
+        { "IconFileTypeVue", "\ufb1a" },
+        { "IconFileTypeXls", "\ufb1b" },
+        { "IconFileTypeXml", "\ufb1c" },
+        { "IconFileTypeZip", "\ufb1d" },
+        { "IconFileTypography", "\uf041" },
+        { "IconFileUnknown", "\uf042" },
+        { "IconFileUpload", "\uec91" },
+        { "IconFileVector", "\uf043" },
+        { "IconFileX", "\ueaa3" },
+        { "IconFileXFilled", "\uf748" },
+        { "IconFileZip", "\ued4e" },
+        { "IconFiles", "\uedef" },
+        { "IconFilesOff", "\uedee" },
+        { "IconFilter", "\ueaa5" },
+        { "IconFilterBolt", "\ufb7c" },
+        { "IconFilterCancel", "\ufb7d" },
+        { "IconFilterCheck", "\ufb7e" },
+        { "IconFilterCode", "\ufb7f" },
+        { "IconFilterCog", "\uf9fe" },
+        { "IconFilterDiscount", "\ufb80" },
+        { "IconFilterDollar", "\uf9ff" },
+        { "IconFilterDown", "\ufb81" },
+        { "IconFilterEdit", "\ufa00" },
+        { "IconFilterExclamation", "\ufb82" },
+        { "IconFilterFilled", "\ufc27" },
+        { "IconFilterHeart", "\ufb83" },
+        { "IconFilterMinus", "\ufa01" },
+        { "IconFilterOff", "\ued2c" },
+        { "IconFilterPause", "\ufb84" },
+        { "IconFilterPin", "\ufb85" },
+        { "IconFilterPlus", "\ufa02" },
+        { "IconFilterQuestion", "\ufb86" },
+        { "IconFilterSearch", "\ufb87" },
+        { "IconFilterShare", "\ufb88" },
+        { "IconFilterStar", "\ufa03" },
+        { "IconFilterUp", "\ufb89" },
+        { "IconFilterX", "\ufa04" },
+        { "IconFilters", "\uf793" },
+        { "IconFingerprint", "\uebd1" },
+        { "IconFingerprintOff", "\uf12a" },
+        { "IconFireExtinguisher", "\ufaf6" },
+        { "IconFireHydrant", "\uf3a9" },
+        { "IconFireHydrantOff", "\uf3ec" },
+        { "IconFiretruck", "\uebe8" },
+        { "IconFirstAidKit", "\uef5f" },
+        { "IconFirstAidKitOff", "\uf3ed" },
+        { "IconFish", "\uef2b" },
+        { "IconFishBone", "\uf287" },
+        { "IconFishChristianity", "\uf58b" },
+        { "IconFishHook", "\uf1f9" },
+        { "IconFishHookOff", "\uf3ee" },
+        { "IconFishOff", "\uf12b" },
+        { "IconFlag", "\ueaa6" },
+        { "IconFlag2", "\uee8c" },
+        { "IconFlag2Filled", "\uf707" },
+        { "IconFlag2Off", "\uf12c" },
+        { "IconFlag3", "\uee8d" },
+        { "IconFlag3Filled", "\uf708" },
+        { "IconFlagBolt", "\ufb8a" },
+        { "IconFlagCancel", "\ufb8b" },
+        { "IconFlagCheck", "\ufb8c" },
+        { "IconFlagCode", "\ufb8d" },
+        { "IconFlagCog", "\ufb8e" },
+        { "IconFlagDiscount", "\ufb8f" },
+        { "IconFlagDollar", "\ufb90" },
+        { "IconFlagDown", "\ufb91" },
+        { "IconFlagExclamation", "\ufb92" },
+        { "IconFlagFilled", "\uf67a" },
+        { "IconFlagHeart", "\ufb93" },
+        { "IconFlagMinus", "\ufb94" },
+        { "IconFlagOff", "\uf12d" },
+        { "IconFlagPause", "\ufb95" },
+        { "IconFlagPin", "\ufb96" },
+        { "IconFlagPlus", "\ufb97" },
+        { "IconFlagQuestion", "\ufb98" },
+        { "IconFlagSearch", "\ufb99" },
+        { "IconFlagShare", "\ufb9a" },
+        { "IconFlagStar", "\ufb9b" },
+        { "IconFlagUp", "\ufb9c" },
+        { "IconFlagX", "\ufb9d" },
+        { "IconFlame", "\uec2c" },
+        { "IconFlameOff", "\uf12e" },
+        { "IconFlare", "\uee8e" },
+        { "IconFlask", "\uebd2" },
+        { "IconFlask2", "\uef60" },
+        { "IconFlask2Off", "\uf12f" },
+        { "IconFlaskOff", "\uf130" },
+        { "IconFlipFlops", "\uf564" },
+        { "IconFlipHorizontal", "\ueaa7" },
+        { "IconFlipVertical", "\ueaa8" },
+        { "IconFloatCenter", "\uebb1" },
+        { "IconFloatLeft", "\uebb2" },
+        { "IconFloatNone", "\ued13" },
+        { "IconFloatRight", "\uebb3" },
+        { "IconFlower", "\ueff6" },
+        { "IconFlowerOff", "\uf131" },
+        { "IconFocus", "\ueb8d" },
+        { "IconFocus2", "\uebd3" },
+        { "IconFocusAuto", "\ufa62" },
+        { "IconFocusCentered", "\uf02a" },
+        { "IconFold", "\ued56" },
+        { "IconFoldDown", "\ued54" },
+        { "IconFoldUp", "\ued55" },
+        { "IconFolder", "\ueaad" },
+        { "IconFolderBolt", "\uf90c" },
+        { "IconFolderCancel", "\uf90d" },
+        { "IconFolderCheck", "\uf90e" },
+        { "IconFolderCode", "\uf90f" },
+        { "IconFolderCog", "\uf910" },
+        { "IconFolderDollar", "\uf911" },
+        { "IconFolderDown", "\uf912" },
+        { "IconFolderExclamation", "\uf913" },
+        { "IconFolderFilled", "\uf749" },
+        { "IconFolderHeart", "\uf914" },
+        { "IconFolderMinus", "\ueaaa" },
+        { "IconFolderOff", "\ued14" },
+        { "IconFolderOpen", "\ufaf7" },
+        { "IconFolderPause", "\uf915" },
+        { "IconFolderPin", "\uf916" },
+        { "IconFolderPlus", "\ueaab" },
+        { "IconFolderQuestion", "\uf917" },
+        { "IconFolderSearch", "\uf918" },
+        { "IconFolderShare", "\uf919" },
+        { "IconFolderStar", "\uf91a" },
+        { "IconFolderSymlink", "\uf91b" },
+        { "IconFolderUp", "\uf91c" },
+        { "IconFolderX", "\ueaac" },
+        { "IconFolders", "\ueaae" },
+        { "IconFoldersOff", "\uf133" },
+        { "IconForbid", "\uebd5" },
+        { "IconForbid2", "\uebd4" },
+        { "IconForbid2Filled", "\ufc28" },
+        { "IconForbidFilled", "\ufc29" },
+        { "IconForklift", "\uebe9" },
+        { "IconForms", "\uee8f" },
+        { "IconFountain", "\uf09b" },
+        { "IconFountainFilled", "\ufc2a" },
+        { "IconFountainOff", "\uf134" },
+        { "IconFrame", "\ueaaf" },
+        { "IconFrameOff", "\uf135" },
+        { "IconFreeRights", "\uefb6" },
+        { "IconFreezeColumn", "\ufa63" },
+        { "IconFreezeRow", "\ufa65" },
+        { "IconFreezeRowColumn", "\ufa64" },
+        { "IconFridge", "\uf1fa" },
+        { "IconFridgeOff", "\uf3ef" },
+        { "IconFriends", "\ueab0" },
+        { "IconFriendsOff", "\uf136" },
+        { "IconFrustum", "\ufa9f" },
+        { "IconFrustumOff", "\ufa9d" },
+        { "IconFrustumPlus", "\ufa9e" },
+        { "IconFunction", "\uf225" },
+        { "IconFunctionFilled", "\ufc2b" },
+        { "IconFunctionOff", "\uf3f0" },
+        { "IconGardenCart", "\uf23e" },
+        { "IconGardenCartOff", "\uf3f1" },
+        { "IconGasStation", "\uec7d" },
+        { "IconGasStationOff", "\uf137" },
+        { "IconGauge", "\ueab1" },
+        { "IconGaugeFilled", "\ufc2c" },
+        { "IconGaugeOff", "\uf138" },
+        { "IconGavel", "\uef90" },
+        { "IconGenderAgender", "\uf0e1" },
+        { "IconGenderAndrogyne", "\uf0e2" },
+        { "IconGenderBigender", "\uf0e3" },
+        { "IconGenderDemiboy", "\uf0e4" },
+        { "IconGenderDemigirl", "\uf0e5" },
+        { "IconGenderEpicene", "\uf0e6" },
+        { "IconGenderFemale", "\uf0e7" },
+        { "IconGenderFemme", "\uf0e8" },
+        { "IconGenderGenderfluid", "\uf0e9" },
+        { "IconGenderGenderless", "\uf0ea" },
+        { "IconGenderGenderqueer", "\uf0eb" },
+        { "IconGenderHermaphrodite", "\uf0ec" },
+        { "IconGenderIntergender", "\uf0ed" },
+        { "IconGenderMale", "\uf0ee" },
+        { "IconGenderNeutrois", "\uf0ef" },
+        { "IconGenderThird", "\uf0f0" },
+        { "IconGenderTransgender", "\uf0f1" },
+        { "IconGenderTrasvesti", "\uf0f2" },
+        { "IconGeometry", "\uee90" },
+        { "IconGhost", "\ueb8e" },
+        { "IconGhost2", "\uf57c" },
+        { "IconGhost2Filled", "\uf74a" },
+        { "IconGhost3", "\ufc13" },
+        { "IconGhostFilled", "\uf74b" },
+        { "IconGhostOff", "\uf3f2" },
+        { "IconGif", "\uf257" },
+        { "IconGift", "\ueb68" },
+        { "IconGiftCard", "\uf3aa" },
+        { "IconGiftCardFilled", "\ufc2d" },
+        { "IconGiftOff", "\uf3f3" },
+        { "IconGitBranch", "\ueab2" },
+        { "IconGitBranchDeleted", "\uf57d" },
+        { "IconGitCherryPick", "\uf57e" },
+        { "IconGitCommit", "\ueab3" },
+        { "IconGitCompare", "\ueab4" },
+        { "IconGitFork", "\ueb8f" },
+        { "IconGitMerge", "\ueab5" },
+        { "IconGitPullRequest", "\ueab6" },
+        { "IconGitPullRequestClosed", "\uef7f" },
+        { "IconGitPullRequestDraft", "\uefb7" },
+        { "IconGizmo", "\uf02b" },
+        { "IconGlass", "\ueab8" },
+        { "IconGlassFull", "\ueab7" },
+        { "IconGlassFullFilled", "\ufc2e" },
+        { "IconGlassOff", "\uee91" },
+        { "IconGlobe", "\ueab9" },
+        { "IconGlobeFilled", "\ufc2f" },
+        { "IconGlobeOff", "\uf139" },
+        { "IconGoGame", "\uf512" },
+        { "IconGolf", "\ued8c" },
+        { "IconGolfOff", "\uf13a" },
+        { "IconGps", "\ued7a" },
+        { "IconGradienter", "\uf3ab" },
+        { "IconGrain", "\uee92" },
+        { "IconGraph", "\uf288" },
+        { "IconGraphOff", "\uf3f4" },
+        { "IconGrave", "\uf580" },
+        { "IconGrave2", "\uf57f" },
+        { "IconGridDots", "\ueaba" },
+        { "IconGridPattern", "\uefc9" },
+        { "IconGrill", "\uefa9" },
+        { "IconGrillFork", "\uf35b" },
+        { "IconGrillOff", "\uf3f5" },
+        { "IconGrillSpatula", "\uf35c" },
+        { "IconGripHorizontal", "\uec00" },
+        { "IconGripVertical", "\uec01" },
+        { "IconGrowth", "\uee93" },
+        { "IconGuitarPick", "\uf4c6" },
+        { "IconGuitarPickFilled", "\uf67b" },
+        { "IconH1", "\uec94" },
+        { "IconH2", "\uec95" },
+        { "IconH3", "\uec96" },
+        { "IconH4", "\uec97" },
+        { "IconH5", "\uec98" },
+        { "IconH6", "\uec99" },
+        { "IconHammer", "\uef91" },
+        { "IconHammerOff", "\uf13c" },
+        { "IconHandClick", "\uef4f" },
+        { "IconHandFinger", "\uee94" },
+        { "IconHandFingerOff", "\uf13d" },
+        { "IconHandGrab", "\uf091" },
+        { "IconHandLittleFinger", "\uee95" },
+        { "IconHandMiddleFinger", "\uec2d" },
+        { "IconHandMove", "\uef50" },
+        { "IconHandOff", "\ued15" },
+        { "IconHandRingFinger", "\uee96" },
+        { "IconHandRock", "\uee97" },
+        { "IconHandSanitizer", "\uf5f4" },
+        { "IconHandStop", "\uec2e" },
+        { "IconHandThreeFingers", "\uee98" },
+        { "IconHandTwoFingers", "\uee99" },
+        { "IconHanger", "\uee9a" },
+        { "IconHanger2", "\uf09c" },
+        { "IconHangerOff", "\uf13e" },
+        { "IconHash", "\ueabc" },
+        { "IconHaze", "\uefaa" },
+        { "IconHazeMoon", "\ufaf8" },
+        { "IconHdr", "\ufa7b" },
+        { "IconHeading", "\uee9b" },
+        { "IconHeadingOff", "\uf13f" },
+        { "IconHeadphones", "\ueabd" },
+        { "IconHeadphonesFilled", "\ufa3c" },
+        { "IconHeadphonesOff", "\ued1d" },
+        { "IconHeadset", "\ueb90" },
+        { "IconHeadsetOff", "\uf3f6" },
+        { "IconHealthRecognition", "\uf1fb" },
+        { "IconHeart", "\ueabe" },
+        { "IconHeartBolt", "\ufb9e" },
+        { "IconHeartBroken", "\uecba" },
+        { "IconHeartCancel", "\ufb9f" },
+        { "IconHeartCheck", "\ufba0" },
+        { "IconHeartCode", "\ufba1" },
+        { "IconHeartCog", "\ufba2" },
+        { "IconHeartDiscount", "\ufba3" },
+        { "IconHeartDollar", "\ufba4" },
+        { "IconHeartDown", "\ufba5" },
+        { "IconHeartExclamation", "\ufba6" },
+        { "IconHeartFilled", "\uf67c" },
+        { "IconHeartHandshake", "\uf0f3" },
+        { "IconHeartMinus", "\uf140" },
+        { "IconHeartOff", "\uf141" },
+        { "IconHeartPause", "\ufba7" },
+        { "IconHeartPin", "\ufba8" },
+        { "IconHeartPlus", "\uf142" },
+        { "IconHeartQuestion", "\ufba9" },
+        { "IconHeartRateMonitor", "\uef61" },
+        { "IconHeartSearch", "\ufbaa" },
+        { "IconHeartShare", "\ufbab" },
+        { "IconHeartStar", "\ufbac" },
+        { "IconHeartUp", "\ufbad" },
+        { "IconHeartX", "\ufbae" },
+        { "IconHeartbeat", "\uef92" },
+        { "IconHearts", "\uf387" },
+        { "IconHeartsOff", "\uf3f7" },
+        { "IconHelicopter", "\ued8e" },
+        { "IconHelicopterLanding", "\ued8d" },
+        { "IconHelmet", "\uefca" },
+        { "IconHelmetOff", "\uf143" },
+        { "IconHelp", "\ueabf" },
+        { "IconHelpCircle", "\uf91d" },
+        { "IconHelpCircleFilled", "\ufa3d" },
+        { "IconHelpHexagon", "\uf7a8" },
+        { "IconHelpHexagonFilled", "\ufa3e" },
+        { "IconHelpOctagon", "\uf7a9" },
+        { "IconHelpOctagonFilled", "\ufa3f" },
+        { "IconHelpOff", "\uf3f8" },
+        { "IconHelpSmall", "\uf91e" },
+        { "IconHelpSquare", "\uf920" },
+        { "IconHelpSquareFilled", "\ufa40" },
+        { "IconHelpSquareRounded", "\uf91f" },
+        { "IconHelpSquareRoundedFilled", "\ufa41" },
+        { "IconHelpTriangle", "\uf921" },
+        { "IconHelpTriangleFilled", "\ufa42" },
+        { "IconHemisphere", "\ufaa2" },
+        { "IconHemisphereOff", "\ufaa0" },
+        { "IconHemispherePlus", "\ufaa1" },
+        { "IconHexagon", "\uec02" },
+        { "IconHexagon0Filled", "\uf74c" },
+        { "IconHexagon1Filled", "\uf74d" },
+        { "IconHexagon2Filled", "\uf74e" },
+        { "IconHexagon3Filled", "\uf74f" },
+        { "IconHexagon3d", "\uf4c7" },
+        { "IconHexagon4Filled", "\uf750" },
+        { "IconHexagon5Filled", "\uf751" },
+        { "IconHexagon6Filled", "\uf752" },
+        { "IconHexagon7Filled", "\uf753" },
+        { "IconHexagon8Filled", "\uf754" },
+        { "IconHexagon9Filled", "\uf755" },
+        { "IconHexagonFilled", "\uf67d" },
+        { "IconHexagonLetterA", "\uf463" },
+        { "IconHexagonLetterB", "\uf464" },
+        { "IconHexagonLetterC", "\uf465" },
+        { "IconHexagonLetterD", "\uf466" },
+        { "IconHexagonLetterE", "\uf467" },
+        { "IconHexagonLetterF", "\uf468" },
+        { "IconHexagonLetterG", "\uf469" },
+        { "IconHexagonLetterH", "\uf46a" },
+        { "IconHexagonLetterI", "\uf46b" },
+        { "IconHexagonLetterJ", "\uf46c" },
+        { "IconHexagonLetterK", "\uf46d" },
+        { "IconHexagonLetterL", "\uf46e" },
+        { "IconHexagonLetterM", "\uf46f" },
+        { "IconHexagonLetterN", "\uf470" },
+        { "IconHexagonLetterO", "\uf471" },
+        { "IconHexagonLetterP", "\uf472" },
+        { "IconHexagonLetterQ", "\uf473" },
+        { "IconHexagonLetterR", "\uf474" },
+        { "IconHexagonLetterS", "\uf475" },
+        { "IconHexagonLetterT", "\uf476" },
+        { "IconHexagonLetterU", "\uf477" },
+        { "IconHexagonLetterV", "\uf4b3" },
+        { "IconHexagonLetterW", "\uf478" },
+        { "IconHexagonLetterX", "\uf479" },
+        { "IconHexagonLetterY", "\uf47a" },
+        { "IconHexagonLetterZ", "\uf47b" },
+        { "IconHexagonNumber0", "\uf459" },
+        { "IconHexagonNumber1", "\uf45a" },
+        { "IconHexagonNumber2", "\uf45b" },
+        { "IconHexagonNumber3", "\uf45c" },
+        { "IconHexagonNumber4", "\uf45d" },
+        { "IconHexagonNumber5", "\uf45e" },
+        { "IconHexagonNumber6", "\uf45f" },
+        { "IconHexagonNumber7", "\uf460" },
+        { "IconHexagonNumber8", "\uf461" },
+        { "IconHexagonNumber9", "\uf462" },
+        { "IconHexagonOff", "\uee9c" },
+        { "IconHexagonalPrism", "\ufaa5" },
+        { "IconHexagonalPrismOff", "\ufaa3" },
+        { "IconHexagonalPrismPlus", "\ufaa4" },
+        { "IconHexagonalPyramid", "\ufaa8" },
+        { "IconHexagonalPyramidOff", "\ufaa6" },
+        { "IconHexagonalPyramidPlus", "\ufaa7" },
+        { "IconHexagons", "\uf09d" },
+        { "IconHexagonsOff", "\uf3f9" },
+        { "IconHierarchy", "\uee9e" },
+        { "IconHierarchy2", "\uee9d" },
+        { "IconHierarchy3", "\uf289" },
+        { "IconHierarchyOff", "\uf3fa" },
+        { "IconHighlight", "\uef3f" },
+        { "IconHighlightOff", "\uf144" },
+        { "IconHistory", "\uebea" },
+        { "IconHistoryOff", "\uf3fb" },
+        { "IconHistoryToggle", "\uf1fc" },
+        { "IconHome", "\ueac1" },
+        { "IconHome2", "\ueac0" },
+        { "IconHomeBolt", "\uf336" },
+        { "IconHomeCancel", "\uf350" },
+        { "IconHomeCheck", "\uf337" },
+        { "IconHomeCog", "\uf338" },
+        { "IconHomeDollar", "\uf339" },
+        { "IconHomeDot", "\uf33a" },
+        { "IconHomeDown", "\uf33b" },
+        { "IconHomeEco", "\uf351" },
+        { "IconHomeEdit", "\uf352" },
+        { "IconHomeExclamation", "\uf33c" },
+        { "IconHomeHand", "\uf504" },
+        { "IconHomeHeart", "\uf353" },
+        { "IconHomeInfinity", "\uf505" },
+        { "IconHomeLink", "\uf354" },
+        { "IconHomeMinus", "\uf33d" },
+        { "IconHomeMove", "\uf33e" },
+        { "IconHomeOff", "\uf145" },
+        { "IconHomePlus", "\uf33f" },
+        { "IconHomeQuestion", "\uf340" },
+        { "IconHomeRibbon", "\uf355" },
+        { "IconHomeSearch", "\uf341" },
+        { "IconHomeShare", "\uf342" },
+        { "IconHomeShield", "\uf343" },
+        { "IconHomeSignal", "\uf356" },
+        { "IconHomeStar", "\uf344" },
+        { "IconHomeStats", "\uf345" },
+        { "IconHomeUp", "\uf346" },
+        { "IconHomeX", "\uf347" },
+        { "IconHorseToy", "\uf28a" },
+        { "IconHotelService", "\uef80" },
+        { "IconHourglass", "\uef93" },
+        { "IconHourglassEmpty", "\uf146" },
+        { "IconHourglassFilled", "\uf756" },
+        { "IconHourglassHigh", "\uf092" },
+        { "IconHourglassLow", "\uf093" },
+        { "IconHourglassOff", "\uf147" },
+        { "IconHtml", "\uf7b1" },
+        { "IconHttpConnect", "\ufa28" },
+        { "IconHttpDelete", "\ufa29" },
+        { "IconHttpGet", "\ufa2a" },
+        { "IconHttpHead", "\ufa2b" },
+        { "IconHttpOptions", "\ufa2c" },
+        { "IconHttpPatch", "\ufa2d" },
+        { "IconHttpPost", "\ufa2e" },
+        { "IconHttpPut", "\ufa2f" },
+        { "IconHttpQue", "\ufa5b" },
+        { "IconHttpTrace", "\ufa30" },
+        { "IconIceCream", "\ueac2" },
+        { "IconIceCream2", "\uee9f" },
+        { "IconIceCreamOff", "\uf148" },
+        { "IconIceSkating", "\uefcb" },
+        { "IconIcons", "\uf1d4" },
+        { "IconIconsOff", "\uf3fc" },
+        { "IconId", "\ueac3" },
+        { "IconIdBadge", "\ueff7" },
+        { "IconIdBadge2", "\uf076" },
+        { "IconIdBadgeOff", "\uf3fd" },
+        { "IconIdOff", "\uf149" },
+        { "IconInbox", "\ueac4" },
+        { "IconInboxOff", "\uf14a" },
+        { "IconIndentDecrease", "\ueb91" },
+        { "IconIndentIncrease", "\ueb92" },
+        { "IconInfinity", "\ueb69" },
+        { "IconInfinityOff", "\uf3fe" },
+        { "IconInfoCircle", "\ueac5" },
+        { "IconInfoCircleFilled", "\uf6d8" },
+        { "IconInfoHexagon", "\uf7aa" },
+        { "IconInfoHexagonFilled", "\ufa43" },
+        { "IconInfoOctagon", "\uf7ab" },
+        { "IconInfoOctagonFilled", "\ufa44" },
+        { "IconInfoSmall", "\uf922" },
+        { "IconInfoSquare", "\ueac6" },
+        { "IconInfoSquareFilled", "\ufa45" },
+        { "IconInfoSquareRounded", "\uf635" },
+        { "IconInfoSquareRoundedFilled", "\uf6d9" },
+        { "IconInfoTriangle", "\uf923" },
+        { "IconInfoTriangleFilled", "\ufa46" },
+        { "IconInnerShadowBottom", "\uf520" },
+        { "IconInnerShadowBottomFilled", "\uf757" },
+        { "IconInnerShadowBottomLeft", "\uf51e" },
+        { "IconInnerShadowBottomLeftFilled", "\uf758" },
+        { "IconInnerShadowBottomRight", "\uf51f" },
+        { "IconInnerShadowBottomRightFilled", "\uf759" },
+        { "IconInnerShadowLeft", "\uf521" },
+        { "IconInnerShadowLeftFilled", "\uf75a" },
+        { "IconInnerShadowRight", "\uf522" },
+        { "IconInnerShadowRightFilled", "\uf75b" },
+        { "IconInnerShadowTop", "\uf525" },
+        { "IconInnerShadowTopFilled", "\uf75c" },
+        { "IconInnerShadowTopLeft", "\uf523" },
+        { "IconInnerShadowTopLeftFilled", "\uf75d" },
+        { "IconInnerShadowTopRight", "\uf524" },
+        { "IconInnerShadowTopRightFilled", "\uf75e" },
+        { "IconInputSearch", "\uf2a2" },
+        { "IconIroning", "\ufa7c" },
+        { "IconIroning1", "\uf2f4" },
+        { "IconIroning2", "\uf2f5" },
+        { "IconIroning3", "\uf2f6" },
+        { "IconIroningOff", "\uf2f7" },
+        { "IconIroningSteam", "\uf2f9" },
+        { "IconIroningSteamOff", "\uf2f8" },
+        { "IconIrregularPolyhedron", "\ufaab" },
+        { "IconIrregularPolyhedronOff", "\ufaa9" },
+        { "IconIrregularPolyhedronPlus", "\ufaaa" },
+        { "IconItalic", "\ueb93" },
+        { "IconJacket", "\uf661" },
+        { "IconJetpack", "\uf581" },
+        { "IconJewishStar", "\uf3ff" },
+        { "IconJewishStarFilled", "\uf67e" },
+        { "IconJpg", "\uf3ac" },
+        { "IconJson", "\uf7b2" },
+        { "IconJumpRope", "\ued8f" },
+        { "IconKarate", "\ued32" },
+        { "IconKayak", "\uf1d6" },
+        { "IconKering", "\uefb8" },
+        { "IconKey", "\ueac7" },
+        { "IconKeyOff", "\uf14b" },
+        { "IconKeyboard", "\uebd6" },
+        { "IconKeyboardHide", "\uec7e" },
+        { "IconKeyboardOff", "\ueea0" },
+        { "IconKeyboardShow", "\uec7f" },
+        { "IconKeyframe", "\uf576" },
+        { "IconKeyframeAlignCenter", "\uf582" },
+        { "IconKeyframeAlignCenterFilled", "\ufc30" },
+        { "IconKeyframeAlignHorizontal", "\uf583" },
+        { "IconKeyframeAlignHorizontalFilled", "\ufc31" },
+        { "IconKeyframeAlignVertical", "\uf584" },
+        { "IconKeyframeAlignVerticalFilled", "\ufc32" },
+        { "IconKeyframeFilled", "\ufc33" },
+        { "IconKeyframes", "\uf585" },
+        { "IconKeyframesFilled", "\ufc34" },
+        { "IconLadder", "\uefe2" },
+        { "IconLadderOff", "\uf14c" },
+        { "IconLadle", "\ufc14" },
+        { "IconLambda", "\uf541" },
+        { "IconLamp", "\uefab" },
+        { "IconLamp2", "\uf09e" },
+        { "IconLampOff", "\uf14d" },
+        { "IconLane", "\ufaf9" },
+        { "IconLanguage", "\uebbe" },
+        { "IconLanguageHiragana", "\uef77" },
+        { "IconLanguageKatakana", "\uef78" },
+        { "IconLanguageOff", "\uf14e" },
+        { "IconLasso", "\uefac" },
+        { "IconLassoOff", "\uf14f" },
+        { "IconLassoPolygon", "\uf388" },
+        { "IconLayersDifference", "\ueac8" },
+        { "IconLayersIntersect", "\ueac9" },
+        { "IconLayersIntersect2", "\ueff8" },
+        { "IconLayersLinked", "\ueea1" },
+        { "IconLayersOff", "\uf150" },
+        { "IconLayersSubtract", "\ueaca" },
+        { "IconLayersUnion", "\ueacb" },
+        { "IconLayout", "\ueadb" },
+        { "IconLayout2", "\ueacc" },
+        { "IconLayoutAlignBottom", "\ueacd" },
+        { "IconLayoutAlignCenter", "\ueace" },
+        { "IconLayoutAlignLeft", "\ueacf" },
+        { "IconLayoutAlignMiddle", "\uead0" },
+        { "IconLayoutAlignRight", "\uead1" },
+        { "IconLayoutAlignTop", "\uead2" },
+        { "IconLayoutBoard", "\uef95" },
+        { "IconLayoutBoardSplit", "\uef94" },
+        { "IconLayoutBottombar", "\uead3" },
+        { "IconLayoutBottombarCollapse", "\uf28b" },
+        { "IconLayoutBottombarCollapseFilled", "\ufc35" },
+        { "IconLayoutBottombarExpand", "\uf28c" },
+        { "IconLayoutBottombarExpandFilled", "\ufc36" },
+        { "IconLayoutBottombarFilled", "\ufc37" },
+        { "IconLayoutCards", "\uec13" },
+        { "IconLayoutCollage", "\uf389" },
+        { "IconLayoutColumns", "\uead4" },
+        { "IconLayoutDashboard", "\uf02c" },
+        { "IconLayoutDistributeHorizontal", "\uead5" },
+        { "IconLayoutDistributeVertical", "\uead6" },
+        { "IconLayoutGrid", "\uedba" },
+        { "IconLayoutGridAdd", "\uedb9" },
+        { "IconLayoutGridRemove", "\ufa7d" },
+        { "IconLayoutKanban", "\uec3f" },
+        { "IconLayoutList", "\uec14" },
+        { "IconLayoutNavbar", "\uead7" },
+        { "IconLayoutNavbarCollapse", "\uf28d" },
+        { "IconLayoutNavbarCollapseFilled", "\ufc38" },
+        { "IconLayoutNavbarExpand", "\uf28e" },
+        { "IconLayoutNavbarExpandFilled", "\ufc39" },
+        { "IconLayoutNavbarFilled", "\ufc3a" },
+        { "IconLayoutOff", "\uf151" },
+        { "IconLayoutRows", "\uead8" },
+        { "IconLayoutSidebar", "\ueada" },
+        { "IconLayoutSidebarLeftCollapse", "\uf004" },
+        { "IconLayoutSidebarLeftCollapseFilled", "\ufc3b" },
+        { "IconLayoutSidebarLeftExpand", "\uf005" },
+        { "IconLayoutSidebarLeftExpandFilled", "\ufc3c" },
+        { "IconLayoutSidebarRight", "\uead9" },
+        { "IconLayoutSidebarRightCollapse", "\uf006" },
+        { "IconLayoutSidebarRightCollapseFilled", "\ufc3d" },
+        { "IconLayoutSidebarRightExpand", "\uf007" },
+        { "IconLayoutSidebarRightExpandFilled", "\ufc3e" },
+        { "IconLeaf", "\ued4f" },
+        { "IconLeafOff", "\uf400" },
+        { "IconLego", "\ueadc" },
+        { "IconLegoOff", "\uf401" },
+        { "IconLemon", "\uef10" },
+        { "IconLemon2", "\uef81" },
+        { "IconLetterA", "\uec50" },
+        { "IconLetterB", "\uec51" },
+        { "IconLetterC", "\uec52" },
+        { "IconLetterCase", "\ueea5" },
+        { "IconLetterCaseLower", "\ueea2" },
+        { "IconLetterCaseToggle", "\ueea3" },
+        { "IconLetterCaseUpper", "\ueea4" },
+        { "IconLetterD", "\uec53" },
+        { "IconLetterE", "\uec54" },
+        { "IconLetterF", "\uec55" },
+        { "IconLetterG", "\uec56" },
+        { "IconLetterH", "\uec57" },
+        { "IconLetterI", "\uec58" },
+        { "IconLetterJ", "\uec59" },
+        { "IconLetterK", "\uec5a" },
+        { "IconLetterL", "\uec5b" },
+        { "IconLetterM", "\uec5c" },
+        { "IconLetterN", "\uec5d" },
+        { "IconLetterO", "\uec5e" },
+        { "IconLetterP", "\uec5f" },
+        { "IconLetterQ", "\uec60" },
+        { "IconLetterR", "\uec61" },
+        { "IconLetterS", "\uec62" },
+        { "IconLetterSpacing", "\ueea6" },
+        { "IconLetterT", "\uec63" },
+        { "IconLetterU", "\uec64" },
+        { "IconLetterV", "\uec65" },
+        { "IconLetterW", "\uec66" },
+        { "IconLetterX", "\uec67" },
+        { "IconLetterY", "\uec68" },
+        { "IconLetterZ", "\uec69" },
+        { "IconLicense", "\uebc0" },
+        { "IconLicenseOff", "\uf153" },
+        { "IconLifebuoy", "\ueadd" },
+        { "IconLifebuoyOff", "\uf154" },
+        { "IconLighter", "\uf794" },
+        { "IconLine", "\uec40" },
+        { "IconLineDashed", "\ueea7" },
+        { "IconLineDotted", "\ueea8" },
+        { "IconLineHeight", "\ueb94" },
+        { "IconLink", "\ueade" },
+        { "IconLinkOff", "\uf402" },
+        { "IconList", "\ueb6b" },
+        { "IconListCheck", "\ueb6a" },
+        { "IconListDetails", "\uef40" },
+        { "IconListNumbers", "\uef11" },
+        { "IconListSearch", "\ueea9" },
+        { "IconListTree", "\ufafa" },
+        { "IconLivePhoto", "\ueadf" },
+        { "IconLivePhotoOff", "\uf403" },
+        { "IconLiveView", "\uec6b" },
+        { "IconLoadBalancer", "\ufa5c" },
+        { "IconLoader", "\ueca3" },
+        { "IconLoader2", "\uf226" },
+        { "IconLoader3", "\uf513" },
+        { "IconLoaderQuarter", "\ueca2" },
+        { "IconLocation", "\ueae0" },
+        { "IconLocationBolt", "\ufbaf" },
+        { "IconLocationBroken", "\uf2c4" },
+        { "IconLocationCancel", "\ufbb0" },
+        { "IconLocationCheck", "\ufbb1" },
+        { "IconLocationCode", "\ufbb2" },
+        { "IconLocationCog", "\ufbb3" },
+        { "IconLocationDiscount", "\ufbb4" },
+        { "IconLocationDollar", "\ufbb5" },
+        { "IconLocationDown", "\ufbb6" },
+        { "IconLocationExclamation", "\ufbb7" },
+        { "IconLocationFilled", "\uf67f" },
+        { "IconLocationHeart", "\ufbb8" },
+        { "IconLocationMinus", "\ufbb9" },
+        { "IconLocationOff", "\uf155" },
+        { "IconLocationPause", "\ufbba" },
+        { "IconLocationPin", "\ufbbb" },
+        { "IconLocationPlus", "\ufbbc" },
+        { "IconLocationQuestion", "\ufbbd" },
+        { "IconLocationSearch", "\ufbbe" },
+        { "IconLocationShare", "\ufbbf" },
+        { "IconLocationStar", "\ufbc0" },
+        { "IconLocationUp", "\ufbc1" },
+        { "IconLocationX", "\ufbc2" },
+        { "IconLock", "\ueae2" },
+        { "IconLockAccess", "\ueeaa" },
+        { "IconLockAccessOff", "\uf404" },
+        { "IconLockBolt", "\uf924" },
+        { "IconLockCancel", "\uf925" },
+        { "IconLockCheck", "\uf926" },
+        { "IconLockCode", "\uf927" },
+        { "IconLockCog", "\uf928" },
+        { "IconLockDollar", "\uf929" },
+        { "IconLockDown", "\uf92a" },
+        { "IconLockExclamation", "\uf92b" },
+        { "IconLockHeart", "\uf92c" },
+        { "IconLockMinus", "\uf92d" },
+        { "IconLockOff", "\ued1e" },
+        { "IconLockOpen", "\ueae1" },
+        { "IconLockOpenOff", "\uf156" },
+        { "IconLockPause", "\uf92e" },
+        { "IconLockPin", "\uf92f" },
+        { "IconLockPlus", "\uf930" },
+        { "IconLockQuestion", "\uf931" },
+        { "IconLockSearch", "\uf932" },
+        { "IconLockShare", "\uf933" },
+        { "IconLockSquare", "\uef51" },
+        { "IconLockSquareRounded", "\uf636" },
+        { "IconLockSquareRoundedFilled", "\uf6da" },
+        { "IconLockStar", "\uf934" },
+        { "IconLockUp", "\uf935" },
+        { "IconLockX", "\uf936" },
+        { "IconLogicAnd", "\uf240" },
+        { "IconLogicBuffer", "\uf241" },
+        { "IconLogicNand", "\uf242" },
+        { "IconLogicNor", "\uf243" },
+        { "IconLogicNot", "\uf244" },
+        { "IconLogicOr", "\uf245" },
+        { "IconLogicXnor", "\uf246" },
+        { "IconLogicXor", "\uf247" },
+        { "IconLogin", "\ueba7" },
+        { "IconLogout", "\ueba8" },
+        { "IconLogout2", "\ufa7e" },
+        { "IconLollipop", "\uefcc" },
+        { "IconLollipopOff", "\uf157" },
+        { "IconLuggage", "\uefad" },
+        { "IconLuggageOff", "\uf158" },
+        { "IconLungs", "\uef62" },
+        { "IconLungsOff", "\uf405" },
+        { "IconMacro", "\ueeab" },
+        { "IconMacroOff", "\uf406" },
+        { "IconMagnet", "\ueae3" },
+        { "IconMagnetOff", "\uf159" },
+        { "IconMail", "\ueae5" },
+        { "IconMailAi", "\ufa31" },
+        { "IconMailBolt", "\uf937" },
+        { "IconMailCancel", "\uf938" },
+        { "IconMailCheck", "\uf939" },
+        { "IconMailCode", "\uf93a" },
+        { "IconMailCog", "\uf93b" },
+        { "IconMailDollar", "\uf93c" },
+        { "IconMailDown", "\uf93d" },
+        { "IconMailExclamation", "\uf93e" },
+        { "IconMailFast", "\uf069" },
+        { "IconMailFilled", "\ufa47" },
+        { "IconMailForward", "\ueeac" },
+        { "IconMailHeart", "\uf93f" },
+        { "IconMailMinus", "\uf940" },
+        { "IconMailOff", "\uf15a" },
+        { "IconMailOpened", "\ueae4" },
+        { "IconMailOpenedFilled", "\ufa48" },
+        { "IconMailPause", "\uf941" },
+        { "IconMailPin", "\uf942" },
+        { "IconMailPlus", "\uf943" },
+        { "IconMailQuestion", "\uf944" },
+        { "IconMailSearch", "\uf945" },
+        { "IconMailShare", "\uf946" },
+        { "IconMailStar", "\uf947" },
+        { "IconMailUp", "\uf948" },
+        { "IconMailX", "\uf949" },
+        { "IconMailbox", "\ueead" },
+        { "IconMailboxOff", "\uf15b" },
+        { "IconMan", "\ueae6" },
+        { "IconManualGearbox", "\ued7b" },
+        { "IconMap", "\ueae9" },
+        { "IconMap2", "\ueae7" },
+        { "IconMapBolt", "\ufbc3" },
+        { "IconMapCancel", "\ufbc4" },
+        { "IconMapCheck", "\ufbc5" },
+        { "IconMapCode", "\ufbc6" },
+        { "IconMapCog", "\ufbc7" },
+        { "IconMapDiscount", "\ufbc8" },
+        { "IconMapDollar", "\ufbc9" },
+        { "IconMapDown", "\ufbca" },
+        { "IconMapExclamation", "\ufbcb" },
+        { "IconMapHeart", "\ufbcc" },
+        { "IconMapMinus", "\ufbcd" },
+        { "IconMapOff", "\uf15c" },
+        { "IconMapPause", "\ufbce" },
+        { "IconMapPin", "\ueae8" },
+        { "IconMapPinBolt", "\uf94a" },
+        { "IconMapPinCancel", "\uf94b" },
+        { "IconMapPinCheck", "\uf94c" },
+        { "IconMapPinCode", "\uf94d" },
+        { "IconMapPinCog", "\uf94e" },
+        { "IconMapPinDollar", "\uf94f" },
+        { "IconMapPinDown", "\uf950" },
+        { "IconMapPinExclamation", "\uf951" },
+        { "IconMapPinFilled", "\uf680" },
+        { "IconMapPinHeart", "\uf952" },
+        { "IconMapPinMinus", "\uf953" },
+        { "IconMapPinOff", "\uecf3" },
+        { "IconMapPinPause", "\uf954" },
+        { "IconMapPinPin", "\uf955" },
+        { "IconMapPinPlus", "\uf956" },
+        { "IconMapPinQuestion", "\uf957" },
+        { "IconMapPinSearch", "\uf958" },
+        { "IconMapPinShare", "\uf795" },
+        { "IconMapPinStar", "\uf959" },
+        { "IconMapPinUp", "\uf95a" },
+        { "IconMapPinX", "\uf95b" },
+        { "IconMapPins", "\ued5e" },
+        { "IconMapPlus", "\ufbcf" },
+        { "IconMapQuestion", "\ufbd0" },
+        { "IconMapSearch", "\uef82" },
+        { "IconMapShare", "\ufbd1" },
+        { "IconMapStar", "\ufbd2" },
+        { "IconMapUp", "\ufbd3" },
+        { "IconMapX", "\ufbd4" },
+        { "IconMarkdown", "\uec41" },
+        { "IconMarkdownOff", "\uf407" },
+        { "IconMarquee", "\uec77" },
+        { "IconMarquee2", "\ueeae" },
+        { "IconMarqueeOff", "\uf15d" },
+        { "IconMars", "\uec80" },
+        { "IconMask", "\ueeb0" },
+        { "IconMaskOff", "\ueeaf" },
+        { "IconMasksTheater", "\uf263" },
+        { "IconMasksTheaterOff", "\uf408" },
+        { "IconMassage", "\ueeb1" },
+        { "IconMatchstick", "\uf577" },
+        { "IconMath", "\uebeb" },
+        { "IconMath1Divide2", "\uf4e2" },
+        { "IconMath1Divide3", "\uf4e3" },
+        { "IconMathAvg", "\uf0f4" },
+        { "IconMathEqualGreater", "\uf4e4" },
+        { "IconMathEqualLower", "\uf4e5" },
+        { "IconMathFunction", "\ueeb2" },
+        { "IconMathFunctionOff", "\uf15e" },
+        { "IconMathFunctionY", "\uf4e6" },
+        { "IconMathGreater", "\uf4e7" },
+        { "IconMathIntegral", "\uf4e9" },
+        { "IconMathIntegralX", "\uf4e8" },
+        { "IconMathIntegrals", "\uf4ea" },
+        { "IconMathLower", "\uf4eb" },
+        { "IconMathMax", "\uf0f5" },
+        { "IconMathMin", "\uf0f6" },
+        { "IconMathNot", "\uf4ec" },
+        { "IconMathOff", "\uf409" },
+        { "IconMathPi", "\uf4ee" },
+        { "IconMathPiDivide2", "\uf4ed" },
+        { "IconMathSymbols", "\ueeb3" },
+        { "IconMathXDivide2", "\uf4ef" },
+        { "IconMathXDivideY", "\uf4f1" },
+        { "IconMathXDivideY2", "\uf4f0" },
+        { "IconMathXMinusX", "\uf4f2" },
+        { "IconMathXMinusY", "\uf4f3" },
+        { "IconMathXPlusX", "\uf4f4" },
+        { "IconMathXPlusY", "\uf4f5" },
+        { "IconMathXy", "\uf4f6" },
+        { "IconMathYMinusY", "\uf4f7" },
+        { "IconMathYPlusY", "\uf4f8" },
+        { "IconMaximize", "\ueaea" },
+        { "IconMaximizeOff", "\uf15f" },
+        { "IconMeat", "\uef12" },
+        { "IconMeatOff", "\uf40a" },
+        { "IconMedal", "\uec78" },
+        { "IconMedal2", "\uefcd" },
+        { "IconMedicalCross", "\uec2f" },
+        { "IconMedicalCrossCircle", "\ufae8" },
+        { "IconMedicalCrossFilled", "\uf681" },
+        { "IconMedicalCrossOff", "\uf160" },
+        { "IconMedicineSyrup", "\uef63" },
+        { "IconMeeple", "\uf514" },
+        { "IconMenorah", "\uf58c" },
+        { "IconMenu", "\ueaeb" },
+        { "IconMenu2", "\uec42" },
+        { "IconMenuDeep", "\ufafb" },
+        { "IconMenuOrder", "\uf5f5" },
+        { "IconMessage", "\ueaef" },
+        { "IconMessage2", "\ueaec" },
+        { "IconMessage2Bolt", "\uf95c" },
+        { "IconMessage2Cancel", "\uf95d" },
+        { "IconMessage2Check", "\uf95e" },
+        { "IconMessage2Code", "\uf012" },
+        { "IconMessage2Cog", "\uf95f" },
+        { "IconMessage2Dollar", "\uf960" },
+        { "IconMessage2Down", "\uf961" },
+        { "IconMessage2Exclamation", "\uf962" },
+        { "IconMessage2Heart", "\uf963" },
+        { "IconMessage2Minus", "\uf964" },
+        { "IconMessage2Off", "\uf40b" },
+        { "IconMessage2Pause", "\uf965" },
+        { "IconMessage2Pin", "\uf966" },
+        { "IconMessage2Plus", "\uf967" },
+        { "IconMessage2Question", "\uf968" },
+        { "IconMessage2Search", "\uf969" },
+        { "IconMessage2Share", "\uf077" },
+        { "IconMessage2Star", "\uf96a" },
+        { "IconMessage2Up", "\uf96b" },
+        { "IconMessage2X", "\uf96c" },
+        { "IconMessageBolt", "\uf96d" },
+        { "IconMessageCancel", "\uf96e" },
+        { "IconMessageChatbot", "\uf38a" },
+        { "IconMessageCheck", "\uf96f" },
+        { "IconMessageCircle", "\ueaed" },
+        { "IconMessageCircle2", "\ued3f" },
+        { "IconMessageCircle2Filled", "\uf682" },
+        { "IconMessageCircleBolt", "\uf970" },
+        { "IconMessageCircleCancel", "\uf971" },
+        { "IconMessageCircleCheck", "\uf972" },
+        { "IconMessageCircleCode", "\uf973" },
+        { "IconMessageCircleCog", "\uf974" },
+        { "IconMessageCircleDollar", "\uf975" },
+        { "IconMessageCircleDown", "\uf976" },
+        { "IconMessageCircleExclamation", "\uf977" },
+        { "IconMessageCircleHeart", "\uf978" },
+        { "IconMessageCircleMinus", "\uf979" },
+        { "IconMessageCircleOff", "\ued40" },
+        { "IconMessageCirclePause", "\uf97a" },
+        { "IconMessageCirclePin", "\uf97b" },
+        { "IconMessageCirclePlus", "\uf97c" },
+        { "IconMessageCircleQuestion", "\uf97d" },
+        { "IconMessageCircleSearch", "\uf97e" },
+        { "IconMessageCircleShare", "\uf97f" },
+        { "IconMessageCircleStar", "\uf980" },
+        { "IconMessageCircleUp", "\uf981" },
+        { "IconMessageCircleX", "\uf982" },
+        { "IconMessageCode", "\uf013" },
+        { "IconMessageCog", "\uf983" },
+        { "IconMessageDollar", "\uf984" },
+        { "IconMessageDots", "\ueaee" },
+        { "IconMessageDown", "\uf985" },
+        { "IconMessageExclamation", "\uf986" },
+        { "IconMessageForward", "\uf28f" },
+        { "IconMessageHeart", "\uf987" },
+        { "IconMessageLanguage", "\uefae" },
+        { "IconMessageMinus", "\uf988" },
+        { "IconMessageOff", "\ued41" },
+        { "IconMessagePause", "\uf989" },
+        { "IconMessagePin", "\uf98a" },
+        { "IconMessagePlus", "\uec9a" },
+        { "IconMessageQuestion", "\uf98b" },
+        { "IconMessageReport", "\uec9b" },
+        { "IconMessageSearch", "\uf98c" },
+        { "IconMessageShare", "\uf078" },
+        { "IconMessageStar", "\uf98d" },
+        { "IconMessageUp", "\uf98e" },
+        { "IconMessageX", "\uf98f" },
+        { "IconMessages", "\ueb6c" },
+        { "IconMessagesOff", "\ued42" },
+        { "IconMeteor", "\uf1fd" },
+        { "IconMeteorOff", "\uf40c" },
+        { "IconMichelinBibGourmand", "\ufae9" },
+        { "IconMichelinStar", "\ufaeb" },
+        { "IconMichelinStarGreen", "\ufaea" },
+        { "IconMickey", "\uf2a3" },
+        { "IconMickeyFilled", "\uf683" },
+        { "IconMicrophone", "\ueaf0" },
+        { "IconMicrophone2", "\uef2c" },
+        { "IconMicrophone2Off", "\uf40d" },
+        { "IconMicrophoneOff", "\ued16" },
+        { "IconMicroscope", "\uef64" },
+        { "IconMicroscopeOff", "\uf40e" },
+        { "IconMicrowave", "\uf248" },
+        { "IconMicrowaveOff", "\uf264" },
+        { "IconMilitaryAward", "\uf079" },
+        { "IconMilitaryRank", "\uefcf" },
+        { "IconMilk", "\uef13" },
+        { "IconMilkOff", "\uf40f" },
+        { "IconMilkshake", "\uf4c8" },
+        { "IconMinimize", "\ueaf1" },
+        { "IconMinus", "\ueaf2" },
+        { "IconMinusVertical", "\ueeb4" },
+        { "IconMist", "\uec30" },
+        { "IconMistOff", "\uf410" },
+        { "IconMobiledata", "\uf9f5" },
+        { "IconMobiledataOff", "\uf9f4" },
+        { "IconMoneybag", "\uf506" },
+        { "IconMoodAngry", "\uf2de" },
+        { "IconMoodAnnoyed", "\uf2e0" },
+        { "IconMoodAnnoyed2", "\uf2df" },
+        { "IconMoodBoy", "\ued2d" },
+        { "IconMoodCheck", "\uf7b3" },
+        { "IconMoodCog", "\uf7b4" },
+        { "IconMoodConfuzed", "\ueaf3" },
+        { "IconMoodConfuzedFilled", "\uf7f2" },
+        { "IconMoodCrazyHappy", "\ued90" },
+        { "IconMoodCry", "\uecbb" },
+        { "IconMoodDollar", "\uf7b5" },
+        { "IconMoodEdit", "\ufa05" },
+        { "IconMoodEmpty", "\ueeb5" },
+        { "IconMoodEmptyFilled", "\uf7f3" },
+        { "IconMoodHappy", "\ueaf4" },
+        { "IconMoodHappyFilled", "\uf7f4" },
+        { "IconMoodHeart", "\uf7b6" },
+        { "IconMoodKid", "\uec03" },
+        { "IconMoodKidFilled", "\uf7f5" },
+        { "IconMoodLookLeft", "\uf2c5" },
+        { "IconMoodLookRight", "\uf2c6" },
+        { "IconMoodMinus", "\uf7b7" },
+        { "IconMoodNerd", "\uf2e1" },
+        { "IconMoodNervous", "\uef96" },
+        { "IconMoodNeutral", "\ueaf5" },
+        { "IconMoodNeutralFilled", "\uf7f6" },
+        { "IconMoodOff", "\uf161" },
+        { "IconMoodPin", "\uf7b8" },
+        { "IconMoodPlus", "\uf7b9" },
+        { "IconMoodSad", "\ueaf6" },
+        { "IconMoodSad2", "\uf2e2" },
+        { "IconMoodSadDizzy", "\uf2e3" },
+        { "IconMoodSadFilled", "\uf7f7" },
+        { "IconMoodSadSquint", "\uf2e4" },
+        { "IconMoodSearch", "\uf7ba" },
+        { "IconMoodShare", "\ufa06" },
+        { "IconMoodSick", "\uf2e5" },
+        { "IconMoodSilence", "\uf2e6" },
+        { "IconMoodSing", "\uf2c7" },
+        { "IconMoodSmile", "\ueaf7" },
+        { "IconMoodSmileBeam", "\uf2e7" },
+        { "IconMoodSmileDizzy", "\uf2e8" },
+        { "IconMoodSmileFilled", "\uf7f8" },
+        { "IconMoodSuprised", "\uec04" },
+        { "IconMoodTongue", "\ueb95" },
+        { "IconMoodTongueWink", "\uf2ea" },
+        { "IconMoodTongueWink2", "\uf2e9" },
+        { "IconMoodUnamused", "\uf2eb" },
+        { "IconMoodUp", "\uf7bb" },
+        { "IconMoodWink", "\uf2ed" },
+        { "IconMoodWink2", "\uf2ec" },
+        { "IconMoodWrrr", "\uf2ee" },
+        { "IconMoodX", "\uf7bc" },
+        { "IconMoodXd", "\uf2ef" },
+        { "IconMoon", "\ueaf8" },
+        { "IconMoon2", "\uece6" },
+        { "IconMoonFilled", "\uf684" },
+        { "IconMoonOff", "\uf162" },
+        { "IconMoonStars", "\uece7" },
+        { "IconMoped", "\uecbc" },
+        { "IconMotorbike", "\ueeb6" },
+        { "IconMountain", "\uef97" },
+        { "IconMountainOff", "\uf411" },
+        { "IconMouse", "\ueaf9" },
+        { "IconMouse2", "\uf1d7" },
+        { "IconMouseFilled", "\ufb2f" },
+        { "IconMouseOff", "\uf163" },
+        { "IconMoustache", "\uf4c9" },
+        { "IconMovie", "\ueafa" },
+        { "IconMovieOff", "\uf164" },
+        { "IconMug", "\ueafb" },
+        { "IconMugOff", "\uf165" },
+        { "IconMultiplier05x", "\uef41" },
+        { "IconMultiplier15x", "\uef42" },
+        { "IconMultiplier1x", "\uef43" },
+        { "IconMultiplier2x", "\uef44" },
+        { "IconMushroom", "\uef14" },
+        { "IconMushroomFilled", "\uf7f9" },
+        { "IconMushroomOff", "\uf412" },
+        { "IconMusic", "\ueafc" },
+        { "IconMusicBolt", "\ufbd5" },
+        { "IconMusicCancel", "\ufbd6" },
+        { "IconMusicCheck", "\ufbd7" },
+        { "IconMusicCode", "\ufbd8" },
+        { "IconMusicCog", "\ufbd9" },
+        { "IconMusicDiscount", "\ufbda" },
+        { "IconMusicDollar", "\ufbdb" },
+        { "IconMusicDown", "\ufbdc" },
+        { "IconMusicExclamation", "\ufbdd" },
+        { "IconMusicHeart", "\ufbde" },
+        { "IconMusicMinus", "\ufbdf" },
+        { "IconMusicOff", "\uf166" },
+        { "IconMusicPause", "\ufbe0" },
+        { "IconMusicPin", "\ufbe1" },
+        { "IconMusicPlus", "\ufbe2" },
+        { "IconMusicQuestion", "\ufbe3" },
+        { "IconMusicSearch", "\ufbe4" },
+        { "IconMusicShare", "\ufbe5" },
+        { "IconMusicStar", "\ufbe6" },
+        { "IconMusicUp", "\ufbe7" },
+        { "IconMusicX", "\ufbe8" },
+        { "IconNavigation", "\uf2c8" },
+        { "IconNavigationBolt", "\ufbe9" },
+        { "IconNavigationCancel", "\ufbea" },
+        { "IconNavigationCheck", "\ufbeb" },
+        { "IconNavigationCode", "\ufbec" },
+        { "IconNavigationCog", "\ufbed" },
+        { "IconNavigationDiscount", "\ufbee" },
+        { "IconNavigationDollar", "\ufbef" },
+        { "IconNavigationDown", "\ufbf0" },
+        { "IconNavigationExclamation", "\ufbf1" },
+        { "IconNavigationFilled", "\uf685" },
+        { "IconNavigationHeart", "\ufbf2" },
+        { "IconNavigationMinus", "\ufbf3" },
+        { "IconNavigationNorth", "\ufaec" },
+        { "IconNavigationOff", "\uf413" },
+        { "IconNavigationPause", "\ufbf4" },
+        { "IconNavigationPin", "\ufbf5" },
+        { "IconNavigationPlus", "\ufbf6" },
+        { "IconNavigationQuestion", "\ufbf7" },
+        { "IconNavigationSearch", "\ufbf8" },
+        { "IconNavigationShare", "\ufbf9" },
+        { "IconNavigationStar", "\ufbfa" },
+        { "IconNavigationUp", "\ufbfb" },
+        { "IconNavigationX", "\ufbfc" },
+        { "IconNeedle", "\uf508" },
+        { "IconNeedleThread", "\uf507" },
+        { "IconNetwork", "\uf09f" },
+        { "IconNetworkOff", "\uf414" },
+        { "IconNewSection", "\uebc1" },
+        { "IconNews", "\ueafd" },
+        { "IconNewsOff", "\uf167" },
+        { "IconNfc", "\ueeb7" },
+        { "IconNfcOff", "\uf168" },
+        { "IconNoCopyright", "\uefb9" },
+        { "IconNoCreativeCommons", "\uefba" },
+        { "IconNoDerivatives", "\uefbb" },
+        { "IconNorthStar", "\uf014" },
+        { "IconNote", "\ueb6d" },
+        { "IconNoteOff", "\uf169" },
+        { "IconNotebook", "\ueb96" },
+        { "IconNotebookOff", "\uf415" },
+        { "IconNotes", "\ueb6e" },
+        { "IconNotesOff", "\uf16a" },
+        { "IconNotification", "\ueafe" },
+        { "IconNotificationOff", "\uf16b" },
+        { "IconNumber", "\uf1fe" },
+        { "IconNumber0", "\uedf0" },
+        { "IconNumber1", "\uedf1" },
+        { "IconNumber2", "\uedf2" },
+        { "IconNumber3", "\uedf3" },
+        { "IconNumber4", "\uedf4" },
+        { "IconNumber5", "\uedf5" },
+        { "IconNumber6", "\uedf6" },
+        { "IconNumber7", "\uedf7" },
+        { "IconNumber8", "\uedf8" },
+        { "IconNumber9", "\uedf9" },
+        { "IconNumbers", "\uf015" },
+        { "IconNurse", "\uef65" },
+        { "IconOctagon", "\uecbd" },
+        { "IconOctagonFilled", "\uf686" },
+        { "IconOctagonOff", "\ueeb8" },
+        { "IconOctahedron", "\ufaae" },
+        { "IconOctahedronOff", "\ufaac" },
+        { "IconOctahedronPlus", "\ufaad" },
+        { "IconOld", "\ueeb9" },
+        { "IconOlympics", "\ueeba" },
+        { "IconOlympicsOff", "\uf416" },
+        { "IconOm", "\uf58d" },
+        { "IconOmega", "\ueb97" },
+        { "IconOutbound", "\uf249" },
+        { "IconOutlet", "\uebd7" },
+        { "IconOval", "\uf02e" },
+        { "IconOvalFilled", "\uf687" },
+        { "IconOvalVertical", "\uf02d" },
+        { "IconOvalVerticalFilled", "\uf688" },
+        { "IconOverline", "\ueebb" },
+        { "IconPackage", "\ueaff" },
+        { "IconPackageExport", "\uf07a" },
+        { "IconPackageImport", "\uf07b" },
+        { "IconPackageOff", "\uf16c" },
+        { "IconPackages", "\uf2c9" },
+        { "IconPacman", "\ueebc" },
+        { "IconPageBreak", "\uec81" },
+        { "IconPaint", "\ueb00" },
+        { "IconPaintFilled", "\uf75f" },
+        { "IconPaintOff", "\uf16d" },
+        { "IconPalette", "\ueb01" },
+        { "IconPaletteOff", "\uf16e" },
+        { "IconPanoramaHorizontal", "\ued33" },
+        { "IconPanoramaHorizontalOff", "\uf417" },
+        { "IconPanoramaVertical", "\ued34" },
+        { "IconPanoramaVerticalOff", "\uf418" },
+        { "IconPaperBag", "\uf02f" },
+        { "IconPaperBagOff", "\uf16f" },
+        { "IconPaperclip", "\ueb02" },
+        { "IconParachute", "\ued7c" },
+        { "IconParachuteOff", "\uf170" },
+        { "IconParentheses", "\uebd8" },
+        { "IconParenthesesOff", "\uf171" },
+        { "IconParking", "\ueb03" },
+        { "IconParkingOff", "\uf172" },
+        { "IconPassword", "\uf4ca" },
+        { "IconPaw", "\ueff9" },
+        { "IconPawFilled", "\uf689" },
+        { "IconPawOff", "\uf419" },
+        { "IconPdf", "\uf7ac" },
+        { "IconPeace", "\uecbe" },
+        { "IconPencil", "\ueb04" },
+        { "IconPencilBolt", "\ufbfd" },
+        { "IconPencilCancel", "\ufbfe" },
+        { "IconPencilCheck", "\ufbff" },
+        { "IconPencilCode", "\ufc00" },
+        { "IconPencilCog", "\ufc01" },
+        { "IconPencilDiscount", "\ufc02" },
+        { "IconPencilDollar", "\ufc03" },
+        { "IconPencilDown", "\ufc04" },
+        { "IconPencilExclamation", "\ufc05" },
+        { "IconPencilHeart", "\ufc06" },
+        { "IconPencilMinus", "\uf1eb" },
+        { "IconPencilOff", "\uf173" },
+        { "IconPencilPause", "\ufc07" },
+        { "IconPencilPin", "\ufc08" },
+        { "IconPencilPlus", "\uf1ec" },
+        { "IconPencilQuestion", "\ufc09" },
+        { "IconPencilSearch", "\ufc0a" },
+        { "IconPencilShare", "\ufc0b" },
+        { "IconPencilStar", "\ufc0c" },
+        { "IconPencilUp", "\ufc0d" },
+        { "IconPencilX", "\ufc0e" },
+        { "IconPennant", "\ued7d" },
+        { "IconPennant2", "\uf06a" },
+        { "IconPennant2Filled", "\uf68a" },
+        { "IconPennantFilled", "\uf68b" },
+        { "IconPennantOff", "\uf174" },
+        { "IconPentagon", "\uefe3" },
+        { "IconPentagonFilled", "\uf68c" },
+        { "IconPentagonOff", "\uf41a" },
+        { "IconPentagram", "\uf586" },
+        { "IconPepper", "\uef15" },
+        { "IconPepperOff", "\uf175" },
+        { "IconPercentage", "\uecf4" },
+        { "IconPerfume", "\uf509" },
+        { "IconPerspective", "\ueebd" },
+        { "IconPerspectiveOff", "\uf176" },
+        { "IconPhone", "\ueb09" },
+        { "IconPhoneCall", "\ueb05" },
+        { "IconPhoneCalling", "\uec43" },
+        { "IconPhoneCheck", "\uec05" },
+        { "IconPhoneFilled", "\ufa49" },
+        { "IconPhoneIncoming", "\ueb06" },
+        { "IconPhoneOff", "\uecf5" },
+        { "IconPhoneOutgoing", "\ueb07" },
+        { "IconPhonePause", "\ueb08" },
+        { "IconPhonePlus", "\uec06" },
+        { "IconPhoneX", "\uec07" },
+        { "IconPhoto", "\ueb0a" },
+        { "IconPhotoAi", "\ufa32" },
+        { "IconPhotoBolt", "\uf990" },
+        { "IconPhotoCancel", "\uf35d" },
+        { "IconPhotoCheck", "\uf35e" },
+        { "IconPhotoCode", "\uf991" },
+        { "IconPhotoCog", "\uf992" },
+        { "IconPhotoDollar", "\uf993" },
+        { "IconPhotoDown", "\uf35f" },
+        { "IconPhotoEdit", "\uf360" },
+        { "IconPhotoExclamation", "\uf994" },
+        { "IconPhotoFilled", "\ufa4a" },
+        { "IconPhotoHeart", "\uf361" },
+        { "IconPhotoMinus", "\uf362" },
+        { "IconPhotoOff", "\uecf6" },
+        { "IconPhotoPause", "\uf995" },
+        { "IconPhotoPin", "\uf996" },
+        { "IconPhotoPlus", "\uf363" },
+        { "IconPhotoQuestion", "\uf997" },
+        { "IconPhotoSearch", "\uf364" },
+        { "IconPhotoSensor", "\uf798" },
+        { "IconPhotoSensor2", "\uf796" },
+        { "IconPhotoSensor3", "\uf797" },
+        { "IconPhotoShare", "\uf998" },
+        { "IconPhotoShield", "\uf365" },
+        { "IconPhotoStar", "\uf366" },
+        { "IconPhotoUp", "\uf38b" },
+        { "IconPhotoX", "\uf367" },
+        { "IconPhysotherapist", "\ueebe" },
+        { "IconPiano", "\ufad3" },
+        { "IconPick", "\ufafc" },
+        { "IconPictureInPicture", "\ued35" },
+        { "IconPictureInPictureOff", "\ued43" },
+        { "IconPictureInPictureOn", "\ued44" },
+        { "IconPictureInPictureTop", "\uefe4" },
+        { "IconPig", "\uef52" },
+        { "IconPigMoney", "\uf38c" },
+        { "IconPigOff", "\uf177" },
+        { "IconPilcrow", "\uf5f6" },
+        { "IconPill", "\uec44" },
+        { "IconPillOff", "\uf178" },
+        { "IconPills", "\uef66" },
+        { "IconPin", "\uec9c" },
+        { "IconPinFilled", "\uf68d" },
+        { "IconPingPong", "\uf38d" },
+        { "IconPinned", "\ued60" },
+        { "IconPinnedFilled", "\uf68e" },
+        { "IconPinnedOff", "\ued5f" },
+        { "IconPizza", "\uedbb" },
+        { "IconPizzaOff", "\uf179" },
+        { "IconPlaceholder", "\uf626" },
+        { "IconPlane", "\ueb6f" },
+        { "IconPlaneArrival", "\ueb99" },
+        { "IconPlaneDeparture", "\ueb9a" },
+        { "IconPlaneInflight", "\uef98" },
+        { "IconPlaneOff", "\uf17a" },
+        { "IconPlaneTilt", "\uf1ed" },
+        { "IconPlanet", "\uec08" },
+        { "IconPlanetOff", "\uf17b" },
+        { "IconPlant", "\ued50" },
+        { "IconPlant2", "\ued7e" },
+        { "IconPlant2Off", "\uf17c" },
+        { "IconPlantOff", "\uf17d" },
+        { "IconPlayBasketball", "\ufa66" },
+        { "IconPlayCard", "\ueebf" },
+        { "IconPlayCardOff", "\uf17e" },
+        { "IconPlayFootball", "\ufa67" },
+        { "IconPlayHandball", "\ufa68" },
+        { "IconPlayVolleyball", "\ufa69" },
+        { "IconPlayerEject", "\uefbc" },
+        { "IconPlayerEjectFilled", "\uf68f" },
+        { "IconPlayerPause", "\ued45" },
+        { "IconPlayerPauseFilled", "\uf690" },
+        { "IconPlayerPlay", "\ued46" },
+        { "IconPlayerPlayFilled", "\uf691" },
+        { "IconPlayerRecord", "\ued47" },
+        { "IconPlayerRecordFilled", "\uf692" },
+        { "IconPlayerSkipBack", "\ued48" },
+        { "IconPlayerSkipBackFilled", "\uf693" },
+        { "IconPlayerSkipForward", "\ued49" },
+        { "IconPlayerSkipForwardFilled", "\uf694" },
+        { "IconPlayerStop", "\ued4a" },
+        { "IconPlayerStopFilled", "\uf695" },
+        { "IconPlayerTrackNext", "\ued4b" },
+        { "IconPlayerTrackNextFilled", "\uf696" },
+        { "IconPlayerTrackPrev", "\ued4c" },
+        { "IconPlayerTrackPrevFilled", "\uf697" },
+        { "IconPlaylist", "\ueec0" },
+        { "IconPlaylistAdd", "\uf008" },
+        { "IconPlaylistOff", "\uf17f" },
+        { "IconPlaylistX", "\uf009" },
+        { "IconPlaystationCircle", "\uf2ad" },
+        { "IconPlaystationSquare", "\uf2ae" },
+        { "IconPlaystationTriangle", "\uf2af" },
+        { "IconPlaystationX", "\uf2b0" },
+        { "IconPlug", "\uebd9" },
+        { "IconPlugConnected", "\uf00a" },
+        { "IconPlugConnectedX", "\uf0a0" },
+        { "IconPlugOff", "\uf180" },
+        { "IconPlugX", "\uf0a1" },
+        { "IconPlus", "\ueb0b" },
+        { "IconPlusEqual", "\uf7ad" },
+        { "IconPlusMinus", "\uf7ae" },
+        { "IconPng", "\uf3ad" },
+        { "IconPodium", "\uf1d8" },
+        { "IconPodiumOff", "\uf41b" },
+        { "IconPoint", "\ueb0c" },
+        { "IconPointFilled", "\uf698" },
+        { "IconPointOff", "\uf181" },
+        { "IconPointer", "\uf265" },
+        { "IconPointerBolt", "\uf999" },
+        { "IconPointerCancel", "\uf99a" },
+        { "IconPointerCheck", "\uf99b" },
+        { "IconPointerCode", "\uf99c" },
+        { "IconPointerCog", "\uf99d" },
+        { "IconPointerDollar", "\uf99e" },
+        { "IconPointerDown", "\uf99f" },
+        { "IconPointerExclamation", "\uf9a0" },
+        { "IconPointerFilled", "\ufb30" },
+        { "IconPointerHeart", "\uf9a1" },
+        { "IconPointerMinus", "\uf9a2" },
+        { "IconPointerOff", "\uf9a3" },
+        { "IconPointerPause", "\uf9a4" },
+        { "IconPointerPin", "\uf9a5" },
+        { "IconPointerPlus", "\uf9a6" },
+        { "IconPointerQuestion", "\uf9a7" },
+        { "IconPointerSearch", "\uf9a8" },
+        { "IconPointerShare", "\uf9a9" },
+        { "IconPointerStar", "\uf9aa" },
+        { "IconPointerUp", "\uf9ab" },
+        { "IconPointerX", "\uf9ac" },
+        { "IconPokeball", "\ueec1" },
+        { "IconPokeballOff", "\uf41c" },
+        { "IconPokerChip", "\uf515" },
+        { "IconPolaroid", "\ueec2" },
+        { "IconPolaroidFilled", "\ufa4b" },
+        { "IconPolygon", "\uefd0" },
+        { "IconPolygonOff", "\uf182" },
+        { "IconPoo", "\uf258" },
+        { "IconPool", "\ued91" },
+        { "IconPoolOff", "\uf41d" },
+        { "IconPower", "\ueb0d" },
+        { "IconPray", "\uecbf" },
+        { "IconPremiumRights", "\uefbd" },
+        { "IconPrescription", "\uef99" },
+        { "IconPresentation", "\ueb70" },
+        { "IconPresentationAnalytics", "\ueec3" },
+        { "IconPresentationOff", "\uf183" },
+        { "IconPrinter", "\ueb0e" },
+        { "IconPrinterOff", "\uf184" },
+        { "IconPrism", "\ufab1" },
+        { "IconPrismOff", "\ufaaf" },
+        { "IconPrismPlus", "\ufab0" },
+        { "IconPrison", "\uef79" },
+        { "IconProgress", "\ufa0d" },
+        { "IconProgressAlert", "\ufa07" },
+        { "IconProgressBolt", "\ufa08" },
+        { "IconProgressCheck", "\ufa09" },
+        { "IconProgressDown", "\ufa0a" },
+        { "IconProgressHelp", "\ufa0b" },
+        { "IconProgressX", "\ufa0c" },
+        { "IconPrompt", "\ueb0f" },
+        { "IconPropeller", "\ueec4" },
+        { "IconPropellerOff", "\uf185" },
+        { "IconPumpkinScary", "\uf587" },
+        { "IconPuzzle", "\ueb10" },
+        { "IconPuzzle2", "\uef83" },
+        { "IconPuzzleFilled", "\uf699" },
+        { "IconPuzzleOff", "\uf186" },
+        { "IconPyramid", "\ueec5" },
+        { "IconPyramidOff", "\uf187" },
+        { "IconPyramidPlus", "\ufab2" },
+        { "IconQrcode", "\ueb11" },
+        { "IconQrcodeOff", "\uf41e" },
+        { "IconQuestionMark", "\uec9d" },
+        { "IconQuote", "\uefbe" },
+        { "IconQuoteOff", "\uf188" },
+        { "IconQuotes", "\ufb1e" },
+        { "IconRadar", "\uf017" },
+        { "IconRadar2", "\uf016" },
+        { "IconRadarOff", "\uf41f" },
+        { "IconRadio", "\uef2d" },
+        { "IconRadioOff", "\uf420" },
+        { "IconRadioactive", "\uecc0" },
+        { "IconRadioactiveFilled", "\uf760" },
+        { "IconRadioactiveOff", "\uf189" },
+        { "IconRadiusBottomLeft", "\ueec6" },
+        { "IconRadiusBottomRight", "\ueec7" },
+        { "IconRadiusTopLeft", "\ueec8" },
+        { "IconRadiusTopRight", "\ueec9" },
+        { "IconRainbow", "\uedbc" },
+        { "IconRainbowOff", "\uf18a" },
+        { "IconRating12Plus", "\uf266" },
+        { "IconRating14Plus", "\uf267" },
+        { "IconRating16Plus", "\uf268" },
+        { "IconRating18Plus", "\uf269" },
+        { "IconRating21Plus", "\uf26a" },
+        { "IconRazor", "\uf4b5" },
+        { "IconRazorElectric", "\uf4b4" },
+        { "IconReceipt", "\uedfd" },
+        { "IconReceipt2", "\uedfa" },
+        { "IconReceiptOff", "\uedfb" },
+        { "IconReceiptRefund", "\uedfc" },
+        { "IconReceiptTax", "\uedbd" },
+        { "IconRecharging", "\ueeca" },
+        { "IconRecordMail", "\ueb12" },
+        { "IconRecordMailOff", "\uf18b" },
+        { "IconRectangle", "\ued37" },
+        { "IconRectangleFilled", "\uf69a" },
+        { "IconRectangleRoundedBottom", "\ufaed" },
+        { "IconRectangleRoundedTop", "\ufaee" },
+        { "IconRectangleVertical", "\ued36" },
+        { "IconRectangleVerticalFilled", "\uf69b" },
+        { "IconRectangularPrism", "\ufab5" },
+        { "IconRectangularPrismOff", "\ufab3" },
+        { "IconRectangularPrismPlus", "\ufab4" },
+        { "IconRecycle", "\ueb9b" },
+        { "IconRecycleOff", "\uf18c" },
+        { "IconRefresh", "\ueb13" },
+        { "IconRefreshAlert", "\ued57" },
+        { "IconRefreshDot", "\uefbf" },
+        { "IconRefreshOff", "\uf18d" },
+        { "IconRegex", "\uf31f" },
+        { "IconRegexOff", "\uf421" },
+        { "IconRegistered", "\ueb14" },
+        { "IconRelationManyToMany", "\ued7f" },
+        { "IconRelationOneToMany", "\ued80" },
+        { "IconRelationOneToOne", "\ued81" },
+        { "IconReload", "\uf3ae" },
+        { "IconReorder", "\ufc15" },
+        { "IconRepeat", "\ueb72" },
+        { "IconRepeatOff", "\uf18e" },
+        { "IconRepeatOnce", "\ueb71" },
+        { "IconReplace", "\uebc7" },
+        { "IconReplaceFilled", "\uf69c" },
+        { "IconReplaceOff", "\uf422" },
+        { "IconReport", "\ueece" },
+        { "IconReportAnalytics", "\ueecb" },
+        { "IconReportMedical", "\ueecc" },
+        { "IconReportMoney", "\ueecd" },
+        { "IconReportOff", "\uf18f" },
+        { "IconReportSearch", "\uef84" },
+        { "IconReservedLine", "\uf9f6" },
+        { "IconResize", "\ueecf" },
+        { "IconRestore", "\ufafd" },
+        { "IconRewindBackward10", "\ufaba" },
+        { "IconRewindBackward15", "\ufabb" },
+        { "IconRewindBackward20", "\ufabc" },
+        { "IconRewindBackward30", "\ufabd" },
+        { "IconRewindBackward40", "\ufabe" },
+        { "IconRewindBackward5", "\ufabf" },
+        { "IconRewindBackward50", "\ufac0" },
+        { "IconRewindBackward60", "\ufac1" },
+        { "IconRewindForward10", "\ufac2" },
+        { "IconRewindForward15", "\ufac3" },
+        { "IconRewindForward20", "\ufac4" },
+        { "IconRewindForward30", "\ufac5" },
+        { "IconRewindForward40", "\ufac6" },
+        { "IconRewindForward5", "\ufac7" },
+        { "IconRewindForward50", "\ufac8" },
+        { "IconRewindForward60", "\ufac9" },
+        { "IconRibbonHealth", "\uf58e" },
+        { "IconRings", "\ufa6a" },
+        { "IconRipple", "\ued82" },
+        { "IconRippleOff", "\uf190" },
+        { "IconRoad", "\uf018" },
+        { "IconRoadOff", "\uf191" },
+        { "IconRoadSign", "\uecdd" },
+        { "IconRobot", "\uf00b" },
+        { "IconRobotOff", "\uf192" },
+        { "IconRocket", "\uec45" },
+        { "IconRocketOff", "\uf193" },
+        { "IconRollerSkating", "\uefd1" },
+        { "IconRollercoaster", "\uf0a2" },
+        { "IconRollercoasterOff", "\uf423" },
+        { "IconRosette", "\uf599" },
+        { "IconRosetteFilled", "\uf69d" },
+        { "IconRosetteNumber0", "\uf58f" },
+        { "IconRosetteNumber1", "\uf590" },
+        { "IconRosetteNumber2", "\uf591" },
+        { "IconRosetteNumber3", "\uf592" },
+        { "IconRosetteNumber4", "\uf593" },
+        { "IconRosetteNumber5", "\uf594" },
+        { "IconRosetteNumber6", "\uf595" },
+        { "IconRosetteNumber7", "\uf596" },
+        { "IconRosetteNumber8", "\uf597" },
+        { "IconRosetteNumber9", "\uf598" },
+        { "IconRotate", "\ueb16" },
+        { "IconRotate2", "\uebb4" },
+        { "IconRotate360", "\uef85" },
+        { "IconRotateClockwise", "\ueb15" },
+        { "IconRotateClockwise2", "\uebb5" },
+        { "IconRotateDot", "\uefe5" },
+        { "IconRotateRectangle", "\uec15" },
+        { "IconRoute", "\ueb17" },
+        { "IconRoute2", "\uf4b6" },
+        { "IconRouteOff", "\uf194" },
+        { "IconRouter", "\ueb18" },
+        { "IconRouterOff", "\uf424" },
+        { "IconRowInsertBottom", "\ueed0" },
+        { "IconRowInsertTop", "\ueed1" },
+        { "IconRowRemove", "\ufafe" },
+        { "IconRss", "\ueb19" },
+        { "IconRubberStamp", "\uf5ab" },
+        { "IconRubberStampOff", "\uf5aa" },
+        { "IconRuler", "\ueb1a" },
+        { "IconRuler2", "\ueed2" },
+        { "IconRuler2Off", "\uf195" },
+        { "IconRuler3", "\uf290" },
+        { "IconRulerMeasure", "\uf291" },
+        { "IconRulerOff", "\uf196" },
+        { "IconRun", "\uec82" },
+        { "IconSTurnDown", "\uf516" },
+        { "IconSTurnLeft", "\uf517" },
+        { "IconSTurnRight", "\uf518" },
+        { "IconSTurnUp", "\uf519" },
+        { "IconSailboat", "\uec83" },
+        { "IconSailboat2", "\uf5f7" },
+        { "IconSailboatOff", "\uf425" },
+        { "IconSalad", "\uf50a" },
+        { "IconSalt", "\uef16" },
+        { "IconSatellite", "\ueed3" },
+        { "IconSatelliteOff", "\uf197" },
+        { "IconSausage", "\uef17" },
+        { "IconScale", "\uebc2" },
+        { "IconScaleOff", "\uf198" },
+        { "IconScaleOutline", "\uef53" },
+        { "IconScaleOutlineOff", "\uf199" },
+        { "IconScan", "\uebc8" },
+        { "IconScanEye", "\uf1ff" },
+        { "IconSchema", "\uf200" },
+        { "IconSchemaOff", "\uf426" },
+        { "IconSchool", "\uecf7" },
+        { "IconSchoolBell", "\uf64a" },
+        { "IconSchoolOff", "\uf19a" },
+        { "IconScissors", "\ueb1b" },
+        { "IconScissorsOff", "\uf19b" },
+        { "IconScooter", "\uec6c" },
+        { "IconScooterElectric", "\uecc1" },
+        { "IconScoreboard", "\ufa6b" },
+        { "IconScreenShare", "\ued18" },
+        { "IconScreenShareOff", "\ued17" },
+        { "IconScreenshot", "\uf201" },
+        { "IconScribble", "\uf0a3" },
+        { "IconScribbleOff", "\uf427" },
+        { "IconScript", "\uf2da" },
+        { "IconScriptMinus", "\uf2d7" },
+        { "IconScriptPlus", "\uf2d8" },
+        { "IconScriptX", "\uf2d9" },
+        { "IconScubaMask", "\ueed4" },
+        { "IconScubaMaskOff", "\uf428" },
+        { "IconSdk", "\uf3af" },
+        { "IconSearch", "\ueb1c" },
+        { "IconSearchOff", "\uf19c" },
+        { "IconSection", "\ueed5" },
+        { "IconSectionSign", "\uf019" },
+        { "IconSeeding", "\ued51" },
+        { "IconSeedingOff", "\uf19d" },
+        { "IconSelect", "\uec9e" },
+        { "IconSelectAll", "\uf9f7" },
+        { "IconSelector", "\ueb1d" },
+        { "IconSend", "\ueb1e" },
+        { "IconSendOff", "\uf429" },
+        { "IconSeo", "\uf26b" },
+        { "IconSeparator", "\uebda" },
+        { "IconSeparatorHorizontal", "\uec79" },
+        { "IconSeparatorVertical", "\uec7a" },
+        { "IconServer", "\ueb1f" },
+        { "IconServer2", "\uf07c" },
+        { "IconServerBolt", "\uf320" },
+        { "IconServerCog", "\uf321" },
+        { "IconServerOff", "\uf19e" },
+        { "IconServicemark", "\uec09" },
+        { "IconSettings", "\ueb20" },
+        { "IconSettings2", "\uf5ac" },
+        { "IconSettingsAutomation", "\ueed6" },
+        { "IconSettingsBolt", "\uf9ad" },
+        { "IconSettingsCancel", "\uf9ae" },
+        { "IconSettingsCheck", "\uf9af" },
+        { "IconSettingsCode", "\uf9b0" },
+        { "IconSettingsCog", "\uf9b1" },
+        { "IconSettingsDollar", "\uf9b2" },
+        { "IconSettingsDown", "\uf9b3" },
+        { "IconSettingsExclamation", "\uf9b4" },
+        { "IconSettingsFilled", "\uf69e" },
+        { "IconSettingsHeart", "\uf9b5" },
+        { "IconSettingsMinus", "\uf9b6" },
+        { "IconSettingsOff", "\uf19f" },
+        { "IconSettingsPause", "\uf9b7" },
+        { "IconSettingsPin", "\uf9b8" },
+        { "IconSettingsPlus", "\uf9b9" },
+        { "IconSettingsQuestion", "\uf9ba" },
+        { "IconSettingsSearch", "\uf9bb" },
+        { "IconSettingsShare", "\uf9bc" },
+        { "IconSettingsStar", "\uf9bd" },
+        { "IconSettingsUp", "\uf9be" },
+        { "IconSettingsX", "\uf9bf" },
+        { "IconShadow", "\ueed8" },
+        { "IconShadowOff", "\ueed7" },
+        { "IconShape", "\ueb9c" },
+        { "IconShape2", "\ueed9" },
+        { "IconShape3", "\ueeda" },
+        { "IconShapeOff", "\uf1a0" },
+        { "IconShare", "\ueb21" },
+        { "IconShare2", "\uf799" },
+        { "IconShare3", "\uf7bd" },
+        { "IconShareOff", "\uf1a1" },
+        { "IconShiJumping", "\ufa6c" },
+        { "IconShield", "\ueb24" },
+        { "IconShieldBolt", "\uf9c0" },
+        { "IconShieldCancel", "\uf9c1" },
+        { "IconShieldCheck", "\ueb22" },
+        { "IconShieldCheckFilled", "\uf761" },
+        { "IconShieldCheckered", "\uef9a" },
+        { "IconShieldCheckeredFilled", "\uf762" },
+        { "IconShieldChevron", "\uef9b" },
+        { "IconShieldCode", "\uf9c2" },
+        { "IconShieldCog", "\uf9c3" },
+        { "IconShieldDollar", "\uf9c4" },
+        { "IconShieldDown", "\uf9c5" },
+        { "IconShieldExclamation", "\uf9c6" },
+        { "IconShieldFilled", "\uf69f" },
+        { "IconShieldHalf", "\uf358" },
+        { "IconShieldHalfFilled", "\uf357" },
+        { "IconShieldHeart", "\uf9c7" },
+        { "IconShieldLock", "\ued58" },
+        { "IconShieldLockFilled", "\uf763" },
+        { "IconShieldMinus", "\uf9c8" },
+        { "IconShieldOff", "\uecf8" },
+        { "IconShieldPause", "\uf9c9" },
+        { "IconShieldPin", "\uf9ca" },
+        { "IconShieldPlus", "\uf9cb" },
+        { "IconShieldQuestion", "\uf9cc" },
+        { "IconShieldSearch", "\uf9cd" },
+        { "IconShieldShare", "\uf9ce" },
+        { "IconShieldStar", "\uf9cf" },
+        { "IconShieldUp", "\uf9d0" },
+        { "IconShieldX", "\ueb23" },
+        { "IconShip", "\uec84" },
+        { "IconShipOff", "\uf42a" },
+        { "IconShirt", "\uec0a" },
+        { "IconShirtFilled", "\uf6a0" },
+        { "IconShirtOff", "\uf1a2" },
+        { "IconShirtSport", "\uf26c" },
+        { "IconShoe", "\uefd2" },
+        { "IconShoeOff", "\uf1a4" },
+        { "IconShoppingBag", "\uf5f8" },
+        { "IconShoppingBagCheck", "\ufc16" },
+        { "IconShoppingBagDiscount", "\ufc17" },
+        { "IconShoppingBagEdit", "\ufc18" },
+        { "IconShoppingBagExclamation", "\ufc19" },
+        { "IconShoppingBagMinus", "\ufc1a" },
+        { "IconShoppingBagPlus", "\ufc1b" },
+        { "IconShoppingBagSearch", "\ufc1c" },
+        { "IconShoppingBagX", "\ufc1d" },
+        { "IconShoppingCart", "\ueb25" },
+        { "IconShoppingCartBolt", "\ufb57" },
+        { "IconShoppingCartCancel", "\ufb58" },
+        { "IconShoppingCartCheck", "\ufb59" },
+        { "IconShoppingCartCode", "\ufb5a" },
+        { "IconShoppingCartCog", "\ufb5b" },
+        { "IconShoppingCartCopy", "\ufb5c" },
+        { "IconShoppingCartDiscount", "\ufb5d" },
+        { "IconShoppingCartDollar", "\ufb5e" },
+        { "IconShoppingCartDown", "\ufb5f" },
+        { "IconShoppingCartExclamation", "\ufb60" },
+        { "IconShoppingCartFilled", "\ufc3f" },
+        { "IconShoppingCartHeart", "\ufb61" },
+        { "IconShoppingCartMinus", "\ufb62" },
+        { "IconShoppingCartOff", "\ueedc" },
+        { "IconShoppingCartPause", "\ufb63" },
+        { "IconShoppingCartPin", "\ufb64" },
+        { "IconShoppingCartPlus", "\ufb65" },
+        { "IconShoppingCartQuestion", "\ufb66" },
+        { "IconShoppingCartSearch", "\ufb67" },
+        { "IconShoppingCartShare", "\ufb68" },
+        { "IconShoppingCartStar", "\ufb69" },
+        { "IconShoppingCartUp", "\ufb6a" },
+        { "IconShoppingCartX", "\ufb6b" },
+        { "IconShovel", "\uf1d9" },
+        { "IconShredder", "\ueedf" },
+        { "IconSignLeft", "\uf06b" },
+        { "IconSignLeftFilled", "\uf6a1" },
+        { "IconSignRight", "\uf06c" },
+        { "IconSignRightFilled", "\uf6a2" },
+        { "IconSignal2g", "\uf79a" },
+        { "IconSignal3g", "\uf1ee" },
+        { "IconSignal4g", "\uf1ef" },
+        { "IconSignal4gPlus", "\uf259" },
+        { "IconSignal5g", "\uf1f0" },
+        { "IconSignal6g", "\uf9f8" },
+        { "IconSignalE", "\uf9f9" },
+        { "IconSignalG", "\uf9fa" },
+        { "IconSignalH", "\uf9fc" },
+        { "IconSignalHPlus", "\uf9fb" },
+        { "IconSignalLte", "\uf9fd" },
+        { "IconSignature", "\ueee0" },
+        { "IconSignatureOff", "\uf1a5" },
+        { "IconSitemap", "\ueb9d" },
+        { "IconSitemapOff", "\uf1a6" },
+        { "IconSkateboard", "\uecc2" },
+        { "IconSkateboardOff", "\uf42b" },
+        { "IconSkateboarding", "\ufaca" },
+        { "IconSkull", "\uf292" },
+        { "IconSlash", "\uf4f9" },
+        { "IconSlashes", "\uf588" },
+        { "IconSleigh", "\uef9c" },
+        { "IconSlice", "\uebdb" },
+        { "IconSlideshow", "\uebc9" },
+        { "IconSmartHome", "\uecde" },
+        { "IconSmartHomeOff", "\uf1a7" },
+        { "IconSmoking", "\uecc4" },
+        { "IconSmokingNo", "\uecc3" },
+        { "IconSnowflake", "\uec0b" },
+        { "IconSnowflakeOff", "\uf1a8" },
+        { "IconSnowman", "\uf26d" },
+        { "IconSoccerField", "\ued92" },
+        { "IconSocial", "\uebec" },
+        { "IconSocialOff", "\uf1a9" },
+        { "IconSock", "\ueee1" },
+        { "IconSofa", "\uefaf" },
+        { "IconSofaOff", "\uf42c" },
+        { "IconSolarPanel", "\uf7bf" },
+        { "IconSolarPanel2", "\uf7be" },
+        { "IconSort09", "\uf54d" },
+        { "IconSort90", "\uf54e" },
+        { "IconSortAZ", "\uf54f" },
+        { "IconSortAscending", "\ueb26" },
+        { "IconSortAscending2", "\ueee2" },
+        { "IconSortAscendingLetters", "\uef18" },
+        { "IconSortAscendingNumbers", "\uef19" },
+        { "IconSortDescending", "\ueb27" },
+        { "IconSortDescending2", "\ueee3" },
+        { "IconSortDescendingLetters", "\uef1a" },
+        { "IconSortDescendingNumbers", "\uef1b" },
+        { "IconSortZA", "\uf550" },
+        { "IconSos", "\uf24a" },
+        { "IconSoup", "\uef2e" },
+        { "IconSoupOff", "\uf42d" },
+        { "IconSourceCode", "\uf4a2" },
+        { "IconSpace", "\uec0c" },
+        { "IconSpaceOff", "\uf1aa" },
+        { "IconSpacingHorizontal", "\uef54" },
+        { "IconSpacingVertical", "\uef55" },
+        { "IconSpade", "\ueffa" },
+        { "IconSpadeFilled", "\uf6a3" },
+        { "IconSparkles", "\uf6d7" },
+        { "IconSpeakerphone", "\ued61" },
+        { "IconSpeedboat", "\ued93" },
+        { "IconSphere", "\ufab8" },
+        { "IconSphereOff", "\ufab6" },
+        { "IconSpherePlus", "\ufab7" },
+        { "IconSpider", "\uf293" },
+        { "IconSpiral", "\uf294" },
+        { "IconSpiralOff", "\uf42e" },
+        { "IconSportBillard", "\ueee4" },
+        { "IconSpray", "\uf50b" },
+        { "IconSpy", "\uf227" },
+        { "IconSpyOff", "\uf42f" },
+        { "IconSql", "\uf7c0" },
+        { "IconSquare", "\ueb2c" },
+        { "IconSquare0Filled", "\uf764" },
+        { "IconSquare1Filled", "\uf765" },
+        { "IconSquare2Filled", "\uf7fa" },
+        { "IconSquare3Filled", "\uf766" },
+        { "IconSquare4Filled", "\uf767" },
+        { "IconSquare5Filled", "\uf768" },
+        { "IconSquare6Filled", "\uf769" },
+        { "IconSquare7Filled", "\uf76a" },
+        { "IconSquare8Filled", "\uf76b" },
+        { "IconSquare9Filled", "\uf76c" },
+        { "IconSquareArrowDown", "\uf4b7" },
+        { "IconSquareArrowDownFilled", "\ufb31" },
+        { "IconSquareArrowLeft", "\uf4b8" },
+        { "IconSquareArrowLeftFilled", "\ufb32" },
+        { "IconSquareArrowRight", "\uf4b9" },
+        { "IconSquareArrowRightFilled", "\ufb33" },
+        { "IconSquareArrowUp", "\uf4ba" },
+        { "IconSquareArrowUpFilled", "\ufb34" },
+        { "IconSquareAsterisk", "\uf01a" },
+        { "IconSquareAsteriskFilled", "\ufb35" },
+        { "IconSquareCheck", "\ueb28" },
+        { "IconSquareCheckFilled", "\uf76d" },
+        { "IconSquareChevronDown", "\uf627" },
+        { "IconSquareChevronDownFilled", "\ufb36" },
+        { "IconSquareChevronLeft", "\uf628" },
+        { "IconSquareChevronLeftFilled", "\ufb37" },
+        { "IconSquareChevronRight", "\uf629" },
+        { "IconSquareChevronRightFilled", "\ufb38" },
+        { "IconSquareChevronUp", "\uf62a" },
+        { "IconSquareChevronUpFilled", "\ufb39" },
+        { "IconSquareChevronsDown", "\uf64b" },
+        { "IconSquareChevronsDownFilled", "\ufb3a" },
+        { "IconSquareChevronsLeft", "\uf64c" },
+        { "IconSquareChevronsLeftFilled", "\ufb3b" },
+        { "IconSquareChevronsRight", "\uf64d" },
+        { "IconSquareChevronsRightFilled", "\ufb3c" },
+        { "IconSquareChevronsUp", "\uf64e" },
+        { "IconSquareChevronsUpFilled", "\ufb3d" },
+        { "IconSquareDot", "\ued59" },
+        { "IconSquareDotFilled", "\ufb3e" },
+        { "IconSquareF0", "\uf526" },
+        { "IconSquareF0Filled", "\uf76e" },
+        { "IconSquareF1", "\uf527" },
+        { "IconSquareF1Filled", "\uf76f" },
+        { "IconSquareF2", "\uf528" },
+        { "IconSquareF2Filled", "\uf770" },
+        { "IconSquareF3", "\uf529" },
+        { "IconSquareF3Filled", "\uf771" },
+        { "IconSquareF4", "\uf52a" },
+        { "IconSquareF4Filled", "\uf772" },
+        { "IconSquareF5", "\uf52b" },
+        { "IconSquareF5Filled", "\uf773" },
+        { "IconSquareF6", "\uf52c" },
+        { "IconSquareF6Filled", "\uf774" },
+        { "IconSquareF7", "\uf52d" },
+        { "IconSquareF7Filled", "\uf775" },
+        { "IconSquareF8", "\uf52e" },
+        { "IconSquareF8Filled", "\uf776" },
+        { "IconSquareF9", "\uf52f" },
+        { "IconSquareF9Filled", "\uf777" },
+        { "IconSquareFilled", "\ufc40" },
+        { "IconSquareForbid", "\ued5b" },
+        { "IconSquareForbid2", "\ued5a" },
+        { "IconSquareHalf", "\ueffb" },
+        { "IconSquareKey", "\uf638" },
+        { "IconSquareLetterA", "\uf47c" },
+        { "IconSquareLetterB", "\uf47d" },
+        { "IconSquareLetterC", "\uf47e" },
+        { "IconSquareLetterD", "\uf47f" },
+        { "IconSquareLetterE", "\uf480" },
+        { "IconSquareLetterF", "\uf481" },
+        { "IconSquareLetterG", "\uf482" },
+        { "IconSquareLetterH", "\uf483" },
+        { "IconSquareLetterI", "\uf484" },
+        { "IconSquareLetterJ", "\uf485" },
+        { "IconSquareLetterK", "\uf486" },
+        { "IconSquareLetterL", "\uf487" },
+        { "IconSquareLetterM", "\uf488" },
+        { "IconSquareLetterN", "\uf489" },
+        { "IconSquareLetterO", "\uf48a" },
+        { "IconSquareLetterP", "\uf48b" },
+        { "IconSquareLetterQ", "\uf48c" },
+        { "IconSquareLetterR", "\uf48d" },
+        { "IconSquareLetterS", "\uf48e" },
+        { "IconSquareLetterT", "\uf48f" },
+        { "IconSquareLetterU", "\uf490" },
+        { "IconSquareLetterV", "\uf4bb" },
+        { "IconSquareLetterW", "\uf491" },
+        { "IconSquareLetterX", "\uf4bc" },
+        { "IconSquareLetterY", "\uf492" },
+        { "IconSquareLetterZ", "\uf493" },
+        { "IconSquareMinus", "\ueb29" },
+        { "IconSquareMinusFilled", "\ufb3f" },
+        { "IconSquareNumber0", "\ueee5" },
+        { "IconSquareNumber1", "\ueee6" },
+        { "IconSquareNumber2", "\ueee7" },
+        { "IconSquareNumber3", "\ueee8" },
+        { "IconSquareNumber4", "\ueee9" },
+        { "IconSquareNumber5", "\ueeea" },
+        { "IconSquareNumber6", "\ueeeb" },
+        { "IconSquareNumber7", "\ueeec" },
+        { "IconSquareNumber8", "\ueeed" },
+        { "IconSquareNumber9", "\ueeee" },
+        { "IconSquareOff", "\ueeef" },
+        { "IconSquarePlus", "\ueb2a" },
+        { "IconSquareRoot", "\ueef1" },
+        { "IconSquareRoot2", "\ueef0" },
+        { "IconSquareRotated", "\uecdf" },
+        { "IconSquareRotatedFilled", "\uf6a4" },
+        { "IconSquareRotatedForbid", "\uf01c" },
+        { "IconSquareRotatedForbid2", "\uf01b" },
+        { "IconSquareRotatedOff", "\ueef2" },
+        { "IconSquareRounded", "\uf59a" },
+        { "IconSquareRoundedArrowDown", "\uf639" },
+        { "IconSquareRoundedArrowDownFilled", "\uf6db" },
+        { "IconSquareRoundedArrowLeft", "\uf63a" },
+        { "IconSquareRoundedArrowLeftFilled", "\uf6dc" },
+        { "IconSquareRoundedArrowRight", "\uf63b" },
+        { "IconSquareRoundedArrowRightFilled", "\uf6dd" },
+        { "IconSquareRoundedArrowUp", "\uf63c" },
+        { "IconSquareRoundedArrowUpFilled", "\uf6de" },
+        { "IconSquareRoundedCheck", "\uf63d" },
+        { "IconSquareRoundedCheckFilled", "\uf6df" },
+        { "IconSquareRoundedChevronDown", "\uf62b" },
+        { "IconSquareRoundedChevronDownFilled", "\uf6e0" },
+        { "IconSquareRoundedChevronLeft", "\uf62c" },
+        { "IconSquareRoundedChevronLeftFilled", "\uf6e1" },
+        { "IconSquareRoundedChevronRight", "\uf62d" },
+        { "IconSquareRoundedChevronRightFilled", "\uf6e2" },
+        { "IconSquareRoundedChevronUp", "\uf62e" },
+        { "IconSquareRoundedChevronUpFilled", "\uf6e3" },
+        { "IconSquareRoundedChevronsDown", "\uf64f" },
+        { "IconSquareRoundedChevronsDownFilled", "\uf6e4" },
+        { "IconSquareRoundedChevronsLeft", "\uf650" },
+        { "IconSquareRoundedChevronsLeftFilled", "\uf6e5" },
+        { "IconSquareRoundedChevronsRight", "\uf651" },
+        { "IconSquareRoundedChevronsRightFilled", "\uf6e6" },
+        { "IconSquareRoundedChevronsUp", "\uf652" },
+        { "IconSquareRoundedChevronsUpFilled", "\uf6e7" },
+        { "IconSquareRoundedFilled", "\uf6a5" },
+        { "IconSquareRoundedLetterA", "\uf5ae" },
+        { "IconSquareRoundedLetterB", "\uf5af" },
+        { "IconSquareRoundedLetterC", "\uf5b0" },
+        { "IconSquareRoundedLetterD", "\uf5b1" },
+        { "IconSquareRoundedLetterE", "\uf5b2" },
+        { "IconSquareRoundedLetterF", "\uf5b3" },
+        { "IconSquareRoundedLetterG", "\uf5b4" },
+        { "IconSquareRoundedLetterH", "\uf5b5" },
+        { "IconSquareRoundedLetterI", "\uf5b6" },
+        { "IconSquareRoundedLetterJ", "\uf5b7" },
+        { "IconSquareRoundedLetterK", "\uf5b8" },
+        { "IconSquareRoundedLetterL", "\uf5b9" },
+        { "IconSquareRoundedLetterM", "\uf5ba" },
+        { "IconSquareRoundedLetterN", "\uf5bb" },
+        { "IconSquareRoundedLetterO", "\uf5bc" },
+        { "IconSquareRoundedLetterP", "\uf5bd" },
+        { "IconSquareRoundedLetterQ", "\uf5be" },
+        { "IconSquareRoundedLetterR", "\uf5bf" },
+        { "IconSquareRoundedLetterS", "\uf5c0" },
+        { "IconSquareRoundedLetterT", "\uf5c1" },
+        { "IconSquareRoundedLetterU", "\uf5c2" },
+        { "IconSquareRoundedLetterV", "\uf5c3" },
+        { "IconSquareRoundedLetterW", "\uf5c4" },
+        { "IconSquareRoundedLetterX", "\uf5c5" },
+        { "IconSquareRoundedLetterY", "\uf5c6" },
+        { "IconSquareRoundedLetterZ", "\uf5c7" },
+        { "IconSquareRoundedMinus", "\uf63e" },
+        { "IconSquareRoundedMinusFilled", "\ufb40" },
+        { "IconSquareRoundedNumber0", "\uf5c8" },
+        { "IconSquareRoundedNumber0Filled", "\uf778" },
+        { "IconSquareRoundedNumber1", "\uf5c9" },
+        { "IconSquareRoundedNumber1Filled", "\uf779" },
+        { "IconSquareRoundedNumber2", "\uf5ca" },
+        { "IconSquareRoundedNumber2Filled", "\uf77a" },
+        { "IconSquareRoundedNumber3", "\uf5cb" },
+        { "IconSquareRoundedNumber3Filled", "\uf77b" },
+        { "IconSquareRoundedNumber4", "\uf5cc" },
+        { "IconSquareRoundedNumber4Filled", "\uf77c" },
+        { "IconSquareRoundedNumber5", "\uf5cd" },
+        { "IconSquareRoundedNumber5Filled", "\uf77d" },
+        { "IconSquareRoundedNumber6", "\uf5ce" },
+        { "IconSquareRoundedNumber6Filled", "\uf77e" },
+        { "IconSquareRoundedNumber7", "\uf5cf" },
+        { "IconSquareRoundedNumber7Filled", "\uf77f" },
+        { "IconSquareRoundedNumber8", "\uf5d0" },
+        { "IconSquareRoundedNumber8Filled", "\uf780" },
+        { "IconSquareRoundedNumber9", "\uf5d1" },
+        { "IconSquareRoundedNumber9Filled", "\uf781" },
+        { "IconSquareRoundedPlus", "\uf63f" },
+        { "IconSquareRoundedPlusFilled", "\uf6e8" },
+        { "IconSquareRoundedX", "\uf640" },
+        { "IconSquareRoundedXFilled", "\uf6e9" },
+        { "IconSquareToggle", "\ueef4" },
+        { "IconSquareToggleHorizontal", "\ueef3" },
+        { "IconSquareX", "\ueb2b" },
+        { "IconSquareXFilled", "\ufb41" },
+        { "IconSquaresDiagonal", "\ueef5" },
+        { "IconSquaresFilled", "\ueef6" },
+        { "IconStack", "\ueb2d" },
+        { "IconStack2", "\ueef7" },
+        { "IconStack3", "\uef9d" },
+        { "IconStackPop", "\uf234" },
+        { "IconStackPush", "\uf235" },
+        { "IconStairs", "\ueca6" },
+        { "IconStairsDown", "\ueca4" },
+        { "IconStairsUp", "\ueca5" },
+        { "IconStar", "\ueb2e" },
+        { "IconStarFilled", "\uf6a6" },
+        { "IconStarHalf", "\ued19" },
+        { "IconStarHalfFilled", "\uf6a7" },
+        { "IconStarOff", "\ued62" },
+        { "IconStars", "\ued38" },
+        { "IconStarsFilled", "\uf6a8" },
+        { "IconStarsOff", "\uf430" },
+        { "IconStatusChange", "\uf3b0" },
+        { "IconSteam", "\uf24b" },
+        { "IconSteeringWheel", "\uec7b" },
+        { "IconSteeringWheelOff", "\uf431" },
+        { "IconStepInto", "\uece0" },
+        { "IconStepOut", "\uece1" },
+        { "IconStereoGlasses", "\uf4cb" },
+        { "IconStethoscope", "\uedbe" },
+        { "IconStethoscopeOff", "\uf432" },
+        { "IconSticker", "\ueb2f" },
+        { "IconStorm", "\uf24c" },
+        { "IconStormOff", "\uf433" },
+        { "IconStretching", "\uf2db" },
+        { "IconStretching2", "\ufa6d" },
+        { "IconStrikethrough", "\ueb9e" },
+        { "IconSubmarine", "\ued94" },
+        { "IconSubscript", "\ueb9f" },
+        { "IconSubtask", "\uec9f" },
+        { "IconSum", "\ueb73" },
+        { "IconSumOff", "\uf1ab" },
+        { "IconSun", "\ueb30" },
+        { "IconSunFilled", "\uf6a9" },
+        { "IconSunHigh", "\uf236" },
+        { "IconSunLow", "\uf237" },
+        { "IconSunMoon", "\uf4a3" },
+        { "IconSunOff", "\ued63" },
+        { "IconSunWind", "\uf238" },
+        { "IconSunglasses", "\uf239" },
+        { "IconSunrise", "\uef1c" },
+        { "IconSunset", "\uec31" },
+        { "IconSunset2", "\uf23a" },
+        { "IconSuperscript", "\ueba0" },
+        { "IconSvg", "\uf25a" },
+        { "IconSwimming", "\uec92" },
+        { "IconSwipe", "\uf551" },
+        { "IconSwitch", "\ueb33" },
+        { "IconSwitch2", "\uedbf" },
+        { "IconSwitch3", "\uedc0" },
+        { "IconSwitchHorizontal", "\ueb31" },
+        { "IconSwitchVertical", "\ueb32" },
+        { "IconSword", "\uf030" },
+        { "IconSwordOff", "\uf434" },
+        { "IconSwords", "\uf132" },
+        { "IconTable", "\ueba1" },
+        { "IconTableAlias", "\uf25b" },
+        { "IconTableColumn", "\ufaff" },
+        { "IconTableDown", "\ufa1c" },
+        { "IconTableExport", "\ueef8" },
+        { "IconTableFilled", "\uf782" },
+        { "IconTableHeart", "\ufa1d" },
+        { "IconTableImport", "\ueef9" },
+        { "IconTableMinus", "\ufa1e" },
+        { "IconTableOff", "\ueefa" },
+        { "IconTableOptions", "\uf25c" },
+        { "IconTablePlus", "\ufa1f" },
+        { "IconTableRow", "\ufb00" },
+        { "IconTableShare", "\ufa20" },
+        { "IconTableShortcut", "\uf25d" },
+        { "IconTag", "\ueb34" },
+        { "IconTagOff", "\uefc0" },
+        { "IconTags", "\uef86" },
+        { "IconTagsOff", "\uefc1" },
+        { "IconTallymark1", "\uec46" },
+        { "IconTallymark2", "\uec47" },
+        { "IconTallymark3", "\uec48" },
+        { "IconTallymark4", "\uec49" },
+        { "IconTallymarks", "\uec4a" },
+        { "IconTank", "\ued95" },
+        { "IconTarget", "\ueb35" },
+        { "IconTargetArrow", "\uf51a" },
+        { "IconTargetOff", "\uf1ad" },
+        { "IconTeapot", "\uf552" },
+        { "IconTelescope", "\uf07d" },
+        { "IconTelescopeOff", "\uf1ae" },
+        { "IconTemperature", "\ueb38" },
+        { "IconTemperatureCelsius", "\ueb36" },
+        { "IconTemperatureFahrenheit", "\ueb37" },
+        { "IconTemperatureMinus", "\uebed" },
+        { "IconTemperatureOff", "\uf1af" },
+        { "IconTemperaturePlus", "\uebee" },
+        { "IconTemplate", "\ueb39" },
+        { "IconTemplateOff", "\uf1b0" },
+        { "IconTent", "\ueefb" },
+        { "IconTentOff", "\uf435" },
+        { "IconTerminal", "\uebdc" },
+        { "IconTerminal2", "\uebef" },
+        { "IconTestPipe", "\ueb3a" },
+        { "IconTestPipe2", "\uf0a4" },
+        { "IconTestPipeOff", "\uf1b1" },
+        { "IconTex", "\uf4e0" },
+        { "IconTextCaption", "\uf4a4" },
+        { "IconTextColor", "\uf2dc" },
+        { "IconTextDecrease", "\uf202" },
+        { "IconTextDirectionLtr", "\ueefc" },
+        { "IconTextDirectionRtl", "\ueefd" },
+        { "IconTextIncrease", "\uf203" },
+        { "IconTextOrientation", "\uf2a4" },
+        { "IconTextPlus", "\uf2a5" },
+        { "IconTextRecognition", "\uf204" },
+        { "IconTextResize", "\uef87" },
+        { "IconTextSize", "\uf2b1" },
+        { "IconTextSpellcheck", "\uf2a6" },
+        { "IconTextWrap", "\uebdd" },
+        { "IconTextWrapDisabled", "\ueca7" },
+        { "IconTexture", "\uf51b" },
+        { "IconTheater", "\uf79b" },
+        { "IconThermometer", "\uef67" },
+        { "IconThumbDown", "\ueb3b" },
+        { "IconThumbDownFilled", "\uf6aa" },
+        { "IconThumbDownOff", "\uf436" },
+        { "IconThumbUp", "\ueb3c" },
+        { "IconThumbUpFilled", "\uf6ab" },
+        { "IconThumbUpOff", "\uf437" },
+        { "IconTicTac", "\uf51c" },
+        { "IconTicket", "\ueb3d" },
+        { "IconTicketOff", "\uf1b2" },
+        { "IconTie", "\uf07e" },
+        { "IconTilde", "\uf4a5" },
+        { "IconTiltShift", "\ueefe" },
+        { "IconTiltShiftOff", "\uf1b3" },
+        { "IconTimeDuration0", "\ufad4" },
+        { "IconTimeDuration10", "\ufad5" },
+        { "IconTimeDuration15", "\ufad6" },
+        { "IconTimeDuration30", "\ufad7" },
+        { "IconTimeDuration45", "\ufad8" },
+        { "IconTimeDuration5", "\ufad9" },
+        { "IconTimeDuration60", "\ufada" },
+        { "IconTimeDuration90", "\ufadb" },
+        { "IconTimeDurationOff", "\ufadc" },
+        { "IconTimeline", "\uf031" },
+        { "IconTimelineEvent", "\uf553" },
+        { "IconTimelineEventExclamation", "\uf662" },
+        { "IconTimelineEventMinus", "\uf663" },
+        { "IconTimelineEventPlus", "\uf664" },
+        { "IconTimelineEventText", "\uf665" },
+        { "IconTimelineEventX", "\uf666" },
+        { "IconTir", "\uebf0" },
+        { "IconToggleLeft", "\ueb3e" },
+        { "IconToggleRight", "\ueb3f" },
+        { "IconToiletPaper", "\uefd3" },
+        { "IconToiletPaperOff", "\uf1b4" },
+        { "IconToml", "\ufa5d" },
+        { "IconTool", "\ueb40" },
+        { "IconTools", "\uebca" },
+        { "IconToolsKitchen", "\ued64" },
+        { "IconToolsKitchen2", "\ueeff" },
+        { "IconToolsKitchen2Off", "\uf1b5" },
+        { "IconToolsKitchenOff", "\uf1b6" },
+        { "IconToolsOff", "\uf1b7" },
+        { "IconTooltip", "\uf2dd" },
+        { "IconTopologyBus", "\uf5d9" },
+        { "IconTopologyComplex", "\uf5da" },
+        { "IconTopologyFull", "\uf5dc" },
+        { "IconTopologyFullHierarchy", "\uf5db" },
+        { "IconTopologyRing", "\uf5df" },
+        { "IconTopologyRing2", "\uf5dd" },
+        { "IconTopologyRing3", "\uf5de" },
+        { "IconTopologyStar", "\uf5e5" },
+        { "IconTopologyStar2", "\uf5e0" },
+        { "IconTopologyStar3", "\uf5e1" },
+        { "IconTopologyStarRing", "\uf5e4" },
+        { "IconTopologyStarRing2", "\uf5e2" },
+        { "IconTopologyStarRing3", "\uf5e3" },
+        { "IconTorii", "\uf59b" },
+        { "IconTornado", "\uece2" },
+        { "IconTournament", "\uecd0" },
+        { "IconTower", "\uf2cb" },
+        { "IconTowerOff", "\uf2ca" },
+        { "IconTrack", "\uef00" },
+        { "IconTractor", "\uec0d" },
+        { "IconTrademark", "\uec0e" },
+        { "IconTrafficCone", "\uec0f" },
+        { "IconTrafficConeOff", "\uf1b8" },
+        { "IconTrafficLights", "\ued39" },
+        { "IconTrafficLightsOff", "\uf1b9" },
+        { "IconTrain", "\ued96" },
+        { "IconTransfer", "\ufc1f" },
+        { "IconTransferIn", "\uef2f" },
+        { "IconTransferOut", "\uef30" },
+        { "IconTransferVertical", "\ufc1e" },
+        { "IconTransform", "\uf38e" },
+        { "IconTransformFilled", "\uf6ac" },
+        { "IconTransitionBottom", "\uf2b2" },
+        { "IconTransitionLeft", "\uf2b3" },
+        { "IconTransitionRight", "\uf2b4" },
+        { "IconTransitionTop", "\uf2b5" },
+        { "IconTrash", "\ueb41" },
+        { "IconTrashFilled", "\uf783" },
+        { "IconTrashOff", "\ued65" },
+        { "IconTrashX", "\uef88" },
+        { "IconTrashXFilled", "\uf784" },
+        { "IconTreadmill", "\ufa6e" },
+        { "IconTree", "\uef01" },
+        { "IconTrees", "\uec10" },
+        { "IconTrekking", "\uf5ad" },
+        { "IconTrendingDown", "\ueb42" },
+        { "IconTrendingDown2", "\uedc1" },
+        { "IconTrendingDown3", "\uedc2" },
+        { "IconTrendingUp", "\ueb43" },
+        { "IconTrendingUp2", "\uedc3" },
+        { "IconTrendingUp3", "\uedc4" },
+        { "IconTriangle", "\ueb44" },
+        { "IconTriangleFilled", "\uf6ad" },
+        { "IconTriangleInverted", "\uf01d" },
+        { "IconTriangleInvertedFilled", "\uf6ae" },
+        { "IconTriangleOff", "\uef02" },
+        { "IconTriangleSquareCircle", "\uece8" },
+        { "IconTriangleSquareCircleFilled", "\ufb42" },
+        { "IconTriangles", "\uf0a5" },
+        { "IconTrident", "\uecc5" },
+        { "IconTrolley", "\uf4cc" },
+        { "IconTrophy", "\ueb45" },
+        { "IconTrophyFilled", "\uf6af" },
+        { "IconTrophyOff", "\uf438" },
+        { "IconTrowel", "\uf368" },
+        { "IconTruck", "\uebc4" },
+        { "IconTruckDelivery", "\uec4b" },
+        { "IconTruckLoading", "\uf1da" },
+        { "IconTruckOff", "\uef03" },
+        { "IconTruckReturn", "\uec4c" },
+        { "IconTxt", "\uf3b1" },
+        { "IconTypography", "\uebc5" },
+        { "IconTypographyOff", "\uf1ba" },
+        { "IconUfo", "\uf26f" },
+        { "IconUfoOff", "\uf26e" },
+        { "IconUmbrella", "\uebf1" },
+        { "IconUmbrellaFilled", "\uf6b0" },
+        { "IconUmbrellaOff", "\uf1bb" },
+        { "IconUnderline", "\ueba2" },
+        { "IconUnlink", "\ueb46" },
+        { "IconUpload", "\ueb47" },
+        { "IconUrgent", "\ueb48" },
+        { "IconUsb", "\uf00c" },
+        { "IconUser", "\ueb4d" },
+        { "IconUserBolt", "\uf9d1" },
+        { "IconUserCancel", "\uf9d2" },
+        { "IconUserCheck", "\ueb49" },
+        { "IconUserCircle", "\uef68" },
+        { "IconUserCode", "\uf9d3" },
+        { "IconUserCog", "\uf9d4" },
+        { "IconUserDollar", "\uf9d5" },
+        { "IconUserDown", "\uf9d6" },
+        { "IconUserEdit", "\uf7cc" },
+        { "IconUserExclamation", "\uec12" },
+        { "IconUserHeart", "\uf7cd" },
+        { "IconUserMinus", "\ueb4a" },
+        { "IconUserOff", "\uecf9" },
+        { "IconUserPause", "\uf9d7" },
+        { "IconUserPin", "\uf7ce" },
+        { "IconUserPlus", "\ueb4b" },
+        { "IconUserQuestion", "\uf7cf" },
+        { "IconUserSearch", "\uef89" },
+        { "IconUserShare", "\uf9d8" },
+        { "IconUserShield", "\uf7d0" },
+        { "IconUserStar", "\uf7d1" },
+        { "IconUserUp", "\uf7d2" },
+        { "IconUserX", "\ueb4c" },
+        { "IconUsers", "\uebf2" },
+        { "IconUsersGroup", "\ufa21" },
+        { "IconUsersMinus", "\ufa0e" },
+        { "IconUsersPlus", "\ufa0f" },
+        { "IconUvIndex", "\uf3b2" },
+        { "IconUxCircle", "\uf369" },
+        { "IconVaccine", "\uef04" },
+        { "IconVaccineBottle", "\uef69" },
+        { "IconVaccineBottleOff", "\uf439" },
+        { "IconVaccineOff", "\uf1bc" },
+        { "IconVacuumCleaner", "\uf5e6" },
+        { "IconVariable", "\uef05" },
+        { "IconVariableMinus", "\uf36a" },
+        { "IconVariableOff", "\uf1bd" },
+        { "IconVariablePlus", "\uf36b" },
+        { "IconVector", "\ueca9" },
+        { "IconVectorBezier", "\uef1d" },
+        { "IconVectorBezier2", "\uf1a3" },
+        { "IconVectorBezierArc", "\uf4cd" },
+        { "IconVectorBezierCircle", "\uf4ce" },
+        { "IconVectorOff", "\uf1be" },
+        { "IconVectorSpline", "\uf565" },
+        { "IconVectorTriangle", "\ueca8" },
+        { "IconVectorTriangleOff", "\uf1bf" },
+        { "IconVenus", "\uec86" },
+        { "IconVersions", "\ued52" },
+        { "IconVersionsFilled", "\uf6b1" },
+        { "IconVersionsOff", "\uf1c0" },
+        { "IconVideo", "\ued22" },
+        { "IconVideoMinus", "\ued1f" },
+        { "IconVideoOff", "\ued20" },
+        { "IconVideoPlus", "\ued21" },
+        { "IconView360", "\ued84" },
+        { "IconView360Off", "\uf1c1" },
+        { "IconViewfinder", "\ueb4e" },
+        { "IconViewfinderOff", "\uf1c2" },
+        { "IconViewportNarrow", "\uebf3" },
+        { "IconViewportWide", "\uebf4" },
+        { "IconVinyl", "\uf00d" },
+        { "IconVip", "\uf3b3" },
+        { "IconVipOff", "\uf43a" },
+        { "IconVirus", "\ueb74" },
+        { "IconVirusOff", "\ued66" },
+        { "IconVirusSearch", "\ued67" },
+        { "IconVocabulary", "\uef1e" },
+        { "IconVocabularyOff", "\uf43b" },
+        { "IconVolcano", "\uf79c" },
+        { "IconVolume", "\ueb51" },
+        { "IconVolume2", "\ueb4f" },
+        { "IconVolume3", "\ueb50" },
+        { "IconVolumeOff", "\uf1c3" },
+        { "IconWalk", "\uec87" },
+        { "IconWall", "\uef7a" },
+        { "IconWallOff", "\uf43c" },
+        { "IconWallet", "\ueb75" },
+        { "IconWalletOff", "\uf1c4" },
+        { "IconWallpaper", "\uef56" },
+        { "IconWallpaperOff", "\uf1c5" },
+        { "IconWand", "\uebcb" },
+        { "IconWandOff", "\uf1c6" },
+        { "IconWash", "\uf311" },
+        { "IconWashDry", "\uf304" },
+        { "IconWashDry1", "\uf2fa" },
+        { "IconWashDry2", "\uf2fb" },
+        { "IconWashDry3", "\uf2fc" },
+        { "IconWashDryA", "\uf2fd" },
+        { "IconWashDryDip", "\uf2fe" },
+        { "IconWashDryF", "\uf2ff" },
+        { "IconWashDryFlat", "\ufa7f" },
+        { "IconWashDryHang", "\uf300" },
+        { "IconWashDryOff", "\uf301" },
+        { "IconWashDryP", "\uf302" },
+        { "IconWashDryShade", "\uf303" },
+        { "IconWashDryW", "\uf322" },
+        { "IconWashDryclean", "\uf305" },
+        { "IconWashDrycleanOff", "\uf323" },
+        { "IconWashEco", "\ufa80" },
+        { "IconWashGentle", "\uf306" },
+        { "IconWashHand", "\ufa81" },
+        { "IconWashMachine", "\uf25e" },
+        { "IconWashOff", "\uf307" },
+        { "IconWashPress", "\uf308" },
+        { "IconWashTemperature1", "\uf309" },
+        { "IconWashTemperature2", "\uf30a" },
+        { "IconWashTemperature3", "\uf30b" },
+        { "IconWashTemperature4", "\uf30c" },
+        { "IconWashTemperature5", "\uf30d" },
+        { "IconWashTemperature6", "\uf30e" },
+        { "IconWashTumbleDry", "\uf30f" },
+        { "IconWashTumbleOff", "\uf310" },
+        { "IconWaterpolo", "\ufa6f" },
+        { "IconWaveSawTool", "\uecd3" },
+        { "IconWaveSine", "\uecd4" },
+        { "IconWaveSquare", "\uecd5" },
+        { "IconWebhook", "\uf01e" },
+        { "IconWebhookOff", "\uf43d" },
+        { "IconWeight", "\uf589" },
+        { "IconWheelchair", "\uf1db" },
+        { "IconWheelchairOff", "\uf43e" },
+        { "IconWhirl", "\uf51d" },
+        { "IconWifi", "\ueb52" },
+        { "IconWifi0", "\ueba3" },
+        { "IconWifi1", "\ueba4" },
+        { "IconWifi2", "\ueba5" },
+        { "IconWifiOff", "\uecfa" },
+        { "IconWind", "\uec34" },
+        { "IconWindOff", "\uf1c7" },
+        { "IconWindmill", "\ued85" },
+        { "IconWindmillFilled", "\uf6b2" },
+        { "IconWindmillOff", "\uf1c8" },
+        { "IconWindow", "\uef06" },
+        { "IconWindowMaximize", "\uf1f1" },
+        { "IconWindowMinimize", "\uf1f2" },
+        { "IconWindowOff", "\uf1c9" },
+        { "IconWindsock", "\uf06d" },
+        { "IconWiper", "\uecab" },
+        { "IconWiperWash", "\uecaa" },
+        { "IconWoman", "\ueb53" },
+        { "IconWood", "\uf359" },
+        { "IconWorld", "\ueb54" },
+        { "IconWorldBolt", "\uf9d9" },
+        { "IconWorldCancel", "\uf9da" },
+        { "IconWorldCheck", "\uf9db" },
+        { "IconWorldCode", "\uf9dc" },
+        { "IconWorldCog", "\uf9dd" },
+        { "IconWorldDollar", "\uf9de" },
+        { "IconWorldDown", "\uf9df" },
+        { "IconWorldDownload", "\uef8a" },
+        { "IconWorldExclamation", "\uf9e0" },
+        { "IconWorldHeart", "\uf9e1" },
+        { "IconWorldLatitude", "\ued2e" },
+        { "IconWorldLongitude", "\ued2f" },
+        { "IconWorldMinus", "\uf9e2" },
+        { "IconWorldOff", "\uf1ca" },
+        { "IconWorldPause", "\uf9e3" },
+        { "IconWorldPin", "\uf9e4" },
+        { "IconWorldPlus", "\uf9e5" },
+        { "IconWorldQuestion", "\uf9e6" },
+        { "IconWorldSearch", "\uf9e7" },
+        { "IconWorldShare", "\uf9e8" },
+        { "IconWorldStar", "\uf9e9" },
+        { "IconWorldUp", "\uf9ea" },
+        { "IconWorldUpload", "\uef8b" },
+        { "IconWorldWww", "\uf38f" },
+        { "IconWorldX", "\uf9eb" },
+        { "IconWreckingBall", "\ued97" },
+        { "IconWriting", "\uef08" },
+        { "IconWritingOff", "\uf1cb" },
+        { "IconWritingSign", "\uef07" },
+        { "IconWritingSignOff", "\uf1cc" },
+        { "IconX", "\ueb55" },
+        { "IconXboxA", "\uf2b6" },
+        { "IconXboxB", "\uf2b7" },
+        { "IconXboxX", "\uf2b8" },
+        { "IconXboxY", "\uf2b9" },
+        { "IconXd", "\ufa33" },
+        { "IconXxx", "\ufc20" },
+        { "IconYinYang", "\uec35" },
+        { "IconYinYangFilled", "\uf785" },
+        { "IconYoga", "\uf01f" },
+        { "IconZeppelin", "\uf270" },
+        { "IconZeppelinOff", "\uf43f" },
+        { "IconZip", "\uf3b4" },
+        { "IconZodiacAquarius", "\uecac" },
+        { "IconZodiacAries", "\uecad" },
+        { "IconZodiacCancer", "\uecae" },
+        { "IconZodiacCapricorn", "\uecaf" },
+        { "IconZodiacGemini", "\uecb0" },
+        { "IconZodiacLeo", "\uecb1" },
+        { "IconZodiacLibra", "\uecb2" },
+        { "IconZodiacPisces", "\uecb3" },
+        { "IconZodiacSagittarius", "\uecb4" },
+        { "IconZodiacScorpio", "\uecb5" },
+        { "IconZodiacTaurus", "\uecb6" },
+        { "IconZodiacVirgo", "\uecb7" },
+        { "IconZoomCancel", "\uec4d" },
+        { "IconZoomCheck", "\uef09" },
+        { "IconZoomCheckFilled", "\uf786" },
+        { "IconZoomCode", "\uf07f" },
+        { "IconZoomExclamation", "\uf080" },
+        { "IconZoomFilled", "\uf787" },
+        { "IconZoomIn", "\ueb56" },
+        { "IconZoomInArea", "\uf1dc" },
+        { "IconZoomInAreaFilled", "\uf788" },
+        { "IconZoomInFilled", "\uf789" },
+        { "IconZoomMoney", "\uef0a" },
+        { "IconZoomOut", "\ueb57" },
+        { "IconZoomOutArea", "\uf1dd" },
+        { "IconZoomOutFilled", "\uf78a" },
+        { "IconZoomPan", "\uf1de" },
+        { "IconZoomQuestion", "\uedeb" },
+        { "IconZoomReplace", "\uf2a7" },
+        { "IconZoomReset", "\uf295" },
+        { "IconZzz", "\uf228" },
+        { "IconZzzOff", "\uf440" },
 
     };
 
-    public const string T123 = "\uf554";
-    public const string T24Hours = "\uf5e7";
-    public const string T2fa = "\ueca0";
-    public const string T360 = "\uf62f";
-    public const string T360View = "\uf566";
-    public const string T3dCubeSphere = "\uecd7";
-    public const string T3dCubeSphereOff = "\uf3b5";
-    public const string T3dRotate = "\uf020";
-    public const string AB = "\uec36";
-    public const string AB2 = "\uf25f";
-    public const string ABOff = "\uf0a6";
-    public const string Abacus = "\uf05c";
-    public const string AbacusOff = "\uf3b6";
-    public const string Abc = "\uf567";
-    public const string AccessPoint = "\ued1b";
-    public const string AccessPointOff = "\ued1a";
-    public const string Accessible = "\ueba9";
-    public const string AccessibleOff = "\uf0a7";
-    public const string AccessibleOffFilled = "\uf6ea";
-    public const string Activity = "\ued23";
-    public const string ActivityHeartbeat = "\uf0db";
-    public const string Ad = "\uea02";
-    public const string Ad2 = "\uef1f";
-    public const string AdCircle = "\uf79e";
-    public const string AdCircleFilled = "\uf7d3";
-    public const string AdCircleOff = "\uf79d";
-    public const string AdFilled = "\uf6eb";
-    public const string AdOff = "\uf3b7";
-    public const string AddressBook = "\uf021";
-    public const string AddressBookOff = "\uf3b8";
-    public const string Adjustments = "\uea03";
-    public const string AdjustmentsAlt = "\uec37";
-    public const string AdjustmentsBolt = "\uf7fb";
-    public const string AdjustmentsCancel = "\uf7fc";
-    public const string AdjustmentsCheck = "\uf7fd";
-    public const string AdjustmentsCode = "\uf7fe";
-    public const string AdjustmentsCog = "\uf7ff";
-    public const string AdjustmentsDollar = "\uf800";
-    public const string AdjustmentsDown = "\uf801";
-    public const string AdjustmentsExclamation = "\uf802";
-    public const string AdjustmentsFilled = "\uf6ec";
-    public const string AdjustmentsHeart = "\uf803";
-    public const string AdjustmentsHorizontal = "\uec38";
-    public const string AdjustmentsMinus = "\uf804";
-    public const string AdjustmentsOff = "\uf0a8";
-    public const string AdjustmentsPause = "\uf805";
-    public const string AdjustmentsPin = "\uf806";
-    public const string AdjustmentsPlus = "\uf807";
-    public const string AdjustmentsQuestion = "\uf808";
-    public const string AdjustmentsSearch = "\uf809";
-    public const string AdjustmentsShare = "\uf80a";
-    public const string AdjustmentsStar = "\uf80b";
-    public const string AdjustmentsUp = "\uf80c";
-    public const string AdjustmentsX = "\uf80d";
-    public const string AerialLift = "\uedfe";
-    public const string Affiliate = "\uedff";
-    public const string AffiliateFilled = "\uf6ed";
-    public const string AirBalloon = "\uf4a6";
-    public const string AirConditioning = "\uf3a2";
-    public const string AirConditioningDisabled = "\uf542";
-    public const string AirTrafficControl = "\ufb01";
-    public const string Alarm = "\uea04";
-    public const string AlarmFilled = "\uf709";
-    public const string AlarmMinus = "\uf630";
-    public const string AlarmMinusFilled = "\uf70a";
-    public const string AlarmOff = "\uf0a9";
-    public const string AlarmPlus = "\uf631";
-    public const string AlarmPlusFilled = "\uf70b";
-    public const string AlarmSnooze = "\uf632";
-    public const string AlarmSnoozeFilled = "\uf70c";
-    public const string Album = "\uf022";
-    public const string AlbumOff = "\uf3b9";
-    public const string AlertCircle = "\uea05";
-    public const string AlertCircleFilled = "\uf6ee";
-    public const string AlertHexagon = "\uf80e";
-    public const string AlertHexagonFilled = "\ufa34";
-    public const string AlertOctagon = "\uecc6";
-    public const string AlertOctagonFilled = "\uf6ef";
-    public const string AlertSmall = "\uf80f";
-    public const string AlertSquare = "\uf811";
-    public const string AlertSquareFilled = "\ufa35";
-    public const string AlertSquareRounded = "\uf810";
-    public const string AlertSquareRoundedFilled = "\ufa36";
-    public const string AlertTriangle = "\uea06";
-    public const string AlertTriangleFilled = "\uf6f0";
-    public const string Alien = "\uebde";
-    public const string AlienFilled = "\uf70d";
-    public const string AlignBoxBottomCenter = "\uf530";
-    public const string AlignBoxBottomCenterFilled = "\uf70e";
-    public const string AlignBoxBottomLeft = "\uf531";
-    public const string AlignBoxBottomLeftFilled = "\uf70f";
-    public const string AlignBoxBottomRight = "\uf532";
-    public const string AlignBoxBottomRightFilled = "\uf710";
-    public const string AlignBoxCenterBottom = "\ufacb";
-    public const string AlignBoxCenterMiddle = "\uf79f";
-    public const string AlignBoxCenterMiddleFilled = "\uf7d4";
-    public const string AlignBoxCenterStretch = "\ufacc";
-    public const string AlignBoxCenterTop = "\ufacd";
-    public const string AlignBoxLeftBottom = "\uf533";
-    public const string AlignBoxLeftBottomFilled = "\uf711";
-    public const string AlignBoxLeftMiddle = "\uf534";
-    public const string AlignBoxLeftMiddleFilled = "\uf712";
-    public const string AlignBoxLeftStretch = "\uface";
-    public const string AlignBoxLeftTop = "\uf535";
-    public const string AlignBoxLeftTopFilled = "\uf713";
-    public const string AlignBoxRightBottom = "\uf536";
-    public const string AlignBoxRightBottomFilled = "\uf714";
-    public const string AlignBoxRightMiddle = "\uf537";
-    public const string AlignBoxRightMiddleFilled = "\uf7d5";
-    public const string AlignBoxRightStretch = "\ufacf";
-    public const string AlignBoxRightTop = "\uf538";
-    public const string AlignBoxRightTopFilled = "\uf715";
-    public const string AlignBoxTopCenter = "\uf539";
-    public const string AlignBoxTopCenterFilled = "\uf716";
-    public const string AlignBoxTopLeft = "\uf53a";
-    public const string AlignBoxTopLeftFilled = "\uf717";
-    public const string AlignBoxTopRight = "\uf53b";
-    public const string AlignBoxTopRightFilled = "\uf718";
-    public const string AlignCenter = "\uea07";
-    public const string AlignJustified = "\uea08";
-    public const string AlignLeft = "\uea09";
-    public const string AlignRight = "\uea0a";
-    public const string Alpha = "\uf543";
-    public const string AlphabetCyrillic = "\uf1df";
-    public const string AlphabetGreek = "\uf1e0";
-    public const string AlphabetLatin = "\uf1e1";
-    public const string Ambulance = "\uebf5";
-    public const string Ampersand = "\uf229";
-    public const string Analyze = "\uf3a3";
-    public const string AnalyzeFilled = "\uf719";
-    public const string AnalyzeOff = "\uf3ba";
-    public const string Anchor = "\ueb76";
-    public const string AnchorOff = "\uf0f7";
-    public const string Angle = "\uef20";
-    public const string Ankh = "\uf1cd";
-    public const string Antenna = "\uf094";
-    public const string AntennaBars1 = "\uecc7";
-    public const string AntennaBars2 = "\uecc8";
-    public const string AntennaBars3 = "\uecc9";
-    public const string AntennaBars4 = "\uecca";
-    public const string AntennaBars5 = "\ueccb";
-    public const string AntennaBarsOff = "\uf0aa";
-    public const string AntennaOff = "\uf3bb";
-    public const string Aperture = "\ueb58";
-    public const string ApertureOff = "\uf3bc";
-    public const string Api = "\ueffd";
-    public const string ApiApp = "\ueffc";
-    public const string ApiAppOff = "\uf0ab";
-    public const string ApiOff = "\uf0f8";
-    public const string AppWindow = "\uefe6";
-    public const string AppWindowFilled = "\uf71a";
-    public const string Apple = "\uef21";
-    public const string Apps = "\uebb6";
-    public const string AppsFilled = "\uf6f1";
-    public const string AppsOff = "\uf0ac";
-    public const string Archive = "\uea0b";
-    public const string ArchiveFilled = "\ufa82";
-    public const string ArchiveOff = "\uf0ad";
-    public const string Armchair = "\uef9e";
-    public const string Armchair2 = "\uefe7";
-    public const string Armchair2Off = "\uf3bd";
-    public const string ArmchairOff = "\uf3be";
-    public const string ArrowAutofitContent = "\uef31";
-    public const string ArrowAutofitContentFilled = "\uf6f2";
-    public const string ArrowAutofitDown = "\uef32";
-    public const string ArrowAutofitHeight = "\uef33";
-    public const string ArrowAutofitLeft = "\uef34";
-    public const string ArrowAutofitRight = "\uef35";
-    public const string ArrowAutofitUp = "\uef36";
-    public const string ArrowAutofitWidth = "\uef37";
-    public const string ArrowBack = "\uea0c";
-    public const string ArrowBackUp = "\ueb77";
-    public const string ArrowBackUpDouble = "\uf9ec";
-    public const string ArrowBadgeDown = "\uf60b";
-    public const string ArrowBadgeDownFilled = "\uf7d6";
-    public const string ArrowBadgeLeft = "\uf60c";
-    public const string ArrowBadgeLeftFilled = "\uf7d7";
-    public const string ArrowBadgeRight = "\uf60d";
-    public const string ArrowBadgeRightFilled = "\uf7d8";
-    public const string ArrowBadgeUp = "\uf60e";
-    public const string ArrowBadgeUpFilled = "\uf7d9";
-    public const string ArrowBarBoth = "\ufadd";
-    public const string ArrowBarDown = "\uea0d";
-    public const string ArrowBarLeft = "\uea0e";
-    public const string ArrowBarRight = "\uea0f";
-    public const string ArrowBarToDown = "\uec88";
-    public const string ArrowBarToLeft = "\uec89";
-    public const string ArrowBarToRight = "\uec8a";
-    public const string ArrowBarToUp = "\uec8b";
-    public const string ArrowBarUp = "\uea10";
-    public const string ArrowBearLeft = "\uf045";
-    public const string ArrowBearLeft2 = "\uf044";
-    public const string ArrowBearRight = "\uf047";
-    public const string ArrowBearRight2 = "\uf046";
-    public const string ArrowBigDown = "\uedda";
-    public const string ArrowBigDownFilled = "\uf6c6";
-    public const string ArrowBigDownLine = "\uefe8";
-    public const string ArrowBigDownLineFilled = "\uf6c7";
-    public const string ArrowBigDownLines = "\uefe9";
-    public const string ArrowBigDownLinesFilled = "\uf6c8";
-    public const string ArrowBigLeft = "\ueddb";
-    public const string ArrowBigLeftFilled = "\uf6c9";
-    public const string ArrowBigLeftLine = "\uefea";
-    public const string ArrowBigLeftLineFilled = "\uf6ca";
-    public const string ArrowBigLeftLines = "\uefeb";
-    public const string ArrowBigLeftLinesFilled = "\uf6cb";
-    public const string ArrowBigRight = "\ueddc";
-    public const string ArrowBigRightFilled = "\uf6cc";
-    public const string ArrowBigRightLine = "\uefec";
-    public const string ArrowBigRightLineFilled = "\uf6cd";
-    public const string ArrowBigRightLines = "\uefed";
-    public const string ArrowBigRightLinesFilled = "\uf6ce";
-    public const string ArrowBigUp = "\ueddd";
-    public const string ArrowBigUpFilled = "\uf6cf";
-    public const string ArrowBigUpLine = "\uefee";
-    public const string ArrowBigUpLineFilled = "\uf6d0";
-    public const string ArrowBigUpLines = "\uefef";
-    public const string ArrowBigUpLinesFilled = "\uf6d1";
-    public const string ArrowBounce = "\uf3a4";
-    public const string ArrowCapsule = "\ufade";
-    public const string ArrowCurveLeft = "\uf048";
-    public const string ArrowCurveRight = "\uf049";
-    public const string ArrowDown = "\uea16";
-    public const string ArrowDownBar = "\ued98";
-    public const string ArrowDownCircle = "\uea11";
-    public const string ArrowDownLeft = "\uea13";
-    public const string ArrowDownLeftCircle = "\uea12";
-    public const string ArrowDownRhombus = "\uf61d";
-    public const string ArrowDownRight = "\uea15";
-    public const string ArrowDownRightCircle = "\uea14";
-    public const string ArrowDownSquare = "\ued9a";
-    public const string ArrowDownTail = "\ued9b";
-    public const string ArrowElbowLeft = "\uf9ed";
-    public const string ArrowElbowRight = "\uf9ee";
-    public const string ArrowFork = "\uf04a";
-    public const string ArrowForward = "\uea17";
-    public const string ArrowForwardUp = "\ueb78";
-    public const string ArrowForwardUpDouble = "\uf9ef";
-    public const string ArrowGuide = "\uf22a";
-    public const string ArrowIteration = "\uf578";
-    public const string ArrowLeft = "\uea19";
-    public const string ArrowLeftBar = "\ued9c";
-    public const string ArrowLeftCircle = "\uea18";
-    public const string ArrowLeftRhombus = "\uf61e";
-    public const string ArrowLeftRight = "\uf04b";
-    public const string ArrowLeftSquare = "\ued9d";
-    public const string ArrowLeftTail = "\ued9e";
-    public const string ArrowLoopLeft = "\ued9f";
-    public const string ArrowLoopLeft2 = "\uf04c";
-    public const string ArrowLoopRight = "\ueda0";
-    public const string ArrowLoopRight2 = "\uf04d";
-    public const string ArrowMerge = "\uf04e";
-    public const string ArrowMergeBoth = "\uf23b";
-    public const string ArrowMergeLeft = "\uf23c";
-    public const string ArrowMergeRight = "\uf23d";
-    public const string ArrowMoveDown = "\uf2ba";
-    public const string ArrowMoveLeft = "\uf2bb";
-    public const string ArrowMoveRight = "\uf2bc";
-    public const string ArrowMoveUp = "\uf2bd";
-    public const string ArrowNarrowDown = "\uea1a";
-    public const string ArrowNarrowLeft = "\uea1b";
-    public const string ArrowNarrowRight = "\uea1c";
-    public const string ArrowNarrowUp = "\uea1d";
-    public const string ArrowRampLeft = "\ued3c";
-    public const string ArrowRampLeft2 = "\uf04f";
-    public const string ArrowRampLeft3 = "\uf050";
-    public const string ArrowRampRight = "\ued3d";
-    public const string ArrowRampRight2 = "\uf051";
-    public const string ArrowRampRight3 = "\uf052";
-    public const string ArrowRight = "\uea1f";
-    public const string ArrowRightBar = "\ueda1";
-    public const string ArrowRightCircle = "\uea1e";
-    public const string ArrowRightRhombus = "\uf61f";
-    public const string ArrowRightSquare = "\ueda2";
-    public const string ArrowRightTail = "\ueda3";
-    public const string ArrowRotaryFirstLeft = "\uf053";
-    public const string ArrowRotaryFirstRight = "\uf054";
-    public const string ArrowRotaryLastLeft = "\uf055";
-    public const string ArrowRotaryLastRight = "\uf056";
-    public const string ArrowRotaryLeft = "\uf057";
-    public const string ArrowRotaryRight = "\uf058";
-    public const string ArrowRotaryStraight = "\uf059";
-    public const string ArrowRoundaboutLeft = "\uf22b";
-    public const string ArrowRoundaboutRight = "\uf22c";
-    public const string ArrowSharpTurnLeft = "\uf05a";
-    public const string ArrowSharpTurnRight = "\uf05b";
-    public const string ArrowUp = "\uea25";
-    public const string ArrowUpBar = "\ueda4";
-    public const string ArrowUpCircle = "\uea20";
-    public const string ArrowUpLeft = "\uea22";
-    public const string ArrowUpLeftCircle = "\uea21";
-    public const string ArrowUpRhombus = "\uf620";
-    public const string ArrowUpRight = "\uea24";
-    public const string ArrowUpRightCircle = "\uea23";
-    public const string ArrowUpSquare = "\ueda6";
-    public const string ArrowUpTail = "\ueda7";
-    public const string ArrowWaveLeftDown = "\ueda8";
-    public const string ArrowWaveLeftUp = "\ueda9";
-    public const string ArrowWaveRightDown = "\uedaa";
-    public const string ArrowWaveRightUp = "\uedab";
-    public const string ArrowZigZag = "\uf4a7";
-    public const string ArrowsCross = "\ueffe";
-    public const string ArrowsDiagonal = "\uea27";
-    public const string ArrowsDiagonal2 = "\uea26";
-    public const string ArrowsDiagonalMinimize = "\uef39";
-    public const string ArrowsDiagonalMinimize2 = "\uef38";
-    public const string ArrowsDiff = "\uf296";
-    public const string ArrowsDoubleNeSw = "\uedde";
-    public const string ArrowsDoubleNwSe = "\ueddf";
-    public const string ArrowsDoubleSeNw = "\uede0";
-    public const string ArrowsDoubleSwNe = "\uede1";
-    public const string ArrowsDown = "\uedad";
-    public const string ArrowsDownUp = "\uedac";
-    public const string ArrowsExchange = "\uf1f4";
-    public const string ArrowsExchange2 = "\uf1f3";
-    public const string ArrowsHorizontal = "\ueb59";
-    public const string ArrowsJoin = "\uedaf";
-    public const string ArrowsJoin2 = "\uedae";
-    public const string ArrowsLeft = "\uedb1";
-    public const string ArrowsLeftDown = "\uee00";
-    public const string ArrowsLeftRight = "\uedb0";
-    public const string ArrowsMaximize = "\uea28";
-    public const string ArrowsMinimize = "\uea29";
-    public const string ArrowsMove = "\uf22f";
-    public const string ArrowsMoveHorizontal = "\uf22d";
-    public const string ArrowsMoveVertical = "\uf22e";
-    public const string ArrowsRandom = "\uf095";
-    public const string ArrowsRight = "\uedb3";
-    public const string ArrowsRightDown = "\uee01";
-    public const string ArrowsRightLeft = "\uedb2";
-    public const string ArrowsShuffle = "\uf000";
-    public const string ArrowsShuffle2 = "\uefff";
-    public const string ArrowsSort = "\ueb5a";
-    public const string ArrowsSplit = "\uedb5";
-    public const string ArrowsSplit2 = "\uedb4";
-    public const string ArrowsTransferDown = "\uf2cc";
-    public const string ArrowsTransferUp = "\uf2cd";
-    public const string ArrowsUp = "\uedb7";
-    public const string ArrowsUpDown = "\uedb6";
-    public const string ArrowsUpLeft = "\uee02";
-    public const string ArrowsUpRight = "\uee03";
-    public const string ArrowsVertical = "\ueb5b";
-    public const string Artboard = "\uea2a";
-    public const string ArtboardFilled = "\ufa83";
-    public const string ArtboardOff = "\uf0ae";
-    public const string Article = "\uf1e2";
-    public const string ArticleFilledFilled = "\uf7da";
-    public const string ArticleOff = "\uf3bf";
-    public const string AspectRatio = "\ued30";
-    public const string AspectRatioFilled = "\uf7db";
-    public const string AspectRatioOff = "\uf0af";
-    public const string Assembly = "\uf24d";
-    public const string AssemblyOff = "\uf3c0";
-    public const string Asset = "\uf1ce";
-    public const string Asterisk = "\uefd5";
-    public const string AsteriskSimple = "\uefd4";
-    public const string At = "\uea2b";
-    public const string AtOff = "\uf0b0";
-    public const string Atom = "\ueb79";
-    public const string Atom2 = "\uebdf";
-    public const string Atom2Filled = "\uf71b";
-    public const string AtomOff = "\uf0f9";
-    public const string AugmentedReality = "\uf023";
-    public const string AugmentedReality2 = "\uf37e";
-    public const string AugmentedRealityOff = "\uf3c1";
-    public const string Award = "\uea2c";
-    public const string AwardFilled = "\uf71c";
-    public const string AwardOff = "\uf0fa";
-    public const string Axe = "\uef9f";
-    public const string AxisX = "\uef45";
-    public const string AxisY = "\uef46";
-    public const string BabyBottle = "\uf5d2";
-    public const string BabyCarriage = "\uf05d";
-    public const string Backhoe = "\ued86";
-    public const string Backpack = "\uef47";
-    public const string BackpackOff = "\uf3c2";
-    public const string Backslash = "\ufab9";
-    public const string Backspace = "\uea2d";
-    public const string BackspaceFilled = "\uf7dc";
-    public const string Badge = "\uefc2";
-    public const string Badge3d = "\uf555";
-    public const string Badge4k = "\uf556";
-    public const string Badge8k = "\uf557";
-    public const string BadgeAd = "\uf558";
-    public const string BadgeAr = "\uf559";
-    public const string BadgeCc = "\uf55a";
-    public const string BadgeFilled = "\uf667";
-    public const string BadgeHd = "\uf55b";
-    public const string BadgeOff = "\uf0fb";
-    public const string BadgeSd = "\uf55c";
-    public const string BadgeTm = "\uf55d";
-    public const string BadgeVo = "\uf55e";
-    public const string BadgeVr = "\uf55f";
-    public const string BadgeWc = "\uf560";
-    public const string Badges = "\uefc3";
-    public const string BadgesFilled = "\uf7dd";
-    public const string BadgesOff = "\uf0fc";
-    public const string Baguette = "\uf3a5";
-    public const string BallAmericanFootball = "\uee04";
-    public const string BallAmericanFootballOff = "\uf3c3";
-    public const string BallBaseball = "\uefa0";
-    public const string BallBasketball = "\uec28";
-    public const string BallBowling = "\uec29";
-    public const string BallFootball = "\uee06";
-    public const string BallFootballOff = "\uee05";
-    public const string BallTennis = "\uec2a";
-    public const string BallVolleyball = "\uec2b";
-    public const string Balloon = "\uef3a";
-    public const string BalloonFilled = "\ufa84";
-    public const string BalloonOff = "\uf0fd";
-    public const string Ballpen = "\uf06e";
-    public const string BallpenFilled = "\ufa85";
-    public const string BallpenOff = "\uf0b1";
-    public const string Ban = "\uea2e";
-    public const string Bandage = "\ueb7a";
-    public const string BandageFilled = "\uf7de";
-    public const string BandageOff = "\uf3c4";
-    public const string Barbell = "\ueff0";
-    public const string BarbellOff = "\uf0b2";
-    public const string Barcode = "\uebc6";
-    public const string BarcodeOff = "\uf0b3";
-    public const string Barrel = "\uf0b4";
-    public const string BarrelOff = "\uf0fe";
-    public const string BarrierBlock = "\uf00e";
-    public const string BarrierBlockOff = "\uf0b5";
-    public const string Baseline = "\uf024";
-    public const string BaselineDensityLarge = "\uf9f0";
-    public const string BaselineDensityMedium = "\uf9f1";
-    public const string BaselineDensitySmall = "\uf9f2";
-    public const string Basket = "\uebe1";
-    public const string BasketBolt = "\ufb43";
-    public const string BasketCancel = "\ufb44";
-    public const string BasketCheck = "\ufb45";
-    public const string BasketCode = "\ufb46";
-    public const string BasketCog = "\ufb47";
-    public const string BasketDiscount = "\ufb48";
-    public const string BasketDollar = "\ufb49";
-    public const string BasketDown = "\ufb4a";
-    public const string BasketExclamation = "\ufb4b";
-    public const string BasketFilled = "\uf7df";
-    public const string BasketHeart = "\ufb4c";
-    public const string BasketMinus = "\ufb4d";
-    public const string BasketOff = "\uf0b6";
-    public const string BasketPause = "\ufb4e";
-    public const string BasketPin = "\ufb4f";
-    public const string BasketPlus = "\ufb50";
-    public const string BasketQuestion = "\ufb51";
-    public const string BasketSearch = "\ufb52";
-    public const string BasketShare = "\ufb53";
-    public const string BasketStar = "\ufb54";
-    public const string BasketUp = "\ufb55";
-    public const string BasketX = "\ufb56";
-    public const string Bat = "\uf284";
-    public const string Bath = "\uef48";
-    public const string BathFilled = "\uf71d";
-    public const string BathOff = "\uf0ff";
-    public const string Battery = "\uea34";
-    public const string Battery1 = "\uea2f";
-    public const string Battery1Filled = "\uf71e";
-    public const string Battery2 = "\uea30";
-    public const string Battery2Filled = "\uf71f";
-    public const string Battery3 = "\uea31";
-    public const string Battery3Filled = "\uf720";
-    public const string Battery4 = "\uea32";
-    public const string Battery4Filled = "\uf721";
-    public const string BatteryAutomotive = "\uee07";
-    public const string BatteryCharging = "\uea33";
-    public const string BatteryCharging2 = "\uef3b";
-    public const string BatteryEco = "\uef3c";
-    public const string BatteryFilled = "\uf668";
-    public const string BatteryOff = "\ued1c";
-    public const string Beach = "\uef3d";
-    public const string BeachOff = "\uf0b7";
-    public const string Bed = "\ueb5c";
-    public const string BedFilled = "\uf7e0";
-    public const string BedOff = "\uf100";
-    public const string Beer = "\uefa1";
-    public const string BeerFilled = "\uf7e1";
-    public const string BeerOff = "\uf101";
-    public const string Bell = "\uea35";
-    public const string BellBolt = "\uf812";
-    public const string BellCancel = "\uf813";
-    public const string BellCheck = "\uf814";
-    public const string BellCode = "\uf815";
-    public const string BellCog = "\uf816";
-    public const string BellDollar = "\uf817";
-    public const string BellDown = "\uf818";
-    public const string BellExclamation = "\uf819";
-    public const string BellFilled = "\uf669";
-    public const string BellHeart = "\uf81a";
-    public const string BellMinus = "\uede2";
-    public const string BellMinusFilled = "\uf722";
-    public const string BellOff = "\uece9";
-    public const string BellPause = "\uf81b";
-    public const string BellPin = "\uf81c";
-    public const string BellPlus = "\uede3";
-    public const string BellPlusFilled = "\uf723";
-    public const string BellQuestion = "\uf81d";
-    public const string BellRinging = "\ued07";
-    public const string BellRinging2 = "\uede4";
-    public const string BellRinging2Filled = "\uf724";
-    public const string BellRingingFilled = "\uf725";
-    public const string BellSchool = "\uf05e";
-    public const string BellSearch = "\uf81e";
-    public const string BellShare = "\uf81f";
-    public const string BellStar = "\uf820";
-    public const string BellUp = "\uf821";
-    public const string BellX = "\uede5";
-    public const string BellXFilled = "\uf726";
-    public const string BellZ = "\ueff1";
-    public const string BellZFilled = "\uf727";
-    public const string Beta = "\uf544";
-    public const string Bible = "\uefc4";
-    public const string Bike = "\uea36";
-    public const string BikeOff = "\uf0b8";
-    public const string Binary = "\uee08";
-    public const string BinaryOff = "\uf3c5";
-    public const string BinaryTree = "\uf5d4";
-    public const string BinaryTree2 = "\uf5d3";
-    public const string Biohazard = "\uecb8";
-    public const string BiohazardOff = "\uf0b9";
-    public const string Blade = "\uf4bd";
-    public const string BladeFilled = "\uf7e2";
-    public const string Bleach = "\uf2f3";
-    public const string BleachChlorine = "\uf2f0";
-    public const string BleachNoChlorine = "\uf2f1";
-    public const string BleachOff = "\uf2f2";
-    public const string Blockquote = "\uee09";
-    public const string Bluetooth = "\uea37";
-    public const string BluetoothConnected = "\uecea";
-    public const string BluetoothOff = "\ueceb";
-    public const string BluetoothX = "\uf081";
-    public const string Blur = "\uef8c";
-    public const string BlurOff = "\uf3c6";
-    public const string Bmp = "\uf3a6";
-    public const string Bold = "\ueb7b";
-    public const string BoldOff = "\uf0ba";
-    public const string Bolt = "\uea38";
-    public const string BoltOff = "\uecec";
-    public const string Bomb = "\uf59c";
-    public const string BombFilled = "\ufa86";
-    public const string Bone = "\uedb8";
-    public const string BoneOff = "\uf0bb";
-    public const string Bong = "\uf3a7";
-    public const string BongOff = "\uf3c7";
-    public const string Book = "\uea39";
-    public const string Book2 = "\uefc5";
-    public const string BookDownload = "\uf070";
-    public const string BookFilled = "\ufa87";
-    public const string BookOff = "\uf0bc";
-    public const string BookUpload = "\uf071";
-    public const string Bookmark = "\uea3a";
-    public const string BookmarkEdit = "\ufa5e";
-    public const string BookmarkFilled = "\ufa88";
-    public const string BookmarkMinus = "\ufa5f";
-    public const string BookmarkOff = "\ueced";
-    public const string BookmarkPlus = "\ufa60";
-    public const string BookmarkQuestion = "\ufa61";
-    public const string Bookmarks = "\ued08";
-    public const string BookmarksFilled = "\ufb1f";
-    public const string BookmarksOff = "\uf0bd";
-    public const string Books = "\ueff2";
-    public const string BooksOff = "\uf0be";
-    public const string BorderAll = "\uea3b";
-    public const string BorderBottom = "\uea3c";
-    public const string BorderCorners = "\uf7a0";
-    public const string BorderHorizontal = "\uea3d";
-    public const string BorderInner = "\uea3e";
-    public const string BorderLeft = "\uea3f";
-    public const string BorderNone = "\uea40";
-    public const string BorderOuter = "\uea41";
-    public const string BorderRadius = "\ueb7c";
-    public const string BorderRight = "\uea42";
-    public const string BorderSides = "\uf7a1";
-    public const string BorderStyle = "\uee0a";
-    public const string BorderStyle2 = "\uef22";
-    public const string BorderTop = "\uea43";
-    public const string BorderVertical = "\uea44";
-    public const string Bottle = "\uef0b";
-    public const string BottleFilled = "\ufa89";
-    public const string BottleOff = "\uf3c8";
-    public const string BounceLeft = "\uf59d";
-    public const string BounceLeftFilled = "\ufb20";
-    public const string BounceRight = "\uf59e";
-    public const string BounceRightFilled = "\ufb21";
-    public const string Bow = "\uf096";
-    public const string Bowl = "\uf4fa";
-    public const string BowlFilled = "\ufb22";
-    public const string Box = "\uea45";
-    public const string BoxAlignBottom = "\uf2a8";
-    public const string BoxAlignBottomFilled = "\ufa8a";
-    public const string BoxAlignBottomLeft = "\uf2ce";
-    public const string BoxAlignBottomLeftFilled = "\ufa8b";
-    public const string BoxAlignBottomRight = "\uf2cf";
-    public const string BoxAlignBottomRightFilled = "\ufa8c";
-    public const string BoxAlignLeft = "\uf2a9";
-    public const string BoxAlignLeftFilled = "\ufa8d";
-    public const string BoxAlignRight = "\uf2aa";
-    public const string BoxAlignRightFilled = "\ufa8e";
-    public const string BoxAlignTop = "\uf2ab";
-    public const string BoxAlignTopFilled = "\ufa8f";
-    public const string BoxAlignTopLeft = "\uf2d0";
-    public const string BoxAlignTopLeftFilled = "\ufa90";
-    public const string BoxAlignTopRight = "\uf2d1";
-    public const string BoxAlignTopRightFilled = "\ufa91";
-    public const string BoxMargin = "\uee0b";
-    public const string BoxModel = "\uee0c";
-    public const string BoxModel2 = "\uef23";
-    public const string BoxModel2Off = "\uf3c9";
-    public const string BoxModelOff = "\uf3ca";
-    public const string BoxMultiple = "\uee17";
-    public const string BoxMultiple0 = "\uee0d";
-    public const string BoxMultiple1 = "\uee0e";
-    public const string BoxMultiple2 = "\uee0f";
-    public const string BoxMultiple3 = "\uee10";
-    public const string BoxMultiple4 = "\uee11";
-    public const string BoxMultiple5 = "\uee12";
-    public const string BoxMultiple6 = "\uee13";
-    public const string BoxMultiple7 = "\uee14";
-    public const string BoxMultiple8 = "\uee15";
-    public const string BoxMultiple9 = "\uee16";
-    public const string BoxOff = "\uf102";
-    public const string BoxPadding = "\uee18";
-    public const string BoxSeam = "\uf561";
-    public const string Braces = "\uebcc";
-    public const string BracesOff = "\uf0bf";
-    public const string Brackets = "\uebcd";
-    public const string BracketsContain = "\uf1e5";
-    public const string BracketsContainEnd = "\uf1e3";
-    public const string BracketsContainStart = "\uf1e4";
-    public const string BracketsOff = "\uf0c0";
-    public const string Braille = "\uf545";
-    public const string Brain = "\uf59f";
-    public const string Brand4chan = "\uf494";
-    public const string BrandAbstract = "\uf495";
-    public const string BrandAdobe = "\uf0dc";
-    public const string BrandAdonisJs = "\uf496";
-    public const string BrandAirbnb = "\ued68";
-    public const string BrandAirtable = "\uef6a";
-    public const string BrandAlgolia = "\uf390";
-    public const string BrandAlipay = "\uf7a2";
-    public const string BrandAlpineJs = "\uf324";
-    public const string BrandAmazon = "\uf230";
-    public const string BrandAmd = "\uf653";
-    public const string BrandAmigo = "\uf5f9";
-    public const string BrandAmongUs = "\uf205";
-    public const string BrandAndroid = "\uec16";
-    public const string BrandAngular = "\uef6b";
-    public const string BrandAnsible = "\ufa70";
-    public const string BrandAo3 = "\uf5e8";
-    public const string BrandAppgallery = "\uf231";
-    public const string BrandApple = "\uec17";
-    public const string BrandAppleArcade = "\ued69";
-    public const string BrandApplePodcast = "\uf1e6";
-    public const string BrandAppstore = "\ued24";
-    public const string BrandAsana = "\uedc5";
-    public const string BrandAws = "\ufa4c";
-    public const string BrandAzure = "\ufa4d";
-    public const string BrandBackbone = "\uf325";
-    public const string BrandBadoo = "\uf206";
-    public const string BrandBaidu = "\uf5e9";
-    public const string BrandBandcamp = "\uf207";
-    public const string BrandBandlab = "\uf5fa";
-    public const string BrandBeats = "\uf208";
-    public const string BrandBehance = "\uec6e";
-    public const string BrandBilibili = "\uf6d2";
-    public const string BrandBinance = "\uf5a0";
-    public const string BrandBing = "\uedc6";
-    public const string BrandBitbucket = "\uedc7";
-    public const string BrandBlackberry = "\uf568";
-    public const string BrandBlender = "\uf326";
-    public const string BrandBlogger = "\uf35a";
-    public const string BrandBooking = "\uedc8";
-    public const string BrandBootstrap = "\uef3e";
-    public const string BrandBulma = "\uf327";
-    public const string BrandBumble = "\uf5fb";
-    public const string BrandBunpo = "\uf4cf";
-    public const string BrandCSharp = "\uf003";
-    public const string BrandCake = "\uf7a3";
-    public const string BrandCakephp = "\uf7af";
-    public const string BrandCampaignmonitor = "\uf328";
-    public const string BrandCarbon = "\uf348";
-    public const string BrandCashapp = "\uf391";
-    public const string BrandChrome = "\uec18";
-    public const string BrandCinema4d = "\ufa71";
-    public const string BrandCitymapper = "\uf5fc";
-    public const string BrandCloudflare = "\ufa4e";
-    public const string BrandCodecov = "\uf329";
-    public const string BrandCodepen = "\uec6f";
-    public const string BrandCodesandbox = "\ued6a";
-    public const string BrandCohost = "\uf5d5";
-    public const string BrandCoinbase = "\uf209";
-    public const string BrandComedyCentral = "\uf217";
-    public const string BrandCoreos = "\uf5fd";
-    public const string BrandCouchdb = "\uf60f";
-    public const string BrandCouchsurfing = "\uf392";
-    public const string BrandCpp = "\uf5fe";
-    public const string BrandCraft = "\ufa72";
-    public const string BrandCrunchbase = "\uf7e3";
-    public const string BrandCss3 = "\ued6b";
-    public const string BrandCtemplar = "\uf4d0";
-    public const string BrandCucumber = "\uef6c";
-    public const string BrandCupra = "\uf4d1";
-    public const string BrandCypress = "\uf333";
-    public const string BrandD3 = "\uf24e";
-    public const string BrandDaysCounter = "\uf4d2";
-    public const string BrandDcos = "\uf32a";
-    public const string BrandDebian = "\uef57";
-    public const string BrandDeezer = "\uf78b";
-    public const string BrandDeliveroo = "\uf4d3";
-    public const string BrandDeno = "\uf24f";
-    public const string BrandDenodo = "\uf610";
-    public const string BrandDeviantart = "\uecfb";
-    public const string BrandDigg = "\ufa73";
-    public const string BrandDingtalk = "\uf5ea";
-    public const string BrandDiscord = "\uece3";
-    public const string BrandDiscordFilled = "\uf7e4";
-    public const string BrandDisney = "\uf20a";
-    public const string BrandDisqus = "\uedc9";
-    public const string BrandDjango = "\uf349";
-    public const string BrandDocker = "\uedca";
-    public const string BrandDoctrine = "\uef6d";
-    public const string BrandDolbyDigital = "\uf4d4";
-    public const string BrandDouban = "\uf5ff";
-    public const string BrandDribbble = "\uec19";
-    public const string BrandDribbbleFilled = "\uf7e5";
-    public const string BrandDrops = "\uf4d5";
-    public const string BrandDrupal = "\uf393";
-    public const string BrandEdge = "\uecfc";
-    public const string BrandElastic = "\uf611";
-    public const string BrandElectronicArts = "\ufa74";
-    public const string BrandEmber = "\uf497";
-    public const string BrandEnvato = "\uf394";
-    public const string BrandEtsy = "\uf654";
-    public const string BrandEvernote = "\uf600";
-    public const string BrandFacebook = "\uec1a";
-    public const string BrandFacebookFilled = "\uf7e6";
-    public const string BrandFeedly = "\ufa75";
-    public const string BrandFigma = "\uec93";
-    public const string BrandFilezilla = "\ufa76";
-    public const string BrandFinder = "\uf218";
-    public const string BrandFirebase = "\uef6e";
-    public const string BrandFirefox = "\uecfd";
-    public const string BrandFiverr = "\uf7a4";
-    public const string BrandFlickr = "\uecfe";
-    public const string BrandFlightradar24 = "\uf4d6";
-    public const string BrandFlipboard = "\uf20b";
-    public const string BrandFlutter = "\uf395";
-    public const string BrandFortnite = "\uf260";
-    public const string BrandFoursquare = "\uecff";
-    public const string BrandFramer = "\uec1b";
-    public const string BrandFramerMotion = "\uf78c";
-    public const string BrandFunimation = "\uf655";
-    public const string BrandGatsby = "\uf396";
-    public const string BrandGit = "\uef6f";
-    public const string BrandGithub = "\uec1c";
-    public const string BrandGithubCopilot = "\uf4a8";
-    public const string BrandGithubFilled = "\uf7e7";
-    public const string BrandGitlab = "\uec1d";
-    public const string BrandGmail = "\uefa2";
-    public const string BrandGolang = "\uf78d";
-    public const string BrandGoogle = "\uec1f";
-    public const string BrandGoogleAnalytics = "\uedcb";
-    public const string BrandGoogleBigQuery = "\uf612";
-    public const string BrandGoogleDrive = "\uec1e";
-    public const string BrandGoogleFit = "\uf297";
-    public const string BrandGoogleHome = "\uf601";
-    public const string BrandGoogleMaps = "\ufa4f";
-    public const string BrandGoogleOne = "\uf232";
-    public const string BrandGooglePhotos = "\uf20c";
-    public const string BrandGooglePlay = "\ued25";
-    public const string BrandGooglePodcasts = "\uf656";
-    public const string BrandGrammarly = "\uf32b";
-    public const string BrandGraphql = "\uf32c";
-    public const string BrandGravatar = "\uedcc";
-    public const string BrandGrindr = "\uf20d";
-    public const string BrandGuardian = "\uf4fb";
-    public const string BrandGumroad = "\uf5d6";
-    public const string BrandHbo = "\uf657";
-    public const string BrandHeadlessui = "\uf32d";
-    public const string BrandHexo = "\ufa50";
-    public const string BrandHipchat = "\uedcd";
-    public const string BrandHtml5 = "\ued6c";
-    public const string BrandInertia = "\uf34a";
-    public const string BrandInstagram = "\uec20";
-    public const string BrandIntercom = "\uf1cf";
-    public const string BrandItch = "\ufa22";
-    public const string BrandJavascript = "\uef0c";
-    public const string BrandJuejin = "\uf7b0";
-    public const string BrandKbin = "\ufad0";
-    public const string BrandKick = "\ufa23";
-    public const string BrandKickstarter = "\uedce";
-    public const string BrandKotlin = "\ued6d";
-    public const string BrandLaravel = "\uf34b";
-    public const string BrandLastfm = "\uf001";
-    public const string BrandLeetcode = "\ufa51";
-    public const string BrandLetterboxd = "\ufa24";
-    public const string BrandLine = "\uf7e8";
-    public const string BrandLinkedin = "\uec8c";
-    public const string BrandLinktree = "\uf1e7";
-    public const string BrandLinqpad = "\uf562";
-    public const string BrandLoom = "\uef70";
-    public const string BrandMailgun = "\uf32e";
-    public const string BrandMantine = "\uf32f";
-    public const string BrandMastercard = "\uef49";
-    public const string BrandMastodon = "\uf250";
-    public const string BrandMatrix = "\uf5eb";
-    public const string BrandMcdonalds = "\uf251";
-    public const string BrandMedium = "\uec70";
-    public const string BrandMercedes = "\uf072";
-    public const string BrandMessenger = "\uec71";
-    public const string BrandMeta = "\uefb0";
-    public const string BrandMicrosoftTeams = "\ufadf";
-    public const string BrandMinecraft = "\ufaef";
-    public const string BrandMiniprogram = "\uf602";
-    public const string BrandMixpanel = "\uf397";
-    public const string BrandMonday = "\uf219";
-    public const string BrandMongodb = "\uf613";
-    public const string BrandMyOppo = "\uf4d7";
-    public const string BrandMysql = "\uf614";
-    public const string BrandNationalGeographic = "\uf603";
-    public const string BrandNem = "\uf5a1";
-    public const string BrandNetbeans = "\uef71";
-    public const string BrandNeteaseMusic = "\uf604";
-    public const string BrandNetflix = "\uedcf";
-    public const string BrandNexo = "\uf5a2";
-    public const string BrandNextcloud = "\uf4d8";
-    public const string BrandNextjs = "\uf0dd";
-    public const string BrandNodejs = "\ufae0";
-    public const string BrandNordVpn = "\uf37f";
-    public const string BrandNotion = "\uef7b";
-    public const string BrandNpm = "\uf569";
-    public const string BrandNuxt = "\uf0de";
-    public const string BrandNytimes = "\uef8d";
-    public const string BrandOauth = "\ufa52";
-    public const string BrandOffice = "\uf398";
-    public const string BrandOkRu = "\uf399";
-    public const string BrandOnedrive = "\uf5d7";
-    public const string BrandOnlyfans = "\uf605";
-    public const string BrandOpenSource = "\uedd0";
-    public const string BrandOpenai = "\uf78e";
-    public const string BrandOpenvpn = "\uf39a";
-    public const string BrandOpera = "\uec21";
-    public const string BrandPagekit = "\uedd1";
-    public const string BrandPatreon = "\uedd2";
-    public const string BrandPaypal = "\uec22";
-    public const string BrandPaypalFilled = "\uf7e9";
-    public const string BrandPaypay = "\uf5ec";
-    public const string BrandPeanut = "\uf39b";
-    public const string BrandPepsi = "\uf261";
-    public const string BrandPhp = "\uef72";
-    public const string BrandPicsart = "\uf4d9";
-    public const string BrandPinterest = "\uec8d";
-    public const string BrandPlanetscale = "\uf78f";
-    public const string BrandPocket = "\ued00";
-    public const string BrandPolymer = "\uf498";
-    public const string BrandPowershell = "\uf5ed";
-    public const string BrandPrisma = "\uf499";
-    public const string BrandProducthunt = "\uedd3";
-    public const string BrandPushbullet = "\uf330";
-    public const string BrandPushover = "\uf20e";
-    public const string BrandPython = "\ued01";
-    public const string BrandQq = "\uf606";
-    public const string BrandRadixUi = "\uf790";
-    public const string BrandReact = "\uf34c";
-    public const string BrandReactNative = "\uef73";
-    public const string BrandReason = "\uf49a";
-    public const string BrandReddit = "\uec8e";
-    public const string BrandRedhat = "\uf331";
-    public const string BrandRedux = "\uf3a8";
-    public const string BrandRevolut = "\uf4da";
-    public const string BrandRumble = "\ufad1";
-    public const string BrandRust = "\ufa53";
-    public const string BrandSafari = "\uec23";
-    public const string BrandSamsungpass = "\uf4db";
-    public const string BrandSass = "\uedd4";
-    public const string BrandSentry = "\uedd5";
-    public const string BrandSharik = "\uf4dc";
-    public const string BrandShazam = "\uedd6";
-    public const string BrandShopee = "\uf252";
-    public const string BrandSketch = "\uec24";
-    public const string BrandSkype = "\ued02";
-    public const string BrandSlack = "\uec72";
-    public const string BrandSnapchat = "\uec25";
-    public const string BrandSnapseed = "\uf253";
-    public const string BrandSnowflake = "\uf615";
-    public const string BrandSocketIo = "\uf49b";
-    public const string BrandSolidjs = "\uf5ee";
-    public const string BrandSoundcloud = "\ued6e";
-    public const string BrandSpacehey = "\uf4fc";
-    public const string BrandSpeedtest = "\ufa77";
-    public const string BrandSpotify = "\ued03";
-    public const string BrandStackoverflow = "\uef58";
-    public const string BrandStackshare = "\uf607";
-    public const string BrandSteam = "\ued6f";
-    public const string BrandStorj = "\ufa54";
-    public const string BrandStorybook = "\uf332";
-    public const string BrandStorytel = "\uf608";
-    public const string BrandStrava = "\uf254";
-    public const string BrandStripe = "\uedd7";
-    public const string BrandSublimeText = "\uef74";
-    public const string BrandSugarizer = "\uf7a5";
-    public const string BrandSupabase = "\uf6d3";
-    public const string BrandSuperhuman = "\uf50c";
-    public const string BrandSupernova = "\uf49c";
-    public const string BrandSurfshark = "\uf255";
-    public const string BrandSvelte = "\uf0df";
-    public const string BrandSwift = "\ufa55";
-    public const string BrandSymfony = "\uf616";
-    public const string BrandTabler = "\uec8f";
-    public const string BrandTailwind = "\ueca1";
-    public const string BrandTaobao = "\uf5ef";
-    public const string BrandTed = "\uf658";
-    public const string BrandTelegram = "\uec26";
-    public const string BrandTerraform = "\ufa56";
-    public const string BrandTether = "\uf5a3";
-    public const string BrandThreads = "\ufb02";
-    public const string BrandThreejs = "\uf5f0";
-    public const string BrandTidal = "\ued70";
-    public const string BrandTiktoFilled = "\uf7ea";
-    public const string BrandTiktok = "\uec73";
-    public const string BrandTinder = "\ued71";
-    public const string BrandTopbuzz = "\uf50d";
-    public const string BrandTorchain = "\uf5a4";
-    public const string BrandToyota = "\uf262";
-    public const string BrandTrello = "\uf39d";
-    public const string BrandTripadvisor = "\uf002";
-    public const string BrandTumblr = "\ued04";
-    public const string BrandTwilio = "\uf617";
-    public const string BrandTwitch = "\ued05";
-    public const string BrandTwitter = "\uec27";
-    public const string BrandTwitterFilled = "\uf7eb";
-    public const string BrandTypescript = "\uf5f1";
-    public const string BrandUber = "\uef75";
-    public const string BrandUbuntu = "\uef59";
-    public const string BrandUnity = "\uf49d";
-    public const string BrandUnsplash = "\uedd8";
-    public const string BrandUpwork = "\uf39e";
-    public const string BrandValorant = "\uf39f";
-    public const string BrandVercel = "\uef24";
-    public const string BrandVimeo = "\ued06";
-    public const string BrandVinted = "\uf20f";
-    public const string BrandVisa = "\uf380";
-    public const string BrandVisualStudio = "\uef76";
-    public const string BrandVite = "\uf5f2";
-    public const string BrandVivaldi = "\uf210";
-    public const string BrandVk = "\ued72";
-    public const string BrandVlc = "\ufa78";
-    public const string BrandVolkswagen = "\uf50e";
-    public const string BrandVsco = "\uf334";
-    public const string BrandVscode = "\uf3a0";
-    public const string BrandVue = "\uf0e0";
-    public const string BrandWalmart = "\uf211";
-    public const string BrandWaze = "\uf5d8";
-    public const string BrandWebflow = "\uf2d2";
-    public const string BrandWechat = "\uf5f3";
-    public const string BrandWeibo = "\uf609";
-    public const string BrandWhatsapp = "\uec74";
-    public const string BrandWikipedia = "\ufa79";
-    public const string BrandWindows = "\uecd8";
-    public const string BrandWindy = "\uf4dd";
-    public const string BrandWish = "\uf212";
-    public const string BrandWix = "\uf3a1";
-    public const string BrandWordpress = "\uf2d3";
-    public const string BrandX = "\ufc0f";
-    public const string BrandXFilled = "\ufc21";
-    public const string BrandXamarin = "\ufa7a";
-    public const string BrandXbox = "\uf298";
-    public const string BrandXdeep = "\ufc10";
-    public const string BrandXing = "\uf21a";
-    public const string BrandYahoo = "\ued73";
-    public const string BrandYandex = "\ufae1";
-    public const string BrandYatse = "\uf213";
-    public const string BrandYcombinator = "\uedd9";
-    public const string BrandYoutube = "\uec90";
-    public const string BrandYoutubeFilled = "\ufc22";
-    public const string BrandYoutubeKids = "\uf214";
-    public const string BrandZalando = "\uf49e";
-    public const string BrandZapier = "\uf49f";
-    public const string BrandZeit = "\uf335";
-    public const string BrandZhihu = "\uf60a";
-    public const string BrandZoom = "\uf215";
-    public const string BrandZulip = "\uf4de";
-    public const string BrandZwift = "\uf216";
-    public const string Bread = "\uefa3";
-    public const string BreadOff = "\uf3cb";
-    public const string Briefcase = "\uea46";
-    public const string Briefcase2 = "\ufb03";
-    public const string BriefcaseOff = "\uf3cc";
-    public const string Brightness = "\ueb7f";
-    public const string Brightness2 = "\uee19";
-    public const string BrightnessDown = "\ueb7d";
-    public const string BrightnessDownFilled = "\ufb23";
-    public const string BrightnessHalf = "\uee1a";
-    public const string BrightnessOff = "\uf3cd";
-    public const string BrightnessUp = "\ueb7e";
-    public const string BrightnessUpFilled = "\ufb24";
-    public const string Broadcast = "\uf1e9";
-    public const string BroadcastOff = "\uf1e8";
-    public const string Browser = "\uebb7";
-    public const string BrowserCheck = "\uefd6";
-    public const string BrowserOff = "\uf0c1";
-    public const string BrowserPlus = "\uefd7";
-    public const string BrowserX = "\uefd8";
-    public const string Brush = "\uebb8";
-    public const string BrushOff = "\uf0c2";
-    public const string Bucket = "\uea47";
-    public const string BucketDroplet = "\uf56a";
-    public const string BucketOff = "\uf103";
-    public const string Bug = "\uea48";
-    public const string BugOff = "\uf0c3";
-    public const string Building = "\uea4f";
-    public const string BuildingArch = "\uea49";
-    public const string BuildingBank = "\uebe2";
-    public const string BuildingBridge = "\uea4b";
-    public const string BuildingBridge2 = "\uea4a";
-    public const string BuildingBroadcastTower = "\uf4be";
-    public const string BuildingCarousel = "\ued87";
-    public const string BuildingCastle = "\ued88";
-    public const string BuildingChurch = "\uea4c";
-    public const string BuildingCircus = "\uf4bf";
-    public const string BuildingCommunity = "\uebf6";
-    public const string BuildingCottage = "\uee1b";
-    public const string BuildingEstate = "\uf5a5";
-    public const string BuildingFactory = "\uee1c";
-    public const string BuildingFactory2 = "\uf082";
-    public const string BuildingFortress = "\ued89";
-    public const string BuildingHospital = "\uea4d";
-    public const string BuildingLighthouse = "\ued8a";
-    public const string BuildingMonument = "\ued26";
-    public const string BuildingMosque = "\ufa57";
-    public const string BuildingPavilion = "\uebf7";
-    public const string BuildingSkyscraper = "\uec39";
-    public const string BuildingStadium = "\uf641";
-    public const string BuildingStore = "\uea4e";
-    public const string BuildingTunnel = "\uf5a6";
-    public const string BuildingWarehouse = "\uebe3";
-    public const string BuildingWindTurbine = "\uf4c0";
-    public const string Bulb = "\uea51";
-    public const string BulbFilled = "\uf66a";
-    public const string BulbOff = "\uea50";
-    public const string Bulldozer = "\uee1d";
-    public const string Bus = "\uebe4";
-    public const string BusOff = "\uf3ce";
-    public const string BusStop = "\uf2d4";
-    public const string Businessplan = "\uee1e";
-    public const string Butterfly = "\uefd9";
-    public const string Cactus = "\uf21b";
-    public const string CactusFilled = "\ufb25";
-    public const string CactusOff = "\uf3cf";
-    public const string Cake = "\uf00f";
-    public const string CakeOff = "\uf104";
-    public const string Calculator = "\ueb80";
-    public const string CalculatorFilled = "\ufb26";
-    public const string CalculatorOff = "\uf0c4";
-    public const string Calendar = "\uea53";
-    public const string CalendarBolt = "\uf822";
-    public const string CalendarCancel = "\uf823";
-    public const string CalendarCheck = "\uf824";
-    public const string CalendarCode = "\uf825";
-    public const string CalendarCog = "\uf826";
-    public const string CalendarDollar = "\uf827";
-    public const string CalendarDown = "\uf828";
-    public const string CalendarDue = "\uf621";
-    public const string CalendarEvent = "\uea52";
-    public const string CalendarExclamation = "\uf829";
-    public const string CalendarFilled = "\ufb27";
-    public const string CalendarHeart = "\uf82a";
-    public const string CalendarMinus = "\uebb9";
-    public const string CalendarOff = "\uee1f";
-    public const string CalendarPause = "\uf82b";
-    public const string CalendarPin = "\uf82c";
-    public const string CalendarPlus = "\uebba";
-    public const string CalendarQuestion = "\uf82d";
-    public const string CalendarRepeat = "\ufad2";
-    public const string CalendarSearch = "\uf82e";
-    public const string CalendarShare = "\uf82f";
-    public const string CalendarStar = "\uf830";
-    public const string CalendarStats = "\uee20";
-    public const string CalendarTime = "\uee21";
-    public const string CalendarUp = "\uf831";
-    public const string CalendarX = "\uf832";
-    public const string Camera = "\uea54";
-    public const string CameraBolt = "\uf833";
-    public const string CameraCancel = "\uf834";
-    public const string CameraCheck = "\uf835";
-    public const string CameraCode = "\uf836";
-    public const string CameraCog = "\uf837";
-    public const string CameraDollar = "\uf838";
-    public const string CameraDown = "\uf839";
-    public const string CameraExclamation = "\uf83a";
-    public const string CameraFilled = "\ufa37";
-    public const string CameraHeart = "\uf83b";
-    public const string CameraMinus = "\uec3a";
-    public const string CameraOff = "\uecee";
-    public const string CameraPause = "\uf83c";
-    public const string CameraPin = "\uf83d";
-    public const string CameraPlus = "\uec3b";
-    public const string CameraQuestion = "\uf83e";
-    public const string CameraRotate = "\uee22";
-    public const string CameraSearch = "\uf83f";
-    public const string CameraSelfie = "\uee23";
-    public const string CameraShare = "\uf840";
-    public const string CameraStar = "\uf841";
-    public const string CameraUp = "\uf842";
-    public const string CameraX = "\uf843";
-    public const string Camper = "\ufa25";
-    public const string Campfire = "\uf5a7";
-    public const string CampfireFilled = "\ufb28";
-    public const string Candle = "\uefc6";
-    public const string CandleFilled = "\ufc23";
-    public const string Candy = "\uef0d";
-    public const string CandyOff = "\uf0c5";
-    public const string Cane = "\uf50f";
-    public const string Cannabis = "\uf4c1";
-    public const string Capsule = "\ufae3";
-    public const string CapsuleFilled = "\ufc24";
-    public const string CapsuleHorizontal = "\ufae2";
-    public const string CapsuleHorizontalFilled = "\ufc25";
-    public const string Capture = "\uec3c";
-    public const string CaptureFilled = "\ufb29";
-    public const string CaptureOff = "\uf0c6";
-    public const string Car = "\uebbb";
-    public const string CarCrane = "\uef25";
-    public const string CarCrash = "\uefa4";
-    public const string CarOff = "\uf0c7";
-    public const string CarTurbine = "\uf4fd";
-    public const string Caravan = "\uec7c";
-    public const string Cardboards = "\ued74";
-    public const string CardboardsOff = "\uf0c8";
-    public const string Cards = "\uf510";
-    public const string CardsFilled = "\ufc26";
-    public const string CaretDown = "\ueb5d";
-    public const string CaretDownFilled = "\ufb2a";
-    public const string CaretLeft = "\ueb5e";
-    public const string CaretLeftFilled = "\ufb2b";
-    public const string CaretRight = "\ueb5f";
-    public const string CaretRightFilled = "\ufb2c";
-    public const string CaretUp = "\ueb60";
-    public const string CaretUpFilled = "\ufb2d";
-    public const string CarouselHorizontal = "\uf659";
-    public const string CarouselHorizontalFilled = "\ufa92";
-    public const string CarouselVertical = "\uf65a";
-    public const string CarouselVerticalFilled = "\ufa93";
-    public const string Carrot = "\uf21c";
-    public const string CarrotOff = "\uf3d0";
-    public const string Cash = "\uea55";
-    public const string CashBanknote = "\uee25";
-    public const string CashBanknoteOff = "\uee24";
-    public const string CashOff = "\uf105";
-    public const string Cast = "\uea56";
-    public const string CastOff = "\uf0c9";
-    public const string Cat = "\uf65b";
-    public const string Category = "\uf1f6";
-    public const string Category2 = "\uf1f5";
-    public const string CategoryFilled = "\ufb2e";
-    public const string Ce = "\ued75";
-    public const string CeOff = "\uf0ca";
-    public const string Cell = "\uf05f";
-    public const string CellSignal1 = "\uf083";
-    public const string CellSignal2 = "\uf084";
-    public const string CellSignal3 = "\uf085";
-    public const string CellSignal4 = "\uf086";
-    public const string CellSignal5 = "\uf087";
-    public const string CellSignalOff = "\uf088";
-    public const string Certificate = "\ued76";
-    public const string Certificate2 = "\uf073";
-    public const string Certificate2Off = "\uf0cb";
-    public const string CertificateOff = "\uf0cc";
-    public const string ChairDirector = "\uf2d5";
-    public const string Chalkboard = "\uf34d";
-    public const string ChalkboardOff = "\uf3d1";
-    public const string ChargingPile = "\uee26";
-    public const string ChartArcs = "\uee28";
-    public const string ChartArcs3 = "\uee27";
-    public const string ChartArea = "\uea58";
-    public const string ChartAreaFilled = "\uf66b";
-    public const string ChartAreaLine = "\uea57";
-    public const string ChartAreaLineFilled = "\uf66c";
-    public const string ChartArrows = "\uee2a";
-    public const string ChartArrowsVertical = "\uee29";
-    public const string ChartBar = "\uea59";
-    public const string ChartBarOff = "\uf3d2";
-    public const string ChartBubble = "\uec75";
-    public const string ChartBubbleFilled = "\uf66d";
-    public const string ChartCandle = "\uea5a";
-    public const string ChartCandleFilled = "\uf66e";
-    public const string ChartCircles = "\uee2b";
-    public const string ChartDonut = "\uea5b";
-    public const string ChartDonut2 = "\uee2c";
-    public const string ChartDonut3 = "\uee2d";
-    public const string ChartDonut4 = "\uee2e";
-    public const string ChartDonutFilled = "\uf66f";
-    public const string ChartDots = "\uee2f";
-    public const string ChartDots2 = "\uf097";
-    public const string ChartDots3 = "\uf098";
-    public const string ChartGridDots = "\uf4c2";
-    public const string ChartHistogram = "\uf65c";
-    public const string ChartInfographic = "\uee30";
-    public const string ChartLine = "\uea5c";
-    public const string ChartPie = "\uea5d";
-    public const string ChartPie2 = "\uee31";
-    public const string ChartPie3 = "\uee32";
-    public const string ChartPie4 = "\uee33";
-    public const string ChartPieFilled = "\uf670";
-    public const string ChartPieOff = "\uf3d3";
-    public const string ChartPpf = "\uf618";
-    public const string ChartRadar = "\ued77";
-    public const string ChartSankey = "\uf619";
-    public const string ChartTreemap = "\uf381";
-    public const string Check = "\uea5e";
-    public const string Checkbox = "\ueba6";
-    public const string Checklist = "\uf074";
-    public const string Checks = "\uebaa";
-    public const string CheckupList = "\uef5a";
-    public const string Cheese = "\uef26";
-    public const string ChefHat = "\uf21d";
-    public const string ChefHatOff = "\uf3d4";
-    public const string Cherry = "\uf511";
-    public const string CherryFilled = "\uf728";
-    public const string Chess = "\uf382";
-    public const string ChessBishop = "\uf56b";
-    public const string ChessBishopFilled = "\uf729";
-    public const string ChessFilled = "\uf72a";
-    public const string ChessKing = "\uf56c";
-    public const string ChessKingFilled = "\uf72b";
-    public const string ChessKnight = "\uf56d";
-    public const string ChessKnightFilled = "\uf72c";
-    public const string ChessQueen = "\uf56e";
-    public const string ChessQueenFilled = "\uf72d";
-    public const string ChessRook = "\uf56f";
-    public const string ChessRookFilled = "\uf72e";
-    public const string ChevronCompactDown = "\ufaf0";
-    public const string ChevronCompactLeft = "\ufaf1";
-    public const string ChevronCompactRight = "\ufaf2";
-    public const string ChevronCompactUp = "\ufaf3";
-    public const string ChevronDown = "\uea5f";
-    public const string ChevronDownLeft = "\ued09";
-    public const string ChevronDownRight = "\ued0a";
-    public const string ChevronLeft = "\uea60";
-    public const string ChevronLeftPipe = "\ufae4";
-    public const string ChevronRight = "\uea61";
-    public const string ChevronRightPipe = "\ufae5";
-    public const string ChevronUp = "\uea62";
-    public const string ChevronUpLeft = "\ued0b";
-    public const string ChevronUpRight = "\ued0c";
-    public const string ChevronsDown = "\uea63";
-    public const string ChevronsDownLeft = "\ued0d";
-    public const string ChevronsDownRight = "\ued0e";
-    public const string ChevronsLeft = "\uea64";
-    public const string ChevronsRight = "\uea65";
-    public const string ChevronsUp = "\uea66";
-    public const string ChevronsUpLeft = "\ued0f";
-    public const string ChevronsUpRight = "\ued10";
-    public const string Chisel = "\uf383";
-    public const string ChristmasTree = "\ued78";
-    public const string ChristmasTreeOff = "\uf3d5";
-    public const string Circle = "\uea6b";
-    public const string Circle0Filled = "\uf72f";
-    public const string Circle1Filled = "\uf730";
-    public const string Circle2Filled = "\uf731";
-    public const string Circle3Filled = "\uf732";
-    public const string Circle4Filled = "\uf733";
-    public const string Circle5Filled = "\uf734";
-    public const string Circle6Filled = "\uf735";
-    public const string Circle7Filled = "\uf736";
-    public const string Circle8Filled = "\uf737";
-    public const string Circle9Filled = "\uf738";
-    public const string CircleArrowDown = "\uf6f9";
-    public const string CircleArrowDownFilled = "\uf6f4";
-    public const string CircleArrowDownLeft = "\uf6f6";
-    public const string CircleArrowDownLeftFilled = "\uf6f5";
-    public const string CircleArrowDownRight = "\uf6f8";
-    public const string CircleArrowDownRightFilled = "\uf6f7";
-    public const string CircleArrowLeft = "\uf6fb";
-    public const string CircleArrowLeftFilled = "\uf6fa";
-    public const string CircleArrowRight = "\uf6fd";
-    public const string CircleArrowRightFilled = "\uf6fc";
-    public const string CircleArrowUp = "\uf703";
-    public const string CircleArrowUpFilled = "\uf6fe";
-    public const string CircleArrowUpLeft = "\uf700";
-    public const string CircleArrowUpLeftFilled = "\uf6ff";
-    public const string CircleArrowUpRight = "\uf702";
-    public const string CircleArrowUpRightFilled = "\uf701";
-    public const string CircleCaretDown = "\uf4a9";
-    public const string CircleCaretLeft = "\uf4aa";
-    public const string CircleCaretRight = "\uf4ab";
-    public const string CircleCaretUp = "\uf4ac";
-    public const string CircleCheck = "\uea67";
-    public const string CircleCheckFilled = "\uf704";
-    public const string CircleChevronDown = "\uf622";
-    public const string CircleChevronLeft = "\uf623";
-    public const string CircleChevronRight = "\uf624";
-    public const string CircleChevronUp = "\uf625";
-    public const string CircleChevronsDown = "\uf642";
-    public const string CircleChevronsLeft = "\uf643";
-    public const string CircleChevronsRight = "\uf644";
-    public const string CircleChevronsUp = "\uf645";
-    public const string CircleDashed = "\ued27";
-    public const string CircleDot = "\uefb1";
-    public const string CircleDotFilled = "\uf705";
-    public const string CircleDotted = "\ued28";
-    public const string CircleFilled = "\uf671";
-    public const string CircleHalf = "\uee3f";
-    public const string CircleHalf2 = "\ueff3";
-    public const string CircleHalfVertical = "\uee3e";
-    public const string CircleKey = "\uf633";
-    public const string CircleKeyFilled = "\uf706";
-    public const string CircleLetterA = "\uf441";
-    public const string CircleLetterB = "\uf442";
-    public const string CircleLetterC = "\uf443";
-    public const string CircleLetterD = "\uf444";
-    public const string CircleLetterE = "\uf445";
-    public const string CircleLetterF = "\uf446";
-    public const string CircleLetterG = "\uf447";
-    public const string CircleLetterH = "\uf448";
-    public const string CircleLetterI = "\uf449";
-    public const string CircleLetterJ = "\uf44a";
-    public const string CircleLetterK = "\uf44b";
-    public const string CircleLetterL = "\uf44c";
-    public const string CircleLetterM = "\uf44d";
-    public const string CircleLetterN = "\uf44e";
-    public const string CircleLetterO = "\uf44f";
-    public const string CircleLetterP = "\uf450";
-    public const string CircleLetterQ = "\uf451";
-    public const string CircleLetterR = "\uf452";
-    public const string CircleLetterS = "\uf453";
-    public const string CircleLetterT = "\uf454";
-    public const string CircleLetterU = "\uf455";
-    public const string CircleLetterV = "\uf4ad";
-    public const string CircleLetterW = "\uf456";
-    public const string CircleLetterX = "\uf4ae";
-    public const string CircleLetterY = "\uf457";
-    public const string CircleLetterZ = "\uf458";
-    public const string CircleMinus = "\uea68";
-    public const string CircleNumber0 = "\uee34";
-    public const string CircleNumber1 = "\uee35";
-    public const string CircleNumber2 = "\uee36";
-    public const string CircleNumber3 = "\uee37";
-    public const string CircleNumber4 = "\uee38";
-    public const string CircleNumber5 = "\uee39";
-    public const string CircleNumber6 = "\uee3a";
-    public const string CircleNumber7 = "\uee3b";
-    public const string CircleNumber8 = "\uee3c";
-    public const string CircleNumber9 = "\uee3d";
-    public const string CircleOff = "\uee40";
-    public const string CirclePlus = "\uea69";
-    public const string CircleRectangle = "\uf010";
-    public const string CircleRectangleOff = "\uf0cd";
-    public const string CircleSquare = "\uece4";
-    public const string CircleTriangle = "\uf011";
-    public const string CircleX = "\uea6a";
-    public const string CircleXFilled = "\uf739";
-    public const string Circles = "\uece5";
-    public const string CirclesFilled = "\uf672";
-    public const string CirclesRelation = "\uf4c3";
-    public const string CircuitAmmeter = "\uf271";
-    public const string CircuitBattery = "\uf272";
-    public const string CircuitBulb = "\uf273";
-    public const string CircuitCapacitor = "\uf275";
-    public const string CircuitCapacitorPolarized = "\uf274";
-    public const string CircuitCell = "\uf277";
-    public const string CircuitCellPlus = "\uf276";
-    public const string CircuitChangeover = "\uf278";
-    public const string CircuitDiode = "\uf27a";
-    public const string CircuitDiodeZener = "\uf279";
-    public const string CircuitGround = "\uf27c";
-    public const string CircuitGroundDigital = "\uf27b";
-    public const string CircuitInductor = "\uf27d";
-    public const string CircuitMotor = "\uf27e";
-    public const string CircuitPushbutton = "\uf27f";
-    public const string CircuitResistor = "\uf280";
-    public const string CircuitSwitchClosed = "\uf281";
-    public const string CircuitSwitchOpen = "\uf282";
-    public const string CircuitVoltmeter = "\uf283";
-    public const string ClearAll = "\uee41";
-    public const string ClearFormatting = "\uebe5";
-    public const string Click = "\uebbc";
-    public const string Clipboard = "\uea6f";
-    public const string ClipboardCheck = "\uea6c";
-    public const string ClipboardCopy = "\uf299";
-    public const string ClipboardData = "\uf563";
-    public const string ClipboardHeart = "\uf34e";
-    public const string ClipboardList = "\uea6d";
-    public const string ClipboardOff = "\uf0ce";
-    public const string ClipboardPlus = "\uefb2";
-    public const string ClipboardText = "\uf089";
-    public const string ClipboardTypography = "\uf34f";
-    public const string ClipboardX = "\uea6e";
-    public const string Clock = "\uea70";
-    public const string Clock2 = "\uf099";
-    public const string ClockBolt = "\uf844";
-    public const string ClockCancel = "\uf546";
-    public const string ClockCheck = "\uf7c1";
-    public const string ClockCode = "\uf845";
-    public const string ClockCog = "\uf7c2";
-    public const string ClockDollar = "\uf846";
-    public const string ClockDown = "\uf7c3";
-    public const string ClockEdit = "\uf547";
-    public const string ClockExclamation = "\uf847";
-    public const string ClockFilled = "\uf73a";
-    public const string ClockHeart = "\uf7c4";
-    public const string ClockHour1 = "\uf313";
-    public const string ClockHour10 = "\uf314";
-    public const string ClockHour11 = "\uf315";
-    public const string ClockHour12 = "\uf316";
-    public const string ClockHour2 = "\uf317";
-    public const string ClockHour3 = "\uf318";
-    public const string ClockHour4 = "\uf319";
-    public const string ClockHour5 = "\uf31a";
-    public const string ClockHour6 = "\uf31b";
-    public const string ClockHour7 = "\uf31c";
-    public const string ClockHour8 = "\uf31d";
-    public const string ClockHour9 = "\uf31e";
-    public const string ClockMinus = "\uf848";
-    public const string ClockOff = "\uf0cf";
-    public const string ClockPause = "\uf548";
-    public const string ClockPin = "\uf849";
-    public const string ClockPlay = "\uf549";
-    public const string ClockPlus = "\uf7c5";
-    public const string ClockQuestion = "\uf7c6";
-    public const string ClockRecord = "\uf54a";
-    public const string ClockSearch = "\uf7c7";
-    public const string ClockShare = "\uf84a";
-    public const string ClockShield = "\uf7c8";
-    public const string ClockStar = "\uf7c9";
-    public const string ClockStop = "\uf54b";
-    public const string ClockUp = "\uf7ca";
-    public const string ClockX = "\uf7cb";
-    public const string ClothesRack = "\uf285";
-    public const string ClothesRackOff = "\uf3d6";
-    public const string Cloud = "\uea76";
-    public const string CloudBolt = "\uf84b";
-    public const string CloudCancel = "\uf84c";
-    public const string CloudCheck = "\uf84d";
-    public const string CloudCode = "\uf84e";
-    public const string CloudCog = "\uf84f";
-    public const string CloudComputing = "\uf1d0";
-    public const string CloudDataConnection = "\uf1d1";
-    public const string CloudDollar = "\uf850";
-    public const string CloudDown = "\uf851";
-    public const string CloudDownload = "\uea71";
-    public const string CloudExclamation = "\uf852";
-    public const string CloudFilled = "\uf673";
-    public const string CloudFog = "\uecd9";
-    public const string CloudHeart = "\uf853";
-    public const string CloudLock = "\uefdb";
-    public const string CloudLockOpen = "\uefda";
-    public const string CloudMinus = "\uf854";
-    public const string CloudOff = "\ued3e";
-    public const string CloudPause = "\uf855";
-    public const string CloudPin = "\uf856";
-    public const string CloudPlus = "\uf857";
-    public const string CloudQuestion = "\uf858";
-    public const string CloudRain = "\uea72";
-    public const string CloudSearch = "\uf859";
-    public const string CloudShare = "\uf85a";
-    public const string CloudSnow = "\uea73";
-    public const string CloudStar = "\uf85b";
-    public const string CloudStorm = "\uea74";
-    public const string CloudUp = "\uf85c";
-    public const string CloudUpload = "\uea75";
-    public const string CloudX = "\uf85d";
-    public const string Clover = "\uf1ea";
-    public const string Clover2 = "\uf21e";
-    public const string Clubs = "\ueff4";
-    public const string ClubsFilled = "\uf674";
-    public const string Code = "\uea77";
-    public const string CodeAsterix = "\uf312";
-    public const string CodeCircle = "\uf4ff";
-    public const string CodeCircle2 = "\uf4fe";
-    public const string CodeDots = "\uf61a";
-    public const string CodeMinus = "\uee42";
-    public const string CodeOff = "\uf0d0";
-    public const string CodePlus = "\uee43";
-    public const string Coffee = "\uef0e";
-    public const string CoffeeOff = "\uf106";
-    public const string Coffin = "\uf579";
-    public const string Coin = "\ueb82";
-    public const string CoinBitcoin = "\uf2be";
-    public const string CoinEuro = "\uf2bf";
-    public const string CoinMonero = "\uf4a0";
-    public const string CoinOff = "\uf0d1";
-    public const string CoinPound = "\uf2c0";
-    public const string CoinRupee = "\uf2c1";
-    public const string CoinYen = "\uf2c2";
-    public const string CoinYuan = "\uf2c3";
-    public const string Coins = "\uf65d";
-    public const string ColorFilter = "\uf5a8";
-    public const string ColorPicker = "\uebe6";
-    public const string ColorPickerOff = "\uf0d2";
-    public const string ColorSwatch = "\ueb61";
-    public const string ColorSwatchOff = "\uf0d3";
-    public const string ColumnInsertLeft = "\uee44";
-    public const string ColumnInsertRight = "\uee45";
-    public const string ColumnRemove = "\ufaf4";
-    public const string Columns = "\ueb83";
-    public const string Columns1 = "\uf6d4";
-    public const string Columns2 = "\uf6d5";
-    public const string Columns3 = "\uf6d6";
-    public const string ColumnsOff = "\uf0d4";
-    public const string Comet = "\uec76";
-    public const string Command = "\uea78";
-    public const string CommandOff = "\uf3d7";
-    public const string Compass = "\uea79";
-    public const string CompassOff = "\uf0d5";
-    public const string Components = "\uefa5";
-    public const string ComponentsOff = "\uf0d6";
-    public const string Cone = "\uefdd";
-    public const string Cone2 = "\uefdc";
-    public const string ConeOff = "\uf3d8";
-    public const string ConePlus = "\ufa94";
-    public const string Confetti = "\uee46";
-    public const string ConfettiOff = "\uf3d9";
-    public const string Confucius = "\uf58a";
-    public const string Container = "\uee47";
-    public const string ContainerOff = "\uf107";
-    public const string Contrast = "\uec4e";
-    public const string Contrast2 = "\uefc7";
-    public const string Contrast2Off = "\uf3da";
-    public const string ContrastOff = "\uf3db";
-    public const string Cooker = "\uf57a";
-    public const string Cookie = "\uef0f";
-    public const string CookieMan = "\uf4c4";
-    public const string CookieOff = "\uf0d7";
-    public const string Copy = "\uea7a";
-    public const string CopyOff = "\uf0d8";
-    public const string Copyleft = "\uec3d";
-    public const string CopyleftFilled = "\uf73b";
-    public const string CopyleftOff = "\uf0d9";
-    public const string Copyright = "\uea7b";
-    public const string CopyrightFilled = "\uf73c";
-    public const string CopyrightOff = "\uf0da";
-    public const string CornerDownLeft = "\uea7c";
-    public const string CornerDownLeftDouble = "\uee48";
-    public const string CornerDownRight = "\uea7d";
-    public const string CornerDownRightDouble = "\uee49";
-    public const string CornerLeftDown = "\uea7e";
-    public const string CornerLeftDownDouble = "\uee4a";
-    public const string CornerLeftUp = "\uea7f";
-    public const string CornerLeftUpDouble = "\uee4b";
-    public const string CornerRightDown = "\uea80";
-    public const string CornerRightDownDouble = "\uee4c";
-    public const string CornerRightUp = "\uea81";
-    public const string CornerRightUpDouble = "\uee4d";
-    public const string CornerUpLeft = "\uea82";
-    public const string CornerUpLeftDouble = "\uee4e";
-    public const string CornerUpRight = "\uea83";
-    public const string CornerUpRightDouble = "\uee4f";
-    public const string Cpu = "\uef8e";
-    public const string Cpu2 = "\uf075";
-    public const string CpuOff = "\uf108";
-    public const string Crane = "\uef27";
-    public const string CraneOff = "\uf109";
-    public const string CreativeCommons = "\uefb3";
-    public const string CreativeCommonsBy = "\uf21f";
-    public const string CreativeCommonsNc = "\uf220";
-    public const string CreativeCommonsNd = "\uf221";
-    public const string CreativeCommonsOff = "\uf10a";
-    public const string CreativeCommonsSa = "\uf222";
-    public const string CreativeCommonsZero = "\uf223";
-    public const string CreditCard = "\uea84";
-    public const string CreditCardOff = "\ued11";
-    public const string Cricket = "\uf09a";
-    public const string Crop = "\uea85";
-    public const string Cross = "\uef8f";
-    public const string CrossFilled = "\uf675";
-    public const string CrossOff = "\uf10b";
-    public const string Crosshair = "\uec3e";
-    public const string Crown = "\ued12";
-    public const string CrownOff = "\uee50";
-    public const string Crutches = "\uef5b";
-    public const string CrutchesOff = "\uf10c";
-    public const string CrystalBall = "\uf57b";
-    public const string Csv = "\uf791";
-    public const string Cube = "\ufa97";
-    public const string CubeOff = "\ufa95";
-    public const string CubePlus = "\ufa96";
-    public const string CubeSend = "\uf61b";
-    public const string CubeUnfolded = "\uf61c";
-    public const string Cup = "\uef28";
-    public const string CupOff = "\uf10d";
-    public const string Curling = "\uefc8";
-    public const string CurlyLoop = "\uecda";
-    public const string Currency = "\uefa6";
-    public const string CurrencyAfghani = "\uf65e";
-    public const string CurrencyBahraini = "\uee51";
-    public const string CurrencyBaht = "\uf08a";
-    public const string CurrencyBitcoin = "\uebab";
-    public const string CurrencyCent = "\uee53";
-    public const string CurrencyDinar = "\uee54";
-    public const string CurrencyDirham = "\uee55";
-    public const string CurrencyDogecoin = "\uef4b";
-    public const string CurrencyDollar = "\ueb84";
-    public const string CurrencyDollarAustralian = "\uee56";
-    public const string CurrencyDollarBrunei = "\uf36c";
-    public const string CurrencyDollarCanadian = "\uee57";
-    public const string CurrencyDollarGuyanese = "\uf36d";
-    public const string CurrencyDollarOff = "\uf3dc";
-    public const string CurrencyDollarSingapore = "\uee58";
-    public const string CurrencyDollarZimbabwean = "\uf36e";
-    public const string CurrencyDong = "\uf36f";
-    public const string CurrencyDram = "\uf370";
-    public const string CurrencyEthereum = "\uee59";
-    public const string CurrencyEuro = "\ueb85";
-    public const string CurrencyEuroOff = "\uf3dd";
-    public const string CurrencyFlorin = "\ufaf5";
-    public const string CurrencyForint = "\uee5a";
-    public const string CurrencyFrank = "\uee5b";
-    public const string CurrencyGuarani = "\uf371";
-    public const string CurrencyHryvnia = "\uf372";
-    public const string CurrencyIranianRial = "\ufa58";
-    public const string CurrencyKip = "\uf373";
-    public const string CurrencyKroneCzech = "\uee5c";
-    public const string CurrencyKroneDanish = "\uee5d";
-    public const string CurrencyKroneSwedish = "\uee5e";
-    public const string CurrencyLari = "\uf374";
-    public const string CurrencyLeu = "\uee5f";
-    public const string CurrencyLira = "\uee60";
-    public const string CurrencyLitecoin = "\uee61";
-    public const string CurrencyLyd = "\uf375";
-    public const string CurrencyManat = "\uf376";
-    public const string CurrencyMonero = "\uf377";
-    public const string CurrencyNaira = "\uee62";
-    public const string CurrencyNano = "\uf7a6";
-    public const string CurrencyOff = "\uf3de";
-    public const string CurrencyPaanga = "\uf378";
-    public const string CurrencyPeso = "\uf65f";
-    public const string CurrencyPound = "\uebac";
-    public const string CurrencyPoundOff = "\uf3df";
-    public const string CurrencyQuetzal = "\uf379";
-    public const string CurrencyReal = "\uee63";
-    public const string CurrencyRenminbi = "\uee64";
-    public const string CurrencyRipple = "\uee65";
-    public const string CurrencyRiyal = "\uee66";
-    public const string CurrencyRubel = "\uee67";
-    public const string CurrencyRufiyaa = "\uf37a";
-    public const string CurrencyRupee = "\uebad";
-    public const string CurrencyRupeeNepalese = "\uf37b";
-    public const string CurrencyShekel = "\uee68";
-    public const string CurrencySolana = "\uf4a1";
-    public const string CurrencySom = "\uf37c";
-    public const string CurrencyTaka = "\uee69";
-    public const string CurrencyTenge = "\uf37d";
-    public const string CurrencyTugrik = "\uee6a";
-    public const string CurrencyWon = "\uee6b";
-    public const string CurrencyYen = "\uebae";
-    public const string CurrencyYenOff = "\uf3e0";
-    public const string CurrencyYuan = "\uf29a";
-    public const string CurrencyZloty = "\uee6c";
-    public const string CurrentLocation = "\uecef";
-    public const string CurrentLocationOff = "\uf10e";
-    public const string CursorOff = "\uf10f";
-    public const string CursorText = "\uee6d";
-    public const string Cut = "\uea86";
-    public const string Cylinder = "\uf54c";
-    public const string CylinderOff = "\ufa98";
-    public const string CylinderPlus = "\ufa99";
-    public const string Dashboard = "\uea87";
-    public const string DashboardOff = "\uf3e1";
-    public const string Database = "\uea88";
-    public const string DatabaseCog = "\ufa10";
-    public const string DatabaseDollar = "\ufa11";
-    public const string DatabaseEdit = "\ufa12";
-    public const string DatabaseExclamation = "\ufa13";
-    public const string DatabaseExport = "\uee6e";
-    public const string DatabaseHeart = "\ufa14";
-    public const string DatabaseImport = "\uee6f";
-    public const string DatabaseLeak = "\ufa15";
-    public const string DatabaseMinus = "\ufa16";
-    public const string DatabaseOff = "\uee70";
-    public const string DatabasePlus = "\ufa17";
-    public const string DatabaseSearch = "\ufa18";
-    public const string DatabaseShare = "\ufa19";
-    public const string DatabaseStar = "\ufa1a";
-    public const string DatabaseX = "\ufa1b";
-    public const string Decimal = "\ufa26";
-    public const string Deer = "\uf4c5";
-    public const string Delta = "\uf53c";
-    public const string Dental = "\uf025";
-    public const string DentalBroken = "\uf286";
-    public const string DentalOff = "\uf110";
-    public const string Deselect = "\uf9f3";
-    public const string Details = "\uee71";
-    public const string DetailsOff = "\uf3e2";
-    public const string DeviceAirpods = "\uf5a9";
-    public const string DeviceAirpodsCase = "\uf646";
-    public const string DeviceAirtag = "\ufae6";
-    public const string DeviceAnalytics = "\uee72";
-    public const string DeviceAudioTape = "\uee73";
-    public const string DeviceCameraPhone = "\uf233";
-    public const string DeviceCctv = "\uee74";
-    public const string DeviceCctvOff = "\uf3e3";
-    public const string DeviceComputerCamera = "\uee76";
-    public const string DeviceComputerCameraOff = "\uee75";
-    public const string DeviceDesktop = "\uea89";
-    public const string DeviceDesktopAnalytics = "\uee77";
-    public const string DeviceDesktopBolt = "\uf85e";
-    public const string DeviceDesktopCancel = "\uf85f";
-    public const string DeviceDesktopCheck = "\uf860";
-    public const string DeviceDesktopCode = "\uf861";
-    public const string DeviceDesktopCog = "\uf862";
-    public const string DeviceDesktopDollar = "\uf863";
-    public const string DeviceDesktopDown = "\uf864";
-    public const string DeviceDesktopExclamation = "\uf865";
-    public const string DeviceDesktopHeart = "\uf866";
-    public const string DeviceDesktopMinus = "\uf867";
-    public const string DeviceDesktopOff = "\uee78";
-    public const string DeviceDesktopPause = "\uf868";
-    public const string DeviceDesktopPin = "\uf869";
-    public const string DeviceDesktopPlus = "\uf86a";
-    public const string DeviceDesktopQuestion = "\uf86b";
-    public const string DeviceDesktopSearch = "\uf86c";
-    public const string DeviceDesktopShare = "\uf86d";
-    public const string DeviceDesktopStar = "\uf86e";
-    public const string DeviceDesktopUp = "\uf86f";
-    public const string DeviceDesktopX = "\uf870";
-    public const string DeviceFloppy = "\ueb62";
-    public const string DeviceGamepad = "\ueb63";
-    public const string DeviceGamepad2 = "\uf1d2";
-    public const string DeviceHeartMonitor = "\uf060";
-    public const string DeviceHeartMonitorFilled = "\ufa38";
-    public const string DeviceImac = "\uf7a7";
-    public const string DeviceImacBolt = "\uf871";
-    public const string DeviceImacCancel = "\uf872";
-    public const string DeviceImacCheck = "\uf873";
-    public const string DeviceImacCode = "\uf874";
-    public const string DeviceImacCog = "\uf875";
-    public const string DeviceImacDollar = "\uf876";
-    public const string DeviceImacDown = "\uf877";
-    public const string DeviceImacExclamation = "\uf878";
-    public const string DeviceImacHeart = "\uf879";
-    public const string DeviceImacMinus = "\uf87a";
-    public const string DeviceImacOff = "\uf87b";
-    public const string DeviceImacPause = "\uf87c";
-    public const string DeviceImacPin = "\uf87d";
-    public const string DeviceImacPlus = "\uf87e";
-    public const string DeviceImacQuestion = "\uf87f";
-    public const string DeviceImacSearch = "\uf880";
-    public const string DeviceImacShare = "\uf881";
-    public const string DeviceImacStar = "\uf882";
-    public const string DeviceImacUp = "\uf883";
-    public const string DeviceImacX = "\uf884";
-    public const string DeviceIpad = "\uf648";
-    public const string DeviceIpadBolt = "\uf885";
-    public const string DeviceIpadCancel = "\uf886";
-    public const string DeviceIpadCheck = "\uf887";
-    public const string DeviceIpadCode = "\uf888";
-    public const string DeviceIpadCog = "\uf889";
-    public const string DeviceIpadDollar = "\uf88a";
-    public const string DeviceIpadDown = "\uf88b";
-    public const string DeviceIpadExclamation = "\uf88c";
-    public const string DeviceIpadHeart = "\uf88d";
-    public const string DeviceIpadHorizontal = "\uf647";
-    public const string DeviceIpadHorizontalBolt = "\uf88e";
-    public const string DeviceIpadHorizontalCancel = "\uf88f";
-    public const string DeviceIpadHorizontalCheck = "\uf890";
-    public const string DeviceIpadHorizontalCode = "\uf891";
-    public const string DeviceIpadHorizontalCog = "\uf892";
-    public const string DeviceIpadHorizontalDollar = "\uf893";
-    public const string DeviceIpadHorizontalDown = "\uf894";
-    public const string DeviceIpadHorizontalExclamation = "\uf895";
-    public const string DeviceIpadHorizontalHeart = "\uf896";
-    public const string DeviceIpadHorizontalMinus = "\uf897";
-    public const string DeviceIpadHorizontalOff = "\uf898";
-    public const string DeviceIpadHorizontalPause = "\uf899";
-    public const string DeviceIpadHorizontalPin = "\uf89a";
-    public const string DeviceIpadHorizontalPlus = "\uf89b";
-    public const string DeviceIpadHorizontalQuestion = "\uf89c";
-    public const string DeviceIpadHorizontalSearch = "\uf89d";
-    public const string DeviceIpadHorizontalShare = "\uf89e";
-    public const string DeviceIpadHorizontalStar = "\uf89f";
-    public const string DeviceIpadHorizontalUp = "\uf8a0";
-    public const string DeviceIpadHorizontalX = "\uf8a1";
-    public const string DeviceIpadMinus = "\uf8a2";
-    public const string DeviceIpadOff = "\uf8a3";
-    public const string DeviceIpadPause = "\uf8a4";
-    public const string DeviceIpadPin = "\uf8a5";
-    public const string DeviceIpadPlus = "\uf8a6";
-    public const string DeviceIpadQuestion = "\uf8a7";
-    public const string DeviceIpadSearch = "\uf8a8";
-    public const string DeviceIpadShare = "\uf8a9";
-    public const string DeviceIpadStar = "\uf8aa";
-    public const string DeviceIpadUp = "\uf8ab";
-    public const string DeviceIpadX = "\uf8ac";
-    public const string DeviceLandlinePhone = "\uf649";
-    public const string DeviceLaptop = "\ueb64";
-    public const string DeviceLaptopOff = "\uf061";
-    public const string DeviceMobile = "\uea8a";
-    public const string DeviceMobileBolt = "\uf8ad";
-    public const string DeviceMobileCancel = "\uf8ae";
-    public const string DeviceMobileCharging = "\uf224";
-    public const string DeviceMobileCheck = "\uf8af";
-    public const string DeviceMobileCode = "\uf8b0";
-    public const string DeviceMobileCog = "\uf8b1";
-    public const string DeviceMobileDollar = "\uf8b2";
-    public const string DeviceMobileDown = "\uf8b3";
-    public const string DeviceMobileExclamation = "\uf8b4";
-    public const string DeviceMobileFilled = "\ufa39";
-    public const string DeviceMobileHeart = "\uf8b5";
-    public const string DeviceMobileMessage = "\uee79";
-    public const string DeviceMobileMinus = "\uf8b6";
-    public const string DeviceMobileOff = "\uf062";
-    public const string DeviceMobilePause = "\uf8b7";
-    public const string DeviceMobilePin = "\uf8b8";
-    public const string DeviceMobilePlus = "\uf8b9";
-    public const string DeviceMobileQuestion = "\uf8ba";
-    public const string DeviceMobileRotated = "\uecdb";
-    public const string DeviceMobileSearch = "\uf8bb";
-    public const string DeviceMobileShare = "\uf8bc";
-    public const string DeviceMobileStar = "\uf8bd";
-    public const string DeviceMobileUp = "\uf8be";
-    public const string DeviceMobileVibration = "\ueb86";
-    public const string DeviceMobileX = "\uf8bf";
-    public const string DeviceNintendo = "\uf026";
-    public const string DeviceNintendoOff = "\uf111";
-    public const string DeviceProjector = "\ufc11";
-    public const string DeviceRemote = "\uf792";
-    public const string DeviceSdCard = "\uf384";
-    public const string DeviceSim = "\uf4b2";
-    public const string DeviceSim1 = "\uf4af";
-    public const string DeviceSim2 = "\uf4b0";
-    public const string DeviceSim3 = "\uf4b1";
-    public const string DeviceSpeaker = "\uea8b";
-    public const string DeviceSpeakerOff = "\uf112";
-    public const string DeviceTablet = "\uea8c";
-    public const string DeviceTabletBolt = "\uf8c0";
-    public const string DeviceTabletCancel = "\uf8c1";
-    public const string DeviceTabletCheck = "\uf8c2";
-    public const string DeviceTabletCode = "\uf8c3";
-    public const string DeviceTabletCog = "\uf8c4";
-    public const string DeviceTabletDollar = "\uf8c5";
-    public const string DeviceTabletDown = "\uf8c6";
-    public const string DeviceTabletExclamation = "\uf8c7";
-    public const string DeviceTabletFilled = "\ufa3a";
-    public const string DeviceTabletHeart = "\uf8c8";
-    public const string DeviceTabletMinus = "\uf8c9";
-    public const string DeviceTabletOff = "\uf063";
-    public const string DeviceTabletPause = "\uf8ca";
-    public const string DeviceTabletPin = "\uf8cb";
-    public const string DeviceTabletPlus = "\uf8cc";
-    public const string DeviceTabletQuestion = "\uf8cd";
-    public const string DeviceTabletSearch = "\uf8ce";
-    public const string DeviceTabletShare = "\uf8cf";
-    public const string DeviceTabletStar = "\uf8d0";
-    public const string DeviceTabletUp = "\uf8d1";
-    public const string DeviceTabletX = "\uf8d2";
-    public const string DeviceTv = "\uea8d";
-    public const string DeviceTvOff = "\uf064";
-    public const string DeviceTvOld = "\uf1d3";
-    public const string DeviceVisionPro = "\ufae7";
-    public const string DeviceWatch = "\uebf9";
-    public const string DeviceWatchBolt = "\uf8d3";
-    public const string DeviceWatchCancel = "\uf8d4";
-    public const string DeviceWatchCheck = "\uf8d5";
-    public const string DeviceWatchCode = "\uf8d6";
-    public const string DeviceWatchCog = "\uf8d7";
-    public const string DeviceWatchDollar = "\uf8d8";
-    public const string DeviceWatchDown = "\uf8d9";
-    public const string DeviceWatchExclamation = "\uf8da";
-    public const string DeviceWatchHeart = "\uf8db";
-    public const string DeviceWatchMinus = "\uf8dc";
-    public const string DeviceWatchOff = "\uf065";
-    public const string DeviceWatchPause = "\uf8dd";
-    public const string DeviceWatchPin = "\uf8de";
-    public const string DeviceWatchPlus = "\uf8df";
-    public const string DeviceWatchQuestion = "\uf8e0";
-    public const string DeviceWatchSearch = "\uf8e1";
-    public const string DeviceWatchShare = "\uf8e2";
-    public const string DeviceWatchStar = "\uf8e3";
-    public const string DeviceWatchStats = "\uef7d";
-    public const string DeviceWatchStats2 = "\uef7c";
-    public const string DeviceWatchUp = "\uf8e4";
-    public const string DeviceWatchX = "\uf8e5";
-    public const string Devices = "\ueb87";
-    public const string Devices2 = "\ued29";
-    public const string DevicesBolt = "\uf8e6";
-    public const string DevicesCancel = "\uf8e7";
-    public const string DevicesCheck = "\uf8e8";
-    public const string DevicesCode = "\uf8e9";
-    public const string DevicesCog = "\uf8ea";
-    public const string DevicesDollar = "\uf8eb";
-    public const string DevicesDown = "\uf8ec";
-    public const string DevicesExclamation = "\uf8ed";
-    public const string DevicesHeart = "\uf8ee";
-    public const string DevicesMinus = "\uf8ef";
-    public const string DevicesOff = "\uf3e4";
-    public const string DevicesPause = "\uf8f0";
-    public const string DevicesPc = "\uee7a";
-    public const string DevicesPcOff = "\uf113";
-    public const string DevicesPin = "\uf8f1";
-    public const string DevicesPlus = "\uf8f2";
-    public const string DevicesQuestion = "\uf8f3";
-    public const string DevicesSearch = "\uf8f4";
-    public const string DevicesShare = "\uf8f5";
-    public const string DevicesStar = "\uf8f6";
-    public const string DevicesUp = "\uf8f7";
-    public const string DevicesX = "\uf8f8";
-    public const string Diabolo = "\ufa9c";
-    public const string DiaboloOff = "\ufa9a";
-    public const string DiaboloPlus = "\ufa9b";
-    public const string Dialpad = "\uf067";
-    public const string DialpadFilled = "\ufa3b";
-    public const string DialpadOff = "\uf114";
-    public const string Diamond = "\ueb65";
-    public const string DiamondFilled = "\uf73d";
-    public const string DiamondOff = "\uf115";
-    public const string Diamonds = "\ueff5";
-    public const string DiamondsFilled = "\uf676";
-    public const string Dice = "\ueb66";
-    public const string Dice1 = "\uf08b";
-    public const string Dice1Filled = "\uf73e";
-    public const string Dice2 = "\uf08c";
-    public const string Dice2Filled = "\uf73f";
-    public const string Dice3 = "\uf08d";
-    public const string Dice3Filled = "\uf740";
-    public const string Dice4 = "\uf08e";
-    public const string Dice4Filled = "\uf741";
-    public const string Dice5 = "\uf08f";
-    public const string Dice5Filled = "\uf742";
-    public const string Dice6 = "\uf090";
-    public const string Dice6Filled = "\uf743";
-    public const string DiceFilled = "\uf744";
-    public const string Dimensions = "\uee7b";
-    public const string Direction = "\uebfb";
-    public const string DirectionHorizontal = "\uebfa";
-    public const string DirectionSign = "\uf1f7";
-    public const string DirectionSignFilled = "\uf745";
-    public const string DirectionSignOff = "\uf3e5";
-    public const string Directions = "\uea8e";
-    public const string DirectionsOff = "\uf116";
-    public const string Disabled = "\uea8f";
-    public const string Disabled2 = "\uebaf";
-    public const string DisabledOff = "\uf117";
-    public const string Disc = "\uea90";
-    public const string DiscGolf = "\uf385";
-    public const string DiscOff = "\uf118";
-    public const string Discount = "\uebbd";
-    public const string Discount2 = "\uee7c";
-    public const string Discount2Off = "\uf3e6";
-    public const string DiscountCheck = "\uf1f8";
-    public const string DiscountCheckFilled = "\uf746";
-    public const string DiscountOff = "\uf3e7";
-    public const string Divide = "\ued5c";
-    public const string Dna = "\uee7d";
-    public const string Dna2 = "\uef5c";
-    public const string Dna2Off = "\uf119";
-    public const string DnaOff = "\uf11a";
-    public const string Dog = "\uf660";
-    public const string DogBowl = "\uef29";
-    public const string Door = "\uef4e";
-    public const string DoorEnter = "\uef4c";
-    public const string DoorExit = "\uef4d";
-    public const string DoorOff = "\uf11b";
-    public const string Dots = "\uea95";
-    public const string DotsCircleHorizontal = "\uea91";
-    public const string DotsDiagonal = "\uea93";
-    public const string DotsDiagonal2 = "\uea92";
-    public const string DotsVertical = "\uea94";
-    public const string Download = "\uea96";
-    public const string DownloadOff = "\uf11c";
-    public const string DragDrop = "\ueb89";
-    public const string DragDrop2 = "\ueb88";
-    public const string Drone = "\ued79";
-    public const string DroneOff = "\uee7e";
-    public const string DropCircle = "\uefde";
-    public const string Droplet = "\uea97";
-    public const string DropletBolt = "\uf8f9";
-    public const string DropletCancel = "\uf8fa";
-    public const string DropletCheck = "\uf8fb";
-    public const string DropletCode = "\uf8fc";
-    public const string DropletCog = "\uf8fd";
-    public const string DropletDollar = "\uf8fe";
-    public const string DropletDown = "\uf8ff";
-    public const string DropletExclamation = "\uf900";
-    public const string DropletFilled = "\uee80";
-    public const string DropletHalf = "\uee82";
-    public const string DropletHalf2 = "\uee81";
-    public const string DropletHalf2Filled = "\ufb6c";
-    public const string DropletHalfFilled = "\uf6c5";
-    public const string DropletHeart = "\uf901";
-    public const string DropletMinus = "\uf902";
-    public const string DropletOff = "\uee83";
-    public const string DropletPause = "\uf903";
-    public const string DropletPin = "\uf904";
-    public const string DropletPlus = "\uf905";
-    public const string DropletQuestion = "\uf906";
-    public const string DropletSearch = "\uf907";
-    public const string DropletShare = "\uf908";
-    public const string DropletStar = "\uf909";
-    public const string DropletUp = "\uf90a";
-    public const string DropletX = "\uf90b";
-    public const string Droplets = "\ufc12";
-    public const string DualScreen = "\ufa59";
-    public const string EPassport = "\uf4df";
-    public const string Ear = "\uebce";
-    public const string EarOff = "\uee84";
-    public const string EaseIn = "\uf573";
-    public const string EaseInControlPoint = "\uf570";
-    public const string EaseInOut = "\uf572";
-    public const string EaseInOutControlPoints = "\uf571";
-    public const string EaseOut = "\uf575";
-    public const string EaseOutControlPoint = "\uf574";
-    public const string Edit = "\uea98";
-    public const string EditCircle = "\uee85";
-    public const string EditCircleOff = "\uf11d";
-    public const string EditOff = "\uf11e";
-    public const string Egg = "\ueb8a";
-    public const string EggCracked = "\uf2d6";
-    public const string EggFilled = "\uf678";
-    public const string EggFried = "\uf386";
-    public const string EggOff = "\uf11f";
-    public const string Eggs = "\uf500";
-    public const string Elevator = "\uefdf";
-    public const string ElevatorOff = "\uf3e8";
-    public const string EmergencyBed = "\uef5d";
-    public const string Empathize = "\uf29b";
-    public const string EmpathizeOff = "\uf3e9";
-    public const string Emphasis = "\uebcf";
-    public const string Engine = "\uef7e";
-    public const string EngineOff = "\uf120";
-    public const string Equal = "\uee87";
-    public const string EqualDouble = "\uf4e1";
-    public const string EqualNot = "\uee86";
-    public const string Eraser = "\ueb8b";
-    public const string EraserOff = "\uf121";
-    public const string Error404 = "\uf027";
-    public const string Error404Off = "\uf122";
-    public const string Escalator = "\ufb06";
-    public const string EscalatorDown = "\ufb04";
-    public const string EscalatorUp = "\ufb05";
-    public const string Exchange = "\uebe7";
-    public const string ExchangeOff = "\uf123";
-    public const string ExclamationCircle = "\uf634";
-    public const string ExclamationMark = "\uefb4";
-    public const string ExclamationMarkOff = "\uf124";
-    public const string Explicit = "\uf256";
-    public const string ExplicitOff = "\uf3ea";
-    public const string Exposure = "\ueb8c";
-    public const string Exposure0 = "\uf29c";
-    public const string ExposureMinus1 = "\uf29d";
-    public const string ExposureMinus2 = "\uf29e";
-    public const string ExposureOff = "\uf3eb";
-    public const string ExposurePlus1 = "\uf29f";
-    public const string ExposurePlus2 = "\uf2a0";
-    public const string ExternalLink = "\uea99";
-    public const string ExternalLinkOff = "\uf125";
-    public const string Eye = "\uea9a";
-    public const string EyeBolt = "\ufb6d";
-    public const string EyeCancel = "\ufb6e";
-    public const string EyeCheck = "\uee88";
-    public const string EyeClosed = "\uf7ec";
-    public const string EyeCode = "\ufb6f";
-    public const string EyeCog = "\uf7ed";
-    public const string EyeDiscount = "\ufb70";
-    public const string EyeDollar = "\ufb71";
-    public const string EyeDown = "\ufb72";
-    public const string EyeEdit = "\uf7ee";
-    public const string EyeExclamation = "\uf7ef";
-    public const string EyeFilled = "\uf679";
-    public const string EyeHeart = "\uf7f0";
-    public const string EyeMinus = "\ufb73";
-    public const string EyeOff = "\uecf0";
-    public const string EyePause = "\ufb74";
-    public const string EyePin = "\ufb75";
-    public const string EyePlus = "\ufb76";
-    public const string EyeQuestion = "\ufb77";
-    public const string EyeSearch = "\ufb78";
-    public const string EyeShare = "\ufb79";
-    public const string EyeStar = "\ufb7a";
-    public const string EyeTable = "\uef5e";
-    public const string EyeUp = "\ufb7b";
-    public const string EyeX = "\uf7f1";
-    public const string Eyeglass = "\uee8a";
-    public const string Eyeglass2 = "\uee89";
-    public const string EyeglassOff = "\uf126";
-    public const string FaceId = "\uea9b";
-    public const string FaceIdError = "\uefa7";
-    public const string FaceMask = "\uefb5";
-    public const string FaceMaskOff = "\uf127";
-    public const string Fall = "\uecb9";
-    public const string Feather = "\uee8b";
-    public const string FeatherOff = "\uf128";
-    public const string Fence = "\uef2a";
-    public const string FenceOff = "\uf129";
-    public const string FidgetSpinner = "\uf068";
-    public const string File = "\ueaa4";
-    public const string File3d = "\uf032";
-    public const string FileAlert = "\uede6";
-    public const string FileAnalytics = "\uede7";
-    public const string FileArrowLeft = "\uf033";
-    public const string FileArrowRight = "\uf034";
-    public const string FileBarcode = "\uf035";
-    public const string FileBroken = "\uf501";
-    public const string FileCertificate = "\ued4d";
-    public const string FileChart = "\uf036";
-    public const string FileCheck = "\uea9c";
-    public const string FileCode = "\uebd0";
-    public const string FileCode2 = "\uede8";
-    public const string FileCv = "\ufa5a";
-    public const string FileDatabase = "\uf037";
-    public const string FileDelta = "\uf53d";
-    public const string FileDescription = "\uf028";
-    public const string FileDiff = "\uecf1";
-    public const string FileDigit = "\uefa8";
-    public const string FileDislike = "\ued2a";
-    public const string FileDollar = "\uefe0";
-    public const string FileDots = "\uf038";
-    public const string FileDownload = "\uea9d";
-    public const string FileEuro = "\uefe1";
-    public const string FileExport = "\uede9";
-    public const string FileFilled = "\uf747";
-    public const string FileFunction = "\uf53e";
-    public const string FileHorizontal = "\uebb0";
-    public const string FileImport = "\uedea";
-    public const string FileInfinity = "\uf502";
-    public const string FileInfo = "\uedec";
-    public const string FileInvoice = "\ueb67";
-    public const string FileLambda = "\uf53f";
-    public const string FileLike = "\ued2b";
-    public const string FileMinus = "\uea9e";
-    public const string FileMusic = "\uea9f";
-    public const string FileOff = "\uecf2";
-    public const string FileOrientation = "\uf2a1";
-    public const string FilePencil = "\uf039";
-    public const string FilePercent = "\uf540";
-    public const string FilePhone = "\uecdc";
-    public const string FilePlus = "\ueaa0";
-    public const string FilePower = "\uf03a";
-    public const string FileReport = "\ueded";
-    public const string FileRss = "\uf03b";
-    public const string FileScissors = "\uf03c";
-    public const string FileSearch = "\ued5d";
-    public const string FileSettings = "\uf029";
-    public const string FileShredder = "\ueaa1";
-    public const string FileSignal = "\uf03d";
-    public const string FileSpreadsheet = "\uf03e";
-    public const string FileStack = "\uf503";
-    public const string FileStar = "\uf03f";
-    public const string FileSymlink = "\ued53";
-    public const string FileText = "\ueaa2";
-    public const string FileTextAi = "\ufa27";
-    public const string FileTime = "\uf040";
-    public const string FileTypeBmp = "\ufb07";
-    public const string FileTypeCss = "\ufb08";
-    public const string FileTypeCsv = "\ufb09";
-    public const string FileTypeDoc = "\ufb0a";
-    public const string FileTypeDocx = "\ufb0b";
-    public const string FileTypeHtml = "\ufb0c";
-    public const string FileTypeJpg = "\ufb0d";
-    public const string FileTypeJs = "\ufb0e";
-    public const string FileTypeJsx = "\ufb0f";
-    public const string FileTypePdf = "\ufb10";
-    public const string FileTypePhp = "\ufb11";
-    public const string FileTypePng = "\ufb12";
-    public const string FileTypePpt = "\ufb13";
-    public const string FileTypeRs = "\ufb14";
-    public const string FileTypeSql = "\ufb15";
-    public const string FileTypeSvg = "\ufb16";
-    public const string FileTypeTs = "\ufb17";
-    public const string FileTypeTsx = "\ufb18";
-    public const string FileTypeTxt = "\ufb19";
-    public const string FileTypeVue = "\ufb1a";
-    public const string FileTypeXls = "\ufb1b";
-    public const string FileTypeXml = "\ufb1c";
-    public const string FileTypeZip = "\ufb1d";
-    public const string FileTypography = "\uf041";
-    public const string FileUnknown = "\uf042";
-    public const string FileUpload = "\uec91";
-    public const string FileVector = "\uf043";
-    public const string FileX = "\ueaa3";
-    public const string FileXFilled = "\uf748";
-    public const string FileZip = "\ued4e";
-    public const string Files = "\uedef";
-    public const string FilesOff = "\uedee";
-    public const string Filter = "\ueaa5";
-    public const string FilterBolt = "\ufb7c";
-    public const string FilterCancel = "\ufb7d";
-    public const string FilterCheck = "\ufb7e";
-    public const string FilterCode = "\ufb7f";
-    public const string FilterCog = "\uf9fe";
-    public const string FilterDiscount = "\ufb80";
-    public const string FilterDollar = "\uf9ff";
-    public const string FilterDown = "\ufb81";
-    public const string FilterEdit = "\ufa00";
-    public const string FilterExclamation = "\ufb82";
-    public const string FilterFilled = "\ufc27";
-    public const string FilterHeart = "\ufb83";
-    public const string FilterMinus = "\ufa01";
-    public const string FilterOff = "\ued2c";
-    public const string FilterPause = "\ufb84";
-    public const string FilterPin = "\ufb85";
-    public const string FilterPlus = "\ufa02";
-    public const string FilterQuestion = "\ufb86";
-    public const string FilterSearch = "\ufb87";
-    public const string FilterShare = "\ufb88";
-    public const string FilterStar = "\ufa03";
-    public const string FilterUp = "\ufb89";
-    public const string FilterX = "\ufa04";
-    public const string Filters = "\uf793";
-    public const string Fingerprint = "\uebd1";
-    public const string FingerprintOff = "\uf12a";
-    public const string FireExtinguisher = "\ufaf6";
-    public const string FireHydrant = "\uf3a9";
-    public const string FireHydrantOff = "\uf3ec";
-    public const string Firetruck = "\uebe8";
-    public const string FirstAidKit = "\uef5f";
-    public const string FirstAidKitOff = "\uf3ed";
-    public const string Fish = "\uef2b";
-    public const string FishBone = "\uf287";
-    public const string FishChristianity = "\uf58b";
-    public const string FishHook = "\uf1f9";
-    public const string FishHookOff = "\uf3ee";
-    public const string FishOff = "\uf12b";
-    public const string Flag = "\ueaa6";
-    public const string Flag2 = "\uee8c";
-    public const string Flag2Filled = "\uf707";
-    public const string Flag2Off = "\uf12c";
-    public const string Flag3 = "\uee8d";
-    public const string Flag3Filled = "\uf708";
-    public const string FlagBolt = "\ufb8a";
-    public const string FlagCancel = "\ufb8b";
-    public const string FlagCheck = "\ufb8c";
-    public const string FlagCode = "\ufb8d";
-    public const string FlagCog = "\ufb8e";
-    public const string FlagDiscount = "\ufb8f";
-    public const string FlagDollar = "\ufb90";
-    public const string FlagDown = "\ufb91";
-    public const string FlagExclamation = "\ufb92";
-    public const string FlagFilled = "\uf67a";
-    public const string FlagHeart = "\ufb93";
-    public const string FlagMinus = "\ufb94";
-    public const string FlagOff = "\uf12d";
-    public const string FlagPause = "\ufb95";
-    public const string FlagPin = "\ufb96";
-    public const string FlagPlus = "\ufb97";
-    public const string FlagQuestion = "\ufb98";
-    public const string FlagSearch = "\ufb99";
-    public const string FlagShare = "\ufb9a";
-    public const string FlagStar = "\ufb9b";
-    public const string FlagUp = "\ufb9c";
-    public const string FlagX = "\ufb9d";
-    public const string Flame = "\uec2c";
-    public const string FlameOff = "\uf12e";
-    public const string Flare = "\uee8e";
-    public const string Flask = "\uebd2";
-    public const string Flask2 = "\uef60";
-    public const string Flask2Off = "\uf12f";
-    public const string FlaskOff = "\uf130";
-    public const string FlipFlops = "\uf564";
-    public const string FlipHorizontal = "\ueaa7";
-    public const string FlipVertical = "\ueaa8";
-    public const string FloatCenter = "\uebb1";
-    public const string FloatLeft = "\uebb2";
-    public const string FloatNone = "\ued13";
-    public const string FloatRight = "\uebb3";
-    public const string Flower = "\ueff6";
-    public const string FlowerOff = "\uf131";
-    public const string Focus = "\ueb8d";
-    public const string Focus2 = "\uebd3";
-    public const string FocusAuto = "\ufa62";
-    public const string FocusCentered = "\uf02a";
-    public const string Fold = "\ued56";
-    public const string FoldDown = "\ued54";
-    public const string FoldUp = "\ued55";
-    public const string Folder = "\ueaad";
-    public const string FolderBolt = "\uf90c";
-    public const string FolderCancel = "\uf90d";
-    public const string FolderCheck = "\uf90e";
-    public const string FolderCode = "\uf90f";
-    public const string FolderCog = "\uf910";
-    public const string FolderDollar = "\uf911";
-    public const string FolderDown = "\uf912";
-    public const string FolderExclamation = "\uf913";
-    public const string FolderFilled = "\uf749";
-    public const string FolderHeart = "\uf914";
-    public const string FolderMinus = "\ueaaa";
-    public const string FolderOff = "\ued14";
-    public const string FolderOpen = "\ufaf7";
-    public const string FolderPause = "\uf915";
-    public const string FolderPin = "\uf916";
-    public const string FolderPlus = "\ueaab";
-    public const string FolderQuestion = "\uf917";
-    public const string FolderSearch = "\uf918";
-    public const string FolderShare = "\uf919";
-    public const string FolderStar = "\uf91a";
-    public const string FolderSymlink = "\uf91b";
-    public const string FolderUp = "\uf91c";
-    public const string FolderX = "\ueaac";
-    public const string Folders = "\ueaae";
-    public const string FoldersOff = "\uf133";
-    public const string Forbid = "\uebd5";
-    public const string Forbid2 = "\uebd4";
-    public const string Forbid2Filled = "\ufc28";
-    public const string ForbidFilled = "\ufc29";
-    public const string Forklift = "\uebe9";
-    public const string Forms = "\uee8f";
-    public const string Fountain = "\uf09b";
-    public const string FountainFilled = "\ufc2a";
-    public const string FountainOff = "\uf134";
-    public const string Frame = "\ueaaf";
-    public const string FrameOff = "\uf135";
-    public const string FreeRights = "\uefb6";
-    public const string FreezeColumn = "\ufa63";
-    public const string FreezeRow = "\ufa65";
-    public const string FreezeRowColumn = "\ufa64";
-    public const string Fridge = "\uf1fa";
-    public const string FridgeOff = "\uf3ef";
-    public const string Friends = "\ueab0";
-    public const string FriendsOff = "\uf136";
-    public const string Frustum = "\ufa9f";
-    public const string FrustumOff = "\ufa9d";
-    public const string FrustumPlus = "\ufa9e";
-    public const string Function = "\uf225";
-    public const string FunctionFilled = "\ufc2b";
-    public const string FunctionOff = "\uf3f0";
-    public const string GardenCart = "\uf23e";
-    public const string GardenCartOff = "\uf3f1";
-    public const string GasStation = "\uec7d";
-    public const string GasStationOff = "\uf137";
-    public const string Gauge = "\ueab1";
-    public const string GaugeFilled = "\ufc2c";
-    public const string GaugeOff = "\uf138";
-    public const string Gavel = "\uef90";
-    public const string GenderAgender = "\uf0e1";
-    public const string GenderAndrogyne = "\uf0e2";
-    public const string GenderBigender = "\uf0e3";
-    public const string GenderDemiboy = "\uf0e4";
-    public const string GenderDemigirl = "\uf0e5";
-    public const string GenderEpicene = "\uf0e6";
-    public const string GenderFemale = "\uf0e7";
-    public const string GenderFemme = "\uf0e8";
-    public const string GenderGenderfluid = "\uf0e9";
-    public const string GenderGenderless = "\uf0ea";
-    public const string GenderGenderqueer = "\uf0eb";
-    public const string GenderHermaphrodite = "\uf0ec";
-    public const string GenderIntergender = "\uf0ed";
-    public const string GenderMale = "\uf0ee";
-    public const string GenderNeutrois = "\uf0ef";
-    public const string GenderThird = "\uf0f0";
-    public const string GenderTransgender = "\uf0f1";
-    public const string GenderTrasvesti = "\uf0f2";
-    public const string Geometry = "\uee90";
-    public const string Ghost = "\ueb8e";
-    public const string Ghost2 = "\uf57c";
-    public const string Ghost2Filled = "\uf74a";
-    public const string Ghost3 = "\ufc13";
-    public const string GhostFilled = "\uf74b";
-    public const string GhostOff = "\uf3f2";
-    public const string Gif = "\uf257";
-    public const string Gift = "\ueb68";
-    public const string GiftCard = "\uf3aa";
-    public const string GiftCardFilled = "\ufc2d";
-    public const string GiftOff = "\uf3f3";
-    public const string GitBranch = "\ueab2";
-    public const string GitBranchDeleted = "\uf57d";
-    public const string GitCherryPick = "\uf57e";
-    public const string GitCommit = "\ueab3";
-    public const string GitCompare = "\ueab4";
-    public const string GitFork = "\ueb8f";
-    public const string GitMerge = "\ueab5";
-    public const string GitPullRequest = "\ueab6";
-    public const string GitPullRequestClosed = "\uef7f";
-    public const string GitPullRequestDraft = "\uefb7";
-    public const string Gizmo = "\uf02b";
-    public const string Glass = "\ueab8";
-    public const string GlassFull = "\ueab7";
-    public const string GlassFullFilled = "\ufc2e";
-    public const string GlassOff = "\uee91";
-    public const string Globe = "\ueab9";
-    public const string GlobeFilled = "\ufc2f";
-    public const string GlobeOff = "\uf139";
-    public const string GoGame = "\uf512";
-    public const string Golf = "\ued8c";
-    public const string GolfOff = "\uf13a";
-    public const string Gps = "\ued7a";
-    public const string Gradienter = "\uf3ab";
-    public const string Grain = "\uee92";
-    public const string Graph = "\uf288";
-    public const string GraphOff = "\uf3f4";
-    public const string Grave = "\uf580";
-    public const string Grave2 = "\uf57f";
-    public const string GridDots = "\ueaba";
-    public const string GridPattern = "\uefc9";
-    public const string Grill = "\uefa9";
-    public const string GrillFork = "\uf35b";
-    public const string GrillOff = "\uf3f5";
-    public const string GrillSpatula = "\uf35c";
-    public const string GripHorizontal = "\uec00";
-    public const string GripVertical = "\uec01";
-    public const string Growth = "\uee93";
-    public const string GuitarPick = "\uf4c6";
-    public const string GuitarPickFilled = "\uf67b";
-    public const string H1 = "\uec94";
-    public const string H2 = "\uec95";
-    public const string H3 = "\uec96";
-    public const string H4 = "\uec97";
-    public const string H5 = "\uec98";
-    public const string H6 = "\uec99";
-    public const string Hammer = "\uef91";
-    public const string HammerOff = "\uf13c";
-    public const string HandClick = "\uef4f";
-    public const string HandFinger = "\uee94";
-    public const string HandFingerOff = "\uf13d";
-    public const string HandGrab = "\uf091";
-    public const string HandLittleFinger = "\uee95";
-    public const string HandMiddleFinger = "\uec2d";
-    public const string HandMove = "\uef50";
-    public const string HandOff = "\ued15";
-    public const string HandRingFinger = "\uee96";
-    public const string HandRock = "\uee97";
-    public const string HandSanitizer = "\uf5f4";
-    public const string HandStop = "\uec2e";
-    public const string HandThreeFingers = "\uee98";
-    public const string HandTwoFingers = "\uee99";
-    public const string Hanger = "\uee9a";
-    public const string Hanger2 = "\uf09c";
-    public const string HangerOff = "\uf13e";
-    public const string Hash = "\ueabc";
-    public const string Haze = "\uefaa";
-    public const string HazeMoon = "\ufaf8";
-    public const string Hdr = "\ufa7b";
-    public const string Heading = "\uee9b";
-    public const string HeadingOff = "\uf13f";
-    public const string Headphones = "\ueabd";
-    public const string HeadphonesFilled = "\ufa3c";
-    public const string HeadphonesOff = "\ued1d";
-    public const string Headset = "\ueb90";
-    public const string HeadsetOff = "\uf3f6";
-    public const string HealthRecognition = "\uf1fb";
-    public const string Heart = "\ueabe";
-    public const string HeartBolt = "\ufb9e";
-    public const string HeartBroken = "\uecba";
-    public const string HeartCancel = "\ufb9f";
-    public const string HeartCheck = "\ufba0";
-    public const string HeartCode = "\ufba1";
-    public const string HeartCog = "\ufba2";
-    public const string HeartDiscount = "\ufba3";
-    public const string HeartDollar = "\ufba4";
-    public const string HeartDown = "\ufba5";
-    public const string HeartExclamation = "\ufba6";
-    public const string HeartFilled = "\uf67c";
-    public const string HeartHandshake = "\uf0f3";
-    public const string HeartMinus = "\uf140";
-    public const string HeartOff = "\uf141";
-    public const string HeartPause = "\ufba7";
-    public const string HeartPin = "\ufba8";
-    public const string HeartPlus = "\uf142";
-    public const string HeartQuestion = "\ufba9";
-    public const string HeartRateMonitor = "\uef61";
-    public const string HeartSearch = "\ufbaa";
-    public const string HeartShare = "\ufbab";
-    public const string HeartStar = "\ufbac";
-    public const string HeartUp = "\ufbad";
-    public const string HeartX = "\ufbae";
-    public const string Heartbeat = "\uef92";
-    public const string Hearts = "\uf387";
-    public const string HeartsOff = "\uf3f7";
-    public const string Helicopter = "\ued8e";
-    public const string HelicopterLanding = "\ued8d";
-    public const string Helmet = "\uefca";
-    public const string HelmetOff = "\uf143";
-    public const string Help = "\ueabf";
-    public const string HelpCircle = "\uf91d";
-    public const string HelpCircleFilled = "\ufa3d";
-    public const string HelpHexagon = "\uf7a8";
-    public const string HelpHexagonFilled = "\ufa3e";
-    public const string HelpOctagon = "\uf7a9";
-    public const string HelpOctagonFilled = "\ufa3f";
-    public const string HelpOff = "\uf3f8";
-    public const string HelpSmall = "\uf91e";
-    public const string HelpSquare = "\uf920";
-    public const string HelpSquareFilled = "\ufa40";
-    public const string HelpSquareRounded = "\uf91f";
-    public const string HelpSquareRoundedFilled = "\ufa41";
-    public const string HelpTriangle = "\uf921";
-    public const string HelpTriangleFilled = "\ufa42";
-    public const string Hemisphere = "\ufaa2";
-    public const string HemisphereOff = "\ufaa0";
-    public const string HemispherePlus = "\ufaa1";
-    public const string Hexagon = "\uec02";
-    public const string Hexagon0Filled = "\uf74c";
-    public const string Hexagon1Filled = "\uf74d";
-    public const string Hexagon2Filled = "\uf74e";
-    public const string Hexagon3Filled = "\uf74f";
-    public const string Hexagon3d = "\uf4c7";
-    public const string Hexagon4Filled = "\uf750";
-    public const string Hexagon5Filled = "\uf751";
-    public const string Hexagon6Filled = "\uf752";
-    public const string Hexagon7Filled = "\uf753";
-    public const string Hexagon8Filled = "\uf754";
-    public const string Hexagon9Filled = "\uf755";
-    public const string HexagonFilled = "\uf67d";
-    public const string HexagonLetterA = "\uf463";
-    public const string HexagonLetterB = "\uf464";
-    public const string HexagonLetterC = "\uf465";
-    public const string HexagonLetterD = "\uf466";
-    public const string HexagonLetterE = "\uf467";
-    public const string HexagonLetterF = "\uf468";
-    public const string HexagonLetterG = "\uf469";
-    public const string HexagonLetterH = "\uf46a";
-    public const string HexagonLetterI = "\uf46b";
-    public const string HexagonLetterJ = "\uf46c";
-    public const string HexagonLetterK = "\uf46d";
-    public const string HexagonLetterL = "\uf46e";
-    public const string HexagonLetterM = "\uf46f";
-    public const string HexagonLetterN = "\uf470";
-    public const string HexagonLetterO = "\uf471";
-    public const string HexagonLetterP = "\uf472";
-    public const string HexagonLetterQ = "\uf473";
-    public const string HexagonLetterR = "\uf474";
-    public const string HexagonLetterS = "\uf475";
-    public const string HexagonLetterT = "\uf476";
-    public const string HexagonLetterU = "\uf477";
-    public const string HexagonLetterV = "\uf4b3";
-    public const string HexagonLetterW = "\uf478";
-    public const string HexagonLetterX = "\uf479";
-    public const string HexagonLetterY = "\uf47a";
-    public const string HexagonLetterZ = "\uf47b";
-    public const string HexagonNumber0 = "\uf459";
-    public const string HexagonNumber1 = "\uf45a";
-    public const string HexagonNumber2 = "\uf45b";
-    public const string HexagonNumber3 = "\uf45c";
-    public const string HexagonNumber4 = "\uf45d";
-    public const string HexagonNumber5 = "\uf45e";
-    public const string HexagonNumber6 = "\uf45f";
-    public const string HexagonNumber7 = "\uf460";
-    public const string HexagonNumber8 = "\uf461";
-    public const string HexagonNumber9 = "\uf462";
-    public const string HexagonOff = "\uee9c";
-    public const string HexagonalPrism = "\ufaa5";
-    public const string HexagonalPrismOff = "\ufaa3";
-    public const string HexagonalPrismPlus = "\ufaa4";
-    public const string HexagonalPyramid = "\ufaa8";
-    public const string HexagonalPyramidOff = "\ufaa6";
-    public const string HexagonalPyramidPlus = "\ufaa7";
-    public const string Hexagons = "\uf09d";
-    public const string HexagonsOff = "\uf3f9";
-    public const string Hierarchy = "\uee9e";
-    public const string Hierarchy2 = "\uee9d";
-    public const string Hierarchy3 = "\uf289";
-    public const string HierarchyOff = "\uf3fa";
-    public const string Highlight = "\uef3f";
-    public const string HighlightOff = "\uf144";
-    public const string History = "\uebea";
-    public const string HistoryOff = "\uf3fb";
-    public const string HistoryToggle = "\uf1fc";
-    public const string Home = "\ueac1";
-    public const string Home2 = "\ueac0";
-    public const string HomeBolt = "\uf336";
-    public const string HomeCancel = "\uf350";
-    public const string HomeCheck = "\uf337";
-    public const string HomeCog = "\uf338";
-    public const string HomeDollar = "\uf339";
-    public const string HomeDot = "\uf33a";
-    public const string HomeDown = "\uf33b";
-    public const string HomeEco = "\uf351";
-    public const string HomeEdit = "\uf352";
-    public const string HomeExclamation = "\uf33c";
-    public const string HomeHand = "\uf504";
-    public const string HomeHeart = "\uf353";
-    public const string HomeInfinity = "\uf505";
-    public const string HomeLink = "\uf354";
-    public const string HomeMinus = "\uf33d";
-    public const string HomeMove = "\uf33e";
-    public const string HomeOff = "\uf145";
-    public const string HomePlus = "\uf33f";
-    public const string HomeQuestion = "\uf340";
-    public const string HomeRibbon = "\uf355";
-    public const string HomeSearch = "\uf341";
-    public const string HomeShare = "\uf342";
-    public const string HomeShield = "\uf343";
-    public const string HomeSignal = "\uf356";
-    public const string HomeStar = "\uf344";
-    public const string HomeStats = "\uf345";
-    public const string HomeUp = "\uf346";
-    public const string HomeX = "\uf347";
-    public const string HorseToy = "\uf28a";
-    public const string HotelService = "\uef80";
-    public const string Hourglass = "\uef93";
-    public const string HourglassEmpty = "\uf146";
-    public const string HourglassFilled = "\uf756";
-    public const string HourglassHigh = "\uf092";
-    public const string HourglassLow = "\uf093";
-    public const string HourglassOff = "\uf147";
-    public const string Html = "\uf7b1";
-    public const string HttpConnect = "\ufa28";
-    public const string HttpDelete = "\ufa29";
-    public const string HttpGet = "\ufa2a";
-    public const string HttpHead = "\ufa2b";
-    public const string HttpOptions = "\ufa2c";
-    public const string HttpPatch = "\ufa2d";
-    public const string HttpPost = "\ufa2e";
-    public const string HttpPut = "\ufa2f";
-    public const string HttpQue = "\ufa5b";
-    public const string HttpTrace = "\ufa30";
-    public const string IceCream = "\ueac2";
-    public const string IceCream2 = "\uee9f";
-    public const string IceCreamOff = "\uf148";
-    public const string IceSkating = "\uefcb";
-    public const string Icons = "\uf1d4";
-    public const string IconsOff = "\uf3fc";
-    public const string Id = "\ueac3";
-    public const string IdBadge = "\ueff7";
-    public const string IdBadge2 = "\uf076";
-    public const string IdBadgeOff = "\uf3fd";
-    public const string IdOff = "\uf149";
-    public const string Inbox = "\ueac4";
-    public const string InboxOff = "\uf14a";
-    public const string IndentDecrease = "\ueb91";
-    public const string IndentIncrease = "\ueb92";
-    public const string Infinity = "\ueb69";
-    public const string InfinityOff = "\uf3fe";
-    public const string InfoCircle = "\ueac5";
-    public const string InfoCircleFilled = "\uf6d8";
-    public const string InfoHexagon = "\uf7aa";
-    public const string InfoHexagonFilled = "\ufa43";
-    public const string InfoOctagon = "\uf7ab";
-    public const string InfoOctagonFilled = "\ufa44";
-    public const string InfoSmall = "\uf922";
-    public const string InfoSquare = "\ueac6";
-    public const string InfoSquareFilled = "\ufa45";
-    public const string InfoSquareRounded = "\uf635";
-    public const string InfoSquareRoundedFilled = "\uf6d9";
-    public const string InfoTriangle = "\uf923";
-    public const string InfoTriangleFilled = "\ufa46";
-    public const string InnerShadowBottom = "\uf520";
-    public const string InnerShadowBottomFilled = "\uf757";
-    public const string InnerShadowBottomLeft = "\uf51e";
-    public const string InnerShadowBottomLeftFilled = "\uf758";
-    public const string InnerShadowBottomRight = "\uf51f";
-    public const string InnerShadowBottomRightFilled = "\uf759";
-    public const string InnerShadowLeft = "\uf521";
-    public const string InnerShadowLeftFilled = "\uf75a";
-    public const string InnerShadowRight = "\uf522";
-    public const string InnerShadowRightFilled = "\uf75b";
-    public const string InnerShadowTop = "\uf525";
-    public const string InnerShadowTopFilled = "\uf75c";
-    public const string InnerShadowTopLeft = "\uf523";
-    public const string InnerShadowTopLeftFilled = "\uf75d";
-    public const string InnerShadowTopRight = "\uf524";
-    public const string InnerShadowTopRightFilled = "\uf75e";
-    public const string InputSearch = "\uf2a2";
-    public const string Ironing = "\ufa7c";
-    public const string Ironing1 = "\uf2f4";
-    public const string Ironing2 = "\uf2f5";
-    public const string Ironing3 = "\uf2f6";
-    public const string IroningOff = "\uf2f7";
-    public const string IroningSteam = "\uf2f9";
-    public const string IroningSteamOff = "\uf2f8";
-    public const string IrregularPolyhedron = "\ufaab";
-    public const string IrregularPolyhedronOff = "\ufaa9";
-    public const string IrregularPolyhedronPlus = "\ufaaa";
-    public const string Italic = "\ueb93";
-    public const string Jacket = "\uf661";
-    public const string Jetpack = "\uf581";
-    public const string JewishStar = "\uf3ff";
-    public const string JewishStarFilled = "\uf67e";
-    public const string Jpg = "\uf3ac";
-    public const string Json = "\uf7b2";
-    public const string JumpRope = "\ued8f";
-    public const string Karate = "\ued32";
-    public const string Kayak = "\uf1d6";
-    public const string Kering = "\uefb8";
-    public const string Key = "\ueac7";
-    public const string KeyOff = "\uf14b";
-    public const string Keyboard = "\uebd6";
-    public const string KeyboardHide = "\uec7e";
-    public const string KeyboardOff = "\ueea0";
-    public const string KeyboardShow = "\uec7f";
-    public const string Keyframe = "\uf576";
-    public const string KeyframeAlignCenter = "\uf582";
-    public const string KeyframeAlignCenterFilled = "\ufc30";
-    public const string KeyframeAlignHorizontal = "\uf583";
-    public const string KeyframeAlignHorizontalFilled = "\ufc31";
-    public const string KeyframeAlignVertical = "\uf584";
-    public const string KeyframeAlignVerticalFilled = "\ufc32";
-    public const string KeyframeFilled = "\ufc33";
-    public const string Keyframes = "\uf585";
-    public const string KeyframesFilled = "\ufc34";
-    public const string Ladder = "\uefe2";
-    public const string LadderOff = "\uf14c";
-    public const string Ladle = "\ufc14";
-    public const string Lambda = "\uf541";
-    public const string Lamp = "\uefab";
-    public const string Lamp2 = "\uf09e";
-    public const string LampOff = "\uf14d";
-    public const string Lane = "\ufaf9";
-    public const string Language = "\uebbe";
-    public const string LanguageHiragana = "\uef77";
-    public const string LanguageKatakana = "\uef78";
-    public const string LanguageOff = "\uf14e";
-    public const string Lasso = "\uefac";
-    public const string LassoOff = "\uf14f";
-    public const string LassoPolygon = "\uf388";
-    public const string LayersDifference = "\ueac8";
-    public const string LayersIntersect = "\ueac9";
-    public const string LayersIntersect2 = "\ueff8";
-    public const string LayersLinked = "\ueea1";
-    public const string LayersOff = "\uf150";
-    public const string LayersSubtract = "\ueaca";
-    public const string LayersUnion = "\ueacb";
-    public const string Layout = "\ueadb";
-    public const string Layout2 = "\ueacc";
-    public const string LayoutAlignBottom = "\ueacd";
-    public const string LayoutAlignCenter = "\ueace";
-    public const string LayoutAlignLeft = "\ueacf";
-    public const string LayoutAlignMiddle = "\uead0";
-    public const string LayoutAlignRight = "\uead1";
-    public const string LayoutAlignTop = "\uead2";
-    public const string LayoutBoard = "\uef95";
-    public const string LayoutBoardSplit = "\uef94";
-    public const string LayoutBottombar = "\uead3";
-    public const string LayoutBottombarCollapse = "\uf28b";
-    public const string LayoutBottombarCollapseFilled = "\ufc35";
-    public const string LayoutBottombarExpand = "\uf28c";
-    public const string LayoutBottombarExpandFilled = "\ufc36";
-    public const string LayoutBottombarFilled = "\ufc37";
-    public const string LayoutCards = "\uec13";
-    public const string LayoutCollage = "\uf389";
-    public const string LayoutColumns = "\uead4";
-    public const string LayoutDashboard = "\uf02c";
-    public const string LayoutDistributeHorizontal = "\uead5";
-    public const string LayoutDistributeVertical = "\uead6";
-    public const string LayoutGrid = "\uedba";
-    public const string LayoutGridAdd = "\uedb9";
-    public const string LayoutGridRemove = "\ufa7d";
-    public const string LayoutKanban = "\uec3f";
-    public const string LayoutList = "\uec14";
-    public const string LayoutNavbar = "\uead7";
-    public const string LayoutNavbarCollapse = "\uf28d";
-    public const string LayoutNavbarCollapseFilled = "\ufc38";
-    public const string LayoutNavbarExpand = "\uf28e";
-    public const string LayoutNavbarExpandFilled = "\ufc39";
-    public const string LayoutNavbarFilled = "\ufc3a";
-    public const string LayoutOff = "\uf151";
-    public const string LayoutRows = "\uead8";
-    public const string LayoutSidebar = "\ueada";
-    public const string LayoutSidebarLeftCollapse = "\uf004";
-    public const string LayoutSidebarLeftCollapseFilled = "\ufc3b";
-    public const string LayoutSidebarLeftExpand = "\uf005";
-    public const string LayoutSidebarLeftExpandFilled = "\ufc3c";
-    public const string LayoutSidebarRight = "\uead9";
-    public const string LayoutSidebarRightCollapse = "\uf006";
-    public const string LayoutSidebarRightCollapseFilled = "\ufc3d";
-    public const string LayoutSidebarRightExpand = "\uf007";
-    public const string LayoutSidebarRightExpandFilled = "\ufc3e";
-    public const string Leaf = "\ued4f";
-    public const string LeafOff = "\uf400";
-    public const string Lego = "\ueadc";
-    public const string LegoOff = "\uf401";
-    public const string Lemon = "\uef10";
-    public const string Lemon2 = "\uef81";
-    public const string LetterA = "\uec50";
-    public const string LetterB = "\uec51";
-    public const string LetterC = "\uec52";
-    public const string LetterCase = "\ueea5";
-    public const string LetterCaseLower = "\ueea2";
-    public const string LetterCaseToggle = "\ueea3";
-    public const string LetterCaseUpper = "\ueea4";
-    public const string LetterD = "\uec53";
-    public const string LetterE = "\uec54";
-    public const string LetterF = "\uec55";
-    public const string LetterG = "\uec56";
-    public const string LetterH = "\uec57";
-    public const string LetterI = "\uec58";
-    public const string LetterJ = "\uec59";
-    public const string LetterK = "\uec5a";
-    public const string LetterL = "\uec5b";
-    public const string LetterM = "\uec5c";
-    public const string LetterN = "\uec5d";
-    public const string LetterO = "\uec5e";
-    public const string LetterP = "\uec5f";
-    public const string LetterQ = "\uec60";
-    public const string LetterR = "\uec61";
-    public const string LetterS = "\uec62";
-    public const string LetterSpacing = "\ueea6";
-    public const string LetterT = "\uec63";
-    public const string LetterU = "\uec64";
-    public const string LetterV = "\uec65";
-    public const string LetterW = "\uec66";
-    public const string LetterX = "\uec67";
-    public const string LetterY = "\uec68";
-    public const string LetterZ = "\uec69";
-    public const string License = "\uebc0";
-    public const string LicenseOff = "\uf153";
-    public const string Lifebuoy = "\ueadd";
-    public const string LifebuoyOff = "\uf154";
-    public const string Lighter = "\uf794";
-    public const string Line = "\uec40";
-    public const string LineDashed = "\ueea7";
-    public const string LineDotted = "\ueea8";
-    public const string LineHeight = "\ueb94";
-    public const string Link = "\ueade";
-    public const string LinkOff = "\uf402";
-    public const string List = "\ueb6b";
-    public const string ListCheck = "\ueb6a";
-    public const string ListDetails = "\uef40";
-    public const string ListNumbers = "\uef11";
-    public const string ListSearch = "\ueea9";
-    public const string ListTree = "\ufafa";
-    public const string LivePhoto = "\ueadf";
-    public const string LivePhotoOff = "\uf403";
-    public const string LiveView = "\uec6b";
-    public const string LoadBalancer = "\ufa5c";
-    public const string Loader = "\ueca3";
-    public const string Loader2 = "\uf226";
-    public const string Loader3 = "\uf513";
-    public const string LoaderQuarter = "\ueca2";
-    public const string Location = "\ueae0";
-    public const string LocationBolt = "\ufbaf";
-    public const string LocationBroken = "\uf2c4";
-    public const string LocationCancel = "\ufbb0";
-    public const string LocationCheck = "\ufbb1";
-    public const string LocationCode = "\ufbb2";
-    public const string LocationCog = "\ufbb3";
-    public const string LocationDiscount = "\ufbb4";
-    public const string LocationDollar = "\ufbb5";
-    public const string LocationDown = "\ufbb6";
-    public const string LocationExclamation = "\ufbb7";
-    public const string LocationFilled = "\uf67f";
-    public const string LocationHeart = "\ufbb8";
-    public const string LocationMinus = "\ufbb9";
-    public const string LocationOff = "\uf155";
-    public const string LocationPause = "\ufbba";
-    public const string LocationPin = "\ufbbb";
-    public const string LocationPlus = "\ufbbc";
-    public const string LocationQuestion = "\ufbbd";
-    public const string LocationSearch = "\ufbbe";
-    public const string LocationShare = "\ufbbf";
-    public const string LocationStar = "\ufbc0";
-    public const string LocationUp = "\ufbc1";
-    public const string LocationX = "\ufbc2";
-    public const string Lock = "\ueae2";
-    public const string LockAccess = "\ueeaa";
-    public const string LockAccessOff = "\uf404";
-    public const string LockBolt = "\uf924";
-    public const string LockCancel = "\uf925";
-    public const string LockCheck = "\uf926";
-    public const string LockCode = "\uf927";
-    public const string LockCog = "\uf928";
-    public const string LockDollar = "\uf929";
-    public const string LockDown = "\uf92a";
-    public const string LockExclamation = "\uf92b";
-    public const string LockHeart = "\uf92c";
-    public const string LockMinus = "\uf92d";
-    public const string LockOff = "\ued1e";
-    public const string LockOpen = "\ueae1";
-    public const string LockOpenOff = "\uf156";
-    public const string LockPause = "\uf92e";
-    public const string LockPin = "\uf92f";
-    public const string LockPlus = "\uf930";
-    public const string LockQuestion = "\uf931";
-    public const string LockSearch = "\uf932";
-    public const string LockShare = "\uf933";
-    public const string LockSquare = "\uef51";
-    public const string LockSquareRounded = "\uf636";
-    public const string LockSquareRoundedFilled = "\uf6da";
-    public const string LockStar = "\uf934";
-    public const string LockUp = "\uf935";
-    public const string LockX = "\uf936";
-    public const string LogicAnd = "\uf240";
-    public const string LogicBuffer = "\uf241";
-    public const string LogicNand = "\uf242";
-    public const string LogicNor = "\uf243";
-    public const string LogicNot = "\uf244";
-    public const string LogicOr = "\uf245";
-    public const string LogicXnor = "\uf246";
-    public const string LogicXor = "\uf247";
-    public const string Login = "\ueba7";
-    public const string Logout = "\ueba8";
-    public const string Logout2 = "\ufa7e";
-    public const string Lollipop = "\uefcc";
-    public const string LollipopOff = "\uf157";
-    public const string Luggage = "\uefad";
-    public const string LuggageOff = "\uf158";
-    public const string Lungs = "\uef62";
-    public const string LungsOff = "\uf405";
-    public const string Macro = "\ueeab";
-    public const string MacroOff = "\uf406";
-    public const string Magnet = "\ueae3";
-    public const string MagnetOff = "\uf159";
-    public const string Mail = "\ueae5";
-    public const string MailAi = "\ufa31";
-    public const string MailBolt = "\uf937";
-    public const string MailCancel = "\uf938";
-    public const string MailCheck = "\uf939";
-    public const string MailCode = "\uf93a";
-    public const string MailCog = "\uf93b";
-    public const string MailDollar = "\uf93c";
-    public const string MailDown = "\uf93d";
-    public const string MailExclamation = "\uf93e";
-    public const string MailFast = "\uf069";
-    public const string MailFilled = "\ufa47";
-    public const string MailForward = "\ueeac";
-    public const string MailHeart = "\uf93f";
-    public const string MailMinus = "\uf940";
-    public const string MailOff = "\uf15a";
-    public const string MailOpened = "\ueae4";
-    public const string MailOpenedFilled = "\ufa48";
-    public const string MailPause = "\uf941";
-    public const string MailPin = "\uf942";
-    public const string MailPlus = "\uf943";
-    public const string MailQuestion = "\uf944";
-    public const string MailSearch = "\uf945";
-    public const string MailShare = "\uf946";
-    public const string MailStar = "\uf947";
-    public const string MailUp = "\uf948";
-    public const string MailX = "\uf949";
-    public const string Mailbox = "\ueead";
-    public const string MailboxOff = "\uf15b";
-    public const string Man = "\ueae6";
-    public const string ManualGearbox = "\ued7b";
-    public const string Map = "\ueae9";
-    public const string Map2 = "\ueae7";
-    public const string MapBolt = "\ufbc3";
-    public const string MapCancel = "\ufbc4";
-    public const string MapCheck = "\ufbc5";
-    public const string MapCode = "\ufbc6";
-    public const string MapCog = "\ufbc7";
-    public const string MapDiscount = "\ufbc8";
-    public const string MapDollar = "\ufbc9";
-    public const string MapDown = "\ufbca";
-    public const string MapExclamation = "\ufbcb";
-    public const string MapHeart = "\ufbcc";
-    public const string MapMinus = "\ufbcd";
-    public const string MapOff = "\uf15c";
-    public const string MapPause = "\ufbce";
-    public const string MapPin = "\ueae8";
-    public const string MapPinBolt = "\uf94a";
-    public const string MapPinCancel = "\uf94b";
-    public const string MapPinCheck = "\uf94c";
-    public const string MapPinCode = "\uf94d";
-    public const string MapPinCog = "\uf94e";
-    public const string MapPinDollar = "\uf94f";
-    public const string MapPinDown = "\uf950";
-    public const string MapPinExclamation = "\uf951";
-    public const string MapPinFilled = "\uf680";
-    public const string MapPinHeart = "\uf952";
-    public const string MapPinMinus = "\uf953";
-    public const string MapPinOff = "\uecf3";
-    public const string MapPinPause = "\uf954";
-    public const string MapPinPin = "\uf955";
-    public const string MapPinPlus = "\uf956";
-    public const string MapPinQuestion = "\uf957";
-    public const string MapPinSearch = "\uf958";
-    public const string MapPinShare = "\uf795";
-    public const string MapPinStar = "\uf959";
-    public const string MapPinUp = "\uf95a";
-    public const string MapPinX = "\uf95b";
-    public const string MapPins = "\ued5e";
-    public const string MapPlus = "\ufbcf";
-    public const string MapQuestion = "\ufbd0";
-    public const string MapSearch = "\uef82";
-    public const string MapShare = "\ufbd1";
-    public const string MapStar = "\ufbd2";
-    public const string MapUp = "\ufbd3";
-    public const string MapX = "\ufbd4";
-    public const string Markdown = "\uec41";
-    public const string MarkdownOff = "\uf407";
-    public const string Marquee = "\uec77";
-    public const string Marquee2 = "\ueeae";
-    public const string MarqueeOff = "\uf15d";
-    public const string Mars = "\uec80";
-    public const string Mask = "\ueeb0";
-    public const string MaskOff = "\ueeaf";
-    public const string MasksTheater = "\uf263";
-    public const string MasksTheaterOff = "\uf408";
-    public const string Massage = "\ueeb1";
-    public const string Matchstick = "\uf577";
-    public const string Math = "\uebeb";
-    public const string Math1Divide2 = "\uf4e2";
-    public const string Math1Divide3 = "\uf4e3";
-    public const string MathAvg = "\uf0f4";
-    public const string MathEqualGreater = "\uf4e4";
-    public const string MathEqualLower = "\uf4e5";
-    public const string MathFunction = "\ueeb2";
-    public const string MathFunctionOff = "\uf15e";
-    public const string MathFunctionY = "\uf4e6";
-    public const string MathGreater = "\uf4e7";
-    public const string MathIntegral = "\uf4e9";
-    public const string MathIntegralX = "\uf4e8";
-    public const string MathIntegrals = "\uf4ea";
-    public const string MathLower = "\uf4eb";
-    public const string MathMax = "\uf0f5";
-    public const string MathMin = "\uf0f6";
-    public const string MathNot = "\uf4ec";
-    public const string MathOff = "\uf409";
-    public const string MathPi = "\uf4ee";
-    public const string MathPiDivide2 = "\uf4ed";
-    public const string MathSymbols = "\ueeb3";
-    public const string MathXDivide2 = "\uf4ef";
-    public const string MathXDivideY = "\uf4f1";
-    public const string MathXDivideY2 = "\uf4f0";
-    public const string MathXMinusX = "\uf4f2";
-    public const string MathXMinusY = "\uf4f3";
-    public const string MathXPlusX = "\uf4f4";
-    public const string MathXPlusY = "\uf4f5";
-    public const string MathXy = "\uf4f6";
-    public const string MathYMinusY = "\uf4f7";
-    public const string MathYPlusY = "\uf4f8";
-    public const string Maximize = "\ueaea";
-    public const string MaximizeOff = "\uf15f";
-    public const string Meat = "\uef12";
-    public const string MeatOff = "\uf40a";
-    public const string Medal = "\uec78";
-    public const string Medal2 = "\uefcd";
-    public const string MedicalCross = "\uec2f";
-    public const string MedicalCrossCircle = "\ufae8";
-    public const string MedicalCrossFilled = "\uf681";
-    public const string MedicalCrossOff = "\uf160";
-    public const string MedicineSyrup = "\uef63";
-    public const string Meeple = "\uf514";
-    public const string Menorah = "\uf58c";
-    public const string Menu = "\ueaeb";
-    public const string Menu2 = "\uec42";
-    public const string MenuDeep = "\ufafb";
-    public const string MenuOrder = "\uf5f5";
-    public const string Message = "\ueaef";
-    public const string Message2 = "\ueaec";
-    public const string Message2Bolt = "\uf95c";
-    public const string Message2Cancel = "\uf95d";
-    public const string Message2Check = "\uf95e";
-    public const string Message2Code = "\uf012";
-    public const string Message2Cog = "\uf95f";
-    public const string Message2Dollar = "\uf960";
-    public const string Message2Down = "\uf961";
-    public const string Message2Exclamation = "\uf962";
-    public const string Message2Heart = "\uf963";
-    public const string Message2Minus = "\uf964";
-    public const string Message2Off = "\uf40b";
-    public const string Message2Pause = "\uf965";
-    public const string Message2Pin = "\uf966";
-    public const string Message2Plus = "\uf967";
-    public const string Message2Question = "\uf968";
-    public const string Message2Search = "\uf969";
-    public const string Message2Share = "\uf077";
-    public const string Message2Star = "\uf96a";
-    public const string Message2Up = "\uf96b";
-    public const string Message2X = "\uf96c";
-    public const string MessageBolt = "\uf96d";
-    public const string MessageCancel = "\uf96e";
-    public const string MessageChatbot = "\uf38a";
-    public const string MessageCheck = "\uf96f";
-    public const string MessageCircle = "\ueaed";
-    public const string MessageCircle2 = "\ued3f";
-    public const string MessageCircle2Filled = "\uf682";
-    public const string MessageCircleBolt = "\uf970";
-    public const string MessageCircleCancel = "\uf971";
-    public const string MessageCircleCheck = "\uf972";
-    public const string MessageCircleCode = "\uf973";
-    public const string MessageCircleCog = "\uf974";
-    public const string MessageCircleDollar = "\uf975";
-    public const string MessageCircleDown = "\uf976";
-    public const string MessageCircleExclamation = "\uf977";
-    public const string MessageCircleHeart = "\uf978";
-    public const string MessageCircleMinus = "\uf979";
-    public const string MessageCircleOff = "\ued40";
-    public const string MessageCirclePause = "\uf97a";
-    public const string MessageCirclePin = "\uf97b";
-    public const string MessageCirclePlus = "\uf97c";
-    public const string MessageCircleQuestion = "\uf97d";
-    public const string MessageCircleSearch = "\uf97e";
-    public const string MessageCircleShare = "\uf97f";
-    public const string MessageCircleStar = "\uf980";
-    public const string MessageCircleUp = "\uf981";
-    public const string MessageCircleX = "\uf982";
-    public const string MessageCode = "\uf013";
-    public const string MessageCog = "\uf983";
-    public const string MessageDollar = "\uf984";
-    public const string MessageDots = "\ueaee";
-    public const string MessageDown = "\uf985";
-    public const string MessageExclamation = "\uf986";
-    public const string MessageForward = "\uf28f";
-    public const string MessageHeart = "\uf987";
-    public const string MessageLanguage = "\uefae";
-    public const string MessageMinus = "\uf988";
-    public const string MessageOff = "\ued41";
-    public const string MessagePause = "\uf989";
-    public const string MessagePin = "\uf98a";
-    public const string MessagePlus = "\uec9a";
-    public const string MessageQuestion = "\uf98b";
-    public const string MessageReport = "\uec9b";
-    public const string MessageSearch = "\uf98c";
-    public const string MessageShare = "\uf078";
-    public const string MessageStar = "\uf98d";
-    public const string MessageUp = "\uf98e";
-    public const string MessageX = "\uf98f";
-    public const string Messages = "\ueb6c";
-    public const string MessagesOff = "\ued42";
-    public const string Meteor = "\uf1fd";
-    public const string MeteorOff = "\uf40c";
-    public const string MichelinBibGourmand = "\ufae9";
-    public const string MichelinStar = "\ufaeb";
-    public const string MichelinStarGreen = "\ufaea";
-    public const string Mickey = "\uf2a3";
-    public const string MickeyFilled = "\uf683";
-    public const string Microphone = "\ueaf0";
-    public const string Microphone2 = "\uef2c";
-    public const string Microphone2Off = "\uf40d";
-    public const string MicrophoneOff = "\ued16";
-    public const string Microscope = "\uef64";
-    public const string MicroscopeOff = "\uf40e";
-    public const string Microwave = "\uf248";
-    public const string MicrowaveOff = "\uf264";
-    public const string MilitaryAward = "\uf079";
-    public const string MilitaryRank = "\uefcf";
-    public const string Milk = "\uef13";
-    public const string MilkOff = "\uf40f";
-    public const string Milkshake = "\uf4c8";
-    public const string Minimize = "\ueaf1";
-    public const string Minus = "\ueaf2";
-    public const string MinusVertical = "\ueeb4";
-    public const string Mist = "\uec30";
-    public const string MistOff = "\uf410";
-    public const string Mobiledata = "\uf9f5";
-    public const string MobiledataOff = "\uf9f4";
-    public const string Moneybag = "\uf506";
-    public const string MoodAngry = "\uf2de";
-    public const string MoodAnnoyed = "\uf2e0";
-    public const string MoodAnnoyed2 = "\uf2df";
-    public const string MoodBoy = "\ued2d";
-    public const string MoodCheck = "\uf7b3";
-    public const string MoodCog = "\uf7b4";
-    public const string MoodConfuzed = "\ueaf3";
-    public const string MoodConfuzedFilled = "\uf7f2";
-    public const string MoodCrazyHappy = "\ued90";
-    public const string MoodCry = "\uecbb";
-    public const string MoodDollar = "\uf7b5";
-    public const string MoodEdit = "\ufa05";
-    public const string MoodEmpty = "\ueeb5";
-    public const string MoodEmptyFilled = "\uf7f3";
-    public const string MoodHappy = "\ueaf4";
-    public const string MoodHappyFilled = "\uf7f4";
-    public const string MoodHeart = "\uf7b6";
-    public const string MoodKid = "\uec03";
-    public const string MoodKidFilled = "\uf7f5";
-    public const string MoodLookLeft = "\uf2c5";
-    public const string MoodLookRight = "\uf2c6";
-    public const string MoodMinus = "\uf7b7";
-    public const string MoodNerd = "\uf2e1";
-    public const string MoodNervous = "\uef96";
-    public const string MoodNeutral = "\ueaf5";
-    public const string MoodNeutralFilled = "\uf7f6";
-    public const string MoodOff = "\uf161";
-    public const string MoodPin = "\uf7b8";
-    public const string MoodPlus = "\uf7b9";
-    public const string MoodSad = "\ueaf6";
-    public const string MoodSad2 = "\uf2e2";
-    public const string MoodSadDizzy = "\uf2e3";
-    public const string MoodSadFilled = "\uf7f7";
-    public const string MoodSadSquint = "\uf2e4";
-    public const string MoodSearch = "\uf7ba";
-    public const string MoodShare = "\ufa06";
-    public const string MoodSick = "\uf2e5";
-    public const string MoodSilence = "\uf2e6";
-    public const string MoodSing = "\uf2c7";
-    public const string MoodSmile = "\ueaf7";
-    public const string MoodSmileBeam = "\uf2e7";
-    public const string MoodSmileDizzy = "\uf2e8";
-    public const string MoodSmileFilled = "\uf7f8";
-    public const string MoodSuprised = "\uec04";
-    public const string MoodTongue = "\ueb95";
-    public const string MoodTongueWink = "\uf2ea";
-    public const string MoodTongueWink2 = "\uf2e9";
-    public const string MoodUnamused = "\uf2eb";
-    public const string MoodUp = "\uf7bb";
-    public const string MoodWink = "\uf2ed";
-    public const string MoodWink2 = "\uf2ec";
-    public const string MoodWrrr = "\uf2ee";
-    public const string MoodX = "\uf7bc";
-    public const string MoodXd = "\uf2ef";
-    public const string Moon = "\ueaf8";
-    public const string Moon2 = "\uece6";
-    public const string MoonFilled = "\uf684";
-    public const string MoonOff = "\uf162";
-    public const string MoonStars = "\uece7";
-    public const string Moped = "\uecbc";
-    public const string Motorbike = "\ueeb6";
-    public const string Mountain = "\uef97";
-    public const string MountainOff = "\uf411";
-    public const string Mouse = "\ueaf9";
-    public const string Mouse2 = "\uf1d7";
-    public const string MouseFilled = "\ufb2f";
-    public const string MouseOff = "\uf163";
-    public const string Moustache = "\uf4c9";
-    public const string Movie = "\ueafa";
-    public const string MovieOff = "\uf164";
-    public const string Mug = "\ueafb";
-    public const string MugOff = "\uf165";
-    public const string Multiplier05x = "\uef41";
-    public const string Multiplier15x = "\uef42";
-    public const string Multiplier1x = "\uef43";
-    public const string Multiplier2x = "\uef44";
-    public const string Mushroom = "\uef14";
-    public const string MushroomFilled = "\uf7f9";
-    public const string MushroomOff = "\uf412";
-    public const string Music = "\ueafc";
-    public const string MusicBolt = "\ufbd5";
-    public const string MusicCancel = "\ufbd6";
-    public const string MusicCheck = "\ufbd7";
-    public const string MusicCode = "\ufbd8";
-    public const string MusicCog = "\ufbd9";
-    public const string MusicDiscount = "\ufbda";
-    public const string MusicDollar = "\ufbdb";
-    public const string MusicDown = "\ufbdc";
-    public const string MusicExclamation = "\ufbdd";
-    public const string MusicHeart = "\ufbde";
-    public const string MusicMinus = "\ufbdf";
-    public const string MusicOff = "\uf166";
-    public const string MusicPause = "\ufbe0";
-    public const string MusicPin = "\ufbe1";
-    public const string MusicPlus = "\ufbe2";
-    public const string MusicQuestion = "\ufbe3";
-    public const string MusicSearch = "\ufbe4";
-    public const string MusicShare = "\ufbe5";
-    public const string MusicStar = "\ufbe6";
-    public const string MusicUp = "\ufbe7";
-    public const string MusicX = "\ufbe8";
-    public const string Navigation = "\uf2c8";
-    public const string NavigationBolt = "\ufbe9";
-    public const string NavigationCancel = "\ufbea";
-    public const string NavigationCheck = "\ufbeb";
-    public const string NavigationCode = "\ufbec";
-    public const string NavigationCog = "\ufbed";
-    public const string NavigationDiscount = "\ufbee";
-    public const string NavigationDollar = "\ufbef";
-    public const string NavigationDown = "\ufbf0";
-    public const string NavigationExclamation = "\ufbf1";
-    public const string NavigationFilled = "\uf685";
-    public const string NavigationHeart = "\ufbf2";
-    public const string NavigationMinus = "\ufbf3";
-    public const string NavigationNorth = "\ufaec";
-    public const string NavigationOff = "\uf413";
-    public const string NavigationPause = "\ufbf4";
-    public const string NavigationPin = "\ufbf5";
-    public const string NavigationPlus = "\ufbf6";
-    public const string NavigationQuestion = "\ufbf7";
-    public const string NavigationSearch = "\ufbf8";
-    public const string NavigationShare = "\ufbf9";
-    public const string NavigationStar = "\ufbfa";
-    public const string NavigationUp = "\ufbfb";
-    public const string NavigationX = "\ufbfc";
-    public const string Needle = "\uf508";
-    public const string NeedleThread = "\uf507";
-    public const string Network = "\uf09f";
-    public const string NetworkOff = "\uf414";
-    public const string NewSection = "\uebc1";
-    public const string News = "\ueafd";
-    public const string NewsOff = "\uf167";
-    public const string Nfc = "\ueeb7";
-    public const string NfcOff = "\uf168";
-    public const string NoCopyright = "\uefb9";
-    public const string NoCreativeCommons = "\uefba";
-    public const string NoDerivatives = "\uefbb";
-    public const string NorthStar = "\uf014";
-    public const string Note = "\ueb6d";
-    public const string NoteOff = "\uf169";
-    public const string Notebook = "\ueb96";
-    public const string NotebookOff = "\uf415";
-    public const string Notes = "\ueb6e";
-    public const string NotesOff = "\uf16a";
-    public const string Notification = "\ueafe";
-    public const string NotificationOff = "\uf16b";
-    public const string Number = "\uf1fe";
-    public const string Number0 = "\uedf0";
-    public const string Number1 = "\uedf1";
-    public const string Number2 = "\uedf2";
-    public const string Number3 = "\uedf3";
-    public const string Number4 = "\uedf4";
-    public const string Number5 = "\uedf5";
-    public const string Number6 = "\uedf6";
-    public const string Number7 = "\uedf7";
-    public const string Number8 = "\uedf8";
-    public const string Number9 = "\uedf9";
-    public const string Numbers = "\uf015";
-    public const string Nurse = "\uef65";
-    public const string Octagon = "\uecbd";
-    public const string OctagonFilled = "\uf686";
-    public const string OctagonOff = "\ueeb8";
-    public const string Octahedron = "\ufaae";
-    public const string OctahedronOff = "\ufaac";
-    public const string OctahedronPlus = "\ufaad";
-    public const string Old = "\ueeb9";
-    public const string Olympics = "\ueeba";
-    public const string OlympicsOff = "\uf416";
-    public const string Om = "\uf58d";
-    public const string Omega = "\ueb97";
-    public const string Outbound = "\uf249";
-    public const string Outlet = "\uebd7";
-    public const string Oval = "\uf02e";
-    public const string OvalFilled = "\uf687";
-    public const string OvalVertical = "\uf02d";
-    public const string OvalVerticalFilled = "\uf688";
-    public const string Overline = "\ueebb";
-    public const string Package = "\ueaff";
-    public const string PackageExport = "\uf07a";
-    public const string PackageImport = "\uf07b";
-    public const string PackageOff = "\uf16c";
-    public const string Packages = "\uf2c9";
-    public const string Pacman = "\ueebc";
-    public const string PageBreak = "\uec81";
-    public const string Paint = "\ueb00";
-    public const string PaintFilled = "\uf75f";
-    public const string PaintOff = "\uf16d";
-    public const string Palette = "\ueb01";
-    public const string PaletteOff = "\uf16e";
-    public const string PanoramaHorizontal = "\ued33";
-    public const string PanoramaHorizontalOff = "\uf417";
-    public const string PanoramaVertical = "\ued34";
-    public const string PanoramaVerticalOff = "\uf418";
-    public const string PaperBag = "\uf02f";
-    public const string PaperBagOff = "\uf16f";
-    public const string Paperclip = "\ueb02";
-    public const string Parachute = "\ued7c";
-    public const string ParachuteOff = "\uf170";
-    public const string Parentheses = "\uebd8";
-    public const string ParenthesesOff = "\uf171";
-    public const string Parking = "\ueb03";
-    public const string ParkingOff = "\uf172";
-    public const string Password = "\uf4ca";
-    public const string Paw = "\ueff9";
-    public const string PawFilled = "\uf689";
-    public const string PawOff = "\uf419";
-    public const string Pdf = "\uf7ac";
-    public const string Peace = "\uecbe";
-    public const string Pencil = "\ueb04";
-    public const string PencilBolt = "\ufbfd";
-    public const string PencilCancel = "\ufbfe";
-    public const string PencilCheck = "\ufbff";
-    public const string PencilCode = "\ufc00";
-    public const string PencilCog = "\ufc01";
-    public const string PencilDiscount = "\ufc02";
-    public const string PencilDollar = "\ufc03";
-    public const string PencilDown = "\ufc04";
-    public const string PencilExclamation = "\ufc05";
-    public const string PencilHeart = "\ufc06";
-    public const string PencilMinus = "\uf1eb";
-    public const string PencilOff = "\uf173";
-    public const string PencilPause = "\ufc07";
-    public const string PencilPin = "\ufc08";
-    public const string PencilPlus = "\uf1ec";
-    public const string PencilQuestion = "\ufc09";
-    public const string PencilSearch = "\ufc0a";
-    public const string PencilShare = "\ufc0b";
-    public const string PencilStar = "\ufc0c";
-    public const string PencilUp = "\ufc0d";
-    public const string PencilX = "\ufc0e";
-    public const string Pennant = "\ued7d";
-    public const string Pennant2 = "\uf06a";
-    public const string Pennant2Filled = "\uf68a";
-    public const string PennantFilled = "\uf68b";
-    public const string PennantOff = "\uf174";
-    public const string Pentagon = "\uefe3";
-    public const string PentagonFilled = "\uf68c";
-    public const string PentagonOff = "\uf41a";
-    public const string Pentagram = "\uf586";
-    public const string Pepper = "\uef15";
-    public const string PepperOff = "\uf175";
-    public const string Percentage = "\uecf4";
-    public const string Perfume = "\uf509";
-    public const string Perspective = "\ueebd";
-    public const string PerspectiveOff = "\uf176";
-    public const string Phone = "\ueb09";
-    public const string PhoneCall = "\ueb05";
-    public const string PhoneCalling = "\uec43";
-    public const string PhoneCheck = "\uec05";
-    public const string PhoneFilled = "\ufa49";
-    public const string PhoneIncoming = "\ueb06";
-    public const string PhoneOff = "\uecf5";
-    public const string PhoneOutgoing = "\ueb07";
-    public const string PhonePause = "\ueb08";
-    public const string PhonePlus = "\uec06";
-    public const string PhoneX = "\uec07";
-    public const string Photo = "\ueb0a";
-    public const string PhotoAi = "\ufa32";
-    public const string PhotoBolt = "\uf990";
-    public const string PhotoCancel = "\uf35d";
-    public const string PhotoCheck = "\uf35e";
-    public const string PhotoCode = "\uf991";
-    public const string PhotoCog = "\uf992";
-    public const string PhotoDollar = "\uf993";
-    public const string PhotoDown = "\uf35f";
-    public const string PhotoEdit = "\uf360";
-    public const string PhotoExclamation = "\uf994";
-    public const string PhotoFilled = "\ufa4a";
-    public const string PhotoHeart = "\uf361";
-    public const string PhotoMinus = "\uf362";
-    public const string PhotoOff = "\uecf6";
-    public const string PhotoPause = "\uf995";
-    public const string PhotoPin = "\uf996";
-    public const string PhotoPlus = "\uf363";
-    public const string PhotoQuestion = "\uf997";
-    public const string PhotoSearch = "\uf364";
-    public const string PhotoSensor = "\uf798";
-    public const string PhotoSensor2 = "\uf796";
-    public const string PhotoSensor3 = "\uf797";
-    public const string PhotoShare = "\uf998";
-    public const string PhotoShield = "\uf365";
-    public const string PhotoStar = "\uf366";
-    public const string PhotoUp = "\uf38b";
-    public const string PhotoX = "\uf367";
-    public const string Physotherapist = "\ueebe";
-    public const string Piano = "\ufad3";
-    public const string Pick = "\ufafc";
-    public const string PictureInPicture = "\ued35";
-    public const string PictureInPictureOff = "\ued43";
-    public const string PictureInPictureOn = "\ued44";
-    public const string PictureInPictureTop = "\uefe4";
-    public const string Pig = "\uef52";
-    public const string PigMoney = "\uf38c";
-    public const string PigOff = "\uf177";
-    public const string Pilcrow = "\uf5f6";
-    public const string Pill = "\uec44";
-    public const string PillOff = "\uf178";
-    public const string Pills = "\uef66";
-    public const string Pin = "\uec9c";
-    public const string PinFilled = "\uf68d";
-    public const string PingPong = "\uf38d";
-    public const string Pinned = "\ued60";
-    public const string PinnedFilled = "\uf68e";
-    public const string PinnedOff = "\ued5f";
-    public const string Pizza = "\uedbb";
-    public const string PizzaOff = "\uf179";
-    public const string Placeholder = "\uf626";
-    public const string Plane = "\ueb6f";
-    public const string PlaneArrival = "\ueb99";
-    public const string PlaneDeparture = "\ueb9a";
-    public const string PlaneInflight = "\uef98";
-    public const string PlaneOff = "\uf17a";
-    public const string PlaneTilt = "\uf1ed";
-    public const string Planet = "\uec08";
-    public const string PlanetOff = "\uf17b";
-    public const string Plant = "\ued50";
-    public const string Plant2 = "\ued7e";
-    public const string Plant2Off = "\uf17c";
-    public const string PlantOff = "\uf17d";
-    public const string PlayBasketball = "\ufa66";
-    public const string PlayCard = "\ueebf";
-    public const string PlayCardOff = "\uf17e";
-    public const string PlayFootball = "\ufa67";
-    public const string PlayHandball = "\ufa68";
-    public const string PlayVolleyball = "\ufa69";
-    public const string PlayerEject = "\uefbc";
-    public const string PlayerEjectFilled = "\uf68f";
-    public const string PlayerPause = "\ued45";
-    public const string PlayerPauseFilled = "\uf690";
-    public const string PlayerPlay = "\ued46";
-    public const string PlayerPlayFilled = "\uf691";
-    public const string PlayerRecord = "\ued47";
-    public const string PlayerRecordFilled = "\uf692";
-    public const string PlayerSkipBack = "\ued48";
-    public const string PlayerSkipBackFilled = "\uf693";
-    public const string PlayerSkipForward = "\ued49";
-    public const string PlayerSkipForwardFilled = "\uf694";
-    public const string PlayerStop = "\ued4a";
-    public const string PlayerStopFilled = "\uf695";
-    public const string PlayerTrackNext = "\ued4b";
-    public const string PlayerTrackNextFilled = "\uf696";
-    public const string PlayerTrackPrev = "\ued4c";
-    public const string PlayerTrackPrevFilled = "\uf697";
-    public const string Playlist = "\ueec0";
-    public const string PlaylistAdd = "\uf008";
-    public const string PlaylistOff = "\uf17f";
-    public const string PlaylistX = "\uf009";
-    public const string PlaystationCircle = "\uf2ad";
-    public const string PlaystationSquare = "\uf2ae";
-    public const string PlaystationTriangle = "\uf2af";
-    public const string PlaystationX = "\uf2b0";
-    public const string Plug = "\uebd9";
-    public const string PlugConnected = "\uf00a";
-    public const string PlugConnectedX = "\uf0a0";
-    public const string PlugOff = "\uf180";
-    public const string PlugX = "\uf0a1";
-    public const string Plus = "\ueb0b";
-    public const string PlusEqual = "\uf7ad";
-    public const string PlusMinus = "\uf7ae";
-    public const string Png = "\uf3ad";
-    public const string Podium = "\uf1d8";
-    public const string PodiumOff = "\uf41b";
-    public const string Point = "\ueb0c";
-    public const string PointFilled = "\uf698";
-    public const string PointOff = "\uf181";
-    public const string Pointer = "\uf265";
-    public const string PointerBolt = "\uf999";
-    public const string PointerCancel = "\uf99a";
-    public const string PointerCheck = "\uf99b";
-    public const string PointerCode = "\uf99c";
-    public const string PointerCog = "\uf99d";
-    public const string PointerDollar = "\uf99e";
-    public const string PointerDown = "\uf99f";
-    public const string PointerExclamation = "\uf9a0";
-    public const string PointerFilled = "\ufb30";
-    public const string PointerHeart = "\uf9a1";
-    public const string PointerMinus = "\uf9a2";
-    public const string PointerOff = "\uf9a3";
-    public const string PointerPause = "\uf9a4";
-    public const string PointerPin = "\uf9a5";
-    public const string PointerPlus = "\uf9a6";
-    public const string PointerQuestion = "\uf9a7";
-    public const string PointerSearch = "\uf9a8";
-    public const string PointerShare = "\uf9a9";
-    public const string PointerStar = "\uf9aa";
-    public const string PointerUp = "\uf9ab";
-    public const string PointerX = "\uf9ac";
-    public const string Pokeball = "\ueec1";
-    public const string PokeballOff = "\uf41c";
-    public const string PokerChip = "\uf515";
-    public const string Polaroid = "\ueec2";
-    public const string PolaroidFilled = "\ufa4b";
-    public const string Polygon = "\uefd0";
-    public const string PolygonOff = "\uf182";
-    public const string Poo = "\uf258";
-    public const string Pool = "\ued91";
-    public const string PoolOff = "\uf41d";
-    public const string Power = "\ueb0d";
-    public const string Pray = "\uecbf";
-    public const string PremiumRights = "\uefbd";
-    public const string Prescription = "\uef99";
-    public const string Presentation = "\ueb70";
-    public const string PresentationAnalytics = "\ueec3";
-    public const string PresentationOff = "\uf183";
-    public const string Printer = "\ueb0e";
-    public const string PrinterOff = "\uf184";
-    public const string Prism = "\ufab1";
-    public const string PrismOff = "\ufaaf";
-    public const string PrismPlus = "\ufab0";
-    public const string Prison = "\uef79";
-    public const string Progress = "\ufa0d";
-    public const string ProgressAlert = "\ufa07";
-    public const string ProgressBolt = "\ufa08";
-    public const string ProgressCheck = "\ufa09";
-    public const string ProgressDown = "\ufa0a";
-    public const string ProgressHelp = "\ufa0b";
-    public const string ProgressX = "\ufa0c";
-    public const string Prompt = "\ueb0f";
-    public const string Propeller = "\ueec4";
-    public const string PropellerOff = "\uf185";
-    public const string PumpkinScary = "\uf587";
-    public const string Puzzle = "\ueb10";
-    public const string Puzzle2 = "\uef83";
-    public const string PuzzleFilled = "\uf699";
-    public const string PuzzleOff = "\uf186";
-    public const string Pyramid = "\ueec5";
-    public const string PyramidOff = "\uf187";
-    public const string PyramidPlus = "\ufab2";
-    public const string Qrcode = "\ueb11";
-    public const string QrcodeOff = "\uf41e";
-    public const string QuestionMark = "\uec9d";
-    public const string Quote = "\uefbe";
-    public const string QuoteOff = "\uf188";
-    public const string Quotes = "\ufb1e";
-    public const string Radar = "\uf017";
-    public const string Radar2 = "\uf016";
-    public const string RadarOff = "\uf41f";
-    public const string Radio = "\uef2d";
-    public const string RadioOff = "\uf420";
-    public const string Radioactive = "\uecc0";
-    public const string RadioactiveFilled = "\uf760";
-    public const string RadioactiveOff = "\uf189";
-    public const string RadiusBottomLeft = "\ueec6";
-    public const string RadiusBottomRight = "\ueec7";
-    public const string RadiusTopLeft = "\ueec8";
-    public const string RadiusTopRight = "\ueec9";
-    public const string Rainbow = "\uedbc";
-    public const string RainbowOff = "\uf18a";
-    public const string Rating12Plus = "\uf266";
-    public const string Rating14Plus = "\uf267";
-    public const string Rating16Plus = "\uf268";
-    public const string Rating18Plus = "\uf269";
-    public const string Rating21Plus = "\uf26a";
-    public const string Razor = "\uf4b5";
-    public const string RazorElectric = "\uf4b4";
-    public const string Receipt = "\uedfd";
-    public const string Receipt2 = "\uedfa";
-    public const string ReceiptOff = "\uedfb";
-    public const string ReceiptRefund = "\uedfc";
-    public const string ReceiptTax = "\uedbd";
-    public const string Recharging = "\ueeca";
-    public const string RecordMail = "\ueb12";
-    public const string RecordMailOff = "\uf18b";
-    public const string Rectangle = "\ued37";
-    public const string RectangleFilled = "\uf69a";
-    public const string RectangleRoundedBottom = "\ufaed";
-    public const string RectangleRoundedTop = "\ufaee";
-    public const string RectangleVertical = "\ued36";
-    public const string RectangleVerticalFilled = "\uf69b";
-    public const string RectangularPrism = "\ufab5";
-    public const string RectangularPrismOff = "\ufab3";
-    public const string RectangularPrismPlus = "\ufab4";
-    public const string Recycle = "\ueb9b";
-    public const string RecycleOff = "\uf18c";
-    public const string Refresh = "\ueb13";
-    public const string RefreshAlert = "\ued57";
-    public const string RefreshDot = "\uefbf";
-    public const string RefreshOff = "\uf18d";
-    public const string Regex = "\uf31f";
-    public const string RegexOff = "\uf421";
-    public const string Registered = "\ueb14";
-    public const string RelationManyToMany = "\ued7f";
-    public const string RelationOneToMany = "\ued80";
-    public const string RelationOneToOne = "\ued81";
-    public const string Reload = "\uf3ae";
-    public const string Reorder = "\ufc15";
-    public const string Repeat = "\ueb72";
-    public const string RepeatOff = "\uf18e";
-    public const string RepeatOnce = "\ueb71";
-    public const string Replace = "\uebc7";
-    public const string ReplaceFilled = "\uf69c";
-    public const string ReplaceOff = "\uf422";
-    public const string Report = "\ueece";
-    public const string ReportAnalytics = "\ueecb";
-    public const string ReportMedical = "\ueecc";
-    public const string ReportMoney = "\ueecd";
-    public const string ReportOff = "\uf18f";
-    public const string ReportSearch = "\uef84";
-    public const string ReservedLine = "\uf9f6";
-    public const string Resize = "\ueecf";
-    public const string Restore = "\ufafd";
-    public const string RewindBackward10 = "\ufaba";
-    public const string RewindBackward15 = "\ufabb";
-    public const string RewindBackward20 = "\ufabc";
-    public const string RewindBackward30 = "\ufabd";
-    public const string RewindBackward40 = "\ufabe";
-    public const string RewindBackward5 = "\ufabf";
-    public const string RewindBackward50 = "\ufac0";
-    public const string RewindBackward60 = "\ufac1";
-    public const string RewindForward10 = "\ufac2";
-    public const string RewindForward15 = "\ufac3";
-    public const string RewindForward20 = "\ufac4";
-    public const string RewindForward30 = "\ufac5";
-    public const string RewindForward40 = "\ufac6";
-    public const string RewindForward5 = "\ufac7";
-    public const string RewindForward50 = "\ufac8";
-    public const string RewindForward60 = "\ufac9";
-    public const string RibbonHealth = "\uf58e";
-    public const string Rings = "\ufa6a";
-    public const string Ripple = "\ued82";
-    public const string RippleOff = "\uf190";
-    public const string Road = "\uf018";
-    public const string RoadOff = "\uf191";
-    public const string RoadSign = "\uecdd";
-    public const string Robot = "\uf00b";
-    public const string RobotOff = "\uf192";
-    public const string Rocket = "\uec45";
-    public const string RocketOff = "\uf193";
-    public const string RollerSkating = "\uefd1";
-    public const string Rollercoaster = "\uf0a2";
-    public const string RollercoasterOff = "\uf423";
-    public const string Rosette = "\uf599";
-    public const string RosetteFilled = "\uf69d";
-    public const string RosetteNumber0 = "\uf58f";
-    public const string RosetteNumber1 = "\uf590";
-    public const string RosetteNumber2 = "\uf591";
-    public const string RosetteNumber3 = "\uf592";
-    public const string RosetteNumber4 = "\uf593";
-    public const string RosetteNumber5 = "\uf594";
-    public const string RosetteNumber6 = "\uf595";
-    public const string RosetteNumber7 = "\uf596";
-    public const string RosetteNumber8 = "\uf597";
-    public const string RosetteNumber9 = "\uf598";
-    public const string Rotate = "\ueb16";
-    public const string Rotate2 = "\uebb4";
-    public const string Rotate360 = "\uef85";
-    public const string RotateClockwise = "\ueb15";
-    public const string RotateClockwise2 = "\uebb5";
-    public const string RotateDot = "\uefe5";
-    public const string RotateRectangle = "\uec15";
-    public const string Route = "\ueb17";
-    public const string Route2 = "\uf4b6";
-    public const string RouteOff = "\uf194";
-    public const string Router = "\ueb18";
-    public const string RouterOff = "\uf424";
-    public const string RowInsertBottom = "\ueed0";
-    public const string RowInsertTop = "\ueed1";
-    public const string RowRemove = "\ufafe";
-    public const string Rss = "\ueb19";
-    public const string RubberStamp = "\uf5ab";
-    public const string RubberStampOff = "\uf5aa";
-    public const string Ruler = "\ueb1a";
-    public const string Ruler2 = "\ueed2";
-    public const string Ruler2Off = "\uf195";
-    public const string Ruler3 = "\uf290";
-    public const string RulerMeasure = "\uf291";
-    public const string RulerOff = "\uf196";
-    public const string Run = "\uec82";
-    public const string STurnDown = "\uf516";
-    public const string STurnLeft = "\uf517";
-    public const string STurnRight = "\uf518";
-    public const string STurnUp = "\uf519";
-    public const string Sailboat = "\uec83";
-    public const string Sailboat2 = "\uf5f7";
-    public const string SailboatOff = "\uf425";
-    public const string Salad = "\uf50a";
-    public const string Salt = "\uef16";
-    public const string Satellite = "\ueed3";
-    public const string SatelliteOff = "\uf197";
-    public const string Sausage = "\uef17";
-    public const string Scale = "\uebc2";
-    public const string ScaleOff = "\uf198";
-    public const string ScaleOutline = "\uef53";
-    public const string ScaleOutlineOff = "\uf199";
-    public const string Scan = "\uebc8";
-    public const string ScanEye = "\uf1ff";
-    public const string Schema = "\uf200";
-    public const string SchemaOff = "\uf426";
-    public const string School = "\uecf7";
-    public const string SchoolBell = "\uf64a";
-    public const string SchoolOff = "\uf19a";
-    public const string Scissors = "\ueb1b";
-    public const string ScissorsOff = "\uf19b";
-    public const string Scooter = "\uec6c";
-    public const string ScooterElectric = "\uecc1";
-    public const string Scoreboard = "\ufa6b";
-    public const string ScreenShare = "\ued18";
-    public const string ScreenShareOff = "\ued17";
-    public const string Screenshot = "\uf201";
-    public const string Scribble = "\uf0a3";
-    public const string ScribbleOff = "\uf427";
-    public const string Script = "\uf2da";
-    public const string ScriptMinus = "\uf2d7";
-    public const string ScriptPlus = "\uf2d8";
-    public const string ScriptX = "\uf2d9";
-    public const string ScubaMask = "\ueed4";
-    public const string ScubaMaskOff = "\uf428";
-    public const string Sdk = "\uf3af";
-    public const string Search = "\ueb1c";
-    public const string SearchOff = "\uf19c";
-    public const string Section = "\ueed5";
-    public const string SectionSign = "\uf019";
-    public const string Seeding = "\ued51";
-    public const string SeedingOff = "\uf19d";
-    public const string Select = "\uec9e";
-    public const string SelectAll = "\uf9f7";
-    public const string Selector = "\ueb1d";
-    public const string Send = "\ueb1e";
-    public const string SendOff = "\uf429";
-    public const string Seo = "\uf26b";
-    public const string Separator = "\uebda";
-    public const string SeparatorHorizontal = "\uec79";
-    public const string SeparatorVertical = "\uec7a";
-    public const string Server = "\ueb1f";
-    public const string Server2 = "\uf07c";
-    public const string ServerBolt = "\uf320";
-    public const string ServerCog = "\uf321";
-    public const string ServerOff = "\uf19e";
-    public const string Servicemark = "\uec09";
-    public const string Settings = "\ueb20";
-    public const string Settings2 = "\uf5ac";
-    public const string SettingsAutomation = "\ueed6";
-    public const string SettingsBolt = "\uf9ad";
-    public const string SettingsCancel = "\uf9ae";
-    public const string SettingsCheck = "\uf9af";
-    public const string SettingsCode = "\uf9b0";
-    public const string SettingsCog = "\uf9b1";
-    public const string SettingsDollar = "\uf9b2";
-    public const string SettingsDown = "\uf9b3";
-    public const string SettingsExclamation = "\uf9b4";
-    public const string SettingsFilled = "\uf69e";
-    public const string SettingsHeart = "\uf9b5";
-    public const string SettingsMinus = "\uf9b6";
-    public const string SettingsOff = "\uf19f";
-    public const string SettingsPause = "\uf9b7";
-    public const string SettingsPin = "\uf9b8";
-    public const string SettingsPlus = "\uf9b9";
-    public const string SettingsQuestion = "\uf9ba";
-    public const string SettingsSearch = "\uf9bb";
-    public const string SettingsShare = "\uf9bc";
-    public const string SettingsStar = "\uf9bd";
-    public const string SettingsUp = "\uf9be";
-    public const string SettingsX = "\uf9bf";
-    public const string Shadow = "\ueed8";
-    public const string ShadowOff = "\ueed7";
-    public const string Shape = "\ueb9c";
-    public const string Shape2 = "\ueed9";
-    public const string Shape3 = "\ueeda";
-    public const string ShapeOff = "\uf1a0";
-    public const string Share = "\ueb21";
-    public const string Share2 = "\uf799";
-    public const string Share3 = "\uf7bd";
-    public const string ShareOff = "\uf1a1";
-    public const string ShiJumping = "\ufa6c";
-    public const string Shield = "\ueb24";
-    public const string ShieldBolt = "\uf9c0";
-    public const string ShieldCancel = "\uf9c1";
-    public const string ShieldCheck = "\ueb22";
-    public const string ShieldCheckFilled = "\uf761";
-    public const string ShieldCheckered = "\uef9a";
-    public const string ShieldCheckeredFilled = "\uf762";
-    public const string ShieldChevron = "\uef9b";
-    public const string ShieldCode = "\uf9c2";
-    public const string ShieldCog = "\uf9c3";
-    public const string ShieldDollar = "\uf9c4";
-    public const string ShieldDown = "\uf9c5";
-    public const string ShieldExclamation = "\uf9c6";
-    public const string ShieldFilled = "\uf69f";
-    public const string ShieldHalf = "\uf358";
-    public const string ShieldHalfFilled = "\uf357";
-    public const string ShieldHeart = "\uf9c7";
-    public const string ShieldLock = "\ued58";
-    public const string ShieldLockFilled = "\uf763";
-    public const string ShieldMinus = "\uf9c8";
-    public const string ShieldOff = "\uecf8";
-    public const string ShieldPause = "\uf9c9";
-    public const string ShieldPin = "\uf9ca";
-    public const string ShieldPlus = "\uf9cb";
-    public const string ShieldQuestion = "\uf9cc";
-    public const string ShieldSearch = "\uf9cd";
-    public const string ShieldShare = "\uf9ce";
-    public const string ShieldStar = "\uf9cf";
-    public const string ShieldUp = "\uf9d0";
-    public const string ShieldX = "\ueb23";
-    public const string Ship = "\uec84";
-    public const string ShipOff = "\uf42a";
-    public const string Shirt = "\uec0a";
-    public const string ShirtFilled = "\uf6a0";
-    public const string ShirtOff = "\uf1a2";
-    public const string ShirtSport = "\uf26c";
-    public const string Shoe = "\uefd2";
-    public const string ShoeOff = "\uf1a4";
-    public const string ShoppingBag = "\uf5f8";
-    public const string ShoppingBagCheck = "\ufc16";
-    public const string ShoppingBagDiscount = "\ufc17";
-    public const string ShoppingBagEdit = "\ufc18";
-    public const string ShoppingBagExclamation = "\ufc19";
-    public const string ShoppingBagMinus = "\ufc1a";
-    public const string ShoppingBagPlus = "\ufc1b";
-    public const string ShoppingBagSearch = "\ufc1c";
-    public const string ShoppingBagX = "\ufc1d";
-    public const string ShoppingCart = "\ueb25";
-    public const string ShoppingCartBolt = "\ufb57";
-    public const string ShoppingCartCancel = "\ufb58";
-    public const string ShoppingCartCheck = "\ufb59";
-    public const string ShoppingCartCode = "\ufb5a";
-    public const string ShoppingCartCog = "\ufb5b";
-    public const string ShoppingCartCopy = "\ufb5c";
-    public const string ShoppingCartDiscount = "\ufb5d";
-    public const string ShoppingCartDollar = "\ufb5e";
-    public const string ShoppingCartDown = "\ufb5f";
-    public const string ShoppingCartExclamation = "\ufb60";
-    public const string ShoppingCartFilled = "\ufc3f";
-    public const string ShoppingCartHeart = "\ufb61";
-    public const string ShoppingCartMinus = "\ufb62";
-    public const string ShoppingCartOff = "\ueedc";
-    public const string ShoppingCartPause = "\ufb63";
-    public const string ShoppingCartPin = "\ufb64";
-    public const string ShoppingCartPlus = "\ufb65";
-    public const string ShoppingCartQuestion = "\ufb66";
-    public const string ShoppingCartSearch = "\ufb67";
-    public const string ShoppingCartShare = "\ufb68";
-    public const string ShoppingCartStar = "\ufb69";
-    public const string ShoppingCartUp = "\ufb6a";
-    public const string ShoppingCartX = "\ufb6b";
-    public const string Shovel = "\uf1d9";
-    public const string Shredder = "\ueedf";
-    public const string SignLeft = "\uf06b";
-    public const string SignLeftFilled = "\uf6a1";
-    public const string SignRight = "\uf06c";
-    public const string SignRightFilled = "\uf6a2";
-    public const string Signal2g = "\uf79a";
-    public const string Signal3g = "\uf1ee";
-    public const string Signal4g = "\uf1ef";
-    public const string Signal4gPlus = "\uf259";
-    public const string Signal5g = "\uf1f0";
-    public const string Signal6g = "\uf9f8";
-    public const string SignalE = "\uf9f9";
-    public const string SignalG = "\uf9fa";
-    public const string SignalH = "\uf9fc";
-    public const string SignalHPlus = "\uf9fb";
-    public const string SignalLte = "\uf9fd";
-    public const string Signature = "\ueee0";
-    public const string SignatureOff = "\uf1a5";
-    public const string Sitemap = "\ueb9d";
-    public const string SitemapOff = "\uf1a6";
-    public const string Skateboard = "\uecc2";
-    public const string SkateboardOff = "\uf42b";
-    public const string Skateboarding = "\ufaca";
-    public const string Skull = "\uf292";
-    public const string Slash = "\uf4f9";
-    public const string Slashes = "\uf588";
-    public const string Sleigh = "\uef9c";
-    public const string Slice = "\uebdb";
-    public const string Slideshow = "\uebc9";
-    public const string SmartHome = "\uecde";
-    public const string SmartHomeOff = "\uf1a7";
-    public const string Smoking = "\uecc4";
-    public const string SmokingNo = "\uecc3";
-    public const string Snowflake = "\uec0b";
-    public const string SnowflakeOff = "\uf1a8";
-    public const string Snowman = "\uf26d";
-    public const string SoccerField = "\ued92";
-    public const string Social = "\uebec";
-    public const string SocialOff = "\uf1a9";
-    public const string Sock = "\ueee1";
-    public const string Sofa = "\uefaf";
-    public const string SofaOff = "\uf42c";
-    public const string SolarPanel = "\uf7bf";
-    public const string SolarPanel2 = "\uf7be";
-    public const string Sort09 = "\uf54d";
-    public const string Sort90 = "\uf54e";
-    public const string SortAZ = "\uf54f";
-    public const string SortAscending = "\ueb26";
-    public const string SortAscending2 = "\ueee2";
-    public const string SortAscendingLetters = "\uef18";
-    public const string SortAscendingNumbers = "\uef19";
-    public const string SortDescending = "\ueb27";
-    public const string SortDescending2 = "\ueee3";
-    public const string SortDescendingLetters = "\uef1a";
-    public const string SortDescendingNumbers = "\uef1b";
-    public const string SortZA = "\uf550";
-    public const string Sos = "\uf24a";
-    public const string Soup = "\uef2e";
-    public const string SoupOff = "\uf42d";
-    public const string SourceCode = "\uf4a2";
-    public const string Space = "\uec0c";
-    public const string SpaceOff = "\uf1aa";
-    public const string SpacingHorizontal = "\uef54";
-    public const string SpacingVertical = "\uef55";
-    public const string Spade = "\ueffa";
-    public const string SpadeFilled = "\uf6a3";
-    public const string Sparkles = "\uf6d7";
-    public const string Speakerphone = "\ued61";
-    public const string Speedboat = "\ued93";
-    public const string Sphere = "\ufab8";
-    public const string SphereOff = "\ufab6";
-    public const string SpherePlus = "\ufab7";
-    public const string Spider = "\uf293";
-    public const string Spiral = "\uf294";
-    public const string SpiralOff = "\uf42e";
-    public const string SportBillard = "\ueee4";
-    public const string Spray = "\uf50b";
-    public const string Spy = "\uf227";
-    public const string SpyOff = "\uf42f";
-    public const string Sql = "\uf7c0";
-    public const string Square = "\ueb2c";
-    public const string Square0Filled = "\uf764";
-    public const string Square1Filled = "\uf765";
-    public const string Square2Filled = "\uf7fa";
-    public const string Square3Filled = "\uf766";
-    public const string Square4Filled = "\uf767";
-    public const string Square5Filled = "\uf768";
-    public const string Square6Filled = "\uf769";
-    public const string Square7Filled = "\uf76a";
-    public const string Square8Filled = "\uf76b";
-    public const string Square9Filled = "\uf76c";
-    public const string SquareArrowDown = "\uf4b7";
-    public const string SquareArrowDownFilled = "\ufb31";
-    public const string SquareArrowLeft = "\uf4b8";
-    public const string SquareArrowLeftFilled = "\ufb32";
-    public const string SquareArrowRight = "\uf4b9";
-    public const string SquareArrowRightFilled = "\ufb33";
-    public const string SquareArrowUp = "\uf4ba";
-    public const string SquareArrowUpFilled = "\ufb34";
-    public const string SquareAsterisk = "\uf01a";
-    public const string SquareAsteriskFilled = "\ufb35";
-    public const string SquareCheck = "\ueb28";
-    public const string SquareCheckFilled = "\uf76d";
-    public const string SquareChevronDown = "\uf627";
-    public const string SquareChevronDownFilled = "\ufb36";
-    public const string SquareChevronLeft = "\uf628";
-    public const string SquareChevronLeftFilled = "\ufb37";
-    public const string SquareChevronRight = "\uf629";
-    public const string SquareChevronRightFilled = "\ufb38";
-    public const string SquareChevronUp = "\uf62a";
-    public const string SquareChevronUpFilled = "\ufb39";
-    public const string SquareChevronsDown = "\uf64b";
-    public const string SquareChevronsDownFilled = "\ufb3a";
-    public const string SquareChevronsLeft = "\uf64c";
-    public const string SquareChevronsLeftFilled = "\ufb3b";
-    public const string SquareChevronsRight = "\uf64d";
-    public const string SquareChevronsRightFilled = "\ufb3c";
-    public const string SquareChevronsUp = "\uf64e";
-    public const string SquareChevronsUpFilled = "\ufb3d";
-    public const string SquareDot = "\ued59";
-    public const string SquareDotFilled = "\ufb3e";
-    public const string SquareF0 = "\uf526";
-    public const string SquareF0Filled = "\uf76e";
-    public const string SquareF1 = "\uf527";
-    public const string SquareF1Filled = "\uf76f";
-    public const string SquareF2 = "\uf528";
-    public const string SquareF2Filled = "\uf770";
-    public const string SquareF3 = "\uf529";
-    public const string SquareF3Filled = "\uf771";
-    public const string SquareF4 = "\uf52a";
-    public const string SquareF4Filled = "\uf772";
-    public const string SquareF5 = "\uf52b";
-    public const string SquareF5Filled = "\uf773";
-    public const string SquareF6 = "\uf52c";
-    public const string SquareF6Filled = "\uf774";
-    public const string SquareF7 = "\uf52d";
-    public const string SquareF7Filled = "\uf775";
-    public const string SquareF8 = "\uf52e";
-    public const string SquareF8Filled = "\uf776";
-    public const string SquareF9 = "\uf52f";
-    public const string SquareF9Filled = "\uf777";
-    public const string SquareFilled = "\ufc40";
-    public const string SquareForbid = "\ued5b";
-    public const string SquareForbid2 = "\ued5a";
-    public const string SquareHalf = "\ueffb";
-    public const string SquareKey = "\uf638";
-    public const string SquareLetterA = "\uf47c";
-    public const string SquareLetterB = "\uf47d";
-    public const string SquareLetterC = "\uf47e";
-    public const string SquareLetterD = "\uf47f";
-    public const string SquareLetterE = "\uf480";
-    public const string SquareLetterF = "\uf481";
-    public const string SquareLetterG = "\uf482";
-    public const string SquareLetterH = "\uf483";
-    public const string SquareLetterI = "\uf484";
-    public const string SquareLetterJ = "\uf485";
-    public const string SquareLetterK = "\uf486";
-    public const string SquareLetterL = "\uf487";
-    public const string SquareLetterM = "\uf488";
-    public const string SquareLetterN = "\uf489";
-    public const string SquareLetterO = "\uf48a";
-    public const string SquareLetterP = "\uf48b";
-    public const string SquareLetterQ = "\uf48c";
-    public const string SquareLetterR = "\uf48d";
-    public const string SquareLetterS = "\uf48e";
-    public const string SquareLetterT = "\uf48f";
-    public const string SquareLetterU = "\uf490";
-    public const string SquareLetterV = "\uf4bb";
-    public const string SquareLetterW = "\uf491";
-    public const string SquareLetterX = "\uf4bc";
-    public const string SquareLetterY = "\uf492";
-    public const string SquareLetterZ = "\uf493";
-    public const string SquareMinus = "\ueb29";
-    public const string SquareMinusFilled = "\ufb3f";
-    public const string SquareNumber0 = "\ueee5";
-    public const string SquareNumber1 = "\ueee6";
-    public const string SquareNumber2 = "\ueee7";
-    public const string SquareNumber3 = "\ueee8";
-    public const string SquareNumber4 = "\ueee9";
-    public const string SquareNumber5 = "\ueeea";
-    public const string SquareNumber6 = "\ueeeb";
-    public const string SquareNumber7 = "\ueeec";
-    public const string SquareNumber8 = "\ueeed";
-    public const string SquareNumber9 = "\ueeee";
-    public const string SquareOff = "\ueeef";
-    public const string SquarePlus = "\ueb2a";
-    public const string SquareRoot = "\ueef1";
-    public const string SquareRoot2 = "\ueef0";
-    public const string SquareRotated = "\uecdf";
-    public const string SquareRotatedFilled = "\uf6a4";
-    public const string SquareRotatedForbid = "\uf01c";
-    public const string SquareRotatedForbid2 = "\uf01b";
-    public const string SquareRotatedOff = "\ueef2";
-    public const string SquareRounded = "\uf59a";
-    public const string SquareRoundedArrowDown = "\uf639";
-    public const string SquareRoundedArrowDownFilled = "\uf6db";
-    public const string SquareRoundedArrowLeft = "\uf63a";
-    public const string SquareRoundedArrowLeftFilled = "\uf6dc";
-    public const string SquareRoundedArrowRight = "\uf63b";
-    public const string SquareRoundedArrowRightFilled = "\uf6dd";
-    public const string SquareRoundedArrowUp = "\uf63c";
-    public const string SquareRoundedArrowUpFilled = "\uf6de";
-    public const string SquareRoundedCheck = "\uf63d";
-    public const string SquareRoundedCheckFilled = "\uf6df";
-    public const string SquareRoundedChevronDown = "\uf62b";
-    public const string SquareRoundedChevronDownFilled = "\uf6e0";
-    public const string SquareRoundedChevronLeft = "\uf62c";
-    public const string SquareRoundedChevronLeftFilled = "\uf6e1";
-    public const string SquareRoundedChevronRight = "\uf62d";
-    public const string SquareRoundedChevronRightFilled = "\uf6e2";
-    public const string SquareRoundedChevronUp = "\uf62e";
-    public const string SquareRoundedChevronUpFilled = "\uf6e3";
-    public const string SquareRoundedChevronsDown = "\uf64f";
-    public const string SquareRoundedChevronsDownFilled = "\uf6e4";
-    public const string SquareRoundedChevronsLeft = "\uf650";
-    public const string SquareRoundedChevronsLeftFilled = "\uf6e5";
-    public const string SquareRoundedChevronsRight = "\uf651";
-    public const string SquareRoundedChevronsRightFilled = "\uf6e6";
-    public const string SquareRoundedChevronsUp = "\uf652";
-    public const string SquareRoundedChevronsUpFilled = "\uf6e7";
-    public const string SquareRoundedFilled = "\uf6a5";
-    public const string SquareRoundedLetterA = "\uf5ae";
-    public const string SquareRoundedLetterB = "\uf5af";
-    public const string SquareRoundedLetterC = "\uf5b0";
-    public const string SquareRoundedLetterD = "\uf5b1";
-    public const string SquareRoundedLetterE = "\uf5b2";
-    public const string SquareRoundedLetterF = "\uf5b3";
-    public const string SquareRoundedLetterG = "\uf5b4";
-    public const string SquareRoundedLetterH = "\uf5b5";
-    public const string SquareRoundedLetterI = "\uf5b6";
-    public const string SquareRoundedLetterJ = "\uf5b7";
-    public const string SquareRoundedLetterK = "\uf5b8";
-    public const string SquareRoundedLetterL = "\uf5b9";
-    public const string SquareRoundedLetterM = "\uf5ba";
-    public const string SquareRoundedLetterN = "\uf5bb";
-    public const string SquareRoundedLetterO = "\uf5bc";
-    public const string SquareRoundedLetterP = "\uf5bd";
-    public const string SquareRoundedLetterQ = "\uf5be";
-    public const string SquareRoundedLetterR = "\uf5bf";
-    public const string SquareRoundedLetterS = "\uf5c0";
-    public const string SquareRoundedLetterT = "\uf5c1";
-    public const string SquareRoundedLetterU = "\uf5c2";
-    public const string SquareRoundedLetterV = "\uf5c3";
-    public const string SquareRoundedLetterW = "\uf5c4";
-    public const string SquareRoundedLetterX = "\uf5c5";
-    public const string SquareRoundedLetterY = "\uf5c6";
-    public const string SquareRoundedLetterZ = "\uf5c7";
-    public const string SquareRoundedMinus = "\uf63e";
-    public const string SquareRoundedMinusFilled = "\ufb40";
-    public const string SquareRoundedNumber0 = "\uf5c8";
-    public const string SquareRoundedNumber0Filled = "\uf778";
-    public const string SquareRoundedNumber1 = "\uf5c9";
-    public const string SquareRoundedNumber1Filled = "\uf779";
-    public const string SquareRoundedNumber2 = "\uf5ca";
-    public const string SquareRoundedNumber2Filled = "\uf77a";
-    public const string SquareRoundedNumber3 = "\uf5cb";
-    public const string SquareRoundedNumber3Filled = "\uf77b";
-    public const string SquareRoundedNumber4 = "\uf5cc";
-    public const string SquareRoundedNumber4Filled = "\uf77c";
-    public const string SquareRoundedNumber5 = "\uf5cd";
-    public const string SquareRoundedNumber5Filled = "\uf77d";
-    public const string SquareRoundedNumber6 = "\uf5ce";
-    public const string SquareRoundedNumber6Filled = "\uf77e";
-    public const string SquareRoundedNumber7 = "\uf5cf";
-    public const string SquareRoundedNumber7Filled = "\uf77f";
-    public const string SquareRoundedNumber8 = "\uf5d0";
-    public const string SquareRoundedNumber8Filled = "\uf780";
-    public const string SquareRoundedNumber9 = "\uf5d1";
-    public const string SquareRoundedNumber9Filled = "\uf781";
-    public const string SquareRoundedPlus = "\uf63f";
-    public const string SquareRoundedPlusFilled = "\uf6e8";
-    public const string SquareRoundedX = "\uf640";
-    public const string SquareRoundedXFilled = "\uf6e9";
-    public const string SquareToggle = "\ueef4";
-    public const string SquareToggleHorizontal = "\ueef3";
-    public const string SquareX = "\ueb2b";
-    public const string SquareXFilled = "\ufb41";
-    public const string SquaresDiagonal = "\ueef5";
-    public const string SquaresFilled = "\ueef6";
-    public const string Stack = "\ueb2d";
-    public const string Stack2 = "\ueef7";
-    public const string Stack3 = "\uef9d";
-    public const string StackPop = "\uf234";
-    public const string StackPush = "\uf235";
-    public const string Stairs = "\ueca6";
-    public const string StairsDown = "\ueca4";
-    public const string StairsUp = "\ueca5";
-    public const string Star = "\ueb2e";
-    public const string StarFilled = "\uf6a6";
-    public const string StarHalf = "\ued19";
-    public const string StarHalfFilled = "\uf6a7";
-    public const string StarOff = "\ued62";
-    public const string Stars = "\ued38";
-    public const string StarsFilled = "\uf6a8";
-    public const string StarsOff = "\uf430";
-    public const string StatusChange = "\uf3b0";
-    public const string Steam = "\uf24b";
-    public const string SteeringWheel = "\uec7b";
-    public const string SteeringWheelOff = "\uf431";
-    public const string StepInto = "\uece0";
-    public const string StepOut = "\uece1";
-    public const string StereoGlasses = "\uf4cb";
-    public const string Stethoscope = "\uedbe";
-    public const string StethoscopeOff = "\uf432";
-    public const string Sticker = "\ueb2f";
-    public const string Storm = "\uf24c";
-    public const string StormOff = "\uf433";
-    public const string Stretching = "\uf2db";
-    public const string Stretching2 = "\ufa6d";
-    public const string Strikethrough = "\ueb9e";
-    public const string Submarine = "\ued94";
-    public const string Subscript = "\ueb9f";
-    public const string Subtask = "\uec9f";
-    public const string Sum = "\ueb73";
-    public const string SumOff = "\uf1ab";
-    public const string Sun = "\ueb30";
-    public const string SunFilled = "\uf6a9";
-    public const string SunHigh = "\uf236";
-    public const string SunLow = "\uf237";
-    public const string SunMoon = "\uf4a3";
-    public const string SunOff = "\ued63";
-    public const string SunWind = "\uf238";
-    public const string Sunglasses = "\uf239";
-    public const string Sunrise = "\uef1c";
-    public const string Sunset = "\uec31";
-    public const string Sunset2 = "\uf23a";
-    public const string Superscript = "\ueba0";
-    public const string Svg = "\uf25a";
-    public const string Swimming = "\uec92";
-    public const string Swipe = "\uf551";
-    public const string Switch = "\ueb33";
-    public const string Switch2 = "\uedbf";
-    public const string Switch3 = "\uedc0";
-    public const string SwitchHorizontal = "\ueb31";
-    public const string SwitchVertical = "\ueb32";
-    public const string Sword = "\uf030";
-    public const string SwordOff = "\uf434";
-    public const string Swords = "\uf132";
-    public const string Table = "\ueba1";
-    public const string TableAlias = "\uf25b";
-    public const string TableColumn = "\ufaff";
-    public const string TableDown = "\ufa1c";
-    public const string TableExport = "\ueef8";
-    public const string TableFilled = "\uf782";
-    public const string TableHeart = "\ufa1d";
-    public const string TableImport = "\ueef9";
-    public const string TableMinus = "\ufa1e";
-    public const string TableOff = "\ueefa";
-    public const string TableOptions = "\uf25c";
-    public const string TablePlus = "\ufa1f";
-    public const string TableRow = "\ufb00";
-    public const string TableShare = "\ufa20";
-    public const string TableShortcut = "\uf25d";
-    public const string Tag = "\ueb34";
-    public const string TagOff = "\uefc0";
-    public const string Tags = "\uef86";
-    public const string TagsOff = "\uefc1";
-    public const string Tallymark1 = "\uec46";
-    public const string Tallymark2 = "\uec47";
-    public const string Tallymark3 = "\uec48";
-    public const string Tallymark4 = "\uec49";
-    public const string Tallymarks = "\uec4a";
-    public const string Tank = "\ued95";
-    public const string Target = "\ueb35";
-    public const string TargetArrow = "\uf51a";
-    public const string TargetOff = "\uf1ad";
-    public const string Teapot = "\uf552";
-    public const string Telescope = "\uf07d";
-    public const string TelescopeOff = "\uf1ae";
-    public const string Temperature = "\ueb38";
-    public const string TemperatureCelsius = "\ueb36";
-    public const string TemperatureFahrenheit = "\ueb37";
-    public const string TemperatureMinus = "\uebed";
-    public const string TemperatureOff = "\uf1af";
-    public const string TemperaturePlus = "\uebee";
-    public const string Template = "\ueb39";
-    public const string TemplateOff = "\uf1b0";
-    public const string Tent = "\ueefb";
-    public const string TentOff = "\uf435";
-    public const string Terminal = "\uebdc";
-    public const string Terminal2 = "\uebef";
-    public const string TestPipe = "\ueb3a";
-    public const string TestPipe2 = "\uf0a4";
-    public const string TestPipeOff = "\uf1b1";
-    public const string Tex = "\uf4e0";
-    public const string TextCaption = "\uf4a4";
-    public const string TextColor = "\uf2dc";
-    public const string TextDecrease = "\uf202";
-    public const string TextDirectionLtr = "\ueefc";
-    public const string TextDirectionRtl = "\ueefd";
-    public const string TextIncrease = "\uf203";
-    public const string TextOrientation = "\uf2a4";
-    public const string TextPlus = "\uf2a5";
-    public const string TextRecognition = "\uf204";
-    public const string TextResize = "\uef87";
-    public const string TextSize = "\uf2b1";
-    public const string TextSpellcheck = "\uf2a6";
-    public const string TextWrap = "\uebdd";
-    public const string TextWrapDisabled = "\ueca7";
-    public const string Texture = "\uf51b";
-    public const string Theater = "\uf79b";
-    public const string Thermometer = "\uef67";
-    public const string ThumbDown = "\ueb3b";
-    public const string ThumbDownFilled = "\uf6aa";
-    public const string ThumbDownOff = "\uf436";
-    public const string ThumbUp = "\ueb3c";
-    public const string ThumbUpFilled = "\uf6ab";
-    public const string ThumbUpOff = "\uf437";
-    public const string TicTac = "\uf51c";
-    public const string Ticket = "\ueb3d";
-    public const string TicketOff = "\uf1b2";
-    public const string Tie = "\uf07e";
-    public const string Tilde = "\uf4a5";
-    public const string TiltShift = "\ueefe";
-    public const string TiltShiftOff = "\uf1b3";
-    public const string TimeDuration0 = "\ufad4";
-    public const string TimeDuration10 = "\ufad5";
-    public const string TimeDuration15 = "\ufad6";
-    public const string TimeDuration30 = "\ufad7";
-    public const string TimeDuration45 = "\ufad8";
-    public const string TimeDuration5 = "\ufad9";
-    public const string TimeDuration60 = "\ufada";
-    public const string TimeDuration90 = "\ufadb";
-    public const string TimeDurationOff = "\ufadc";
-    public const string Timeline = "\uf031";
-    public const string TimelineEvent = "\uf553";
-    public const string TimelineEventExclamation = "\uf662";
-    public const string TimelineEventMinus = "\uf663";
-    public const string TimelineEventPlus = "\uf664";
-    public const string TimelineEventText = "\uf665";
-    public const string TimelineEventX = "\uf666";
-    public const string Tir = "\uebf0";
-    public const string ToggleLeft = "\ueb3e";
-    public const string ToggleRight = "\ueb3f";
-    public const string ToiletPaper = "\uefd3";
-    public const string ToiletPaperOff = "\uf1b4";
-    public const string Toml = "\ufa5d";
-    public const string Tool = "\ueb40";
-    public const string Tools = "\uebca";
-    public const string ToolsKitchen = "\ued64";
-    public const string ToolsKitchen2 = "\ueeff";
-    public const string ToolsKitchen2Off = "\uf1b5";
-    public const string ToolsKitchenOff = "\uf1b6";
-    public const string ToolsOff = "\uf1b7";
-    public const string Tooltip = "\uf2dd";
-    public const string TopologyBus = "\uf5d9";
-    public const string TopologyComplex = "\uf5da";
-    public const string TopologyFull = "\uf5dc";
-    public const string TopologyFullHierarchy = "\uf5db";
-    public const string TopologyRing = "\uf5df";
-    public const string TopologyRing2 = "\uf5dd";
-    public const string TopologyRing3 = "\uf5de";
-    public const string TopologyStar = "\uf5e5";
-    public const string TopologyStar2 = "\uf5e0";
-    public const string TopologyStar3 = "\uf5e1";
-    public const string TopologyStarRing = "\uf5e4";
-    public const string TopologyStarRing2 = "\uf5e2";
-    public const string TopologyStarRing3 = "\uf5e3";
-    public const string Torii = "\uf59b";
-    public const string Tornado = "\uece2";
-    public const string Tournament = "\uecd0";
-    public const string Tower = "\uf2cb";
-    public const string TowerOff = "\uf2ca";
-    public const string Track = "\uef00";
-    public const string Tractor = "\uec0d";
-    public const string Trademark = "\uec0e";
-    public const string TrafficCone = "\uec0f";
-    public const string TrafficConeOff = "\uf1b8";
-    public const string TrafficLights = "\ued39";
-    public const string TrafficLightsOff = "\uf1b9";
-    public const string Train = "\ued96";
-    public const string Transfer = "\ufc1f";
-    public const string TransferIn = "\uef2f";
-    public const string TransferOut = "\uef30";
-    public const string TransferVertical = "\ufc1e";
-    public const string Transform = "\uf38e";
-    public const string TransformFilled = "\uf6ac";
-    public const string TransitionBottom = "\uf2b2";
-    public const string TransitionLeft = "\uf2b3";
-    public const string TransitionRight = "\uf2b4";
-    public const string TransitionTop = "\uf2b5";
-    public const string Trash = "\ueb41";
-    public const string TrashFilled = "\uf783";
-    public const string TrashOff = "\ued65";
-    public const string TrashX = "\uef88";
-    public const string TrashXFilled = "\uf784";
-    public const string Treadmill = "\ufa6e";
-    public const string Tree = "\uef01";
-    public const string Trees = "\uec10";
-    public const string Trekking = "\uf5ad";
-    public const string TrendingDown = "\ueb42";
-    public const string TrendingDown2 = "\uedc1";
-    public const string TrendingDown3 = "\uedc2";
-    public const string TrendingUp = "\ueb43";
-    public const string TrendingUp2 = "\uedc3";
-    public const string TrendingUp3 = "\uedc4";
-    public const string Triangle = "\ueb44";
-    public const string TriangleFilled = "\uf6ad";
-    public const string TriangleInverted = "\uf01d";
-    public const string TriangleInvertedFilled = "\uf6ae";
-    public const string TriangleOff = "\uef02";
-    public const string TriangleSquareCircle = "\uece8";
-    public const string TriangleSquareCircleFilled = "\ufb42";
-    public const string Triangles = "\uf0a5";
-    public const string Trident = "\uecc5";
-    public const string Trolley = "\uf4cc";
-    public const string Trophy = "\ueb45";
-    public const string TrophyFilled = "\uf6af";
-    public const string TrophyOff = "\uf438";
-    public const string Trowel = "\uf368";
-    public const string Truck = "\uebc4";
-    public const string TruckDelivery = "\uec4b";
-    public const string TruckLoading = "\uf1da";
-    public const string TruckOff = "\uef03";
-    public const string TruckReturn = "\uec4c";
-    public const string Txt = "\uf3b1";
-    public const string Typography = "\uebc5";
-    public const string TypographyOff = "\uf1ba";
-    public const string Ufo = "\uf26f";
-    public const string UfoOff = "\uf26e";
-    public const string Umbrella = "\uebf1";
-    public const string UmbrellaFilled = "\uf6b0";
-    public const string UmbrellaOff = "\uf1bb";
-    public const string Underline = "\ueba2";
-    public const string Unlink = "\ueb46";
-    public const string Upload = "\ueb47";
-    public const string Urgent = "\ueb48";
-    public const string Usb = "\uf00c";
-    public const string User = "\ueb4d";
-    public const string UserBolt = "\uf9d1";
-    public const string UserCancel = "\uf9d2";
-    public const string UserCheck = "\ueb49";
-    public const string UserCircle = "\uef68";
-    public const string UserCode = "\uf9d3";
-    public const string UserCog = "\uf9d4";
-    public const string UserDollar = "\uf9d5";
-    public const string UserDown = "\uf9d6";
-    public const string UserEdit = "\uf7cc";
-    public const string UserExclamation = "\uec12";
-    public const string UserHeart = "\uf7cd";
-    public const string UserMinus = "\ueb4a";
-    public const string UserOff = "\uecf9";
-    public const string UserPause = "\uf9d7";
-    public const string UserPin = "\uf7ce";
-    public const string UserPlus = "\ueb4b";
-    public const string UserQuestion = "\uf7cf";
-    public const string UserSearch = "\uef89";
-    public const string UserShare = "\uf9d8";
-    public const string UserShield = "\uf7d0";
-    public const string UserStar = "\uf7d1";
-    public const string UserUp = "\uf7d2";
-    public const string UserX = "\ueb4c";
-    public const string Users = "\uebf2";
-    public const string UsersGroup = "\ufa21";
-    public const string UsersMinus = "\ufa0e";
-    public const string UsersPlus = "\ufa0f";
-    public const string UvIndex = "\uf3b2";
-    public const string UxCircle = "\uf369";
-    public const string Vaccine = "\uef04";
-    public const string VaccineBottle = "\uef69";
-    public const string VaccineBottleOff = "\uf439";
-    public const string VaccineOff = "\uf1bc";
-    public const string VacuumCleaner = "\uf5e6";
-    public const string Variable = "\uef05";
-    public const string VariableMinus = "\uf36a";
-    public const string VariableOff = "\uf1bd";
-    public const string VariablePlus = "\uf36b";
-    public const string Vector = "\ueca9";
-    public const string VectorBezier = "\uef1d";
-    public const string VectorBezier2 = "\uf1a3";
-    public const string VectorBezierArc = "\uf4cd";
-    public const string VectorBezierCircle = "\uf4ce";
-    public const string VectorOff = "\uf1be";
-    public const string VectorSpline = "\uf565";
-    public const string VectorTriangle = "\ueca8";
-    public const string VectorTriangleOff = "\uf1bf";
-    public const string Venus = "\uec86";
-    public const string Versions = "\ued52";
-    public const string VersionsFilled = "\uf6b1";
-    public const string VersionsOff = "\uf1c0";
-    public const string Video = "\ued22";
-    public const string VideoMinus = "\ued1f";
-    public const string VideoOff = "\ued20";
-    public const string VideoPlus = "\ued21";
-    public const string View360 = "\ued84";
-    public const string View360Off = "\uf1c1";
-    public const string Viewfinder = "\ueb4e";
-    public const string ViewfinderOff = "\uf1c2";
-    public const string ViewportNarrow = "\uebf3";
-    public const string ViewportWide = "\uebf4";
-    public const string Vinyl = "\uf00d";
-    public const string Vip = "\uf3b3";
-    public const string VipOff = "\uf43a";
-    public const string Virus = "\ueb74";
-    public const string VirusOff = "\ued66";
-    public const string VirusSearch = "\ued67";
-    public const string Vocabulary = "\uef1e";
-    public const string VocabularyOff = "\uf43b";
-    public const string Volcano = "\uf79c";
-    public const string Volume = "\ueb51";
-    public const string Volume2 = "\ueb4f";
-    public const string Volume3 = "\ueb50";
-    public const string VolumeOff = "\uf1c3";
-    public const string Walk = "\uec87";
-    public const string Wall = "\uef7a";
-    public const string WallOff = "\uf43c";
-    public const string Wallet = "\ueb75";
-    public const string WalletOff = "\uf1c4";
-    public const string Wallpaper = "\uef56";
-    public const string WallpaperOff = "\uf1c5";
-    public const string Wand = "\uebcb";
-    public const string WandOff = "\uf1c6";
-    public const string Wash = "\uf311";
-    public const string WashDry = "\uf304";
-    public const string WashDry1 = "\uf2fa";
-    public const string WashDry2 = "\uf2fb";
-    public const string WashDry3 = "\uf2fc";
-    public const string WashDryA = "\uf2fd";
-    public const string WashDryDip = "\uf2fe";
-    public const string WashDryF = "\uf2ff";
-    public const string WashDryFlat = "\ufa7f";
-    public const string WashDryHang = "\uf300";
-    public const string WashDryOff = "\uf301";
-    public const string WashDryP = "\uf302";
-    public const string WashDryShade = "\uf303";
-    public const string WashDryW = "\uf322";
-    public const string WashDryclean = "\uf305";
-    public const string WashDrycleanOff = "\uf323";
-    public const string WashEco = "\ufa80";
-    public const string WashGentle = "\uf306";
-    public const string WashHand = "\ufa81";
-    public const string WashMachine = "\uf25e";
-    public const string WashOff = "\uf307";
-    public const string WashPress = "\uf308";
-    public const string WashTemperature1 = "\uf309";
-    public const string WashTemperature2 = "\uf30a";
-    public const string WashTemperature3 = "\uf30b";
-    public const string WashTemperature4 = "\uf30c";
-    public const string WashTemperature5 = "\uf30d";
-    public const string WashTemperature6 = "\uf30e";
-    public const string WashTumbleDry = "\uf30f";
-    public const string WashTumbleOff = "\uf310";
-    public const string Waterpolo = "\ufa6f";
-    public const string WaveSawTool = "\uecd3";
-    public const string WaveSine = "\uecd4";
-    public const string WaveSquare = "\uecd5";
-    public const string Webhook = "\uf01e";
-    public const string WebhookOff = "\uf43d";
-    public const string Weight = "\uf589";
-    public const string Wheelchair = "\uf1db";
-    public const string WheelchairOff = "\uf43e";
-    public const string Whirl = "\uf51d";
-    public const string Wifi = "\ueb52";
-    public const string Wifi0 = "\ueba3";
-    public const string Wifi1 = "\ueba4";
-    public const string Wifi2 = "\ueba5";
-    public const string WifiOff = "\uecfa";
-    public const string Wind = "\uec34";
-    public const string WindOff = "\uf1c7";
-    public const string Windmill = "\ued85";
-    public const string WindmillFilled = "\uf6b2";
-    public const string WindmillOff = "\uf1c8";
-    public const string Window = "\uef06";
-    public const string WindowMaximize = "\uf1f1";
-    public const string WindowMinimize = "\uf1f2";
-    public const string WindowOff = "\uf1c9";
-    public const string Windsock = "\uf06d";
-    public const string Wiper = "\uecab";
-    public const string WiperWash = "\uecaa";
-    public const string Woman = "\ueb53";
-    public const string Wood = "\uf359";
-    public const string World = "\ueb54";
-    public const string WorldBolt = "\uf9d9";
-    public const string WorldCancel = "\uf9da";
-    public const string WorldCheck = "\uf9db";
-    public const string WorldCode = "\uf9dc";
-    public const string WorldCog = "\uf9dd";
-    public const string WorldDollar = "\uf9de";
-    public const string WorldDown = "\uf9df";
-    public const string WorldDownload = "\uef8a";
-    public const string WorldExclamation = "\uf9e0";
-    public const string WorldHeart = "\uf9e1";
-    public const string WorldLatitude = "\ued2e";
-    public const string WorldLongitude = "\ued2f";
-    public const string WorldMinus = "\uf9e2";
-    public const string WorldOff = "\uf1ca";
-    public const string WorldPause = "\uf9e3";
-    public const string WorldPin = "\uf9e4";
-    public const string WorldPlus = "\uf9e5";
-    public const string WorldQuestion = "\uf9e6";
-    public const string WorldSearch = "\uf9e7";
-    public const string WorldShare = "\uf9e8";
-    public const string WorldStar = "\uf9e9";
-    public const string WorldUp = "\uf9ea";
-    public const string WorldUpload = "\uef8b";
-    public const string WorldWww = "\uf38f";
-    public const string WorldX = "\uf9eb";
-    public const string WreckingBall = "\ued97";
-    public const string Writing = "\uef08";
-    public const string WritingOff = "\uf1cb";
-    public const string WritingSign = "\uef07";
-    public const string WritingSignOff = "\uf1cc";
-    public const string X = "\ueb55";
-    public const string XboxA = "\uf2b6";
-    public const string XboxB = "\uf2b7";
-    public const string XboxX = "\uf2b8";
-    public const string XboxY = "\uf2b9";
-    public const string Xd = "\ufa33";
-    public const string Xxx = "\ufc20";
-    public const string YinYang = "\uec35";
-    public const string YinYangFilled = "\uf785";
-    public const string Yoga = "\uf01f";
-    public const string Zeppelin = "\uf270";
-    public const string ZeppelinOff = "\uf43f";
-    public const string Zip = "\uf3b4";
-    public const string ZodiacAquarius = "\uecac";
-    public const string ZodiacAries = "\uecad";
-    public const string ZodiacCancer = "\uecae";
-    public const string ZodiacCapricorn = "\uecaf";
-    public const string ZodiacGemini = "\uecb0";
-    public const string ZodiacLeo = "\uecb1";
-    public const string ZodiacLibra = "\uecb2";
-    public const string ZodiacPisces = "\uecb3";
-    public const string ZodiacSagittarius = "\uecb4";
-    public const string ZodiacScorpio = "\uecb5";
-    public const string ZodiacTaurus = "\uecb6";
-    public const string ZodiacVirgo = "\uecb7";
-    public const string ZoomCancel = "\uec4d";
-    public const string ZoomCheck = "\uef09";
-    public const string ZoomCheckFilled = "\uf786";
-    public const string ZoomCode = "\uf07f";
-    public const string ZoomExclamation = "\uf080";
-    public const string ZoomFilled = "\uf787";
-    public const string ZoomIn = "\ueb56";
-    public const string ZoomInArea = "\uf1dc";
-    public const string ZoomInAreaFilled = "\uf788";
-    public const string ZoomInFilled = "\uf789";
-    public const string ZoomMoney = "\uef0a";
-    public const string ZoomOut = "\ueb57";
-    public const string ZoomOutArea = "\uf1dd";
-    public const string ZoomOutFilled = "\uf78a";
-    public const string ZoomPan = "\uf1de";
-    public const string ZoomQuestion = "\uedeb";
-    public const string ZoomReplace = "\uf2a7";
-    public const string ZoomReset = "\uf295";
-    public const string Zzz = "\uf228";
-    public const string ZzzOff = "\uf440";
+    public const string Icon123 = "\uf554";
+    public const string Icon24Hours = "\uf5e7";
+    public const string Icon2fa = "\ueca0";
+    public const string Icon360 = "\uf62f";
+    public const string Icon360View = "\uf566";
+    public const string Icon3dCubeSphere = "\uecd7";
+    public const string Icon3dCubeSphereOff = "\uf3b5";
+    public const string Icon3dRotate = "\uf020";
+    public const string IconAB = "\uec36";
+    public const string IconAB2 = "\uf25f";
+    public const string IconABOff = "\uf0a6";
+    public const string IconAbacus = "\uf05c";
+    public const string IconAbacusOff = "\uf3b6";
+    public const string IconAbc = "\uf567";
+    public const string IconAccessPoint = "\ued1b";
+    public const string IconAccessPointOff = "\ued1a";
+    public const string IconAccessible = "\ueba9";
+    public const string IconAccessibleOff = "\uf0a7";
+    public const string IconAccessibleOffFilled = "\uf6ea";
+    public const string IconActivity = "\ued23";
+    public const string IconActivityHeartbeat = "\uf0db";
+    public const string IconAd = "\uea02";
+    public const string IconAd2 = "\uef1f";
+    public const string IconAdCircle = "\uf79e";
+    public const string IconAdCircleFilled = "\uf7d3";
+    public const string IconAdCircleOff = "\uf79d";
+    public const string IconAdFilled = "\uf6eb";
+    public const string IconAdOff = "\uf3b7";
+    public const string IconAddressBook = "\uf021";
+    public const string IconAddressBookOff = "\uf3b8";
+    public const string IconAdjustments = "\uea03";
+    public const string IconAdjustmentsAlt = "\uec37";
+    public const string IconAdjustmentsBolt = "\uf7fb";
+    public const string IconAdjustmentsCancel = "\uf7fc";
+    public const string IconAdjustmentsCheck = "\uf7fd";
+    public const string IconAdjustmentsCode = "\uf7fe";
+    public const string IconAdjustmentsCog = "\uf7ff";
+    public const string IconAdjustmentsDollar = "\uf800";
+    public const string IconAdjustmentsDown = "\uf801";
+    public const string IconAdjustmentsExclamation = "\uf802";
+    public const string IconAdjustmentsFilled = "\uf6ec";
+    public const string IconAdjustmentsHeart = "\uf803";
+    public const string IconAdjustmentsHorizontal = "\uec38";
+    public const string IconAdjustmentsMinus = "\uf804";
+    public const string IconAdjustmentsOff = "\uf0a8";
+    public const string IconAdjustmentsPause = "\uf805";
+    public const string IconAdjustmentsPin = "\uf806";
+    public const string IconAdjustmentsPlus = "\uf807";
+    public const string IconAdjustmentsQuestion = "\uf808";
+    public const string IconAdjustmentsSearch = "\uf809";
+    public const string IconAdjustmentsShare = "\uf80a";
+    public const string IconAdjustmentsStar = "\uf80b";
+    public const string IconAdjustmentsUp = "\uf80c";
+    public const string IconAdjustmentsX = "\uf80d";
+    public const string IconAerialLift = "\uedfe";
+    public const string IconAffiliate = "\uedff";
+    public const string IconAffiliateFilled = "\uf6ed";
+    public const string IconAirBalloon = "\uf4a6";
+    public const string IconAirConditioning = "\uf3a2";
+    public const string IconAirConditioningDisabled = "\uf542";
+    public const string IconAirTrafficControl = "\ufb01";
+    public const string IconAlarm = "\uea04";
+    public const string IconAlarmFilled = "\uf709";
+    public const string IconAlarmMinus = "\uf630";
+    public const string IconAlarmMinusFilled = "\uf70a";
+    public const string IconAlarmOff = "\uf0a9";
+    public const string IconAlarmPlus = "\uf631";
+    public const string IconAlarmPlusFilled = "\uf70b";
+    public const string IconAlarmSnooze = "\uf632";
+    public const string IconAlarmSnoozeFilled = "\uf70c";
+    public const string IconAlbum = "\uf022";
+    public const string IconAlbumOff = "\uf3b9";
+    public const string IconAlertCircle = "\uea05";
+    public const string IconAlertCircleFilled = "\uf6ee";
+    public const string IconAlertHexagon = "\uf80e";
+    public const string IconAlertHexagonFilled = "\ufa34";
+    public const string IconAlertOctagon = "\uecc6";
+    public const string IconAlertOctagonFilled = "\uf6ef";
+    public const string IconAlertSmall = "\uf80f";
+    public const string IconAlertSquare = "\uf811";
+    public const string IconAlertSquareFilled = "\ufa35";
+    public const string IconAlertSquareRounded = "\uf810";
+    public const string IconAlertSquareRoundedFilled = "\ufa36";
+    public const string IconAlertTriangle = "\uea06";
+    public const string IconAlertTriangleFilled = "\uf6f0";
+    public const string IconAlien = "\uebde";
+    public const string IconAlienFilled = "\uf70d";
+    public const string IconAlignBoxBottomCenter = "\uf530";
+    public const string IconAlignBoxBottomCenterFilled = "\uf70e";
+    public const string IconAlignBoxBottomLeft = "\uf531";
+    public const string IconAlignBoxBottomLeftFilled = "\uf70f";
+    public const string IconAlignBoxBottomRight = "\uf532";
+    public const string IconAlignBoxBottomRightFilled = "\uf710";
+    public const string IconAlignBoxCenterBottom = "\ufacb";
+    public const string IconAlignBoxCenterMiddle = "\uf79f";
+    public const string IconAlignBoxCenterMiddleFilled = "\uf7d4";
+    public const string IconAlignBoxCenterStretch = "\ufacc";
+    public const string IconAlignBoxCenterTop = "\ufacd";
+    public const string IconAlignBoxLeftBottom = "\uf533";
+    public const string IconAlignBoxLeftBottomFilled = "\uf711";
+    public const string IconAlignBoxLeftMiddle = "\uf534";
+    public const string IconAlignBoxLeftMiddleFilled = "\uf712";
+    public const string IconAlignBoxLeftStretch = "\uface";
+    public const string IconAlignBoxLeftTop = "\uf535";
+    public const string IconAlignBoxLeftTopFilled = "\uf713";
+    public const string IconAlignBoxRightBottom = "\uf536";
+    public const string IconAlignBoxRightBottomFilled = "\uf714";
+    public const string IconAlignBoxRightMiddle = "\uf537";
+    public const string IconAlignBoxRightMiddleFilled = "\uf7d5";
+    public const string IconAlignBoxRightStretch = "\ufacf";
+    public const string IconAlignBoxRightTop = "\uf538";
+    public const string IconAlignBoxRightTopFilled = "\uf715";
+    public const string IconAlignBoxTopCenter = "\uf539";
+    public const string IconAlignBoxTopCenterFilled = "\uf716";
+    public const string IconAlignBoxTopLeft = "\uf53a";
+    public const string IconAlignBoxTopLeftFilled = "\uf717";
+    public const string IconAlignBoxTopRight = "\uf53b";
+    public const string IconAlignBoxTopRightFilled = "\uf718";
+    public const string IconAlignCenter = "\uea07";
+    public const string IconAlignJustified = "\uea08";
+    public const string IconAlignLeft = "\uea09";
+    public const string IconAlignRight = "\uea0a";
+    public const string IconAlpha = "\uf543";
+    public const string IconAlphabetCyrillic = "\uf1df";
+    public const string IconAlphabetGreek = "\uf1e0";
+    public const string IconAlphabetLatin = "\uf1e1";
+    public const string IconAmbulance = "\uebf5";
+    public const string IconAmpersand = "\uf229";
+    public const string IconAnalyze = "\uf3a3";
+    public const string IconAnalyzeFilled = "\uf719";
+    public const string IconAnalyzeOff = "\uf3ba";
+    public const string IconAnchor = "\ueb76";
+    public const string IconAnchorOff = "\uf0f7";
+    public const string IconAngle = "\uef20";
+    public const string IconAnkh = "\uf1cd";
+    public const string IconAntenna = "\uf094";
+    public const string IconAntennaBars1 = "\uecc7";
+    public const string IconAntennaBars2 = "\uecc8";
+    public const string IconAntennaBars3 = "\uecc9";
+    public const string IconAntennaBars4 = "\uecca";
+    public const string IconAntennaBars5 = "\ueccb";
+    public const string IconAntennaBarsOff = "\uf0aa";
+    public const string IconAntennaOff = "\uf3bb";
+    public const string IconAperture = "\ueb58";
+    public const string IconApertureOff = "\uf3bc";
+    public const string IconApi = "\ueffd";
+    public const string IconApiApp = "\ueffc";
+    public const string IconApiAppOff = "\uf0ab";
+    public const string IconApiOff = "\uf0f8";
+    public const string IconAppWindow = "\uefe6";
+    public const string IconAppWindowFilled = "\uf71a";
+    public const string IconApple = "\uef21";
+    public const string IconApps = "\uebb6";
+    public const string IconAppsFilled = "\uf6f1";
+    public const string IconAppsOff = "\uf0ac";
+    public const string IconArchive = "\uea0b";
+    public const string IconArchiveFilled = "\ufa82";
+    public const string IconArchiveOff = "\uf0ad";
+    public const string IconArmchair = "\uef9e";
+    public const string IconArmchair2 = "\uefe7";
+    public const string IconArmchair2Off = "\uf3bd";
+    public const string IconArmchairOff = "\uf3be";
+    public const string IconArrowAutofitContent = "\uef31";
+    public const string IconArrowAutofitContentFilled = "\uf6f2";
+    public const string IconArrowAutofitDown = "\uef32";
+    public const string IconArrowAutofitHeight = "\uef33";
+    public const string IconArrowAutofitLeft = "\uef34";
+    public const string IconArrowAutofitRight = "\uef35";
+    public const string IconArrowAutofitUp = "\uef36";
+    public const string IconArrowAutofitWidth = "\uef37";
+    public const string IconArrowBack = "\uea0c";
+    public const string IconArrowBackUp = "\ueb77";
+    public const string IconArrowBackUpDouble = "\uf9ec";
+    public const string IconArrowBadgeDown = "\uf60b";
+    public const string IconArrowBadgeDownFilled = "\uf7d6";
+    public const string IconArrowBadgeLeft = "\uf60c";
+    public const string IconArrowBadgeLeftFilled = "\uf7d7";
+    public const string IconArrowBadgeRight = "\uf60d";
+    public const string IconArrowBadgeRightFilled = "\uf7d8";
+    public const string IconArrowBadgeUp = "\uf60e";
+    public const string IconArrowBadgeUpFilled = "\uf7d9";
+    public const string IconArrowBarBoth = "\ufadd";
+    public const string IconArrowBarDown = "\uea0d";
+    public const string IconArrowBarLeft = "\uea0e";
+    public const string IconArrowBarRight = "\uea0f";
+    public const string IconArrowBarToDown = "\uec88";
+    public const string IconArrowBarToLeft = "\uec89";
+    public const string IconArrowBarToRight = "\uec8a";
+    public const string IconArrowBarToUp = "\uec8b";
+    public const string IconArrowBarUp = "\uea10";
+    public const string IconArrowBearLeft = "\uf045";
+    public const string IconArrowBearLeft2 = "\uf044";
+    public const string IconArrowBearRight = "\uf047";
+    public const string IconArrowBearRight2 = "\uf046";
+    public const string IconArrowBigDown = "\uedda";
+    public const string IconArrowBigDownFilled = "\uf6c6";
+    public const string IconArrowBigDownLine = "\uefe8";
+    public const string IconArrowBigDownLineFilled = "\uf6c7";
+    public const string IconArrowBigDownLines = "\uefe9";
+    public const string IconArrowBigDownLinesFilled = "\uf6c8";
+    public const string IconArrowBigLeft = "\ueddb";
+    public const string IconArrowBigLeftFilled = "\uf6c9";
+    public const string IconArrowBigLeftLine = "\uefea";
+    public const string IconArrowBigLeftLineFilled = "\uf6ca";
+    public const string IconArrowBigLeftLines = "\uefeb";
+    public const string IconArrowBigLeftLinesFilled = "\uf6cb";
+    public const string IconArrowBigRight = "\ueddc";
+    public const string IconArrowBigRightFilled = "\uf6cc";
+    public const string IconArrowBigRightLine = "\uefec";
+    public const string IconArrowBigRightLineFilled = "\uf6cd";
+    public const string IconArrowBigRightLines = "\uefed";
+    public const string IconArrowBigRightLinesFilled = "\uf6ce";
+    public const string IconArrowBigUp = "\ueddd";
+    public const string IconArrowBigUpFilled = "\uf6cf";
+    public const string IconArrowBigUpLine = "\uefee";
+    public const string IconArrowBigUpLineFilled = "\uf6d0";
+    public const string IconArrowBigUpLines = "\uefef";
+    public const string IconArrowBigUpLinesFilled = "\uf6d1";
+    public const string IconArrowBounce = "\uf3a4";
+    public const string IconArrowCapsule = "\ufade";
+    public const string IconArrowCurveLeft = "\uf048";
+    public const string IconArrowCurveRight = "\uf049";
+    public const string IconArrowDown = "\uea16";
+    public const string IconArrowDownBar = "\ued98";
+    public const string IconArrowDownCircle = "\uea11";
+    public const string IconArrowDownLeft = "\uea13";
+    public const string IconArrowDownLeftCircle = "\uea12";
+    public const string IconArrowDownRhombus = "\uf61d";
+    public const string IconArrowDownRight = "\uea15";
+    public const string IconArrowDownRightCircle = "\uea14";
+    public const string IconArrowDownSquare = "\ued9a";
+    public const string IconArrowDownTail = "\ued9b";
+    public const string IconArrowElbowLeft = "\uf9ed";
+    public const string IconArrowElbowRight = "\uf9ee";
+    public const string IconArrowFork = "\uf04a";
+    public const string IconArrowForward = "\uea17";
+    public const string IconArrowForwardUp = "\ueb78";
+    public const string IconArrowForwardUpDouble = "\uf9ef";
+    public const string IconArrowGuide = "\uf22a";
+    public const string IconArrowIteration = "\uf578";
+    public const string IconArrowLeft = "\uea19";
+    public const string IconArrowLeftBar = "\ued9c";
+    public const string IconArrowLeftCircle = "\uea18";
+    public const string IconArrowLeftRhombus = "\uf61e";
+    public const string IconArrowLeftRight = "\uf04b";
+    public const string IconArrowLeftSquare = "\ued9d";
+    public const string IconArrowLeftTail = "\ued9e";
+    public const string IconArrowLoopLeft = "\ued9f";
+    public const string IconArrowLoopLeft2 = "\uf04c";
+    public const string IconArrowLoopRight = "\ueda0";
+    public const string IconArrowLoopRight2 = "\uf04d";
+    public const string IconArrowMerge = "\uf04e";
+    public const string IconArrowMergeBoth = "\uf23b";
+    public const string IconArrowMergeLeft = "\uf23c";
+    public const string IconArrowMergeRight = "\uf23d";
+    public const string IconArrowMoveDown = "\uf2ba";
+    public const string IconArrowMoveLeft = "\uf2bb";
+    public const string IconArrowMoveRight = "\uf2bc";
+    public const string IconArrowMoveUp = "\uf2bd";
+    public const string IconArrowNarrowDown = "\uea1a";
+    public const string IconArrowNarrowLeft = "\uea1b";
+    public const string IconArrowNarrowRight = "\uea1c";
+    public const string IconArrowNarrowUp = "\uea1d";
+    public const string IconArrowRampLeft = "\ued3c";
+    public const string IconArrowRampLeft2 = "\uf04f";
+    public const string IconArrowRampLeft3 = "\uf050";
+    public const string IconArrowRampRight = "\ued3d";
+    public const string IconArrowRampRight2 = "\uf051";
+    public const string IconArrowRampRight3 = "\uf052";
+    public const string IconArrowRight = "\uea1f";
+    public const string IconArrowRightBar = "\ueda1";
+    public const string IconArrowRightCircle = "\uea1e";
+    public const string IconArrowRightRhombus = "\uf61f";
+    public const string IconArrowRightSquare = "\ueda2";
+    public const string IconArrowRightTail = "\ueda3";
+    public const string IconArrowRotaryFirstLeft = "\uf053";
+    public const string IconArrowRotaryFirstRight = "\uf054";
+    public const string IconArrowRotaryLastLeft = "\uf055";
+    public const string IconArrowRotaryLastRight = "\uf056";
+    public const string IconArrowRotaryLeft = "\uf057";
+    public const string IconArrowRotaryRight = "\uf058";
+    public const string IconArrowRotaryStraight = "\uf059";
+    public const string IconArrowRoundaboutLeft = "\uf22b";
+    public const string IconArrowRoundaboutRight = "\uf22c";
+    public const string IconArrowSharpTurnLeft = "\uf05a";
+    public const string IconArrowSharpTurnRight = "\uf05b";
+    public const string IconArrowUp = "\uea25";
+    public const string IconArrowUpBar = "\ueda4";
+    public const string IconArrowUpCircle = "\uea20";
+    public const string IconArrowUpLeft = "\uea22";
+    public const string IconArrowUpLeftCircle = "\uea21";
+    public const string IconArrowUpRhombus = "\uf620";
+    public const string IconArrowUpRight = "\uea24";
+    public const string IconArrowUpRightCircle = "\uea23";
+    public const string IconArrowUpSquare = "\ueda6";
+    public const string IconArrowUpTail = "\ueda7";
+    public const string IconArrowWaveLeftDown = "\ueda8";
+    public const string IconArrowWaveLeftUp = "\ueda9";
+    public const string IconArrowWaveRightDown = "\uedaa";
+    public const string IconArrowWaveRightUp = "\uedab";
+    public const string IconArrowZigZag = "\uf4a7";
+    public const string IconArrowsCross = "\ueffe";
+    public const string IconArrowsDiagonal = "\uea27";
+    public const string IconArrowsDiagonal2 = "\uea26";
+    public const string IconArrowsDiagonalMinimize = "\uef39";
+    public const string IconArrowsDiagonalMinimize2 = "\uef38";
+    public const string IconArrowsDiff = "\uf296";
+    public const string IconArrowsDoubleNeSw = "\uedde";
+    public const string IconArrowsDoubleNwSe = "\ueddf";
+    public const string IconArrowsDoubleSeNw = "\uede0";
+    public const string IconArrowsDoubleSwNe = "\uede1";
+    public const string IconArrowsDown = "\uedad";
+    public const string IconArrowsDownUp = "\uedac";
+    public const string IconArrowsExchange = "\uf1f4";
+    public const string IconArrowsExchange2 = "\uf1f3";
+    public const string IconArrowsHorizontal = "\ueb59";
+    public const string IconArrowsJoin = "\uedaf";
+    public const string IconArrowsJoin2 = "\uedae";
+    public const string IconArrowsLeft = "\uedb1";
+    public const string IconArrowsLeftDown = "\uee00";
+    public const string IconArrowsLeftRight = "\uedb0";
+    public const string IconArrowsMaximize = "\uea28";
+    public const string IconArrowsMinimize = "\uea29";
+    public const string IconArrowsMove = "\uf22f";
+    public const string IconArrowsMoveHorizontal = "\uf22d";
+    public const string IconArrowsMoveVertical = "\uf22e";
+    public const string IconArrowsRandom = "\uf095";
+    public const string IconArrowsRight = "\uedb3";
+    public const string IconArrowsRightDown = "\uee01";
+    public const string IconArrowsRightLeft = "\uedb2";
+    public const string IconArrowsShuffle = "\uf000";
+    public const string IconArrowsShuffle2 = "\uefff";
+    public const string IconArrowsSort = "\ueb5a";
+    public const string IconArrowsSplit = "\uedb5";
+    public const string IconArrowsSplit2 = "\uedb4";
+    public const string IconArrowsTransferDown = "\uf2cc";
+    public const string IconArrowsTransferUp = "\uf2cd";
+    public const string IconArrowsUp = "\uedb7";
+    public const string IconArrowsUpDown = "\uedb6";
+    public const string IconArrowsUpLeft = "\uee02";
+    public const string IconArrowsUpRight = "\uee03";
+    public const string IconArrowsVertical = "\ueb5b";
+    public const string IconArtboard = "\uea2a";
+    public const string IconArtboardFilled = "\ufa83";
+    public const string IconArtboardOff = "\uf0ae";
+    public const string IconArticle = "\uf1e2";
+    public const string IconArticleFilledFilled = "\uf7da";
+    public const string IconArticleOff = "\uf3bf";
+    public const string IconAspectRatio = "\ued30";
+    public const string IconAspectRatioFilled = "\uf7db";
+    public const string IconAspectRatioOff = "\uf0af";
+    public const string IconAssembly = "\uf24d";
+    public const string IconAssemblyOff = "\uf3c0";
+    public const string IconAsset = "\uf1ce";
+    public const string IconAsterisk = "\uefd5";
+    public const string IconAsteriskSimple = "\uefd4";
+    public const string IconAt = "\uea2b";
+    public const string IconAtOff = "\uf0b0";
+    public const string IconAtom = "\ueb79";
+    public const string IconAtom2 = "\uebdf";
+    public const string IconAtom2Filled = "\uf71b";
+    public const string IconAtomOff = "\uf0f9";
+    public const string IconAugmentedReality = "\uf023";
+    public const string IconAugmentedReality2 = "\uf37e";
+    public const string IconAugmentedRealityOff = "\uf3c1";
+    public const string IconAward = "\uea2c";
+    public const string IconAwardFilled = "\uf71c";
+    public const string IconAwardOff = "\uf0fa";
+    public const string IconAxe = "\uef9f";
+    public const string IconAxisX = "\uef45";
+    public const string IconAxisY = "\uef46";
+    public const string IconBabyBottle = "\uf5d2";
+    public const string IconBabyCarriage = "\uf05d";
+    public const string IconBackhoe = "\ued86";
+    public const string IconBackpack = "\uef47";
+    public const string IconBackpackOff = "\uf3c2";
+    public const string IconBackslash = "\ufab9";
+    public const string IconBackspace = "\uea2d";
+    public const string IconBackspaceFilled = "\uf7dc";
+    public const string IconBadge = "\uefc2";
+    public const string IconBadge3d = "\uf555";
+    public const string IconBadge4k = "\uf556";
+    public const string IconBadge8k = "\uf557";
+    public const string IconBadgeAd = "\uf558";
+    public const string IconBadgeAr = "\uf559";
+    public const string IconBadgeCc = "\uf55a";
+    public const string IconBadgeFilled = "\uf667";
+    public const string IconBadgeHd = "\uf55b";
+    public const string IconBadgeOff = "\uf0fb";
+    public const string IconBadgeSd = "\uf55c";
+    public const string IconBadgeTm = "\uf55d";
+    public const string IconBadgeVo = "\uf55e";
+    public const string IconBadgeVr = "\uf55f";
+    public const string IconBadgeWc = "\uf560";
+    public const string IconBadges = "\uefc3";
+    public const string IconBadgesFilled = "\uf7dd";
+    public const string IconBadgesOff = "\uf0fc";
+    public const string IconBaguette = "\uf3a5";
+    public const string IconBallAmericanFootball = "\uee04";
+    public const string IconBallAmericanFootballOff = "\uf3c3";
+    public const string IconBallBaseball = "\uefa0";
+    public const string IconBallBasketball = "\uec28";
+    public const string IconBallBowling = "\uec29";
+    public const string IconBallFootball = "\uee06";
+    public const string IconBallFootballOff = "\uee05";
+    public const string IconBallTennis = "\uec2a";
+    public const string IconBallVolleyball = "\uec2b";
+    public const string IconBalloon = "\uef3a";
+    public const string IconBalloonFilled = "\ufa84";
+    public const string IconBalloonOff = "\uf0fd";
+    public const string IconBallpen = "\uf06e";
+    public const string IconBallpenFilled = "\ufa85";
+    public const string IconBallpenOff = "\uf0b1";
+    public const string IconBan = "\uea2e";
+    public const string IconBandage = "\ueb7a";
+    public const string IconBandageFilled = "\uf7de";
+    public const string IconBandageOff = "\uf3c4";
+    public const string IconBarbell = "\ueff0";
+    public const string IconBarbellOff = "\uf0b2";
+    public const string IconBarcode = "\uebc6";
+    public const string IconBarcodeOff = "\uf0b3";
+    public const string IconBarrel = "\uf0b4";
+    public const string IconBarrelOff = "\uf0fe";
+    public const string IconBarrierBlock = "\uf00e";
+    public const string IconBarrierBlockOff = "\uf0b5";
+    public const string IconBaseline = "\uf024";
+    public const string IconBaselineDensityLarge = "\uf9f0";
+    public const string IconBaselineDensityMedium = "\uf9f1";
+    public const string IconBaselineDensitySmall = "\uf9f2";
+    public const string IconBasket = "\uebe1";
+    public const string IconBasketBolt = "\ufb43";
+    public const string IconBasketCancel = "\ufb44";
+    public const string IconBasketCheck = "\ufb45";
+    public const string IconBasketCode = "\ufb46";
+    public const string IconBasketCog = "\ufb47";
+    public const string IconBasketDiscount = "\ufb48";
+    public const string IconBasketDollar = "\ufb49";
+    public const string IconBasketDown = "\ufb4a";
+    public const string IconBasketExclamation = "\ufb4b";
+    public const string IconBasketFilled = "\uf7df";
+    public const string IconBasketHeart = "\ufb4c";
+    public const string IconBasketMinus = "\ufb4d";
+    public const string IconBasketOff = "\uf0b6";
+    public const string IconBasketPause = "\ufb4e";
+    public const string IconBasketPin = "\ufb4f";
+    public const string IconBasketPlus = "\ufb50";
+    public const string IconBasketQuestion = "\ufb51";
+    public const string IconBasketSearch = "\ufb52";
+    public const string IconBasketShare = "\ufb53";
+    public const string IconBasketStar = "\ufb54";
+    public const string IconBasketUp = "\ufb55";
+    public const string IconBasketX = "\ufb56";
+    public const string IconBat = "\uf284";
+    public const string IconBath = "\uef48";
+    public const string IconBathFilled = "\uf71d";
+    public const string IconBathOff = "\uf0ff";
+    public const string IconBattery = "\uea34";
+    public const string IconBattery1 = "\uea2f";
+    public const string IconBattery1Filled = "\uf71e";
+    public const string IconBattery2 = "\uea30";
+    public const string IconBattery2Filled = "\uf71f";
+    public const string IconBattery3 = "\uea31";
+    public const string IconBattery3Filled = "\uf720";
+    public const string IconBattery4 = "\uea32";
+    public const string IconBattery4Filled = "\uf721";
+    public const string IconBatteryAutomotive = "\uee07";
+    public const string IconBatteryCharging = "\uea33";
+    public const string IconBatteryCharging2 = "\uef3b";
+    public const string IconBatteryEco = "\uef3c";
+    public const string IconBatteryFilled = "\uf668";
+    public const string IconBatteryOff = "\ued1c";
+    public const string IconBeach = "\uef3d";
+    public const string IconBeachOff = "\uf0b7";
+    public const string IconBed = "\ueb5c";
+    public const string IconBedFilled = "\uf7e0";
+    public const string IconBedOff = "\uf100";
+    public const string IconBeer = "\uefa1";
+    public const string IconBeerFilled = "\uf7e1";
+    public const string IconBeerOff = "\uf101";
+    public const string IconBell = "\uea35";
+    public const string IconBellBolt = "\uf812";
+    public const string IconBellCancel = "\uf813";
+    public const string IconBellCheck = "\uf814";
+    public const string IconBellCode = "\uf815";
+    public const string IconBellCog = "\uf816";
+    public const string IconBellDollar = "\uf817";
+    public const string IconBellDown = "\uf818";
+    public const string IconBellExclamation = "\uf819";
+    public const string IconBellFilled = "\uf669";
+    public const string IconBellHeart = "\uf81a";
+    public const string IconBellMinus = "\uede2";
+    public const string IconBellMinusFilled = "\uf722";
+    public const string IconBellOff = "\uece9";
+    public const string IconBellPause = "\uf81b";
+    public const string IconBellPin = "\uf81c";
+    public const string IconBellPlus = "\uede3";
+    public const string IconBellPlusFilled = "\uf723";
+    public const string IconBellQuestion = "\uf81d";
+    public const string IconBellRinging = "\ued07";
+    public const string IconBellRinging2 = "\uede4";
+    public const string IconBellRinging2Filled = "\uf724";
+    public const string IconBellRingingFilled = "\uf725";
+    public const string IconBellSchool = "\uf05e";
+    public const string IconBellSearch = "\uf81e";
+    public const string IconBellShare = "\uf81f";
+    public const string IconBellStar = "\uf820";
+    public const string IconBellUp = "\uf821";
+    public const string IconBellX = "\uede5";
+    public const string IconBellXFilled = "\uf726";
+    public const string IconBellZ = "\ueff1";
+    public const string IconBellZFilled = "\uf727";
+    public const string IconBeta = "\uf544";
+    public const string IconBible = "\uefc4";
+    public const string IconBike = "\uea36";
+    public const string IconBikeOff = "\uf0b8";
+    public const string IconBinary = "\uee08";
+    public const string IconBinaryOff = "\uf3c5";
+    public const string IconBinaryTree = "\uf5d4";
+    public const string IconBinaryTree2 = "\uf5d3";
+    public const string IconBiohazard = "\uecb8";
+    public const string IconBiohazardOff = "\uf0b9";
+    public const string IconBlade = "\uf4bd";
+    public const string IconBladeFilled = "\uf7e2";
+    public const string IconBleach = "\uf2f3";
+    public const string IconBleachChlorine = "\uf2f0";
+    public const string IconBleachNoChlorine = "\uf2f1";
+    public const string IconBleachOff = "\uf2f2";
+    public const string IconBlockquote = "\uee09";
+    public const string IconBluetooth = "\uea37";
+    public const string IconBluetoothConnected = "\uecea";
+    public const string IconBluetoothOff = "\ueceb";
+    public const string IconBluetoothX = "\uf081";
+    public const string IconBlur = "\uef8c";
+    public const string IconBlurOff = "\uf3c6";
+    public const string IconBmp = "\uf3a6";
+    public const string IconBold = "\ueb7b";
+    public const string IconBoldOff = "\uf0ba";
+    public const string IconBolt = "\uea38";
+    public const string IconBoltOff = "\uecec";
+    public const string IconBomb = "\uf59c";
+    public const string IconBombFilled = "\ufa86";
+    public const string IconBone = "\uedb8";
+    public const string IconBoneOff = "\uf0bb";
+    public const string IconBong = "\uf3a7";
+    public const string IconBongOff = "\uf3c7";
+    public const string IconBook = "\uea39";
+    public const string IconBook2 = "\uefc5";
+    public const string IconBookDownload = "\uf070";
+    public const string IconBookFilled = "\ufa87";
+    public const string IconBookOff = "\uf0bc";
+    public const string IconBookUpload = "\uf071";
+    public const string IconBookmark = "\uea3a";
+    public const string IconBookmarkEdit = "\ufa5e";
+    public const string IconBookmarkFilled = "\ufa88";
+    public const string IconBookmarkMinus = "\ufa5f";
+    public const string IconBookmarkOff = "\ueced";
+    public const string IconBookmarkPlus = "\ufa60";
+    public const string IconBookmarkQuestion = "\ufa61";
+    public const string IconBookmarks = "\ued08";
+    public const string IconBookmarksFilled = "\ufb1f";
+    public const string IconBookmarksOff = "\uf0bd";
+    public const string IconBooks = "\ueff2";
+    public const string IconBooksOff = "\uf0be";
+    public const string IconBorderAll = "\uea3b";
+    public const string IconBorderBottom = "\uea3c";
+    public const string IconBorderCorners = "\uf7a0";
+    public const string IconBorderHorizontal = "\uea3d";
+    public const string IconBorderInner = "\uea3e";
+    public const string IconBorderLeft = "\uea3f";
+    public const string IconBorderNone = "\uea40";
+    public const string IconBorderOuter = "\uea41";
+    public const string IconBorderRadius = "\ueb7c";
+    public const string IconBorderRight = "\uea42";
+    public const string IconBorderSides = "\uf7a1";
+    public const string IconBorderStyle = "\uee0a";
+    public const string IconBorderStyle2 = "\uef22";
+    public const string IconBorderTop = "\uea43";
+    public const string IconBorderVertical = "\uea44";
+    public const string IconBottle = "\uef0b";
+    public const string IconBottleFilled = "\ufa89";
+    public const string IconBottleOff = "\uf3c8";
+    public const string IconBounceLeft = "\uf59d";
+    public const string IconBounceLeftFilled = "\ufb20";
+    public const string IconBounceRight = "\uf59e";
+    public const string IconBounceRightFilled = "\ufb21";
+    public const string IconBow = "\uf096";
+    public const string IconBowl = "\uf4fa";
+    public const string IconBowlFilled = "\ufb22";
+    public const string IconBox = "\uea45";
+    public const string IconBoxAlignBottom = "\uf2a8";
+    public const string IconBoxAlignBottomFilled = "\ufa8a";
+    public const string IconBoxAlignBottomLeft = "\uf2ce";
+    public const string IconBoxAlignBottomLeftFilled = "\ufa8b";
+    public const string IconBoxAlignBottomRight = "\uf2cf";
+    public const string IconBoxAlignBottomRightFilled = "\ufa8c";
+    public const string IconBoxAlignLeft = "\uf2a9";
+    public const string IconBoxAlignLeftFilled = "\ufa8d";
+    public const string IconBoxAlignRight = "\uf2aa";
+    public const string IconBoxAlignRightFilled = "\ufa8e";
+    public const string IconBoxAlignTop = "\uf2ab";
+    public const string IconBoxAlignTopFilled = "\ufa8f";
+    public const string IconBoxAlignTopLeft = "\uf2d0";
+    public const string IconBoxAlignTopLeftFilled = "\ufa90";
+    public const string IconBoxAlignTopRight = "\uf2d1";
+    public const string IconBoxAlignTopRightFilled = "\ufa91";
+    public const string IconBoxMargin = "\uee0b";
+    public const string IconBoxModel = "\uee0c";
+    public const string IconBoxModel2 = "\uef23";
+    public const string IconBoxModel2Off = "\uf3c9";
+    public const string IconBoxModelOff = "\uf3ca";
+    public const string IconBoxMultiple = "\uee17";
+    public const string IconBoxMultiple0 = "\uee0d";
+    public const string IconBoxMultiple1 = "\uee0e";
+    public const string IconBoxMultiple2 = "\uee0f";
+    public const string IconBoxMultiple3 = "\uee10";
+    public const string IconBoxMultiple4 = "\uee11";
+    public const string IconBoxMultiple5 = "\uee12";
+    public const string IconBoxMultiple6 = "\uee13";
+    public const string IconBoxMultiple7 = "\uee14";
+    public const string IconBoxMultiple8 = "\uee15";
+    public const string IconBoxMultiple9 = "\uee16";
+    public const string IconBoxOff = "\uf102";
+    public const string IconBoxPadding = "\uee18";
+    public const string IconBoxSeam = "\uf561";
+    public const string IconBraces = "\uebcc";
+    public const string IconBracesOff = "\uf0bf";
+    public const string IconBrackets = "\uebcd";
+    public const string IconBracketsContain = "\uf1e5";
+    public const string IconBracketsContainEnd = "\uf1e3";
+    public const string IconBracketsContainStart = "\uf1e4";
+    public const string IconBracketsOff = "\uf0c0";
+    public const string IconBraille = "\uf545";
+    public const string IconBrain = "\uf59f";
+    public const string IconBrand4chan = "\uf494";
+    public const string IconBrandAbstract = "\uf495";
+    public const string IconBrandAdobe = "\uf0dc";
+    public const string IconBrandAdonisJs = "\uf496";
+    public const string IconBrandAirbnb = "\ued68";
+    public const string IconBrandAirtable = "\uef6a";
+    public const string IconBrandAlgolia = "\uf390";
+    public const string IconBrandAlipay = "\uf7a2";
+    public const string IconBrandAlpineJs = "\uf324";
+    public const string IconBrandAmazon = "\uf230";
+    public const string IconBrandAmd = "\uf653";
+    public const string IconBrandAmigo = "\uf5f9";
+    public const string IconBrandAmongUs = "\uf205";
+    public const string IconBrandAndroid = "\uec16";
+    public const string IconBrandAngular = "\uef6b";
+    public const string IconBrandAnsible = "\ufa70";
+    public const string IconBrandAo3 = "\uf5e8";
+    public const string IconBrandAppgallery = "\uf231";
+    public const string IconBrandApple = "\uec17";
+    public const string IconBrandAppleArcade = "\ued69";
+    public const string IconBrandApplePodcast = "\uf1e6";
+    public const string IconBrandAppstore = "\ued24";
+    public const string IconBrandAsana = "\uedc5";
+    public const string IconBrandAws = "\ufa4c";
+    public const string IconBrandAzure = "\ufa4d";
+    public const string IconBrandBackbone = "\uf325";
+    public const string IconBrandBadoo = "\uf206";
+    public const string IconBrandBaidu = "\uf5e9";
+    public const string IconBrandBandcamp = "\uf207";
+    public const string IconBrandBandlab = "\uf5fa";
+    public const string IconBrandBeats = "\uf208";
+    public const string IconBrandBehance = "\uec6e";
+    public const string IconBrandBilibili = "\uf6d2";
+    public const string IconBrandBinance = "\uf5a0";
+    public const string IconBrandBing = "\uedc6";
+    public const string IconBrandBitbucket = "\uedc7";
+    public const string IconBrandBlackberry = "\uf568";
+    public const string IconBrandBlender = "\uf326";
+    public const string IconBrandBlogger = "\uf35a";
+    public const string IconBrandBooking = "\uedc8";
+    public const string IconBrandBootstrap = "\uef3e";
+    public const string IconBrandBulma = "\uf327";
+    public const string IconBrandBumble = "\uf5fb";
+    public const string IconBrandBunpo = "\uf4cf";
+    public const string IconBrandCSharp = "\uf003";
+    public const string IconBrandCake = "\uf7a3";
+    public const string IconBrandCakephp = "\uf7af";
+    public const string IconBrandCampaignmonitor = "\uf328";
+    public const string IconBrandCarbon = "\uf348";
+    public const string IconBrandCashapp = "\uf391";
+    public const string IconBrandChrome = "\uec18";
+    public const string IconBrandCinema4d = "\ufa71";
+    public const string IconBrandCitymapper = "\uf5fc";
+    public const string IconBrandCloudflare = "\ufa4e";
+    public const string IconBrandCodecov = "\uf329";
+    public const string IconBrandCodepen = "\uec6f";
+    public const string IconBrandCodesandbox = "\ued6a";
+    public const string IconBrandCohost = "\uf5d5";
+    public const string IconBrandCoinbase = "\uf209";
+    public const string IconBrandComedyCentral = "\uf217";
+    public const string IconBrandCoreos = "\uf5fd";
+    public const string IconBrandCouchdb = "\uf60f";
+    public const string IconBrandCouchsurfing = "\uf392";
+    public const string IconBrandCpp = "\uf5fe";
+    public const string IconBrandCraft = "\ufa72";
+    public const string IconBrandCrunchbase = "\uf7e3";
+    public const string IconBrandCss3 = "\ued6b";
+    public const string IconBrandCtemplar = "\uf4d0";
+    public const string IconBrandCucumber = "\uef6c";
+    public const string IconBrandCupra = "\uf4d1";
+    public const string IconBrandCypress = "\uf333";
+    public const string IconBrandD3 = "\uf24e";
+    public const string IconBrandDaysCounter = "\uf4d2";
+    public const string IconBrandDcos = "\uf32a";
+    public const string IconBrandDebian = "\uef57";
+    public const string IconBrandDeezer = "\uf78b";
+    public const string IconBrandDeliveroo = "\uf4d3";
+    public const string IconBrandDeno = "\uf24f";
+    public const string IconBrandDenodo = "\uf610";
+    public const string IconBrandDeviantart = "\uecfb";
+    public const string IconBrandDigg = "\ufa73";
+    public const string IconBrandDingtalk = "\uf5ea";
+    public const string IconBrandDiscord = "\uece3";
+    public const string IconBrandDiscordFilled = "\uf7e4";
+    public const string IconBrandDisney = "\uf20a";
+    public const string IconBrandDisqus = "\uedc9";
+    public const string IconBrandDjango = "\uf349";
+    public const string IconBrandDocker = "\uedca";
+    public const string IconBrandDoctrine = "\uef6d";
+    public const string IconBrandDolbyDigital = "\uf4d4";
+    public const string IconBrandDouban = "\uf5ff";
+    public const string IconBrandDribbble = "\uec19";
+    public const string IconBrandDribbbleFilled = "\uf7e5";
+    public const string IconBrandDrops = "\uf4d5";
+    public const string IconBrandDrupal = "\uf393";
+    public const string IconBrandEdge = "\uecfc";
+    public const string IconBrandElastic = "\uf611";
+    public const string IconBrandElectronicArts = "\ufa74";
+    public const string IconBrandEmber = "\uf497";
+    public const string IconBrandEnvato = "\uf394";
+    public const string IconBrandEtsy = "\uf654";
+    public const string IconBrandEvernote = "\uf600";
+    public const string IconBrandFacebook = "\uec1a";
+    public const string IconBrandFacebookFilled = "\uf7e6";
+    public const string IconBrandFeedly = "\ufa75";
+    public const string IconBrandFigma = "\uec93";
+    public const string IconBrandFilezilla = "\ufa76";
+    public const string IconBrandFinder = "\uf218";
+    public const string IconBrandFirebase = "\uef6e";
+    public const string IconBrandFirefox = "\uecfd";
+    public const string IconBrandFiverr = "\uf7a4";
+    public const string IconBrandFlickr = "\uecfe";
+    public const string IconBrandFlightradar24 = "\uf4d6";
+    public const string IconBrandFlipboard = "\uf20b";
+    public const string IconBrandFlutter = "\uf395";
+    public const string IconBrandFortnite = "\uf260";
+    public const string IconBrandFoursquare = "\uecff";
+    public const string IconBrandFramer = "\uec1b";
+    public const string IconBrandFramerMotion = "\uf78c";
+    public const string IconBrandFunimation = "\uf655";
+    public const string IconBrandGatsby = "\uf396";
+    public const string IconBrandGit = "\uef6f";
+    public const string IconBrandGithub = "\uec1c";
+    public const string IconBrandGithubCopilot = "\uf4a8";
+    public const string IconBrandGithubFilled = "\uf7e7";
+    public const string IconBrandGitlab = "\uec1d";
+    public const string IconBrandGmail = "\uefa2";
+    public const string IconBrandGolang = "\uf78d";
+    public const string IconBrandGoogle = "\uec1f";
+    public const string IconBrandGoogleAnalytics = "\uedcb";
+    public const string IconBrandGoogleBigQuery = "\uf612";
+    public const string IconBrandGoogleDrive = "\uec1e";
+    public const string IconBrandGoogleFit = "\uf297";
+    public const string IconBrandGoogleHome = "\uf601";
+    public const string IconBrandGoogleMaps = "\ufa4f";
+    public const string IconBrandGoogleOne = "\uf232";
+    public const string IconBrandGooglePhotos = "\uf20c";
+    public const string IconBrandGooglePlay = "\ued25";
+    public const string IconBrandGooglePodcasts = "\uf656";
+    public const string IconBrandGrammarly = "\uf32b";
+    public const string IconBrandGraphql = "\uf32c";
+    public const string IconBrandGravatar = "\uedcc";
+    public const string IconBrandGrindr = "\uf20d";
+    public const string IconBrandGuardian = "\uf4fb";
+    public const string IconBrandGumroad = "\uf5d6";
+    public const string IconBrandHbo = "\uf657";
+    public const string IconBrandHeadlessui = "\uf32d";
+    public const string IconBrandHexo = "\ufa50";
+    public const string IconBrandHipchat = "\uedcd";
+    public const string IconBrandHtml5 = "\ued6c";
+    public const string IconBrandInertia = "\uf34a";
+    public const string IconBrandInstagram = "\uec20";
+    public const string IconBrandIntercom = "\uf1cf";
+    public const string IconBrandItch = "\ufa22";
+    public const string IconBrandJavascript = "\uef0c";
+    public const string IconBrandJuejin = "\uf7b0";
+    public const string IconBrandKbin = "\ufad0";
+    public const string IconBrandKick = "\ufa23";
+    public const string IconBrandKickstarter = "\uedce";
+    public const string IconBrandKotlin = "\ued6d";
+    public const string IconBrandLaravel = "\uf34b";
+    public const string IconBrandLastfm = "\uf001";
+    public const string IconBrandLeetcode = "\ufa51";
+    public const string IconBrandLetterboxd = "\ufa24";
+    public const string IconBrandLine = "\uf7e8";
+    public const string IconBrandLinkedin = "\uec8c";
+    public const string IconBrandLinktree = "\uf1e7";
+    public const string IconBrandLinqpad = "\uf562";
+    public const string IconBrandLoom = "\uef70";
+    public const string IconBrandMailgun = "\uf32e";
+    public const string IconBrandMantine = "\uf32f";
+    public const string IconBrandMastercard = "\uef49";
+    public const string IconBrandMastodon = "\uf250";
+    public const string IconBrandMatrix = "\uf5eb";
+    public const string IconBrandMcdonalds = "\uf251";
+    public const string IconBrandMedium = "\uec70";
+    public const string IconBrandMercedes = "\uf072";
+    public const string IconBrandMessenger = "\uec71";
+    public const string IconBrandMeta = "\uefb0";
+    public const string IconBrandMicrosoftTeams = "\ufadf";
+    public const string IconBrandMinecraft = "\ufaef";
+    public const string IconBrandMiniprogram = "\uf602";
+    public const string IconBrandMixpanel = "\uf397";
+    public const string IconBrandMonday = "\uf219";
+    public const string IconBrandMongodb = "\uf613";
+    public const string IconBrandMyOppo = "\uf4d7";
+    public const string IconBrandMysql = "\uf614";
+    public const string IconBrandNationalGeographic = "\uf603";
+    public const string IconBrandNem = "\uf5a1";
+    public const string IconBrandNetbeans = "\uef71";
+    public const string IconBrandNeteaseMusic = "\uf604";
+    public const string IconBrandNetflix = "\uedcf";
+    public const string IconBrandNexo = "\uf5a2";
+    public const string IconBrandNextcloud = "\uf4d8";
+    public const string IconBrandNextjs = "\uf0dd";
+    public const string IconBrandNodejs = "\ufae0";
+    public const string IconBrandNordVpn = "\uf37f";
+    public const string IconBrandNotion = "\uef7b";
+    public const string IconBrandNpm = "\uf569";
+    public const string IconBrandNuxt = "\uf0de";
+    public const string IconBrandNytimes = "\uef8d";
+    public const string IconBrandOauth = "\ufa52";
+    public const string IconBrandOffice = "\uf398";
+    public const string IconBrandOkRu = "\uf399";
+    public const string IconBrandOnedrive = "\uf5d7";
+    public const string IconBrandOnlyfans = "\uf605";
+    public const string IconBrandOpenSource = "\uedd0";
+    public const string IconBrandOpenai = "\uf78e";
+    public const string IconBrandOpenvpn = "\uf39a";
+    public const string IconBrandOpera = "\uec21";
+    public const string IconBrandPagekit = "\uedd1";
+    public const string IconBrandPatreon = "\uedd2";
+    public const string IconBrandPaypal = "\uec22";
+    public const string IconBrandPaypalFilled = "\uf7e9";
+    public const string IconBrandPaypay = "\uf5ec";
+    public const string IconBrandPeanut = "\uf39b";
+    public const string IconBrandPepsi = "\uf261";
+    public const string IconBrandPhp = "\uef72";
+    public const string IconBrandPicsart = "\uf4d9";
+    public const string IconBrandPinterest = "\uec8d";
+    public const string IconBrandPlanetscale = "\uf78f";
+    public const string IconBrandPocket = "\ued00";
+    public const string IconBrandPolymer = "\uf498";
+    public const string IconBrandPowershell = "\uf5ed";
+    public const string IconBrandPrisma = "\uf499";
+    public const string IconBrandProducthunt = "\uedd3";
+    public const string IconBrandPushbullet = "\uf330";
+    public const string IconBrandPushover = "\uf20e";
+    public const string IconBrandPython = "\ued01";
+    public const string IconBrandQq = "\uf606";
+    public const string IconBrandRadixUi = "\uf790";
+    public const string IconBrandReact = "\uf34c";
+    public const string IconBrandReactNative = "\uef73";
+    public const string IconBrandReason = "\uf49a";
+    public const string IconBrandReddit = "\uec8e";
+    public const string IconBrandRedhat = "\uf331";
+    public const string IconBrandRedux = "\uf3a8";
+    public const string IconBrandRevolut = "\uf4da";
+    public const string IconBrandRumble = "\ufad1";
+    public const string IconBrandRust = "\ufa53";
+    public const string IconBrandSafari = "\uec23";
+    public const string IconBrandSamsungpass = "\uf4db";
+    public const string IconBrandSass = "\uedd4";
+    public const string IconBrandSentry = "\uedd5";
+    public const string IconBrandSharik = "\uf4dc";
+    public const string IconBrandShazam = "\uedd6";
+    public const string IconBrandShopee = "\uf252";
+    public const string IconBrandSketch = "\uec24";
+    public const string IconBrandSkype = "\ued02";
+    public const string IconBrandSlack = "\uec72";
+    public const string IconBrandSnapchat = "\uec25";
+    public const string IconBrandSnapseed = "\uf253";
+    public const string IconBrandSnowflake = "\uf615";
+    public const string IconBrandSocketIo = "\uf49b";
+    public const string IconBrandSolidjs = "\uf5ee";
+    public const string IconBrandSoundcloud = "\ued6e";
+    public const string IconBrandSpacehey = "\uf4fc";
+    public const string IconBrandSpeedtest = "\ufa77";
+    public const string IconBrandSpotify = "\ued03";
+    public const string IconBrandStackoverflow = "\uef58";
+    public const string IconBrandStackshare = "\uf607";
+    public const string IconBrandSteam = "\ued6f";
+    public const string IconBrandStorj = "\ufa54";
+    public const string IconBrandStorybook = "\uf332";
+    public const string IconBrandStorytel = "\uf608";
+    public const string IconBrandStrava = "\uf254";
+    public const string IconBrandStripe = "\uedd7";
+    public const string IconBrandSublimeText = "\uef74";
+    public const string IconBrandSugarizer = "\uf7a5";
+    public const string IconBrandSupabase = "\uf6d3";
+    public const string IconBrandSuperhuman = "\uf50c";
+    public const string IconBrandSupernova = "\uf49c";
+    public const string IconBrandSurfshark = "\uf255";
+    public const string IconBrandSvelte = "\uf0df";
+    public const string IconBrandSwift = "\ufa55";
+    public const string IconBrandSymfony = "\uf616";
+    public const string IconBrandTabler = "\uec8f";
+    public const string IconBrandTailwind = "\ueca1";
+    public const string IconBrandTaobao = "\uf5ef";
+    public const string IconBrandTed = "\uf658";
+    public const string IconBrandTelegram = "\uec26";
+    public const string IconBrandTerraform = "\ufa56";
+    public const string IconBrandTether = "\uf5a3";
+    public const string IconBrandThreads = "\ufb02";
+    public const string IconBrandThreejs = "\uf5f0";
+    public const string IconBrandTidal = "\ued70";
+    public const string IconBrandTiktoFilled = "\uf7ea";
+    public const string IconBrandTiktok = "\uec73";
+    public const string IconBrandTinder = "\ued71";
+    public const string IconBrandTopbuzz = "\uf50d";
+    public const string IconBrandTorchain = "\uf5a4";
+    public const string IconBrandToyota = "\uf262";
+    public const string IconBrandTrello = "\uf39d";
+    public const string IconBrandTripadvisor = "\uf002";
+    public const string IconBrandTumblr = "\ued04";
+    public const string IconBrandTwilio = "\uf617";
+    public const string IconBrandTwitch = "\ued05";
+    public const string IconBrandTwitter = "\uec27";
+    public const string IconBrandTwitterFilled = "\uf7eb";
+    public const string IconBrandTypescript = "\uf5f1";
+    public const string IconBrandUber = "\uef75";
+    public const string IconBrandUbuntu = "\uef59";
+    public const string IconBrandUnity = "\uf49d";
+    public const string IconBrandUnsplash = "\uedd8";
+    public const string IconBrandUpwork = "\uf39e";
+    public const string IconBrandValorant = "\uf39f";
+    public const string IconBrandVercel = "\uef24";
+    public const string IconBrandVimeo = "\ued06";
+    public const string IconBrandVinted = "\uf20f";
+    public const string IconBrandVisa = "\uf380";
+    public const string IconBrandVisualStudio = "\uef76";
+    public const string IconBrandVite = "\uf5f2";
+    public const string IconBrandVivaldi = "\uf210";
+    public const string IconBrandVk = "\ued72";
+    public const string IconBrandVlc = "\ufa78";
+    public const string IconBrandVolkswagen = "\uf50e";
+    public const string IconBrandVsco = "\uf334";
+    public const string IconBrandVscode = "\uf3a0";
+    public const string IconBrandVue = "\uf0e0";
+    public const string IconBrandWalmart = "\uf211";
+    public const string IconBrandWaze = "\uf5d8";
+    public const string IconBrandWebflow = "\uf2d2";
+    public const string IconBrandWechat = "\uf5f3";
+    public const string IconBrandWeibo = "\uf609";
+    public const string IconBrandWhatsapp = "\uec74";
+    public const string IconBrandWikipedia = "\ufa79";
+    public const string IconBrandWindows = "\uecd8";
+    public const string IconBrandWindy = "\uf4dd";
+    public const string IconBrandWish = "\uf212";
+    public const string IconBrandWix = "\uf3a1";
+    public const string IconBrandWordpress = "\uf2d3";
+    public const string IconBrandX = "\ufc0f";
+    public const string IconBrandXFilled = "\ufc21";
+    public const string IconBrandXamarin = "\ufa7a";
+    public const string IconBrandXbox = "\uf298";
+    public const string IconBrandXdeep = "\ufc10";
+    public const string IconBrandXing = "\uf21a";
+    public const string IconBrandYahoo = "\ued73";
+    public const string IconBrandYandex = "\ufae1";
+    public const string IconBrandYatse = "\uf213";
+    public const string IconBrandYcombinator = "\uedd9";
+    public const string IconBrandYoutube = "\uec90";
+    public const string IconBrandYoutubeFilled = "\ufc22";
+    public const string IconBrandYoutubeKids = "\uf214";
+    public const string IconBrandZalando = "\uf49e";
+    public const string IconBrandZapier = "\uf49f";
+    public const string IconBrandZeit = "\uf335";
+    public const string IconBrandZhihu = "\uf60a";
+    public const string IconBrandZoom = "\uf215";
+    public const string IconBrandZulip = "\uf4de";
+    public const string IconBrandZwift = "\uf216";
+    public const string IconBread = "\uefa3";
+    public const string IconBreadOff = "\uf3cb";
+    public const string IconBriefcase = "\uea46";
+    public const string IconBriefcase2 = "\ufb03";
+    public const string IconBriefcaseOff = "\uf3cc";
+    public const string IconBrightness = "\ueb7f";
+    public const string IconBrightness2 = "\uee19";
+    public const string IconBrightnessDown = "\ueb7d";
+    public const string IconBrightnessDownFilled = "\ufb23";
+    public const string IconBrightnessHalf = "\uee1a";
+    public const string IconBrightnessOff = "\uf3cd";
+    public const string IconBrightnessUp = "\ueb7e";
+    public const string IconBrightnessUpFilled = "\ufb24";
+    public const string IconBroadcast = "\uf1e9";
+    public const string IconBroadcastOff = "\uf1e8";
+    public const string IconBrowser = "\uebb7";
+    public const string IconBrowserCheck = "\uefd6";
+    public const string IconBrowserOff = "\uf0c1";
+    public const string IconBrowserPlus = "\uefd7";
+    public const string IconBrowserX = "\uefd8";
+    public const string IconBrush = "\uebb8";
+    public const string IconBrushOff = "\uf0c2";
+    public const string IconBucket = "\uea47";
+    public const string IconBucketDroplet = "\uf56a";
+    public const string IconBucketOff = "\uf103";
+    public const string IconBug = "\uea48";
+    public const string IconBugOff = "\uf0c3";
+    public const string IconBuilding = "\uea4f";
+    public const string IconBuildingArch = "\uea49";
+    public const string IconBuildingBank = "\uebe2";
+    public const string IconBuildingBridge = "\uea4b";
+    public const string IconBuildingBridge2 = "\uea4a";
+    public const string IconBuildingBroadcastTower = "\uf4be";
+    public const string IconBuildingCarousel = "\ued87";
+    public const string IconBuildingCastle = "\ued88";
+    public const string IconBuildingChurch = "\uea4c";
+    public const string IconBuildingCircus = "\uf4bf";
+    public const string IconBuildingCommunity = "\uebf6";
+    public const string IconBuildingCottage = "\uee1b";
+    public const string IconBuildingEstate = "\uf5a5";
+    public const string IconBuildingFactory = "\uee1c";
+    public const string IconBuildingFactory2 = "\uf082";
+    public const string IconBuildingFortress = "\ued89";
+    public const string IconBuildingHospital = "\uea4d";
+    public const string IconBuildingLighthouse = "\ued8a";
+    public const string IconBuildingMonument = "\ued26";
+    public const string IconBuildingMosque = "\ufa57";
+    public const string IconBuildingPavilion = "\uebf7";
+    public const string IconBuildingSkyscraper = "\uec39";
+    public const string IconBuildingStadium = "\uf641";
+    public const string IconBuildingStore = "\uea4e";
+    public const string IconBuildingTunnel = "\uf5a6";
+    public const string IconBuildingWarehouse = "\uebe3";
+    public const string IconBuildingWindTurbine = "\uf4c0";
+    public const string IconBulb = "\uea51";
+    public const string IconBulbFilled = "\uf66a";
+    public const string IconBulbOff = "\uea50";
+    public const string IconBulldozer = "\uee1d";
+    public const string IconBus = "\uebe4";
+    public const string IconBusOff = "\uf3ce";
+    public const string IconBusStop = "\uf2d4";
+    public const string IconBusinessplan = "\uee1e";
+    public const string IconButterfly = "\uefd9";
+    public const string IconCactus = "\uf21b";
+    public const string IconCactusFilled = "\ufb25";
+    public const string IconCactusOff = "\uf3cf";
+    public const string IconCake = "\uf00f";
+    public const string IconCakeOff = "\uf104";
+    public const string IconCalculator = "\ueb80";
+    public const string IconCalculatorFilled = "\ufb26";
+    public const string IconCalculatorOff = "\uf0c4";
+    public const string IconCalendar = "\uea53";
+    public const string IconCalendarBolt = "\uf822";
+    public const string IconCalendarCancel = "\uf823";
+    public const string IconCalendarCheck = "\uf824";
+    public const string IconCalendarCode = "\uf825";
+    public const string IconCalendarCog = "\uf826";
+    public const string IconCalendarDollar = "\uf827";
+    public const string IconCalendarDown = "\uf828";
+    public const string IconCalendarDue = "\uf621";
+    public const string IconCalendarEvent = "\uea52";
+    public const string IconCalendarExclamation = "\uf829";
+    public const string IconCalendarFilled = "\ufb27";
+    public const string IconCalendarHeart = "\uf82a";
+    public const string IconCalendarMinus = "\uebb9";
+    public const string IconCalendarOff = "\uee1f";
+    public const string IconCalendarPause = "\uf82b";
+    public const string IconCalendarPin = "\uf82c";
+    public const string IconCalendarPlus = "\uebba";
+    public const string IconCalendarQuestion = "\uf82d";
+    public const string IconCalendarRepeat = "\ufad2";
+    public const string IconCalendarSearch = "\uf82e";
+    public const string IconCalendarShare = "\uf82f";
+    public const string IconCalendarStar = "\uf830";
+    public const string IconCalendarStats = "\uee20";
+    public const string IconCalendarTime = "\uee21";
+    public const string IconCalendarUp = "\uf831";
+    public const string IconCalendarX = "\uf832";
+    public const string IconCamera = "\uea54";
+    public const string IconCameraBolt = "\uf833";
+    public const string IconCameraCancel = "\uf834";
+    public const string IconCameraCheck = "\uf835";
+    public const string IconCameraCode = "\uf836";
+    public const string IconCameraCog = "\uf837";
+    public const string IconCameraDollar = "\uf838";
+    public const string IconCameraDown = "\uf839";
+    public const string IconCameraExclamation = "\uf83a";
+    public const string IconCameraFilled = "\ufa37";
+    public const string IconCameraHeart = "\uf83b";
+    public const string IconCameraMinus = "\uec3a";
+    public const string IconCameraOff = "\uecee";
+    public const string IconCameraPause = "\uf83c";
+    public const string IconCameraPin = "\uf83d";
+    public const string IconCameraPlus = "\uec3b";
+    public const string IconCameraQuestion = "\uf83e";
+    public const string IconCameraRotate = "\uee22";
+    public const string IconCameraSearch = "\uf83f";
+    public const string IconCameraSelfie = "\uee23";
+    public const string IconCameraShare = "\uf840";
+    public const string IconCameraStar = "\uf841";
+    public const string IconCameraUp = "\uf842";
+    public const string IconCameraX = "\uf843";
+    public const string IconCamper = "\ufa25";
+    public const string IconCampfire = "\uf5a7";
+    public const string IconCampfireFilled = "\ufb28";
+    public const string IconCandle = "\uefc6";
+    public const string IconCandleFilled = "\ufc23";
+    public const string IconCandy = "\uef0d";
+    public const string IconCandyOff = "\uf0c5";
+    public const string IconCane = "\uf50f";
+    public const string IconCannabis = "\uf4c1";
+    public const string IconCapsule = "\ufae3";
+    public const string IconCapsuleFilled = "\ufc24";
+    public const string IconCapsuleHorizontal = "\ufae2";
+    public const string IconCapsuleHorizontalFilled = "\ufc25";
+    public const string IconCapture = "\uec3c";
+    public const string IconCaptureFilled = "\ufb29";
+    public const string IconCaptureOff = "\uf0c6";
+    public const string IconCar = "\uebbb";
+    public const string IconCarCrane = "\uef25";
+    public const string IconCarCrash = "\uefa4";
+    public const string IconCarOff = "\uf0c7";
+    public const string IconCarTurbine = "\uf4fd";
+    public const string IconCaravan = "\uec7c";
+    public const string IconCardboards = "\ued74";
+    public const string IconCardboardsOff = "\uf0c8";
+    public const string IconCards = "\uf510";
+    public const string IconCardsFilled = "\ufc26";
+    public const string IconCaretDown = "\ueb5d";
+    public const string IconCaretDownFilled = "\ufb2a";
+    public const string IconCaretLeft = "\ueb5e";
+    public const string IconCaretLeftFilled = "\ufb2b";
+    public const string IconCaretRight = "\ueb5f";
+    public const string IconCaretRightFilled = "\ufb2c";
+    public const string IconCaretUp = "\ueb60";
+    public const string IconCaretUpFilled = "\ufb2d";
+    public const string IconCarouselHorizontal = "\uf659";
+    public const string IconCarouselHorizontalFilled = "\ufa92";
+    public const string IconCarouselVertical = "\uf65a";
+    public const string IconCarouselVerticalFilled = "\ufa93";
+    public const string IconCarrot = "\uf21c";
+    public const string IconCarrotOff = "\uf3d0";
+    public const string IconCash = "\uea55";
+    public const string IconCashBanknote = "\uee25";
+    public const string IconCashBanknoteOff = "\uee24";
+    public const string IconCashOff = "\uf105";
+    public const string IconCast = "\uea56";
+    public const string IconCastOff = "\uf0c9";
+    public const string IconCat = "\uf65b";
+    public const string IconCategory = "\uf1f6";
+    public const string IconCategory2 = "\uf1f5";
+    public const string IconCategoryFilled = "\ufb2e";
+    public const string IconCe = "\ued75";
+    public const string IconCeOff = "\uf0ca";
+    public const string IconCell = "\uf05f";
+    public const string IconCellSignal1 = "\uf083";
+    public const string IconCellSignal2 = "\uf084";
+    public const string IconCellSignal3 = "\uf085";
+    public const string IconCellSignal4 = "\uf086";
+    public const string IconCellSignal5 = "\uf087";
+    public const string IconCellSignalOff = "\uf088";
+    public const string IconCertificate = "\ued76";
+    public const string IconCertificate2 = "\uf073";
+    public const string IconCertificate2Off = "\uf0cb";
+    public const string IconCertificateOff = "\uf0cc";
+    public const string IconChairDirector = "\uf2d5";
+    public const string IconChalkboard = "\uf34d";
+    public const string IconChalkboardOff = "\uf3d1";
+    public const string IconChargingPile = "\uee26";
+    public const string IconChartArcs = "\uee28";
+    public const string IconChartArcs3 = "\uee27";
+    public const string IconChartArea = "\uea58";
+    public const string IconChartAreaFilled = "\uf66b";
+    public const string IconChartAreaLine = "\uea57";
+    public const string IconChartAreaLineFilled = "\uf66c";
+    public const string IconChartArrows = "\uee2a";
+    public const string IconChartArrowsVertical = "\uee29";
+    public const string IconChartBar = "\uea59";
+    public const string IconChartBarOff = "\uf3d2";
+    public const string IconChartBubble = "\uec75";
+    public const string IconChartBubbleFilled = "\uf66d";
+    public const string IconChartCandle = "\uea5a";
+    public const string IconChartCandleFilled = "\uf66e";
+    public const string IconChartCircles = "\uee2b";
+    public const string IconChartDonut = "\uea5b";
+    public const string IconChartDonut2 = "\uee2c";
+    public const string IconChartDonut3 = "\uee2d";
+    public const string IconChartDonut4 = "\uee2e";
+    public const string IconChartDonutFilled = "\uf66f";
+    public const string IconChartDots = "\uee2f";
+    public const string IconChartDots2 = "\uf097";
+    public const string IconChartDots3 = "\uf098";
+    public const string IconChartGridDots = "\uf4c2";
+    public const string IconChartHistogram = "\uf65c";
+    public const string IconChartInfographic = "\uee30";
+    public const string IconChartLine = "\uea5c";
+    public const string IconChartPie = "\uea5d";
+    public const string IconChartPie2 = "\uee31";
+    public const string IconChartPie3 = "\uee32";
+    public const string IconChartPie4 = "\uee33";
+    public const string IconChartPieFilled = "\uf670";
+    public const string IconChartPieOff = "\uf3d3";
+    public const string IconChartPpf = "\uf618";
+    public const string IconChartRadar = "\ued77";
+    public const string IconChartSankey = "\uf619";
+    public const string IconChartTreemap = "\uf381";
+    public const string IconCheck = "\uea5e";
+    public const string IconCheckbox = "\ueba6";
+    public const string IconChecklist = "\uf074";
+    public const string IconChecks = "\uebaa";
+    public const string IconCheckupList = "\uef5a";
+    public const string IconCheese = "\uef26";
+    public const string IconChefHat = "\uf21d";
+    public const string IconChefHatOff = "\uf3d4";
+    public const string IconCherry = "\uf511";
+    public const string IconCherryFilled = "\uf728";
+    public const string IconChess = "\uf382";
+    public const string IconChessBishop = "\uf56b";
+    public const string IconChessBishopFilled = "\uf729";
+    public const string IconChessFilled = "\uf72a";
+    public const string IconChessKing = "\uf56c";
+    public const string IconChessKingFilled = "\uf72b";
+    public const string IconChessKnight = "\uf56d";
+    public const string IconChessKnightFilled = "\uf72c";
+    public const string IconChessQueen = "\uf56e";
+    public const string IconChessQueenFilled = "\uf72d";
+    public const string IconChessRook = "\uf56f";
+    public const string IconChessRookFilled = "\uf72e";
+    public const string IconChevronCompactDown = "\ufaf0";
+    public const string IconChevronCompactLeft = "\ufaf1";
+    public const string IconChevronCompactRight = "\ufaf2";
+    public const string IconChevronCompactUp = "\ufaf3";
+    public const string IconChevronDown = "\uea5f";
+    public const string IconChevronDownLeft = "\ued09";
+    public const string IconChevronDownRight = "\ued0a";
+    public const string IconChevronLeft = "\uea60";
+    public const string IconChevronLeftPipe = "\ufae4";
+    public const string IconChevronRight = "\uea61";
+    public const string IconChevronRightPipe = "\ufae5";
+    public const string IconChevronUp = "\uea62";
+    public const string IconChevronUpLeft = "\ued0b";
+    public const string IconChevronUpRight = "\ued0c";
+    public const string IconChevronsDown = "\uea63";
+    public const string IconChevronsDownLeft = "\ued0d";
+    public const string IconChevronsDownRight = "\ued0e";
+    public const string IconChevronsLeft = "\uea64";
+    public const string IconChevronsRight = "\uea65";
+    public const string IconChevronsUp = "\uea66";
+    public const string IconChevronsUpLeft = "\ued0f";
+    public const string IconChevronsUpRight = "\ued10";
+    public const string IconChisel = "\uf383";
+    public const string IconChristmasTree = "\ued78";
+    public const string IconChristmasTreeOff = "\uf3d5";
+    public const string IconCircle = "\uea6b";
+    public const string IconCircle0Filled = "\uf72f";
+    public const string IconCircle1Filled = "\uf730";
+    public const string IconCircle2Filled = "\uf731";
+    public const string IconCircle3Filled = "\uf732";
+    public const string IconCircle4Filled = "\uf733";
+    public const string IconCircle5Filled = "\uf734";
+    public const string IconCircle6Filled = "\uf735";
+    public const string IconCircle7Filled = "\uf736";
+    public const string IconCircle8Filled = "\uf737";
+    public const string IconCircle9Filled = "\uf738";
+    public const string IconCircleArrowDown = "\uf6f9";
+    public const string IconCircleArrowDownFilled = "\uf6f4";
+    public const string IconCircleArrowDownLeft = "\uf6f6";
+    public const string IconCircleArrowDownLeftFilled = "\uf6f5";
+    public const string IconCircleArrowDownRight = "\uf6f8";
+    public const string IconCircleArrowDownRightFilled = "\uf6f7";
+    public const string IconCircleArrowLeft = "\uf6fb";
+    public const string IconCircleArrowLeftFilled = "\uf6fa";
+    public const string IconCircleArrowRight = "\uf6fd";
+    public const string IconCircleArrowRightFilled = "\uf6fc";
+    public const string IconCircleArrowUp = "\uf703";
+    public const string IconCircleArrowUpFilled = "\uf6fe";
+    public const string IconCircleArrowUpLeft = "\uf700";
+    public const string IconCircleArrowUpLeftFilled = "\uf6ff";
+    public const string IconCircleArrowUpRight = "\uf702";
+    public const string IconCircleArrowUpRightFilled = "\uf701";
+    public const string IconCircleCaretDown = "\uf4a9";
+    public const string IconCircleCaretLeft = "\uf4aa";
+    public const string IconCircleCaretRight = "\uf4ab";
+    public const string IconCircleCaretUp = "\uf4ac";
+    public const string IconCircleCheck = "\uea67";
+    public const string IconCircleCheckFilled = "\uf704";
+    public const string IconCircleChevronDown = "\uf622";
+    public const string IconCircleChevronLeft = "\uf623";
+    public const string IconCircleChevronRight = "\uf624";
+    public const string IconCircleChevronUp = "\uf625";
+    public const string IconCircleChevronsDown = "\uf642";
+    public const string IconCircleChevronsLeft = "\uf643";
+    public const string IconCircleChevronsRight = "\uf644";
+    public const string IconCircleChevronsUp = "\uf645";
+    public const string IconCircleDashed = "\ued27";
+    public const string IconCircleDot = "\uefb1";
+    public const string IconCircleDotFilled = "\uf705";
+    public const string IconCircleDotted = "\ued28";
+    public const string IconCircleFilled = "\uf671";
+    public const string IconCircleHalf = "\uee3f";
+    public const string IconCircleHalf2 = "\ueff3";
+    public const string IconCircleHalfVertical = "\uee3e";
+    public const string IconCircleKey = "\uf633";
+    public const string IconCircleKeyFilled = "\uf706";
+    public const string IconCircleLetterA = "\uf441";
+    public const string IconCircleLetterB = "\uf442";
+    public const string IconCircleLetterC = "\uf443";
+    public const string IconCircleLetterD = "\uf444";
+    public const string IconCircleLetterE = "\uf445";
+    public const string IconCircleLetterF = "\uf446";
+    public const string IconCircleLetterG = "\uf447";
+    public const string IconCircleLetterH = "\uf448";
+    public const string IconCircleLetterI = "\uf449";
+    public const string IconCircleLetterJ = "\uf44a";
+    public const string IconCircleLetterK = "\uf44b";
+    public const string IconCircleLetterL = "\uf44c";
+    public const string IconCircleLetterM = "\uf44d";
+    public const string IconCircleLetterN = "\uf44e";
+    public const string IconCircleLetterO = "\uf44f";
+    public const string IconCircleLetterP = "\uf450";
+    public const string IconCircleLetterQ = "\uf451";
+    public const string IconCircleLetterR = "\uf452";
+    public const string IconCircleLetterS = "\uf453";
+    public const string IconCircleLetterT = "\uf454";
+    public const string IconCircleLetterU = "\uf455";
+    public const string IconCircleLetterV = "\uf4ad";
+    public const string IconCircleLetterW = "\uf456";
+    public const string IconCircleLetterX = "\uf4ae";
+    public const string IconCircleLetterY = "\uf457";
+    public const string IconCircleLetterZ = "\uf458";
+    public const string IconCircleMinus = "\uea68";
+    public const string IconCircleNumber0 = "\uee34";
+    public const string IconCircleNumber1 = "\uee35";
+    public const string IconCircleNumber2 = "\uee36";
+    public const string IconCircleNumber3 = "\uee37";
+    public const string IconCircleNumber4 = "\uee38";
+    public const string IconCircleNumber5 = "\uee39";
+    public const string IconCircleNumber6 = "\uee3a";
+    public const string IconCircleNumber7 = "\uee3b";
+    public const string IconCircleNumber8 = "\uee3c";
+    public const string IconCircleNumber9 = "\uee3d";
+    public const string IconCircleOff = "\uee40";
+    public const string IconCirclePlus = "\uea69";
+    public const string IconCircleRectangle = "\uf010";
+    public const string IconCircleRectangleOff = "\uf0cd";
+    public const string IconCircleSquare = "\uece4";
+    public const string IconCircleTriangle = "\uf011";
+    public const string IconCircleX = "\uea6a";
+    public const string IconCircleXFilled = "\uf739";
+    public const string IconCircles = "\uece5";
+    public const string IconCirclesFilled = "\uf672";
+    public const string IconCirclesRelation = "\uf4c3";
+    public const string IconCircuitAmmeter = "\uf271";
+    public const string IconCircuitBattery = "\uf272";
+    public const string IconCircuitBulb = "\uf273";
+    public const string IconCircuitCapacitor = "\uf275";
+    public const string IconCircuitCapacitorPolarized = "\uf274";
+    public const string IconCircuitCell = "\uf277";
+    public const string IconCircuitCellPlus = "\uf276";
+    public const string IconCircuitChangeover = "\uf278";
+    public const string IconCircuitDiode = "\uf27a";
+    public const string IconCircuitDiodeZener = "\uf279";
+    public const string IconCircuitGround = "\uf27c";
+    public const string IconCircuitGroundDigital = "\uf27b";
+    public const string IconCircuitInductor = "\uf27d";
+    public const string IconCircuitMotor = "\uf27e";
+    public const string IconCircuitPushbutton = "\uf27f";
+    public const string IconCircuitResistor = "\uf280";
+    public const string IconCircuitSwitchClosed = "\uf281";
+    public const string IconCircuitSwitchOpen = "\uf282";
+    public const string IconCircuitVoltmeter = "\uf283";
+    public const string IconClearAll = "\uee41";
+    public const string IconClearFormatting = "\uebe5";
+    public const string IconClick = "\uebbc";
+    public const string IconClipboard = "\uea6f";
+    public const string IconClipboardCheck = "\uea6c";
+    public const string IconClipboardCopy = "\uf299";
+    public const string IconClipboardData = "\uf563";
+    public const string IconClipboardHeart = "\uf34e";
+    public const string IconClipboardList = "\uea6d";
+    public const string IconClipboardOff = "\uf0ce";
+    public const string IconClipboardPlus = "\uefb2";
+    public const string IconClipboardText = "\uf089";
+    public const string IconClipboardTypography = "\uf34f";
+    public const string IconClipboardX = "\uea6e";
+    public const string IconClock = "\uea70";
+    public const string IconClock2 = "\uf099";
+    public const string IconClockBolt = "\uf844";
+    public const string IconClockCancel = "\uf546";
+    public const string IconClockCheck = "\uf7c1";
+    public const string IconClockCode = "\uf845";
+    public const string IconClockCog = "\uf7c2";
+    public const string IconClockDollar = "\uf846";
+    public const string IconClockDown = "\uf7c3";
+    public const string IconClockEdit = "\uf547";
+    public const string IconClockExclamation = "\uf847";
+    public const string IconClockFilled = "\uf73a";
+    public const string IconClockHeart = "\uf7c4";
+    public const string IconClockHour1 = "\uf313";
+    public const string IconClockHour10 = "\uf314";
+    public const string IconClockHour11 = "\uf315";
+    public const string IconClockHour12 = "\uf316";
+    public const string IconClockHour2 = "\uf317";
+    public const string IconClockHour3 = "\uf318";
+    public const string IconClockHour4 = "\uf319";
+    public const string IconClockHour5 = "\uf31a";
+    public const string IconClockHour6 = "\uf31b";
+    public const string IconClockHour7 = "\uf31c";
+    public const string IconClockHour8 = "\uf31d";
+    public const string IconClockHour9 = "\uf31e";
+    public const string IconClockMinus = "\uf848";
+    public const string IconClockOff = "\uf0cf";
+    public const string IconClockPause = "\uf548";
+    public const string IconClockPin = "\uf849";
+    public const string IconClockPlay = "\uf549";
+    public const string IconClockPlus = "\uf7c5";
+    public const string IconClockQuestion = "\uf7c6";
+    public const string IconClockRecord = "\uf54a";
+    public const string IconClockSearch = "\uf7c7";
+    public const string IconClockShare = "\uf84a";
+    public const string IconClockShield = "\uf7c8";
+    public const string IconClockStar = "\uf7c9";
+    public const string IconClockStop = "\uf54b";
+    public const string IconClockUp = "\uf7ca";
+    public const string IconClockX = "\uf7cb";
+    public const string IconClothesRack = "\uf285";
+    public const string IconClothesRackOff = "\uf3d6";
+    public const string IconCloud = "\uea76";
+    public const string IconCloudBolt = "\uf84b";
+    public const string IconCloudCancel = "\uf84c";
+    public const string IconCloudCheck = "\uf84d";
+    public const string IconCloudCode = "\uf84e";
+    public const string IconCloudCog = "\uf84f";
+    public const string IconCloudComputing = "\uf1d0";
+    public const string IconCloudDataConnection = "\uf1d1";
+    public const string IconCloudDollar = "\uf850";
+    public const string IconCloudDown = "\uf851";
+    public const string IconCloudDownload = "\uea71";
+    public const string IconCloudExclamation = "\uf852";
+    public const string IconCloudFilled = "\uf673";
+    public const string IconCloudFog = "\uecd9";
+    public const string IconCloudHeart = "\uf853";
+    public const string IconCloudLock = "\uefdb";
+    public const string IconCloudLockOpen = "\uefda";
+    public const string IconCloudMinus = "\uf854";
+    public const string IconCloudOff = "\ued3e";
+    public const string IconCloudPause = "\uf855";
+    public const string IconCloudPin = "\uf856";
+    public const string IconCloudPlus = "\uf857";
+    public const string IconCloudQuestion = "\uf858";
+    public const string IconCloudRain = "\uea72";
+    public const string IconCloudSearch = "\uf859";
+    public const string IconCloudShare = "\uf85a";
+    public const string IconCloudSnow = "\uea73";
+    public const string IconCloudStar = "\uf85b";
+    public const string IconCloudStorm = "\uea74";
+    public const string IconCloudUp = "\uf85c";
+    public const string IconCloudUpload = "\uea75";
+    public const string IconCloudX = "\uf85d";
+    public const string IconClover = "\uf1ea";
+    public const string IconClover2 = "\uf21e";
+    public const string IconClubs = "\ueff4";
+    public const string IconClubsFilled = "\uf674";
+    public const string IconCode = "\uea77";
+    public const string IconCodeAsterix = "\uf312";
+    public const string IconCodeCircle = "\uf4ff";
+    public const string IconCodeCircle2 = "\uf4fe";
+    public const string IconCodeDots = "\uf61a";
+    public const string IconCodeMinus = "\uee42";
+    public const string IconCodeOff = "\uf0d0";
+    public const string IconCodePlus = "\uee43";
+    public const string IconCoffee = "\uef0e";
+    public const string IconCoffeeOff = "\uf106";
+    public const string IconCoffin = "\uf579";
+    public const string IconCoin = "\ueb82";
+    public const string IconCoinBitcoin = "\uf2be";
+    public const string IconCoinEuro = "\uf2bf";
+    public const string IconCoinMonero = "\uf4a0";
+    public const string IconCoinOff = "\uf0d1";
+    public const string IconCoinPound = "\uf2c0";
+    public const string IconCoinRupee = "\uf2c1";
+    public const string IconCoinYen = "\uf2c2";
+    public const string IconCoinYuan = "\uf2c3";
+    public const string IconCoins = "\uf65d";
+    public const string IconColorFilter = "\uf5a8";
+    public const string IconColorPicker = "\uebe6";
+    public const string IconColorPickerOff = "\uf0d2";
+    public const string IconColorSwatch = "\ueb61";
+    public const string IconColorSwatchOff = "\uf0d3";
+    public const string IconColumnInsertLeft = "\uee44";
+    public const string IconColumnInsertRight = "\uee45";
+    public const string IconColumnRemove = "\ufaf4";
+    public const string IconColumns = "\ueb83";
+    public const string IconColumns1 = "\uf6d4";
+    public const string IconColumns2 = "\uf6d5";
+    public const string IconColumns3 = "\uf6d6";
+    public const string IconColumnsOff = "\uf0d4";
+    public const string IconComet = "\uec76";
+    public const string IconCommand = "\uea78";
+    public const string IconCommandOff = "\uf3d7";
+    public const string IconCompass = "\uea79";
+    public const string IconCompassOff = "\uf0d5";
+    public const string IconComponents = "\uefa5";
+    public const string IconComponentsOff = "\uf0d6";
+    public const string IconCone = "\uefdd";
+    public const string IconCone2 = "\uefdc";
+    public const string IconConeOff = "\uf3d8";
+    public const string IconConePlus = "\ufa94";
+    public const string IconConfetti = "\uee46";
+    public const string IconConfettiOff = "\uf3d9";
+    public const string IconConfucius = "\uf58a";
+    public const string IconContainer = "\uee47";
+    public const string IconContainerOff = "\uf107";
+    public const string IconContrast = "\uec4e";
+    public const string IconContrast2 = "\uefc7";
+    public const string IconContrast2Off = "\uf3da";
+    public const string IconContrastOff = "\uf3db";
+    public const string IconCooker = "\uf57a";
+    public const string IconCookie = "\uef0f";
+    public const string IconCookieMan = "\uf4c4";
+    public const string IconCookieOff = "\uf0d7";
+    public const string IconCopy = "\uea7a";
+    public const string IconCopyOff = "\uf0d8";
+    public const string IconCopyleft = "\uec3d";
+    public const string IconCopyleftFilled = "\uf73b";
+    public const string IconCopyleftOff = "\uf0d9";
+    public const string IconCopyright = "\uea7b";
+    public const string IconCopyrightFilled = "\uf73c";
+    public const string IconCopyrightOff = "\uf0da";
+    public const string IconCornerDownLeft = "\uea7c";
+    public const string IconCornerDownLeftDouble = "\uee48";
+    public const string IconCornerDownRight = "\uea7d";
+    public const string IconCornerDownRightDouble = "\uee49";
+    public const string IconCornerLeftDown = "\uea7e";
+    public const string IconCornerLeftDownDouble = "\uee4a";
+    public const string IconCornerLeftUp = "\uea7f";
+    public const string IconCornerLeftUpDouble = "\uee4b";
+    public const string IconCornerRightDown = "\uea80";
+    public const string IconCornerRightDownDouble = "\uee4c";
+    public const string IconCornerRightUp = "\uea81";
+    public const string IconCornerRightUpDouble = "\uee4d";
+    public const string IconCornerUpLeft = "\uea82";
+    public const string IconCornerUpLeftDouble = "\uee4e";
+    public const string IconCornerUpRight = "\uea83";
+    public const string IconCornerUpRightDouble = "\uee4f";
+    public const string IconCpu = "\uef8e";
+    public const string IconCpu2 = "\uf075";
+    public const string IconCpuOff = "\uf108";
+    public const string IconCrane = "\uef27";
+    public const string IconCraneOff = "\uf109";
+    public const string IconCreativeCommons = "\uefb3";
+    public const string IconCreativeCommonsBy = "\uf21f";
+    public const string IconCreativeCommonsNc = "\uf220";
+    public const string IconCreativeCommonsNd = "\uf221";
+    public const string IconCreativeCommonsOff = "\uf10a";
+    public const string IconCreativeCommonsSa = "\uf222";
+    public const string IconCreativeCommonsZero = "\uf223";
+    public const string IconCreditCard = "\uea84";
+    public const string IconCreditCardOff = "\ued11";
+    public const string IconCricket = "\uf09a";
+    public const string IconCrop = "\uea85";
+    public const string IconCross = "\uef8f";
+    public const string IconCrossFilled = "\uf675";
+    public const string IconCrossOff = "\uf10b";
+    public const string IconCrosshair = "\uec3e";
+    public const string IconCrown = "\ued12";
+    public const string IconCrownOff = "\uee50";
+    public const string IconCrutches = "\uef5b";
+    public const string IconCrutchesOff = "\uf10c";
+    public const string IconCrystalBall = "\uf57b";
+    public const string IconCsv = "\uf791";
+    public const string IconCube = "\ufa97";
+    public const string IconCubeOff = "\ufa95";
+    public const string IconCubePlus = "\ufa96";
+    public const string IconCubeSend = "\uf61b";
+    public const string IconCubeUnfolded = "\uf61c";
+    public const string IconCup = "\uef28";
+    public const string IconCupOff = "\uf10d";
+    public const string IconCurling = "\uefc8";
+    public const string IconCurlyLoop = "\uecda";
+    public const string IconCurrency = "\uefa6";
+    public const string IconCurrencyAfghani = "\uf65e";
+    public const string IconCurrencyBahraini = "\uee51";
+    public const string IconCurrencyBaht = "\uf08a";
+    public const string IconCurrencyBitcoin = "\uebab";
+    public const string IconCurrencyCent = "\uee53";
+    public const string IconCurrencyDinar = "\uee54";
+    public const string IconCurrencyDirham = "\uee55";
+    public const string IconCurrencyDogecoin = "\uef4b";
+    public const string IconCurrencyDollar = "\ueb84";
+    public const string IconCurrencyDollarAustralian = "\uee56";
+    public const string IconCurrencyDollarBrunei = "\uf36c";
+    public const string IconCurrencyDollarCanadian = "\uee57";
+    public const string IconCurrencyDollarGuyanese = "\uf36d";
+    public const string IconCurrencyDollarOff = "\uf3dc";
+    public const string IconCurrencyDollarSingapore = "\uee58";
+    public const string IconCurrencyDollarZimbabwean = "\uf36e";
+    public const string IconCurrencyDong = "\uf36f";
+    public const string IconCurrencyDram = "\uf370";
+    public const string IconCurrencyEthereum = "\uee59";
+    public const string IconCurrencyEuro = "\ueb85";
+    public const string IconCurrencyEuroOff = "\uf3dd";
+    public const string IconCurrencyFlorin = "\ufaf5";
+    public const string IconCurrencyForint = "\uee5a";
+    public const string IconCurrencyFrank = "\uee5b";
+    public const string IconCurrencyGuarani = "\uf371";
+    public const string IconCurrencyHryvnia = "\uf372";
+    public const string IconCurrencyIranianRial = "\ufa58";
+    public const string IconCurrencyKip = "\uf373";
+    public const string IconCurrencyKroneCzech = "\uee5c";
+    public const string IconCurrencyKroneDanish = "\uee5d";
+    public const string IconCurrencyKroneSwedish = "\uee5e";
+    public const string IconCurrencyLari = "\uf374";
+    public const string IconCurrencyLeu = "\uee5f";
+    public const string IconCurrencyLira = "\uee60";
+    public const string IconCurrencyLitecoin = "\uee61";
+    public const string IconCurrencyLyd = "\uf375";
+    public const string IconCurrencyManat = "\uf376";
+    public const string IconCurrencyMonero = "\uf377";
+    public const string IconCurrencyNaira = "\uee62";
+    public const string IconCurrencyNano = "\uf7a6";
+    public const string IconCurrencyOff = "\uf3de";
+    public const string IconCurrencyPaanga = "\uf378";
+    public const string IconCurrencyPeso = "\uf65f";
+    public const string IconCurrencyPound = "\uebac";
+    public const string IconCurrencyPoundOff = "\uf3df";
+    public const string IconCurrencyQuetzal = "\uf379";
+    public const string IconCurrencyReal = "\uee63";
+    public const string IconCurrencyRenminbi = "\uee64";
+    public const string IconCurrencyRipple = "\uee65";
+    public const string IconCurrencyRiyal = "\uee66";
+    public const string IconCurrencyRubel = "\uee67";
+    public const string IconCurrencyRufiyaa = "\uf37a";
+    public const string IconCurrencyRupee = "\uebad";
+    public const string IconCurrencyRupeeNepalese = "\uf37b";
+    public const string IconCurrencyShekel = "\uee68";
+    public const string IconCurrencySolana = "\uf4a1";
+    public const string IconCurrencySom = "\uf37c";
+    public const string IconCurrencyTaka = "\uee69";
+    public const string IconCurrencyTenge = "\uf37d";
+    public const string IconCurrencyTugrik = "\uee6a";
+    public const string IconCurrencyWon = "\uee6b";
+    public const string IconCurrencyYen = "\uebae";
+    public const string IconCurrencyYenOff = "\uf3e0";
+    public const string IconCurrencyYuan = "\uf29a";
+    public const string IconCurrencyZloty = "\uee6c";
+    public const string IconCurrentLocation = "\uecef";
+    public const string IconCurrentLocationOff = "\uf10e";
+    public const string IconCursorOff = "\uf10f";
+    public const string IconCursorText = "\uee6d";
+    public const string IconCut = "\uea86";
+    public const string IconCylinder = "\uf54c";
+    public const string IconCylinderOff = "\ufa98";
+    public const string IconCylinderPlus = "\ufa99";
+    public const string IconDashboard = "\uea87";
+    public const string IconDashboardOff = "\uf3e1";
+    public const string IconDatabase = "\uea88";
+    public const string IconDatabaseCog = "\ufa10";
+    public const string IconDatabaseDollar = "\ufa11";
+    public const string IconDatabaseEdit = "\ufa12";
+    public const string IconDatabaseExclamation = "\ufa13";
+    public const string IconDatabaseExport = "\uee6e";
+    public const string IconDatabaseHeart = "\ufa14";
+    public const string IconDatabaseImport = "\uee6f";
+    public const string IconDatabaseLeak = "\ufa15";
+    public const string IconDatabaseMinus = "\ufa16";
+    public const string IconDatabaseOff = "\uee70";
+    public const string IconDatabasePlus = "\ufa17";
+    public const string IconDatabaseSearch = "\ufa18";
+    public const string IconDatabaseShare = "\ufa19";
+    public const string IconDatabaseStar = "\ufa1a";
+    public const string IconDatabaseX = "\ufa1b";
+    public const string IconDecimal = "\ufa26";
+    public const string IconDeer = "\uf4c5";
+    public const string IconDelta = "\uf53c";
+    public const string IconDental = "\uf025";
+    public const string IconDentalBroken = "\uf286";
+    public const string IconDentalOff = "\uf110";
+    public const string IconDeselect = "\uf9f3";
+    public const string IconDetails = "\uee71";
+    public const string IconDetailsOff = "\uf3e2";
+    public const string IconDeviceAirpods = "\uf5a9";
+    public const string IconDeviceAirpodsCase = "\uf646";
+    public const string IconDeviceAirtag = "\ufae6";
+    public const string IconDeviceAnalytics = "\uee72";
+    public const string IconDeviceAudioTape = "\uee73";
+    public const string IconDeviceCameraPhone = "\uf233";
+    public const string IconDeviceCctv = "\uee74";
+    public const string IconDeviceCctvOff = "\uf3e3";
+    public const string IconDeviceComputerCamera = "\uee76";
+    public const string IconDeviceComputerCameraOff = "\uee75";
+    public const string IconDeviceDesktop = "\uea89";
+    public const string IconDeviceDesktopAnalytics = "\uee77";
+    public const string IconDeviceDesktopBolt = "\uf85e";
+    public const string IconDeviceDesktopCancel = "\uf85f";
+    public const string IconDeviceDesktopCheck = "\uf860";
+    public const string IconDeviceDesktopCode = "\uf861";
+    public const string IconDeviceDesktopCog = "\uf862";
+    public const string IconDeviceDesktopDollar = "\uf863";
+    public const string IconDeviceDesktopDown = "\uf864";
+    public const string IconDeviceDesktopExclamation = "\uf865";
+    public const string IconDeviceDesktopHeart = "\uf866";
+    public const string IconDeviceDesktopMinus = "\uf867";
+    public const string IconDeviceDesktopOff = "\uee78";
+    public const string IconDeviceDesktopPause = "\uf868";
+    public const string IconDeviceDesktopPin = "\uf869";
+    public const string IconDeviceDesktopPlus = "\uf86a";
+    public const string IconDeviceDesktopQuestion = "\uf86b";
+    public const string IconDeviceDesktopSearch = "\uf86c";
+    public const string IconDeviceDesktopShare = "\uf86d";
+    public const string IconDeviceDesktopStar = "\uf86e";
+    public const string IconDeviceDesktopUp = "\uf86f";
+    public const string IconDeviceDesktopX = "\uf870";
+    public const string IconDeviceFloppy = "\ueb62";
+    public const string IconDeviceGamepad = "\ueb63";
+    public const string IconDeviceGamepad2 = "\uf1d2";
+    public const string IconDeviceHeartMonitor = "\uf060";
+    public const string IconDeviceHeartMonitorFilled = "\ufa38";
+    public const string IconDeviceImac = "\uf7a7";
+    public const string IconDeviceImacBolt = "\uf871";
+    public const string IconDeviceImacCancel = "\uf872";
+    public const string IconDeviceImacCheck = "\uf873";
+    public const string IconDeviceImacCode = "\uf874";
+    public const string IconDeviceImacCog = "\uf875";
+    public const string IconDeviceImacDollar = "\uf876";
+    public const string IconDeviceImacDown = "\uf877";
+    public const string IconDeviceImacExclamation = "\uf878";
+    public const string IconDeviceImacHeart = "\uf879";
+    public const string IconDeviceImacMinus = "\uf87a";
+    public const string IconDeviceImacOff = "\uf87b";
+    public const string IconDeviceImacPause = "\uf87c";
+    public const string IconDeviceImacPin = "\uf87d";
+    public const string IconDeviceImacPlus = "\uf87e";
+    public const string IconDeviceImacQuestion = "\uf87f";
+    public const string IconDeviceImacSearch = "\uf880";
+    public const string IconDeviceImacShare = "\uf881";
+    public const string IconDeviceImacStar = "\uf882";
+    public const string IconDeviceImacUp = "\uf883";
+    public const string IconDeviceImacX = "\uf884";
+    public const string IconDeviceIpad = "\uf648";
+    public const string IconDeviceIpadBolt = "\uf885";
+    public const string IconDeviceIpadCancel = "\uf886";
+    public const string IconDeviceIpadCheck = "\uf887";
+    public const string IconDeviceIpadCode = "\uf888";
+    public const string IconDeviceIpadCog = "\uf889";
+    public const string IconDeviceIpadDollar = "\uf88a";
+    public const string IconDeviceIpadDown = "\uf88b";
+    public const string IconDeviceIpadExclamation = "\uf88c";
+    public const string IconDeviceIpadHeart = "\uf88d";
+    public const string IconDeviceIpadHorizontal = "\uf647";
+    public const string IconDeviceIpadHorizontalBolt = "\uf88e";
+    public const string IconDeviceIpadHorizontalCancel = "\uf88f";
+    public const string IconDeviceIpadHorizontalCheck = "\uf890";
+    public const string IconDeviceIpadHorizontalCode = "\uf891";
+    public const string IconDeviceIpadHorizontalCog = "\uf892";
+    public const string IconDeviceIpadHorizontalDollar = "\uf893";
+    public const string IconDeviceIpadHorizontalDown = "\uf894";
+    public const string IconDeviceIpadHorizontalExclamation = "\uf895";
+    public const string IconDeviceIpadHorizontalHeart = "\uf896";
+    public const string IconDeviceIpadHorizontalMinus = "\uf897";
+    public const string IconDeviceIpadHorizontalOff = "\uf898";
+    public const string IconDeviceIpadHorizontalPause = "\uf899";
+    public const string IconDeviceIpadHorizontalPin = "\uf89a";
+    public const string IconDeviceIpadHorizontalPlus = "\uf89b";
+    public const string IconDeviceIpadHorizontalQuestion = "\uf89c";
+    public const string IconDeviceIpadHorizontalSearch = "\uf89d";
+    public const string IconDeviceIpadHorizontalShare = "\uf89e";
+    public const string IconDeviceIpadHorizontalStar = "\uf89f";
+    public const string IconDeviceIpadHorizontalUp = "\uf8a0";
+    public const string IconDeviceIpadHorizontalX = "\uf8a1";
+    public const string IconDeviceIpadMinus = "\uf8a2";
+    public const string IconDeviceIpadOff = "\uf8a3";
+    public const string IconDeviceIpadPause = "\uf8a4";
+    public const string IconDeviceIpadPin = "\uf8a5";
+    public const string IconDeviceIpadPlus = "\uf8a6";
+    public const string IconDeviceIpadQuestion = "\uf8a7";
+    public const string IconDeviceIpadSearch = "\uf8a8";
+    public const string IconDeviceIpadShare = "\uf8a9";
+    public const string IconDeviceIpadStar = "\uf8aa";
+    public const string IconDeviceIpadUp = "\uf8ab";
+    public const string IconDeviceIpadX = "\uf8ac";
+    public const string IconDeviceLandlinePhone = "\uf649";
+    public const string IconDeviceLaptop = "\ueb64";
+    public const string IconDeviceLaptopOff = "\uf061";
+    public const string IconDeviceMobile = "\uea8a";
+    public const string IconDeviceMobileBolt = "\uf8ad";
+    public const string IconDeviceMobileCancel = "\uf8ae";
+    public const string IconDeviceMobileCharging = "\uf224";
+    public const string IconDeviceMobileCheck = "\uf8af";
+    public const string IconDeviceMobileCode = "\uf8b0";
+    public const string IconDeviceMobileCog = "\uf8b1";
+    public const string IconDeviceMobileDollar = "\uf8b2";
+    public const string IconDeviceMobileDown = "\uf8b3";
+    public const string IconDeviceMobileExclamation = "\uf8b4";
+    public const string IconDeviceMobileFilled = "\ufa39";
+    public const string IconDeviceMobileHeart = "\uf8b5";
+    public const string IconDeviceMobileMessage = "\uee79";
+    public const string IconDeviceMobileMinus = "\uf8b6";
+    public const string IconDeviceMobileOff = "\uf062";
+    public const string IconDeviceMobilePause = "\uf8b7";
+    public const string IconDeviceMobilePin = "\uf8b8";
+    public const string IconDeviceMobilePlus = "\uf8b9";
+    public const string IconDeviceMobileQuestion = "\uf8ba";
+    public const string IconDeviceMobileRotated = "\uecdb";
+    public const string IconDeviceMobileSearch = "\uf8bb";
+    public const string IconDeviceMobileShare = "\uf8bc";
+    public const string IconDeviceMobileStar = "\uf8bd";
+    public const string IconDeviceMobileUp = "\uf8be";
+    public const string IconDeviceMobileVibration = "\ueb86";
+    public const string IconDeviceMobileX = "\uf8bf";
+    public const string IconDeviceNintendo = "\uf026";
+    public const string IconDeviceNintendoOff = "\uf111";
+    public const string IconDeviceProjector = "\ufc11";
+    public const string IconDeviceRemote = "\uf792";
+    public const string IconDeviceSdCard = "\uf384";
+    public const string IconDeviceSim = "\uf4b2";
+    public const string IconDeviceSim1 = "\uf4af";
+    public const string IconDeviceSim2 = "\uf4b0";
+    public const string IconDeviceSim3 = "\uf4b1";
+    public const string IconDeviceSpeaker = "\uea8b";
+    public const string IconDeviceSpeakerOff = "\uf112";
+    public const string IconDeviceTablet = "\uea8c";
+    public const string IconDeviceTabletBolt = "\uf8c0";
+    public const string IconDeviceTabletCancel = "\uf8c1";
+    public const string IconDeviceTabletCheck = "\uf8c2";
+    public const string IconDeviceTabletCode = "\uf8c3";
+    public const string IconDeviceTabletCog = "\uf8c4";
+    public const string IconDeviceTabletDollar = "\uf8c5";
+    public const string IconDeviceTabletDown = "\uf8c6";
+    public const string IconDeviceTabletExclamation = "\uf8c7";
+    public const string IconDeviceTabletFilled = "\ufa3a";
+    public const string IconDeviceTabletHeart = "\uf8c8";
+    public const string IconDeviceTabletMinus = "\uf8c9";
+    public const string IconDeviceTabletOff = "\uf063";
+    public const string IconDeviceTabletPause = "\uf8ca";
+    public const string IconDeviceTabletPin = "\uf8cb";
+    public const string IconDeviceTabletPlus = "\uf8cc";
+    public const string IconDeviceTabletQuestion = "\uf8cd";
+    public const string IconDeviceTabletSearch = "\uf8ce";
+    public const string IconDeviceTabletShare = "\uf8cf";
+    public const string IconDeviceTabletStar = "\uf8d0";
+    public const string IconDeviceTabletUp = "\uf8d1";
+    public const string IconDeviceTabletX = "\uf8d2";
+    public const string IconDeviceTv = "\uea8d";
+    public const string IconDeviceTvOff = "\uf064";
+    public const string IconDeviceTvOld = "\uf1d3";
+    public const string IconDeviceVisionPro = "\ufae7";
+    public const string IconDeviceWatch = "\uebf9";
+    public const string IconDeviceWatchBolt = "\uf8d3";
+    public const string IconDeviceWatchCancel = "\uf8d4";
+    public const string IconDeviceWatchCheck = "\uf8d5";
+    public const string IconDeviceWatchCode = "\uf8d6";
+    public const string IconDeviceWatchCog = "\uf8d7";
+    public const string IconDeviceWatchDollar = "\uf8d8";
+    public const string IconDeviceWatchDown = "\uf8d9";
+    public const string IconDeviceWatchExclamation = "\uf8da";
+    public const string IconDeviceWatchHeart = "\uf8db";
+    public const string IconDeviceWatchMinus = "\uf8dc";
+    public const string IconDeviceWatchOff = "\uf065";
+    public const string IconDeviceWatchPause = "\uf8dd";
+    public const string IconDeviceWatchPin = "\uf8de";
+    public const string IconDeviceWatchPlus = "\uf8df";
+    public const string IconDeviceWatchQuestion = "\uf8e0";
+    public const string IconDeviceWatchSearch = "\uf8e1";
+    public const string IconDeviceWatchShare = "\uf8e2";
+    public const string IconDeviceWatchStar = "\uf8e3";
+    public const string IconDeviceWatchStats = "\uef7d";
+    public const string IconDeviceWatchStats2 = "\uef7c";
+    public const string IconDeviceWatchUp = "\uf8e4";
+    public const string IconDeviceWatchX = "\uf8e5";
+    public const string IconDevices = "\ueb87";
+    public const string IconDevices2 = "\ued29";
+    public const string IconDevicesBolt = "\uf8e6";
+    public const string IconDevicesCancel = "\uf8e7";
+    public const string IconDevicesCheck = "\uf8e8";
+    public const string IconDevicesCode = "\uf8e9";
+    public const string IconDevicesCog = "\uf8ea";
+    public const string IconDevicesDollar = "\uf8eb";
+    public const string IconDevicesDown = "\uf8ec";
+    public const string IconDevicesExclamation = "\uf8ed";
+    public const string IconDevicesHeart = "\uf8ee";
+    public const string IconDevicesMinus = "\uf8ef";
+    public const string IconDevicesOff = "\uf3e4";
+    public const string IconDevicesPause = "\uf8f0";
+    public const string IconDevicesPc = "\uee7a";
+    public const string IconDevicesPcOff = "\uf113";
+    public const string IconDevicesPin = "\uf8f1";
+    public const string IconDevicesPlus = "\uf8f2";
+    public const string IconDevicesQuestion = "\uf8f3";
+    public const string IconDevicesSearch = "\uf8f4";
+    public const string IconDevicesShare = "\uf8f5";
+    public const string IconDevicesStar = "\uf8f6";
+    public const string IconDevicesUp = "\uf8f7";
+    public const string IconDevicesX = "\uf8f8";
+    public const string IconDiabolo = "\ufa9c";
+    public const string IconDiaboloOff = "\ufa9a";
+    public const string IconDiaboloPlus = "\ufa9b";
+    public const string IconDialpad = "\uf067";
+    public const string IconDialpadFilled = "\ufa3b";
+    public const string IconDialpadOff = "\uf114";
+    public const string IconDiamond = "\ueb65";
+    public const string IconDiamondFilled = "\uf73d";
+    public const string IconDiamondOff = "\uf115";
+    public const string IconDiamonds = "\ueff5";
+    public const string IconDiamondsFilled = "\uf676";
+    public const string IconDice = "\ueb66";
+    public const string IconDice1 = "\uf08b";
+    public const string IconDice1Filled = "\uf73e";
+    public const string IconDice2 = "\uf08c";
+    public const string IconDice2Filled = "\uf73f";
+    public const string IconDice3 = "\uf08d";
+    public const string IconDice3Filled = "\uf740";
+    public const string IconDice4 = "\uf08e";
+    public const string IconDice4Filled = "\uf741";
+    public const string IconDice5 = "\uf08f";
+    public const string IconDice5Filled = "\uf742";
+    public const string IconDice6 = "\uf090";
+    public const string IconDice6Filled = "\uf743";
+    public const string IconDiceFilled = "\uf744";
+    public const string IconDimensions = "\uee7b";
+    public const string IconDirection = "\uebfb";
+    public const string IconDirectionHorizontal = "\uebfa";
+    public const string IconDirectionSign = "\uf1f7";
+    public const string IconDirectionSignFilled = "\uf745";
+    public const string IconDirectionSignOff = "\uf3e5";
+    public const string IconDirections = "\uea8e";
+    public const string IconDirectionsOff = "\uf116";
+    public const string IconDisabled = "\uea8f";
+    public const string IconDisabled2 = "\uebaf";
+    public const string IconDisabledOff = "\uf117";
+    public const string IconDisc = "\uea90";
+    public const string IconDiscGolf = "\uf385";
+    public const string IconDiscOff = "\uf118";
+    public const string IconDiscount = "\uebbd";
+    public const string IconDiscount2 = "\uee7c";
+    public const string IconDiscount2Off = "\uf3e6";
+    public const string IconDiscountCheck = "\uf1f8";
+    public const string IconDiscountCheckFilled = "\uf746";
+    public const string IconDiscountOff = "\uf3e7";
+    public const string IconDivide = "\ued5c";
+    public const string IconDna = "\uee7d";
+    public const string IconDna2 = "\uef5c";
+    public const string IconDna2Off = "\uf119";
+    public const string IconDnaOff = "\uf11a";
+    public const string IconDog = "\uf660";
+    public const string IconDogBowl = "\uef29";
+    public const string IconDoor = "\uef4e";
+    public const string IconDoorEnter = "\uef4c";
+    public const string IconDoorExit = "\uef4d";
+    public const string IconDoorOff = "\uf11b";
+    public const string IconDots = "\uea95";
+    public const string IconDotsCircleHorizontal = "\uea91";
+    public const string IconDotsDiagonal = "\uea93";
+    public const string IconDotsDiagonal2 = "\uea92";
+    public const string IconDotsVertical = "\uea94";
+    public const string IconDownload = "\uea96";
+    public const string IconDownloadOff = "\uf11c";
+    public const string IconDragDrop = "\ueb89";
+    public const string IconDragDrop2 = "\ueb88";
+    public const string IconDrone = "\ued79";
+    public const string IconDroneOff = "\uee7e";
+    public const string IconDropCircle = "\uefde";
+    public const string IconDroplet = "\uea97";
+    public const string IconDropletBolt = "\uf8f9";
+    public const string IconDropletCancel = "\uf8fa";
+    public const string IconDropletCheck = "\uf8fb";
+    public const string IconDropletCode = "\uf8fc";
+    public const string IconDropletCog = "\uf8fd";
+    public const string IconDropletDollar = "\uf8fe";
+    public const string IconDropletDown = "\uf8ff";
+    public const string IconDropletExclamation = "\uf900";
+    public const string IconDropletFilled = "\uee80";
+    public const string IconDropletHalf = "\uee82";
+    public const string IconDropletHalf2 = "\uee81";
+    public const string IconDropletHalf2Filled = "\ufb6c";
+    public const string IconDropletHalfFilled = "\uf6c5";
+    public const string IconDropletHeart = "\uf901";
+    public const string IconDropletMinus = "\uf902";
+    public const string IconDropletOff = "\uee83";
+    public const string IconDropletPause = "\uf903";
+    public const string IconDropletPin = "\uf904";
+    public const string IconDropletPlus = "\uf905";
+    public const string IconDropletQuestion = "\uf906";
+    public const string IconDropletSearch = "\uf907";
+    public const string IconDropletShare = "\uf908";
+    public const string IconDropletStar = "\uf909";
+    public const string IconDropletUp = "\uf90a";
+    public const string IconDropletX = "\uf90b";
+    public const string IconDroplets = "\ufc12";
+    public const string IconDualScreen = "\ufa59";
+    public const string IconEPassport = "\uf4df";
+    public const string IconEar = "\uebce";
+    public const string IconEarOff = "\uee84";
+    public const string IconEaseIn = "\uf573";
+    public const string IconEaseInControlPoint = "\uf570";
+    public const string IconEaseInOut = "\uf572";
+    public const string IconEaseInOutControlPoints = "\uf571";
+    public const string IconEaseOut = "\uf575";
+    public const string IconEaseOutControlPoint = "\uf574";
+    public const string IconEdit = "\uea98";
+    public const string IconEditCircle = "\uee85";
+    public const string IconEditCircleOff = "\uf11d";
+    public const string IconEditOff = "\uf11e";
+    public const string IconEgg = "\ueb8a";
+    public const string IconEggCracked = "\uf2d6";
+    public const string IconEggFilled = "\uf678";
+    public const string IconEggFried = "\uf386";
+    public const string IconEggOff = "\uf11f";
+    public const string IconEggs = "\uf500";
+    public const string IconElevator = "\uefdf";
+    public const string IconElevatorOff = "\uf3e8";
+    public const string IconEmergencyBed = "\uef5d";
+    public const string IconEmpathize = "\uf29b";
+    public const string IconEmpathizeOff = "\uf3e9";
+    public const string IconEmphasis = "\uebcf";
+    public const string IconEngine = "\uef7e";
+    public const string IconEngineOff = "\uf120";
+    public const string IconEqual = "\uee87";
+    public const string IconEqualDouble = "\uf4e1";
+    public const string IconEqualNot = "\uee86";
+    public const string IconEraser = "\ueb8b";
+    public const string IconEraserOff = "\uf121";
+    public const string IconError404 = "\uf027";
+    public const string IconError404Off = "\uf122";
+    public const string IconEscalator = "\ufb06";
+    public const string IconEscalatorDown = "\ufb04";
+    public const string IconEscalatorUp = "\ufb05";
+    public const string IconExchange = "\uebe7";
+    public const string IconExchangeOff = "\uf123";
+    public const string IconExclamationCircle = "\uf634";
+    public const string IconExclamationMark = "\uefb4";
+    public const string IconExclamationMarkOff = "\uf124";
+    public const string IconExplicit = "\uf256";
+    public const string IconExplicitOff = "\uf3ea";
+    public const string IconExposure = "\ueb8c";
+    public const string IconExposure0 = "\uf29c";
+    public const string IconExposureMinus1 = "\uf29d";
+    public const string IconExposureMinus2 = "\uf29e";
+    public const string IconExposureOff = "\uf3eb";
+    public const string IconExposurePlus1 = "\uf29f";
+    public const string IconExposurePlus2 = "\uf2a0";
+    public const string IconExternalLink = "\uea99";
+    public const string IconExternalLinkOff = "\uf125";
+    public const string IconEye = "\uea9a";
+    public const string IconEyeBolt = "\ufb6d";
+    public const string IconEyeCancel = "\ufb6e";
+    public const string IconEyeCheck = "\uee88";
+    public const string IconEyeClosed = "\uf7ec";
+    public const string IconEyeCode = "\ufb6f";
+    public const string IconEyeCog = "\uf7ed";
+    public const string IconEyeDiscount = "\ufb70";
+    public const string IconEyeDollar = "\ufb71";
+    public const string IconEyeDown = "\ufb72";
+    public const string IconEyeEdit = "\uf7ee";
+    public const string IconEyeExclamation = "\uf7ef";
+    public const string IconEyeFilled = "\uf679";
+    public const string IconEyeHeart = "\uf7f0";
+    public const string IconEyeMinus = "\ufb73";
+    public const string IconEyeOff = "\uecf0";
+    public const string IconEyePause = "\ufb74";
+    public const string IconEyePin = "\ufb75";
+    public const string IconEyePlus = "\ufb76";
+    public const string IconEyeQuestion = "\ufb77";
+    public const string IconEyeSearch = "\ufb78";
+    public const string IconEyeShare = "\ufb79";
+    public const string IconEyeStar = "\ufb7a";
+    public const string IconEyeTable = "\uef5e";
+    public const string IconEyeUp = "\ufb7b";
+    public const string IconEyeX = "\uf7f1";
+    public const string IconEyeglass = "\uee8a";
+    public const string IconEyeglass2 = "\uee89";
+    public const string IconEyeglassOff = "\uf126";
+    public const string IconFaceId = "\uea9b";
+    public const string IconFaceIdError = "\uefa7";
+    public const string IconFaceMask = "\uefb5";
+    public const string IconFaceMaskOff = "\uf127";
+    public const string IconFall = "\uecb9";
+    public const string IconFeather = "\uee8b";
+    public const string IconFeatherOff = "\uf128";
+    public const string IconFence = "\uef2a";
+    public const string IconFenceOff = "\uf129";
+    public const string IconFidgetSpinner = "\uf068";
+    public const string IconFile = "\ueaa4";
+    public const string IconFile3d = "\uf032";
+    public const string IconFileAlert = "\uede6";
+    public const string IconFileAnalytics = "\uede7";
+    public const string IconFileArrowLeft = "\uf033";
+    public const string IconFileArrowRight = "\uf034";
+    public const string IconFileBarcode = "\uf035";
+    public const string IconFileBroken = "\uf501";
+    public const string IconFileCertificate = "\ued4d";
+    public const string IconFileChart = "\uf036";
+    public const string IconFileCheck = "\uea9c";
+    public const string IconFileCode = "\uebd0";
+    public const string IconFileCode2 = "\uede8";
+    public const string IconFileCv = "\ufa5a";
+    public const string IconFileDatabase = "\uf037";
+    public const string IconFileDelta = "\uf53d";
+    public const string IconFileDescription = "\uf028";
+    public const string IconFileDiff = "\uecf1";
+    public const string IconFileDigit = "\uefa8";
+    public const string IconFileDislike = "\ued2a";
+    public const string IconFileDollar = "\uefe0";
+    public const string IconFileDots = "\uf038";
+    public const string IconFileDownload = "\uea9d";
+    public const string IconFileEuro = "\uefe1";
+    public const string IconFileExport = "\uede9";
+    public const string IconFileFilled = "\uf747";
+    public const string IconFileFunction = "\uf53e";
+    public const string IconFileHorizontal = "\uebb0";
+    public const string IconFileImport = "\uedea";
+    public const string IconFileInfinity = "\uf502";
+    public const string IconFileInfo = "\uedec";
+    public const string IconFileInvoice = "\ueb67";
+    public const string IconFileLambda = "\uf53f";
+    public const string IconFileLike = "\ued2b";
+    public const string IconFileMinus = "\uea9e";
+    public const string IconFileMusic = "\uea9f";
+    public const string IconFileOff = "\uecf2";
+    public const string IconFileOrientation = "\uf2a1";
+    public const string IconFilePencil = "\uf039";
+    public const string IconFilePercent = "\uf540";
+    public const string IconFilePhone = "\uecdc";
+    public const string IconFilePlus = "\ueaa0";
+    public const string IconFilePower = "\uf03a";
+    public const string IconFileReport = "\ueded";
+    public const string IconFileRss = "\uf03b";
+    public const string IconFileScissors = "\uf03c";
+    public const string IconFileSearch = "\ued5d";
+    public const string IconFileSettings = "\uf029";
+    public const string IconFileShredder = "\ueaa1";
+    public const string IconFileSignal = "\uf03d";
+    public const string IconFileSpreadsheet = "\uf03e";
+    public const string IconFileStack = "\uf503";
+    public const string IconFileStar = "\uf03f";
+    public const string IconFileSymlink = "\ued53";
+    public const string IconFileText = "\ueaa2";
+    public const string IconFileTextAi = "\ufa27";
+    public const string IconFileTime = "\uf040";
+    public const string IconFileTypeBmp = "\ufb07";
+    public const string IconFileTypeCss = "\ufb08";
+    public const string IconFileTypeCsv = "\ufb09";
+    public const string IconFileTypeDoc = "\ufb0a";
+    public const string IconFileTypeDocx = "\ufb0b";
+    public const string IconFileTypeHtml = "\ufb0c";
+    public const string IconFileTypeJpg = "\ufb0d";
+    public const string IconFileTypeJs = "\ufb0e";
+    public const string IconFileTypeJsx = "\ufb0f";
+    public const string IconFileTypePdf = "\ufb10";
+    public const string IconFileTypePhp = "\ufb11";
+    public const string IconFileTypePng = "\ufb12";
+    public const string IconFileTypePpt = "\ufb13";
+    public const string IconFileTypeRs = "\ufb14";
+    public const string IconFileTypeSql = "\ufb15";
+    public const string IconFileTypeSvg = "\ufb16";
+    public const string IconFileTypeTs = "\ufb17";
+    public const string IconFileTypeTsx = "\ufb18";
+    public const string IconFileTypeTxt = "\ufb19";
+    public const string IconFileTypeVue = "\ufb1a";
+    public const string IconFileTypeXls = "\ufb1b";
+    public const string IconFileTypeXml = "\ufb1c";
+    public const string IconFileTypeZip = "\ufb1d";
+    public const string IconFileTypography = "\uf041";
+    public const string IconFileUnknown = "\uf042";
+    public const string IconFileUpload = "\uec91";
+    public const string IconFileVector = "\uf043";
+    public const string IconFileX = "\ueaa3";
+    public const string IconFileXFilled = "\uf748";
+    public const string IconFileZip = "\ued4e";
+    public const string IconFiles = "\uedef";
+    public const string IconFilesOff = "\uedee";
+    public const string IconFilter = "\ueaa5";
+    public const string IconFilterBolt = "\ufb7c";
+    public const string IconFilterCancel = "\ufb7d";
+    public const string IconFilterCheck = "\ufb7e";
+    public const string IconFilterCode = "\ufb7f";
+    public const string IconFilterCog = "\uf9fe";
+    public const string IconFilterDiscount = "\ufb80";
+    public const string IconFilterDollar = "\uf9ff";
+    public const string IconFilterDown = "\ufb81";
+    public const string IconFilterEdit = "\ufa00";
+    public const string IconFilterExclamation = "\ufb82";
+    public const string IconFilterFilled = "\ufc27";
+    public const string IconFilterHeart = "\ufb83";
+    public const string IconFilterMinus = "\ufa01";
+    public const string IconFilterOff = "\ued2c";
+    public const string IconFilterPause = "\ufb84";
+    public const string IconFilterPin = "\ufb85";
+    public const string IconFilterPlus = "\ufa02";
+    public const string IconFilterQuestion = "\ufb86";
+    public const string IconFilterSearch = "\ufb87";
+    public const string IconFilterShare = "\ufb88";
+    public const string IconFilterStar = "\ufa03";
+    public const string IconFilterUp = "\ufb89";
+    public const string IconFilterX = "\ufa04";
+    public const string IconFilters = "\uf793";
+    public const string IconFingerprint = "\uebd1";
+    public const string IconFingerprintOff = "\uf12a";
+    public const string IconFireExtinguisher = "\ufaf6";
+    public const string IconFireHydrant = "\uf3a9";
+    public const string IconFireHydrantOff = "\uf3ec";
+    public const string IconFiretruck = "\uebe8";
+    public const string IconFirstAidKit = "\uef5f";
+    public const string IconFirstAidKitOff = "\uf3ed";
+    public const string IconFish = "\uef2b";
+    public const string IconFishBone = "\uf287";
+    public const string IconFishChristianity = "\uf58b";
+    public const string IconFishHook = "\uf1f9";
+    public const string IconFishHookOff = "\uf3ee";
+    public const string IconFishOff = "\uf12b";
+    public const string IconFlag = "\ueaa6";
+    public const string IconFlag2 = "\uee8c";
+    public const string IconFlag2Filled = "\uf707";
+    public const string IconFlag2Off = "\uf12c";
+    public const string IconFlag3 = "\uee8d";
+    public const string IconFlag3Filled = "\uf708";
+    public const string IconFlagBolt = "\ufb8a";
+    public const string IconFlagCancel = "\ufb8b";
+    public const string IconFlagCheck = "\ufb8c";
+    public const string IconFlagCode = "\ufb8d";
+    public const string IconFlagCog = "\ufb8e";
+    public const string IconFlagDiscount = "\ufb8f";
+    public const string IconFlagDollar = "\ufb90";
+    public const string IconFlagDown = "\ufb91";
+    public const string IconFlagExclamation = "\ufb92";
+    public const string IconFlagFilled = "\uf67a";
+    public const string IconFlagHeart = "\ufb93";
+    public const string IconFlagMinus = "\ufb94";
+    public const string IconFlagOff = "\uf12d";
+    public const string IconFlagPause = "\ufb95";
+    public const string IconFlagPin = "\ufb96";
+    public const string IconFlagPlus = "\ufb97";
+    public const string IconFlagQuestion = "\ufb98";
+    public const string IconFlagSearch = "\ufb99";
+    public const string IconFlagShare = "\ufb9a";
+    public const string IconFlagStar = "\ufb9b";
+    public const string IconFlagUp = "\ufb9c";
+    public const string IconFlagX = "\ufb9d";
+    public const string IconFlame = "\uec2c";
+    public const string IconFlameOff = "\uf12e";
+    public const string IconFlare = "\uee8e";
+    public const string IconFlask = "\uebd2";
+    public const string IconFlask2 = "\uef60";
+    public const string IconFlask2Off = "\uf12f";
+    public const string IconFlaskOff = "\uf130";
+    public const string IconFlipFlops = "\uf564";
+    public const string IconFlipHorizontal = "\ueaa7";
+    public const string IconFlipVertical = "\ueaa8";
+    public const string IconFloatCenter = "\uebb1";
+    public const string IconFloatLeft = "\uebb2";
+    public const string IconFloatNone = "\ued13";
+    public const string IconFloatRight = "\uebb3";
+    public const string IconFlower = "\ueff6";
+    public const string IconFlowerOff = "\uf131";
+    public const string IconFocus = "\ueb8d";
+    public const string IconFocus2 = "\uebd3";
+    public const string IconFocusAuto = "\ufa62";
+    public const string IconFocusCentered = "\uf02a";
+    public const string IconFold = "\ued56";
+    public const string IconFoldDown = "\ued54";
+    public const string IconFoldUp = "\ued55";
+    public const string IconFolder = "\ueaad";
+    public const string IconFolderBolt = "\uf90c";
+    public const string IconFolderCancel = "\uf90d";
+    public const string IconFolderCheck = "\uf90e";
+    public const string IconFolderCode = "\uf90f";
+    public const string IconFolderCog = "\uf910";
+    public const string IconFolderDollar = "\uf911";
+    public const string IconFolderDown = "\uf912";
+    public const string IconFolderExclamation = "\uf913";
+    public const string IconFolderFilled = "\uf749";
+    public const string IconFolderHeart = "\uf914";
+    public const string IconFolderMinus = "\ueaaa";
+    public const string IconFolderOff = "\ued14";
+    public const string IconFolderOpen = "\ufaf7";
+    public const string IconFolderPause = "\uf915";
+    public const string IconFolderPin = "\uf916";
+    public const string IconFolderPlus = "\ueaab";
+    public const string IconFolderQuestion = "\uf917";
+    public const string IconFolderSearch = "\uf918";
+    public const string IconFolderShare = "\uf919";
+    public const string IconFolderStar = "\uf91a";
+    public const string IconFolderSymlink = "\uf91b";
+    public const string IconFolderUp = "\uf91c";
+    public const string IconFolderX = "\ueaac";
+    public const string IconFolders = "\ueaae";
+    public const string IconFoldersOff = "\uf133";
+    public const string IconForbid = "\uebd5";
+    public const string IconForbid2 = "\uebd4";
+    public const string IconForbid2Filled = "\ufc28";
+    public const string IconForbidFilled = "\ufc29";
+    public const string IconForklift = "\uebe9";
+    public const string IconForms = "\uee8f";
+    public const string IconFountain = "\uf09b";
+    public const string IconFountainFilled = "\ufc2a";
+    public const string IconFountainOff = "\uf134";
+    public const string IconFrame = "\ueaaf";
+    public const string IconFrameOff = "\uf135";
+    public const string IconFreeRights = "\uefb6";
+    public const string IconFreezeColumn = "\ufa63";
+    public const string IconFreezeRow = "\ufa65";
+    public const string IconFreezeRowColumn = "\ufa64";
+    public const string IconFridge = "\uf1fa";
+    public const string IconFridgeOff = "\uf3ef";
+    public const string IconFriends = "\ueab0";
+    public const string IconFriendsOff = "\uf136";
+    public const string IconFrustum = "\ufa9f";
+    public const string IconFrustumOff = "\ufa9d";
+    public const string IconFrustumPlus = "\ufa9e";
+    public const string IconFunction = "\uf225";
+    public const string IconFunctionFilled = "\ufc2b";
+    public const string IconFunctionOff = "\uf3f0";
+    public const string IconGardenCart = "\uf23e";
+    public const string IconGardenCartOff = "\uf3f1";
+    public const string IconGasStation = "\uec7d";
+    public const string IconGasStationOff = "\uf137";
+    public const string IconGauge = "\ueab1";
+    public const string IconGaugeFilled = "\ufc2c";
+    public const string IconGaugeOff = "\uf138";
+    public const string IconGavel = "\uef90";
+    public const string IconGenderAgender = "\uf0e1";
+    public const string IconGenderAndrogyne = "\uf0e2";
+    public const string IconGenderBigender = "\uf0e3";
+    public const string IconGenderDemiboy = "\uf0e4";
+    public const string IconGenderDemigirl = "\uf0e5";
+    public const string IconGenderEpicene = "\uf0e6";
+    public const string IconGenderFemale = "\uf0e7";
+    public const string IconGenderFemme = "\uf0e8";
+    public const string IconGenderGenderfluid = "\uf0e9";
+    public const string IconGenderGenderless = "\uf0ea";
+    public const string IconGenderGenderqueer = "\uf0eb";
+    public const string IconGenderHermaphrodite = "\uf0ec";
+    public const string IconGenderIntergender = "\uf0ed";
+    public const string IconGenderMale = "\uf0ee";
+    public const string IconGenderNeutrois = "\uf0ef";
+    public const string IconGenderThird = "\uf0f0";
+    public const string IconGenderTransgender = "\uf0f1";
+    public const string IconGenderTrasvesti = "\uf0f2";
+    public const string IconGeometry = "\uee90";
+    public const string IconGhost = "\ueb8e";
+    public const string IconGhost2 = "\uf57c";
+    public const string IconGhost2Filled = "\uf74a";
+    public const string IconGhost3 = "\ufc13";
+    public const string IconGhostFilled = "\uf74b";
+    public const string IconGhostOff = "\uf3f2";
+    public const string IconGif = "\uf257";
+    public const string IconGift = "\ueb68";
+    public const string IconGiftCard = "\uf3aa";
+    public const string IconGiftCardFilled = "\ufc2d";
+    public const string IconGiftOff = "\uf3f3";
+    public const string IconGitBranch = "\ueab2";
+    public const string IconGitBranchDeleted = "\uf57d";
+    public const string IconGitCherryPick = "\uf57e";
+    public const string IconGitCommit = "\ueab3";
+    public const string IconGitCompare = "\ueab4";
+    public const string IconGitFork = "\ueb8f";
+    public const string IconGitMerge = "\ueab5";
+    public const string IconGitPullRequest = "\ueab6";
+    public const string IconGitPullRequestClosed = "\uef7f";
+    public const string IconGitPullRequestDraft = "\uefb7";
+    public const string IconGizmo = "\uf02b";
+    public const string IconGlass = "\ueab8";
+    public const string IconGlassFull = "\ueab7";
+    public const string IconGlassFullFilled = "\ufc2e";
+    public const string IconGlassOff = "\uee91";
+    public const string IconGlobe = "\ueab9";
+    public const string IconGlobeFilled = "\ufc2f";
+    public const string IconGlobeOff = "\uf139";
+    public const string IconGoGame = "\uf512";
+    public const string IconGolf = "\ued8c";
+    public const string IconGolfOff = "\uf13a";
+    public const string IconGps = "\ued7a";
+    public const string IconGradienter = "\uf3ab";
+    public const string IconGrain = "\uee92";
+    public const string IconGraph = "\uf288";
+    public const string IconGraphOff = "\uf3f4";
+    public const string IconGrave = "\uf580";
+    public const string IconGrave2 = "\uf57f";
+    public const string IconGridDots = "\ueaba";
+    public const string IconGridPattern = "\uefc9";
+    public const string IconGrill = "\uefa9";
+    public const string IconGrillFork = "\uf35b";
+    public const string IconGrillOff = "\uf3f5";
+    public const string IconGrillSpatula = "\uf35c";
+    public const string IconGripHorizontal = "\uec00";
+    public const string IconGripVertical = "\uec01";
+    public const string IconGrowth = "\uee93";
+    public const string IconGuitarPick = "\uf4c6";
+    public const string IconGuitarPickFilled = "\uf67b";
+    public const string IconH1 = "\uec94";
+    public const string IconH2 = "\uec95";
+    public const string IconH3 = "\uec96";
+    public const string IconH4 = "\uec97";
+    public const string IconH5 = "\uec98";
+    public const string IconH6 = "\uec99";
+    public const string IconHammer = "\uef91";
+    public const string IconHammerOff = "\uf13c";
+    public const string IconHandClick = "\uef4f";
+    public const string IconHandFinger = "\uee94";
+    public const string IconHandFingerOff = "\uf13d";
+    public const string IconHandGrab = "\uf091";
+    public const string IconHandLittleFinger = "\uee95";
+    public const string IconHandMiddleFinger = "\uec2d";
+    public const string IconHandMove = "\uef50";
+    public const string IconHandOff = "\ued15";
+    public const string IconHandRingFinger = "\uee96";
+    public const string IconHandRock = "\uee97";
+    public const string IconHandSanitizer = "\uf5f4";
+    public const string IconHandStop = "\uec2e";
+    public const string IconHandThreeFingers = "\uee98";
+    public const string IconHandTwoFingers = "\uee99";
+    public const string IconHanger = "\uee9a";
+    public const string IconHanger2 = "\uf09c";
+    public const string IconHangerOff = "\uf13e";
+    public const string IconHash = "\ueabc";
+    public const string IconHaze = "\uefaa";
+    public const string IconHazeMoon = "\ufaf8";
+    public const string IconHdr = "\ufa7b";
+    public const string IconHeading = "\uee9b";
+    public const string IconHeadingOff = "\uf13f";
+    public const string IconHeadphones = "\ueabd";
+    public const string IconHeadphonesFilled = "\ufa3c";
+    public const string IconHeadphonesOff = "\ued1d";
+    public const string IconHeadset = "\ueb90";
+    public const string IconHeadsetOff = "\uf3f6";
+    public const string IconHealthRecognition = "\uf1fb";
+    public const string IconHeart = "\ueabe";
+    public const string IconHeartBolt = "\ufb9e";
+    public const string IconHeartBroken = "\uecba";
+    public const string IconHeartCancel = "\ufb9f";
+    public const string IconHeartCheck = "\ufba0";
+    public const string IconHeartCode = "\ufba1";
+    public const string IconHeartCog = "\ufba2";
+    public const string IconHeartDiscount = "\ufba3";
+    public const string IconHeartDollar = "\ufba4";
+    public const string IconHeartDown = "\ufba5";
+    public const string IconHeartExclamation = "\ufba6";
+    public const string IconHeartFilled = "\uf67c";
+    public const string IconHeartHandshake = "\uf0f3";
+    public const string IconHeartMinus = "\uf140";
+    public const string IconHeartOff = "\uf141";
+    public const string IconHeartPause = "\ufba7";
+    public const string IconHeartPin = "\ufba8";
+    public const string IconHeartPlus = "\uf142";
+    public const string IconHeartQuestion = "\ufba9";
+    public const string IconHeartRateMonitor = "\uef61";
+    public const string IconHeartSearch = "\ufbaa";
+    public const string IconHeartShare = "\ufbab";
+    public const string IconHeartStar = "\ufbac";
+    public const string IconHeartUp = "\ufbad";
+    public const string IconHeartX = "\ufbae";
+    public const string IconHeartbeat = "\uef92";
+    public const string IconHearts = "\uf387";
+    public const string IconHeartsOff = "\uf3f7";
+    public const string IconHelicopter = "\ued8e";
+    public const string IconHelicopterLanding = "\ued8d";
+    public const string IconHelmet = "\uefca";
+    public const string IconHelmetOff = "\uf143";
+    public const string IconHelp = "\ueabf";
+    public const string IconHelpCircle = "\uf91d";
+    public const string IconHelpCircleFilled = "\ufa3d";
+    public const string IconHelpHexagon = "\uf7a8";
+    public const string IconHelpHexagonFilled = "\ufa3e";
+    public const string IconHelpOctagon = "\uf7a9";
+    public const string IconHelpOctagonFilled = "\ufa3f";
+    public const string IconHelpOff = "\uf3f8";
+    public const string IconHelpSmall = "\uf91e";
+    public const string IconHelpSquare = "\uf920";
+    public const string IconHelpSquareFilled = "\ufa40";
+    public const string IconHelpSquareRounded = "\uf91f";
+    public const string IconHelpSquareRoundedFilled = "\ufa41";
+    public const string IconHelpTriangle = "\uf921";
+    public const string IconHelpTriangleFilled = "\ufa42";
+    public const string IconHemisphere = "\ufaa2";
+    public const string IconHemisphereOff = "\ufaa0";
+    public const string IconHemispherePlus = "\ufaa1";
+    public const string IconHexagon = "\uec02";
+    public const string IconHexagon0Filled = "\uf74c";
+    public const string IconHexagon1Filled = "\uf74d";
+    public const string IconHexagon2Filled = "\uf74e";
+    public const string IconHexagon3Filled = "\uf74f";
+    public const string IconHexagon3d = "\uf4c7";
+    public const string IconHexagon4Filled = "\uf750";
+    public const string IconHexagon5Filled = "\uf751";
+    public const string IconHexagon6Filled = "\uf752";
+    public const string IconHexagon7Filled = "\uf753";
+    public const string IconHexagon8Filled = "\uf754";
+    public const string IconHexagon9Filled = "\uf755";
+    public const string IconHexagonFilled = "\uf67d";
+    public const string IconHexagonLetterA = "\uf463";
+    public const string IconHexagonLetterB = "\uf464";
+    public const string IconHexagonLetterC = "\uf465";
+    public const string IconHexagonLetterD = "\uf466";
+    public const string IconHexagonLetterE = "\uf467";
+    public const string IconHexagonLetterF = "\uf468";
+    public const string IconHexagonLetterG = "\uf469";
+    public const string IconHexagonLetterH = "\uf46a";
+    public const string IconHexagonLetterI = "\uf46b";
+    public const string IconHexagonLetterJ = "\uf46c";
+    public const string IconHexagonLetterK = "\uf46d";
+    public const string IconHexagonLetterL = "\uf46e";
+    public const string IconHexagonLetterM = "\uf46f";
+    public const string IconHexagonLetterN = "\uf470";
+    public const string IconHexagonLetterO = "\uf471";
+    public const string IconHexagonLetterP = "\uf472";
+    public const string IconHexagonLetterQ = "\uf473";
+    public const string IconHexagonLetterR = "\uf474";
+    public const string IconHexagonLetterS = "\uf475";
+    public const string IconHexagonLetterT = "\uf476";
+    public const string IconHexagonLetterU = "\uf477";
+    public const string IconHexagonLetterV = "\uf4b3";
+    public const string IconHexagonLetterW = "\uf478";
+    public const string IconHexagonLetterX = "\uf479";
+    public const string IconHexagonLetterY = "\uf47a";
+    public const string IconHexagonLetterZ = "\uf47b";
+    public const string IconHexagonNumber0 = "\uf459";
+    public const string IconHexagonNumber1 = "\uf45a";
+    public const string IconHexagonNumber2 = "\uf45b";
+    public const string IconHexagonNumber3 = "\uf45c";
+    public const string IconHexagonNumber4 = "\uf45d";
+    public const string IconHexagonNumber5 = "\uf45e";
+    public const string IconHexagonNumber6 = "\uf45f";
+    public const string IconHexagonNumber7 = "\uf460";
+    public const string IconHexagonNumber8 = "\uf461";
+    public const string IconHexagonNumber9 = "\uf462";
+    public const string IconHexagonOff = "\uee9c";
+    public const string IconHexagonalPrism = "\ufaa5";
+    public const string IconHexagonalPrismOff = "\ufaa3";
+    public const string IconHexagonalPrismPlus = "\ufaa4";
+    public const string IconHexagonalPyramid = "\ufaa8";
+    public const string IconHexagonalPyramidOff = "\ufaa6";
+    public const string IconHexagonalPyramidPlus = "\ufaa7";
+    public const string IconHexagons = "\uf09d";
+    public const string IconHexagonsOff = "\uf3f9";
+    public const string IconHierarchy = "\uee9e";
+    public const string IconHierarchy2 = "\uee9d";
+    public const string IconHierarchy3 = "\uf289";
+    public const string IconHierarchyOff = "\uf3fa";
+    public const string IconHighlight = "\uef3f";
+    public const string IconHighlightOff = "\uf144";
+    public const string IconHistory = "\uebea";
+    public const string IconHistoryOff = "\uf3fb";
+    public const string IconHistoryToggle = "\uf1fc";
+    public const string IconHome = "\ueac1";
+    public const string IconHome2 = "\ueac0";
+    public const string IconHomeBolt = "\uf336";
+    public const string IconHomeCancel = "\uf350";
+    public const string IconHomeCheck = "\uf337";
+    public const string IconHomeCog = "\uf338";
+    public const string IconHomeDollar = "\uf339";
+    public const string IconHomeDot = "\uf33a";
+    public const string IconHomeDown = "\uf33b";
+    public const string IconHomeEco = "\uf351";
+    public const string IconHomeEdit = "\uf352";
+    public const string IconHomeExclamation = "\uf33c";
+    public const string IconHomeHand = "\uf504";
+    public const string IconHomeHeart = "\uf353";
+    public const string IconHomeInfinity = "\uf505";
+    public const string IconHomeLink = "\uf354";
+    public const string IconHomeMinus = "\uf33d";
+    public const string IconHomeMove = "\uf33e";
+    public const string IconHomeOff = "\uf145";
+    public const string IconHomePlus = "\uf33f";
+    public const string IconHomeQuestion = "\uf340";
+    public const string IconHomeRibbon = "\uf355";
+    public const string IconHomeSearch = "\uf341";
+    public const string IconHomeShare = "\uf342";
+    public const string IconHomeShield = "\uf343";
+    public const string IconHomeSignal = "\uf356";
+    public const string IconHomeStar = "\uf344";
+    public const string IconHomeStats = "\uf345";
+    public const string IconHomeUp = "\uf346";
+    public const string IconHomeX = "\uf347";
+    public const string IconHorseToy = "\uf28a";
+    public const string IconHotelService = "\uef80";
+    public const string IconHourglass = "\uef93";
+    public const string IconHourglassEmpty = "\uf146";
+    public const string IconHourglassFilled = "\uf756";
+    public const string IconHourglassHigh = "\uf092";
+    public const string IconHourglassLow = "\uf093";
+    public const string IconHourglassOff = "\uf147";
+    public const string IconHtml = "\uf7b1";
+    public const string IconHttpConnect = "\ufa28";
+    public const string IconHttpDelete = "\ufa29";
+    public const string IconHttpGet = "\ufa2a";
+    public const string IconHttpHead = "\ufa2b";
+    public const string IconHttpOptions = "\ufa2c";
+    public const string IconHttpPatch = "\ufa2d";
+    public const string IconHttpPost = "\ufa2e";
+    public const string IconHttpPut = "\ufa2f";
+    public const string IconHttpQue = "\ufa5b";
+    public const string IconHttpTrace = "\ufa30";
+    public const string IconIceCream = "\ueac2";
+    public const string IconIceCream2 = "\uee9f";
+    public const string IconIceCreamOff = "\uf148";
+    public const string IconIceSkating = "\uefcb";
+    public const string IconIcons = "\uf1d4";
+    public const string IconIconsOff = "\uf3fc";
+    public const string IconId = "\ueac3";
+    public const string IconIdBadge = "\ueff7";
+    public const string IconIdBadge2 = "\uf076";
+    public const string IconIdBadgeOff = "\uf3fd";
+    public const string IconIdOff = "\uf149";
+    public const string IconInbox = "\ueac4";
+    public const string IconInboxOff = "\uf14a";
+    public const string IconIndentDecrease = "\ueb91";
+    public const string IconIndentIncrease = "\ueb92";
+    public const string IconInfinity = "\ueb69";
+    public const string IconInfinityOff = "\uf3fe";
+    public const string IconInfoCircle = "\ueac5";
+    public const string IconInfoCircleFilled = "\uf6d8";
+    public const string IconInfoHexagon = "\uf7aa";
+    public const string IconInfoHexagonFilled = "\ufa43";
+    public const string IconInfoOctagon = "\uf7ab";
+    public const string IconInfoOctagonFilled = "\ufa44";
+    public const string IconInfoSmall = "\uf922";
+    public const string IconInfoSquare = "\ueac6";
+    public const string IconInfoSquareFilled = "\ufa45";
+    public const string IconInfoSquareRounded = "\uf635";
+    public const string IconInfoSquareRoundedFilled = "\uf6d9";
+    public const string IconInfoTriangle = "\uf923";
+    public const string IconInfoTriangleFilled = "\ufa46";
+    public const string IconInnerShadowBottom = "\uf520";
+    public const string IconInnerShadowBottomFilled = "\uf757";
+    public const string IconInnerShadowBottomLeft = "\uf51e";
+    public const string IconInnerShadowBottomLeftFilled = "\uf758";
+    public const string IconInnerShadowBottomRight = "\uf51f";
+    public const string IconInnerShadowBottomRightFilled = "\uf759";
+    public const string IconInnerShadowLeft = "\uf521";
+    public const string IconInnerShadowLeftFilled = "\uf75a";
+    public const string IconInnerShadowRight = "\uf522";
+    public const string IconInnerShadowRightFilled = "\uf75b";
+    public const string IconInnerShadowTop = "\uf525";
+    public const string IconInnerShadowTopFilled = "\uf75c";
+    public const string IconInnerShadowTopLeft = "\uf523";
+    public const string IconInnerShadowTopLeftFilled = "\uf75d";
+    public const string IconInnerShadowTopRight = "\uf524";
+    public const string IconInnerShadowTopRightFilled = "\uf75e";
+    public const string IconInputSearch = "\uf2a2";
+    public const string IconIroning = "\ufa7c";
+    public const string IconIroning1 = "\uf2f4";
+    public const string IconIroning2 = "\uf2f5";
+    public const string IconIroning3 = "\uf2f6";
+    public const string IconIroningOff = "\uf2f7";
+    public const string IconIroningSteam = "\uf2f9";
+    public const string IconIroningSteamOff = "\uf2f8";
+    public const string IconIrregularPolyhedron = "\ufaab";
+    public const string IconIrregularPolyhedronOff = "\ufaa9";
+    public const string IconIrregularPolyhedronPlus = "\ufaaa";
+    public const string IconItalic = "\ueb93";
+    public const string IconJacket = "\uf661";
+    public const string IconJetpack = "\uf581";
+    public const string IconJewishStar = "\uf3ff";
+    public const string IconJewishStarFilled = "\uf67e";
+    public const string IconJpg = "\uf3ac";
+    public const string IconJson = "\uf7b2";
+    public const string IconJumpRope = "\ued8f";
+    public const string IconKarate = "\ued32";
+    public const string IconKayak = "\uf1d6";
+    public const string IconKering = "\uefb8";
+    public const string IconKey = "\ueac7";
+    public const string IconKeyOff = "\uf14b";
+    public const string IconKeyboard = "\uebd6";
+    public const string IconKeyboardHide = "\uec7e";
+    public const string IconKeyboardOff = "\ueea0";
+    public const string IconKeyboardShow = "\uec7f";
+    public const string IconKeyframe = "\uf576";
+    public const string IconKeyframeAlignCenter = "\uf582";
+    public const string IconKeyframeAlignCenterFilled = "\ufc30";
+    public const string IconKeyframeAlignHorizontal = "\uf583";
+    public const string IconKeyframeAlignHorizontalFilled = "\ufc31";
+    public const string IconKeyframeAlignVertical = "\uf584";
+    public const string IconKeyframeAlignVerticalFilled = "\ufc32";
+    public const string IconKeyframeFilled = "\ufc33";
+    public const string IconKeyframes = "\uf585";
+    public const string IconKeyframesFilled = "\ufc34";
+    public const string IconLadder = "\uefe2";
+    public const string IconLadderOff = "\uf14c";
+    public const string IconLadle = "\ufc14";
+    public const string IconLambda = "\uf541";
+    public const string IconLamp = "\uefab";
+    public const string IconLamp2 = "\uf09e";
+    public const string IconLampOff = "\uf14d";
+    public const string IconLane = "\ufaf9";
+    public const string IconLanguage = "\uebbe";
+    public const string IconLanguageHiragana = "\uef77";
+    public const string IconLanguageKatakana = "\uef78";
+    public const string IconLanguageOff = "\uf14e";
+    public const string IconLasso = "\uefac";
+    public const string IconLassoOff = "\uf14f";
+    public const string IconLassoPolygon = "\uf388";
+    public const string IconLayersDifference = "\ueac8";
+    public const string IconLayersIntersect = "\ueac9";
+    public const string IconLayersIntersect2 = "\ueff8";
+    public const string IconLayersLinked = "\ueea1";
+    public const string IconLayersOff = "\uf150";
+    public const string IconLayersSubtract = "\ueaca";
+    public const string IconLayersUnion = "\ueacb";
+    public const string IconLayout = "\ueadb";
+    public const string IconLayout2 = "\ueacc";
+    public const string IconLayoutAlignBottom = "\ueacd";
+    public const string IconLayoutAlignCenter = "\ueace";
+    public const string IconLayoutAlignLeft = "\ueacf";
+    public const string IconLayoutAlignMiddle = "\uead0";
+    public const string IconLayoutAlignRight = "\uead1";
+    public const string IconLayoutAlignTop = "\uead2";
+    public const string IconLayoutBoard = "\uef95";
+    public const string IconLayoutBoardSplit = "\uef94";
+    public const string IconLayoutBottombar = "\uead3";
+    public const string IconLayoutBottombarCollapse = "\uf28b";
+    public const string IconLayoutBottombarCollapseFilled = "\ufc35";
+    public const string IconLayoutBottombarExpand = "\uf28c";
+    public const string IconLayoutBottombarExpandFilled = "\ufc36";
+    public const string IconLayoutBottombarFilled = "\ufc37";
+    public const string IconLayoutCards = "\uec13";
+    public const string IconLayoutCollage = "\uf389";
+    public const string IconLayoutColumns = "\uead4";
+    public const string IconLayoutDashboard = "\uf02c";
+    public const string IconLayoutDistributeHorizontal = "\uead5";
+    public const string IconLayoutDistributeVertical = "\uead6";
+    public const string IconLayoutGrid = "\uedba";
+    public const string IconLayoutGridAdd = "\uedb9";
+    public const string IconLayoutGridRemove = "\ufa7d";
+    public const string IconLayoutKanban = "\uec3f";
+    public const string IconLayoutList = "\uec14";
+    public const string IconLayoutNavbar = "\uead7";
+    public const string IconLayoutNavbarCollapse = "\uf28d";
+    public const string IconLayoutNavbarCollapseFilled = "\ufc38";
+    public const string IconLayoutNavbarExpand = "\uf28e";
+    public const string IconLayoutNavbarExpandFilled = "\ufc39";
+    public const string IconLayoutNavbarFilled = "\ufc3a";
+    public const string IconLayoutOff = "\uf151";
+    public const string IconLayoutRows = "\uead8";
+    public const string IconLayoutSidebar = "\ueada";
+    public const string IconLayoutSidebarLeftCollapse = "\uf004";
+    public const string IconLayoutSidebarLeftCollapseFilled = "\ufc3b";
+    public const string IconLayoutSidebarLeftExpand = "\uf005";
+    public const string IconLayoutSidebarLeftExpandFilled = "\ufc3c";
+    public const string IconLayoutSidebarRight = "\uead9";
+    public const string IconLayoutSidebarRightCollapse = "\uf006";
+    public const string IconLayoutSidebarRightCollapseFilled = "\ufc3d";
+    public const string IconLayoutSidebarRightExpand = "\uf007";
+    public const string IconLayoutSidebarRightExpandFilled = "\ufc3e";
+    public const string IconLeaf = "\ued4f";
+    public const string IconLeafOff = "\uf400";
+    public const string IconLego = "\ueadc";
+    public const string IconLegoOff = "\uf401";
+    public const string IconLemon = "\uef10";
+    public const string IconLemon2 = "\uef81";
+    public const string IconLetterA = "\uec50";
+    public const string IconLetterB = "\uec51";
+    public const string IconLetterC = "\uec52";
+    public const string IconLetterCase = "\ueea5";
+    public const string IconLetterCaseLower = "\ueea2";
+    public const string IconLetterCaseToggle = "\ueea3";
+    public const string IconLetterCaseUpper = "\ueea4";
+    public const string IconLetterD = "\uec53";
+    public const string IconLetterE = "\uec54";
+    public const string IconLetterF = "\uec55";
+    public const string IconLetterG = "\uec56";
+    public const string IconLetterH = "\uec57";
+    public const string IconLetterI = "\uec58";
+    public const string IconLetterJ = "\uec59";
+    public const string IconLetterK = "\uec5a";
+    public const string IconLetterL = "\uec5b";
+    public const string IconLetterM = "\uec5c";
+    public const string IconLetterN = "\uec5d";
+    public const string IconLetterO = "\uec5e";
+    public const string IconLetterP = "\uec5f";
+    public const string IconLetterQ = "\uec60";
+    public const string IconLetterR = "\uec61";
+    public const string IconLetterS = "\uec62";
+    public const string IconLetterSpacing = "\ueea6";
+    public const string IconLetterT = "\uec63";
+    public const string IconLetterU = "\uec64";
+    public const string IconLetterV = "\uec65";
+    public const string IconLetterW = "\uec66";
+    public const string IconLetterX = "\uec67";
+    public const string IconLetterY = "\uec68";
+    public const string IconLetterZ = "\uec69";
+    public const string IconLicense = "\uebc0";
+    public const string IconLicenseOff = "\uf153";
+    public const string IconLifebuoy = "\ueadd";
+    public const string IconLifebuoyOff = "\uf154";
+    public const string IconLighter = "\uf794";
+    public const string IconLine = "\uec40";
+    public const string IconLineDashed = "\ueea7";
+    public const string IconLineDotted = "\ueea8";
+    public const string IconLineHeight = "\ueb94";
+    public const string IconLink = "\ueade";
+    public const string IconLinkOff = "\uf402";
+    public const string IconList = "\ueb6b";
+    public const string IconListCheck = "\ueb6a";
+    public const string IconListDetails = "\uef40";
+    public const string IconListNumbers = "\uef11";
+    public const string IconListSearch = "\ueea9";
+    public const string IconListTree = "\ufafa";
+    public const string IconLivePhoto = "\ueadf";
+    public const string IconLivePhotoOff = "\uf403";
+    public const string IconLiveView = "\uec6b";
+    public const string IconLoadBalancer = "\ufa5c";
+    public const string IconLoader = "\ueca3";
+    public const string IconLoader2 = "\uf226";
+    public const string IconLoader3 = "\uf513";
+    public const string IconLoaderQuarter = "\ueca2";
+    public const string IconLocation = "\ueae0";
+    public const string IconLocationBolt = "\ufbaf";
+    public const string IconLocationBroken = "\uf2c4";
+    public const string IconLocationCancel = "\ufbb0";
+    public const string IconLocationCheck = "\ufbb1";
+    public const string IconLocationCode = "\ufbb2";
+    public const string IconLocationCog = "\ufbb3";
+    public const string IconLocationDiscount = "\ufbb4";
+    public const string IconLocationDollar = "\ufbb5";
+    public const string IconLocationDown = "\ufbb6";
+    public const string IconLocationExclamation = "\ufbb7";
+    public const string IconLocationFilled = "\uf67f";
+    public const string IconLocationHeart = "\ufbb8";
+    public const string IconLocationMinus = "\ufbb9";
+    public const string IconLocationOff = "\uf155";
+    public const string IconLocationPause = "\ufbba";
+    public const string IconLocationPin = "\ufbbb";
+    public const string IconLocationPlus = "\ufbbc";
+    public const string IconLocationQuestion = "\ufbbd";
+    public const string IconLocationSearch = "\ufbbe";
+    public const string IconLocationShare = "\ufbbf";
+    public const string IconLocationStar = "\ufbc0";
+    public const string IconLocationUp = "\ufbc1";
+    public const string IconLocationX = "\ufbc2";
+    public const string IconLock = "\ueae2";
+    public const string IconLockAccess = "\ueeaa";
+    public const string IconLockAccessOff = "\uf404";
+    public const string IconLockBolt = "\uf924";
+    public const string IconLockCancel = "\uf925";
+    public const string IconLockCheck = "\uf926";
+    public const string IconLockCode = "\uf927";
+    public const string IconLockCog = "\uf928";
+    public const string IconLockDollar = "\uf929";
+    public const string IconLockDown = "\uf92a";
+    public const string IconLockExclamation = "\uf92b";
+    public const string IconLockHeart = "\uf92c";
+    public const string IconLockMinus = "\uf92d";
+    public const string IconLockOff = "\ued1e";
+    public const string IconLockOpen = "\ueae1";
+    public const string IconLockOpenOff = "\uf156";
+    public const string IconLockPause = "\uf92e";
+    public const string IconLockPin = "\uf92f";
+    public const string IconLockPlus = "\uf930";
+    public const string IconLockQuestion = "\uf931";
+    public const string IconLockSearch = "\uf932";
+    public const string IconLockShare = "\uf933";
+    public const string IconLockSquare = "\uef51";
+    public const string IconLockSquareRounded = "\uf636";
+    public const string IconLockSquareRoundedFilled = "\uf6da";
+    public const string IconLockStar = "\uf934";
+    public const string IconLockUp = "\uf935";
+    public const string IconLockX = "\uf936";
+    public const string IconLogicAnd = "\uf240";
+    public const string IconLogicBuffer = "\uf241";
+    public const string IconLogicNand = "\uf242";
+    public const string IconLogicNor = "\uf243";
+    public const string IconLogicNot = "\uf244";
+    public const string IconLogicOr = "\uf245";
+    public const string IconLogicXnor = "\uf246";
+    public const string IconLogicXor = "\uf247";
+    public const string IconLogin = "\ueba7";
+    public const string IconLogout = "\ueba8";
+    public const string IconLogout2 = "\ufa7e";
+    public const string IconLollipop = "\uefcc";
+    public const string IconLollipopOff = "\uf157";
+    public const string IconLuggage = "\uefad";
+    public const string IconLuggageOff = "\uf158";
+    public const string IconLungs = "\uef62";
+    public const string IconLungsOff = "\uf405";
+    public const string IconMacro = "\ueeab";
+    public const string IconMacroOff = "\uf406";
+    public const string IconMagnet = "\ueae3";
+    public const string IconMagnetOff = "\uf159";
+    public const string IconMail = "\ueae5";
+    public const string IconMailAi = "\ufa31";
+    public const string IconMailBolt = "\uf937";
+    public const string IconMailCancel = "\uf938";
+    public const string IconMailCheck = "\uf939";
+    public const string IconMailCode = "\uf93a";
+    public const string IconMailCog = "\uf93b";
+    public const string IconMailDollar = "\uf93c";
+    public const string IconMailDown = "\uf93d";
+    public const string IconMailExclamation = "\uf93e";
+    public const string IconMailFast = "\uf069";
+    public const string IconMailFilled = "\ufa47";
+    public const string IconMailForward = "\ueeac";
+    public const string IconMailHeart = "\uf93f";
+    public const string IconMailMinus = "\uf940";
+    public const string IconMailOff = "\uf15a";
+    public const string IconMailOpened = "\ueae4";
+    public const string IconMailOpenedFilled = "\ufa48";
+    public const string IconMailPause = "\uf941";
+    public const string IconMailPin = "\uf942";
+    public const string IconMailPlus = "\uf943";
+    public const string IconMailQuestion = "\uf944";
+    public const string IconMailSearch = "\uf945";
+    public const string IconMailShare = "\uf946";
+    public const string IconMailStar = "\uf947";
+    public const string IconMailUp = "\uf948";
+    public const string IconMailX = "\uf949";
+    public const string IconMailbox = "\ueead";
+    public const string IconMailboxOff = "\uf15b";
+    public const string IconMan = "\ueae6";
+    public const string IconManualGearbox = "\ued7b";
+    public const string IconMap = "\ueae9";
+    public const string IconMap2 = "\ueae7";
+    public const string IconMapBolt = "\ufbc3";
+    public const string IconMapCancel = "\ufbc4";
+    public const string IconMapCheck = "\ufbc5";
+    public const string IconMapCode = "\ufbc6";
+    public const string IconMapCog = "\ufbc7";
+    public const string IconMapDiscount = "\ufbc8";
+    public const string IconMapDollar = "\ufbc9";
+    public const string IconMapDown = "\ufbca";
+    public const string IconMapExclamation = "\ufbcb";
+    public const string IconMapHeart = "\ufbcc";
+    public const string IconMapMinus = "\ufbcd";
+    public const string IconMapOff = "\uf15c";
+    public const string IconMapPause = "\ufbce";
+    public const string IconMapPin = "\ueae8";
+    public const string IconMapPinBolt = "\uf94a";
+    public const string IconMapPinCancel = "\uf94b";
+    public const string IconMapPinCheck = "\uf94c";
+    public const string IconMapPinCode = "\uf94d";
+    public const string IconMapPinCog = "\uf94e";
+    public const string IconMapPinDollar = "\uf94f";
+    public const string IconMapPinDown = "\uf950";
+    public const string IconMapPinExclamation = "\uf951";
+    public const string IconMapPinFilled = "\uf680";
+    public const string IconMapPinHeart = "\uf952";
+    public const string IconMapPinMinus = "\uf953";
+    public const string IconMapPinOff = "\uecf3";
+    public const string IconMapPinPause = "\uf954";
+    public const string IconMapPinPin = "\uf955";
+    public const string IconMapPinPlus = "\uf956";
+    public const string IconMapPinQuestion = "\uf957";
+    public const string IconMapPinSearch = "\uf958";
+    public const string IconMapPinShare = "\uf795";
+    public const string IconMapPinStar = "\uf959";
+    public const string IconMapPinUp = "\uf95a";
+    public const string IconMapPinX = "\uf95b";
+    public const string IconMapPins = "\ued5e";
+    public const string IconMapPlus = "\ufbcf";
+    public const string IconMapQuestion = "\ufbd0";
+    public const string IconMapSearch = "\uef82";
+    public const string IconMapShare = "\ufbd1";
+    public const string IconMapStar = "\ufbd2";
+    public const string IconMapUp = "\ufbd3";
+    public const string IconMapX = "\ufbd4";
+    public const string IconMarkdown = "\uec41";
+    public const string IconMarkdownOff = "\uf407";
+    public const string IconMarquee = "\uec77";
+    public const string IconMarquee2 = "\ueeae";
+    public const string IconMarqueeOff = "\uf15d";
+    public const string IconMars = "\uec80";
+    public const string IconMask = "\ueeb0";
+    public const string IconMaskOff = "\ueeaf";
+    public const string IconMasksTheater = "\uf263";
+    public const string IconMasksTheaterOff = "\uf408";
+    public const string IconMassage = "\ueeb1";
+    public const string IconMatchstick = "\uf577";
+    public const string IconMath = "\uebeb";
+    public const string IconMath1Divide2 = "\uf4e2";
+    public const string IconMath1Divide3 = "\uf4e3";
+    public const string IconMathAvg = "\uf0f4";
+    public const string IconMathEqualGreater = "\uf4e4";
+    public const string IconMathEqualLower = "\uf4e5";
+    public const string IconMathFunction = "\ueeb2";
+    public const string IconMathFunctionOff = "\uf15e";
+    public const string IconMathFunctionY = "\uf4e6";
+    public const string IconMathGreater = "\uf4e7";
+    public const string IconMathIntegral = "\uf4e9";
+    public const string IconMathIntegralX = "\uf4e8";
+    public const string IconMathIntegrals = "\uf4ea";
+    public const string IconMathLower = "\uf4eb";
+    public const string IconMathMax = "\uf0f5";
+    public const string IconMathMin = "\uf0f6";
+    public const string IconMathNot = "\uf4ec";
+    public const string IconMathOff = "\uf409";
+    public const string IconMathPi = "\uf4ee";
+    public const string IconMathPiDivide2 = "\uf4ed";
+    public const string IconMathSymbols = "\ueeb3";
+    public const string IconMathXDivide2 = "\uf4ef";
+    public const string IconMathXDivideY = "\uf4f1";
+    public const string IconMathXDivideY2 = "\uf4f0";
+    public const string IconMathXMinusX = "\uf4f2";
+    public const string IconMathXMinusY = "\uf4f3";
+    public const string IconMathXPlusX = "\uf4f4";
+    public const string IconMathXPlusY = "\uf4f5";
+    public const string IconMathXy = "\uf4f6";
+    public const string IconMathYMinusY = "\uf4f7";
+    public const string IconMathYPlusY = "\uf4f8";
+    public const string IconMaximize = "\ueaea";
+    public const string IconMaximizeOff = "\uf15f";
+    public const string IconMeat = "\uef12";
+    public const string IconMeatOff = "\uf40a";
+    public const string IconMedal = "\uec78";
+    public const string IconMedal2 = "\uefcd";
+    public const string IconMedicalCross = "\uec2f";
+    public const string IconMedicalCrossCircle = "\ufae8";
+    public const string IconMedicalCrossFilled = "\uf681";
+    public const string IconMedicalCrossOff = "\uf160";
+    public const string IconMedicineSyrup = "\uef63";
+    public const string IconMeeple = "\uf514";
+    public const string IconMenorah = "\uf58c";
+    public const string IconMenu = "\ueaeb";
+    public const string IconMenu2 = "\uec42";
+    public const string IconMenuDeep = "\ufafb";
+    public const string IconMenuOrder = "\uf5f5";
+    public const string IconMessage = "\ueaef";
+    public const string IconMessage2 = "\ueaec";
+    public const string IconMessage2Bolt = "\uf95c";
+    public const string IconMessage2Cancel = "\uf95d";
+    public const string IconMessage2Check = "\uf95e";
+    public const string IconMessage2Code = "\uf012";
+    public const string IconMessage2Cog = "\uf95f";
+    public const string IconMessage2Dollar = "\uf960";
+    public const string IconMessage2Down = "\uf961";
+    public const string IconMessage2Exclamation = "\uf962";
+    public const string IconMessage2Heart = "\uf963";
+    public const string IconMessage2Minus = "\uf964";
+    public const string IconMessage2Off = "\uf40b";
+    public const string IconMessage2Pause = "\uf965";
+    public const string IconMessage2Pin = "\uf966";
+    public const string IconMessage2Plus = "\uf967";
+    public const string IconMessage2Question = "\uf968";
+    public const string IconMessage2Search = "\uf969";
+    public const string IconMessage2Share = "\uf077";
+    public const string IconMessage2Star = "\uf96a";
+    public const string IconMessage2Up = "\uf96b";
+    public const string IconMessage2X = "\uf96c";
+    public const string IconMessageBolt = "\uf96d";
+    public const string IconMessageCancel = "\uf96e";
+    public const string IconMessageChatbot = "\uf38a";
+    public const string IconMessageCheck = "\uf96f";
+    public const string IconMessageCircle = "\ueaed";
+    public const string IconMessageCircle2 = "\ued3f";
+    public const string IconMessageCircle2Filled = "\uf682";
+    public const string IconMessageCircleBolt = "\uf970";
+    public const string IconMessageCircleCancel = "\uf971";
+    public const string IconMessageCircleCheck = "\uf972";
+    public const string IconMessageCircleCode = "\uf973";
+    public const string IconMessageCircleCog = "\uf974";
+    public const string IconMessageCircleDollar = "\uf975";
+    public const string IconMessageCircleDown = "\uf976";
+    public const string IconMessageCircleExclamation = "\uf977";
+    public const string IconMessageCircleHeart = "\uf978";
+    public const string IconMessageCircleMinus = "\uf979";
+    public const string IconMessageCircleOff = "\ued40";
+    public const string IconMessageCirclePause = "\uf97a";
+    public const string IconMessageCirclePin = "\uf97b";
+    public const string IconMessageCirclePlus = "\uf97c";
+    public const string IconMessageCircleQuestion = "\uf97d";
+    public const string IconMessageCircleSearch = "\uf97e";
+    public const string IconMessageCircleShare = "\uf97f";
+    public const string IconMessageCircleStar = "\uf980";
+    public const string IconMessageCircleUp = "\uf981";
+    public const string IconMessageCircleX = "\uf982";
+    public const string IconMessageCode = "\uf013";
+    public const string IconMessageCog = "\uf983";
+    public const string IconMessageDollar = "\uf984";
+    public const string IconMessageDots = "\ueaee";
+    public const string IconMessageDown = "\uf985";
+    public const string IconMessageExclamation = "\uf986";
+    public const string IconMessageForward = "\uf28f";
+    public const string IconMessageHeart = "\uf987";
+    public const string IconMessageLanguage = "\uefae";
+    public const string IconMessageMinus = "\uf988";
+    public const string IconMessageOff = "\ued41";
+    public const string IconMessagePause = "\uf989";
+    public const string IconMessagePin = "\uf98a";
+    public const string IconMessagePlus = "\uec9a";
+    public const string IconMessageQuestion = "\uf98b";
+    public const string IconMessageReport = "\uec9b";
+    public const string IconMessageSearch = "\uf98c";
+    public const string IconMessageShare = "\uf078";
+    public const string IconMessageStar = "\uf98d";
+    public const string IconMessageUp = "\uf98e";
+    public const string IconMessageX = "\uf98f";
+    public const string IconMessages = "\ueb6c";
+    public const string IconMessagesOff = "\ued42";
+    public const string IconMeteor = "\uf1fd";
+    public const string IconMeteorOff = "\uf40c";
+    public const string IconMichelinBibGourmand = "\ufae9";
+    public const string IconMichelinStar = "\ufaeb";
+    public const string IconMichelinStarGreen = "\ufaea";
+    public const string IconMickey = "\uf2a3";
+    public const string IconMickeyFilled = "\uf683";
+    public const string IconMicrophone = "\ueaf0";
+    public const string IconMicrophone2 = "\uef2c";
+    public const string IconMicrophone2Off = "\uf40d";
+    public const string IconMicrophoneOff = "\ued16";
+    public const string IconMicroscope = "\uef64";
+    public const string IconMicroscopeOff = "\uf40e";
+    public const string IconMicrowave = "\uf248";
+    public const string IconMicrowaveOff = "\uf264";
+    public const string IconMilitaryAward = "\uf079";
+    public const string IconMilitaryRank = "\uefcf";
+    public const string IconMilk = "\uef13";
+    public const string IconMilkOff = "\uf40f";
+    public const string IconMilkshake = "\uf4c8";
+    public const string IconMinimize = "\ueaf1";
+    public const string IconMinus = "\ueaf2";
+    public const string IconMinusVertical = "\ueeb4";
+    public const string IconMist = "\uec30";
+    public const string IconMistOff = "\uf410";
+    public const string IconMobiledata = "\uf9f5";
+    public const string IconMobiledataOff = "\uf9f4";
+    public const string IconMoneybag = "\uf506";
+    public const string IconMoodAngry = "\uf2de";
+    public const string IconMoodAnnoyed = "\uf2e0";
+    public const string IconMoodAnnoyed2 = "\uf2df";
+    public const string IconMoodBoy = "\ued2d";
+    public const string IconMoodCheck = "\uf7b3";
+    public const string IconMoodCog = "\uf7b4";
+    public const string IconMoodConfuzed = "\ueaf3";
+    public const string IconMoodConfuzedFilled = "\uf7f2";
+    public const string IconMoodCrazyHappy = "\ued90";
+    public const string IconMoodCry = "\uecbb";
+    public const string IconMoodDollar = "\uf7b5";
+    public const string IconMoodEdit = "\ufa05";
+    public const string IconMoodEmpty = "\ueeb5";
+    public const string IconMoodEmptyFilled = "\uf7f3";
+    public const string IconMoodHappy = "\ueaf4";
+    public const string IconMoodHappyFilled = "\uf7f4";
+    public const string IconMoodHeart = "\uf7b6";
+    public const string IconMoodKid = "\uec03";
+    public const string IconMoodKidFilled = "\uf7f5";
+    public const string IconMoodLookLeft = "\uf2c5";
+    public const string IconMoodLookRight = "\uf2c6";
+    public const string IconMoodMinus = "\uf7b7";
+    public const string IconMoodNerd = "\uf2e1";
+    public const string IconMoodNervous = "\uef96";
+    public const string IconMoodNeutral = "\ueaf5";
+    public const string IconMoodNeutralFilled = "\uf7f6";
+    public const string IconMoodOff = "\uf161";
+    public const string IconMoodPin = "\uf7b8";
+    public const string IconMoodPlus = "\uf7b9";
+    public const string IconMoodSad = "\ueaf6";
+    public const string IconMoodSad2 = "\uf2e2";
+    public const string IconMoodSadDizzy = "\uf2e3";
+    public const string IconMoodSadFilled = "\uf7f7";
+    public const string IconMoodSadSquint = "\uf2e4";
+    public const string IconMoodSearch = "\uf7ba";
+    public const string IconMoodShare = "\ufa06";
+    public const string IconMoodSick = "\uf2e5";
+    public const string IconMoodSilence = "\uf2e6";
+    public const string IconMoodSing = "\uf2c7";
+    public const string IconMoodSmile = "\ueaf7";
+    public const string IconMoodSmileBeam = "\uf2e7";
+    public const string IconMoodSmileDizzy = "\uf2e8";
+    public const string IconMoodSmileFilled = "\uf7f8";
+    public const string IconMoodSuprised = "\uec04";
+    public const string IconMoodTongue = "\ueb95";
+    public const string IconMoodTongueWink = "\uf2ea";
+    public const string IconMoodTongueWink2 = "\uf2e9";
+    public const string IconMoodUnamused = "\uf2eb";
+    public const string IconMoodUp = "\uf7bb";
+    public const string IconMoodWink = "\uf2ed";
+    public const string IconMoodWink2 = "\uf2ec";
+    public const string IconMoodWrrr = "\uf2ee";
+    public const string IconMoodX = "\uf7bc";
+    public const string IconMoodXd = "\uf2ef";
+    public const string IconMoon = "\ueaf8";
+    public const string IconMoon2 = "\uece6";
+    public const string IconMoonFilled = "\uf684";
+    public const string IconMoonOff = "\uf162";
+    public const string IconMoonStars = "\uece7";
+    public const string IconMoped = "\uecbc";
+    public const string IconMotorbike = "\ueeb6";
+    public const string IconMountain = "\uef97";
+    public const string IconMountainOff = "\uf411";
+    public const string IconMouse = "\ueaf9";
+    public const string IconMouse2 = "\uf1d7";
+    public const string IconMouseFilled = "\ufb2f";
+    public const string IconMouseOff = "\uf163";
+    public const string IconMoustache = "\uf4c9";
+    public const string IconMovie = "\ueafa";
+    public const string IconMovieOff = "\uf164";
+    public const string IconMug = "\ueafb";
+    public const string IconMugOff = "\uf165";
+    public const string IconMultiplier05x = "\uef41";
+    public const string IconMultiplier15x = "\uef42";
+    public const string IconMultiplier1x = "\uef43";
+    public const string IconMultiplier2x = "\uef44";
+    public const string IconMushroom = "\uef14";
+    public const string IconMushroomFilled = "\uf7f9";
+    public const string IconMushroomOff = "\uf412";
+    public const string IconMusic = "\ueafc";
+    public const string IconMusicBolt = "\ufbd5";
+    public const string IconMusicCancel = "\ufbd6";
+    public const string IconMusicCheck = "\ufbd7";
+    public const string IconMusicCode = "\ufbd8";
+    public const string IconMusicCog = "\ufbd9";
+    public const string IconMusicDiscount = "\ufbda";
+    public const string IconMusicDollar = "\ufbdb";
+    public const string IconMusicDown = "\ufbdc";
+    public const string IconMusicExclamation = "\ufbdd";
+    public const string IconMusicHeart = "\ufbde";
+    public const string IconMusicMinus = "\ufbdf";
+    public const string IconMusicOff = "\uf166";
+    public const string IconMusicPause = "\ufbe0";
+    public const string IconMusicPin = "\ufbe1";
+    public const string IconMusicPlus = "\ufbe2";
+    public const string IconMusicQuestion = "\ufbe3";
+    public const string IconMusicSearch = "\ufbe4";
+    public const string IconMusicShare = "\ufbe5";
+    public const string IconMusicStar = "\ufbe6";
+    public const string IconMusicUp = "\ufbe7";
+    public const string IconMusicX = "\ufbe8";
+    public const string IconNavigation = "\uf2c8";
+    public const string IconNavigationBolt = "\ufbe9";
+    public const string IconNavigationCancel = "\ufbea";
+    public const string IconNavigationCheck = "\ufbeb";
+    public const string IconNavigationCode = "\ufbec";
+    public const string IconNavigationCog = "\ufbed";
+    public const string IconNavigationDiscount = "\ufbee";
+    public const string IconNavigationDollar = "\ufbef";
+    public const string IconNavigationDown = "\ufbf0";
+    public const string IconNavigationExclamation = "\ufbf1";
+    public const string IconNavigationFilled = "\uf685";
+    public const string IconNavigationHeart = "\ufbf2";
+    public const string IconNavigationMinus = "\ufbf3";
+    public const string IconNavigationNorth = "\ufaec";
+    public const string IconNavigationOff = "\uf413";
+    public const string IconNavigationPause = "\ufbf4";
+    public const string IconNavigationPin = "\ufbf5";
+    public const string IconNavigationPlus = "\ufbf6";
+    public const string IconNavigationQuestion = "\ufbf7";
+    public const string IconNavigationSearch = "\ufbf8";
+    public const string IconNavigationShare = "\ufbf9";
+    public const string IconNavigationStar = "\ufbfa";
+    public const string IconNavigationUp = "\ufbfb";
+    public const string IconNavigationX = "\ufbfc";
+    public const string IconNeedle = "\uf508";
+    public const string IconNeedleThread = "\uf507";
+    public const string IconNetwork = "\uf09f";
+    public const string IconNetworkOff = "\uf414";
+    public const string IconNewSection = "\uebc1";
+    public const string IconNews = "\ueafd";
+    public const string IconNewsOff = "\uf167";
+    public const string IconNfc = "\ueeb7";
+    public const string IconNfcOff = "\uf168";
+    public const string IconNoCopyright = "\uefb9";
+    public const string IconNoCreativeCommons = "\uefba";
+    public const string IconNoDerivatives = "\uefbb";
+    public const string IconNorthStar = "\uf014";
+    public const string IconNote = "\ueb6d";
+    public const string IconNoteOff = "\uf169";
+    public const string IconNotebook = "\ueb96";
+    public const string IconNotebookOff = "\uf415";
+    public const string IconNotes = "\ueb6e";
+    public const string IconNotesOff = "\uf16a";
+    public const string IconNotification = "\ueafe";
+    public const string IconNotificationOff = "\uf16b";
+    public const string IconNumber = "\uf1fe";
+    public const string IconNumber0 = "\uedf0";
+    public const string IconNumber1 = "\uedf1";
+    public const string IconNumber2 = "\uedf2";
+    public const string IconNumber3 = "\uedf3";
+    public const string IconNumber4 = "\uedf4";
+    public const string IconNumber5 = "\uedf5";
+    public const string IconNumber6 = "\uedf6";
+    public const string IconNumber7 = "\uedf7";
+    public const string IconNumber8 = "\uedf8";
+    public const string IconNumber9 = "\uedf9";
+    public const string IconNumbers = "\uf015";
+    public const string IconNurse = "\uef65";
+    public const string IconOctagon = "\uecbd";
+    public const string IconOctagonFilled = "\uf686";
+    public const string IconOctagonOff = "\ueeb8";
+    public const string IconOctahedron = "\ufaae";
+    public const string IconOctahedronOff = "\ufaac";
+    public const string IconOctahedronPlus = "\ufaad";
+    public const string IconOld = "\ueeb9";
+    public const string IconOlympics = "\ueeba";
+    public const string IconOlympicsOff = "\uf416";
+    public const string IconOm = "\uf58d";
+    public const string IconOmega = "\ueb97";
+    public const string IconOutbound = "\uf249";
+    public const string IconOutlet = "\uebd7";
+    public const string IconOval = "\uf02e";
+    public const string IconOvalFilled = "\uf687";
+    public const string IconOvalVertical = "\uf02d";
+    public const string IconOvalVerticalFilled = "\uf688";
+    public const string IconOverline = "\ueebb";
+    public const string IconPackage = "\ueaff";
+    public const string IconPackageExport = "\uf07a";
+    public const string IconPackageImport = "\uf07b";
+    public const string IconPackageOff = "\uf16c";
+    public const string IconPackages = "\uf2c9";
+    public const string IconPacman = "\ueebc";
+    public const string IconPageBreak = "\uec81";
+    public const string IconPaint = "\ueb00";
+    public const string IconPaintFilled = "\uf75f";
+    public const string IconPaintOff = "\uf16d";
+    public const string IconPalette = "\ueb01";
+    public const string IconPaletteOff = "\uf16e";
+    public const string IconPanoramaHorizontal = "\ued33";
+    public const string IconPanoramaHorizontalOff = "\uf417";
+    public const string IconPanoramaVertical = "\ued34";
+    public const string IconPanoramaVerticalOff = "\uf418";
+    public const string IconPaperBag = "\uf02f";
+    public const string IconPaperBagOff = "\uf16f";
+    public const string IconPaperclip = "\ueb02";
+    public const string IconParachute = "\ued7c";
+    public const string IconParachuteOff = "\uf170";
+    public const string IconParentheses = "\uebd8";
+    public const string IconParenthesesOff = "\uf171";
+    public const string IconParking = "\ueb03";
+    public const string IconParkingOff = "\uf172";
+    public const string IconPassword = "\uf4ca";
+    public const string IconPaw = "\ueff9";
+    public const string IconPawFilled = "\uf689";
+    public const string IconPawOff = "\uf419";
+    public const string IconPdf = "\uf7ac";
+    public const string IconPeace = "\uecbe";
+    public const string IconPencil = "\ueb04";
+    public const string IconPencilBolt = "\ufbfd";
+    public const string IconPencilCancel = "\ufbfe";
+    public const string IconPencilCheck = "\ufbff";
+    public const string IconPencilCode = "\ufc00";
+    public const string IconPencilCog = "\ufc01";
+    public const string IconPencilDiscount = "\ufc02";
+    public const string IconPencilDollar = "\ufc03";
+    public const string IconPencilDown = "\ufc04";
+    public const string IconPencilExclamation = "\ufc05";
+    public const string IconPencilHeart = "\ufc06";
+    public const string IconPencilMinus = "\uf1eb";
+    public const string IconPencilOff = "\uf173";
+    public const string IconPencilPause = "\ufc07";
+    public const string IconPencilPin = "\ufc08";
+    public const string IconPencilPlus = "\uf1ec";
+    public const string IconPencilQuestion = "\ufc09";
+    public const string IconPencilSearch = "\ufc0a";
+    public const string IconPencilShare = "\ufc0b";
+    public const string IconPencilStar = "\ufc0c";
+    public const string IconPencilUp = "\ufc0d";
+    public const string IconPencilX = "\ufc0e";
+    public const string IconPennant = "\ued7d";
+    public const string IconPennant2 = "\uf06a";
+    public const string IconPennant2Filled = "\uf68a";
+    public const string IconPennantFilled = "\uf68b";
+    public const string IconPennantOff = "\uf174";
+    public const string IconPentagon = "\uefe3";
+    public const string IconPentagonFilled = "\uf68c";
+    public const string IconPentagonOff = "\uf41a";
+    public const string IconPentagram = "\uf586";
+    public const string IconPepper = "\uef15";
+    public const string IconPepperOff = "\uf175";
+    public const string IconPercentage = "\uecf4";
+    public const string IconPerfume = "\uf509";
+    public const string IconPerspective = "\ueebd";
+    public const string IconPerspectiveOff = "\uf176";
+    public const string IconPhone = "\ueb09";
+    public const string IconPhoneCall = "\ueb05";
+    public const string IconPhoneCalling = "\uec43";
+    public const string IconPhoneCheck = "\uec05";
+    public const string IconPhoneFilled = "\ufa49";
+    public const string IconPhoneIncoming = "\ueb06";
+    public const string IconPhoneOff = "\uecf5";
+    public const string IconPhoneOutgoing = "\ueb07";
+    public const string IconPhonePause = "\ueb08";
+    public const string IconPhonePlus = "\uec06";
+    public const string IconPhoneX = "\uec07";
+    public const string IconPhoto = "\ueb0a";
+    public const string IconPhotoAi = "\ufa32";
+    public const string IconPhotoBolt = "\uf990";
+    public const string IconPhotoCancel = "\uf35d";
+    public const string IconPhotoCheck = "\uf35e";
+    public const string IconPhotoCode = "\uf991";
+    public const string IconPhotoCog = "\uf992";
+    public const string IconPhotoDollar = "\uf993";
+    public const string IconPhotoDown = "\uf35f";
+    public const string IconPhotoEdit = "\uf360";
+    public const string IconPhotoExclamation = "\uf994";
+    public const string IconPhotoFilled = "\ufa4a";
+    public const string IconPhotoHeart = "\uf361";
+    public const string IconPhotoMinus = "\uf362";
+    public const string IconPhotoOff = "\uecf6";
+    public const string IconPhotoPause = "\uf995";
+    public const string IconPhotoPin = "\uf996";
+    public const string IconPhotoPlus = "\uf363";
+    public const string IconPhotoQuestion = "\uf997";
+    public const string IconPhotoSearch = "\uf364";
+    public const string IconPhotoSensor = "\uf798";
+    public const string IconPhotoSensor2 = "\uf796";
+    public const string IconPhotoSensor3 = "\uf797";
+    public const string IconPhotoShare = "\uf998";
+    public const string IconPhotoShield = "\uf365";
+    public const string IconPhotoStar = "\uf366";
+    public const string IconPhotoUp = "\uf38b";
+    public const string IconPhotoX = "\uf367";
+    public const string IconPhysotherapist = "\ueebe";
+    public const string IconPiano = "\ufad3";
+    public const string IconPick = "\ufafc";
+    public const string IconPictureInPicture = "\ued35";
+    public const string IconPictureInPictureOff = "\ued43";
+    public const string IconPictureInPictureOn = "\ued44";
+    public const string IconPictureInPictureTop = "\uefe4";
+    public const string IconPig = "\uef52";
+    public const string IconPigMoney = "\uf38c";
+    public const string IconPigOff = "\uf177";
+    public const string IconPilcrow = "\uf5f6";
+    public const string IconPill = "\uec44";
+    public const string IconPillOff = "\uf178";
+    public const string IconPills = "\uef66";
+    public const string IconPin = "\uec9c";
+    public const string IconPinFilled = "\uf68d";
+    public const string IconPingPong = "\uf38d";
+    public const string IconPinned = "\ued60";
+    public const string IconPinnedFilled = "\uf68e";
+    public const string IconPinnedOff = "\ued5f";
+    public const string IconPizza = "\uedbb";
+    public const string IconPizzaOff = "\uf179";
+    public const string IconPlaceholder = "\uf626";
+    public const string IconPlane = "\ueb6f";
+    public const string IconPlaneArrival = "\ueb99";
+    public const string IconPlaneDeparture = "\ueb9a";
+    public const string IconPlaneInflight = "\uef98";
+    public const string IconPlaneOff = "\uf17a";
+    public const string IconPlaneTilt = "\uf1ed";
+    public const string IconPlanet = "\uec08";
+    public const string IconPlanetOff = "\uf17b";
+    public const string IconPlant = "\ued50";
+    public const string IconPlant2 = "\ued7e";
+    public const string IconPlant2Off = "\uf17c";
+    public const string IconPlantOff = "\uf17d";
+    public const string IconPlayBasketball = "\ufa66";
+    public const string IconPlayCard = "\ueebf";
+    public const string IconPlayCardOff = "\uf17e";
+    public const string IconPlayFootball = "\ufa67";
+    public const string IconPlayHandball = "\ufa68";
+    public const string IconPlayVolleyball = "\ufa69";
+    public const string IconPlayerEject = "\uefbc";
+    public const string IconPlayerEjectFilled = "\uf68f";
+    public const string IconPlayerPause = "\ued45";
+    public const string IconPlayerPauseFilled = "\uf690";
+    public const string IconPlayerPlay = "\ued46";
+    public const string IconPlayerPlayFilled = "\uf691";
+    public const string IconPlayerRecord = "\ued47";
+    public const string IconPlayerRecordFilled = "\uf692";
+    public const string IconPlayerSkipBack = "\ued48";
+    public const string IconPlayerSkipBackFilled = "\uf693";
+    public const string IconPlayerSkipForward = "\ued49";
+    public const string IconPlayerSkipForwardFilled = "\uf694";
+    public const string IconPlayerStop = "\ued4a";
+    public const string IconPlayerStopFilled = "\uf695";
+    public const string IconPlayerTrackNext = "\ued4b";
+    public const string IconPlayerTrackNextFilled = "\uf696";
+    public const string IconPlayerTrackPrev = "\ued4c";
+    public const string IconPlayerTrackPrevFilled = "\uf697";
+    public const string IconPlaylist = "\ueec0";
+    public const string IconPlaylistAdd = "\uf008";
+    public const string IconPlaylistOff = "\uf17f";
+    public const string IconPlaylistX = "\uf009";
+    public const string IconPlaystationCircle = "\uf2ad";
+    public const string IconPlaystationSquare = "\uf2ae";
+    public const string IconPlaystationTriangle = "\uf2af";
+    public const string IconPlaystationX = "\uf2b0";
+    public const string IconPlug = "\uebd9";
+    public const string IconPlugConnected = "\uf00a";
+    public const string IconPlugConnectedX = "\uf0a0";
+    public const string IconPlugOff = "\uf180";
+    public const string IconPlugX = "\uf0a1";
+    public const string IconPlus = "\ueb0b";
+    public const string IconPlusEqual = "\uf7ad";
+    public const string IconPlusMinus = "\uf7ae";
+    public const string IconPng = "\uf3ad";
+    public const string IconPodium = "\uf1d8";
+    public const string IconPodiumOff = "\uf41b";
+    public const string IconPoint = "\ueb0c";
+    public const string IconPointFilled = "\uf698";
+    public const string IconPointOff = "\uf181";
+    public const string IconPointer = "\uf265";
+    public const string IconPointerBolt = "\uf999";
+    public const string IconPointerCancel = "\uf99a";
+    public const string IconPointerCheck = "\uf99b";
+    public const string IconPointerCode = "\uf99c";
+    public const string IconPointerCog = "\uf99d";
+    public const string IconPointerDollar = "\uf99e";
+    public const string IconPointerDown = "\uf99f";
+    public const string IconPointerExclamation = "\uf9a0";
+    public const string IconPointerFilled = "\ufb30";
+    public const string IconPointerHeart = "\uf9a1";
+    public const string IconPointerMinus = "\uf9a2";
+    public const string IconPointerOff = "\uf9a3";
+    public const string IconPointerPause = "\uf9a4";
+    public const string IconPointerPin = "\uf9a5";
+    public const string IconPointerPlus = "\uf9a6";
+    public const string IconPointerQuestion = "\uf9a7";
+    public const string IconPointerSearch = "\uf9a8";
+    public const string IconPointerShare = "\uf9a9";
+    public const string IconPointerStar = "\uf9aa";
+    public const string IconPointerUp = "\uf9ab";
+    public const string IconPointerX = "\uf9ac";
+    public const string IconPokeball = "\ueec1";
+    public const string IconPokeballOff = "\uf41c";
+    public const string IconPokerChip = "\uf515";
+    public const string IconPolaroid = "\ueec2";
+    public const string IconPolaroidFilled = "\ufa4b";
+    public const string IconPolygon = "\uefd0";
+    public const string IconPolygonOff = "\uf182";
+    public const string IconPoo = "\uf258";
+    public const string IconPool = "\ued91";
+    public const string IconPoolOff = "\uf41d";
+    public const string IconPower = "\ueb0d";
+    public const string IconPray = "\uecbf";
+    public const string IconPremiumRights = "\uefbd";
+    public const string IconPrescription = "\uef99";
+    public const string IconPresentation = "\ueb70";
+    public const string IconPresentationAnalytics = "\ueec3";
+    public const string IconPresentationOff = "\uf183";
+    public const string IconPrinter = "\ueb0e";
+    public const string IconPrinterOff = "\uf184";
+    public const string IconPrism = "\ufab1";
+    public const string IconPrismOff = "\ufaaf";
+    public const string IconPrismPlus = "\ufab0";
+    public const string IconPrison = "\uef79";
+    public const string IconProgress = "\ufa0d";
+    public const string IconProgressAlert = "\ufa07";
+    public const string IconProgressBolt = "\ufa08";
+    public const string IconProgressCheck = "\ufa09";
+    public const string IconProgressDown = "\ufa0a";
+    public const string IconProgressHelp = "\ufa0b";
+    public const string IconProgressX = "\ufa0c";
+    public const string IconPrompt = "\ueb0f";
+    public const string IconPropeller = "\ueec4";
+    public const string IconPropellerOff = "\uf185";
+    public const string IconPumpkinScary = "\uf587";
+    public const string IconPuzzle = "\ueb10";
+    public const string IconPuzzle2 = "\uef83";
+    public const string IconPuzzleFilled = "\uf699";
+    public const string IconPuzzleOff = "\uf186";
+    public const string IconPyramid = "\ueec5";
+    public const string IconPyramidOff = "\uf187";
+    public const string IconPyramidPlus = "\ufab2";
+    public const string IconQrcode = "\ueb11";
+    public const string IconQrcodeOff = "\uf41e";
+    public const string IconQuestionMark = "\uec9d";
+    public const string IconQuote = "\uefbe";
+    public const string IconQuoteOff = "\uf188";
+    public const string IconQuotes = "\ufb1e";
+    public const string IconRadar = "\uf017";
+    public const string IconRadar2 = "\uf016";
+    public const string IconRadarOff = "\uf41f";
+    public const string IconRadio = "\uef2d";
+    public const string IconRadioOff = "\uf420";
+    public const string IconRadioactive = "\uecc0";
+    public const string IconRadioactiveFilled = "\uf760";
+    public const string IconRadioactiveOff = "\uf189";
+    public const string IconRadiusBottomLeft = "\ueec6";
+    public const string IconRadiusBottomRight = "\ueec7";
+    public const string IconRadiusTopLeft = "\ueec8";
+    public const string IconRadiusTopRight = "\ueec9";
+    public const string IconRainbow = "\uedbc";
+    public const string IconRainbowOff = "\uf18a";
+    public const string IconRating12Plus = "\uf266";
+    public const string IconRating14Plus = "\uf267";
+    public const string IconRating16Plus = "\uf268";
+    public const string IconRating18Plus = "\uf269";
+    public const string IconRating21Plus = "\uf26a";
+    public const string IconRazor = "\uf4b5";
+    public const string IconRazorElectric = "\uf4b4";
+    public const string IconReceipt = "\uedfd";
+    public const string IconReceipt2 = "\uedfa";
+    public const string IconReceiptOff = "\uedfb";
+    public const string IconReceiptRefund = "\uedfc";
+    public const string IconReceiptTax = "\uedbd";
+    public const string IconRecharging = "\ueeca";
+    public const string IconRecordMail = "\ueb12";
+    public const string IconRecordMailOff = "\uf18b";
+    public const string IconRectangle = "\ued37";
+    public const string IconRectangleFilled = "\uf69a";
+    public const string IconRectangleRoundedBottom = "\ufaed";
+    public const string IconRectangleRoundedTop = "\ufaee";
+    public const string IconRectangleVertical = "\ued36";
+    public const string IconRectangleVerticalFilled = "\uf69b";
+    public const string IconRectangularPrism = "\ufab5";
+    public const string IconRectangularPrismOff = "\ufab3";
+    public const string IconRectangularPrismPlus = "\ufab4";
+    public const string IconRecycle = "\ueb9b";
+    public const string IconRecycleOff = "\uf18c";
+    public const string IconRefresh = "\ueb13";
+    public const string IconRefreshAlert = "\ued57";
+    public const string IconRefreshDot = "\uefbf";
+    public const string IconRefreshOff = "\uf18d";
+    public const string IconRegex = "\uf31f";
+    public const string IconRegexOff = "\uf421";
+    public const string IconRegistered = "\ueb14";
+    public const string IconRelationManyToMany = "\ued7f";
+    public const string IconRelationOneToMany = "\ued80";
+    public const string IconRelationOneToOne = "\ued81";
+    public const string IconReload = "\uf3ae";
+    public const string IconReorder = "\ufc15";
+    public const string IconRepeat = "\ueb72";
+    public const string IconRepeatOff = "\uf18e";
+    public const string IconRepeatOnce = "\ueb71";
+    public const string IconReplace = "\uebc7";
+    public const string IconReplaceFilled = "\uf69c";
+    public const string IconReplaceOff = "\uf422";
+    public const string IconReport = "\ueece";
+    public const string IconReportAnalytics = "\ueecb";
+    public const string IconReportMedical = "\ueecc";
+    public const string IconReportMoney = "\ueecd";
+    public const string IconReportOff = "\uf18f";
+    public const string IconReportSearch = "\uef84";
+    public const string IconReservedLine = "\uf9f6";
+    public const string IconResize = "\ueecf";
+    public const string IconRestore = "\ufafd";
+    public const string IconRewindBackward10 = "\ufaba";
+    public const string IconRewindBackward15 = "\ufabb";
+    public const string IconRewindBackward20 = "\ufabc";
+    public const string IconRewindBackward30 = "\ufabd";
+    public const string IconRewindBackward40 = "\ufabe";
+    public const string IconRewindBackward5 = "\ufabf";
+    public const string IconRewindBackward50 = "\ufac0";
+    public const string IconRewindBackward60 = "\ufac1";
+    public const string IconRewindForward10 = "\ufac2";
+    public const string IconRewindForward15 = "\ufac3";
+    public const string IconRewindForward20 = "\ufac4";
+    public const string IconRewindForward30 = "\ufac5";
+    public const string IconRewindForward40 = "\ufac6";
+    public const string IconRewindForward5 = "\ufac7";
+    public const string IconRewindForward50 = "\ufac8";
+    public const string IconRewindForward60 = "\ufac9";
+    public const string IconRibbonHealth = "\uf58e";
+    public const string IconRings = "\ufa6a";
+    public const string IconRipple = "\ued82";
+    public const string IconRippleOff = "\uf190";
+    public const string IconRoad = "\uf018";
+    public const string IconRoadOff = "\uf191";
+    public const string IconRoadSign = "\uecdd";
+    public const string IconRobot = "\uf00b";
+    public const string IconRobotOff = "\uf192";
+    public const string IconRocket = "\uec45";
+    public const string IconRocketOff = "\uf193";
+    public const string IconRollerSkating = "\uefd1";
+    public const string IconRollercoaster = "\uf0a2";
+    public const string IconRollercoasterOff = "\uf423";
+    public const string IconRosette = "\uf599";
+    public const string IconRosetteFilled = "\uf69d";
+    public const string IconRosetteNumber0 = "\uf58f";
+    public const string IconRosetteNumber1 = "\uf590";
+    public const string IconRosetteNumber2 = "\uf591";
+    public const string IconRosetteNumber3 = "\uf592";
+    public const string IconRosetteNumber4 = "\uf593";
+    public const string IconRosetteNumber5 = "\uf594";
+    public const string IconRosetteNumber6 = "\uf595";
+    public const string IconRosetteNumber7 = "\uf596";
+    public const string IconRosetteNumber8 = "\uf597";
+    public const string IconRosetteNumber9 = "\uf598";
+    public const string IconRotate = "\ueb16";
+    public const string IconRotate2 = "\uebb4";
+    public const string IconRotate360 = "\uef85";
+    public const string IconRotateClockwise = "\ueb15";
+    public const string IconRotateClockwise2 = "\uebb5";
+    public const string IconRotateDot = "\uefe5";
+    public const string IconRotateRectangle = "\uec15";
+    public const string IconRoute = "\ueb17";
+    public const string IconRoute2 = "\uf4b6";
+    public const string IconRouteOff = "\uf194";
+    public const string IconRouter = "\ueb18";
+    public const string IconRouterOff = "\uf424";
+    public const string IconRowInsertBottom = "\ueed0";
+    public const string IconRowInsertTop = "\ueed1";
+    public const string IconRowRemove = "\ufafe";
+    public const string IconRss = "\ueb19";
+    public const string IconRubberStamp = "\uf5ab";
+    public const string IconRubberStampOff = "\uf5aa";
+    public const string IconRuler = "\ueb1a";
+    public const string IconRuler2 = "\ueed2";
+    public const string IconRuler2Off = "\uf195";
+    public const string IconRuler3 = "\uf290";
+    public const string IconRulerMeasure = "\uf291";
+    public const string IconRulerOff = "\uf196";
+    public const string IconRun = "\uec82";
+    public const string IconSTurnDown = "\uf516";
+    public const string IconSTurnLeft = "\uf517";
+    public const string IconSTurnRight = "\uf518";
+    public const string IconSTurnUp = "\uf519";
+    public const string IconSailboat = "\uec83";
+    public const string IconSailboat2 = "\uf5f7";
+    public const string IconSailboatOff = "\uf425";
+    public const string IconSalad = "\uf50a";
+    public const string IconSalt = "\uef16";
+    public const string IconSatellite = "\ueed3";
+    public const string IconSatelliteOff = "\uf197";
+    public const string IconSausage = "\uef17";
+    public const string IconScale = "\uebc2";
+    public const string IconScaleOff = "\uf198";
+    public const string IconScaleOutline = "\uef53";
+    public const string IconScaleOutlineOff = "\uf199";
+    public const string IconScan = "\uebc8";
+    public const string IconScanEye = "\uf1ff";
+    public const string IconSchema = "\uf200";
+    public const string IconSchemaOff = "\uf426";
+    public const string IconSchool = "\uecf7";
+    public const string IconSchoolBell = "\uf64a";
+    public const string IconSchoolOff = "\uf19a";
+    public const string IconScissors = "\ueb1b";
+    public const string IconScissorsOff = "\uf19b";
+    public const string IconScooter = "\uec6c";
+    public const string IconScooterElectric = "\uecc1";
+    public const string IconScoreboard = "\ufa6b";
+    public const string IconScreenShare = "\ued18";
+    public const string IconScreenShareOff = "\ued17";
+    public const string IconScreenshot = "\uf201";
+    public const string IconScribble = "\uf0a3";
+    public const string IconScribbleOff = "\uf427";
+    public const string IconScript = "\uf2da";
+    public const string IconScriptMinus = "\uf2d7";
+    public const string IconScriptPlus = "\uf2d8";
+    public const string IconScriptX = "\uf2d9";
+    public const string IconScubaMask = "\ueed4";
+    public const string IconScubaMaskOff = "\uf428";
+    public const string IconSdk = "\uf3af";
+    public const string IconSearch = "\ueb1c";
+    public const string IconSearchOff = "\uf19c";
+    public const string IconSection = "\ueed5";
+    public const string IconSectionSign = "\uf019";
+    public const string IconSeeding = "\ued51";
+    public const string IconSeedingOff = "\uf19d";
+    public const string IconSelect = "\uec9e";
+    public const string IconSelectAll = "\uf9f7";
+    public const string IconSelector = "\ueb1d";
+    public const string IconSend = "\ueb1e";
+    public const string IconSendOff = "\uf429";
+    public const string IconSeo = "\uf26b";
+    public const string IconSeparator = "\uebda";
+    public const string IconSeparatorHorizontal = "\uec79";
+    public const string IconSeparatorVertical = "\uec7a";
+    public const string IconServer = "\ueb1f";
+    public const string IconServer2 = "\uf07c";
+    public const string IconServerBolt = "\uf320";
+    public const string IconServerCog = "\uf321";
+    public const string IconServerOff = "\uf19e";
+    public const string IconServicemark = "\uec09";
+    public const string IconSettings = "\ueb20";
+    public const string IconSettings2 = "\uf5ac";
+    public const string IconSettingsAutomation = "\ueed6";
+    public const string IconSettingsBolt = "\uf9ad";
+    public const string IconSettingsCancel = "\uf9ae";
+    public const string IconSettingsCheck = "\uf9af";
+    public const string IconSettingsCode = "\uf9b0";
+    public const string IconSettingsCog = "\uf9b1";
+    public const string IconSettingsDollar = "\uf9b2";
+    public const string IconSettingsDown = "\uf9b3";
+    public const string IconSettingsExclamation = "\uf9b4";
+    public const string IconSettingsFilled = "\uf69e";
+    public const string IconSettingsHeart = "\uf9b5";
+    public const string IconSettingsMinus = "\uf9b6";
+    public const string IconSettingsOff = "\uf19f";
+    public const string IconSettingsPause = "\uf9b7";
+    public const string IconSettingsPin = "\uf9b8";
+    public const string IconSettingsPlus = "\uf9b9";
+    public const string IconSettingsQuestion = "\uf9ba";
+    public const string IconSettingsSearch = "\uf9bb";
+    public const string IconSettingsShare = "\uf9bc";
+    public const string IconSettingsStar = "\uf9bd";
+    public const string IconSettingsUp = "\uf9be";
+    public const string IconSettingsX = "\uf9bf";
+    public const string IconShadow = "\ueed8";
+    public const string IconShadowOff = "\ueed7";
+    public const string IconShape = "\ueb9c";
+    public const string IconShape2 = "\ueed9";
+    public const string IconShape3 = "\ueeda";
+    public const string IconShapeOff = "\uf1a0";
+    public const string IconShare = "\ueb21";
+    public const string IconShare2 = "\uf799";
+    public const string IconShare3 = "\uf7bd";
+    public const string IconShareOff = "\uf1a1";
+    public const string IconShiJumping = "\ufa6c";
+    public const string IconShield = "\ueb24";
+    public const string IconShieldBolt = "\uf9c0";
+    public const string IconShieldCancel = "\uf9c1";
+    public const string IconShieldCheck = "\ueb22";
+    public const string IconShieldCheckFilled = "\uf761";
+    public const string IconShieldCheckered = "\uef9a";
+    public const string IconShieldCheckeredFilled = "\uf762";
+    public const string IconShieldChevron = "\uef9b";
+    public const string IconShieldCode = "\uf9c2";
+    public const string IconShieldCog = "\uf9c3";
+    public const string IconShieldDollar = "\uf9c4";
+    public const string IconShieldDown = "\uf9c5";
+    public const string IconShieldExclamation = "\uf9c6";
+    public const string IconShieldFilled = "\uf69f";
+    public const string IconShieldHalf = "\uf358";
+    public const string IconShieldHalfFilled = "\uf357";
+    public const string IconShieldHeart = "\uf9c7";
+    public const string IconShieldLock = "\ued58";
+    public const string IconShieldLockFilled = "\uf763";
+    public const string IconShieldMinus = "\uf9c8";
+    public const string IconShieldOff = "\uecf8";
+    public const string IconShieldPause = "\uf9c9";
+    public const string IconShieldPin = "\uf9ca";
+    public const string IconShieldPlus = "\uf9cb";
+    public const string IconShieldQuestion = "\uf9cc";
+    public const string IconShieldSearch = "\uf9cd";
+    public const string IconShieldShare = "\uf9ce";
+    public const string IconShieldStar = "\uf9cf";
+    public const string IconShieldUp = "\uf9d0";
+    public const string IconShieldX = "\ueb23";
+    public const string IconShip = "\uec84";
+    public const string IconShipOff = "\uf42a";
+    public const string IconShirt = "\uec0a";
+    public const string IconShirtFilled = "\uf6a0";
+    public const string IconShirtOff = "\uf1a2";
+    public const string IconShirtSport = "\uf26c";
+    public const string IconShoe = "\uefd2";
+    public const string IconShoeOff = "\uf1a4";
+    public const string IconShoppingBag = "\uf5f8";
+    public const string IconShoppingBagCheck = "\ufc16";
+    public const string IconShoppingBagDiscount = "\ufc17";
+    public const string IconShoppingBagEdit = "\ufc18";
+    public const string IconShoppingBagExclamation = "\ufc19";
+    public const string IconShoppingBagMinus = "\ufc1a";
+    public const string IconShoppingBagPlus = "\ufc1b";
+    public const string IconShoppingBagSearch = "\ufc1c";
+    public const string IconShoppingBagX = "\ufc1d";
+    public const string IconShoppingCart = "\ueb25";
+    public const string IconShoppingCartBolt = "\ufb57";
+    public const string IconShoppingCartCancel = "\ufb58";
+    public const string IconShoppingCartCheck = "\ufb59";
+    public const string IconShoppingCartCode = "\ufb5a";
+    public const string IconShoppingCartCog = "\ufb5b";
+    public const string IconShoppingCartCopy = "\ufb5c";
+    public const string IconShoppingCartDiscount = "\ufb5d";
+    public const string IconShoppingCartDollar = "\ufb5e";
+    public const string IconShoppingCartDown = "\ufb5f";
+    public const string IconShoppingCartExclamation = "\ufb60";
+    public const string IconShoppingCartFilled = "\ufc3f";
+    public const string IconShoppingCartHeart = "\ufb61";
+    public const string IconShoppingCartMinus = "\ufb62";
+    public const string IconShoppingCartOff = "\ueedc";
+    public const string IconShoppingCartPause = "\ufb63";
+    public const string IconShoppingCartPin = "\ufb64";
+    public const string IconShoppingCartPlus = "\ufb65";
+    public const string IconShoppingCartQuestion = "\ufb66";
+    public const string IconShoppingCartSearch = "\ufb67";
+    public const string IconShoppingCartShare = "\ufb68";
+    public const string IconShoppingCartStar = "\ufb69";
+    public const string IconShoppingCartUp = "\ufb6a";
+    public const string IconShoppingCartX = "\ufb6b";
+    public const string IconShovel = "\uf1d9";
+    public const string IconShredder = "\ueedf";
+    public const string IconSignLeft = "\uf06b";
+    public const string IconSignLeftFilled = "\uf6a1";
+    public const string IconSignRight = "\uf06c";
+    public const string IconSignRightFilled = "\uf6a2";
+    public const string IconSignal2g = "\uf79a";
+    public const string IconSignal3g = "\uf1ee";
+    public const string IconSignal4g = "\uf1ef";
+    public const string IconSignal4gPlus = "\uf259";
+    public const string IconSignal5g = "\uf1f0";
+    public const string IconSignal6g = "\uf9f8";
+    public const string IconSignalE = "\uf9f9";
+    public const string IconSignalG = "\uf9fa";
+    public const string IconSignalH = "\uf9fc";
+    public const string IconSignalHPlus = "\uf9fb";
+    public const string IconSignalLte = "\uf9fd";
+    public const string IconSignature = "\ueee0";
+    public const string IconSignatureOff = "\uf1a5";
+    public const string IconSitemap = "\ueb9d";
+    public const string IconSitemapOff = "\uf1a6";
+    public const string IconSkateboard = "\uecc2";
+    public const string IconSkateboardOff = "\uf42b";
+    public const string IconSkateboarding = "\ufaca";
+    public const string IconSkull = "\uf292";
+    public const string IconSlash = "\uf4f9";
+    public const string IconSlashes = "\uf588";
+    public const string IconSleigh = "\uef9c";
+    public const string IconSlice = "\uebdb";
+    public const string IconSlideshow = "\uebc9";
+    public const string IconSmartHome = "\uecde";
+    public const string IconSmartHomeOff = "\uf1a7";
+    public const string IconSmoking = "\uecc4";
+    public const string IconSmokingNo = "\uecc3";
+    public const string IconSnowflake = "\uec0b";
+    public const string IconSnowflakeOff = "\uf1a8";
+    public const string IconSnowman = "\uf26d";
+    public const string IconSoccerField = "\ued92";
+    public const string IconSocial = "\uebec";
+    public const string IconSocialOff = "\uf1a9";
+    public const string IconSock = "\ueee1";
+    public const string IconSofa = "\uefaf";
+    public const string IconSofaOff = "\uf42c";
+    public const string IconSolarPanel = "\uf7bf";
+    public const string IconSolarPanel2 = "\uf7be";
+    public const string IconSort09 = "\uf54d";
+    public const string IconSort90 = "\uf54e";
+    public const string IconSortAZ = "\uf54f";
+    public const string IconSortAscending = "\ueb26";
+    public const string IconSortAscending2 = "\ueee2";
+    public const string IconSortAscendingLetters = "\uef18";
+    public const string IconSortAscendingNumbers = "\uef19";
+    public const string IconSortDescending = "\ueb27";
+    public const string IconSortDescending2 = "\ueee3";
+    public const string IconSortDescendingLetters = "\uef1a";
+    public const string IconSortDescendingNumbers = "\uef1b";
+    public const string IconSortZA = "\uf550";
+    public const string IconSos = "\uf24a";
+    public const string IconSoup = "\uef2e";
+    public const string IconSoupOff = "\uf42d";
+    public const string IconSourceCode = "\uf4a2";
+    public const string IconSpace = "\uec0c";
+    public const string IconSpaceOff = "\uf1aa";
+    public const string IconSpacingHorizontal = "\uef54";
+    public const string IconSpacingVertical = "\uef55";
+    public const string IconSpade = "\ueffa";
+    public const string IconSpadeFilled = "\uf6a3";
+    public const string IconSparkles = "\uf6d7";
+    public const string IconSpeakerphone = "\ued61";
+    public const string IconSpeedboat = "\ued93";
+    public const string IconSphere = "\ufab8";
+    public const string IconSphereOff = "\ufab6";
+    public const string IconSpherePlus = "\ufab7";
+    public const string IconSpider = "\uf293";
+    public const string IconSpiral = "\uf294";
+    public const string IconSpiralOff = "\uf42e";
+    public const string IconSportBillard = "\ueee4";
+    public const string IconSpray = "\uf50b";
+    public const string IconSpy = "\uf227";
+    public const string IconSpyOff = "\uf42f";
+    public const string IconSql = "\uf7c0";
+    public const string IconSquare = "\ueb2c";
+    public const string IconSquare0Filled = "\uf764";
+    public const string IconSquare1Filled = "\uf765";
+    public const string IconSquare2Filled = "\uf7fa";
+    public const string IconSquare3Filled = "\uf766";
+    public const string IconSquare4Filled = "\uf767";
+    public const string IconSquare5Filled = "\uf768";
+    public const string IconSquare6Filled = "\uf769";
+    public const string IconSquare7Filled = "\uf76a";
+    public const string IconSquare8Filled = "\uf76b";
+    public const string IconSquare9Filled = "\uf76c";
+    public const string IconSquareArrowDown = "\uf4b7";
+    public const string IconSquareArrowDownFilled = "\ufb31";
+    public const string IconSquareArrowLeft = "\uf4b8";
+    public const string IconSquareArrowLeftFilled = "\ufb32";
+    public const string IconSquareArrowRight = "\uf4b9";
+    public const string IconSquareArrowRightFilled = "\ufb33";
+    public const string IconSquareArrowUp = "\uf4ba";
+    public const string IconSquareArrowUpFilled = "\ufb34";
+    public const string IconSquareAsterisk = "\uf01a";
+    public const string IconSquareAsteriskFilled = "\ufb35";
+    public const string IconSquareCheck = "\ueb28";
+    public const string IconSquareCheckFilled = "\uf76d";
+    public const string IconSquareChevronDown = "\uf627";
+    public const string IconSquareChevronDownFilled = "\ufb36";
+    public const string IconSquareChevronLeft = "\uf628";
+    public const string IconSquareChevronLeftFilled = "\ufb37";
+    public const string IconSquareChevronRight = "\uf629";
+    public const string IconSquareChevronRightFilled = "\ufb38";
+    public const string IconSquareChevronUp = "\uf62a";
+    public const string IconSquareChevronUpFilled = "\ufb39";
+    public const string IconSquareChevronsDown = "\uf64b";
+    public const string IconSquareChevronsDownFilled = "\ufb3a";
+    public const string IconSquareChevronsLeft = "\uf64c";
+    public const string IconSquareChevronsLeftFilled = "\ufb3b";
+    public const string IconSquareChevronsRight = "\uf64d";
+    public const string IconSquareChevronsRightFilled = "\ufb3c";
+    public const string IconSquareChevronsUp = "\uf64e";
+    public const string IconSquareChevronsUpFilled = "\ufb3d";
+    public const string IconSquareDot = "\ued59";
+    public const string IconSquareDotFilled = "\ufb3e";
+    public const string IconSquareF0 = "\uf526";
+    public const string IconSquareF0Filled = "\uf76e";
+    public const string IconSquareF1 = "\uf527";
+    public const string IconSquareF1Filled = "\uf76f";
+    public const string IconSquareF2 = "\uf528";
+    public const string IconSquareF2Filled = "\uf770";
+    public const string IconSquareF3 = "\uf529";
+    public const string IconSquareF3Filled = "\uf771";
+    public const string IconSquareF4 = "\uf52a";
+    public const string IconSquareF4Filled = "\uf772";
+    public const string IconSquareF5 = "\uf52b";
+    public const string IconSquareF5Filled = "\uf773";
+    public const string IconSquareF6 = "\uf52c";
+    public const string IconSquareF6Filled = "\uf774";
+    public const string IconSquareF7 = "\uf52d";
+    public const string IconSquareF7Filled = "\uf775";
+    public const string IconSquareF8 = "\uf52e";
+    public const string IconSquareF8Filled = "\uf776";
+    public const string IconSquareF9 = "\uf52f";
+    public const string IconSquareF9Filled = "\uf777";
+    public const string IconSquareFilled = "\ufc40";
+    public const string IconSquareForbid = "\ued5b";
+    public const string IconSquareForbid2 = "\ued5a";
+    public const string IconSquareHalf = "\ueffb";
+    public const string IconSquareKey = "\uf638";
+    public const string IconSquareLetterA = "\uf47c";
+    public const string IconSquareLetterB = "\uf47d";
+    public const string IconSquareLetterC = "\uf47e";
+    public const string IconSquareLetterD = "\uf47f";
+    public const string IconSquareLetterE = "\uf480";
+    public const string IconSquareLetterF = "\uf481";
+    public const string IconSquareLetterG = "\uf482";
+    public const string IconSquareLetterH = "\uf483";
+    public const string IconSquareLetterI = "\uf484";
+    public const string IconSquareLetterJ = "\uf485";
+    public const string IconSquareLetterK = "\uf486";
+    public const string IconSquareLetterL = "\uf487";
+    public const string IconSquareLetterM = "\uf488";
+    public const string IconSquareLetterN = "\uf489";
+    public const string IconSquareLetterO = "\uf48a";
+    public const string IconSquareLetterP = "\uf48b";
+    public const string IconSquareLetterQ = "\uf48c";
+    public const string IconSquareLetterR = "\uf48d";
+    public const string IconSquareLetterS = "\uf48e";
+    public const string IconSquareLetterT = "\uf48f";
+    public const string IconSquareLetterU = "\uf490";
+    public const string IconSquareLetterV = "\uf4bb";
+    public const string IconSquareLetterW = "\uf491";
+    public const string IconSquareLetterX = "\uf4bc";
+    public const string IconSquareLetterY = "\uf492";
+    public const string IconSquareLetterZ = "\uf493";
+    public const string IconSquareMinus = "\ueb29";
+    public const string IconSquareMinusFilled = "\ufb3f";
+    public const string IconSquareNumber0 = "\ueee5";
+    public const string IconSquareNumber1 = "\ueee6";
+    public const string IconSquareNumber2 = "\ueee7";
+    public const string IconSquareNumber3 = "\ueee8";
+    public const string IconSquareNumber4 = "\ueee9";
+    public const string IconSquareNumber5 = "\ueeea";
+    public const string IconSquareNumber6 = "\ueeeb";
+    public const string IconSquareNumber7 = "\ueeec";
+    public const string IconSquareNumber8 = "\ueeed";
+    public const string IconSquareNumber9 = "\ueeee";
+    public const string IconSquareOff = "\ueeef";
+    public const string IconSquarePlus = "\ueb2a";
+    public const string IconSquareRoot = "\ueef1";
+    public const string IconSquareRoot2 = "\ueef0";
+    public const string IconSquareRotated = "\uecdf";
+    public const string IconSquareRotatedFilled = "\uf6a4";
+    public const string IconSquareRotatedForbid = "\uf01c";
+    public const string IconSquareRotatedForbid2 = "\uf01b";
+    public const string IconSquareRotatedOff = "\ueef2";
+    public const string IconSquareRounded = "\uf59a";
+    public const string IconSquareRoundedArrowDown = "\uf639";
+    public const string IconSquareRoundedArrowDownFilled = "\uf6db";
+    public const string IconSquareRoundedArrowLeft = "\uf63a";
+    public const string IconSquareRoundedArrowLeftFilled = "\uf6dc";
+    public const string IconSquareRoundedArrowRight = "\uf63b";
+    public const string IconSquareRoundedArrowRightFilled = "\uf6dd";
+    public const string IconSquareRoundedArrowUp = "\uf63c";
+    public const string IconSquareRoundedArrowUpFilled = "\uf6de";
+    public const string IconSquareRoundedCheck = "\uf63d";
+    public const string IconSquareRoundedCheckFilled = "\uf6df";
+    public const string IconSquareRoundedChevronDown = "\uf62b";
+    public const string IconSquareRoundedChevronDownFilled = "\uf6e0";
+    public const string IconSquareRoundedChevronLeft = "\uf62c";
+    public const string IconSquareRoundedChevronLeftFilled = "\uf6e1";
+    public const string IconSquareRoundedChevronRight = "\uf62d";
+    public const string IconSquareRoundedChevronRightFilled = "\uf6e2";
+    public const string IconSquareRoundedChevronUp = "\uf62e";
+    public const string IconSquareRoundedChevronUpFilled = "\uf6e3";
+    public const string IconSquareRoundedChevronsDown = "\uf64f";
+    public const string IconSquareRoundedChevronsDownFilled = "\uf6e4";
+    public const string IconSquareRoundedChevronsLeft = "\uf650";
+    public const string IconSquareRoundedChevronsLeftFilled = "\uf6e5";
+    public const string IconSquareRoundedChevronsRight = "\uf651";
+    public const string IconSquareRoundedChevronsRightFilled = "\uf6e6";
+    public const string IconSquareRoundedChevronsUp = "\uf652";
+    public const string IconSquareRoundedChevronsUpFilled = "\uf6e7";
+    public const string IconSquareRoundedFilled = "\uf6a5";
+    public const string IconSquareRoundedLetterA = "\uf5ae";
+    public const string IconSquareRoundedLetterB = "\uf5af";
+    public const string IconSquareRoundedLetterC = "\uf5b0";
+    public const string IconSquareRoundedLetterD = "\uf5b1";
+    public const string IconSquareRoundedLetterE = "\uf5b2";
+    public const string IconSquareRoundedLetterF = "\uf5b3";
+    public const string IconSquareRoundedLetterG = "\uf5b4";
+    public const string IconSquareRoundedLetterH = "\uf5b5";
+    public const string IconSquareRoundedLetterI = "\uf5b6";
+    public const string IconSquareRoundedLetterJ = "\uf5b7";
+    public const string IconSquareRoundedLetterK = "\uf5b8";
+    public const string IconSquareRoundedLetterL = "\uf5b9";
+    public const string IconSquareRoundedLetterM = "\uf5ba";
+    public const string IconSquareRoundedLetterN = "\uf5bb";
+    public const string IconSquareRoundedLetterO = "\uf5bc";
+    public const string IconSquareRoundedLetterP = "\uf5bd";
+    public const string IconSquareRoundedLetterQ = "\uf5be";
+    public const string IconSquareRoundedLetterR = "\uf5bf";
+    public const string IconSquareRoundedLetterS = "\uf5c0";
+    public const string IconSquareRoundedLetterT = "\uf5c1";
+    public const string IconSquareRoundedLetterU = "\uf5c2";
+    public const string IconSquareRoundedLetterV = "\uf5c3";
+    public const string IconSquareRoundedLetterW = "\uf5c4";
+    public const string IconSquareRoundedLetterX = "\uf5c5";
+    public const string IconSquareRoundedLetterY = "\uf5c6";
+    public const string IconSquareRoundedLetterZ = "\uf5c7";
+    public const string IconSquareRoundedMinus = "\uf63e";
+    public const string IconSquareRoundedMinusFilled = "\ufb40";
+    public const string IconSquareRoundedNumber0 = "\uf5c8";
+    public const string IconSquareRoundedNumber0Filled = "\uf778";
+    public const string IconSquareRoundedNumber1 = "\uf5c9";
+    public const string IconSquareRoundedNumber1Filled = "\uf779";
+    public const string IconSquareRoundedNumber2 = "\uf5ca";
+    public const string IconSquareRoundedNumber2Filled = "\uf77a";
+    public const string IconSquareRoundedNumber3 = "\uf5cb";
+    public const string IconSquareRoundedNumber3Filled = "\uf77b";
+    public const string IconSquareRoundedNumber4 = "\uf5cc";
+    public const string IconSquareRoundedNumber4Filled = "\uf77c";
+    public const string IconSquareRoundedNumber5 = "\uf5cd";
+    public const string IconSquareRoundedNumber5Filled = "\uf77d";
+    public const string IconSquareRoundedNumber6 = "\uf5ce";
+    public const string IconSquareRoundedNumber6Filled = "\uf77e";
+    public const string IconSquareRoundedNumber7 = "\uf5cf";
+    public const string IconSquareRoundedNumber7Filled = "\uf77f";
+    public const string IconSquareRoundedNumber8 = "\uf5d0";
+    public const string IconSquareRoundedNumber8Filled = "\uf780";
+    public const string IconSquareRoundedNumber9 = "\uf5d1";
+    public const string IconSquareRoundedNumber9Filled = "\uf781";
+    public const string IconSquareRoundedPlus = "\uf63f";
+    public const string IconSquareRoundedPlusFilled = "\uf6e8";
+    public const string IconSquareRoundedX = "\uf640";
+    public const string IconSquareRoundedXFilled = "\uf6e9";
+    public const string IconSquareToggle = "\ueef4";
+    public const string IconSquareToggleHorizontal = "\ueef3";
+    public const string IconSquareX = "\ueb2b";
+    public const string IconSquareXFilled = "\ufb41";
+    public const string IconSquaresDiagonal = "\ueef5";
+    public const string IconSquaresFilled = "\ueef6";
+    public const string IconStack = "\ueb2d";
+    public const string IconStack2 = "\ueef7";
+    public const string IconStack3 = "\uef9d";
+    public const string IconStackPop = "\uf234";
+    public const string IconStackPush = "\uf235";
+    public const string IconStairs = "\ueca6";
+    public const string IconStairsDown = "\ueca4";
+    public const string IconStairsUp = "\ueca5";
+    public const string IconStar = "\ueb2e";
+    public const string IconStarFilled = "\uf6a6";
+    public const string IconStarHalf = "\ued19";
+    public const string IconStarHalfFilled = "\uf6a7";
+    public const string IconStarOff = "\ued62";
+    public const string IconStars = "\ued38";
+    public const string IconStarsFilled = "\uf6a8";
+    public const string IconStarsOff = "\uf430";
+    public const string IconStatusChange = "\uf3b0";
+    public const string IconSteam = "\uf24b";
+    public const string IconSteeringWheel = "\uec7b";
+    public const string IconSteeringWheelOff = "\uf431";
+    public const string IconStepInto = "\uece0";
+    public const string IconStepOut = "\uece1";
+    public const string IconStereoGlasses = "\uf4cb";
+    public const string IconStethoscope = "\uedbe";
+    public const string IconStethoscopeOff = "\uf432";
+    public const string IconSticker = "\ueb2f";
+    public const string IconStorm = "\uf24c";
+    public const string IconStormOff = "\uf433";
+    public const string IconStretching = "\uf2db";
+    public const string IconStretching2 = "\ufa6d";
+    public const string IconStrikethrough = "\ueb9e";
+    public const string IconSubmarine = "\ued94";
+    public const string IconSubscript = "\ueb9f";
+    public const string IconSubtask = "\uec9f";
+    public const string IconSum = "\ueb73";
+    public const string IconSumOff = "\uf1ab";
+    public const string IconSun = "\ueb30";
+    public const string IconSunFilled = "\uf6a9";
+    public const string IconSunHigh = "\uf236";
+    public const string IconSunLow = "\uf237";
+    public const string IconSunMoon = "\uf4a3";
+    public const string IconSunOff = "\ued63";
+    public const string IconSunWind = "\uf238";
+    public const string IconSunglasses = "\uf239";
+    public const string IconSunrise = "\uef1c";
+    public const string IconSunset = "\uec31";
+    public const string IconSunset2 = "\uf23a";
+    public const string IconSuperscript = "\ueba0";
+    public const string IconSvg = "\uf25a";
+    public const string IconSwimming = "\uec92";
+    public const string IconSwipe = "\uf551";
+    public const string IconSwitch = "\ueb33";
+    public const string IconSwitch2 = "\uedbf";
+    public const string IconSwitch3 = "\uedc0";
+    public const string IconSwitchHorizontal = "\ueb31";
+    public const string IconSwitchVertical = "\ueb32";
+    public const string IconSword = "\uf030";
+    public const string IconSwordOff = "\uf434";
+    public const string IconSwords = "\uf132";
+    public const string IconTable = "\ueba1";
+    public const string IconTableAlias = "\uf25b";
+    public const string IconTableColumn = "\ufaff";
+    public const string IconTableDown = "\ufa1c";
+    public const string IconTableExport = "\ueef8";
+    public const string IconTableFilled = "\uf782";
+    public const string IconTableHeart = "\ufa1d";
+    public const string IconTableImport = "\ueef9";
+    public const string IconTableMinus = "\ufa1e";
+    public const string IconTableOff = "\ueefa";
+    public const string IconTableOptions = "\uf25c";
+    public const string IconTablePlus = "\ufa1f";
+    public const string IconTableRow = "\ufb00";
+    public const string IconTableShare = "\ufa20";
+    public const string IconTableShortcut = "\uf25d";
+    public const string IconTag = "\ueb34";
+    public const string IconTagOff = "\uefc0";
+    public const string IconTags = "\uef86";
+    public const string IconTagsOff = "\uefc1";
+    public const string IconTallymark1 = "\uec46";
+    public const string IconTallymark2 = "\uec47";
+    public const string IconTallymark3 = "\uec48";
+    public const string IconTallymark4 = "\uec49";
+    public const string IconTallymarks = "\uec4a";
+    public const string IconTank = "\ued95";
+    public const string IconTarget = "\ueb35";
+    public const string IconTargetArrow = "\uf51a";
+    public const string IconTargetOff = "\uf1ad";
+    public const string IconTeapot = "\uf552";
+    public const string IconTelescope = "\uf07d";
+    public const string IconTelescopeOff = "\uf1ae";
+    public const string IconTemperature = "\ueb38";
+    public const string IconTemperatureCelsius = "\ueb36";
+    public const string IconTemperatureFahrenheit = "\ueb37";
+    public const string IconTemperatureMinus = "\uebed";
+    public const string IconTemperatureOff = "\uf1af";
+    public const string IconTemperaturePlus = "\uebee";
+    public const string IconTemplate = "\ueb39";
+    public const string IconTemplateOff = "\uf1b0";
+    public const string IconTent = "\ueefb";
+    public const string IconTentOff = "\uf435";
+    public const string IconTerminal = "\uebdc";
+    public const string IconTerminal2 = "\uebef";
+    public const string IconTestPipe = "\ueb3a";
+    public const string IconTestPipe2 = "\uf0a4";
+    public const string IconTestPipeOff = "\uf1b1";
+    public const string IconTex = "\uf4e0";
+    public const string IconTextCaption = "\uf4a4";
+    public const string IconTextColor = "\uf2dc";
+    public const string IconTextDecrease = "\uf202";
+    public const string IconTextDirectionLtr = "\ueefc";
+    public const string IconTextDirectionRtl = "\ueefd";
+    public const string IconTextIncrease = "\uf203";
+    public const string IconTextOrientation = "\uf2a4";
+    public const string IconTextPlus = "\uf2a5";
+    public const string IconTextRecognition = "\uf204";
+    public const string IconTextResize = "\uef87";
+    public const string IconTextSize = "\uf2b1";
+    public const string IconTextSpellcheck = "\uf2a6";
+    public const string IconTextWrap = "\uebdd";
+    public const string IconTextWrapDisabled = "\ueca7";
+    public const string IconTexture = "\uf51b";
+    public const string IconTheater = "\uf79b";
+    public const string IconThermometer = "\uef67";
+    public const string IconThumbDown = "\ueb3b";
+    public const string IconThumbDownFilled = "\uf6aa";
+    public const string IconThumbDownOff = "\uf436";
+    public const string IconThumbUp = "\ueb3c";
+    public const string IconThumbUpFilled = "\uf6ab";
+    public const string IconThumbUpOff = "\uf437";
+    public const string IconTicTac = "\uf51c";
+    public const string IconTicket = "\ueb3d";
+    public const string IconTicketOff = "\uf1b2";
+    public const string IconTie = "\uf07e";
+    public const string IconTilde = "\uf4a5";
+    public const string IconTiltShift = "\ueefe";
+    public const string IconTiltShiftOff = "\uf1b3";
+    public const string IconTimeDuration0 = "\ufad4";
+    public const string IconTimeDuration10 = "\ufad5";
+    public const string IconTimeDuration15 = "\ufad6";
+    public const string IconTimeDuration30 = "\ufad7";
+    public const string IconTimeDuration45 = "\ufad8";
+    public const string IconTimeDuration5 = "\ufad9";
+    public const string IconTimeDuration60 = "\ufada";
+    public const string IconTimeDuration90 = "\ufadb";
+    public const string IconTimeDurationOff = "\ufadc";
+    public const string IconTimeline = "\uf031";
+    public const string IconTimelineEvent = "\uf553";
+    public const string IconTimelineEventExclamation = "\uf662";
+    public const string IconTimelineEventMinus = "\uf663";
+    public const string IconTimelineEventPlus = "\uf664";
+    public const string IconTimelineEventText = "\uf665";
+    public const string IconTimelineEventX = "\uf666";
+    public const string IconTir = "\uebf0";
+    public const string IconToggleLeft = "\ueb3e";
+    public const string IconToggleRight = "\ueb3f";
+    public const string IconToiletPaper = "\uefd3";
+    public const string IconToiletPaperOff = "\uf1b4";
+    public const string IconToml = "\ufa5d";
+    public const string IconTool = "\ueb40";
+    public const string IconTools = "\uebca";
+    public const string IconToolsKitchen = "\ued64";
+    public const string IconToolsKitchen2 = "\ueeff";
+    public const string IconToolsKitchen2Off = "\uf1b5";
+    public const string IconToolsKitchenOff = "\uf1b6";
+    public const string IconToolsOff = "\uf1b7";
+    public const string IconTooltip = "\uf2dd";
+    public const string IconTopologyBus = "\uf5d9";
+    public const string IconTopologyComplex = "\uf5da";
+    public const string IconTopologyFull = "\uf5dc";
+    public const string IconTopologyFullHierarchy = "\uf5db";
+    public const string IconTopologyRing = "\uf5df";
+    public const string IconTopologyRing2 = "\uf5dd";
+    public const string IconTopologyRing3 = "\uf5de";
+    public const string IconTopologyStar = "\uf5e5";
+    public const string IconTopologyStar2 = "\uf5e0";
+    public const string IconTopologyStar3 = "\uf5e1";
+    public const string IconTopologyStarRing = "\uf5e4";
+    public const string IconTopologyStarRing2 = "\uf5e2";
+    public const string IconTopologyStarRing3 = "\uf5e3";
+    public const string IconTorii = "\uf59b";
+    public const string IconTornado = "\uece2";
+    public const string IconTournament = "\uecd0";
+    public const string IconTower = "\uf2cb";
+    public const string IconTowerOff = "\uf2ca";
+    public const string IconTrack = "\uef00";
+    public const string IconTractor = "\uec0d";
+    public const string IconTrademark = "\uec0e";
+    public const string IconTrafficCone = "\uec0f";
+    public const string IconTrafficConeOff = "\uf1b8";
+    public const string IconTrafficLights = "\ued39";
+    public const string IconTrafficLightsOff = "\uf1b9";
+    public const string IconTrain = "\ued96";
+    public const string IconTransfer = "\ufc1f";
+    public const string IconTransferIn = "\uef2f";
+    public const string IconTransferOut = "\uef30";
+    public const string IconTransferVertical = "\ufc1e";
+    public const string IconTransform = "\uf38e";
+    public const string IconTransformFilled = "\uf6ac";
+    public const string IconTransitionBottom = "\uf2b2";
+    public const string IconTransitionLeft = "\uf2b3";
+    public const string IconTransitionRight = "\uf2b4";
+    public const string IconTransitionTop = "\uf2b5";
+    public const string IconTrash = "\ueb41";
+    public const string IconTrashFilled = "\uf783";
+    public const string IconTrashOff = "\ued65";
+    public const string IconTrashX = "\uef88";
+    public const string IconTrashXFilled = "\uf784";
+    public const string IconTreadmill = "\ufa6e";
+    public const string IconTree = "\uef01";
+    public const string IconTrees = "\uec10";
+    public const string IconTrekking = "\uf5ad";
+    public const string IconTrendingDown = "\ueb42";
+    public const string IconTrendingDown2 = "\uedc1";
+    public const string IconTrendingDown3 = "\uedc2";
+    public const string IconTrendingUp = "\ueb43";
+    public const string IconTrendingUp2 = "\uedc3";
+    public const string IconTrendingUp3 = "\uedc4";
+    public const string IconTriangle = "\ueb44";
+    public const string IconTriangleFilled = "\uf6ad";
+    public const string IconTriangleInverted = "\uf01d";
+    public const string IconTriangleInvertedFilled = "\uf6ae";
+    public const string IconTriangleOff = "\uef02";
+    public const string IconTriangleSquareCircle = "\uece8";
+    public const string IconTriangleSquareCircleFilled = "\ufb42";
+    public const string IconTriangles = "\uf0a5";
+    public const string IconTrident = "\uecc5";
+    public const string IconTrolley = "\uf4cc";
+    public const string IconTrophy = "\ueb45";
+    public const string IconTrophyFilled = "\uf6af";
+    public const string IconTrophyOff = "\uf438";
+    public const string IconTrowel = "\uf368";
+    public const string IconTruck = "\uebc4";
+    public const string IconTruckDelivery = "\uec4b";
+    public const string IconTruckLoading = "\uf1da";
+    public const string IconTruckOff = "\uef03";
+    public const string IconTruckReturn = "\uec4c";
+    public const string IconTxt = "\uf3b1";
+    public const string IconTypography = "\uebc5";
+    public const string IconTypographyOff = "\uf1ba";
+    public const string IconUfo = "\uf26f";
+    public const string IconUfoOff = "\uf26e";
+    public const string IconUmbrella = "\uebf1";
+    public const string IconUmbrellaFilled = "\uf6b0";
+    public const string IconUmbrellaOff = "\uf1bb";
+    public const string IconUnderline = "\ueba2";
+    public const string IconUnlink = "\ueb46";
+    public const string IconUpload = "\ueb47";
+    public const string IconUrgent = "\ueb48";
+    public const string IconUsb = "\uf00c";
+    public const string IconUser = "\ueb4d";
+    public const string IconUserBolt = "\uf9d1";
+    public const string IconUserCancel = "\uf9d2";
+    public const string IconUserCheck = "\ueb49";
+    public const string IconUserCircle = "\uef68";
+    public const string IconUserCode = "\uf9d3";
+    public const string IconUserCog = "\uf9d4";
+    public const string IconUserDollar = "\uf9d5";
+    public const string IconUserDown = "\uf9d6";
+    public const string IconUserEdit = "\uf7cc";
+    public const string IconUserExclamation = "\uec12";
+    public const string IconUserHeart = "\uf7cd";
+    public const string IconUserMinus = "\ueb4a";
+    public const string IconUserOff = "\uecf9";
+    public const string IconUserPause = "\uf9d7";
+    public const string IconUserPin = "\uf7ce";
+    public const string IconUserPlus = "\ueb4b";
+    public const string IconUserQuestion = "\uf7cf";
+    public const string IconUserSearch = "\uef89";
+    public const string IconUserShare = "\uf9d8";
+    public const string IconUserShield = "\uf7d0";
+    public const string IconUserStar = "\uf7d1";
+    public const string IconUserUp = "\uf7d2";
+    public const string IconUserX = "\ueb4c";
+    public const string IconUsers = "\uebf2";
+    public const string IconUsersGroup = "\ufa21";
+    public const string IconUsersMinus = "\ufa0e";
+    public const string IconUsersPlus = "\ufa0f";
+    public const string IconUvIndex = "\uf3b2";
+    public const string IconUxCircle = "\uf369";
+    public const string IconVaccine = "\uef04";
+    public const string IconVaccineBottle = "\uef69";
+    public const string IconVaccineBottleOff = "\uf439";
+    public const string IconVaccineOff = "\uf1bc";
+    public const string IconVacuumCleaner = "\uf5e6";
+    public const string IconVariable = "\uef05";
+    public const string IconVariableMinus = "\uf36a";
+    public const string IconVariableOff = "\uf1bd";
+    public const string IconVariablePlus = "\uf36b";
+    public const string IconVector = "\ueca9";
+    public const string IconVectorBezier = "\uef1d";
+    public const string IconVectorBezier2 = "\uf1a3";
+    public const string IconVectorBezierArc = "\uf4cd";
+    public const string IconVectorBezierCircle = "\uf4ce";
+    public const string IconVectorOff = "\uf1be";
+    public const string IconVectorSpline = "\uf565";
+    public const string IconVectorTriangle = "\ueca8";
+    public const string IconVectorTriangleOff = "\uf1bf";
+    public const string IconVenus = "\uec86";
+    public const string IconVersions = "\ued52";
+    public const string IconVersionsFilled = "\uf6b1";
+    public const string IconVersionsOff = "\uf1c0";
+    public const string IconVideo = "\ued22";
+    public const string IconVideoMinus = "\ued1f";
+    public const string IconVideoOff = "\ued20";
+    public const string IconVideoPlus = "\ued21";
+    public const string IconView360 = "\ued84";
+    public const string IconView360Off = "\uf1c1";
+    public const string IconViewfinder = "\ueb4e";
+    public const string IconViewfinderOff = "\uf1c2";
+    public const string IconViewportNarrow = "\uebf3";
+    public const string IconViewportWide = "\uebf4";
+    public const string IconVinyl = "\uf00d";
+    public const string IconVip = "\uf3b3";
+    public const string IconVipOff = "\uf43a";
+    public const string IconVirus = "\ueb74";
+    public const string IconVirusOff = "\ued66";
+    public const string IconVirusSearch = "\ued67";
+    public const string IconVocabulary = "\uef1e";
+    public const string IconVocabularyOff = "\uf43b";
+    public const string IconVolcano = "\uf79c";
+    public const string IconVolume = "\ueb51";
+    public const string IconVolume2 = "\ueb4f";
+    public const string IconVolume3 = "\ueb50";
+    public const string IconVolumeOff = "\uf1c3";
+    public const string IconWalk = "\uec87";
+    public const string IconWall = "\uef7a";
+    public const string IconWallOff = "\uf43c";
+    public const string IconWallet = "\ueb75";
+    public const string IconWalletOff = "\uf1c4";
+    public const string IconWallpaper = "\uef56";
+    public const string IconWallpaperOff = "\uf1c5";
+    public const string IconWand = "\uebcb";
+    public const string IconWandOff = "\uf1c6";
+    public const string IconWash = "\uf311";
+    public const string IconWashDry = "\uf304";
+    public const string IconWashDry1 = "\uf2fa";
+    public const string IconWashDry2 = "\uf2fb";
+    public const string IconWashDry3 = "\uf2fc";
+    public const string IconWashDryA = "\uf2fd";
+    public const string IconWashDryDip = "\uf2fe";
+    public const string IconWashDryF = "\uf2ff";
+    public const string IconWashDryFlat = "\ufa7f";
+    public const string IconWashDryHang = "\uf300";
+    public const string IconWashDryOff = "\uf301";
+    public const string IconWashDryP = "\uf302";
+    public const string IconWashDryShade = "\uf303";
+    public const string IconWashDryW = "\uf322";
+    public const string IconWashDryclean = "\uf305";
+    public const string IconWashDrycleanOff = "\uf323";
+    public const string IconWashEco = "\ufa80";
+    public const string IconWashGentle = "\uf306";
+    public const string IconWashHand = "\ufa81";
+    public const string IconWashMachine = "\uf25e";
+    public const string IconWashOff = "\uf307";
+    public const string IconWashPress = "\uf308";
+    public const string IconWashTemperature1 = "\uf309";
+    public const string IconWashTemperature2 = "\uf30a";
+    public const string IconWashTemperature3 = "\uf30b";
+    public const string IconWashTemperature4 = "\uf30c";
+    public const string IconWashTemperature5 = "\uf30d";
+    public const string IconWashTemperature6 = "\uf30e";
+    public const string IconWashTumbleDry = "\uf30f";
+    public const string IconWashTumbleOff = "\uf310";
+    public const string IconWaterpolo = "\ufa6f";
+    public const string IconWaveSawTool = "\uecd3";
+    public const string IconWaveSine = "\uecd4";
+    public const string IconWaveSquare = "\uecd5";
+    public const string IconWebhook = "\uf01e";
+    public const string IconWebhookOff = "\uf43d";
+    public const string IconWeight = "\uf589";
+    public const string IconWheelchair = "\uf1db";
+    public const string IconWheelchairOff = "\uf43e";
+    public const string IconWhirl = "\uf51d";
+    public const string IconWifi = "\ueb52";
+    public const string IconWifi0 = "\ueba3";
+    public const string IconWifi1 = "\ueba4";
+    public const string IconWifi2 = "\ueba5";
+    public const string IconWifiOff = "\uecfa";
+    public const string IconWind = "\uec34";
+    public const string IconWindOff = "\uf1c7";
+    public const string IconWindmill = "\ued85";
+    public const string IconWindmillFilled = "\uf6b2";
+    public const string IconWindmillOff = "\uf1c8";
+    public const string IconWindow = "\uef06";
+    public const string IconWindowMaximize = "\uf1f1";
+    public const string IconWindowMinimize = "\uf1f2";
+    public const string IconWindowOff = "\uf1c9";
+    public const string IconWindsock = "\uf06d";
+    public const string IconWiper = "\uecab";
+    public const string IconWiperWash = "\uecaa";
+    public const string IconWoman = "\ueb53";
+    public const string IconWood = "\uf359";
+    public const string IconWorld = "\ueb54";
+    public const string IconWorldBolt = "\uf9d9";
+    public const string IconWorldCancel = "\uf9da";
+    public const string IconWorldCheck = "\uf9db";
+    public const string IconWorldCode = "\uf9dc";
+    public const string IconWorldCog = "\uf9dd";
+    public const string IconWorldDollar = "\uf9de";
+    public const string IconWorldDown = "\uf9df";
+    public const string IconWorldDownload = "\uef8a";
+    public const string IconWorldExclamation = "\uf9e0";
+    public const string IconWorldHeart = "\uf9e1";
+    public const string IconWorldLatitude = "\ued2e";
+    public const string IconWorldLongitude = "\ued2f";
+    public const string IconWorldMinus = "\uf9e2";
+    public const string IconWorldOff = "\uf1ca";
+    public const string IconWorldPause = "\uf9e3";
+    public const string IconWorldPin = "\uf9e4";
+    public const string IconWorldPlus = "\uf9e5";
+    public const string IconWorldQuestion = "\uf9e6";
+    public const string IconWorldSearch = "\uf9e7";
+    public const string IconWorldShare = "\uf9e8";
+    public const string IconWorldStar = "\uf9e9";
+    public const string IconWorldUp = "\uf9ea";
+    public const string IconWorldUpload = "\uef8b";
+    public const string IconWorldWww = "\uf38f";
+    public const string IconWorldX = "\uf9eb";
+    public const string IconWreckingBall = "\ued97";
+    public const string IconWriting = "\uef08";
+    public const string IconWritingOff = "\uf1cb";
+    public const string IconWritingSign = "\uef07";
+    public const string IconWritingSignOff = "\uf1cc";
+    public const string IconX = "\ueb55";
+    public const string IconXboxA = "\uf2b6";
+    public const string IconXboxB = "\uf2b7";
+    public const string IconXboxX = "\uf2b8";
+    public const string IconXboxY = "\uf2b9";
+    public const string IconXd = "\ufa33";
+    public const string IconXxx = "\ufc20";
+    public const string IconYinYang = "\uec35";
+    public const string IconYinYangFilled = "\uf785";
+    public const string IconYoga = "\uf01f";
+    public const string IconZeppelin = "\uf270";
+    public const string IconZeppelinOff = "\uf43f";
+    public const string IconZip = "\uf3b4";
+    public const string IconZodiacAquarius = "\uecac";
+    public const string IconZodiacAries = "\uecad";
+    public const string IconZodiacCancer = "\uecae";
+    public const string IconZodiacCapricorn = "\uecaf";
+    public const string IconZodiacGemini = "\uecb0";
+    public const string IconZodiacLeo = "\uecb1";
+    public const string IconZodiacLibra = "\uecb2";
+    public const string IconZodiacPisces = "\uecb3";
+    public const string IconZodiacSagittarius = "\uecb4";
+    public const string IconZodiacScorpio = "\uecb5";
+    public const string IconZodiacTaurus = "\uecb6";
+    public const string IconZodiacVirgo = "\uecb7";
+    public const string IconZoomCancel = "\uec4d";
+    public const string IconZoomCheck = "\uef09";
+    public const string IconZoomCheckFilled = "\uf786";
+    public const string IconZoomCode = "\uf07f";
+    public const string IconZoomExclamation = "\uf080";
+    public const string IconZoomFilled = "\uf787";
+    public const string IconZoomIn = "\ueb56";
+    public const string IconZoomInArea = "\uf1dc";
+    public const string IconZoomInAreaFilled = "\uf788";
+    public const string IconZoomInFilled = "\uf789";
+    public const string IconZoomMoney = "\uef0a";
+    public const string IconZoomOut = "\ueb57";
+    public const string IconZoomOutArea = "\uf1dd";
+    public const string IconZoomOutFilled = "\uf78a";
+    public const string IconZoomPan = "\uf1de";
+    public const string IconZoomQuestion = "\uedeb";
+    public const string IconZoomReplace = "\uf2a7";
+    public const string IconZoomReset = "\uf295";
+    public const string IconZzz = "\uf228";
+    public const string IconZzzOff = "\uf440";
 
 }

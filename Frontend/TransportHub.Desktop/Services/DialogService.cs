@@ -43,7 +43,7 @@ public class DialogService : IDialogService
             {
                 if (Avalonia.Application.Current.ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
                 {
-                    await box.ShowAsync();
+                    await box.ShowWindowDialogAsync(desktop.MainWindow);
                 }
                 else if (Avalonia.Application.Current.ApplicationLifetime is ISingleViewApplicationLifetime singleViewPlatform)
                 {
@@ -81,7 +81,7 @@ public class DialogService : IDialogService
             {
                 if (Avalonia.Application.Current.ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
                 {
-                    return await box.ShowAsync();
+                    return await box.ShowWindowDialogAsync(desktop.MainWindow);
                 }
                 else if (Avalonia.Application.Current.ApplicationLifetime is ISingleViewApplicationLifetime singleViewPlatform)
                 {
