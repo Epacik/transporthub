@@ -11,9 +11,27 @@ namespace TransportHub.Core.Services.InMemory.API;
 
 public class InMemoryUsersService : IUsersService
 {
-    public Task<Result<bool, Exception>> Add(UserDto userDto)
+    public InMemoryUsersService(IAuthorizationService authorizationService)
     {
-        throw new NotImplementedException();
+        _authorizationService = authorizationService;
+    }
+    public Task<Result<bool, Exception>> Add(UserAddDto userDto)
+    {
+        return Task.Run<Result<bool, Exception>>(() =>
+        {
+            StaticUsers.Add(new()
+            {
+                Id = $"ID_{userDto.Name}",
+                Name = userDto.Name,
+                Disabled = false,
+                MultiLogin = userDto.MultiLogin,
+                PasswordExpirationDate = userDto.PasswordExpirationDate,
+                Picture = userDto.Picture,
+                UserType = userDto.UserType,
+            });
+
+            return true;
+        });
     }
 
     public Task<Result<UserDto, Exception>> GetUser(string id)
@@ -28,12 +46,59 @@ public class InMemoryUsersService : IUsersService
 
     public Task<Result<bool, Exception>> Remove(string id)
     {
-        throw new NotImplementedException();
+        return Task.Run<Result<bool, Exception>>(() =>
+        {
+            var user = StaticUsers.Find(x => x.Id == id);
+
+            if (user is not null)
+            {
+                StaticUsers.Remove(user);
+            }
+
+            return user is not null;
+        });
     }
 
-    public Task<Result<bool, Exception>> Update(UserDto userDto)
+    public Task<Result<bool, Exception>> Update(string id, UserUpdateDto userDto)
     {
-        throw new NotImplementedException();
+        return Task.Run<Result<bool, Exception>>(() =>
+        {
+            var item = StaticUsers.Find(x => x.Id == id);
+            if(item is null)
+            {
+                return new InvalidOperationException("User not found");
+            }
+
+            item.Name = userDto.Name;
+            item.Picture = userDto.Picture;
+
+            return true;
+        });
+    }
+
+    public Task<Result<bool, Exception>> UpdateAsAdmin(string id, UserAdminUpdateDto userDto)
+    {
+        return Task.Run<Result<bool, Exception>>(() =>
+        {
+            var currentUserId = _authorizationService.UserData?.User;
+            if (!StaticUsers.Any(x => x.Id == currentUserId && x.UserType == UserType.Admin))
+                return new InvalidOperationException("Uoy have to be an admin");
+
+            var item = StaticUsers.FirstOrDefault(x => x.Id == id);
+            if (item is null)
+            {
+                return new InvalidOperationException("User not found");
+            }
+
+            item.Name = userDto.Name;
+            item.Picture = userDto.Picture;
+            item.PasswordExpirationDate = userDto.PasswordExpirationDate;
+            item.UserType = userDto.UserType;
+            item.MultiLogin = userDto.MultiLogin;
+            item.Disabled = userDto.Disabled;
+
+            return true;
+        });
     }
 
     internal static readonly List<UserDto> StaticUsers = new()
@@ -44,6 +109,7 @@ public class InMemoryUsersService : IUsersService
         CreateUserDto("Sam", null, UserType.Manager, false, true),
         CreateUserDto("Grzegorz", DateTime.Now.AddDays(14), UserType.User, false, false),
     };
+    private readonly IAuthorizationService _authorizationService;
 
     private static UserDto CreateUserDto(
         string name,
@@ -61,5 +127,10 @@ public class InMemoryUsersService : IUsersService
             MultiLogin = multiLogin,
             Disabled = disabled
         };
+    }
+
+    public Task<Result<bool, Exception>> UpdatePassword(string id, UserUpdatePasswordDto password)
+    {
+        return Task.FromResult<Result<bool, Exception>>(true);
     }
 }

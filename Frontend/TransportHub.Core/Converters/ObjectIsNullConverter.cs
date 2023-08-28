@@ -13,6 +13,10 @@ public class ObjectIsNullConverter : IValueConverter
 {
     public object? Convert(object? value, Type targetType, object? parameter, CultureInfo culture)
     {
+        var isNull = (parameter is bool p && p) || (parameter is string s && string.Equals(s, "True", StringComparison.OrdinalIgnoreCase));
+
+        if (isNull)
+            return value is null;
         return value is not null;
     }
 

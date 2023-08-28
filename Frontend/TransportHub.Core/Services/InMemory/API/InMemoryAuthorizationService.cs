@@ -15,7 +15,7 @@ namespace TransportHub.Services.InMemory.API
     {
         public bool IsLoggedIn { get; set; }
 
-        public LoginResponseDto? UserData => null;
+        public LoginResponseDto? UserData { get; private set; }
 
         public event Action<LoginResponseDto>? LoggedIn;
         public event Action? LoggedOut;
@@ -46,6 +46,8 @@ namespace TransportHub.Services.InMemory.API
                 User = login,
                 Key = "",
             };
+
+            UserData = response;
 
             LoggedIn?.Invoke(response);
 

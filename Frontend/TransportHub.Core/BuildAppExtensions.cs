@@ -20,6 +20,9 @@ using TransportHub.Api.Impl;
 using TransportHub.Services.Impl;
 using TransportHub.Core.Services;
 using TransportHub.Core.Services.InMemory.API;
+using Avalonia.Input.Platform;
+using Avalonia.Controls.ApplicationLifetimes;
+using Avalonia.Controls;
 
 namespace TransportHub.Core;
 
@@ -86,6 +89,17 @@ public static class BuildAppExtensions
         builder.RegisterType<SystemInfoService>().As<ISystemInfoService>();
         builder.RegisterType<Serializer>().As<IJsonSerializer>();
         builder.RegisterType<LoadingPopupService>().As<ILoadingPopupService>();
+        builder.Register<IClipboard?>(c =>
+        {
+            var lifetime = Application.Current?.ApplicationLifetime;
+            if (lifetime is IClassicDesktopStyleApplicationLifetime desktop)
+                return desktop.MainWindow?.Clipboard;
+
+            else if (lifetime is ISingleViewApplicationLifetime singleView)
+                return TopLevel.GetTopLevel(singleView.MainView)?.Clipboard;
+
+            return null;
+        });
 
         return builder;
     }

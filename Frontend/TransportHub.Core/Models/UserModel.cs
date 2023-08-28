@@ -12,7 +12,7 @@ using TransportHub.Api;
 
 namespace TransportHub.Core.Models;
 
-public partial class UserModel : ObservableObject
+public partial class UserModel : ObservableObject, IClonable<UserModel>
 {
     [ObservableProperty]
     private string? _id;
@@ -51,6 +51,14 @@ public partial class UserModel : ObservableObject
         {
             IsDirty = true;
         }
+    }
+
+    public UserModel Clone()
+    {
+        var model = new UserModel(Id, Name, Picture, PasswordExpirationDate, UserType, MultiLogin, Disabled);
+        model.IsDirty = false;
+        return model;
+
     }
 
     public UserModel() { }

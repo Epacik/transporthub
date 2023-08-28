@@ -54,7 +54,24 @@ pub struct UserAddDto {
 
 #[derive(Deserialize)]
 #[serde(rename_all = "camelCase")]
+pub struct UserAdminUpdateDto {
+    pub name: String,
+    pub picture: Option<String>,
+    pub password_expiration_date: Option<DateTime>,
+    pub user_type: UserType,
+    pub multi_login: bool,
+    pub disabled: bool,
+}
+
+#[derive(Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct UserUpdateDto {
     pub name: String,
     pub picture: Option<String>,
+}
+
+#[derive(Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct UserUpdatePasswordDto {
+    pub password: String,
 }

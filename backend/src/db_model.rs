@@ -21,6 +21,7 @@ pub async fn context() -> Rbatis {
 }
 
 #[derive(Copy, Clone, FromPrimitive, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub enum UserType {
     Invalid = -1,
     User = 1,
@@ -50,7 +51,7 @@ pub struct User {
 crud!(User {}, table_names::USERS);
 impl_select!(User { select_by_name(name: &str) -> Option => "`where name = #{name} limit 1`"}, table_names::USERS);
 impl_select!(User { select_by_id(id: i32) -> Option => "`where id = #{id} limit 1`"}, table_names::USERS);
-impl_update!(User { update_by_id(id: i32) => "`where id = #{id}`"});
+impl_update!(User { update_by_id(id: i32) => "`where id = #{id}`"}, table_names::USERS);
 
 
 
@@ -69,7 +70,6 @@ impl User {
     pub fn make_salt() -> String {
         Alphanumeric.sample_string(&mut rand::thread_rng(), 64)
     }
-
 
     pub async fn create<S: AsRef<str>>(
         context: &mut dyn rbatis::executor::Executor,
@@ -118,6 +118,26 @@ impl User {
             Ok(ok) => Ok(ok),
             Err(err) => Err(UserCreateError::DatabaseError(err)),
         }
+    }
+
+    pub fn set_password<S: AsRef<str>>(&mut self, password: S) -> Result<String, argonautica::Error>{
+        let config = config::config();
+
+        let salt = self.password_salt.clone();
+        let mut hasher = Hasher::default();
+
+        let hash = hasher
+            .with_password(password.as_ref())
+            .with_secret_key(config.pass_secret())
+            .with_salt(&salt)
+            .hash();
+
+
+        if hash.is_ok() {
+            self.password_hash = hash.clone().unwrap();
+        }
+
+        hash
     }
 
     pub async fn check_password<S: AsRef<str>>(&self, password: S) -> PasswordVerificationResult {

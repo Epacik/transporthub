@@ -13,6 +13,8 @@ pub fn scope() -> impl HttpServiceFactory {
     .service(add)
     .service(remove)
     .service(update)
+    .service(update_as_admin)
+    .service(update_password)
 }
 
 
@@ -66,6 +68,7 @@ pub async fn get_user(user_id: web::Path<String>, req: HttpRequest) -> Response 
         Err(err) => return Err(err),
     };
 
+
     let can_access = match super::can_access(&user_info, UserType::Admin).await {
         Ok(val) => val,
         Err(err) => return Err(err),
@@ -90,7 +93,7 @@ pub async fn get_user(user_id: web::Path<String>, req: HttpRequest) -> Response 
 
 }
 
-#[put("/add")]
+#[put("admin/add")]
 pub async fn add(body: web::Json<dto::UserAddDto>, req: HttpRequest) -> Response {
     let user_info = match super::get_user_info(&req) {
         Ok(val) => val,
@@ -165,7 +168,7 @@ pub async fn add(body: web::Json<dto::UserAddDto>, req: HttpRequest) -> Response
 
 }
 
-#[delete("/{user_id}/delete")]
+#[delete("/{user_id}/admin/delete")]
 pub async fn remove(user_id: web::Path<String>, req: HttpRequest) -> Response {
     let user_id = user_id.clone();
     let user_info = match super::get_user_info(&req) {
@@ -224,6 +227,99 @@ pub async fn update(user_id: web::Path<String>, body: web::Json<dto::UserUpdateD
 
     user.name = body.0.name.clone();
     user.picture = body.0.picture.clone();
+
+    if let Err(err) = User::update_by_id(&mut context, &user, user_id).await {
+        return Err(errors::database_error(&err));
+    }
+
+    Ok(HttpResponse::Ok().finish())
+}
+
+#[patch("/{user_id}/admin/update")]
+pub async fn update_as_admin(user_id: web::Path<String>, body: web::Json<dto::UserAdminUpdateDto>, req: HttpRequest) -> Response {
+    let user_id = user_id.clone();
+    let user_info = match super::get_user_info(&req) {
+        Ok(val) => val,
+        Err(err) => return Err(err),
+    };
+
+    let can_access = match super::can_access(&user_info, UserType::Admin).await {
+        Ok(val) => val,
+        Err(err) => return Err(err),
+    };
+
+    let user_id = super::decode_id(&user_id);
+
+    if !can_access {
+        return Err(errors::insufficient_privileges(user_id));
+    }
+
+    let mut context = db_model::context().await;
+    let user = match User::select_by_id(&mut context, user_id).await {
+        Err(err) => return Err(errors::database_error(&err)),
+        Ok(val) => val,
+    };
+
+    let mut user = match user {
+        Some(val) => val,
+        None => return Err(errors::not_found()),
+    };
+
+    let dto = body.0;
+    user.id = None;
+    user.name = dto.name.clone();
+    user.picture = dto.picture.clone();
+    user.password_expiration_date = match dto.password_expiration_date.clone() {
+        None => None,
+        Some(d) => Some(rbatis::rbdc::datetime::DateTime(d)),
+    };
+    user.set_user_type(dto.user_type.clone());
+    user.multi_login = dto.multi_login;
+    user.disabled = dto.disabled;
+
+
+    if let Err(err) = User::update_by_id(&mut context, &user, user_id).await {
+        return Err(errors::database_error(&err));
+    }
+
+    Ok(HttpResponse::Ok().finish())
+}
+
+#[patch("/{user_id}/update_password")]
+pub async fn update_password(user_id: web::Path<String>, body: web::Json<dto::UserUpdatePasswordDto>, req: HttpRequest) -> Response {
+    let user_id = user_id.clone();
+    let user_info = match super::get_user_info(&req) {
+        Ok(val) => val,
+        Err(err) => return Err(err),
+    };
+
+    let can_access = match super::can_access(&user_info, UserType::Admin).await {
+        Ok(val) => val,
+        Err(err) => return Err(err),
+    };
+
+    let user_id = super::decode_id(&user_id);
+
+    if user_info.user_id != user_id && !can_access {
+        return Err(errors::insufficient_privileges(user_id));
+    }
+
+    let mut context = db_model::context().await;
+    let user = match User::select_by_id(&mut context, user_id).await {
+        Err(err) => return Err(errors::database_error(&err)),
+        Ok(val) => val,
+    };
+
+    let mut user = match user {
+        Some(val) => val,
+        None => return Err(errors::not_found()),
+    };
+
+    if let Err(e) = user.set_password(body.password.clone()) {
+        return Err(errors::password_change_error(&e));
+    }
+
+    user.Id = None;
 
     if let Err(err) = User::update_by_id(&mut context, &user, user_id).await {
         return Err(errors::database_error(&err));

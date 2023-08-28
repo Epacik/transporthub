@@ -12,7 +12,9 @@ public interface IUsersService
 {
     Task<Result<IEnumerable<UserDto>, Exception>> ListUsers();
     Task<Result<UserDto, Exception>> GetUser(string id);
-    Task<Result<bool, Exception>> Add(UserDto userDto);
+    Task<Result<bool, Exception>> Add(UserAddDto userDto);
     Task<Result<bool, Exception>> Remove(string id);
-    Task<Result<bool, Exception>> Update(UserDto userDto);
+    Task<Result<bool, Exception>> Update(string id, UserUpdateDto userDto);
+    Task<Result<bool, Exception>> UpdateAsAdmin(string id, UserAdminUpdateDto userDto);
+    Task<Result<bool, Exception>> UpdatePassword(string id, UserUpdatePasswordDto userUpdatePasswordDto);
 }

@@ -158,4 +158,13 @@ pub mod users {
     }
 }
 
+pub(crate) fn password_change_error(e: &argonautica::Error) -> ErrorResponse {
+    log::error!("An error occured while changing password \n{0}", e);
+
+
+    let body = if *DEBUG { format!("Internal server error:\n {0}", e) } else { String::from("Internal server error") };
+
+    ErrorResponse::new(StatusCode::INTERNAL_SERVER_ERROR, body)
+}
+
 

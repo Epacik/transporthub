@@ -26,8 +26,12 @@
         </Grid.ColumnDefinitions>
         
         <ListBox ItemsSource="{Binding Users}"
-             SelectionMode="Single"
-             SelectedItem="{Binding SelectedUser}">
+                 SelectionMode="Single"
+                 SelectedItem="{Binding SelectedUser}"
+                 IsEnabled="{Binding
+                    EditedUser,
+                    Converter={StaticResource ObjectIsNullConverter},
+                    ConverterParameter=True}">
             <ListBox.Styles>
                 <Styles>
                     <Style Selector="ListBoxItem">
@@ -59,7 +63,7 @@
                         <TextBlock Grid.Row="2"
                                    Grid.Column="2">
                             <Run Text="Data ważności hasła"/>
-                            <Run Text="{Binding PasswordExpirationDate}"/>
+                            <Run Text="{Binding PasswordExpirationDate, StringFormat='yyyy.MM.dd'}"/>
                         </TextBlock>
                         <StackPanel Grid.Row="4"
                                     Grid.Column="0"
@@ -78,9 +82,36 @@
             </ListBox.ItemTemplate>
         </ListBox>
 
-        <Grid RowDefinitions="50,*,50"
+        <Button HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                VerticalContentAlignment="Center"
+                HorizontalContentAlignment="Center"
+                Width="40"
+                Height="40"
+                Margin="30"
+                Command="{Binding AddUserCommand}"
+                Classes="accent"
+                IsEnabled="{Binding
+                                EditedUser,
+                                Converter={StaticResource ObjectIsNullConverter},
+                                ConverterParameter=True}">
+                <controls:TablerIcon Icon="IconPlus"/>
+            </Button>
+
+        <Grid RowDefinitions="50,5,*,50"
               Grid.Column="1"
-              IsVisible="{Binding SelectedUser, Converter={StaticResource ObjectIsNullConverter}}">
+              IsVisible="{Binding EditedUser, Converter={StaticResource ObjectIsNullConverter}}">
+
+            <Border Background="{DynamicResource AccentFillColorDefaultBrush}"
+                    IsVisible="{Binding EditedUser.IsDirty, FallbackValue=false}"
+                    CornerRadius="5">
+                <TextBlock Foreground="White"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center">
+                    Istnieją niezapisane zmiany. Nie zapomnij ich zapisać!
+                </TextBlock>
+            </Border>
+
             <Button HorizontalAlignment="Right"
                     VerticalContentAlignment="Center"
                     HorizontalContentAlignment="Center"
@@ -91,12 +122,11 @@
                 <controls:TablerIcon Icon="IconX"/>
             </Button>
 
-            <Grid Grid.Row="1"
-                  DataContext="{Binding SelectedUser}"
-                  RowDefinitions="40,30,30,22,32,10,22,32,*"
+            <Grid Grid.Row="2"
+                  DataContext="{Binding EditedUser}"
+                  RowDefinitions="50,20,30,22,32,10,22,32,10,*"
                   ColumnDefinitions="70,5,145,20,*"
-                  Margin="10,0"
-                  ShowGridLines="True">
+                  Margin="10,0">
 
                 <Button Grid.RowSpan="2">
                     <ToolTip.Tip>
@@ -106,7 +136,7 @@
                 </Button>
                 
 
-                <TextBlock FontSize="30"
+                <TextBox FontSize="25"
                            Grid.Column="2"
                            Grid.ColumnSpan="3"
                            Text="{Binding Name}"/>
@@ -125,7 +155,7 @@
                 <ComboBox Grid.Row="4"
                           Grid.ColumnSpan="3"
                           HorizontalAlignment="Stretch"
-                          ItemsSource="{Binding $parent[views:UsersView].((vm:UsersViewModel)DataContext).UserTypes }"
+                          ItemsSource="{Binding $parent[views:UsersView].((vm:UsersViewModel)DataContext).UserTypes}"
                           SelectedItem="{Binding UserType}"/>
 
                 <TextBlock Grid.Row="6"
@@ -138,7 +168,8 @@
                     <CalendarDatePicker SelectedDate="{Binding PasswordExpirationDate}"
                                         Width="180"/>
                     <Button VerticalContentAlignment="Center"
-                            Command="{Binding ResetPasswordExpirationDateCommand}">
+                            Command="{Binding ResetPasswordExpirationDateCommand}"
+                            VerticalAlignment="Stretch">
                         <controls:TablerIcon Icon="IconX"/>
                     </Button> 
                 </StackPanel>
@@ -152,23 +183,56 @@
                           Grid.Row="4"/>
 
                 <TextBlock Text="Aktywny"
-                               Grid.Column="5"
-                               Grid.Row="6"/>
+                           Grid.Column="5"
+                           Grid.Row="6"
+                           IsVisible="{Binding !$parent[views:UsersView].((vm:UsersViewModel)DataContext).AddingUser}"/>
 
                 <CheckBox IsChecked="{Binding !Disabled}"
                           Grid.Column="5"
-                          Grid.Row="7"/>
+                          Grid.Row="7"
+                          IsEnabled="{Binding $parent[views:UsersView].((vm:UsersViewModel)DataContext).EnableIsActive}"
+                          IsVisible="{Binding !$parent[views:UsersView].((vm:UsersViewModel)DataContext).AddingUser}"/>
+
+                <Button Grid.Row="9"
+                        Grid.ColumnSpan="3"
+                        Content="Zresetuj hasło"
+                        HorizontalAlignment="Stretch"
+                        VerticalAlignment="Top"
+                        Command="{Binding $parent[views:UsersView].((vm:UsersViewModel)DataContext).ResetPasswordCommand}"
+                        IsVisible="{Binding !$parent[views:UsersView].((vm:UsersViewModel)DataContext).AddingUser}"/>
                 
             </Grid>
 
+            <Button Margin="10,0"
+                    Grid.Row="3"
+                    Foreground="White"
+                    Background="DarkRed"
+                    Command="{Binding RemoveUserCommand}">
+                Usuń
+            </Button>
             <StackPanel Orientation="Horizontal"
                         Spacing="10"
-                        Margin="10,0"
-                        Grid.Row="2"
-                        HorizontalAlignment="Right">
-                <Button >Cofnij zmiany</Button>
-                <Button Classes="accent">Zapisz</Button>
+                        Grid.Row="3"
+                        HorizontalAlignment="Right"
+                        IsVisible="{Binding !AddingUser}">
+                <Button IsEnabled="{Binding EditedUser.IsDirty}"
+                        Command="{Binding RevertChangesCommand}">
+                    Cofnij zmiany
+                </Button>
+                <Button Classes="accent"
+                        IsEnabled="{Binding EditedUser.IsDirty}"
+                        Command="{Binding SaveChangesCommand}">
+                    Zapisz
+                </Button>
             </StackPanel>
+
+        <Button Grid.Row="3"
+                HorizontalAlignment="Right"
+                IsVisible="{Binding AddingUser}"
+                Classes="accent"
+                Command="{Binding AddNewUserCommand}">
+            Zapisz
+        </Button>
         </Grid>
     </Grid>
 </UserControl>

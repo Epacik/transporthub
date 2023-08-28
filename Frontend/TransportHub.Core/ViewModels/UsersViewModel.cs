@@ -1,3 +1,4 @@
+using Avalonia.Input.Platform;
 using Avalonia.Threading;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
@@ -24,18 +25,23 @@ public partial class UsersViewModel : ObservableObject, INavigationAwareViewMode
     private readonly ILogger _logger;
     private readonly ILoadingPopupService _loadingPopupService;
     private readonly IDialogService _dialogService;
+    private readonly IAuthorizationService _authorizationService;
+    private readonly IClipboard? _clipboard;
 
     public UsersViewModel(
         IUsersService usersService,
         ILogger logger,
         ILoadingPopupService loadingPopupService,
-        IDialogService dialogService)
+        IDialogService dialogService,
+        IAuthorizationService authorizationService,
+        IClipboard? clipboard)
     {
         _usersService = usersService;
         _logger = logger;
         _loadingPopupService = loadingPopupService;
         _dialogService = dialogService;
-
+        _authorizationService = authorizationService;
+        _clipboard = clipboard;
         UserTypes = new ObservableCollection<UserType>
         {
             UserType.User,
@@ -48,20 +54,28 @@ public partial class UsersViewModel : ObservableObject, INavigationAwareViewMode
     private ObservableCollection<UserModel> _users = new();
 
     [ObservableProperty]
+    private bool _addingUser;
+
+    [ObservableProperty]
+    private bool _enableIsActive;
+
+    [ObservableProperty]
+    private UserModel? _editedUser;
+
+    [ObservableProperty]
     private UserModel? _selectedUser;
 
-    async partial void OnSelectedUserChanging(UserModel? oldValue, UserModel? newValue)
+    partial void OnSelectedUserChanging(UserModel? oldValue, UserModel? newValue)
     {
         if (newValue is null)
+        {
+            EditedUser = null;
             return;
+        }
 
-        await Dispatcher.UIThread.InvokeAsync(async () => {
-            if (oldValue is not null && oldValue.IsDirty && !(await ConfirmUnsavedChanges()))
-            {
-                SelectedUser = oldValue;
-                return;
-            }
-        });
+        EditedUser = newValue.Clone();
+        EnableIsActive = newValue?.Id != _authorizationService.UserData?.User;
+        AddingUser = false;
     }
 
 
@@ -69,17 +83,202 @@ public partial class UsersViewModel : ObservableObject, INavigationAwareViewMode
     private ObservableCollection<UserType> _userTypes;
 
     [RelayCommand]
-    public async Task CloseUser()
+    private async Task CloseUser()
     {
-        if (SelectedUser is null ||
-            (SelectedUser.IsDirty && !(await ConfirmUnsavedChanges())))
+        if (EditedUser is null ||
+            (EditedUser.IsDirty && !(await ConfirmUnsavedChanges())))
         {
             return;
         }
        
         SelectedUser = null;
+        EditedUser = null;
         await OnNavigatedFrom();
         await OnNavigatedTo();
+    }
+
+    [RelayCommand]
+    private async Task RevertChanges()
+    {
+        if (EditedUser is null || !EditedUser.IsDirty)
+            return;
+
+        var result = await _dialogService.ShowConfirmation("Cofnij zmiany", "Czy na pewno chcesz cofnąć zmiany?");
+
+        if (result)
+            EditedUser = SelectedUser?.Clone();
+    }
+
+    [RelayCommand]
+    private async Task SaveChanges()
+    {
+        await _loadingPopupService.Show("Zapisywanie zmian");
+        var result = await _usersService.UpdateAsAdmin(EditedUser!.Id!,EditedUser!.ToUserAdminUpdateDto());
+
+        if (result.IsError)
+        {
+            await _loadingPopupService.Hide();
+            var res = await _dialogService.ShowConfirmation(
+                "Błąd",
+                $"""
+                Wystąpił błąd aktualizowania użytkownika.
+                Czy chcesz skopiować dane o błędzie?
+
+                {result.UnwrapErr()}
+                """);
+
+            if (res)
+            {
+                await (_clipboard?.SetTextAsync(result.UnwrapErr().ToString()) ?? Task.CompletedTask);
+            }
+            return;
+        }
+
+        var clone = EditedUser!.Clone();
+        var index = Users.IndexOf(SelectedUser!);
+        Users[index] = clone;
+        SelectedUser = clone;
+        await _loadingPopupService.Hide();
+    }
+
+    [RelayCommand]
+    private async Task RemoveUser()
+    {
+        var remove = await _dialogService.ShowConfirmation(
+            "Usuń użytkownika",
+            """
+            Czy na pewno chcesz usunąć użytkownika?
+            """);
+
+        if (!remove)
+            return;
+
+        await _loadingPopupService.Show("Zapisywanie zmian");
+        var result = await _usersService.Remove(EditedUser!.Id!);
+
+        if (result.IsError)
+        {
+            await _loadingPopupService.Hide();
+            var res = await _dialogService.ShowConfirmation(
+                "Błąd",
+                $"""
+                Wystąpił błąd usuwania użytkownika.
+                Czy chcesz skopiować dane o błędzie?
+
+                {result.UnwrapErr()}
+                """);
+
+            if (res)
+            {
+                await (_clipboard?.SetTextAsync(result.UnwrapErr().ToString()) ?? Task.CompletedTask);
+            }
+            return;
+        }
+
+        await _loadingPopupService.Hide();
+
+        SelectedUser = null;
+        EditedUser = null;
+        await OnNavigatedFrom();
+        await OnNavigatedTo();
+    }
+
+    [RelayCommand]
+    private void AddUser()
+    {
+        var newUser = new UserModel(null, "", null, null, UserType.User, false, true);
+        Users.Add(newUser);
+        SelectedUser = newUser;
+        AddingUser = true;
+    }
+
+    [RelayCommand]
+    private async Task AddNewUser()
+    {
+        await _loadingPopupService.Show("Zapisywanie zmian");
+        var dto = EditedUser!.ToUserAddDto();
+        dto.Password = RandomString(20);
+        var result = await _usersService.Add(dto);
+
+        if (result.IsError)
+        {
+            await _loadingPopupService.Hide();
+            var res = await _dialogService.ShowConfirmation(
+                "Błąd",
+                $"""
+                Wystąpił błąd dodawania użytkownika.
+                Czy chcesz skopiować dane o błędzie?
+
+                {result.UnwrapErr()}
+                """);
+
+            if (res)
+            {
+                await (_clipboard?.SetTextAsync(result.UnwrapErr().ToString()) ?? Task.CompletedTask);
+            }
+            return;
+        }
+
+        var clone = EditedUser!.Clone();
+        var index = Users.IndexOf(SelectedUser!);
+        Users[index] = clone;
+        SelectedUser = clone;
+
+        await (_clipboard?.SetTextAsync(dto.Password) ?? Task.CompletedTask);
+        await _loadingPopupService.Hide();
+
+        await _dialogService.ShowAlertAsync(
+            "Zapisano",
+            """
+                    Dodano nowego użytkownika
+                    Nowe hasło zostało zapisane w schowku.
+                    """);
+    }
+
+    [RelayCommand]
+    private async Task ResetPassword()
+    {
+        await _loadingPopupService.Show("Zapisywanie zmian");
+
+        var newPassword = RandomString(20);
+
+        var result = await _usersService.UpdatePassword(EditedUser!.Id!, new(newPassword));
+        if (result.IsError)
+        {
+            await _loadingPopupService.Hide();
+            var res = await _dialogService.ShowConfirmation(
+                "Błąd",
+                $"""
+                Wystąpił błąd zmiany hasła użytkownika.
+                Czy chcesz skopiować dane o błędzie?
+
+                {result.UnwrapErr()}
+                """);
+
+            if (res)
+            {
+                await (_clipboard?.SetTextAsync(result.UnwrapErr().ToString()) ?? Task.CompletedTask);
+            }
+            return;
+        }
+        await (_clipboard?.SetTextAsync(newPassword) ?? Task.CompletedTask);
+
+        await _loadingPopupService.Hide();
+
+        await _dialogService.ShowAlertAsync(
+            "Zresetowano",
+            """
+                    Hasło zostało zresetowane.
+                    Nowe hasło zostało zapisane w schowku.
+                    """);
+    }
+
+    private static Random random = new Random();
+    public static string RandomString(int length)
+    {
+        const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*:;,.<>";
+        return new string(Enumerable.Repeat(chars, length)
+            .Select(s => s[random.Next(s.Length)]).ToArray());
     }
 
     private Task<bool> ConfirmUnsavedChanges()

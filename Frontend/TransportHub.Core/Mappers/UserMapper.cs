@@ -43,4 +43,38 @@ public static partial class UserMapper
             Disabled = model.Disabled,
         };
     }
+
+    public static UserAdminUpdateDto ToUserAdminUpdateDto(this UserModel model)
+    {
+        return new()
+        {
+            Name = model.Name,
+            Picture = model.Picture,
+            PasswordExpirationDate = model.PasswordExpirationDate,
+            UserType = model.UserType,
+            MultiLogin = model.MultiLogin,
+            Disabled = model.Disabled,
+        };
+    }
+
+    public static UserAddDto ToUserAddDto(this UserModel model)
+    {
+        return new()
+        {
+            Name = model.Name,
+            Picture = model.Picture,
+            PasswordExpirationDate = model.PasswordExpirationDate,
+            UserType = model.UserType,
+            MultiLogin = model.MultiLogin,
+        };
+    }
+
+    public static UserUpdateDto ToUserUpdateDto(this UserModel model)
+    {
+        return new()
+        {
+            Name = model.Name,
+            Picture = model.Picture,
+        };
+    }
 }
