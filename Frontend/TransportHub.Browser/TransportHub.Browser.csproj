@@ -15,6 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TransportHub\TransportHub.Core.csproj" />
+    <ProjectReference Include="..\TransportHub.Core\TransportHub.Core.csproj" />
   </ItemGroup>
 </Project>

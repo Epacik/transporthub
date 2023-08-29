@@ -115,7 +115,12 @@ internal partial class SettingsViewModel : ObservableObject, INavigationAwareVie
         await _loadingPopupService.Hide();
 
         _refreshUserDataService.RequestRefresh();
+    }
 
+    [RelayCommand]
+    private Task ChangePassword() 
+    {
+        return Task.CompletedTask;
     }
 
 }

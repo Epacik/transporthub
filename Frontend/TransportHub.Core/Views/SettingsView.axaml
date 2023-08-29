@@ -9,7 +9,8 @@
              xmlns:controls="using:TransportHub.Core.Controls"
              xmlns:m="using:TransportHub.Core.Markup"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="TransportHub.Core.Views.SettingsView">
+             x:Class="TransportHub.Core.Views.SettingsView"
+             x:DataType="vm:SettingsViewModel">
     
     <UserControl.Resources>
         <ResourceDictionary>
@@ -31,16 +32,6 @@
                 Istnieją niezapisane zmiany. Nie zapomnij ich zapisać!
             </TextBlock>
         </Border>
-
-        <Button HorizontalAlignment="Right"
-                VerticalContentAlignment="Center"
-                HorizontalContentAlignment="Center"
-                Width="40"
-                Height="40"
-                Margin="5"
-                Command="{Binding CloseUserCommand}">
-            <controls:TablerIcon Icon="IconX"/>
-        </Button>
 
         <Grid Grid.Row="2"
               DataContext="{Binding EditedUser}"
@@ -80,11 +71,10 @@
                        Grid.ColumnSpan="3"
                        Text="Typ konta"/>
 
-            <ComboBox Grid.Row="4"
-                      Grid.ColumnSpan="3"
-                      HorizontalAlignment="Stretch"
-                      ItemsSource="{Binding $parent[views:SettingsView].((vm:SettingsViewModel)DataContext).UserTypes}"
-                      SelectedItem="{Binding UserType}"/>
+            <TextBlock Grid.Row="4"
+                       Grid.ColumnSpan="3"
+                       HorizontalAlignment="Stretch"
+                       Text="{Binding UserType}"/>
 
             <TextBlock Grid.Row="6"
                        Grid.ColumnSpan="3"
@@ -107,8 +97,7 @@
                     Content="Zmień hasło"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Top"
-                    Command="{Binding $parent[views:SettingsView].((vm:SettingsViewModel)DataContext).ResetPasswordCommand}"
-                    IsVisible="{Binding !$parent[views:SettingsView].((vm:SettingsViewModel)DataContext).AddingUser}"/>
+                    Command="{Binding $parent[views:SettingsView].((vm:SettingsViewModel)DataContext).ChangePasswordCommand}"/>
 
         </Grid>
 

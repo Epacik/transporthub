@@ -37,7 +37,8 @@ public static class DesignViewModels
         _inMemoryAuthorizationService,
         _clipboardProvider,
         new ReportErrorService(_emptyDialogService, _clipboardProvider),
-        new EmptyUserProvidedImageService());
+        new EmptyUserProvidedImageService(),
+        new RefreshUserDataService());
     public static UsersViewModel UsersViewModel
     {
         get
