@@ -69,9 +69,31 @@ public class UsersService : IUsersService
         return true;
     }
 
-    public Task<Result<UserDto, Exception>> GetUser(string id)
+    public async Task<Result<UserDto, Exception>> GetUser(string id)
     {
-        throw new NotImplementedException();
+        var uri = _settingsService.Read(Settings.IpAddress, DefaultValues.ServerAddress);
+
+        var userdata = _authorizationService.UserData;
+        var client = _httpClientFactory.Create(uri!, userdata?.User, password: userdata?.Key);
+
+        var response = await client.GetAsync($"users/{id}").ToResultAsync();
+
+        if (response.IsError)
+            return response.UnwrapErr();
+
+        var message = response.Unwrap();
+
+        var content = await message.Content.ReadAsStringAsync();
+
+        if (!message.IsSuccessStatusCode)
+        {
+            return new RefreshTokenFailedException(content);
+        }
+
+
+        var users = _jsonSerializer.Deserialize<UserDto>(content);
+
+        return users!;
     }
 
     public async Task<Result<IEnumerable<UserDto>, Exception>> ListUsers()

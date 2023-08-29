@@ -109,18 +109,21 @@ public class AuthorizationService : IAuthorizationService
                 new StringContent("")));
 
         if (response.IsError)
+        {
+            LoggedOut?.Invoke();
             return response.UnwrapErr();
+        }
 
         var message = response.Unwrap();
 
         var content = await message.Content.ReadAsStringAsync();
 
+        LoggedOut?.Invoke();
         if (!message.IsSuccessStatusCode)
         {
             return new LogoutFailedException(content);
         }
 
-        LoggedOut?.Invoke();
         _cancellationTokenSource?.Cancel();
 
         return true;

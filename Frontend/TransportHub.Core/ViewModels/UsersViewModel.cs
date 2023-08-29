@@ -26,7 +26,10 @@ public partial class UsersViewModel : ObservableObject, INavigationAwareViewMode
     private readonly ILoadingPopupService _loadingPopupService;
     private readonly IDialogService _dialogService;
     private readonly IAuthorizationService _authorizationService;
-    private readonly IClipboard? _clipboard;
+    private readonly IClipboardProvider _clipboardProvider;
+    private readonly IReportErrorService _reportErrorService;
+    private readonly IUserProvidedImageService _userProvidedImageService;
+    private readonly IRefreshUserDataService _refreshUserDataService;
 
     public UsersViewModel(
         IUsersService usersService,
@@ -34,14 +37,21 @@ public partial class UsersViewModel : ObservableObject, INavigationAwareViewMode
         ILoadingPopupService loadingPopupService,
         IDialogService dialogService,
         IAuthorizationService authorizationService,
-        IClipboard? clipboard)
+        IClipboardProvider clipboardProvider,
+        IReportErrorService reportErrorService,
+        IUserProvidedImageService userProvidedImageService,
+        IRefreshUserDataService refreshUserDataService)
     {
         _usersService = usersService;
         _logger = logger;
         _loadingPopupService = loadingPopupService;
         _dialogService = dialogService;
         _authorizationService = authorizationService;
-        _clipboard = clipboard;
+        _clipboardProvider = clipboardProvider;
+        _reportErrorService = reportErrorService;
+        _userProvidedImageService = userProvidedImageService;
+        _refreshUserDataService = refreshUserDataService;
+
         UserTypes = new ObservableCollection<UserType>
         {
             UserType.User,
@@ -82,6 +92,20 @@ public partial class UsersViewModel : ObservableObject, INavigationAwareViewMode
     [ObservableProperty]
     private ObservableCollection<UserType> _userTypes;
 
+
+    [RelayCommand]
+    private async Task ChangePicture()
+    {
+        var result = await _userProvidedImageService.GetImage();
+        if (result.IsError)
+        {
+            await _reportErrorService.ShowError(result.UnwrapErr());
+            return;
+        }
+
+        EditedUser!.Picture = result.Unwrap();
+    }
+
     [RelayCommand]
     private async Task CloseUser()
     {
@@ -118,19 +142,7 @@ public partial class UsersViewModel : ObservableObject, INavigationAwareViewMode
         if (result.IsError)
         {
             await _loadingPopupService.Hide();
-            var res = await _dialogService.ShowConfirmation(
-                "Błąd",
-                $"""
-                Wystąpił błąd aktualizowania użytkownika.
-                Czy chcesz skopiować dane o błędzie?
-
-                {result.UnwrapErr()}
-                """);
-
-            if (res)
-            {
-                await (_clipboard?.SetTextAsync(result.UnwrapErr().ToString()) ?? Task.CompletedTask);
-            }
+            await _reportErrorService.ShowError(result.UnwrapErr());
             return;
         }
 
@@ -139,6 +151,12 @@ public partial class UsersViewModel : ObservableObject, INavigationAwareViewMode
         Users[index] = clone;
         SelectedUser = clone;
         await _loadingPopupService.Hide();
+
+        if (_authorizationService.UserData?.User == clone.Id)
+        {
+            _refreshUserDataService.RequestRefresh();
+        }
+
     }
 
     [RelayCommand]
@@ -159,19 +177,7 @@ public partial class UsersViewModel : ObservableObject, INavigationAwareViewMode
         if (result.IsError)
         {
             await _loadingPopupService.Hide();
-            var res = await _dialogService.ShowConfirmation(
-                "Błąd",
-                $"""
-                Wystąpił błąd usuwania użytkownika.
-                Czy chcesz skopiować dane o błędzie?
-
-                {result.UnwrapErr()}
-                """);
-
-            if (res)
-            {
-                await (_clipboard?.SetTextAsync(result.UnwrapErr().ToString()) ?? Task.CompletedTask);
-            }
+            await _reportErrorService.ShowError(result.UnwrapErr());
             return;
         }
 
@@ -203,19 +209,7 @@ public partial class UsersViewModel : ObservableObject, INavigationAwareViewMode
         if (result.IsError)
         {
             await _loadingPopupService.Hide();
-            var res = await _dialogService.ShowConfirmation(
-                "Błąd",
-                $"""
-                Wystąpił błąd dodawania użytkownika.
-                Czy chcesz skopiować dane o błędzie?
-
-                {result.UnwrapErr()}
-                """);
-
-            if (res)
-            {
-                await (_clipboard?.SetTextAsync(result.UnwrapErr().ToString()) ?? Task.CompletedTask);
-            }
+            await _reportErrorService.ShowError(result.UnwrapErr());
             return;
         }
 
@@ -224,7 +218,7 @@ public partial class UsersViewModel : ObservableObject, INavigationAwareViewMode
         Users[index] = clone;
         SelectedUser = clone;
 
-        await (_clipboard?.SetTextAsync(dto.Password) ?? Task.CompletedTask);
+        await (_clipboardProvider.Get()?.SetTextAsync(dto.Password) ?? Task.CompletedTask);
         await _loadingPopupService.Hide();
 
         await _dialogService.ShowAlertAsync(
@@ -246,22 +240,10 @@ public partial class UsersViewModel : ObservableObject, INavigationAwareViewMode
         if (result.IsError)
         {
             await _loadingPopupService.Hide();
-            var res = await _dialogService.ShowConfirmation(
-                "Błąd",
-                $"""
-                Wystąpił błąd zmiany hasła użytkownika.
-                Czy chcesz skopiować dane o błędzie?
-
-                {result.UnwrapErr()}
-                """);
-
-            if (res)
-            {
-                await (_clipboard?.SetTextAsync(result.UnwrapErr().ToString()) ?? Task.CompletedTask);
-            }
+            await _reportErrorService.ShowError(result.UnwrapErr());
             return;
         }
-        await (_clipboard?.SetTextAsync(newPassword) ?? Task.CompletedTask);
+        await (_clipboardProvider.Get()?.SetTextAsync(newPassword) ?? Task.CompletedTask);
 
         await _loadingPopupService.Hide();
 
@@ -312,7 +294,7 @@ public partial class UsersViewModel : ObservableObject, INavigationAwareViewMode
 
         var users = result.Unwrap().ToUserModels();
 
-        foreach (var user in users)
+        foreach (var user in users.OrderBy(x => x.Name))
         {
             Users.Add(user);
         }

@@ -23,6 +23,7 @@ using TransportHub.Core.Services.InMemory.API;
 using Avalonia.Input.Platform;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Controls;
+using Avalonia.Platform.Storage;
 
 namespace TransportHub.Core;
 
@@ -89,21 +90,24 @@ public static class BuildAppExtensions
         builder.RegisterType<SystemInfoService>().As<ISystemInfoService>();
         builder.RegisterType<Serializer>().As<IJsonSerializer>();
         builder.RegisterType<LoadingPopupService>().As<ILoadingPopupService>();
-        builder.Register<IClipboard?>(c =>
+        builder.RegisterType<ReportErrorService>().As<IReportErrorService>();
+        builder.RegisterType<ClipboardProvider>().As<IClipboardProvider>();
+        builder.RegisterType<UserProvidedImageService>().As<IUserProvidedImageService>();
+        builder.RegisterType<RefreshUserDataService>().As<IRefreshUserDataService>().SingleInstance();
+        builder.Register(c =>
         {
             var lifetime = Application.Current?.ApplicationLifetime;
             if (lifetime is IClassicDesktopStyleApplicationLifetime desktop)
-                return desktop.MainWindow?.Clipboard;
+                return desktop.MainWindow?.StorageProvider;
 
             else if (lifetime is ISingleViewApplicationLifetime singleView)
-                return TopLevel.GetTopLevel(singleView.MainView)?.Clipboard;
+                return TopLevel.GetTopLevel(singleView.MainView)?.StorageProvider;
 
             return null;
         });
 
         return builder;
-    }
-
+    } 
 
     public static ContainerBuilder LoadViews(this ContainerBuilder builder)
     {

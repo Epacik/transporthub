@@ -22,6 +22,7 @@ using System.Linq;
 using TransportHub.Api.Dtos;
 using static System.Net.Mime.MediaTypeNames;
 using System.Diagnostics;
+using TransportHub.Core.Mappers;
 
 namespace TransportHub.Core.ViewModels;
 
@@ -32,6 +33,9 @@ public partial class MainViewModel : ObservableObject
     private readonly IDialogService _dialogService;
     private readonly ISystemInfoService _systemInfoService;
     private readonly IOnScreenKeyboardService _onScreenKeyboardService;
+    private readonly IUsersService _usersService;
+    private readonly IReportErrorService _reportErrorService;
+    private readonly IRefreshUserDataService _refreshUserDataService;
     private readonly Stack<(string Route, Control Page, Dictionary<string, object>? parameters)> _navigationStack = new();
 
     private string? _currentRoute;
@@ -89,16 +93,16 @@ public partial class MainViewModel : ObservableObject
     [ObservableProperty]
     private NavItem[] _navItems =
     {
-        new("Przegląd", Tabler.IconHome, Routes.Dashboard),
-        new("Zamówienia", Tabler.IconTruckDelivery, Routes.Orders)
+        new("Przegląd", Tabler.IconHome, Routes.Dashboard, UserType.User),
+        new("Zamówienia", Tabler.IconTruckDelivery, Routes.Orders, UserType.User)
     };
 
     [ObservableProperty]
     private NavItem[] _footerItems =
     {
-        new("Administruj", Tabler.IconFileSettings, Routes.Administer),
-        new("Ustawienia", Tabler.IconSettings, Routes.Settings),
-        new("Wyloguj", Tabler.IconLogout, ""),
+        new("Administruj", Tabler.IconFileSettings, Routes.Administer, UserType.Admin),
+        new("Ustawienia", Tabler.IconSettings, Routes.Settings, UserType.User),
+        new("Wyloguj", Tabler.IconLogout, "", UserType.User),
     };
 
     partial void OnContentChanged(Control? value)
@@ -123,7 +127,10 @@ public partial class MainViewModel : ObservableObject
     private bool _loadingVisible;
 
     [ObservableProperty]
-    private string _loadingMessage;
+    private string? _loadingMessage;
+
+    [ObservableProperty]
+    private UserModel? _loggedInUser;
 
     #endregion properties
 
@@ -134,16 +141,24 @@ public partial class MainViewModel : ObservableObject
         IPageFactory pageFactory,
         IDialogService dialogService,
         ISystemInfoService systemInfoService,
-        IOnScreenKeyboardService onScreenKeyboardService)
+        IOnScreenKeyboardService onScreenKeyboardService,
+        IUsersService usersService,
+        IReportErrorService reportErrorService,
+        IRefreshUserDataService refreshUserDataService)
     {
         _authorizationService = authorizationService;
         _pageFactory = pageFactory;
         _dialogService = dialogService;
         _systemInfoService = systemInfoService;
         _onScreenKeyboardService = onScreenKeyboardService;
-        _authorizationService.LoggedIn += AuthorizationService_Authorized;
+        _usersService = usersService;
+        _reportErrorService = reportErrorService;
+        _refreshUserDataService = refreshUserDataService;
+
+        _authorizationService.LoggedIn += AuthorizationService_LoggedIn;
         _authorizationService.LoggedOut += AuthorizationService_LoggedOut;
         _onScreenKeyboardService.HeightChanged += OnScreenKeyboardService_HeightChanged;
+        _refreshUserDataService.Refresh += _refreshUserDataService_Refresh;
 
         NavigateToAsync(Routes.Login, null)
             .ContinueWith(async t =>
@@ -155,11 +170,31 @@ public partial class MainViewModel : ObservableObject
             });
     }
 
+    private async void _refreshUserDataService_Refresh()
+    {
+        if (string.IsNullOrEmpty(_authorizationService?.UserData?.User))
+            return;
+
+        await Task.Run(async () =>
+        {
+            var result = await _usersService.GetUser(_authorizationService.UserData.User);
+
+            if (result.IsError)
+            {
+                await _reportErrorService.ShowError(result.UnwrapErr());
+                return;
+            }
+
+            LoggedInUser = result.Unwrap().ToUserModel();
+        });
+    }
+
     private async void AuthorizationService_LoggedOut()
     {
         ShowPane = false;
         _navigationStack.Clear();
         UpdateHeaderAndBackButton();
+        LoggedInUser = null;
         await NavigateToAsync(Routes.Login, null);
     }
 
@@ -168,11 +203,24 @@ public partial class MainViewModel : ObservableObject
         ContentMargin = new Thickness(0, 0, 0, obj);
     }
 
-    private void AuthorizationService_Authorized(LoginResponseDto responseDto)
+    private void AuthorizationService_LoggedIn(LoginResponseDto responseDto)
     {
         ShowPane = true;
         _navigationStack.Clear();
         UpdateHeaderAndBackButton();
+
+        Task.Run(async () =>
+        {
+            var result = await _usersService.GetUser(responseDto.User!);
+
+            if (result.IsError)
+            {
+                await _reportErrorService.ShowError(result.UnwrapErr());
+                return;
+            }
+
+            LoggedInUser = result.Unwrap().ToUserModel();
+        });
     }
 
     internal async Task NavigateBackAsync(Dictionary<string, object>? parameters)

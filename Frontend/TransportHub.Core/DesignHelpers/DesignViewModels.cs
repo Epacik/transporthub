@@ -9,6 +9,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TransportHub.Core.Services;
+using TransportHub.Core.Services.Impl;
 using TransportHub.Core.Services.Impl.Empty;
 using TransportHub.Core.Services.InMemory.API;
 using TransportHub.Core.ViewModels;
@@ -18,34 +20,24 @@ namespace TransportHub.Core.DesignHelpers;
 
 public static class DesignViewModels
 {
-    private static IClipboard? _clipboard
-    {
-        get
-        {
-            var lifetime = Application.Current?.ApplicationLifetime;
-            if (lifetime is IClassicDesktopStyleApplicationLifetime desktop)
-                return desktop.MainWindow?.Clipboard;
-
-            else if (lifetime is ISingleViewApplicationLifetime singleView)
-                return TopLevel.GetTopLevel(singleView.MainView)?.Clipboard;
-
-            return null;
-        }
-    }
+    private static ClipboardProvider _clipboardProvider = new();
     private static readonly Logger _logger = new LoggerConfiguration()
             .WriteTo.Console()
             .CreateLogger();
 
     private static readonly InMemoryAuthorizationService _inMemoryAuthorizationService = new();
     private static readonly InMemoryUsersService _inMemoryUsersService = new(_inMemoryAuthorizationService);
+    private static readonly EmptyDialogService _emptyDialogService = new();
 
     private static UsersViewModel _usersViewModel = new(
         _inMemoryUsersService,
         _logger,
         new EmptyLoadingPopupService(),
-        new EmptyDialogService(),
+        _emptyDialogService,
         _inMemoryAuthorizationService,
-        _clipboard);
+        _clipboardProvider,
+        new ReportErrorService(_emptyDialogService, _clipboardProvider),
+        new EmptyUserProvidedImageService());
     public static UsersViewModel UsersViewModel
     {
         get

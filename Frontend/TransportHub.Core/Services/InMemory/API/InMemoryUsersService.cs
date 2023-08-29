@@ -36,7 +36,14 @@ public class InMemoryUsersService : IUsersService
 
     public Task<Result<UserDto, Exception>> GetUser(string id)
     {
-        throw new NotImplementedException();
+        return Task.Run<Result<UserDto, Exception>>(() =>
+        {
+            var user = StaticUsers.Find(x => x.Id == id);
+            if (user is null)
+                return new InvalidOperationException("User not found");
+
+            return user;
+        });
     }
 
     public Task<Result<IEnumerable<UserDto>, Exception>> ListUsers()

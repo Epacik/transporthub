@@ -9,6 +9,9 @@
     xmlns:ctrl="using:TransportHub.Core.Controls"
     xmlns:vm="using:TransportHub.Core.ViewModels"
     xmlns:models="using:TransportHub.Core.Models"
+    xmlns:m="using:TransportHub.Core.Markup"
+    xmlns:converters="using:TransportHub.Core.Converters"
+    xmlns:views="using:TransportHub.Core.Views"
     mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
     x:Class="TransportHub.Core.Views.MainView"
     x:DataType="vm:MainViewModel"
@@ -24,6 +27,9 @@
         <ResourceDictionary>
             <Thickness x:Key="NavigationViewContentMargin">0,44,0,0</Thickness>
             <Thickness x:Key="NavigationViewMinimalContentMargin">0,44,0,0</Thickness>
+            <converters:MinimalUserTypeToBoolConverter x:Key="MinimalUserTypeToBoolConverter"/>
+            <converters:ObjectIsNullConverter x:Key="ObjectIsNullConverter"/>
+            <converters:Base64ToIconSourceConverter x:Key="Base64ToIconSourceConverter"/>
         </ResourceDictionary>
     </UserControl.Resources>
 
@@ -43,6 +49,26 @@
                                 IsVisible="{Binding ShowTitle}"/>
             </Grid>
         </StackPanel>
+
+        <Button Margin="0,0,138,0"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Stretch"
+                Theme="{StaticResource TransparentButton}"
+                IsVisible="{Binding LoggedInUser, Converter={StaticResource ObjectIsNullConverter}}">
+            <StackPanel Orientation="Horizontal"
+                        Spacing="5">
+                <fac:IconSourceElement IconSource="{Binding
+                                             LoggedInUser.Picture,
+                                             Converter={StaticResource Base64ToIconSourceConverter},
+                                             ConverterParameter={m:TablerIconSource IconUser, FontSize=30 }}"
+                                       VerticalAlignment="Center"
+                                       MaxWidth="30"
+                                       MaxHeight="30" />
+                <TextBlock Text="{Binding LoggedInUser.Name}"
+                           VerticalAlignment="Center"/>
+            </StackPanel>
+        </Button>
+        
         <fac:NavigationView
             Grid.RowSpan="2"
             x:Name="Navigation"
@@ -72,8 +98,14 @@
             </fac:NavigationView.Content>
             <fac:NavigationView.MenuItemTemplate>
                 <DataTemplate>
-                    <fac:NavigationViewItem Content="{Binding Text}" x:DataType="models:NavItem">
-                        
+                    <fac:NavigationViewItem Content="{Binding Text}"
+                                            x:DataType="models:NavItem">
+                        <fac:NavigationViewItem.IsVisible>
+                            <MultiBinding Converter="{StaticResource MinimalUserTypeToBoolConverter}">
+                                <Binding Path="$parent[views:MainView].((vm:MainViewModel)DataContext).LoggedInUser.UserType" />
+                                <Binding Path="MinimalUserType"/>
+                            </MultiBinding>
+                        </fac:NavigationViewItem.IsVisible>
                         <fac:NavigationViewItem.IconSource>
                             <ctrl:TablerIconSource Glyph="{Binding Icon}"
                                                    FontWeight="ExtraLight"/>

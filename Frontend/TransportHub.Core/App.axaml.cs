@@ -27,6 +27,7 @@ public partial class App : Application, IDisposable
     public override void OnFrameworkInitializationCompleted()
     {
         ContainerLifetime = Container?.BeginLifetimeScope();
+        //var clipbpard = 
         var mainView = ContainerLifetime?.Resolve<MainView>();
         _mainViewModel = mainView!.DataContext as MainViewModel;
 

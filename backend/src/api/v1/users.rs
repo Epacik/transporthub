@@ -86,10 +86,23 @@ pub async fn get_user(user_id: web::Path<String>, req: HttpRequest) -> Response 
         Err(err) => return Err(errors::database_error(&err)),
     };
 
-    match user {
-        None => Err(errors::not_found()),
-        Some(val) => Ok(HttpResponse::Ok().json(val)),
-    }
+    let user = match user {
+        None => return Err(errors::not_found()),
+        Some(x) => dto::UserDto {
+            id: super::encode_id(x.id.unwrap_or_default()),
+            name: x.name.clone(),
+            picture: x.picture.clone(),
+            password_expiration_date: match x.password_expiration_date.clone() {
+                Some(val) => Some(val.0),
+                None => None,
+            },
+            user_type: x.user_type(),
+            multi_login: x.multi_login,
+            disabled: x.disabled,
+        },
+    };
+
+    Ok(HttpResponse::Ok().json(user))
 
 }
 
@@ -319,7 +332,7 @@ pub async fn update_password(user_id: web::Path<String>, body: web::Json<dto::Us
         return Err(errors::password_change_error(&e));
     }
 
-    user.Id = None;
+    user.id = None;
 
     if let Err(err) = User::update_by_id(&mut context, &user, user_id).await {
         return Err(errors::database_error(&err));

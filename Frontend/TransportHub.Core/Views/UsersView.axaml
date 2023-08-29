@@ -17,6 +17,7 @@
         <ResourceDictionary>
             <converters:ObjectToGridLengthConverter x:Key="ObjectToGridLengthConverter"/>
             <converters:ObjectIsNullConverter x:Key="ObjectIsNullConverter"/>
+            <converters:Base64ToIconSourceConverter x:Key="Base64ToIconSourceConverter"/>
         </ResourceDictionary>
     </UserControl.Resources>
     <Grid>
@@ -128,11 +129,19 @@
                   ColumnDefinitions="70,5,145,20,*"
                   Margin="10,0">
 
-                <Button Grid.RowSpan="2">
+                <Button Grid.RowSpan="2"
+                        VerticalContentAlignment="Center"
+                        HorizontalContentAlignment="Center"
+                        Command="{Binding $parent[views:UsersView].((vm:UsersViewModel)DataContext).ChangePictureCommand}">
                     <ToolTip.Tip>
                         <TextBlock Text="Zmień obraz"/>
                     </ToolTip.Tip>
-                    <fa:IconSourceElement IconSource="{m:TablerIconSource IconUser, FontSize=60}"/>
+                    <fa:IconSourceElement MaxWidth="60"
+                                          MaxHeight="60"
+                                          IconSource="{Binding
+                                             Picture,
+                                             Converter={StaticResource Base64ToIconSourceConverter},
+                                             ConverterParameter={m:TablerIconSource IconUser, FontSize=60}}"/>
                 </Button>
                 
 
@@ -226,13 +235,13 @@
                 </Button>
             </StackPanel>
 
-        <Button Grid.Row="3"
-                HorizontalAlignment="Right"
-                IsVisible="{Binding AddingUser}"
-                Classes="accent"
-                Command="{Binding AddNewUserCommand}">
-            Zapisz
-        </Button>
+            <Button Grid.Row="3"
+                    HorizontalAlignment="Right"
+                    IsVisible="{Binding AddingUser}"
+                    Classes="accent"
+                    Command="{Binding AddNewUserCommand}">
+                Zapisz
+            </Button>
         </Grid>
     </Grid>
 </UserControl>

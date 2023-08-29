@@ -2,7 +2,130 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:TransportHub.Core.ViewModels"
+             xmlns:views="using:TransportHub.Core.Views"
+             xmlns:fa="using:FluentAvalonia.UI.Controls"
+             xmlns:converters="using:TransportHub.Core.Converters"
+             xmlns:controls="using:TransportHub.Core.Controls"
+             xmlns:m="using:TransportHub.Core.Markup"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="TransportHub.Core.Views.SettingsView">
-    Ustawienia
+    
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <converters:ObjectIsNullConverter x:Key="ObjectIsNullConverter"/>
+            <converters:Base64ToIconSourceConverter x:Key="Base64ToIconSourceConverter"/>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    
+    <Grid RowDefinitions="50,5,*,50"
+              Grid.Column="1"
+              IsVisible="{Binding EditedUser, Converter={StaticResource ObjectIsNullConverter}}">
+
+        <Border Background="{DynamicResource AccentFillColorDefaultBrush}"
+                IsVisible="{Binding EditedUser.IsDirty, FallbackValue=false}"
+                CornerRadius="5">
+            <TextBlock Foreground="White"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center">
+                Istnieją niezapisane zmiany. Nie zapomnij ich zapisać!
+            </TextBlock>
+        </Border>
+
+        <Button HorizontalAlignment="Right"
+                VerticalContentAlignment="Center"
+                HorizontalContentAlignment="Center"
+                Width="40"
+                Height="40"
+                Margin="5"
+                Command="{Binding CloseUserCommand}">
+            <controls:TablerIcon Icon="IconX"/>
+        </Button>
+
+        <Grid Grid.Row="2"
+              DataContext="{Binding EditedUser}"
+              RowDefinitions="50,20,30,22,32,10,22,32,10,*"
+              ColumnDefinitions="70,5,145,20,*"
+              Margin="10,0">
+
+            <Button Grid.RowSpan="2"
+                    VerticalContentAlignment="Center"
+                    HorizontalContentAlignment="Center"
+                    Command="{Binding $parent[views:SettingsView].((vm:SettingsViewModel)DataContext).ChangePictureCommand}">
+                <ToolTip.Tip>
+                    <TextBlock Text="Zmień obraz"/>
+                </ToolTip.Tip>
+                <fa:IconSourceElement MaxWidth="60"
+                                      MaxHeight="60"
+                                      IconSource="{Binding
+                                             Picture,
+                                             Converter={StaticResource Base64ToIconSourceConverter},
+                                             ConverterParameter={m:TablerIconSource IconUser, FontSize=60}}"/>
+            </Button>
+
+
+            <TextBox FontSize="25"
+                       Grid.Column="2"
+                       Grid.ColumnSpan="3"
+                       Text="{Binding Name}"/>
+
+            <TextBlock Grid.Row="1"
+                       Grid.Column="2"
+                       Grid.ColumnSpan="3">
+                <Run Text="Id: "/>
+                <Run Text="{Binding Id}"/>
+            </TextBlock>
+
+            <TextBlock Grid.Row="3"
+                       Grid.ColumnSpan="3"
+                       Text="Typ konta"/>
+
+            <ComboBox Grid.Row="4"
+                      Grid.ColumnSpan="3"
+                      HorizontalAlignment="Stretch"
+                      ItemsSource="{Binding $parent[views:SettingsView].((vm:SettingsViewModel)DataContext).UserTypes}"
+                      SelectedItem="{Binding UserType}"/>
+
+            <TextBlock Grid.Row="6"
+                       Grid.ColumnSpan="3"
+                       Text="Data ważności hasła"/>
+
+            <StackPanel Orientation="Horizontal"
+                        Grid.Row="7"
+                        Grid.ColumnSpan="5">
+                <CalendarDatePicker SelectedDate="{Binding PasswordExpirationDate}"
+                                    Width="180"/>
+                <Button VerticalContentAlignment="Center"
+                        Command="{Binding ResetPasswordExpirationDateCommand}"
+                        VerticalAlignment="Stretch">
+                    <controls:TablerIcon Icon="IconX"/>
+                </Button>
+            </StackPanel>
+
+            <Button Grid.Row="9"
+                    Grid.ColumnSpan="3"
+                    Content="Zmień hasło"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Top"
+                    Command="{Binding $parent[views:SettingsView].((vm:SettingsViewModel)DataContext).ResetPasswordCommand}"
+                    IsVisible="{Binding !$parent[views:SettingsView].((vm:SettingsViewModel)DataContext).AddingUser}"/>
+
+        </Grid>
+
+        
+        <StackPanel Orientation="Horizontal"
+                    Spacing="10"
+                    Grid.Row="3"
+                    HorizontalAlignment="Right">
+            <Button IsEnabled="{Binding EditedUser.IsDirty}"
+                    Command="{Binding RevertChangesCommand}">
+                Cofnij zmiany
+            </Button>
+            <Button Classes="accent"
+                    IsEnabled="{Binding EditedUser.IsDirty}"
+                    Command="{Binding SaveChangesCommand}">
+                Zapisz
+            </Button>
+        </StackPanel>
+    </Grid>
 </UserControl>
