@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace TransportHub.Core.ViewModels;
 
-public class DriversViewModel : ObservableObject, INavigationAwareViewModel
+public class DriversViewModel : ObservableObject, INavigationAware
 {
     public Task OnNavigatedFrom()
     {

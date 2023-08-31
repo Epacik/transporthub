@@ -1,5 +1,4 @@
-use actix_web::{delete, patch};
-use actix_web::{dev::HttpServiceFactory, HttpRequest, HttpResponse, get, put, web};
+use actix_web::{dev::HttpServiceFactory, HttpRequest, HttpResponse, get, put, delete, patch, web};
 use crate::api::v1::dto;
 
 use crate::{db_model::{UserType, User, self, UserCreateError}, errors};
@@ -77,7 +76,7 @@ pub async fn get_user(user_id: web::Path<String>, req: HttpRequest) -> Response 
     let user_id = super::decode_id(&user_id);
 
     if user_info.user_id != user_id && !can_access {
-        return Err(errors::insufficient_privileges(user_id));
+        return Err(errors::insufficient_privileges(user_info.user_id));
     }
 
     let mut context = db_model::context().await;
@@ -224,7 +223,7 @@ pub async fn update(user_id: web::Path<String>, body: web::Json<dto::UserUpdateD
     let user_id = super::decode_id(&user_id);
 
     if user_info.user_id != user_id && !can_access {
-        return Err(errors::insufficient_privileges(user_id));
+        return Err(errors::insufficient_privileges(user_info.user_id));
     }
 
     let mut context = db_model::context().await;
@@ -240,6 +239,7 @@ pub async fn update(user_id: web::Path<String>, body: web::Json<dto::UserUpdateD
 
     user.name = body.0.name.clone();
     user.picture = body.0.picture.clone();
+    user.id = None;
 
     if let Err(err) = User::update_by_id(&mut context, &user, user_id).await {
         return Err(errors::database_error(&err));
@@ -264,7 +264,7 @@ pub async fn update_as_admin(user_id: web::Path<String>, body: web::Json<dto::Us
     let user_id = super::decode_id(&user_id);
 
     if !can_access {
-        return Err(errors::insufficient_privileges(user_id));
+        return Err(errors::insufficient_privileges(user_info.user_id));
     }
 
     let mut context = db_model::context().await;
@@ -314,7 +314,7 @@ pub async fn update_password(user_id: web::Path<String>, body: web::Json<dto::Us
     let user_id = super::decode_id(&user_id);
 
     if user_info.user_id != user_id && !can_access {
-        return Err(errors::insufficient_privileges(user_id));
+        return Err(errors::insufficient_privileges(user_info.user_id));
     }
 
     let mut context = db_model::context().await;

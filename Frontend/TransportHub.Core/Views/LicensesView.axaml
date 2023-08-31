@@ -1,0 +1,247 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:TransportHub.Core.ViewModels"
+             xmlns:views="using:TransportHub.Core.Views"
+             xmlns:fa="using:FluentAvalonia.UI.Controls"
+             xmlns:converters="using:TransportHub.Core.Converters"
+             xmlns:controls="using:TransportHub.Core.Controls"
+             xmlns:m="using:TransportHub.Core.Markup"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="TransportHub.Core.Views.LicensesView"
+             x:DataType="vm:LicensesViewModel">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <converters:ObjectToGridLengthConverter x:Key="ObjectToGridLengthConverter"/>
+            <converters:ObjectIsNullConverter x:Key="ObjectIsNullConverter"/>
+            <converters:Base64ToIconSourceConverter x:Key="Base64ToIconSourceConverter"/>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="{Binding SelectedLicense, Converter={StaticResource ObjectToGridLengthConverter}}" />
+        </Grid.ColumnDefinitions>
+
+        <ListBox ItemsSource="{Binding Licenses}"
+                 SelectionMode="Single"
+                 SelectedItem="{Binding SelectedLicense}"
+                 IsEnabled="{Binding
+                    EditedLicense,
+                    Converter={StaticResource ObjectIsNullConverter},
+                    ConverterParameter=True}">
+            <ListBox.Styles>
+                <Styles>
+                    <Style Selector="ListBoxItem">
+                        <Setter Property="Padding"
+                                Value="10"/>
+                        <Setter Property="Background"
+                                Value="{DynamicResource CardBackgroundFillColorDefaultBrush}"/>
+                        <Setter Property="BorderBrush"
+                                Value="{DynamicResource CardStrokeColorDefaultBrush}"/>
+                        <Setter Property="CornerRadius"
+                                Value="5"/>
+                        <Setter Property="BorderThickness"
+                                Value="1"/>
+                    </Style>
+                </Styles>
+            </ListBox.Styles>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid RowDefinitions="auto,10,auto,10,auto"
+                              ColumnDefinitions="auto,10,*">
+                        <TextBlock Text="{Binding Name}"
+                                   Grid.Row="0"
+                                   Grid.Column="0"/>
+                        <TextBlock Grid.Row="2"
+                                   Grid.Column="0">
+                            <Run Text="Typ: "/>
+                            <Run Text="{Binding LicenseType}"/>
+                        </TextBlock>
+                        <TextBlock Grid.Row="2"
+                                   Grid.Column="2">
+                            <Run Text="Data ważności hasła"/>
+                            <Run Text="{Binding PasswordExpirationDate, StringFormat='yyyy.MM.dd'}"/>
+                        </TextBlock>
+                        <StackPanel Grid.Row="4"
+                                    Grid.Column="0"
+                                    Orientation="Horizontal">
+                            <TextBlock Text="Wielokrotne logowanie: " VerticalAlignment="Center"/>
+                            <CheckBox IsChecked="{Binding MultiLogin}" IsEnabled="False"/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="4"
+                                    Grid.Column="2"
+                                    Orientation="Horizontal">
+                            <TextBlock Text="Aktywny: " VerticalAlignment="Center"/>
+                            <CheckBox IsChecked="{Binding !Disabled}" IsEnabled="False"/>
+                        </StackPanel>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <Button HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                VerticalContentAlignment="Center"
+                HorizontalContentAlignment="Center"
+                Width="40"
+                Height="40"
+                Margin="30"
+                Command="{Binding AddLicenseCommand}"
+                Classes="accent"
+                IsEnabled="{Binding
+                                EditedLicense,
+                                Converter={StaticResource ObjectIsNullConverter},
+                                ConverterParameter=True}">
+            <controls:TablerIcon Icon="IconPlus"/>
+        </Button>
+
+        <Grid RowDefinitions="50,5,*,50"
+              Grid.Column="1"
+              IsVisible="{Binding EditedLicense, Converter={StaticResource ObjectIsNullConverter}}">
+
+            <Border Background="{DynamicResource AccentFillColorDefaultBrush}"
+                    IsVisible="{Binding EditedLicense.IsDirty, FallbackValue=false}"
+                    CornerRadius="5">
+                <TextBlock Foreground="White"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center">
+                    Istnieją niezapisane zmiany. Nie zapomnij ich zapisać!
+                </TextBlock>
+            </Border>
+
+            <Button HorizontalAlignment="Right"
+                    VerticalContentAlignment="Center"
+                    HorizontalContentAlignment="Center"
+                    Width="40"
+                    Height="40"
+                    Margin="5"
+                    Command="{Binding CloseLicenseCommand}">
+                <controls:TablerIcon Icon="IconX"/>
+            </Button>
+
+            <Grid Grid.Row="2"
+                  DataContext="{Binding EditedLicense}"
+                  RowDefinitions="50,20,30,22,32,10,22,32,10,*"
+                  ColumnDefinitions="70,5,145,20,*"
+                  Margin="10,0">
+
+                <Button Grid.RowSpan="2"
+                        VerticalContentAlignment="Center"
+                        HorizontalContentAlignment="Center"
+                        Command="{Binding $parent[views:LicensesView].((vm:LicensesViewModel)DataContext).ChangePictureCommand}">
+                    <ToolTip.Tip>
+                        <TextBlock Text="Zmień obraz"/>
+                    </ToolTip.Tip>
+                    <fa:IconSourceElement MaxWidth="60"
+                                          MaxHeight="60"
+                                          RenderOptions.BitmapInterpolationMode="HighQuality"
+                                          RenderOptions.EdgeMode="Antialias"
+                                          IconSource="{Binding
+                                             Picture,
+                                             Converter={StaticResource Base64ToIconSourceConverter},
+                                             ConverterParameter={m:TablerIconSource IconLicense, FontSize=60}}"/>
+                </Button>
+
+
+                <TextBox FontSize="25"
+                           Grid.Column="2"
+                           Grid.ColumnSpan="3"
+                           Text="{Binding Name}"/>
+
+                <TextBlock Grid.Row="1"
+                           Grid.Column="2"
+                           Grid.ColumnSpan="3">
+                    <Run Text="Id: "/>
+                    <Run Text="{Binding Id}"/>
+                </TextBlock>
+
+                <TextBlock Grid.Row="3"
+                           Grid.ColumnSpan="3"
+                           Text="Typ konta"/>
+
+                <ComboBox Grid.Row="4"
+                          Grid.ColumnSpan="3"
+                          HorizontalAlignment="Stretch"
+                          ItemsSource="{Binding $parent[views:LicensesView].((vm:LicensesViewModel)DataContext).LicenseTypes}"
+                          SelectedItem="{Binding LicenseType}"/>
+
+                <TextBlock Grid.Row="6"
+                           Grid.ColumnSpan="3"
+                           Text="Data ważności hasła"/>
+
+                <StackPanel Orientation="Horizontal"
+                            Grid.Row="7"
+                            Grid.ColumnSpan="5">
+                    <CalendarDatePicker SelectedDate="{Binding PasswordExpirationDate}"
+                                        Width="180"/>
+                    <Button VerticalContentAlignment="Center"
+                            Command="{Binding ResetPasswordExpirationDateCommand}"
+                            VerticalAlignment="Stretch">
+                        <controls:TablerIcon Icon="IconX"/>
+                    </Button>
+                </StackPanel>
+
+                <TextBlock Text="Wielokrotne logowanie"
+                           Grid.Column="5"
+                           Grid.Row="3"/>
+
+                <CheckBox IsChecked="{Binding MultiLogin}"
+                          Grid.Column="5"
+                          Grid.Row="4"/>
+
+                <TextBlock Text="Aktywny"
+                           Grid.Column="5"
+                           Grid.Row="6"
+                           IsVisible="{Binding !$parent[views:LicensesView].((vm:LicensesViewModel)DataContext).AddingLicense}"/>
+
+                <CheckBox IsChecked="{Binding !Disabled}"
+                          Grid.Column="5"
+                          Grid.Row="7"
+                          IsEnabled="{Binding $parent[views:LicensesView].((vm:LicensesViewModel)DataContext).EnableIsActive}"
+                          IsVisible="{Binding !$parent[views:LicensesView].((vm:LicensesViewModel)DataContext).AddingLicense}"/>
+
+                <Button Grid.Row="9"
+                        Grid.ColumnSpan="3"
+                        Content="Zresetuj hasło"
+                        HorizontalAlignment="Stretch"
+                        VerticalAlignment="Top"
+                        Command="{Binding $parent[views:LicensesView].((vm:LicensesViewModel)DataContext).ResetPasswordCommand}"
+                        IsVisible="{Binding !$parent[views:LicensesView].((vm:LicensesViewModel)DataContext).AddingLicense}"/>
+
+            </Grid>
+
+            <Button Margin="10,0"
+                    Grid.Row="3"
+                    Foreground="White"
+                    Background="DarkRed"
+                    Command="{Binding RemoveLicenseCommand}">
+                Usuń
+            </Button>
+            <StackPanel Orientation="Horizontal"
+                        Spacing="10"
+                        Grid.Row="3"
+                        HorizontalAlignment="Right"
+                        IsVisible="{Binding !AddingLicense}">
+                <Button IsEnabled="{Binding EditedLicense.IsDirty}"
+                        Command="{Binding RevertChangesCommand}">
+                    Cofnij zmiany
+                </Button>
+                <Button Classes="accent"
+                        IsEnabled="{Binding EditedLicense.IsDirty}"
+                        Command="{Binding SaveChangesCommand}">
+                    Zapisz
+                </Button>
+            </StackPanel>
+
+            <Button Grid.Row="3"
+                    HorizontalAlignment="Right"
+                    IsVisible="{Binding AddingLicense}"
+                    Classes="accent"
+                    Command="{Binding AddNewLicenseCommand}">
+                Zapisz
+            </Button>
+        </Grid>
+    </Grid>
+</UserControl>

@@ -2,7 +2,106 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="using:TransportHub.Core.Controls"
+             xmlns:vm="using:TransportHub.Core.ViewModels"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="TransportHub.Core.Views.OrdersView">
-  Zamówienia
+             x:Class="TransportHub.Core.Views.OrdersView"
+             x:DataType="vm:OrdersViewModel">
+    <Grid>
+        <ListBox ItemsSource="{Binding Orders}"
+             SelectionMode="Single"
+             SelectedItem="{Binding SelectedOrder}">
+            <ListBox.Styles>
+                <Styles>
+                    <Style Selector="ListBoxItem">
+                        <Setter Property="Padding"
+                                Value="10"/>
+                        <Setter Property="Background"
+                                Value="{DynamicResource CardBackgroundFillColorDefaultBrush}"/>
+                        <Setter Property="BorderBrush"
+                                Value="{DynamicResource CardStrokeColorDefaultBrush}"/>
+                        <Setter Property="CornerRadius"
+                                Value="5"/>
+                        <Setter Property="BorderThickness"
+                                Value="1"/>
+                    </Style>
+                </Styles>
+            </ListBox.Styles>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid RowDefinitions="auto,10,auto,10,auto,10,auto"
+                          ColumnDefinitions="auto,10,auto,30,*">
+                        <TextBlock FontSize="30"
+                                   Text="{Binding Name}"
+                                   Grid.ColumnSpan="5"/>
+
+                        <TextBlock Text="{Binding Description}"
+                                   Grid.ColumnSpan="5"
+                                   Grid.Row="2"/>
+
+                        <TextBlock Grid.Row="4">
+                            <Run Text="Klient:"/>
+                            <Run Text="{Binding ClientName}"/>
+                        </TextBlock>
+
+                        <TextBlock Grid.Row="4"
+                                   Grid.Column="2">
+                            <Run Text="Termin:"/>
+                            <Run Text="{Binding DeadlineDate, StringFormat='yyyy-MM-dd HH:mm'}"/>
+                        </TextBlock>
+
+                        <TextBlock Grid.Row="4"
+                                   Grid.Column="4">
+                            <Run Text="Zmodyfikowany przez:"/>
+                            <Run Text="{Binding ModifiedBy}"/>
+                        </TextBlock>
+
+                        <TextBlock Grid.Row="6"
+                                   Grid.Column="0">
+                            <Run Text="Lokalizacja startowa:"/>
+                            <Run Text="{Binding InitialLocation}"/>
+                        </TextBlock>
+
+                        <TextBlock Grid.Row="6"
+                                   Grid.Column="2"
+                                   VerticalAlignment="Center">
+                            <Run Text="Lokalizacja końcowa:"/>
+                            <Run Text="{Binding Destination}"/>
+                        </TextBlock>
+
+                        <StackPanel Grid.Row="6"
+                                    Grid.Column="4"
+                                    Orientation="Horizontal"
+                                    Spacing="5">
+                            <TextBlock Text="Zakończone:" VerticalAlignment="Center"/>
+                            <CheckBox IsChecked="{Binding Fulfilled}" IsEnabled="False"/>
+                        </StackPanel>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+
+        <Border Background="Red"
+                Width="500"
+                Height="50"
+                Grid.ColumnSpan="9"
+                Grid.RowSpan="9"
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Right"
+                Margin="0,0,-165,50">
+            <Border.RenderTransform>
+                <RotateTransform Angle="-45"/>
+            </Border.RenderTransform>
+            <StackPanel>
+                <TextBlock Foreground="White"
+                           Text="MAKIETA"
+                           FontSize="20"
+                           HorizontalAlignment="Center"/>
+                <TextBlock Text="Dane nieprawdziwe"
+                           HorizontalAlignment="Center"
+                           Foreground="White"/>
+            </StackPanel>
+        </Border>
+    </Grid>
 </UserControl>

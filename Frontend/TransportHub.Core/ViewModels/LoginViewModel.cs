@@ -15,7 +15,7 @@ using TransportHub.Core.Services;
 
 namespace TransportHub.Core.ViewModels;
 
-public partial class LoginViewModel : ObservableObject, INavigationAwareViewModel
+public partial class LoginViewModel : ObservableObject, INavigationAware
 {
     private readonly IAuthorizationService _authorizationService;
     private readonly INavigationService _navigationService;

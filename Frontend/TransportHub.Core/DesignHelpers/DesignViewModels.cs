@@ -28,6 +28,11 @@ public static class DesignViewModels
     private static readonly InMemoryAuthorizationService _inMemoryAuthorizationService = new();
     private static readonly InMemoryUsersService _inMemoryUsersService = new(_inMemoryAuthorizationService);
     private static readonly EmptyDialogService _emptyDialogService = new();
+    private static readonly ReportErrorService _reportErrorService = new(_emptyDialogService, _clipboardProvider);
+    private static readonly LoggedInUserService _loggedInUserService = new(
+        _inMemoryAuthorizationService,
+        _inMemoryUsersService,
+        _reportErrorService);
 
     private static UsersViewModel _usersViewModel = new(
         _inMemoryUsersService,
@@ -36,9 +41,9 @@ public static class DesignViewModels
         _emptyDialogService,
         _inMemoryAuthorizationService,
         _clipboardProvider,
-        new ReportErrorService(_emptyDialogService, _clipboardProvider),
+        _reportErrorService,
         new EmptyUserProvidedImageService(),
-        new RefreshUserDataService());
+        _loggedInUserService);
     public static UsersViewModel UsersViewModel
     {
         get

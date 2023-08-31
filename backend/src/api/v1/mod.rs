@@ -19,6 +19,10 @@ use crate::{config, db_model::UserAccessKeys};
 
 pub mod users;
 pub mod auth;
+pub mod licenses;
+pub mod vehicles;
+pub mod drivers;
+pub mod drivers_licenses;
 mod middleware;
 mod dto;
 
@@ -27,10 +31,14 @@ type Response = Result<HttpResponse, errors::ErrorResponse>;
 pub fn scope() -> impl HttpServiceFactory {
     actix_web::web::scope("/v1")
     .wrap(middleware::Auth::default())
-    .wrap(actix_web::middleware::DefaultHeaders::new().add(("X-Version", "0.2")))
+    .wrap(actix_web::middleware::DefaultHeaders::new().add(("X-Version", "0.3")))
     .service(check_connection)
     .service(auth::scope())
     .service(users::scope())
+    .service(licenses::scope())
+    .service(vehicles::scope())
+    .service(drivers::scope())
+    .service(drivers_licenses::scope())
 }
 
 

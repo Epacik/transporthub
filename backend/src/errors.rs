@@ -158,6 +158,36 @@ pub mod users {
     }
 }
 
+pub mod licenses {
+    use actix_web::http::StatusCode;
+
+    use super::{ErrorResponse, DEBUG};
+
+    pub(crate) fn already_exists() -> ErrorResponse {
+        ErrorResponse::new(StatusCode::CONFLICT, "License already exists")
+    }
+
+    pub(crate) fn creation_error() -> ErrorResponse {
+        ErrorResponse::new(StatusCode::INTERNAL_SERVER_ERROR, if *DEBUG { "Problem creading license" } else { "Internal server error" })
+    }
+}
+
+
+pub mod vehicles {
+    use actix_web::http::StatusCode;
+
+    use super::{ErrorResponse, DEBUG};
+
+    pub(crate) fn already_exists() -> ErrorResponse {
+        ErrorResponse::new(StatusCode::CONFLICT, "Vehicle already exists")
+    }
+
+    pub(crate) fn creation_error() -> ErrorResponse {
+        ErrorResponse::new(StatusCode::INTERNAL_SERVER_ERROR, if *DEBUG { "Problem creading Vehicle" } else { "Internal server error" })
+    }
+}
+
+
 pub(crate) fn password_change_error(e: &argonautica::Error) -> ErrorResponse {
     log::error!("An error occured while changing password \n{0}", e);
 

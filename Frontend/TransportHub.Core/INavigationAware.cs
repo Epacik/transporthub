@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TransportHub.Core;
 
-internal interface INavigationAwareViewModel
+internal interface INavigationAware
 {
     Task OnNavigatedTo(Dictionary<string, object>? parameters = null);
     Task OnNavigatedFrom();

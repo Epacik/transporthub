@@ -1,24 +1,11 @@
-
 use argonautica::{Hasher, Verifier};
 use num_derive::FromPrimitive;
 use rbatis::{Rbatis, rbdc::{Error, datetime::DateTime}, crud, impl_select, impl_delete, impl_update};
-use rbdc_pg::driver::PgDriver;
 use serde::{Deserialize, Serialize};
 use rand::distributions::{Alphanumeric, DistString};
 
+use crate::{db_model::table_names, config};
 
-use crate::config;
-
-pub async fn context() -> Rbatis {
-    log::info!("Creating a database context");
-    let config =  config::config();
-    let rb = Rbatis::new();
-
-    rb.init(PgDriver {}, &config.connection_string()).unwrap();
-    rb.try_acquire().await.unwrap();
-
-    rb
-}
 
 #[derive(Copy, Clone, FromPrimitive, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
@@ -205,10 +192,4 @@ impl UserAccessKeys {
 
         Ok(())
     }
-}
-
-
-mod table_names {
-    pub const USERS: &str = "conf.users";
-    pub const USER_ACCESS_KEYS: &str = "conf.user_access_keys";
 }

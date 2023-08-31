@@ -7,29 +7,48 @@
              xmlns:ap="using:TransportHub.Core.AttachedProperties"
              xmlns:common="using:TransportHub.Common"
              xmlns:conv="using:TransportHub.Core.Converters"
+             xmlns:api="using:TransportHub.Api"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="TransportHub.Core.Views.AdministerView"
-             x:DataType="vm:AdministerViewModel">
+             x:DataType="vm:AdministerViewModel"
+             ap:Restriction.CurrentUserType="{Binding LoggedInUserService.User.UserType}">
     <UserControl.Resources>
         <ResourceDictionary>
+            <conv:MinimalUserTypeToBoolConverter x:Key="MinimalUserTypeToBoolConverter"/>
             <conv:ViewToRouteConverter x:Key="ViewToRouteConverter"/>
         </ResourceDictionary>
     </UserControl.Resources>
     <TabControl SelectedContent="{Binding
                     SelectedTab,
                     Mode=OneWayToSource,
-                    Converter={StaticResource ViewToRouteConverter}}">
+                    Converter={StaticResource ViewToRouteConverter}}"
+                SelectedIndex="-1"
+                x:Name="Tabs">
         <TabItem Header="Użytkownicy"
-                 ap:Navigation.Route="{x:Static common:Routes.Users}">
+                 ap:Navigation.Route="{x:Static common:Routes.Users}"
+                 ap:Restriction.MinimalUserType="{x:Static api:UserType.Admin}">
             <views:UsersView DataContext="{Binding UsersViewModel}" />
         </TabItem>
         <TabItem Header="Kierowcy"
-                 ap:Navigation.Route="{x:Static common:Routes.Drivers}">
-            <views:DriversView />
+                 ap:Navigation.Route="{x:Static common:Routes.Drivers}"
+                 ap:Restriction.MinimalUserType="{x:Static api:UserType.Manager}">
+            <views:DriversView DataContext="{Binding DriversViewModel}" />
         </TabItem>
         <TabItem Header="Pojazdy"
-                 ap:Navigation.Route="{x:Static common:Routes.Vehicles}">
-            <views:VehiclesView />
+                 ap:Navigation.Route="{x:Static common:Routes.Vehicles}"
+                 ap:Restriction.MinimalUserType="{x:Static api:UserType.Manager}">
+            <views:VehiclesView DataContext="{Binding VehiclesViewModel}" />
+        </TabItem>
+        <TabItem Header="Kontrahenci"
+                 ap:Navigation.Route="{x:Static common:Routes.Clients}"
+                 ap:Restriction.MinimalUserType="{x:Static api:UserType.Manager}"
+                 >
+            <views:ClientsView DataContext="{Binding ClientsViewModel}"/>
+        </TabItem>
+        <TabItem Header="Rodzaje praw jazdy"
+                 ap:Navigation.Route="{x:Static common:Routes.Licenses}"
+                 ap:Restriction.MinimalUserType="{x:Static api:UserType.Manager}">
+            <views:LicensesView DataContext="{Binding LicensesViewModel}"/>
         </TabItem>
     </TabControl>
 </UserControl>

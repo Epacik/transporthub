@@ -54,17 +54,19 @@
                 HorizontalAlignment="Right"
                 VerticalAlignment="Stretch"
                 Theme="{StaticResource TransparentButton}"
-                IsVisible="{Binding LoggedInUser, Converter={StaticResource ObjectIsNullConverter}}">
+                IsVisible="{Binding LoggedInUserService.User, Converter={StaticResource ObjectIsNullConverter}}">
             <StackPanel Orientation="Horizontal"
                         Spacing="5">
                 <fac:IconSourceElement IconSource="{Binding
-                                             LoggedInUser.Picture,
+                                             LoggedInUserService.User.Picture,
                                              Converter={StaticResource Base64ToIconSourceConverter},
                                              ConverterParameter={m:TablerIconSource IconUser, FontSize=30 }}"
                                        VerticalAlignment="Center"
                                        MaxWidth="30"
-                                       MaxHeight="30" />
-                <TextBlock Text="{Binding LoggedInUser.Name}"
+                                       MaxHeight="30"
+                                       RenderOptions.BitmapInterpolationMode="HighQuality"
+                                       RenderOptions.EdgeMode="Antialias"/>
+                <TextBlock Text="{Binding LoggedInUserService.User.Name}"
                            VerticalAlignment="Center"/>
             </StackPanel>
         </Button>
@@ -102,7 +104,7 @@
                                             x:DataType="models:NavItem">
                         <fac:NavigationViewItem.IsVisible>
                             <MultiBinding Converter="{StaticResource MinimalUserTypeToBoolConverter}">
-                                <Binding Path="$parent[views:MainView].((vm:MainViewModel)DataContext).LoggedInUser.UserType" />
+                                <Binding Path="$parent[views:MainView].((vm:MainViewModel)DataContext).LoggedInUserService.User.UserType" />
                                 <Binding Path="MinimalUserType"/>
                             </MultiBinding>
                         </fac:NavigationViewItem.IsVisible>

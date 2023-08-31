@@ -85,8 +85,8 @@ public class AuthorizationService : IAuthorizationService
             {
                 if (ok is not null)
                 {
-                    LoggedIn?.Invoke(ok);
                     UserData = ok;
+                    LoggedIn?.Invoke(ok);
 
                     StartRefreshing();
                     

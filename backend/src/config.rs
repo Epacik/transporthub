@@ -1,6 +1,6 @@
 use std::{path::PathBuf, str::FromStr};
 
-use actix_web::{web::{JsonConfig}, HttpResponse};
+use actix_web::{web::JsonConfig, HttpResponse};
 use serde::Deserialize;
 
 

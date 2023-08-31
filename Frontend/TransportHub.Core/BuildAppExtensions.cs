@@ -70,6 +70,10 @@ public static class BuildAppExtensions
     {
         builder.RegisterType<AuthorizationService>().As<IAuthorizationService>().SingleInstance();
         builder.RegisterType<UsersService>().As<IUsersService>();
+        builder.RegisterType<LicenseTypeService>().As<ILicenseTypeService>();
+        builder.RegisterType<VehicleService>().As<IVehicleService>();
+        builder.RegisterType<DriverService>().As<IDriverService>();
+        builder.RegisterType<DriversLicenseService>().As<IDriversLicenseService>();
 
         return builder.LoadCommonServices();
     }
@@ -93,7 +97,7 @@ public static class BuildAppExtensions
         builder.RegisterType<ReportErrorService>().As<IReportErrorService>();
         builder.RegisterType<ClipboardProvider>().As<IClipboardProvider>();
         builder.RegisterType<UserProvidedImageService>().As<IUserProvidedImageService>();
-        builder.RegisterType<RefreshUserDataService>().As<IRefreshUserDataService>().SingleInstance();
+        builder.RegisterType<LoggedInUserService>().As<ILoggedInUserService>().SingleInstance();
         builder.Register(c =>
         {
             var lifetime = Application.Current?.ApplicationLifetime;
@@ -122,6 +126,9 @@ public static class BuildAppExtensions
         builder.RegisterViewModelBinding<UsersView, UsersViewModel>(Routes.Users);
         builder.RegisterViewModelBinding<DriversView, DriversViewModel>(Routes.Drivers);
         builder.RegisterViewModelBinding<VehiclesView, VehiclesViewModel>(Routes.Vehicles);
+        builder.RegisterViewModelBinding<ClientsView, ClientsViewModel>(Routes.Clients);
+        builder.RegisterViewModelBinding<LicensesView, LicensesViewModel>(Routes.Licenses);
+
         return builder;
     }
 }

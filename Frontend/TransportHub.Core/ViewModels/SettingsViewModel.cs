@@ -16,7 +16,7 @@ using TransportHub.Services;
 
 namespace TransportHub.Core.ViewModels;
 
-internal partial class SettingsViewModel : ObservableObject, INavigationAwareViewModel
+internal partial class SettingsViewModel : ObservableObject, INavigationAware
 {
     private readonly IUsersService _usersService;
     private readonly ILogger _logger;
@@ -25,7 +25,6 @@ internal partial class SettingsViewModel : ObservableObject, INavigationAwareVie
     private readonly IAuthorizationService _authorizationService;
     private readonly IReportErrorService _reportErrorService;
     private readonly IUserProvidedImageService _userProvidedImageService;
-    private readonly IRefreshUserDataService _refreshUserDataService;
 
     public SettingsViewModel(
         IUsersService usersService,
@@ -35,7 +34,7 @@ internal partial class SettingsViewModel : ObservableObject, INavigationAwareVie
         IAuthorizationService authorizationService,
         IReportErrorService reportErrorService,
         IUserProvidedImageService userProvidedImageService,
-        IRefreshUserDataService refreshUserDataService)
+        ILoggedInUserService loggedInUserService)
     {
         _usersService = usersService;
         _logger = logger;
@@ -44,14 +43,84 @@ internal partial class SettingsViewModel : ObservableObject, INavigationAwareVie
         _authorizationService = authorizationService;
         _reportErrorService = reportErrorService;
         _userProvidedImageService = userProvidedImageService;
-        _refreshUserDataService = refreshUserDataService;
+        LoggedInUserService = loggedInUserService;
     }
 
     private UserDto _user;
 
     [ObservableProperty]
     private UserModel? _editedUser;
-    
+
+    [ObservableProperty]
+    private bool _changePasswordEnabled;
+
+    [ObservableProperty]
+    private string? _passwordValidationError;
+
+    [ObservableProperty]
+    private bool _revealPassword;
+
+    [ObservableProperty]
+    private string? _newPassword;
+
+    partial void OnNewPasswordChanged(string? oldValue, string? newValue)
+    {
+        if (oldValue == newValue)
+            return;
+
+        char[] special = { '!', '@', '#', '$', '%', '^', '&', '*', ':', ';', ',', '.', '<', '>', '_', '-', };
+        bool isValidChar(char x)
+            => (x >= 'a' && x <= 'z') || (x >= 'A' && x <= 'Z') || (x >= '0' && x <= '9') || special.Contains(x);
+
+        if (newValue is not null && !newValue.All(x => isValidChar(x)))
+            NewPassword = oldValue;
+
+        OnPropertyChanged(nameof(IsValid));
+        OnPropertyChanged(nameof(IsPasswordValid));
+    }
+
+    public bool IsPasswordValid => ChangePasswordEnabled && ValidatePassword(NewPassword);
+
+    public bool IsValid
+    {
+        get
+        {
+            if (ChangePasswordEnabled && !ValidatePassword(NewPassword))
+                return false;
+
+            return EditedUser?.IsDirty == true || ChangePasswordEnabled;
+        }
+    }
+
+    public ILoggedInUserService LoggedInUserService { get; }
+
+    private bool ValidatePassword(string? password)
+    {
+        List<string> errors = new();
+
+        password ??= "";
+
+        if (!password.Any(x => x >= 'a' && x <= 'z'))
+            errors.Add("Hasło musi zawierać co najmniej jedną małą literę");
+
+        if (!password.Any(x => x >= 'A' && x <= 'Z'))
+            errors.Add("Hasło musi zawierać co najmniej jedną wielką literę");
+
+        if (!password.Any(x => x >= '0' && x <= '9'))
+            errors.Add("Hasło musi zawierać co najmniej jedną cyfrę");
+
+        char[] special = { '!', '@', '#', '$', '%', '^', '&', '*', ':', ';', ',', '.', '<', '>', '_', '-', };
+
+        if (!password.Any(x => special.Contains(x)))
+            errors.Add($"Hasło musi zawierać co najmniej jeden z podanych znaków {string.Join("", special)}");
+
+        if (password.Length < 8)
+            errors.Add("Hasło musi mieć co najmniej 8 znaków");
+
+        PasswordValidationError = string.Join("\n", errors);
+
+        return errors.Count == 0;
+    }
 
     public Task OnNavigatedFrom()
     {
@@ -70,7 +139,14 @@ internal partial class SettingsViewModel : ObservableObject, INavigationAwareVie
         }
 
         EditedUser = result.Unwrap().ToUserModel();
+        EditedUser.PropertyChanged += EditedUser_PropertyChanged;
         await _loadingPopupService.Hide();
+    }
+
+    private void EditedUser_PropertyChanged(object? sender, System.ComponentModel.PropertyChangedEventArgs e)
+    {
+        OnPropertyChanged(nameof(IsValid));
+        OnPropertyChanged(nameof(IsPasswordValid));
     }
 
     [RelayCommand]
@@ -95,32 +171,60 @@ internal partial class SettingsViewModel : ObservableObject, INavigationAwareVie
         var result = await _dialogService.ShowConfirmation("Cofnij zmiany", "Czy na pewno chcesz cofnąć zmiany?");
 
         if (result)
+        {
+            EditedUser!.PropertyChanged -= EditedUser_PropertyChanged;
             EditedUser = _user.ToUserModel();
+            EditedUser.PropertyChanged += EditedUser_PropertyChanged;
+            ChangePasswordEnabled = false;
+            NewPassword = null;
+            PasswordValidationError = null;
+        }
     }
 
     [RelayCommand]
     private async Task SaveChanges()
     {
-        await _loadingPopupService.Show("Zapisywanie zmian");
-        var result = await _usersService.UpdateAsAdmin(EditedUser!.Id!, EditedUser!.ToUserAdminUpdateDto());
 
-        if (result.IsError)
+        if (EditedUser?.IsDirty ?? false)
         {
+            await _loadingPopupService.Show("Zapisywanie zmian");
+            var result = await _usersService.Update(EditedUser!.Id!, EditedUser!.ToUserUpdateDto());
+
             await _loadingPopupService.Hide();
-            await _reportErrorService.ShowError(result.UnwrapErr());
-            return;
+            if (result.IsError)
+            {
+                await _reportErrorService.ShowError(result.UnwrapErr());
+                return;
+            }
         }
 
-        var clone = EditedUser!.Clone();
-        await _loadingPopupService.Hide();
+        if (ChangePasswordEnabled)
+        {
+            await _loadingPopupService.Show("Zmiana hasła");
+            var result = await _usersService.UpdatePassword(EditedUser!.Id!, new(NewPassword!));
 
-        _refreshUserDataService.RequestRefresh();
+            ChangePasswordEnabled = false;
+            NewPassword = null;
+            PasswordValidationError = null;
+            await _loadingPopupService.Hide();
+            if (result.IsError)
+            {
+                await _reportErrorService.ShowError(result.UnwrapErr());
+                return;
+            }
+            
+        }
+
+
+        await LoggedInUserService.ForceRefreshAsync();
     }
 
     [RelayCommand]
-    private Task ChangePassword() 
+    private void ChangePassword()
     {
-        return Task.CompletedTask;
+        ChangePasswordEnabled = true;
+        OnPropertyChanged(nameof(IsValid));
+        OnPropertyChanged(nameof(IsPasswordValid));
     }
 
 }

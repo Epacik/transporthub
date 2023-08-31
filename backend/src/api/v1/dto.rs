@@ -28,7 +28,6 @@ impl LoginResponseDto {
     }
 }
 
-
 #[derive(Serialize)]
 #[serde(rename_all = "camelCase")]
 pub struct UserDto {
@@ -74,4 +73,91 @@ pub struct UserUpdateDto {
 #[serde(rename_all = "camelCase")]
 pub struct UserUpdatePasswordDto {
     pub password: String,
+}
+
+
+#[derive(Serialize)]
+#[serde(rename_all = "camelCase")]
+pub struct LicenseTypeDto {
+    pub id: String,
+    pub name: String,
+    pub description: String,
+    pub minimal_age_of_holder: i32,
+    pub alternative_minimal_age_of_holder: Option<i32>,
+    pub condition_for_alternative_minimal_age: Option<String>,
+    pub disabled: bool,
+}
+
+#[derive(Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct LicenseTypeUpdateDto {
+    pub name: String,
+    pub description: String,
+    pub minimal_age_of_holder: i32,
+    pub alternative_minimal_age_of_holder: Option<i32>,
+    pub condition_for_alternative_minimal_age: Option<String>,
+    pub disabled: bool,
+}
+
+#[derive(Serialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VehicleDto {
+    pub id: String,
+    pub name: String,
+    pub vehicle_type: i32,
+    pub picture: String,
+    pub required_license: i32,
+    pub registration_number: String,
+    pub vin: String,
+    pub disabled: bool,
+}
+
+#[derive(Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct VehicleUpdateDto {
+    pub name: String,
+    pub vehicle_type: i32,
+    pub picture: String,
+    pub required_license: i32,
+    pub registration_number: String,
+    pub vin: String,
+    pub disabled: bool,
+}
+
+#[derive(Serialize)]
+#[serde(rename_all = "camelCase")]
+pub struct DriverDto {
+    pub id: String,
+    pub name: String,
+    pub picture: Option<String>,
+    pub nationality: String,
+    pub base_location: String,
+    pub disabled: bool,
+}
+
+#[derive(Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct DriverUpdateDto {
+    pub name: String,
+    pub picture: Option<String>,
+    pub nationality: String,
+    pub base_location: String,
+    pub disabled: bool,
+}
+
+#[derive(Serialize)]
+#[serde(rename_all = "camelCase")]
+pub struct DriversLicenseDto {
+    pub id: String,
+    pub driver: i32,
+    pub license: i32,
+    pub disabled: bool,
+}
+
+#[derive(Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct DriversLicenseUpdateDto {
+    pub driver: i32,
+    pub license: i32,
+    pub disabled: bool,
 }

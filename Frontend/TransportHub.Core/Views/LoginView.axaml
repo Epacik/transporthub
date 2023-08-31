@@ -38,7 +38,7 @@
             </StackPanel.Styles>
             <TextBlock FontSize="40">logowanie</TextBlock>
             <TextBox Watermark="Login" Text="{Binding Login}"/>
-            <TextBox Watermark="Hasło" PasswordChar="*" Text="{Binding Password}" KeyDown="PassBox_KeyDown" />
+            <TextBox Watermark="Hasło" PasswordChar="●" Text="{Binding Password}" KeyDown="PassBox_KeyDown" />
             <Button Background="{StaticResource AppColor}"
                     Command="{Binding LoginUser}"
                     Padding="10"

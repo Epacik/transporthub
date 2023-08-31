@@ -35,7 +35,7 @@ public partial class MainViewModel : ObservableObject
     private readonly IOnScreenKeyboardService _onScreenKeyboardService;
     private readonly IUsersService _usersService;
     private readonly IReportErrorService _reportErrorService;
-    private readonly IRefreshUserDataService _refreshUserDataService;
+    public ILoggedInUserService LoggedInUserService { get; }
     private readonly Stack<(string Route, Control Page, Dictionary<string, object>? parameters)> _navigationStack = new();
 
     private string? _currentRoute;
@@ -100,7 +100,7 @@ public partial class MainViewModel : ObservableObject
     [ObservableProperty]
     private NavItem[] _footerItems =
     {
-        new("Administruj", Tabler.IconFileSettings, Routes.Administer, UserType.Admin),
+        new("Administruj", Tabler.IconFileSettings, Routes.Administer, UserType.Manager),
         new("Ustawienia", Tabler.IconSettings, Routes.Settings, UserType.User),
         new("Wyloguj", Tabler.IconLogout, "", UserType.User),
     };
@@ -129,9 +129,6 @@ public partial class MainViewModel : ObservableObject
     [ObservableProperty]
     private string? _loadingMessage;
 
-    [ObservableProperty]
-    private UserModel? _loggedInUser;
-
     #endregion properties
 
     public event EventHandler? HeaderChanged;
@@ -144,7 +141,7 @@ public partial class MainViewModel : ObservableObject
         IOnScreenKeyboardService onScreenKeyboardService,
         IUsersService usersService,
         IReportErrorService reportErrorService,
-        IRefreshUserDataService refreshUserDataService)
+        ILoggedInUserService loggedInUserService)
     {
         _authorizationService = authorizationService;
         _pageFactory = pageFactory;
@@ -153,12 +150,10 @@ public partial class MainViewModel : ObservableObject
         _onScreenKeyboardService = onScreenKeyboardService;
         _usersService = usersService;
         _reportErrorService = reportErrorService;
-        _refreshUserDataService = refreshUserDataService;
-
+        LoggedInUserService = loggedInUserService;
         _authorizationService.LoggedIn += AuthorizationService_LoggedIn;
         _authorizationService.LoggedOut += AuthorizationService_LoggedOut;
         _onScreenKeyboardService.HeightChanged += OnScreenKeyboardService_HeightChanged;
-        _refreshUserDataService.Refresh += _refreshUserDataService_Refresh;
 
         NavigateToAsync(Routes.Login, null)
             .ContinueWith(async t =>
@@ -170,31 +165,11 @@ public partial class MainViewModel : ObservableObject
             });
     }
 
-    private async void _refreshUserDataService_Refresh()
-    {
-        if (string.IsNullOrEmpty(_authorizationService?.UserData?.User))
-            return;
-
-        await Task.Run(async () =>
-        {
-            var result = await _usersService.GetUser(_authorizationService.UserData.User);
-
-            if (result.IsError)
-            {
-                await _reportErrorService.ShowError(result.UnwrapErr());
-                return;
-            }
-
-            LoggedInUser = result.Unwrap().ToUserModel();
-        });
-    }
-
     private async void AuthorizationService_LoggedOut()
     {
         ShowPane = false;
         _navigationStack.Clear();
         UpdateHeaderAndBackButton();
-        LoggedInUser = null;
         await NavigateToAsync(Routes.Login, null);
     }
 
@@ -208,19 +183,6 @@ public partial class MainViewModel : ObservableObject
         ShowPane = true;
         _navigationStack.Clear();
         UpdateHeaderAndBackButton();
-
-        Task.Run(async () =>
-        {
-            var result = await _usersService.GetUser(responseDto.User!);
-
-            if (result.IsError)
-            {
-                await _reportErrorService.ShowError(result.UnwrapErr());
-                return;
-            }
-
-            LoggedInUser = result.Unwrap().ToUserModel();
-        });
     }
 
     internal async Task NavigateBackAsync(Dictionary<string, object>? parameters)
@@ -231,18 +193,31 @@ public partial class MainViewModel : ObservableObject
         var current = _navigationStack.Pop();
         var next = _navigationStack.Pop();
 
-        if (current.Page.DataContext is INavigationAwareViewModel currentModel)
+        if (current.Page is INavigationAware oldPage)
+        {
+            await oldPage.OnNavigatedFrom();
+        }
+
+        if (current.Page.DataContext is INavigationAware currentModel)
         {
             await currentModel.OnNavigatedFrom();
         }
 
+
         Content = next.Page;
         _currentRoute = next.Route;
 
-        if (Content.DataContext is INavigationAwareViewModel model)
+        if (Content is INavigationAware page)
+        {
+            await page.OnNavigatedTo(parameters ?? next.parameters);
+        }
+
+        if (Content.DataContext is INavigationAware model)
         {
             await model.OnNavigatedTo(parameters ?? next.parameters);
         }
+
+
 
         SetSelectedNavItem(next.Route);
 
@@ -254,16 +229,29 @@ public partial class MainViewModel : ObservableObject
     {
         return Dispatcher.UIThread.InvokeAsync(async () =>
         {
+            
+
             if (_navigationStack.TryPeek(out var old))
             {
-                if (old.Page.DataContext is INavigationAwareViewModel oldModel)
+                if (old.Page is INavigationAware oldPage)
+                {
+                    await oldPage.OnNavigatedFrom();
+                }
+
+                if (old.Page.DataContext is INavigationAware oldModel)
                 {
                     await oldModel.OnNavigatedFrom();
                 }
 
+
                 if (old.Route == Routes.Login && route != Routes.StartupSettings)
                 {
                     _navigationStack.Clear();
+
+                    if (_authorizationService.IsLoggedIn)
+                    {
+                        await LoggedInUserService.ForceRefreshAsync();
+                    }
                 }
 
                 if (old.Route == route)
@@ -281,12 +269,18 @@ public partial class MainViewModel : ObservableObject
             Content = page;
             _currentRoute = route;
 
-            if (page.DataContext is INavigationAwareViewModel model)
+            if (Content is INavigationAware newPage)
+            {
+                await newPage.OnNavigatedTo(parameters);
+            }
+
+            if (page.DataContext is INavigationAware model)
             {
                 await model.OnNavigatedTo(parameters);
             }
 
-            if(updateMenu)
+
+            if (updateMenu)
             {
                 SetSelectedNavItem(route);
             }

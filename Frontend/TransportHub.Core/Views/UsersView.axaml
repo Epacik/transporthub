@@ -138,6 +138,8 @@
                     </ToolTip.Tip>
                     <fa:IconSourceElement MaxWidth="60"
                                           MaxHeight="60"
+                                          RenderOptions.BitmapInterpolationMode="HighQuality"
+                                          RenderOptions.EdgeMode="Antialias"
                                           IconSource="{Binding
                                              Picture,
                                              Converter={StaticResource Base64ToIconSourceConverter},

@@ -48,6 +48,8 @@
                 </ToolTip.Tip>
                 <fa:IconSourceElement MaxWidth="60"
                                       MaxHeight="60"
+                                      RenderOptions.BitmapInterpolationMode="HighQuality"
+                                      RenderOptions.EdgeMode="Antialias"
                                       IconSource="{Binding
                                              Picture,
                                              Converter={StaticResource Base64ToIconSourceConverter},
@@ -80,25 +82,71 @@
                        Grid.ColumnSpan="3"
                        Text="Data ważności hasła"/>
 
-            <StackPanel Orientation="Horizontal"
-                        Grid.Row="7"
-                        Grid.ColumnSpan="5">
-                <CalendarDatePicker SelectedDate="{Binding PasswordExpirationDate}"
-                                    Width="180"/>
-                <Button VerticalContentAlignment="Center"
-                        Command="{Binding ResetPasswordExpirationDateCommand}"
-                        VerticalAlignment="Stretch">
-                    <controls:TablerIcon Icon="IconX"/>
-                </Button>
-            </StackPanel>
+            
+            <TextBlock Text="{Binding PasswordExpirationDate, StringFormat='yyyy-MM-dd'}"
+                       Width="180"
+                       Grid.Row="7"
+                       Grid.ColumnSpan="5"/>
 
             <Button Grid.Row="9"
                     Grid.ColumnSpan="3"
                     Content="Zmień hasło"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Top"
+                    IsVisible="{Binding !$parent[views:SettingsView].((vm:SettingsViewModel)DataContext).ChangePasswordEnabled}"
                     Command="{Binding $parent[views:SettingsView].((vm:SettingsViewModel)DataContext).ChangePasswordCommand}"/>
 
+            <Grid RowDefinitions="auto,auto"
+                  ColumnDefinitions="*,40"
+                  Grid.Row="9"
+                  Grid.ColumnSpan="5"
+                  IsVisible="{Binding $parent[views:SettingsView].((vm:SettingsViewModel)DataContext).ChangePasswordEnabled}">
+
+                <Border Margin="-5"
+                        Grid.RowSpan="2"
+                        Grid.ColumnSpan="2"
+                        BorderBrush="Red"
+                        Background="Red"
+                        CornerRadius="5"
+                        IsVisible="{Binding !$parent[views:SettingsView].((vm:SettingsViewModel)DataContext).IsPasswordValid}"/>
+                
+                <TextBox PasswordChar="●"
+                         Text="{Binding $parent[views:SettingsView].((vm:SettingsViewModel)DataContext).NewPassword}"
+                         RevealPassword="{Binding $parent[views:SettingsView].((vm:SettingsViewModel)DataContext).RevealPassword}"/>
+
+                <Button Grid.Column="1"
+                        x:Name="ShowPasswordButton"
+                        VerticalAlignment="Stretch"
+                        IsPressed="{Binding
+                            $parent[views:SettingsView].((vm:SettingsViewModel)DataContext).RevealPassword,
+                            Mode=OneWayToSource}">
+                    <Button.Styles>
+                        <Styles>
+                            <Style Selector="Button">
+                                <Setter Property="ContentTemplate">
+                                    <DataTemplate>
+                                        <controls:TablerIcon Icon="IconEyeClosed"/>
+                                    </DataTemplate>
+                                </Setter>
+                            </Style>
+                            <Style Selector="Button:pressed">
+                                <Setter Property="ContentTemplate">
+                                    <DataTemplate>
+                                        <controls:TablerIcon Icon="IconEye"/>
+                                    </DataTemplate>
+                                </Setter>
+                            </Style>
+                        </Styles>
+                    </Button.Styles>
+                </Button>
+
+                <TextBlock Grid.Row="1"
+                           Grid.ColumnSpan="2"
+                           Text="{Binding $parent[views:SettingsView].((vm:SettingsViewModel)DataContext).PasswordValidationError}"
+                           IsVisible="{Binding !$parent[views:SettingsView].((vm:SettingsViewModel)DataContext).IsPasswordValid}"
+                           Foreground="White"/>
+                
+            </Grid>
         </Grid>
 
         
@@ -106,12 +154,12 @@
                     Spacing="10"
                     Grid.Row="3"
                     HorizontalAlignment="Right">
-            <Button IsEnabled="{Binding EditedUser.IsDirty}"
+            <Button IsEnabled="{Binding IsValid}"
                     Command="{Binding RevertChangesCommand}">
                 Cofnij zmiany
             </Button>
             <Button Classes="accent"
-                    IsEnabled="{Binding EditedUser.IsDirty}"
+                    IsEnabled="{Binding IsValid}"
                     Command="{Binding SaveChangesCommand}">
                 Zapisz
             </Button>

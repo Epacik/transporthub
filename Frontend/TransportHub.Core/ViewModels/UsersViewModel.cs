@@ -19,7 +19,7 @@ using TransportHub.Services;
 
 namespace TransportHub.Core.ViewModels;
 
-public partial class UsersViewModel : ObservableObject, INavigationAwareViewModel
+public partial class UsersViewModel : ObservableObject, INavigationAware
 {
     private readonly IUsersService _usersService;
     private readonly ILogger _logger;
@@ -29,7 +29,6 @@ public partial class UsersViewModel : ObservableObject, INavigationAwareViewMode
     private readonly IClipboardProvider _clipboardProvider;
     private readonly IReportErrorService _reportErrorService;
     private readonly IUserProvidedImageService _userProvidedImageService;
-    private readonly IRefreshUserDataService _refreshUserDataService;
 
     public UsersViewModel(
         IUsersService usersService,
@@ -40,7 +39,7 @@ public partial class UsersViewModel : ObservableObject, INavigationAwareViewMode
         IClipboardProvider clipboardProvider,
         IReportErrorService reportErrorService,
         IUserProvidedImageService userProvidedImageService,
-        IRefreshUserDataService refreshUserDataService)
+        ILoggedInUserService loggedInUserService)
     {
         _usersService = usersService;
         _logger = logger;
@@ -50,8 +49,7 @@ public partial class UsersViewModel : ObservableObject, INavigationAwareViewMode
         _clipboardProvider = clipboardProvider;
         _reportErrorService = reportErrorService;
         _userProvidedImageService = userProvidedImageService;
-        _refreshUserDataService = refreshUserDataService;
-
+        LoggedInUserService = loggedInUserService;
         UserTypes = new ObservableCollection<UserType>
         {
             UserType.User,
@@ -154,7 +152,7 @@ public partial class UsersViewModel : ObservableObject, INavigationAwareViewMode
 
         if (_authorizationService.UserData?.User == clone.Id)
         {
-            _refreshUserDataService.RequestRefresh();
+            await LoggedInUserService.ForceRefreshAsync();
         }
 
     }
@@ -256,6 +254,9 @@ public partial class UsersViewModel : ObservableObject, INavigationAwareViewMode
     }
 
     private static Random random = new Random();
+
+    public ILoggedInUserService LoggedInUserService { get; }
+
     public static string RandomString(int length)
     {
         const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*:;,.<>";
