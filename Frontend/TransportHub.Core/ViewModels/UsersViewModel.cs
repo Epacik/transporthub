@@ -73,6 +73,9 @@ public partial class UsersViewModel : ObservableObject, INavigationAware
     [ObservableProperty]
     private UserModel? _selectedUser;
 
+    [ObservableProperty]
+    private bool _isLoading;
+
     partial void OnSelectedUserChanging(UserModel? oldValue, UserModel? newValue)
     {
         if (newValue is null)
@@ -280,7 +283,8 @@ public partial class UsersViewModel : ObservableObject, INavigationAware
         if (_logger.IsEnabled(LogEventLevel.Verbose))
             _logger.Verbose("Loading users");
 
-        await _loadingPopupService.Show("Ładowanie listy użytkowników");
+        //await _loadingPopupService.Show("Ładowanie listy użytkowników");
+        IsLoading = true;
 
         var result = await _usersService.ListUsers();
 
@@ -302,6 +306,7 @@ public partial class UsersViewModel : ObservableObject, INavigationAware
 
         OnPropertyChanged(nameof(Users));
 
-        await _loadingPopupService.Hide();
+        IsLoading = false;
+        //await _loadingPopupService.Hide();
     }
 }

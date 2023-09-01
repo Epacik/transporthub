@@ -11,7 +11,7 @@
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="TransportHub.Core.Views.LicensesView"
              x:DataType="vm:LicensesViewModel">
-    <UserControl.Resources>
+    <!--<UserControl.Resources>
         <ResourceDictionary>
             <converters:ObjectToGridLengthConverter x:Key="ObjectToGridLengthConverter"/>
             <converters:ObjectIsNullConverter x:Key="ObjectIsNullConverter"/>
@@ -243,5 +243,5 @@
                 Zapisz
             </Button>
         </Grid>
-    </Grid>
+    </Grid>-->
 </UserControl>

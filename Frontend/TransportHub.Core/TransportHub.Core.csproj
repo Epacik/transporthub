@@ -21,12 +21,18 @@
 
   
   <ItemGroup>
+    <AvaloniaXaml Remove="Styles\Controls\ProgressRing.axaml" />
+  </ItemGroup>
+
+  
+  <ItemGroup>
     <Compile Remove="Assets\Icons\tabler\TablerIcons.cs" />
   </ItemGroup>
 
   
   <ItemGroup>
     <AvaloniaResource Include="Generated\generateFontDictionary.ps1" />
+    <AvaloniaResource Include="Styles\Controls\ProgressRing.axaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -39,7 +45,6 @@
     <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.0.4" />
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.1" />
     <PackageReference Include="Deadpikle.AvaloniaProgressRing" Version="0.10.1" />
-    <PackageReference Include="FluentAvalonia.ProgressRing" Version="1.69.1" />
     <PackageReference Include="FluentAvaloniaUI" Version="2.0.1" />
     <PackageReference Include="Lindronics.OneOf.Result" Version="0.2.0" />
     <PackageReference Include="Lorem.Universal.Net" Version="4.0.80" />
@@ -71,6 +76,7 @@
   <ItemGroup>
     <Folder Include="Modules\" />
     <Folder Include="Services\API\" />
+    <Folder Include="Styling\" />
   </ItemGroup>
 
   <ItemGroup>

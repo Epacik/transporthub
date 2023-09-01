@@ -24,6 +24,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TransportHub.Common", "Tran
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TransportHub.Services", "TransportHub.Services\TransportHub.Services.csproj", "{9F5D0451-8C19-4AFB-A461-6E2B63455832}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ThirdParty", "ThirdParty", "{283D8DA8-8355-4E47-8D8F-E661B0180513}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluentAvalonia.ProgressRing", "ThirdParty\FluentAvalonia.ProgressRing\FluentAvalonia.ProgressRing\FluentAvalonia.ProgressRing.csproj", "{6F87C9FC-72C0-4109-91C6-A4EE3A56EB2A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,9 +67,16 @@ Global
 		{9F5D0451-8C19-4AFB-A461-6E2B63455832}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F5D0451-8C19-4AFB-A461-6E2B63455832}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F5D0451-8C19-4AFB-A461-6E2B63455832}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F87C9FC-72C0-4109-91C6-A4EE3A56EB2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F87C9FC-72C0-4109-91C6-A4EE3A56EB2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F87C9FC-72C0-4109-91C6-A4EE3A56EB2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F87C9FC-72C0-4109-91C6-A4EE3A56EB2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6F87C9FC-72C0-4109-91C6-A4EE3A56EB2A} = {283D8DA8-8355-4E47-8D8F-E661B0180513}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {83CB65B8-011F-4ED7-BCD3-A6CFA935EF7E}

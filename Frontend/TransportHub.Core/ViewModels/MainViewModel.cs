@@ -207,6 +207,11 @@ public partial class MainViewModel : ObservableObject
         Content = next.Page;
         _currentRoute = next.Route;
 
+        SetSelectedNavItem(next.Route);
+
+        _navigationStack.Push((next.Route, next.Page, parameters));
+        UpdateHeaderAndBackButton();
+
         if (Content is INavigationAware page)
         {
             await page.OnNavigatedTo(parameters ?? next.parameters);
@@ -216,13 +221,6 @@ public partial class MainViewModel : ObservableObject
         {
             await model.OnNavigatedTo(parameters ?? next.parameters);
         }
-
-
-
-        SetSelectedNavItem(next.Route);
-
-        _navigationStack.Push((next.Route, next.Page, parameters));
-        UpdateHeaderAndBackButton();
     }
 
     internal Task NavigateToAsync(string route, Dictionary<string, object>? parameters, bool updateMenu = true)
@@ -269,6 +267,14 @@ public partial class MainViewModel : ObservableObject
             Content = page;
             _currentRoute = route;
 
+            if (updateMenu)
+            {
+                SetSelectedNavItem(route);
+            }
+
+            _navigationStack.Push((route, page, parameters));
+            UpdateHeaderAndBackButton();
+
             if (Content is INavigationAware newPage)
             {
                 await newPage.OnNavigatedTo(parameters);
@@ -278,15 +284,6 @@ public partial class MainViewModel : ObservableObject
             {
                 await model.OnNavigatedTo(parameters);
             }
-
-
-            if (updateMenu)
-            {
-                SetSelectedNavItem(route);
-            }
-
-            _navigationStack.Push((route, page, parameters));
-            UpdateHeaderAndBackButton();
         });
     }
 

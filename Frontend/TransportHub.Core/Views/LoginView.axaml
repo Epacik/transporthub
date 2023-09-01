@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:ap="using:TransportHub.Core.AttachedProperties"
              xmlns:vm="using:TransportHub.Core.ViewModels"
+             xmlns:fa="using:FluentAvalonia.UI.Controls"
              xmlns:controls="using:TransportHub.Core.Controls"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="TransportHub.Core.Views.LoginView"
@@ -42,9 +43,21 @@
             <Button Background="{StaticResource AppColor}"
                     Command="{Binding LoginUser}"
                     Padding="10"
-                    IsEnabled="{Binding EnableLogin}">
-                    Zaloguj
-                </Button>
+                    Width="120">
+                <Grid>
+                    <TextBlock IsVisible="{Binding EnableLogin}">Zaloguj</TextBlock>
+                    <StackPanel Orientation="Horizontal"
+                                IsVisible="{Binding !EnableLogin}">
+                        <TextBlock>Logownie</TextBlock>
+                        <fa:ProgressRing IsIndeterminate="True"
+                                         Margin="10,-5,5,-5"
+                                         Foreground="Black"
+                                         MinWidth="20"
+                                         MinHeight="20"
+                                         BorderThickness="2"/>
+                    </StackPanel>
+                </Grid>
+            </Button>
         </StackPanel>
 
     </Grid>

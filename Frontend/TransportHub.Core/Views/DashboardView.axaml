@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:controls="using:TransportHub.Core.Controls"
              xmlns:vm="using:TransportHub.Core.ViewModels"
+             xmlns:fa="using:FluentAvalonia.UI.Controls"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="TransportHub.Core.Views.DashboardView"
              x:DataType="vm:DashboardViewModel">
@@ -12,107 +13,66 @@
           HorizontalAlignment="Center"
           ColumnDefinitions="auto,20,auto"
           RowDefinitions="auto,10,auto,10">
-            <StackPanel Orientation="Horizontal"
-                        Spacing="10">
-                <controls:TablerIcon Size="50" Icon="IconRoad"/>
-                <TextBlock FontSize="35">
-                    <Run Text="{Binding DeliveriesEnRoute}"/>
-                    <Run Text="Dostaw w trasie"/>
-                </TextBlock>
-            </StackPanel>
-
-            <StackPanel Orientation="Horizontal"
-                        Spacing="10"
-                        Grid.Column="2">
-                <controls:TablerIcon Size="50"
-                                     Icon="IconAlertTriangle"
-                                     Foreground="DarkOrange"/>
-                <TextBlock FontSize="35"
-                           Foreground="DarkOrange">
-                    <Run Text="{Binding NewIncidents}"/>
-                    <Run Text="Nowe wydarzenia"/>
-                </TextBlock>
-            </StackPanel>
-
-            <StackPanel Orientation="Horizontal"
-                        Spacing="10"
-                        Grid.Column="0"
-                        Grid.Row="2"
-                        HorizontalAlignment="Right">
-                <controls:TablerIcon Size="30" Icon="IconTimelineEventPlus"/>
-                <TextBlock FontSize="20">
-                    <Run Text="{Binding NewOrders}"/>
-                    <Run Text="Nowe zlecenia"/>
-                </TextBlock>
-            </StackPanel>
-
-            <StackPanel Orientation="Horizontal"
-                        Spacing="10"
-                        Grid.Column="2"
-                        Grid.Row="2"
-                        HorizontalAlignment="Left">
-                <controls:TablerIcon Size="30" Icon="IconChecks" Foreground="DarkGreen"/>
-                <TextBlock FontSize="20" Foreground="DarkGreen">
-                    <Run Text="{Binding CompletedOrders}"/>
-                    <Run Text="Niedawno ukończone zlecenia"/>
-                </TextBlock>
-            </StackPanel>
+            
+            <Button Theme="{StaticResource TransparentButton}" >
+                <StackPanel Orientation="Horizontal"
+                            Spacing="10">
+                    <controls:TablerIcon Size="50" Icon="IconRoad"/>
+                    <TextBlock FontSize="35">
+                        <Run Text="{Binding DeliveriesEnRoute}"/>
+                        <Run Text="Dostaw w trasie"/>
+                    </TextBlock>
+                </StackPanel>
+            </Button>
 
 
-        </Grid>
+            <Button Theme="{StaticResource TransparentButton}"
+                    Grid.Column="2">
+                <StackPanel Orientation="Horizontal"
+                            Spacing="10">
+                    <controls:TablerIcon Size="50"
+                                         Icon="IconAlertTriangle"
+                                         Foreground="DarkOrange"/>
+                    <TextBlock FontSize="35"
+                               Foreground="DarkOrange">
+                        <Run Text="{Binding NewIncidents}"/>
+                        <Run Text="Nowe wydarzenia"/>
+                    </TextBlock>
+                </StackPanel>
+            </Button>
 
-        <Grid VerticalAlignment="Center"
-          HorizontalAlignment="Center"
-          ColumnDefinitions="auto,20,auto"
-          RowDefinitions="auto,10,auto,10">
-            <StackPanel Orientation="Horizontal"
-                        Spacing="10">
-                <controls:TablerIcon Size="50" Icon="IconRoad"/>
-                <TextBlock FontSize="35">
-                    <Run Text="{Binding DeliveriesEnRoute}"/>
-                    <Run Text="Dostaw w trasie"/>
-                </TextBlock>
-            </StackPanel>
+            <Button Theme="{StaticResource TransparentButton}"
+                    HorizontalAlignment="Right"
+                    Grid.Column="0"
+                    Grid.Row="2">
+                <StackPanel Orientation="Horizontal"
+                            Spacing="10"
+                            >
+                    <controls:TablerIcon Size="30" Icon="IconTimelineEventPlus"/>
+                    <TextBlock FontSize="20">
+                        <Run Text="{Binding NewOrders}"/>
+                        <Run Text="Nowe zlecenia"/>
+                    </TextBlock>
+                </StackPanel>
+            </Button>
 
-            <StackPanel Orientation="Horizontal"
-                        Spacing="10"
-                        Grid.Column="2">
-                <controls:TablerIcon Size="50"
-                                     Icon="IconAlertTriangle"
-                                     Foreground="DarkOrange"/>
-                <TextBlock FontSize="35"
-                           Foreground="DarkOrange">
-                    <Run Text="{Binding NewIncidents}"/>
-                    <Run Text="Nowe wydarzenia"/>
-                </TextBlock>
-            </StackPanel>
-
-            <StackPanel Orientation="Horizontal"
-                        Spacing="10"
-                        Grid.Column="0"
-                        Grid.Row="2"
-                        HorizontalAlignment="Right">
-                <controls:TablerIcon Size="30" Icon="IconTimelineEventPlus"/>
-                <TextBlock FontSize="20">
-                    <Run Text="{Binding NewOrders}"/>
-                    <Run Text="Nowe zlecenia"/>
-                </TextBlock>
-            </StackPanel>
-
-            <StackPanel Orientation="Horizontal"
-                        Spacing="10"
-                        Grid.Column="2"
-                        Grid.Row="2"
-                        HorizontalAlignment="Left">
-                <controls:TablerIcon Size="30" Icon="IconChecks" Foreground="DarkGreen"/>
-                <TextBlock FontSize="20" Foreground="DarkGreen">
-                    <Run Text="{Binding CompletedOrders}"/>
-                    <Run Text="Niedawno ukończone zlecenia"/>
-                </TextBlock>
-            </StackPanel>
+            <Button Theme="{StaticResource TransparentButton}"
+                    Grid.Column="2"
+                                Grid.Row="2">
+                <StackPanel Orientation="Horizontal"
+                            Spacing="10"
+                            HorizontalAlignment="Left">
+                    <controls:TablerIcon Size="30" Icon="IconChecks" Foreground="DarkGreen"/>
+                    <TextBlock FontSize="20" Foreground="DarkGreen">
+                        <Run Text="{Binding CompletedOrders}"/>
+                        <Run Text="Niedawno ukończone zlecenia"/>
+                    </TextBlock>
+                </StackPanel>
+            </Button>
 
 
         </Grid>
+
 
         <Border Background="Red"
                 Width="500"

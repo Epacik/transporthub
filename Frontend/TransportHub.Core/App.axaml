@@ -30,7 +30,7 @@
         <!--<FluentTheme />-->
         <sty:FluentAvaloniaTheme />
 
-        <!--<StyleInclude Source="avares://FluentAvalonia.ProgressRing/Styling/Controls/ProgressRing.axaml" />-->
+        <StyleInclude Source="avares://TransportHub.Core/Styles/Controls/ProgressRing.axaml" />
         <StyleInclude Source="avares://AvaloniaProgressRing/Styles/ProgressRing.xaml"/>
     </Application.Styles>
 </Application>

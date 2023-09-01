@@ -1,6 +1,7 @@
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Serilog;
+using Serilog.Events;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -27,7 +28,7 @@ public partial class LicensesViewModel : ObservableObject, INavigationAware
     private readonly IUserProvidedImageService _userProvidedImageService;
 
     public LicensesViewModel(
-        IUsersService usersService,
+        IUsersService LicensesService,
         ILogger logger,
         ILoadingPopupService loadingPopupService,
         IDialogService dialogService,
@@ -37,7 +38,7 @@ public partial class LicensesViewModel : ObservableObject, INavigationAware
         IUserProvidedImageService userProvidedImageService,
         ILoggedInUserService loggedInUserService)
     {
-        _usersService = usersService;
+        _usersService = LicensesService;
         _logger = logger;
         _loadingPopupService = loadingPopupService;
         _dialogService = dialogService;
@@ -55,7 +56,7 @@ public partial class LicensesViewModel : ObservableObject, INavigationAware
     }
 
     [ObservableProperty]
-    private ObservableCollection<UserModel> _users = new();
+    private ObservableCollection<UserModel> _licenses = new();
 
     [ObservableProperty]
     private bool _addingUser;
@@ -141,8 +142,8 @@ public partial class LicensesViewModel : ObservableObject, INavigationAware
         }
 
         var clone = EditedUser!.Clone();
-        var index = Users.IndexOf(SelectedUser!);
-        Users[index] = clone;
+        var index = Licenses.IndexOf(SelectedUser!);
+        Licenses[index] = clone;
         SelectedUser = clone;
         await _loadingPopupService.Hide();
 
@@ -187,7 +188,7 @@ public partial class LicensesViewModel : ObservableObject, INavigationAware
     private void AddUser()
     {
         var newUser = new UserModel(null, "", null, null, UserType.User, false, true);
-        Users.Add(newUser);
+        Licenses.Add(newUser);
         SelectedUser = newUser;
         AddingUser = true;
     }
@@ -208,8 +209,8 @@ public partial class LicensesViewModel : ObservableObject, INavigationAware
         }
 
         var clone = EditedUser!.Clone();
-        var index = Users.IndexOf(SelectedUser!);
-        Users[index] = clone;
+        var index = Licenses.IndexOf(SelectedUser!);
+        Licenses[index] = clone;
         SelectedUser = clone;
 
         await (_clipboardProvider.Get()?.SetTextAsync(dto.Password) ?? Task.CompletedTask);
@@ -267,37 +268,37 @@ public partial class LicensesViewModel : ObservableObject, INavigationAware
 
     public Task OnNavigatedFrom()
     {
-        Users.Clear();
+        Licenses.Clear();
         return Task.CompletedTask;
     }
 
     public async Task OnNavigatedTo(Dictionary<string, object>? parameters = null)
     {
-        if (_logger.IsEnabled(LogEventLevel.Verbose))
-            _logger.Verbose("Loading users");
+        //if (_logger.IsEnabled(LogEventLevel.Verbose))
+        //    _logger.Verbose("Loading Licenses");
 
-        await _loadingPopupService.Show("Ładowanie listy użytkowników");
+        //await _loadingPopupService.Show("Ładowanie listy użytkowników");
 
-        var result = await _usersService.ListUsers();
+        //var result = await _usersService.List();
 
-        if (result.IsError)
-        {
-            var ex = result.UnwrapErr();
-            _logger.Error(ex, "Error while loading users");
-            await _loadingPopupService.Hide();
-            await _dialogService.ShowAlertAsync("Błąd", ex.ToString());
-            return;
-        }
+        //if (result.IsError)
+        //{
+        //    var ex = result.UnwrapErr();
+        //    _logger.Error(ex, "Error while loading Licenses");
+        //    await _loadingPopupService.Hide();
+        //    await _dialogService.ShowAlertAsync("Błąd", ex.ToString());
+        //    return;
+        //}
 
-        var users = result.Unwrap().ToUserModels();
+        //var Licenses = result.Unwrap().ToUserModels();
 
-        foreach (var user in users.OrderBy(x => x.Name))
-        {
-            Users.Add(user);
-        }
+        //foreach (var user in Licenses.OrderBy(x => x.Name))
+        //{
+        //    Licenses.Add(user);
+        //}
 
-        OnPropertyChanged(nameof(Users));
+        //OnPropertyChanged(nameof(Licenses));
 
-        await _loadingPopupService.Hide();
+        //await _loadingPopupService.Hide();
     }
 }

@@ -57,9 +57,11 @@ public partial class LoginViewModel : ObservableObject, INavigationAware
 
     public async Task LoginUser()
     {
+        if (!EnableLogin)
+            return;
         try
         {
-            await _loadingPopupService.Show("Logowanie");
+            //await _loadingPopupService.Show("Logowanie");
             EnableLogin = false;
             var result = await _authorizationService.Login(Login, Password, true);
 
@@ -87,7 +89,7 @@ public partial class LoginViewModel : ObservableObject, INavigationAware
         finally
         {
             EnableLogin = true;
-            await _loadingPopupService.Hide();
+            //await _loadingPopupService.Hide();
         }
     }
 

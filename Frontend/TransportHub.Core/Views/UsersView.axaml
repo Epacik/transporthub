@@ -25,6 +25,10 @@
             <ColumnDefinition />
             <ColumnDefinition Width="{Binding SelectedUser, Converter={StaticResource ObjectToGridLengthConverter}}" />
         </Grid.ColumnDefinitions>
+
+        <controls:ListLoading ItemHeight="120"
+                              ItemCount="30"
+                              IsVisible="{Binding IsLoading}"/>
         
         <ListBox ItemsSource="{Binding Users}"
                  SelectionMode="Single"
@@ -32,7 +36,8 @@
                  IsEnabled="{Binding
                     EditedUser,
                     Converter={StaticResource ObjectIsNullConverter},
-                    ConverterParameter=True}">
+                    ConverterParameter=True}"
+                 IsVisible="{Binding !IsLoading}">
             <ListBox.Styles>
                 <Styles>
                     <Style Selector="ListBoxItem">
