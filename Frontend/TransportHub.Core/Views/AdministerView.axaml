@@ -8,6 +8,7 @@
              xmlns:common="using:TransportHub.Common"
              xmlns:conv="using:TransportHub.Core.Converters"
              xmlns:api="using:TransportHub.Api"
+             xmlns:fa="using:FluentAvalonia.UI.Controls"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="TransportHub.Core.Views.AdministerView"
              x:DataType="vm:AdministerViewModel"

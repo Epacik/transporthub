@@ -40,7 +40,7 @@ public class UsersService : IUsersService
         var uri = _settingsService.Read(Settings.IpAddress, DefaultValues.ServerAddress);
 
         var userdata = _authorizationService.UserData;
-        var client = _httpClientFactory.Create(uri!, userdata?.User, password: userdata?.Key);
+        using var client = _httpClientFactory.Create(uri!, userdata?.User, password: userdata?.Key);
 
         var data = _jsonSerializer.Serialize(userDto);
 
@@ -74,7 +74,7 @@ public class UsersService : IUsersService
         var uri = _settingsService.Read(Settings.IpAddress, DefaultValues.ServerAddress);
 
         var userdata = _authorizationService.UserData;
-        var client = _httpClientFactory.Create(uri!, userdata?.User, password: userdata?.Key);
+        using var client = _httpClientFactory.Create(uri!, userdata?.User, password: userdata?.Key);
 
         var response = await client.GetAsync($"users/{id}").ToResultAsync();
 
@@ -101,7 +101,7 @@ public class UsersService : IUsersService
         var uri = _settingsService.Read(Settings.IpAddress, DefaultValues.ServerAddress);
 
         var userdata = _authorizationService.UserData;
-        var client = _httpClientFactory.Create(uri!, userdata?.User, password: userdata?.Key);
+        using var client = _httpClientFactory.Create(uri!, userdata?.User, password: userdata?.Key);
 
         var response = await client.GetAsync("users/list").ToResultAsync();
 
@@ -128,7 +128,7 @@ public class UsersService : IUsersService
         var uri = _settingsService.Read(Settings.IpAddress, DefaultValues.ServerAddress);
 
         var userdata = _authorizationService.UserData;
-        var client = _httpClientFactory.Create(uri!, userdata?.User, password: userdata?.Key);
+        using var client = _httpClientFactory.Create(uri!, userdata?.User, password: userdata?.Key);
 
 
         var response = await client.DeleteAsync(
@@ -157,7 +157,7 @@ public class UsersService : IUsersService
         var uri = _settingsService.Read(Settings.IpAddress, DefaultValues.ServerAddress);
 
         var userdata = _authorizationService.UserData;
-        var client = _httpClientFactory.Create(uri!, userdata?.User, password: userdata?.Key);
+        using var client = _httpClientFactory.Create(uri!, userdata?.User, password: userdata?.Key);
 
         var data = _jsonSerializer.Serialize(userDto);
 
@@ -194,7 +194,7 @@ public class UsersService : IUsersService
         var uri = _settingsService.Read(Settings.IpAddress, DefaultValues.ServerAddress);
 
         var userdata = _authorizationService.UserData;
-        var client = _httpClientFactory.Create(uri!, userdata?.User, password: userdata?.Key);
+        using var client = _httpClientFactory.Create(uri!, userdata?.User, password: userdata?.Key);
 
         var data = _jsonSerializer.Serialize(userDto);
 
@@ -231,7 +231,7 @@ public class UsersService : IUsersService
         var uri = _settingsService.Read(Settings.IpAddress, DefaultValues.ServerAddress);
 
         var userdata = _authorizationService.UserData;
-        var client = _httpClientFactory.Create(uri!, userdata?.User, password: userdata?.Key);
+        using var client = _httpClientFactory.Create(uri!, userdata?.User, password: userdata?.Key);
 
         var data = _jsonSerializer.Serialize(userUpdatePasswordDto);
 

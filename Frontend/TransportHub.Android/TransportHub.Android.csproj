@@ -23,8 +23,6 @@
 
   <ItemGroup>
     <PackageReference Include="Avalonia.Android" Version="11.0.4" />
-    <PackageReference Include="KuiperZone.Avalonia.Dialogs" Version="1.0.0" />
-    <PackageReference Include="StarDebris.Avalonia.MessageBox" Version="0.1.0" />
     <PackageReference Include="Xamarin.AndroidX.Core.SplashScreen" Version="1.0.1.2" />
   </ItemGroup>
 

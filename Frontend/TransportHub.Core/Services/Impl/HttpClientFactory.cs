@@ -3,6 +3,7 @@ using System;
 using System.Net.Http;
 using TransportHub.Services;
 using System.Net.Http.Headers;
+using Discord.Net;
 
 namespace TransportHub.Core.Services.Impl;
 
@@ -36,6 +37,8 @@ internal class HttpClientFactory : IHttpClientFactory
             client.DefaultRequestHeaders.Authorization =
                  new AuthenticationHeaderValue("Bearer", base64);
         }
+        //client.DefaultRequestHeaders.Add("Access-Control-Allow-Origin", "*");
+        //client.DefaultRequestHeaders.Add("mode", "no-cors");
 
         return client;
     }

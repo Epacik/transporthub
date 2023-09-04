@@ -82,6 +82,10 @@ public static class BuildAppExtensions
     {
         builder.RegisterType<InMemoryAuthorizationService>().As<IAuthorizationService>().SingleInstance();
         builder.RegisterType<InMemoryUsersService>().As<IUsersService>();
+        builder.RegisterType<InMemoryDriverService>().As<IDriverService>();
+        builder.RegisterType<InMemoryLicenseTypeService>().As<ILicenseTypeService>();
+        builder.RegisterType<InMemoryVehicleService>().As<InMemoryVehicleService>();
+        builder.RegisterType<InMemoryDriversLicenseService>().As<IDriversLicenseService>();
 
         return builder.LoadCommonServices();
     }
@@ -128,6 +132,7 @@ public static class BuildAppExtensions
         builder.RegisterViewModelBinding<VehiclesView, VehiclesViewModel>(Routes.Vehicles);
         builder.RegisterViewModelBinding<ClientsView, ClientsViewModel>(Routes.Clients);
         builder.RegisterViewModelBinding<LicensesView, LicensesViewModel>(Routes.Licenses);
+        builder.RegisterViewModelBinding<UsedLicensesView, UsedLicensesViewModel>();
 
         return builder;
     }

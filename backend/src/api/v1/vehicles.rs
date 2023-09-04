@@ -44,7 +44,7 @@ pub async fn list(req: HttpRequest) -> Response {
             name: x.name.clone(),
             vehicle_type: x.vehicle_type.clone(),
             picture: x.picture.clone(),
-            required_license: x.required_license.clone(),
+            required_license: super::encode_id(x.required_license.clone()),
             registration_number: x.registration_number.clone(),
             vin: x.vin.clone(),
             disabled: x.disabled,
@@ -87,7 +87,7 @@ pub async fn add(body: web::Json<dto::VehicleUpdateDto>, req: HttpRequest) -> Re
         body.name.clone(),
         body.vehicle_type.clone(),
         body.picture.clone(),
-        body.required_license.clone(),
+        super::decode_id(&body.required_license.clone()),
         body.registration_number.clone(),
         body.vin.clone(),
         body.disabled.clone()).await {
@@ -113,7 +113,7 @@ pub async fn add(body: web::Json<dto::VehicleUpdateDto>, req: HttpRequest) -> Re
                 name: lic.name.clone(),
                 vehicle_type: lic.vehicle_type.clone(),
                 picture: lic.picture.clone(),
-                required_license: lic.required_license.clone(),
+                required_license: super::encode_id(lic.required_license.clone()),
                 registration_number: lic.registration_number.clone(),
                 vin: lic.vin.clone(),
                 disabled: lic.disabled,
@@ -187,7 +187,7 @@ pub async fn update(vehicle_id: web::Path<String>, body: web::Json<dto::VehicleU
     vehicle.name = dto.name.clone();
     vehicle.vehicle_type = dto.vehicle_type.clone();
     vehicle.picture = dto.picture.clone();
-    vehicle.required_license = dto.required_license.clone();
+    vehicle.required_license = super::decode_id(&dto.required_license.clone());
     vehicle.registration_number = dto.registration_number.clone();
     vehicle.vin = dto.vin.clone();
     vehicle.disabled = dto.disabled.clone();

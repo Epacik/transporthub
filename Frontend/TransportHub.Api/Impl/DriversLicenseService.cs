@@ -21,7 +21,7 @@ public class DriversLicenseService : IDriversLicenseService
 
     private readonly MediaTypeHeaderValue _mediaTypeHeaderValue;
 
-    private const string _pathPrefix = "drivers/licenses";
+    private const string _pathPrefix = "drivers-licenses";
 
     public DriversLicenseService(
         IAuthorizationService authorizationService,
@@ -42,7 +42,7 @@ public class DriversLicenseService : IDriversLicenseService
         var uri = _settingsService.Read(Settings.IpAddress, DefaultValues.ServerAddress);
 
         var userdata = _authorizationService.UserData;
-        var client = _httpClientFactory.Create(uri!, userdata?.User, password: userdata?.Key);
+        using var client = _httpClientFactory.Create(uri!, userdata?.User, password: userdata?.Key);
 
         var data = _jsonSerializer.Serialize(DriversLicenseDto);
 
@@ -76,7 +76,7 @@ public class DriversLicenseService : IDriversLicenseService
         var uri = _settingsService.Read(Settings.IpAddress, DefaultValues.ServerAddress);
 
         var userdata = _authorizationService.UserData;
-        var client = _httpClientFactory.Create(uri!, userdata?.User, password: userdata?.Key);
+        using var client = _httpClientFactory.Create(uri!, userdata?.User, password: userdata?.Key);
 
         var response = await client.GetAsync($"users/{id}").ToResultAsync();
 
@@ -103,7 +103,7 @@ public class DriversLicenseService : IDriversLicenseService
         var uri = _settingsService.Read(Settings.IpAddress, DefaultValues.ServerAddress);
 
         var userdata = _authorizationService.UserData;
-        var client = _httpClientFactory.Create(uri!, userdata?.User, password: userdata?.Key);
+        using var client = _httpClientFactory.Create(uri!, userdata?.User, password: userdata?.Key);
 
         var response = await client.GetAsync(_pathPrefix + "/list").ToResultAsync();
 
@@ -130,7 +130,7 @@ public class DriversLicenseService : IDriversLicenseService
         var uri = _settingsService.Read(Settings.IpAddress, DefaultValues.ServerAddress);
 
         var userdata = _authorizationService.UserData;
-        var client = _httpClientFactory.Create(uri!, userdata?.User, password: userdata?.Key);
+        using var client = _httpClientFactory.Create(uri!, userdata?.User, password: userdata?.Key);
 
 
         var response = await client.DeleteAsync(
@@ -154,41 +154,41 @@ public class DriversLicenseService : IDriversLicenseService
         return true;
     }
 
-    public async Task<Result<bool, Exception>> Update(string id, DriversLicenseUpdateDto DriversLicenseDto)
-    {
-        var uri = _settingsService.Read(Settings.IpAddress, DefaultValues.ServerAddress);
+    //public async Task<Result<bool, Exception>> Update(string id, DriversLicenseUpdateDto DriversLicenseDto)
+    //{
+    //    var uri = _settingsService.Read(Settings.IpAddress, DefaultValues.ServerAddress);
 
-        var userdata = _authorizationService.UserData;
-        var client = _httpClientFactory.Create(uri!, userdata?.User, password: userdata?.Key);
+    //    var userdata = _authorizationService.UserData;
+    //    using var client = _httpClientFactory.Create(uri!, userdata?.User, password: userdata?.Key);
 
-        var data = _jsonSerializer.Serialize(DriversLicenseDto);
+    //    var data = _jsonSerializer.Serialize(DriversLicenseDto);
 
-        if (data.IsError)
-            return data.UnwrapErr();
+    //    if (data.IsError)
+    //        return data.UnwrapErr();
 
-        var response = await client.PatchAsync(
-                _pathPrefix + $"/{id}/update",
-                new StringContent(data.Unwrap()!, _mediaTypeHeaderValue))
-            .ToResultAsync();
+    //    var response = await client.PatchAsync(
+    //            _pathPrefix + $"/{id}/update",
+    //            new StringContent(data.Unwrap()!, _mediaTypeHeaderValue))
+    //        .ToResultAsync();
 
-        if (response.IsError)
-            return response.UnwrapErr();
+    //    if (response.IsError)
+    //        return response.UnwrapErr();
 
-        var unwrapped = response.Unwrap();
+    //    var unwrapped = response.Unwrap();
 
-        if (!unwrapped.IsSuccessStatusCode)
-        {
-            var contentResult = await unwrapped.Content.ReadAsStringAsync().ToResultAsync();
+    //    if (!unwrapped.IsSuccessStatusCode)
+    //    {
+    //        var contentResult = await unwrapped.Content.ReadAsStringAsync().ToResultAsync();
 
-            if (contentResult.IsError)
-                return contentResult.UnwrapErr();
+    //        if (contentResult.IsError)
+    //            return contentResult.UnwrapErr();
 
-            var content = contentResult.Unwrap();
+    //        var content = contentResult.Unwrap();
 
-            return new InvalidOperationException(content);
-        }
+    //        return new InvalidOperationException(content);
+    //    }
 
-        return true;
-    }
+    //    return true;
+    //}
 
 }

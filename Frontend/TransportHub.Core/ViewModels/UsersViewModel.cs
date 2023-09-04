@@ -275,6 +275,7 @@ public partial class UsersViewModel : ObservableObject, INavigationAware
     public Task OnNavigatedFrom()
     {
         Users.Clear();
+        SelectedUser = null;
         return Task.CompletedTask;
     }
 
@@ -283,7 +284,6 @@ public partial class UsersViewModel : ObservableObject, INavigationAware
         if (_logger.IsEnabled(LogEventLevel.Verbose))
             _logger.Verbose("Loading users");
 
-        //await _loadingPopupService.Show("Ładowanie listy użytkowników");
         IsLoading = true;
 
         var result = await _usersService.ListUsers();
@@ -307,6 +307,5 @@ public partial class UsersViewModel : ObservableObject, INavigationAware
         OnPropertyChanged(nameof(Users));
 
         IsLoading = false;
-        //await _loadingPopupService.Hide();
     }
 }

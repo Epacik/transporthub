@@ -18,4 +18,6 @@ internal class SystemInfoService : ISystemInfoService
     public bool IsMobile =>
         OperatingSystem.IsAndroid() ||
         OperatingSystem.IsIOS();
+
+    public bool IsBrowser => OperatingSystem.IsBrowser();
 }

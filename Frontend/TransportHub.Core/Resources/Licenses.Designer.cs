@@ -61,6 +61,574 @@ namespace TransportHub.Core.Resources {
         }
         
         /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu The MIT License (MIT)
+        ///
+        ///Copyright (c) .NET Foundation and Contributors
+        ///
+        ///All rights reserved.
+        ///
+        ///Permission is hereby granted, free of charge, to any person obtaining a copy
+        ///of this software and associated documentation files (the &quot;Software&quot;), to deal
+        ///in the Software without restriction, including without limitation the rights
+        ///to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        ///copies of the Software, and to permit persons to whom the Software is
+        ///furnished to do so, subject to the followin [obcięto pozostałą część ciągu]&quot;;.
+        /// </summary>
+        internal static string _NET {
+            get {
+                return ResourceManager.GetString(".NET", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu The MIT License (MIT)
+        ///
+        ///Copyright © 2014 Autofac Project
+        ///
+        ///Permission is hereby granted, free of charge, to any person obtaining a copy
+        ///of this software and associated documentation files (the &quot;Software&quot;), to deal
+        ///in the Software without restriction, including without limitation the rights
+        ///to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        ///copies of the Software, and to permit persons to whom the Software is
+        ///furnished to do so, subject to the following conditions:
+        ///
+        ///The above  [obcięto pozostałą część ciągu]&quot;;.
+        /// </summary>
+        internal static string Autofac {
+            get {
+                return ResourceManager.GetString("Autofac", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu The MIT License (MIT)
+        ///
+        ///Copyright (c) .NET Foundation and Contributors All Rights Reserved
+        ///
+        ///Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the follow [obcięto pozostałą część ciągu]&quot;;.
+        /// </summary>
+        internal static string Avalonia_UI {
+            get {
+                return ResourceManager.GetString("Avalonia UI", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .NET Community Toolkit
+        ///
+        ///Copyright © .NET Foundation and Contributors
+        ///
+        ///All rights reserved.
+        ///MIT License (MIT)
+        ///
+        ///Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, [obcięto pozostałą część ciągu]&quot;;.
+        /// </summary>
+        internal static string CommunityToolkit_Mvvm {
+            get {
+                return ResourceManager.GetString("CommunityToolkit.Mvvm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu MIT License
+        ///
+        ///Copyright (c) 2020 amwx
+        ///
+        ///Permission is hereby granted, free of charge, to any person obtaining a copy
+        ///of this software and associated documentation files (the &quot;Software&quot;), to deal
+        ///in the Software without restriction, including without limitation the rights
+        ///to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        ///copies of the Software, and to permit persons to whom the Software is
+        ///furnished to do so, subject to the following conditions:
+        ///
+        ///The above copyright notice an [obcięto pozostałą część ciągu]&quot;;.
+        /// </summary>
+        internal static string FluentAvalonia {
+            get {
+                return ResourceManager.GetString("FluentAvalonia", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu MIT License
+        ///
+        ///Copyright (c) 2022 ymg2006
+        ///
+        ///Permission is hereby granted, free of charge, to any person obtaining a copy
+        ///of this software and associated documentation files (the &quot;Software&quot;), to deal
+        ///in the Software without restriction, including without limitation the rights
+        ///to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        ///copies of the Software, and to permit persons to whom the Software is
+        ///furnished to do so, subject to the following conditions:
+        ///
+        ///The above copyright notice and this p [obcięto pozostałą część ciągu]&quot;;.
+        /// </summary>
+        internal static string FluentAvalonia_ProgressRing {
+            get {
+                return ResourceManager.GetString("FluentAvalonia.ProgressRing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu MIT License
+        ///
+        ///Copyright (c) 2022 Niklas Lindorfer
+        ///
+        ///Permission is hereby granted, free of charge, to any person obtaining a copy
+        ///of this software and associated documentation files (the &quot;Software&quot;), to deal
+        ///in the Software without restriction, including without limitation the rights
+        ///to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        ///copies of the Software, and to permit persons to whom the Software is
+        ///furnished to do so, subject to the following conditions:
+        ///
+        ///The above copyrig [obcięto pozostałą część ciągu]&quot;;.
+        /// </summary>
+        internal static string Lindronics_OneOf_Result {
+            get {
+                return ResourceManager.GetString("Lindronics.OneOf.Result", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu The MIT License (MIT)
+        ///
+        ///Copyright (c) 2015 dochoffiday, xfischer
+        ///
+        ///Copyright (c) 2016-2021 Tony Richards
+        ///
+        ///Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subjec [obcięto pozostałą część ciągu]&quot;;.
+        /// </summary>
+        internal static string Lorem_Universal_Net {
+            get {
+                return ResourceManager.GetString("Lorem.Universal.Net", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu MIT License
+        ///
+        ///Copyright (c) 2019 CreateLab
+        ///
+        ///Permission is hereby granted, free of charge, to any person obtaining a copy
+        ///of this software and associated documentation files (the &quot;Software&quot;), to deal
+        ///in the Software without restriction, including without limitation the rights
+        ///to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        ///copies of the Software, and to permit persons to whom the Software is
+        ///furnished to do so, subject to the following conditions:
+        ///
+        ///The above copyright noti [obcięto pozostałą część ciągu]&quot;;.
+        /// </summary>
+        internal static string MessageBox_Avalonia {
+            get {
+                return ResourceManager.GetString("MessageBox.Avalonia", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu The MIT License (MIT)
+        ///
+        ///Copyright (c) .NET Foundation and Contributors
+        ///
+        ///All rights reserved.
+        ///
+        ///Permission is hereby granted, free of charge, to any person obtaining a copy
+        ///of this software and associated documentation files (the &quot;Software&quot;), to deal
+        ///in the Software without restriction, including without limitation the rights
+        ///to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        ///copies of the Software, and to permit persons to whom the Software is
+        ///furnished to do so, subject to the followin [obcięto pozostałą część ciągu]&quot;;.
+        /// </summary>
+        internal static string Microsoft_JSInterop {
+            get {
+                return ResourceManager.GetString("Microsoft.JSInterop", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Copyright (c) 2016 Harry McIntyre
+        ///
+        ///Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        ///
+        ///The above copyright notice and this per [obcięto pozostałą część ciągu]&quot;;.
+        /// </summary>
+        internal static string OneOf {
+            get {
+                return ResourceManager.GetString("OneOf", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Copyright 2020 The Open Sans Project Authors (https://github.com/googlefonts/opensans)
+        ///
+        ///This Font Software is licensed under the SIL Open Font License, Version 1.1.
+        ///This license is copied below, and is also available with a FAQ at:
+        ///http://scripts.sil.org/OFL
+        ///
+        ///
+        ///-----------------------------------------------------------
+        ///SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+        ///-----------------------------------------------------------
+        ///
+        ///PREAMBLE
+        ///The goals of the Open Font License (OFL) are to stimulat [obcięto pozostałą część ciągu]&quot;;.
+        /// </summary>
+        internal static string Open_Sans {
+            get {
+                return ResourceManager.GetString("Open Sans", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Apache License
+        ///                           Version 2.0, January 2004
+        ///                        http://www.apache.org/licenses/
+        ///
+        ///   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        ///
+        ///   1. Definitions.
+        ///
+        ///      &quot;License&quot; shall mean the terms and conditions for use, reproduction,
+        ///      and distribution as defined by Sections 1 through 9 of this document.
+        ///
+        ///      &quot;Licensor&quot; shall mean the copyright owner or entity authorized by
+        ///      the copyright owner that is granting the License.
+        ///
+        ///      &quot;Legal Entity&quot;  [obcięto pozostałą część ciągu]&quot;;.
+        /// </summary>
+        internal static string Riok_Mapperly {
+            get {
+                return ResourceManager.GetString("Riok.Mapperly", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Apache License
+        ///Version 2.0, January 2004
+        ///http://www.apache.org/licenses/
+        ///
+        ///TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        ///
+        ///1. Definitions.
+        ///
+        ///&quot;License&quot; shall mean the terms and conditions for use, reproduction, and
+        ///distribution as defined by Sections 1 through 9 of this document.
+        ///
+        ///&quot;Licensor&quot; shall mean the copyright owner or entity authorized by the copyright
+        ///owner that is granting the License.
+        ///
+        ///&quot;Legal Entity&quot; shall mean the union of the acting entity and all other entities
+        ///that control, are cont [obcięto pozostałą część ciągu]&quot;;.
+        /// </summary>
+        internal static string Serilog {
+            get {
+                return ResourceManager.GetString("Serilog", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu MIT License
+        ///
+        ///Copyright (c) 2020 Tiny Blue Robots
+        ///
+        ///Permission is hereby granted, free of charge, to any person obtaining a copy
+        ///of this software and associated documentation files (the &quot;Software&quot;), to deal
+        ///in the Software without restriction, including without limitation the rights
+        ///to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        ///copies of the Software, and to permit persons to whom the Software is
+        ///furnished to do so, subject to the following conditions:
+        ///
+        ///The above copyright notice a [obcięto pozostałą część ciągu]&quot;;.
+        /// </summary>
+        internal static string Serilog_Enrichers_AssemblyName {
+            get {
+                return ResourceManager.GetString("Serilog.Enrichers.AssemblyName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Apache License
+        ///                           Version 2.0, January 2004
+        ///                        http://www.apache.org/licenses/
+        ///
+        ///   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        ///
+        ///   1. Definitions.
+        ///
+        ///      &quot;License&quot; shall mean the terms and conditions for use, reproduction,
+        ///      and distribution as defined by Sections 1 through 9 of this document.
+        ///
+        ///      &quot;Licensor&quot; shall mean the copyright owner or entity authorized by
+        ///      the copyright owner that is granting the License.
+        ///
+        ///      &quot;Legal Entity&quot;  [obcięto pozostałą część ciągu]&quot;;.
+        /// </summary>
+        internal static string Serilog_Enrichers_Context {
+            get {
+                return ResourceManager.GetString("Serilog.Enrichers.Context", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Apache License
+        ///                           Version 2.0, January 2004
+        ///                        http://www.apache.org/licenses/
+        ///
+        ///   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        ///
+        ///   1. Definitions.
+        ///
+        ///      &quot;License&quot; shall mean the terms and conditions for use, reproduction,
+        ///      and distribution as defined by Sections 1 through 9 of this document.
+        ///
+        ///      &quot;Licensor&quot; shall mean the copyright owner or entity authorized by
+        ///      the copyright owner that is granting the License.
+        ///
+        ///      &quot;Legal Entity&quot;  [obcięto pozostałą część ciągu]&quot;;.
+        /// </summary>
+        internal static string Serilog_Enrichers_Demystifier {
+            get {
+                return ResourceManager.GetString("Serilog.Enrichers.Demystifier", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Apache License
+        ///                           Version 2.0, January 2004
+        ///                        http://www.apache.org/licenses/
+        ///
+        ///   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        ///
+        ///   1. Definitions.
+        ///
+        ///      &quot;License&quot; shall mean the terms and conditions for use, reproduction,
+        ///      and distribution as defined by Sections 1 through 9 of this document.
+        ///
+        ///      &quot;Licensor&quot; shall mean the copyright owner or entity authorized by
+        ///      the copyright owner that is granting the License.
+        ///
+        ///      &quot;Legal Entity&quot;  [obcięto pozostałą część ciągu]&quot;;.
+        /// </summary>
+        internal static string Serilog_Enrichers_Environment {
+            get {
+                return ResourceManager.GetString("Serilog.Enrichers.Environment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Apache License
+        ///                           Version 2.0, January 2004
+        ///                        http://www.apache.org/licenses/
+        ///
+        ///   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        ///
+        ///   1. Definitions.
+        ///
+        ///      &quot;License&quot; shall mean the terms and conditions for use, reproduction,
+        ///      and distribution as defined by Sections 1 through 9 of this document.
+        ///
+        ///      &quot;Licensor&quot; shall mean the copyright owner or entity authorized by
+        ///      the copyright owner that is granting the License.
+        ///
+        ///      &quot;Legal Entity&quot;  [obcięto pozostałą część ciągu]&quot;;.
+        /// </summary>
+        internal static string Serilog_Enrichers_Memory {
+            get {
+                return ResourceManager.GetString("Serilog.Enrichers.Memory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Apache License
+        ///                           Version 2.0, January 2004
+        ///                        http://www.apache.org/licenses/
+        ///
+        ///   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        ///
+        ///   1. Definitions.
+        ///
+        ///      &quot;License&quot; shall mean the terms and conditions for use, reproduction,
+        ///      and distribution as defined by Sections 1 through 9 of this document.
+        ///
+        ///      &quot;Licensor&quot; shall mean the copyright owner or entity authorized by
+        ///      the copyright owner that is granting the License.
+        ///
+        ///      &quot;Legal Entity&quot;  [obcięto pozostałą część ciągu]&quot;;.
+        /// </summary>
+        internal static string Serilog_Enrichers_Process {
+            get {
+                return ResourceManager.GetString("Serilog.Enrichers.Process", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu MIT License
+        ///
+        ///Copyright (c) 2021 Sander van Vliet
+        ///
+        ///Permission is hereby granted, free of charge, to any person obtaining a copy
+        ///of this software and associated documentation files (the &quot;Software&quot;), to deal
+        ///in the Software without restriction, including without limitation the rights
+        ///to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        ///copies of the Software, and to permit persons to whom the Software is
+        ///furnished to do so, subject to the following conditions:
+        ///
+        ///The above copyright notice a [obcięto pozostałą część ciągu]&quot;;.
+        /// </summary>
+        internal static string Serilog_Enrichers_Sensitive {
+            get {
+                return ResourceManager.GetString("Serilog.Enrichers.Sensitive", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Apache License
+        ///                           Version 2.0, January 2004
+        ///                        http://www.apache.org/licenses/
+        ///
+        ///   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        ///
+        ///   1. Definitions.
+        ///
+        ///      &quot;License&quot; shall mean the terms and conditions for use, reproduction,
+        ///      and distribution as defined by Sections 1 through 9 of this document.
+        ///
+        ///      &quot;Licensor&quot; shall mean the copyright owner or entity authorized by
+        ///      the copyright owner that is granting the License.
+        ///
+        ///      &quot;Legal Entity&quot;  [obcięto pozostałą część ciągu]&quot;;.
+        /// </summary>
+        internal static string Serilog_Enrichers_Thread {
+            get {
+                return ResourceManager.GetString("Serilog.Enrichers.Thread", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu The MIT License (MIT)
+        ///
+        ///Copyright (c) 2015 Muhammad Rehan Saeed
+        ///
+        ///Permission is hereby granted, free of charge, to any person obtaining a copy
+        ///of this software and associated documentation files (the &quot;Software&quot;), to deal
+        ///in the Software without restriction, including without limitation the rights
+        ///to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        ///copies of the Software, and to permit persons to whom the Software is
+        ///furnished to do so, subject to the following conditions:
+        ///
+        ///The above copy [obcięto pozostałą część ciągu]&quot;;.
+        /// </summary>
+        internal static string Serilog_Exceptions {
+            get {
+                return ResourceManager.GetString("Serilog.Exceptions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Apache License
+        ///                           Version 2.0, January 2004
+        ///                        http://www.apache.org/licenses/
+        ///
+        ///   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        ///
+        ///   1. Definitions.
+        ///
+        ///      &quot;License&quot; shall mean the terms and conditions for use, reproduction,
+        ///      and distribution as defined by Sections 1 through 9 of this document.
+        ///
+        ///      &quot;Licensor&quot; shall mean the copyright owner or entity authorized by
+        ///      the copyright owner that is granting the License.
+        ///
+        ///      &quot;Legal Entity&quot;  [obcięto pozostałą część ciągu]&quot;;.
+        /// </summary>
+        internal static string Serilog_Sinks_Console {
+            get {
+                return ResourceManager.GetString("Serilog.Sinks.Console", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Apache License
+        ///                           Version 2.0, January 2004
+        ///                        http://www.apache.org/licenses/
+        ///
+        ///   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        ///
+        ///   1. Definitions.
+        ///
+        ///      &quot;License&quot; shall mean the terms and conditions for use, reproduction,
+        ///      and distribution as defined by Sections 1 through 9 of this document.
+        ///
+        ///      &quot;Licensor&quot; shall mean the copyright owner or entity authorized by
+        ///      the copyright owner that is granting the License.
+        ///
+        ///      &quot;Legal Entity&quot;  [obcięto pozostałą część ciągu]&quot;;.
+        /// </summary>
+        internal static string Serilog_Sinks_Debug {
+            get {
+                return ResourceManager.GetString("Serilog.Sinks.Debug", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Copyright &lt;YEAR&gt; &lt;COPYRIGHT HOLDER&gt;
+        ///
+        ///Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        ///
+        ///The above copyright notice and this p [obcięto pozostałą część ciągu]&quot;;.
+        /// </summary>
+        internal static string Serilog_Sinks_Discord {
+            get {
+                return ResourceManager.GetString("Serilog.Sinks.Discord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Apache License
+        ///                           Version 2.0, January 2004
+        ///                        http://www.apache.org/licenses/
+        ///
+        ///   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        ///
+        ///   1. Definitions.
+        ///
+        ///      &quot;License&quot; shall mean the terms and conditions for use, reproduction,
+        ///      and distribution as defined by Sections 1 through 9 of this document.
+        ///
+        ///      &quot;Licensor&quot; shall mean the copyright owner or entity authorized by
+        ///      the copyright owner that is granting the License.
+        ///
+        ///      &quot;Legal Entity&quot;  [obcięto pozostałą część ciągu]&quot;;.
+        /// </summary>
+        internal static string Serilog_Sinks_File {
+            get {
+                return ResourceManager.GetString("Serilog.Sinks.File", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Apache License
+        ///                           Version 2.0, January 2004
+        ///                        http://www.apache.org/licenses/
+        ///
+        ///   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        ///
+        ///   1. Definitions.
+        ///
+        ///      &quot;License&quot; shall mean the terms and conditions for use, reproduction,
+        ///      and distribution as defined by Sections 1 through 9 of this document.
+        ///
+        ///      &quot;Licensor&quot; shall mean the copyright owner or entity authorized by
+        ///      the copyright owner that is granting the License.
+        ///
+        ///      &quot;Legal Entity&quot;  [obcięto pozostałą część ciągu]&quot;;.
+        /// </summary>
+        internal static string Serilog_Sinks_PeriodicBatching {
+            get {
+                return ResourceManager.GetString("Serilog.Sinks.PeriodicBatching", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu MIT License
         ///
         ///Copyright (c) 2020-2023 Paweł Kuna
@@ -74,9 +642,29 @@ namespace TransportHub.Core.Resources {
         ///
         ///The above copyright notice an [obcięto pozostałą część ciągu]&quot;;.
         /// </summary>
-        internal static string tabler_icons {
+        internal static string Tabler_Icons {
             get {
-                return ResourceManager.GetString("tabler-icons", resourceCulture);
+                return ResourceManager.GetString("Tabler Icons", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu The MIT License (MIT)
+        ///
+        ///Copyright (c) .NET Foundation Contributors
+        ///
+        ///Permission is hereby granted, free of charge, to any person obtaining a copy of
+        ///this software and associated documentation files (the &quot;Software&quot;), to deal in
+        ///the Software without restriction, including without limitation the rights to
+        ///use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+        ///of the Software, and to permit persons to whom the Software is furnished to do
+        ///so, subject to the following conditions:
+        ///
+        ///The above c [obcięto pozostałą część ciągu]&quot;;.
+        /// </summary>
+        internal static string Xamarin_AndroidX {
+            get {
+                return ResourceManager.GetString("Xamarin.AndroidX", resourceCulture);
             }
         }
     }

@@ -8,10 +8,10 @@
              xmlns:converters="using:TransportHub.Core.Converters"
              xmlns:controls="using:TransportHub.Core.Controls"
              xmlns:m="using:TransportHub.Core.Markup"
-             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="1450"
              x:Class="TransportHub.Core.Views.LicensesView"
              x:DataType="vm:LicensesViewModel">
-    <!--<UserControl.Resources>
+    <UserControl.Resources>
         <ResourceDictionary>
             <converters:ObjectToGridLengthConverter x:Key="ObjectToGridLengthConverter"/>
             <converters:ObjectIsNullConverter x:Key="ObjectIsNullConverter"/>
@@ -24,9 +24,14 @@
             <ColumnDefinition Width="{Binding SelectedLicense, Converter={StaticResource ObjectToGridLengthConverter}}" />
         </Grid.ColumnDefinitions>
 
+        <controls:ListLoading ItemHeight="120"
+                              ItemCount="30"
+                              IsVisible="{Binding IsLoading}"/>
+
         <ListBox ItemsSource="{Binding Licenses}"
                  SelectionMode="Single"
                  SelectedItem="{Binding SelectedLicense}"
+                 IsVisible="{Binding !IsLoading}"
                  IsEnabled="{Binding
                     EditedLicense,
                     Converter={StaticResource ObjectIsNullConverter},
@@ -49,26 +54,24 @@
             </ListBox.Styles>
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <Grid RowDefinitions="auto,10,auto,10,auto"
-                              ColumnDefinitions="auto,10,*">
+                    <Grid RowDefinitions="auto,10,auto,10,auto,10,auto,10,auto"
+                          ColumnDefinitions="auto,10,*">
                         <TextBlock Text="{Binding Name}"
                                    Grid.Row="0"
-                                   Grid.Column="0"/>
+                                   Grid.Column="0"
+                                   FontWeight="SemiBold"
+                                   FontSize="24"/>
+                        
                         <TextBlock Grid.Row="2"
-                                   Grid.Column="0">
-                            <Run Text="Typ: "/>
-                            <Run Text="{Binding LicenseType}"/>
-                        </TextBlock>
-                        <TextBlock Grid.Row="2"
-                                   Grid.Column="2">
-                            <Run Text="Data ważności hasła"/>
-                            <Run Text="{Binding PasswordExpirationDate, StringFormat='yyyy.MM.dd'}"/>
-                        </TextBlock>
+                                   Grid.ColumnSpan="5"
+                                   Text="{Binding Description}"
+                                   TextWrapping="Wrap"/>
+                        
                         <StackPanel Grid.Row="4"
                                     Grid.Column="0"
                                     Orientation="Horizontal">
-                            <TextBlock Text="Wielokrotne logowanie: " VerticalAlignment="Center"/>
-                            <CheckBox IsChecked="{Binding MultiLogin}" IsEnabled="False"/>
+                            <TextBlock Text="Minimalny wiek posiadacza: " VerticalAlignment="Center"/>
+                            <TextBlock Text="{Binding MinimalAgeOfHolder}" VerticalAlignment="Center" />
                         </StackPanel>
                         <StackPanel Grid.Row="4"
                                     Grid.Column="2"
@@ -76,6 +79,27 @@
                             <TextBlock Text="Aktywny: " VerticalAlignment="Center"/>
                             <CheckBox IsChecked="{Binding !Disabled}" IsEnabled="False"/>
                         </StackPanel>
+
+                        <StackPanel Grid.Row="6"
+                                    Grid.ColumnSpan="5"
+                                    Orientation="Horizontal"
+                                    IsVisible="{Binding
+                                       AlternativeMinimalAgeOfHolder,
+                                       Converter={StaticResource ObjectIsNullConverter}}">
+                            <TextBlock Text="Alternatywny minimalny wiek posiadacza: " VerticalAlignment="Center"/>
+                            <TextBlock Text="{Binding AlternativeMinimalAgeOfHolder}" VerticalAlignment="Center" />
+                        </StackPanel>
+
+                        <StackPanel Grid.Row="8"
+                                    Grid.ColumnSpan="5"
+                                    Orientation="Horizontal"
+                                    IsVisible="{Binding
+                                       ConditionForAlternativeMinimalAge,
+                                       Converter={StaticResource ObjectIsNullConverter}}">
+                            <TextBlock Text="Warunek minimalnego wieku: " VerticalAlignment="Center"/>
+                            <TextBlock Text="{Binding ConditionForAlternativeMinimalAge}" />
+                        </StackPanel>
+                        
                     </Grid>
                 </DataTemplate>
             </ListBox.ItemTemplate>
@@ -99,7 +123,8 @@
 
         <Grid RowDefinitions="50,5,*,50"
               Grid.Column="1"
-              IsVisible="{Binding EditedLicense, Converter={StaticResource ObjectIsNullConverter}}">
+              IsVisible="{Binding EditedLicense, Converter={StaticResource ObjectIsNullConverter}}"
+              x:Name="EditGrid">
 
             <Border Background="{DynamicResource AccentFillColorDefaultBrush}"
                     IsVisible="{Binding EditedLicense.IsDirty, FallbackValue=false}"
@@ -123,93 +148,98 @@
 
             <Grid Grid.Row="2"
                   DataContext="{Binding EditedLicense}"
-                  RowDefinitions="50,20,30,22,32,10,22,32,10,*"
+                  RowDefinitions="50,20,30,22,*"
                   ColumnDefinitions="70,5,145,20,*"
                   Margin="10,0">
 
-                <Button Grid.RowSpan="2"
-                        VerticalContentAlignment="Center"
-                        HorizontalContentAlignment="Center"
-                        Command="{Binding $parent[views:LicensesView].((vm:LicensesViewModel)DataContext).ChangePictureCommand}">
-                    <ToolTip.Tip>
-                        <TextBlock Text="Zmień obraz"/>
-                    </ToolTip.Tip>
-                    <fa:IconSourceElement MaxWidth="60"
-                                          MaxHeight="60"
-                                          RenderOptions.BitmapInterpolationMode="HighQuality"
-                                          RenderOptions.EdgeMode="Antialias"
-                                          IconSource="{Binding
-                                             Picture,
-                                             Converter={StaticResource Base64ToIconSourceConverter},
-                                             ConverterParameter={m:TablerIconSource IconLicense, FontSize=60}}"/>
-                </Button>
-
-
                 <TextBox FontSize="25"
-                           Grid.Column="2"
-                           Grid.ColumnSpan="3"
+                           Grid.Column="0"
+                           Grid.ColumnSpan="5"
                            Text="{Binding Name}"/>
 
                 <TextBlock Grid.Row="1"
-                           Grid.Column="2"
-                           Grid.ColumnSpan="3">
+                           Grid.Column="0"
+                           Grid.ColumnSpan="5">
                     <Run Text="Id: "/>
                     <Run Text="{Binding Id}"/>
                 </TextBlock>
 
-                <TextBlock Grid.Row="3"
+                <ScrollViewer Grid.Row="4"
+                              Grid.ColumnSpan="5"
+                              x:Name="Scroller">
+                    <Grid ColumnDefinitions="*,*,40"
+                          RowDefinitions="20,auto,10,25,32,10,25,32,10,auto,auto,25,*">
+                        
+                        <TextBlock Grid.Row="0"
                            Grid.ColumnSpan="3"
-                           Text="Typ konta"/>
+                           Text="Opis"/>
 
-                <ComboBox Grid.Row="4"
-                          Grid.ColumnSpan="3"
-                          HorizontalAlignment="Stretch"
-                          ItemsSource="{Binding $parent[views:LicensesView].((vm:LicensesViewModel)DataContext).LicenseTypes}"
-                          SelectedItem="{Binding LicenseType}"/>
+                        <TextBox Grid.Row="1"
+                                 Grid.ColumnSpan="5"
+                                 AcceptsReturn="True"
+                                 AcceptsTab="True"
+                                 TextWrapping="Wrap"
+                                 Text="{Binding Description}"/>
 
-                <TextBlock Grid.Row="6"
-                           Grid.ColumnSpan="3"
-                           Text="Data ważności hasła"/>
 
-                <StackPanel Orientation="Horizontal"
-                            Grid.Row="7"
-                            Grid.ColumnSpan="5">
-                    <CalendarDatePicker SelectedDate="{Binding PasswordExpirationDate}"
-                                        Width="180"/>
-                    <Button VerticalContentAlignment="Center"
-                            Command="{Binding ResetPasswordExpirationDateCommand}"
-                            VerticalAlignment="Stretch">
-                        <controls:TablerIcon Icon="IconX"/>
-                    </Button>
-                </StackPanel>
+                        <TextBlock Grid.Row="3"
+                                   Grid.ColumnSpan="3"
+                                   Text="Minimalny wiek posiadacza"/>
 
-                <TextBlock Text="Wielokrotne logowanie"
-                           Grid.Column="5"
-                           Grid.Row="3"/>
+                        <NumericUpDown Grid.Row="4"
+                                       Grid.ColumnSpan="5"
+                                       FormatString="0"
+                                       Minimum="0"
+                                       ClipValueToMinMax="True"
+                                       Value="{Binding MinimalAgeOfHolder}"/>
 
-                <CheckBox IsChecked="{Binding MultiLogin}"
-                          Grid.Column="5"
-                          Grid.Row="4"/>
+                        <TextBlock Grid.Row="6"
+                                   Grid.ColumnSpan="3"
+                                   Text="Alternatywny minimalny wiek posiadacza"/>
 
-                <TextBlock Text="Aktywny"
-                           Grid.Column="5"
-                           Grid.Row="6"
-                           IsVisible="{Binding !$parent[views:LicensesView].((vm:LicensesViewModel)DataContext).AddingLicense}"/>
+                        <NumericUpDown Grid.Row="7"
+                                       Grid.ColumnSpan="2"
+                                       FormatString="0"
+                                       Minimum="0"
+                                       Value="{Binding AlternativeMinimalAgeOfHolder}"/>
 
-                <CheckBox IsChecked="{Binding !Disabled}"
-                          Grid.Column="5"
-                          Grid.Row="7"
-                          IsEnabled="{Binding $parent[views:LicensesView].((vm:LicensesViewModel)DataContext).EnableIsActive}"
-                          IsVisible="{Binding !$parent[views:LicensesView].((vm:LicensesViewModel)DataContext).AddingLicense}"/>
+                        <Button Grid.Row="7"
+                                Grid.Column="2"
+                                Content="{m:TablerIcon Icon=IconX}"
+                                Command="{Binding $parent[views:LicensesView].((vm:LicensesViewModel)DataContext).RemoveAlternativeAgeCommand}"/>
 
-                <Button Grid.Row="9"
-                        Grid.ColumnSpan="3"
-                        Content="Zresetuj hasło"
-                        HorizontalAlignment="Stretch"
-                        VerticalAlignment="Top"
-                        Command="{Binding $parent[views:LicensesView].((vm:LicensesViewModel)DataContext).ResetPasswordCommand}"
-                        IsVisible="{Binding !$parent[views:LicensesView].((vm:LicensesViewModel)DataContext).AddingLicense}"/>
+                        <TextBlock Grid.Row="9"
+                                   Grid.ColumnSpan="3"
+                                   Text="Warunek alternatywnego minimalnego wieku posiadacza"
+                                   IsVisible="{Binding
+                                       AlternativeMinimalAgeOfHolder,
+                                       Converter={StaticResource ObjectIsNullConverter}}"/>
 
+                        <TextBox Grid.Row="10"
+                                 Grid.ColumnSpan="5"
+                                 AcceptsReturn="True"
+                                 AcceptsTab="True"
+                                 TextWrapping="Wrap"
+                                 Text="{Binding ConditionForAlternativeMinimalAge}"
+                                 Margin="0,0,0,10"
+                                 IsVisible="{Binding
+                                       AlternativeMinimalAgeOfHolder,
+                                       Converter={StaticResource ObjectIsNullConverter}}"/>
+
+                        <StackPanel Grid.Column="0"
+                                    Grid.Row="11"
+                                    Orientation="Horizontal"
+                                    Spacing="5">
+                            <TextBlock Text="Aktywny"
+                                       IsVisible="{Binding !$parent[views:LicensesView].((vm:LicensesViewModel)DataContext).AddingLicense}"/>
+
+                            <CheckBox IsChecked="{Binding !Disabled}"
+                                      Grid.Column="5"
+                                      Grid.Row="100"
+                                      IsVisible="{Binding !$parent[views:LicensesView].((vm:LicensesViewModel)DataContext).AddingLicense}"/>
+                        </StackPanel>
+                    </Grid>
+                </ScrollViewer>
             </Grid>
 
             <Button Margin="10,0"
@@ -243,5 +273,5 @@
                 Zapisz
             </Button>
         </Grid>
-    </Grid>-->
+    </Grid>
 </UserControl>

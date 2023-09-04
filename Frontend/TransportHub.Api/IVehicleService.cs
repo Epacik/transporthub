@@ -12,7 +12,7 @@ public interface IVehicleService
 {
     Task<Result<IEnumerable<VehicleDto>, Exception>> List();
     Task<Result<VehicleDto, Exception>> Get(string id);
-    Task<Result<bool, Exception>> Add(VehicleUpdateDto userDto);
+    Task<Result<bool, Exception>> Add(VehicleUpdateDto dto);
     Task<Result<bool, Exception>> Remove(string id);
-    Task<Result<bool, Exception>> Update(string id, VehicleUpdateDto userDto);
+    Task<Result<bool, Exception>> Update(string id, VehicleUpdateDto dto);
 }

@@ -8,6 +8,7 @@ edition = "2021"
 [dependencies]
 
 actix-web = "*"
+actix-cors = "*"
 argonautica = { version = "*", features = ["simd"] }
 fastdate = "*"
 rand = "*"
@@ -21,6 +22,7 @@ futures = "0.3.28"
 futures-util = "*"
 base64 = "0.21.0"
 derive_more = "0.99.17"
+pkg-version = "1.0.0"
 
 #db
 rbs = { version = "4.3"}

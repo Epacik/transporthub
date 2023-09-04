@@ -106,7 +106,7 @@ pub struct VehicleDto {
     pub name: String,
     pub vehicle_type: i32,
     pub picture: String,
-    pub required_license: i32,
+    pub required_license: String,
     pub registration_number: String,
     pub vin: String,
     pub disabled: bool,
@@ -118,7 +118,7 @@ pub struct VehicleUpdateDto {
     pub name: String,
     pub vehicle_type: i32,
     pub picture: String,
-    pub required_license: i32,
+    pub required_license: String,
     pub registration_number: String,
     pub vin: String,
     pub disabled: bool,
@@ -149,15 +149,13 @@ pub struct DriverUpdateDto {
 #[serde(rename_all = "camelCase")]
 pub struct DriversLicenseDto {
     pub id: String,
-    pub driver: i32,
-    pub license: i32,
-    pub disabled: bool,
+    pub driver: String,
+    pub license: String,
 }
 
 #[derive(Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct DriversLicenseUpdateDto {
-    pub driver: i32,
-    pub license: i32,
-    pub disabled: bool,
+    pub driver: String,
+    pub license: String,
 }

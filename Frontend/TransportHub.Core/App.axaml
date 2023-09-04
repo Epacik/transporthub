@@ -31,6 +31,5 @@
         <sty:FluentAvaloniaTheme />
 
         <StyleInclude Source="avares://TransportHub.Core/Styles/Controls/ProgressRing.axaml" />
-        <StyleInclude Source="avares://AvaloniaProgressRing/Styles/ProgressRing.xaml"/>
     </Application.Styles>
 </Application>

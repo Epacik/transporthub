@@ -7,7 +7,7 @@ use crate::{db_model::{UserType, self}, errors};
 use super::Response;
 
 pub fn scope() -> impl HttpServiceFactory {
-    actix_web::web::scope("/drivers/licenses")
+    actix_web::web::scope("/drivers-licenses")
     .service(list)
     .service(add)
     .service(remove)
@@ -41,15 +41,13 @@ pub async fn list(req: HttpRequest) -> Response {
     let licenses = licenses.iter()
         .map(|x| dto::DriversLicenseDto {
             id: super::encode_id(x.id.unwrap_or_default()),
-            driver: x.driver.clone(),
-            license: x.license.clone(),
-            disabled: x.disabled,
+            driver: super::encode_id(x.driver.clone()),
+            license: super::encode_id(x.license.clone()),
         })
         .collect::<Vec<_>>();
 
     Ok(HttpResponse::Ok().json(licenses))
 }
-
 
 #[put("/add")]
 pub async fn add(body: web::Json<dto::DriversLicenseUpdateDto>, req: HttpRequest) -> Response {
@@ -69,7 +67,10 @@ pub async fn add(body: web::Json<dto::DriversLicenseUpdateDto>, req: HttpRequest
 
     let mut context = db_model::context().await;
 
-    let already_exists = match DriverLicense::select_by_driver_and_license(&mut context, body.driver, body.license).await {
+    let driver_id = super::decode_id(&body.driver);
+    let license_id = super::decode_id(&body.license);
+
+    let already_exists = match DriverLicense::select_by_driver_and_license(&mut context, driver_id, license_id).await {
         Ok(val) => if let Some(_) = val { true } else { false },
         Err(err) => return Err(errors::database_error(&err)),
     };
@@ -80,29 +81,28 @@ pub async fn add(body: web::Json<dto::DriversLicenseUpdateDto>, req: HttpRequest
 
     let _result = match DriverLicense::create(
         &mut context,
-        body.driver,
-        body.license,
-        body.disabled).await {
+        driver_id,
+        license_id,
+        false).await {
             Ok(val) => val,
             Err(err) => return Err(errors::database_error(&err)),
     };
 
-    let vehicle = match DriverLicense::select_by_driver_and_license(&mut context, body.driver, body.license).await {
+    let drv_lic = match DriverLicense::select_by_driver_and_license(&mut context, driver_id, license_id).await {
         Ok(val) => val,
         Err(err) => return Err(errors::database_error(&err)),
     };
 
 
-    match vehicle {
+    match drv_lic {
         None => Err(errors::vehicles::creation_error()),
         Some(drv) => {
             let id = super::encode_id(drv.id.unwrap_or_default());
 
             let dto = dto::DriversLicenseDto {
                 id,
-                driver: drv.driver.clone(),
-                license: drv.license.clone(),
-                disabled: drv.disabled,
+                driver: super::encode_id(drv.driver.clone()),
+                license: super::encode_id(drv.license.clone()),
             };
 
             Ok(HttpResponse::Ok().json(dto))
@@ -111,9 +111,9 @@ pub async fn add(body: web::Json<dto::DriversLicenseUpdateDto>, req: HttpRequest
 
 }
 
-#[delete("/{driver_id}/delete")]
-pub async fn remove(driver_id: web::Path<String>, req: HttpRequest) -> Response {
-    let driver_id = driver_id.clone();
+#[delete("/{license_id}/delete")]
+pub async fn remove(license_id: web::Path<String>, req: HttpRequest) -> Response {
+    let license_id = license_id.clone();
     let user_info = match super::get_user_info(&req) {
         Ok(val) => val,
         Err(err) => return Err(err),
@@ -128,58 +128,12 @@ pub async fn remove(driver_id: web::Path<String>, req: HttpRequest) -> Response 
         return Err(errors::insufficient_privileges(user_info.user_id()));
     }
 
-    let driver_id = super::decode_id(&driver_id);
+    let license_id = super::decode_id(&license_id);
 
     let mut context = db_model::context().await;
-    if let Err(err) = DriverLicense::delete_by_column(&mut context, "id", driver_id).await {
+    if let Err(err) = DriverLicense::delete_by_column(&mut context, "id", license_id).await {
         return Err(errors::database_error(&err));
     }
 
     Ok(HttpResponse::Ok().finish())
 }
-
-// #[patch("/{driver_id}/update")]
-// pub async fn update(driver_id: web::Path<String>, body: web::Json<dto::DriversLicenseUpdateDto>, req: HttpRequest) -> Response {
-//     let driver_id = driver_id.clone();
-//     let user_info = match super::get_user_info(&req) {
-//         Ok(val) => val,
-//         Err(err) => return Err(err),
-//     };
-
-//     let can_access = match super::can_access(&user_info, UserType::Manager).await {
-//         Ok(val) => val,
-//         Err(err) => return Err(err),
-//     };
-
-//     let driver_id = super::decode_id(&driver_id);
-
-//     if !can_access {
-//         return Err(errors::insufficient_privileges(user_info.user_id));
-//     }
-
-//     let mut context = db_model::context().await;
-//     let vehicle = match DriverLicense::select_by_id(&mut context, driver_id).await {
-//         Err(err) => return Err(errors::database_error(&err)),
-//         Ok(val) => val,
-//     };
-
-//     let mut vehicle = match vehicle {
-//         Some(val) => val,
-//         None => return Err(errors::not_found()),
-//     };
-
-//     let dto = body.0;
-//     vehicle.id = None;
-//     vehicle.name = dto.name.clone();
-//     vehicle.picture = dto.picture.clone();
-//     vehicle.nationality = dto.nationality.clone();
-//     vehicle.base_location = dto.base_location.clone();
-//     vehicle.disabled = dto.disabled.clone();
-
-//     if let Err(err) = DriverLicense::update_by_id(&mut context, &vehicle, driver_id).await {
-//         return Err(errors::database_error(&err));
-//     }
-
-//     Ok(HttpResponse::Ok().finish())
-// }
-

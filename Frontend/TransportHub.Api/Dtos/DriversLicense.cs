@@ -9,14 +9,14 @@ namespace TransportHub.Api.Dtos;
 public class DriversLicenseDto
 {
     public string Id {get;set;}
-    public int Driver {get;set;}
-    public int License {get;set;}
+    public string Driver {get;set;}
+    public string License {get;set;}
     public bool Disabled { get; set; }
 }
 
 public class DriversLicenseUpdateDto
 {
-    public int Driver { get; set; }
-    public int License { get; set; }
+    public string Driver { get; set; }
+    public string License { get; set; }
     public bool Disabled { get; set; }
 }

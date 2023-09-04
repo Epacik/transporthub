@@ -11,4 +11,6 @@ public interface ISystemInfoService
 {
     bool IsDesktop { get; }
     bool IsMobile { get; }
+
+    bool IsBrowser { get; }
 }

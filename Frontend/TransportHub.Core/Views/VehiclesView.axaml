@@ -2,7 +2,290 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="TransportHub.Core.Views.VehiclesView">
-  Welcome to Avalonia!
+             xmlns:vm="using:TransportHub.Core.ViewModels"
+             xmlns:views="using:TransportHub.Core.Views"
+             xmlns:fa="using:FluentAvalonia.UI.Controls"
+             xmlns:converters="using:TransportHub.Core.Converters"
+             xmlns:controls="using:TransportHub.Core.Controls"
+             xmlns:m="using:TransportHub.Core.Markup"
+             xmlns:models="using:TransportHub.Core.Models"
+             mc:Ignorable="d" d:DesignWidth="900" d:DesignHeight="450"
+             x:Class="TransportHub.Core.Views.VehiclesView"
+             x:DataType="vm:VehiclesViewModel">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <converters:ObjectToGridLengthConverter x:Key="ObjectToGridLengthConverter"/>
+            <converters:ObjectIsNullConverter x:Key="ObjectIsNullConverter"/>
+            <converters:Base64ToIconSourceConverter x:Key="Base64ToIconSourceConverter"/>
+            <converters:IndexToItemConverter x:Key="IndexToItemConverter"/>
+            <converters:IdToItemConverter x:Key="IdToItemConverter"/>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="{Binding SelectedVehicle, Converter={StaticResource ObjectToGridLengthConverter}}" />
+        </Grid.ColumnDefinitions>
+
+        <controls:ListLoading ItemHeight="120"
+                              ItemCount="30"
+                              IsVisible="{Binding IsLoading}"/>
+
+        <ListBox ItemsSource="{Binding Vehicles}"
+                 SelectionMode="Single"
+                 SelectedItem="{Binding SelectedVehicle}"
+                 IsVisible="{Binding !IsLoading}"
+                 IsEnabled="{Binding
+                    EditedVehicle,
+                    Converter={StaticResource ObjectIsNullConverter},
+                    ConverterParameter=True}">
+            <ListBox.Styles>
+                <Styles>
+                    <Style Selector="ListBoxItem">
+                        <Setter Property="Padding"
+                                Value="10"/>
+                        <Setter Property="Background"
+                                Value="{DynamicResource CardBackgroundFillColorDefaultBrush}"/>
+                        <Setter Property="BorderBrush"
+                                Value="{DynamicResource CardStrokeColorDefaultBrush}"/>
+                        <Setter Property="CornerRadius"
+                                Value="5"/>
+                        <Setter Property="BorderThickness"
+                                Value="1"/>
+                    </Style>
+                </Styles>
+            </ListBox.Styles>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid RowDefinitions="auto,10,auto,10,auto,10,auto,10,auto"
+                          ColumnDefinitions="auto,10,*">
+                        <TextBlock Text="{Binding Name}"
+                                   Grid.Row="0"
+                                   Grid.Column="0"
+                                   FontWeight="SemiBold"
+                                   FontSize="24"/>
+
+                        <TextBlock Grid.Row="2"
+                                   Grid.Column="0">
+                            <Run>Typ pojazdu: </Run>
+                            <Run>
+                                <Run.Text>
+                                    <MultiBinding Converter="{StaticResource IndexToItemConverter}">
+                                        <Binding Path="VehicleType"/>
+                                        <Binding Path="$parent[views:VehiclesView].((vm:VehiclesViewModel)DataContext).VehicleTypes"/>
+                                    </MultiBinding>
+                                </Run.Text>
+                            </Run>
+                        </TextBlock>
+
+                        <StackPanel Grid.Row="2"
+                                    Grid.Column="2"
+                                    Spacing="5"
+                                    Orientation="Horizontal">
+                            <TextBlock>Wymagane prawo jazdy: </TextBlock>
+                            <ContentControl>
+                                <ContentControl.Content>
+                                    <MultiBinding Converter="{StaticResource IdToItemConverter}">
+                                        <Binding Path="RequiredLicense"/>
+                                        <Binding Path="$parent[views:VehiclesView].((vm:VehiclesViewModel)DataContext).Licenses"/>
+                                    </MultiBinding>
+                                </ContentControl.Content>
+                            </ContentControl>
+                        </StackPanel>
+
+                        <TextBlock Grid.Row="4"
+                                   Grid.Column="0">
+                            <Run>Numer rejestracyjny: </Run>
+                            <Run Text="{Binding RegistrationNumber}"/>
+                        </TextBlock>
+
+                        <TextBlock Grid.Row="4"
+                                   Grid.Column="2">
+                            <Run>VIN: </Run>
+                            <Run Text="{Binding Vin}"/>
+                        </TextBlock>
+
+                        <StackPanel Grid.Row="6"
+                                    Grid.Column="0"
+                                    Orientation="Horizontal">
+                            <TextBlock Text="Aktywny: " VerticalAlignment="Center"/>
+                            <CheckBox IsChecked="{Binding !Disabled}" IsEnabled="False"/>
+                        </StackPanel>
+
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <Button HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                VerticalContentAlignment="Center"
+                HorizontalContentAlignment="Center"
+                Width="40"
+                Height="40"
+                Margin="30"
+                Command="{Binding AddVehicleCommand}"
+                Classes="accent"
+                IsEnabled="{Binding
+                                EditedVehicle,
+                                Converter={StaticResource ObjectIsNullConverter},
+                                ConverterParameter=True}">
+            <controls:TablerIcon Icon="IconPlus"/>
+        </Button>
+
+        <Grid RowDefinitions="50,5,*,50"
+              Grid.Column="1"
+              IsVisible="{Binding EditedVehicle, Converter={StaticResource ObjectIsNullConverter}}">
+
+            <Border Background="{DynamicResource AccentFillColorDefaultBrush}"
+                    IsVisible="{Binding EditedVehicle.IsDirty, FallbackValue=false}"
+                    CornerRadius="5">
+                <TextBlock Foreground="White"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center">
+                    Istnieją niezapisane zmiany. Nie zapomnij ich zapisać!
+                </TextBlock>
+            </Border>
+
+            <Button HorizontalAlignment="Right"
+                    VerticalContentAlignment="Center"
+                    HorizontalContentAlignment="Center"
+                    Width="40"
+                    Height="40"
+                    Margin="5"
+                    Command="{Binding CloseVehicleCommand}">
+                <controls:TablerIcon Icon="IconX"/>
+            </Button>
+
+            <Grid Grid.Row="2"
+                  DataContext="{Binding EditedVehicle}"
+                  RowDefinitions="50,20,30,22,32,10,22,32,10,22,32,*"
+                  ColumnDefinitions="70,5,145,20,*"
+                  Margin="10,0">
+
+                <Button Grid.RowSpan="2"
+                        VerticalContentAlignment="Center"
+                        HorizontalContentAlignment="Center"
+                        Command="{Binding $parent[views:VehiclesView].((vm:VehiclesViewModel)DataContext).ChangePictureCommand}">
+                    <ToolTip.Tip>
+                        <TextBlock Text="Zmień obraz"/>
+                    </ToolTip.Tip>
+                    <fa:IconSourceElement MaxWidth="60"
+                                          MaxHeight="60"
+                                          RenderOptions.BitmapInterpolationMode="HighQuality"
+                                          RenderOptions.EdgeMode="Antialias"
+                                          IconSource="{Binding
+                                             Picture,
+                                             Converter={StaticResource Base64ToIconSourceConverter},
+                                             ConverterParameter={m:TablerIconSource IconTruck, FontSize=60}}"/>
+                </Button>
+
+
+                <TextBox FontSize="25"
+                           Grid.Column="2"
+                           Grid.ColumnSpan="3"
+                           Text="{Binding Name}"/>
+
+                <TextBlock Grid.Row="1"
+                           Grid.Column="2"
+                           Grid.ColumnSpan="3">
+                    <Run Text="Id: "/>
+                    <Run Text="{Binding Id}"/>
+                </TextBlock>
+
+                <TextBlock Grid.Row="3"
+                           Grid.ColumnSpan="3"
+                           Text="Typ pojazdu"/>
+
+                <ComboBox Grid.Row="4"
+                          Grid.ColumnSpan="3"
+                          HorizontalAlignment="Stretch"
+                          ItemsSource="{Binding $parent[views:VehiclesView].((vm:VehiclesViewModel)DataContext).VehicleTypes}"
+                          SelectedIndex="{Binding VehicleType}"/>
+
+                <TextBlock Grid.Row="3"
+                           Grid.Column="4"
+                           Grid.ColumnSpan="3"
+                           Text="Wymagane prawo jazdy"/>
+
+                <ComboBox Grid.Row="4"
+                          Grid.Column="4"
+                          Grid.ColumnSpan="3"
+                          HorizontalAlignment="Stretch"
+                          ItemsSource="{Binding $parent[views:VehiclesView].((vm:VehiclesViewModel)DataContext).LicenseIds}"
+                          SelectedItem="{Binding RequiredLicense}">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <ContentControl>
+                                <ContentControl.Content>
+                                    <MultiBinding Converter="{StaticResource IdToItemConverter}">
+                                        <Binding Path="."/>
+                                        <Binding Path="$parent[views:VehiclesView].((vm:VehiclesViewModel)DataContext).Licenses"/>
+                                    </MultiBinding>
+                                </ContentControl.Content>
+                            </ContentControl>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+
+                <TextBlock Grid.Row="6"
+                           Grid.ColumnSpan="3"
+                           Text="Numer rejestracyjny"/>
+
+                <TextBox Grid.Row="7"
+                         Grid.ColumnSpan="3"
+                         Text="{Binding RegistrationNumber}"/>
+                
+                <TextBlock Text="Aktywny"
+                           Grid.Column="5"
+                           Grid.Row="6"
+                           IsVisible="{Binding !$parent[views:VehiclesView].((vm:VehiclesViewModel)DataContext).AddingVehicle}"/>
+
+                <CheckBox IsChecked="{Binding !Disabled}"
+                          Grid.Column="5"
+                          Grid.Row="7"
+                          IsVisible="{Binding !$parent[views:VehiclesView].((vm:VehiclesViewModel)DataContext).AddingVehicle}"/>
+
+                <TextBlock Grid.Row="9"
+                           Grid.ColumnSpan="3"
+                           Text="VIN"/>
+
+                <TextBox Grid.Row="10"
+                         Grid.ColumnSpan="10"
+                         Text="{Binding Vin}"/>
+
+            </Grid>
+
+            <Button Margin="10,0"
+                    Grid.Row="3"
+                    Foreground="White"
+                    Background="DarkRed"
+                    Command="{Binding RemoveVehicleCommand}">
+                Usuń
+            </Button>
+            <StackPanel Orientation="Horizontal"
+                        Spacing="10"
+                        Grid.Row="3"
+                        HorizontalAlignment="Right"
+                        IsVisible="{Binding !AddingVehicle}">
+                <Button IsEnabled="{Binding EditedVehicle.IsDirty}"
+                        Command="{Binding RevertChangesCommand}">
+                    Cofnij zmiany
+                </Button>
+                <Button Classes="accent"
+                        IsEnabled="{Binding EditedVehicle.IsDirty}"
+                        Command="{Binding SaveChangesCommand}">
+                    Zapisz
+                </Button>
+            </StackPanel>
+
+            <Button Grid.Row="3"
+                    HorizontalAlignment="Right"
+                    IsVisible="{Binding AddingVehicle}"
+                    Classes="accent"
+                    Command="{Binding AddNewVehicleCommand}">
+                Zapisz
+            </Button>
+        </Grid>
+    </Grid>
 </UserControl>

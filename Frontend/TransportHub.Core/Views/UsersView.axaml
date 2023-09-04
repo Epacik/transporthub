@@ -60,7 +60,9 @@
                               ColumnDefinitions="auto,10,*">
                         <TextBlock Text="{Binding Name}"
                                    Grid.Row="0"
-                                   Grid.Column="0"/>
+                                   Grid.Column="0"
+                                   FontWeight="SemiBold"
+                                   FontSize="24"/>
                         <TextBlock Grid.Row="2"
                                    Grid.Column="0">
                             <Run Text="Typ: "/>

@@ -59,6 +59,7 @@ static class Program
         builder.RegisterType<DialogService>().As<IDialogService>();
         builder.RegisterType<SettingsService>().As<ISettingsService>();
         builder.RegisterType<OnScreenKeyboardServiceDefaultImpl>().As<IOnScreenKeyboardService>();
+        builder.RegisterType<BackgroundWorker>().As<IBackgroundWorker>();
     }
 
     private static bool IsDemoMode

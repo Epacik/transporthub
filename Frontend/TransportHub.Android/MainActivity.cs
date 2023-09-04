@@ -71,6 +71,9 @@ public class MainActivity : AvaloniaMainActivity<App>
             var listener = new LayoutListener(rootView!);
             return new OnScreenKayboardService(listener);
         });
+
+        builder.RegisterType<BackgroundWorker>().As<IBackgroundWorker>();
+
     }
 
     private static bool IsDemoMode => new SettingsService().ReadBool(Settings.DemoMode);

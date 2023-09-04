@@ -12,7 +12,7 @@ public class VehicleDto
     public string Name {get;set;}
     public int VehicleType {get;set;}
     public string Picture {get;set;}
-    public int RequiredLicense {get;set;}
+    public string RequiredLicense {get;set;}
     public string RegistrationNumber {get;set;}
     public string Vin {get;set;}
     public bool Disabled { get; set; }
@@ -23,7 +23,7 @@ public class VehicleUpdateDto
     public string Name { get; set; }
     public int VehicleType { get; set; }
     public string Picture { get; set; }
-    public int RequiredLicense { get; set; }
+    public string RequiredLicense { get; set; }
     public string RegistrationNumber { get; set; }
     public string Vin { get; set; }
     public bool Disabled { get; set; }

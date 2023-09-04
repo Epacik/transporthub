@@ -34,7 +34,8 @@ internal partial class SettingsViewModel : ObservableObject, INavigationAware
         IAuthorizationService authorizationService,
         IReportErrorService reportErrorService,
         IUserProvidedImageService userProvidedImageService,
-        ILoggedInUserService loggedInUserService)
+        ILoggedInUserService loggedInUserService,
+        UsedLicensesViewModel usedLicensesViewModel)
     {
         _usersService = usersService;
         _logger = logger;
@@ -44,6 +45,7 @@ internal partial class SettingsViewModel : ObservableObject, INavigationAware
         _reportErrorService = reportErrorService;
         _userProvidedImageService = userProvidedImageService;
         LoggedInUserService = loggedInUserService;
+        _usedLicensesViewModel = usedLicensesViewModel;
     }
 
     private UserDto _user;
@@ -62,6 +64,27 @@ internal partial class SettingsViewModel : ObservableObject, INavigationAware
 
     [ObservableProperty]
     private string? _newPassword;
+
+    [ObservableProperty]
+    private UsedLicensesViewModel _usedLicensesViewModel;
+
+    [ObservableProperty]
+    private bool _isLicensesTabOpen;
+
+    partial void OnIsLicensesTabOpenChanged(bool value)
+    {
+        _ = Task.Run(async () =>
+        {
+            if (value)
+            {
+                await UsedLicensesViewModel.OnNavigatedTo();
+            }
+            else
+            {
+                await UsedLicensesViewModel.OnNavigatedFrom();
+            }
+        });
+    }
 
     partial void OnNewPasswordChanged(string? oldValue, string? newValue)
     {

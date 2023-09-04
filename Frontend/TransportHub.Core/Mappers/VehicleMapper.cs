@@ -51,7 +51,7 @@ public static partial class VehicleMapper
         return new()
         {
             Name = model.Name,
-            Picture = model.Picture!,
+            Picture = model.Picture ?? "",
             VehicleType = model.VehicleType,
             RequiredLicense = model.RequiredLicense,
             RegistrationNumber = model.RegistrationNumber!,

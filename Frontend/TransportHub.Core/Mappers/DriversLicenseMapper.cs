@@ -37,7 +37,6 @@ public static partial class DriversLicenseMapper
             Id = model.Id,
             Driver = model.Driver,
             License = model.License,
-            Disabled = model.Disabled,
         };
     }
 
@@ -48,7 +47,6 @@ public static partial class DriversLicenseMapper
         {
             Driver = model.Driver,
             License = model.License,
-            Disabled = model.Disabled,
         };
     }
 }

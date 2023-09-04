@@ -2,8 +2,256 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:TransportHub.Core.ViewModels"
+             xmlns:views="using:TransportHub.Core.Views"
+             xmlns:fa="using:FluentAvalonia.UI.Controls"
+             xmlns:converters="using:TransportHub.Core.Converters"
              xmlns:controls="using:TransportHub.Core.Controls"
+             xmlns:m="using:TransportHub.Core.Markup"
+             xmlns:models="using:TransportHub.Core.Models"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="TransportHub.Core.Views.DriversView">
-    <controls:ListLoading ItemHeight="120" ItemCount="30"/>
+             x:Class="TransportHub.Core.Views.DriversView"
+             x:DataType="vm:DriversViewModel">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <converters:ObjectToGridLengthConverter x:Key="ObjectToGridLengthConverter"/>
+            <converters:ObjectIsNullConverter x:Key="ObjectIsNullConverter"/>
+            <converters:Base64ToIconSourceConverter x:Key="Base64ToIconSourceConverter"/>
+            <converters:IndexToItemConverter x:Key="IndexToItemConverter"/>
+            <converters:IdToItemConverter x:Key="IdToItemConverter"/>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="{Binding SelectedDriver, Converter={StaticResource ObjectToGridLengthConverter}}" />
+        </Grid.ColumnDefinitions>
+
+        <controls:ListLoading ItemHeight="120"
+                              ItemCount="30"
+                              IsVisible="{Binding IsLoading}"/>
+
+        <ListBox ItemsSource="{Binding Drivers}"
+                 SelectionMode="Single"
+                 SelectedItem="{Binding SelectedDriver}"
+                 IsVisible="{Binding !IsLoading}"
+                 IsEnabled="{Binding
+                    EditedDriver,
+                    Converter={StaticResource ObjectIsNullConverter},
+                    ConverterParameter=True}">
+            <ListBox.Styles>
+                <Styles>
+                    <Style Selector="ListBoxItem">
+                        <Setter Property="Padding"
+                                Value="10"/>
+                        <Setter Property="Background"
+                                Value="{DynamicResource CardBackgroundFillColorDefaultBrush}"/>
+                        <Setter Property="BorderBrush"
+                                Value="{DynamicResource CardStrokeColorDefaultBrush}"/>
+                        <Setter Property="CornerRadius"
+                                Value="5"/>
+                        <Setter Property="BorderThickness"
+                                Value="1"/>
+                    </Style>
+                </Styles>
+            </ListBox.Styles>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid RowDefinitions="auto,10,auto,10,auto,10,auto,10,auto"
+                          ColumnDefinitions="auto,10,*">
+                        <TextBlock Text="{Binding Name}"
+                                   Grid.Row="0"
+                                   Grid.Column="0"
+                                   FontWeight="SemiBold"
+                                   FontSize="24"/>
+
+                        <TextBlock Grid.Row="2"
+                                   Grid.Column="0">
+                            <Run>Narodowość: </Run>
+                            <Run Text="{Binding Nationality}"/>
+                            <!--<Run>
+                                <Run.Text>
+                                    <MultiBinding Converter="{StaticResource IndexToItemConverter}">
+                                        <Binding Path="DriverType"/>
+                                        <Binding Path="$parent[views:DriversView].((vm:DriversViewModel)DataContext).DriverTypes"/>
+                                    </MultiBinding>
+                                </Run.Text>
+                            </Run>-->
+                        </TextBlock>
+
+                        <TextBlock Grid.Row="2"
+                                    Grid.Column="2">
+                            <Run>Lokacja bazy: </Run>
+                            <Run Text="{Binding BaseLocation}"/>
+                        </TextBlock>
+
+                        <StackPanel Grid.Row="6"
+                                    Grid.Column="0"
+                                    Orientation="Horizontal">
+                            <TextBlock Text="Aktywny: " VerticalAlignment="Center"/>
+                            <CheckBox IsChecked="{Binding !Disabled}" IsEnabled="False"/>
+                        </StackPanel>
+
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <Button HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                VerticalContentAlignment="Center"
+                HorizontalContentAlignment="Center"
+                Width="40"
+                Height="40"
+                Margin="30"
+                Command="{Binding AddDriverCommand}"
+                Classes="accent"
+                IsEnabled="{Binding
+                                EditedDriver,
+                                Converter={StaticResource ObjectIsNullConverter},
+                                ConverterParameter=True}">
+            <controls:TablerIcon Icon="IconPlus"/>
+        </Button>
+
+        <Grid RowDefinitions="50,5,*,50"
+              Grid.Column="1"
+              IsVisible="{Binding EditedDriver, Converter={StaticResource ObjectIsNullConverter}}">
+
+            <Border Background="{DynamicResource AccentFillColorDefaultBrush}"
+                    IsVisible="{Binding EditedDriver.IsDirty, FallbackValue=false}"
+                    CornerRadius="5">
+                <TextBlock Foreground="White"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center">
+                    Istnieją niezapisane zmiany. Nie zapomnij ich zapisać!
+                </TextBlock>
+            </Border>
+
+            <Button HorizontalAlignment="Right"
+                    VerticalContentAlignment="Center"
+                    HorizontalContentAlignment="Center"
+                    Width="40"
+                    Height="40"
+                    Margin="5"
+                    Command="{Binding CloseDriverCommand}">
+                <controls:TablerIcon Icon="IconX"/>
+            </Button>
+
+            <Grid Grid.Row="2"
+                  DataContext="{Binding EditedDriver}"
+                  RowDefinitions="50,20,30,22,32,10,22,32,10,22,32,*"
+                  ColumnDefinitions="70,5,145,20,*"
+                  Margin="10,0">
+
+                <Button Grid.RowSpan="2"
+                        VerticalContentAlignment="Center"
+                        HorizontalContentAlignment="Center"
+                        Command="{Binding $parent[views:DriversView].((vm:DriversViewModel)DataContext).ChangePictureCommand}">
+                    <ToolTip.Tip>
+                        <TextBlock Text="Zmień obraz"/>
+                    </ToolTip.Tip>
+                    <fa:IconSourceElement MaxWidth="60"
+                                          MaxHeight="60"
+                                          RenderOptions.BitmapInterpolationMode="HighQuality"
+                                          RenderOptions.EdgeMode="Antialias"
+                                          IconSource="{Binding
+                                             Picture,
+                                             Converter={StaticResource Base64ToIconSourceConverter},
+                                             ConverterParameter={m:TablerIconSource IconTruck, FontSize=60}}"/>
+                </Button>
+
+
+                <TextBox FontSize="25"
+                           Grid.Column="2"
+                           Grid.ColumnSpan="3"
+                           Text="{Binding Name}"/>
+
+                <TextBlock Grid.Row="1"
+                           Grid.Column="2"
+                           Grid.ColumnSpan="3">
+                    <Run Text="Id: "/>
+                    <Run Text="{Binding Id}"/>
+                </TextBlock>
+
+                <TextBlock Grid.Row="3"
+                           Grid.ColumnSpan="3"
+                           Text="Narodowość"/>
+
+                <TextBox Grid.Row="4"
+                         Grid.ColumnSpan="3"
+                         Text="{Binding Nationality}"/>
+                
+                <TextBlock Grid.Row="3"
+                           Grid.Column="4"
+                           Grid.ColumnSpan="3"
+                           Text="Lokacja bazy"/>
+
+                <TextBox Grid.Row="4"
+                         Grid.Column="4"
+                         Grid.ColumnSpan="3"
+                         Text="{Binding BaseLocation}"/>
+
+                <TextBlock Text="Posiadane prawa jazdy"
+                           Grid.ColumnSpan="3"
+                           Grid.Row="6"
+                           IsVisible="{Binding !$parent[views:DriversView].((vm:DriversViewModel)DataContext).AddingDriver}"/>
+
+                <ListBox Grid.ColumnSpan="3"
+                         Grid.Row="7"
+                         Grid.RowSpan="6"
+                         SelectionMode="Multiple,Toggle"
+                         ItemsSource="{Binding $parent[views:DriversView].((vm:DriversViewModel)DataContext).Licenses}"
+                         BorderThickness="1"
+                         BorderBrush="{DynamicResource CardStrokeColorDefaultBrush}"
+                         Background="{DynamicResource CardBackgroundFillColorDefaultBrush}"
+                         CornerRadius="5"
+                         SelectedItems="{Binding $parent[views:DriversView].((vm:DriversViewModel)DataContext).SelectedLicenses}"
+                         IsVisible="{Binding !$parent[views:DriversView].((vm:DriversViewModel)DataContext).AddingDriver}"/>
+                
+
+                <TextBlock Text="Aktywny"
+                           Grid.Column="5"
+                           Grid.Row="6"
+                           IsVisible="{Binding !$parent[views:DriversView].((vm:DriversViewModel)DataContext).AddingDriver}"/>
+
+                <CheckBox IsChecked="{Binding !Disabled}"
+                          Grid.Column="5"
+                          Grid.Row="7"
+                          IsVisible="{Binding !$parent[views:DriversView].((vm:DriversViewModel)DataContext).AddingDriver}"/>
+
+
+            </Grid>
+
+            <Button Margin="10,0"
+                    Grid.Row="3"
+                    Foreground="White"
+                    Background="DarkRed"
+                    Command="{Binding RemoveDriverCommand}">
+                Usuń
+            </Button>
+            <StackPanel Orientation="Horizontal"
+                        Spacing="10"
+                        Grid.Row="3"
+                        HorizontalAlignment="Right"
+                        IsVisible="{Binding !AddingDriver}">
+                <Button IsEnabled="{Binding EditedDriver.IsDirty}"
+                        Command="{Binding RevertChangesCommand}">
+                    Cofnij zmiany
+                </Button>
+                <Button Classes="accent"
+                        IsEnabled="{Binding EditedDriver.IsDirty}"
+                        Command="{Binding SaveChangesCommand}">
+                    Zapisz
+                </Button>
+            </StackPanel>
+
+            <Button Grid.Row="3"
+                    HorizontalAlignment="Right"
+                    IsVisible="{Binding AddingDriver}"
+                    Classes="accent"
+                    Command="{Binding AddNewDriverCommand}">
+                Zapisz
+            </Button>
+        </Grid>
+    </Grid>
 </UserControl>

@@ -33,11 +33,22 @@ public static class DesignViewModels
         _inMemoryAuthorizationService,
         _inMemoryUsersService,
         _reportErrorService);
+    private static readonly EmptyLoadingPopupService _loadingPopupService = new();
+
+    private static void ReloadViewModel(INavigationAware viewModel, Action? continueWith = null)
+    {
+        Task.Run(async () =>
+        {
+            await viewModel.OnNavigatedFrom();
+            await viewModel.OnNavigatedTo();
+            continueWith?.Invoke();
+        });
+    }
 
     private static UsersViewModel _usersViewModel = new(
         _inMemoryUsersService,
         _logger,
-        new EmptyLoadingPopupService(),
+        _loadingPopupService,
         _emptyDialogService,
         _inMemoryAuthorizationService,
         _clipboardProvider,
@@ -48,13 +59,79 @@ public static class DesignViewModels
     {
         get
         {
-            Task.Run(async () =>
-            {
-                await _usersViewModel.OnNavigatedFrom();
-                await _usersViewModel.OnNavigatedTo();
-                _usersViewModel.SelectedUser = _usersViewModel.Users.FirstOrDefault();
-            });
+            ReloadViewModel(
+                _usersViewModel,
+                () => _usersViewModel.SelectedUser = _usersViewModel.Users.FirstOrDefault());
             return _usersViewModel;
         }
     }
+
+
+    private static LicensesViewModel _licensesViewModel = new(
+        new InMemoryLicenseTypeService(),
+        _logger,
+        _loadingPopupService,
+        _emptyDialogService,
+        _inMemoryAuthorizationService,
+        _clipboardProvider,
+        _reportErrorService);
+    public static LicensesViewModel LicensesViewModel
+    {
+        get
+        {
+            ReloadViewModel(
+                _licensesViewModel,
+                () => _licensesViewModel.SelectedLicense = _licensesViewModel.Licenses.FirstOrDefault());
+            return _licensesViewModel;
+        }
+    }
+
+    private static VehiclesViewModel _vehiclesViewModel = new(
+        new InMemoryVehicleService(),
+        new InMemoryLicenseTypeService(),
+        _logger,
+        _loadingPopupService,
+        _emptyDialogService,
+        _inMemoryAuthorizationService,
+        _clipboardProvider,
+        _reportErrorService,
+        new EmptyUserProvidedImageService());
+
+    public static VehiclesViewModel VehiclesViewModel
+    {
+        get
+        {
+            ReloadViewModel(
+                _vehiclesViewModel,
+                () => _vehiclesViewModel.SelectedVehicle = _vehiclesViewModel.Vehicles.FirstOrDefault());
+
+            return _vehiclesViewModel;
+        }
+    }
+
+    private static DriversViewModel _driversViewModel = new(
+        new InMemoryDriverService(),
+        new InMemoryDriversLicenseService(),
+        new InMemoryLicenseTypeService(),
+        _logger,
+        _loadingPopupService,
+        _emptyDialogService,
+        _inMemoryAuthorizationService,
+        _clipboardProvider,
+        _reportErrorService,
+        new EmptyUserProvidedImageService());
+
+    public static DriversViewModel DriversViewModel
+    {
+        get
+        {
+            ReloadViewModel(
+                _driversViewModel,
+                () => _driversViewModel.SelectedDriver = _driversViewModel.Drivers.FirstOrDefault());
+
+            return _driversViewModel;
+        }
+    }
+
+
 }

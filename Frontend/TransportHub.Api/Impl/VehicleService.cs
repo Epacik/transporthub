@@ -42,7 +42,7 @@ public class VehicleService : IVehicleService
         var uri = _settingsService.Read(Settings.IpAddress, DefaultValues.ServerAddress);
 
         var userdata = _authorizationService.UserData;
-        var client = _httpClientFactory.Create(uri!, userdata?.User, password: userdata?.Key);
+        using var client = _httpClientFactory.Create(uri!, userdata?.User, password: userdata?.Key);
 
         var data = _jsonSerializer.Serialize(vehicleDto);
 
@@ -76,7 +76,7 @@ public class VehicleService : IVehicleService
         var uri = _settingsService.Read(Settings.IpAddress, DefaultValues.ServerAddress);
 
         var userdata = _authorizationService.UserData;
-        var client = _httpClientFactory.Create(uri!, userdata?.User, password: userdata?.Key);
+        using var client = _httpClientFactory.Create(uri!, userdata?.User, password: userdata?.Key);
 
         var response = await client.GetAsync($"users/{id}").ToResultAsync();
 
@@ -103,7 +103,7 @@ public class VehicleService : IVehicleService
         var uri = _settingsService.Read(Settings.IpAddress, DefaultValues.ServerAddress);
 
         var userdata = _authorizationService.UserData;
-        var client = _httpClientFactory.Create(uri!, userdata?.User, password: userdata?.Key);
+        using var client = _httpClientFactory.Create(uri!, userdata?.User, password: userdata?.Key);
 
         var response = await client.GetAsync(_pathPrefix + "/list").ToResultAsync();
 
@@ -130,7 +130,7 @@ public class VehicleService : IVehicleService
         var uri = _settingsService.Read(Settings.IpAddress, DefaultValues.ServerAddress);
 
         var userdata = _authorizationService.UserData;
-        var client = _httpClientFactory.Create(uri!, userdata?.User, password: userdata?.Key);
+        using var client = _httpClientFactory.Create(uri!, userdata?.User, password: userdata?.Key);
 
 
         var response = await client.DeleteAsync(
@@ -159,7 +159,7 @@ public class VehicleService : IVehicleService
         var uri = _settingsService.Read(Settings.IpAddress, DefaultValues.ServerAddress);
 
         var userdata = _authorizationService.UserData;
-        var client = _httpClientFactory.Create(uri!, userdata?.User, password: userdata?.Key);
+        using var client = _httpClientFactory.Create(uri!, userdata?.User, password: userdata?.Key);
 
         var data = _jsonSerializer.Serialize(vehicleDto);
 

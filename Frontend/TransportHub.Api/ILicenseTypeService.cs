@@ -12,7 +12,7 @@ public interface ILicenseTypeService
 {
     Task<Result<IEnumerable<LicenseTypeDto>, Exception>> List();
     Task<Result<LicenseTypeDto, Exception>> Get(string id);
-    Task<Result<bool, Exception>> Add(LicenseTypeUpdateDto userDto);
+    Task<Result<bool, Exception>> Add(LicenseTypeUpdateDto dto);
     Task<Result<bool, Exception>> Remove(string id);
-    Task<Result<bool, Exception>> Update(string id, LicenseTypeUpdateDto userDto);
+    Task<Result<bool, Exception>> Update(string id, LicenseTypeUpdateDto dto);
 }

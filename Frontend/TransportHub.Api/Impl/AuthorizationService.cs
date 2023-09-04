@@ -13,6 +13,9 @@ public class AuthorizationService : IAuthorizationService
     private readonly ISettingsService _settingsService;
     private readonly IHttpClientFactory _httpClientFactory;
     private readonly IJsonSerializer _jsonSerializer;
+    private readonly ISystemInfoService _systemInfoService;
+    private readonly IBackgroundWorker _backgroundWorker;
+
     public LoginResponseDto? UserData { get; private set; }
 
     private PeriodicTimer _periodicTimer;
@@ -21,12 +24,15 @@ public class AuthorizationService : IAuthorizationService
     public AuthorizationService(
         ISettingsService settingsService,
         IHttpClientFactory httpClientFactory,
-        IJsonSerializer jsonSerializer)
+        IJsonSerializer jsonSerializer,
+        ISystemInfoService systemInfoService,
+        IBackgroundWorker backgroundWorker)
     {
         _settingsService = settingsService;
         _httpClientFactory = httpClientFactory;
         _jsonSerializer = jsonSerializer;
-
+        _systemInfoService = systemInfoService;
+        _backgroundWorker = backgroundWorker;
         _periodicTimer = new PeriodicTimer(TimeSpan.FromSeconds(10));
     }
     public bool IsLoggedIn => false;
@@ -44,7 +50,7 @@ public class AuthorizationService : IAuthorizationService
 
 
         var uri = _settingsService.Read(Settings.IpAddress, DefaultValues.ServerAddress);
-        var client = _httpClientFactory.Create(uri);
+        using var client = _httpClientFactory.Create(uri);
 
         var dto = new LoginRequestDto
         {
@@ -101,7 +107,7 @@ public class AuthorizationService : IAuthorizationService
     public async Task<Result<bool, Exception>> Logout()
     {
         var uri = _settingsService.Read(Settings.IpAddress, DefaultValues.ServerAddress);
-        var client = _httpClientFactory.Create(uri, UserData?.User, UserData?.Key);
+        using var client = _httpClientFactory.Create(uri, UserData?.User, UserData?.Key);
 
         var response = await Throwable.ToResultAsync(
             async () => await client.PostAsync(
@@ -132,7 +138,7 @@ public class AuthorizationService : IAuthorizationService
     public async Task<Result<bool, Exception>> RefreshSession()
     {
         var uri = _settingsService.Read(Settings.IpAddress, DefaultValues.ServerAddress);
-        var client = _httpClientFactory.Create(uri, UserData?.User, UserData?.Key);
+        using var client = _httpClientFactory.Create(uri, UserData?.User, UserData?.Key);
 
         var response = await Throwable.ToResultAsync(
            async () => await client.PostAsync(
@@ -154,7 +160,7 @@ public class AuthorizationService : IAuthorizationService
         return true;
     }
 
-    private void StartRefreshing()
+    private async void StartRefreshing()
     {
         async Task run()
         {
@@ -176,7 +182,15 @@ public class AuthorizationService : IAuthorizationService
 
         _cancellationTokenSource = new CancellationTokenSource();
 
-        new Thread(async () => await run())
-            .Start();
+        await _backgroundWorker.Run(async () => await run());
+        //if (_systemInfoService.IsBrowser)
+        //{
+
+        //}
+        //else
+        //{
+        //new Thread(async () => await run())
+        //    .Start();
+        //}
     }
 }

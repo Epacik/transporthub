@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Reflection;
 using System.Threading.Tasks;
+using Serilog;
 
 namespace TransportHub.Core;
 
@@ -26,25 +27,34 @@ public partial class App : Application, IDisposable
 
     public override void OnFrameworkInitializationCompleted()
     {
-        ContainerLifetime = Container?.BeginLifetimeScope();
-        //var clipbpard = 
-        var mainView = ContainerLifetime?.Resolve<MainView>();
-        _mainViewModel = mainView!.DataContext as MainViewModel;
-
-        NavigationView = mainView;
-
-        if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
+        try
         {
-            desktop.MainWindow = new MainWindow
+            ContainerLifetime = Container?.BeginLifetimeScope();
+            var mainView = ContainerLifetime?.Resolve<MainView>();
+            _mainViewModel = mainView!.DataContext as MainViewModel;
+
+            NavigationView = mainView;
+
+            if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
             {
-                Content = mainView,
-            };
+                desktop.MainWindow = new MainWindow
+                {
+                    Content = mainView,
+                };
+            }
+            else if (ApplicationLifetime is ISingleViewApplicationLifetime singleViewPlatform)
+            {
+                singleViewPlatform.MainView = mainView;
+            }
+            base.OnFrameworkInitializationCompleted();
         }
-        else if (ApplicationLifetime is ISingleViewApplicationLifetime singleViewPlatform)
+        catch (Exception ex)
         {
-            singleViewPlatform.MainView = mainView;
+            ContainerLifetime = Container?.BeginLifetimeScope();
+            var logger = ContainerLifetime?.Resolve<ILogger>();
+            logger.Error(ex, "Error initializing app");
+            throw;
         }
-        base.OnFrameworkInitializationCompleted();
     }
 
     bool _disposed = false;

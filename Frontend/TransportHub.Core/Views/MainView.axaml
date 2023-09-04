@@ -5,7 +5,6 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:ap="using:TransportHub.Core.AttachedProperties"
     xmlns:fac="using:FluentAvalonia.UI.Controls"
-    xmlns:progRing="clr-namespace:AvaloniaProgressRing;assembly=AvaloniaProgressRing"
     xmlns:ctrl="using:TransportHub.Core.Controls"
     xmlns:vm="using:TransportHub.Core.ViewModels"
     xmlns:models="using:TransportHub.Core.Models"
@@ -134,11 +133,10 @@
                 <TextBlock Text="{Binding LoadingMessage}"
                            HorizontalAlignment="Center"
                            FontSize="15"/>
-                <progRing:ProgressRing Width="50" 
-                                       Height="50"
-                                       IsActive="True"
-                                       HorizontalAlignment="Center"
-                                       Foreground="Violet"/>
+                <fac:ProgressRing Width="50"
+                                  Height="50"
+                                  IsIndeterminate="True"
+                                  HorizontalAlignment="Center"/>
             </StackPanel>
         </Border>
     </Grid>

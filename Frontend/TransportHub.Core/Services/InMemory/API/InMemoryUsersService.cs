@@ -11,6 +11,7 @@ namespace TransportHub.Core.Services.InMemory.API;
 
 public class InMemoryUsersService : IUsersService
 {
+    private readonly IAuthorizationService _authorizationService;
     public InMemoryUsersService(IAuthorizationService authorizationService)
     {
         _authorizationService = authorizationService;
@@ -89,7 +90,7 @@ public class InMemoryUsersService : IUsersService
         {
             var currentUserId = _authorizationService.UserData?.User;
             if (!StaticUsers.Any(x => x.Id == currentUserId && x.UserType == UserType.Admin))
-                return new InvalidOperationException("Uoy have to be an admin");
+                return new InvalidOperationException("You have to be an admin");
 
             var item = StaticUsers.FirstOrDefault(x => x.Id == id);
             if (item is null)
@@ -116,7 +117,6 @@ public class InMemoryUsersService : IUsersService
         CreateUserDto("Sam", null, UserType.Manager, false, true),
         CreateUserDto("Grzegorz", DateTime.Now.AddDays(14), UserType.User, false, false),
     };
-    private readonly IAuthorizationService _authorizationService;
 
     private static UserDto CreateUserDto(
         string name,
