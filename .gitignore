@@ -9,3 +9,4 @@ backend/config.json
 /Dashboard/Dashboard/bin/Debug/net7.0
 /Dashboard/Dashboard/obj
 /backend/config.postgres copy.json
+/backend/transporthub.db
