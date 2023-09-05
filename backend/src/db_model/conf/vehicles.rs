@@ -1,7 +1,6 @@
-use rbatis::{Rbatis, rbdc::Error, impl_select, impl_update, crud};
-use serde::{Deserialize, Serialize};
+use rbatis::{ RBatis, rbdc::Error, impl_select, impl_update, crud };
+use serde::{ Deserialize, Serialize };
 use crate::db_model::table_names;
-
 
 #[derive(Clone, Debug, Serialize, Deserialize)]
 pub struct Vehicle {
@@ -12,7 +11,7 @@ pub struct Vehicle {
     pub required_license: i32,
     pub registration_number: String,
     pub vin: String,
-    pub disabled: bool,
+    pub disabled: i32,
 }
 
 crud!(Vehicle {}, table_names::VEHICLES);
@@ -21,10 +20,8 @@ impl_select!(Vehicle { select_by_id(id: i32) -> Option => "`where id = #{id} lim
 impl_update!(Vehicle { update_by_id(id: i32) => "`where id = #{id}`"}, table_names::VEHICLES);
 
 impl Vehicle {
-    pub async fn count(rb: &Rbatis) -> Result<u64, Error> {
-        rb
-        .query_decode("select count(id) as count from conf.vehicles", vec![])
-        .await
+    pub async fn count(rb: &RBatis) -> Result<u64, Error> {
+        rb.query_decode("select count(id) as count from conf.vehicles", vec![]).await
     }
 
     pub async fn create<S: AsRef<str>>(
@@ -35,9 +32,9 @@ impl Vehicle {
         required_license: i32,
         registration_number: String,
         vin: String,
-        disabled: bool,
+        disabled: bool
     ) -> std::result::Result<rbatis::rbdc::db::ExecResult, rbatis::rbdc::Error> {
-
+        let disabled = if disabled { 1 } else { 0 };
         let license = Vehicle {
             id: None,
             name: String::from(name.as_ref()),
@@ -49,9 +46,24 @@ impl Vehicle {
             picture,
         };
 
-        match Vehicle::insert( context, &license).await {
+        match Vehicle::insert(context, &license).await {
             Ok(ok) => Ok(ok),
             Err(err) => Err(err),
+        }
+    }
+}
+
+impl Default for Vehicle {
+    fn default() -> Self {
+        Self {
+            id: Some(1),
+            name: String::new(),
+            vehicle_type: 1,
+            picture: String::new(),
+            required_license: 1,
+            registration_number: String::new(),
+            vin: String::new(),
+            disabled: 1,
         }
     }
 }

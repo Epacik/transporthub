@@ -36,11 +36,17 @@ pub fn config() -> &'static Config {
 pub struct Config {
     pass_secret: String,
     hash_ids_secret: String,
-    database_info: DatabaseInfo,
+    database_info: DatabaseConnectionInfo,
 }
 
 #[derive(Deserialize)]
-struct DatabaseInfo {
+enum DatabaseConnectionInfo {
+    PostgresInfo(PostgresInfo),
+    SqliteInfo(String),
+}
+
+#[derive(Deserialize)]
+struct PostgresInfo {
     pub address: String,
     pub database: String,
     pub username: String,
@@ -48,23 +54,40 @@ struct DatabaseInfo {
     pub port: Option<String>,
 }
 
+pub enum DatabaseType {
+    PostgreSQL,
+    Sqlite,
+}
+
 impl Config {
     pub fn pass_secret(&self) -> &str {
         self.pass_secret.as_ref()
     }
 
-    pub(crate) fn connection_string(&self) -> String {
-        let port = self.database_info.port.clone().unwrap_or_else(|| String::from("5432"));
-        format!(
-            "postgres://{3}:{4}@{0}:{1}/{2}",
-            self.database_info.address,
-            port,
-            self.database_info.database,
-            self.database_info.username,
-            self.database_info.password
-        )
+    pub fn connection_string(&self) -> String {
+
+        match &self.database_info {
+            DatabaseConnectionInfo::PostgresInfo(p) => {
+                let port = p.port.clone().unwrap_or_else(|| String::from("5432"));
+                format!(
+                    "postgres://{3}:{4}@{0}:{1}/{2}",
+                    p.address,
+                    port,
+                    p.database,
+                    p.username,
+                    p.password
+                )
+            },
+            DatabaseConnectionInfo::SqliteInfo(s) => format!("sqlite://{}/{}", (&CONFIG_DIR).to_string(), s),
+        }
     }
 
+    pub fn used_database(&self) -> DatabaseType {
+        match self.database_info {
+            DatabaseConnectionInfo::PostgresInfo(_) => DatabaseType::PostgreSQL,
+            DatabaseConnectionInfo::SqliteInfo(_) => DatabaseType::Sqlite,
+        }
+    }
     pub fn hash_ids_secret(&self) -> &str {
         self.hash_ids_secret.as_ref()
     }

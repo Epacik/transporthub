@@ -87,7 +87,7 @@ CREATE TABLE conf.clients (
     tin character varying NOT NULL,
     country character varying NOT NULL,
     location character varying NOT NULL,
-    disabled boolean DEFAULT false NOT NULL
+    disabled integer DEFAULT 0 NOT NULL
 );
 
 
@@ -114,7 +114,7 @@ CREATE TABLE conf.clients_contact_info (
     other_type_name character varying,
     value character varying NOT NULL,
     description character varying NOT NULL,
-    disabled boolean DEFAULT false NOT NULL
+    disabled integer DEFAULT 0 NOT NULL
 );
 
 
@@ -161,7 +161,7 @@ CREATE TABLE conf.drivers (
     picture character varying,
     nationality character varying NOT NULL,
     base_location character varying NOT NULL,
-    disabled boolean DEFAULT false NOT NULL
+    disabled integer DEFAULT 0 NOT NULL
 );
 
 
@@ -191,7 +191,7 @@ CREATE TABLE conf.drivers_licenses (
     id integer NOT NULL,
     driver integer NOT NULL,
     license integer NOT NULL,
-    disabled boolean DEFAULT false NOT NULL
+    disabled integer DEFAULT 0 NOT NULL
 );
 
 
@@ -222,10 +222,10 @@ CREATE TABLE conf.holidays (
     user_id integer,
     driver integer,
     reason character varying NOT NULL,
-    approved boolean NOT NULL,
+    approved integer NOT NULL,
     start_date date NOT NULL,
     end_date date NOT NULL,
-    disabled boolean NOT NULL,
+    disabled integer NOT NULL,
     CONSTRAINT holidays_check CHECK ((((USER IS NULL) AND (driver IS NOT NULL)) OR ((USER IS NOT NULL) AND (driver IS NULL))))
 );
 
@@ -259,7 +259,7 @@ CREATE TABLE conf.license_types (
     minimal_age_of_holder integer NOT NULL,
     alternative_minimal_age_of_holder integer,
     condition_for_alternative_minimal_age character varying,
-    disabled boolean DEFAULT false NOT NULL
+    disabled integer DEFAULT 0 NOT NULL
 );
 
 
@@ -289,12 +289,12 @@ CREATE TABLE conf.maintenance (
     id integer NOT NULL,
     vehicle integer NOT NULL,
     reason character varying NOT NULL,
-    from_transport boolean NOT NULL,
-    approved boolean NOT NULL,
+    from_transport integer NOT NULL,
+    approved integer NOT NULL,
     start_date date NOT NULL,
     end_date date NOT NULL,
-    disabled boolean NOT NULL,
-    vital boolean NOT NULL
+    disabled integer NOT NULL,
+    vital integer NOT NULL
 );
 
 
@@ -325,7 +325,7 @@ CREATE TABLE conf.preferred_vehicles (
     driver integer NOT NULL,
     vehicle integer NOT NULL,
     priority integer DEFAULT 1 NOT NULL,
-    disabled boolean DEFAULT false NOT NULL
+    disabled integer DEFAULT 0 NOT NULL
 );
 
 
@@ -390,8 +390,8 @@ CREATE TABLE conf.users (
     password_hash character varying NOT NULL,
     password_expiration_date date,
     user_type smallint NOT NULL,
-    multi_login boolean DEFAULT false NOT NULL,
-    disabled boolean NOT NULL
+    multi_login integer DEFAULT 0 NOT NULL,
+    disabled integer NOT NULL
 );
 
 
@@ -434,7 +434,7 @@ CREATE TABLE conf.vehicles (
     required_license integer NOT NULL,
     registration_number character varying NOT NULL,
     vin character varying NOT NULL,
-    disabled boolean DEFAULT false NOT NULL
+    disabled integer DEFAULT 0 NOT NULL
 );
 
 
@@ -464,7 +464,7 @@ CREATE TABLE orders.assigned_users (
     id integer NOT NULL,
     user_id integer NOT NULL,
     order_id integer NOT NULL,
-    is_primary boolean NOT NULL
+    is_primary integer NOT NULL
 );
 
 
@@ -529,7 +529,7 @@ CREATE TABLE orders.incident_vehicles (
     transport integer NOT NULL,
     incident integer NOT NULL,
     vehicle integer NOT NULL,
-    needs_maintenance boolean NOT NULL,
+    needs_maintenance integer NOT NULL,
     maintenance_description character varying NOT NULL
 );
 
@@ -547,7 +547,7 @@ CREATE TABLE orders.incidents (
     transport integer NOT NULL,
     description character varying NOT NULL,
     severity integer DEFAULT 1 NOT NULL,
-    disabled boolean NOT NULL
+    disabled integer NOT NULL
 );
 
 
@@ -567,8 +567,8 @@ CREATE TABLE orders.orders (
     initial_location character varying NOT NULL,
     final_location character varying NOT NULL,
     deadline_date timestamp with time zone NOT NULL,
-    disabled boolean NOT NULL,
-    fulfilled boolean NOT NULL,
+    disabled integer NOT NULL,
+    fulfilled integer NOT NULL,
     creation_date timestamp with time zone NOT NULL,
     created_by integer NOT NULL,
     modification_date timestamp with time zone NOT NULL,
@@ -641,7 +641,7 @@ CREATE TABLE orders.transport_vehicles (
     transport integer NOT NULL,
     id integer NOT NULL,
     vehicle integer NOT NULL,
-    disabled boolean NOT NULL
+    disabled integer NOT NULL
 );
 
 
@@ -660,8 +660,8 @@ CREATE TABLE orders.transports (
     description character varying NOT NULL,
     driver integer NOT NULL,
     secondary_driver integer,
-    disabled boolean NOT NULL,
-    fulfilled boolean NOT NULL
+    disabled integer NOT NULL,
+    fulfilled integer NOT NULL
 );
 
 

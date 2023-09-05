@@ -47,7 +47,7 @@ pub async fn list(req: HttpRequest) -> Response {
             required_license: super::encode_id(x.required_license.clone()),
             registration_number: x.registration_number.clone(),
             vin: x.vin.clone(),
-            disabled: x.disabled,
+            disabled: x.disabled != 0,
         })
         .collect::<Vec<_>>();
 
@@ -116,7 +116,7 @@ pub async fn add(body: web::Json<dto::VehicleUpdateDto>, req: HttpRequest) -> Re
                 required_license: super::encode_id(lic.required_license.clone()),
                 registration_number: lic.registration_number.clone(),
                 vin: lic.vin.clone(),
-                disabled: lic.disabled,
+                disabled: lic.disabled != 0,
             };
 
             Ok(HttpResponse::Ok().json(dto))
@@ -190,7 +190,7 @@ pub async fn update(vehicle_id: web::Path<String>, body: web::Json<dto::VehicleU
     vehicle.required_license = super::decode_id(&dto.required_license.clone());
     vehicle.registration_number = dto.registration_number.clone();
     vehicle.vin = dto.vin.clone();
-    vehicle.disabled = dto.disabled.clone();
+    vehicle.disabled = if dto.disabled { 1 } else { 0 };
 
     if let Err(err) = Vehicle::update_by_id(&mut context, &vehicle, vehicle_id).await {
         return Err(errors::database_error(&err));

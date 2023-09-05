@@ -1,8 +1,7 @@
 use actix_web::{dev::HttpServiceFactory, HttpRequest, HttpResponse, get, put, delete, patch, web};
 use crate::api::v1::dto;
 
-use crate::db_model::Driver;
-use crate::{db_model::{UserType, self}, errors};
+use crate::{db_model::{Driver, UserType, self}, errors};
 
 use super::Response;
 
@@ -48,7 +47,7 @@ pub async fn list(req: HttpRequest) -> Response {
             },
             nationality: x.nationality.clone(),
             base_location: x.base_location.clone(),
-            disabled: x.disabled,
+            disabled: x.disabled != 0,
         })
         .collect::<Vec<_>>();
 
@@ -116,7 +115,7 @@ pub async fn add(body: web::Json<dto::DriverUpdateDto>, req: HttpRequest) -> Res
                 },
                 nationality: drv.nationality.clone(),
                 base_location: drv.base_location.clone(),
-                disabled: drv.disabled,
+                disabled: drv.disabled != 0,
             };
 
             Ok(HttpResponse::Ok().json(dto))
@@ -188,7 +187,7 @@ pub async fn update(driver_id: web::Path<String>, body: web::Json<dto::DriverUpd
     vehicle.picture = dto.picture.clone();
     vehicle.nationality = dto.nationality.clone();
     vehicle.base_location = dto.base_location.clone();
-    vehicle.disabled = dto.disabled.clone();
+    vehicle.disabled = if dto.disabled.clone() {1} else {0};
 
     if let Err(err) = Driver::update_by_id(&mut context, &vehicle, driver_id).await {
         return Err(errors::database_error(&err));

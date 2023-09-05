@@ -32,7 +32,12 @@ async fn main() -> std::io::Result<()> {
         .level(log::LevelFilter::Trace)
     ).unwrap();
 
+
     log::info!("Initialized logging system");
+    log::info!("Initializing database");
+
+    db_model::sync_tables().await;
+
     log::info!("Initializing Actix-web");
 
     HttpServer::new(move ||

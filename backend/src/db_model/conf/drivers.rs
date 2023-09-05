@@ -1,8 +1,7 @@
-use rbatis::{Rbatis, rbdc::Error, crud, impl_select, impl_update};
-use serde::{Deserialize, Serialize};
+use rbatis::{ RBatis, rbdc::Error, crud, impl_select, impl_update };
+use serde::{ Deserialize, Serialize };
 
 use crate::db_model::table_names;
-
 
 #[derive(Clone, Debug, Serialize, Deserialize)]
 pub struct Driver {
@@ -11,7 +10,7 @@ pub struct Driver {
     pub picture: Option<String>,
     pub nationality: String,
     pub base_location: String,
-    pub disabled: bool,
+    pub disabled: i32,
 }
 
 crud!(Driver {}, table_names::DRIVERS);
@@ -20,10 +19,8 @@ impl_select!(Driver { select_by_id(id: i32) -> Option => "`where id = #{id} limi
 impl_update!(Driver { update_by_id(id: i32) => "`where id = #{id}`"}, table_names::DRIVERS);
 
 impl Driver {
-    pub async fn count(rb: &Rbatis) -> Result<u64, Error> {
-        rb
-        .query_decode("select count(id) as count from conf.drivers", vec![])
-        .await
+    pub async fn count(rb: &RBatis) -> Result<u64, Error> {
+        rb.query_decode("select count(id) as count from conf.drivers", vec![]).await
     }
 
     pub async fn create<S: AsRef<str>>(
@@ -32,9 +29,9 @@ impl Driver {
         picture: Option<String>,
         nationality: String,
         base_location: String,
-        disabled: bool,
+        disabled: bool
     ) -> std::result::Result<rbatis::rbdc::db::ExecResult, rbatis::rbdc::Error> {
-
+        let disabled = if disabled { 1 } else { 0 };
         let license = Driver {
             id: None,
             name: String::from(name.as_ref()),
@@ -44,9 +41,22 @@ impl Driver {
             disabled,
         };
 
-        match Driver::insert( context, &license).await {
+        match Driver::insert(context, &license).await {
             Ok(ok) => Ok(ok),
             Err(err) => Err(err),
+        }
+    }
+}
+
+impl Default for Driver {
+    fn default() -> Self {
+        Self {
+            id: Some(1),
+            name: String::new(),
+            picture: Some(String::new()),
+            nationality: String::new(),
+            base_location: String::new(),
+            disabled: 1,
         }
     }
 }

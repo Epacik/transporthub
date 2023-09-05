@@ -1,7 +1,6 @@
-use rbatis::{Rbatis, rbdc::Error, impl_select, impl_update, crud};
-use serde::{Deserialize, Serialize};
+use rbatis::{ RBatis, rbdc::Error, impl_select, impl_update, crud };
+use serde::{ Deserialize, Serialize };
 use crate::db_model::table_names;
-
 
 #[derive(Clone, Debug, Serialize, Deserialize)]
 pub struct LicenseType {
@@ -11,7 +10,7 @@ pub struct LicenseType {
     pub minimal_age_of_holder: i32,
     pub alternative_minimal_age_of_holder: Option<i32>,
     pub condition_for_alternative_minimal_age: Option<String>,
-    pub disabled: bool,
+    pub disabled: i32,
 }
 
 crud!(LicenseType {}, table_names::LICENSES);
@@ -20,10 +19,8 @@ impl_select!(LicenseType { select_by_id(id: i32) -> Option => "`where id = #{id}
 impl_update!(LicenseType { update_by_id(id: i32) => "`where id = #{id}`"}, table_names::LICENSES);
 
 impl LicenseType {
-    pub async fn count(rb: &Rbatis) -> Result<u64, Error> {
-        rb
-        .query_decode("select count(id) as count from conf.license_types", vec![])
-        .await
+    pub async fn count(rb: &RBatis) -> Result<u64, Error> {
+        rb.query_decode("select count(id) as count from conf.license_types", vec![]).await
     }
 
     pub async fn create<S: AsRef<str>>(
@@ -33,9 +30,9 @@ impl LicenseType {
         minimal_age_of_holder: i32,
         alternative_minimal_age_of_holder: Option<i32>,
         condition_for_alternative_minimal_age: Option<String>,
-        disabled: bool,
+        disabled: bool
     ) -> std::result::Result<rbatis::rbdc::db::ExecResult, rbatis::rbdc::Error> {
-
+        let disabled = if disabled { 1 } else { 0 };
         let license = LicenseType {
             id: None,
             name: String::from(name.as_ref()),
@@ -46,9 +43,23 @@ impl LicenseType {
             condition_for_alternative_minimal_age,
         };
 
-        match LicenseType::insert( context, &license).await {
+        match LicenseType::insert(context, &license).await {
             Ok(ok) => Ok(ok),
             Err(err) => Err(err),
+        }
+    }
+}
+
+impl Default for LicenseType {
+    fn default() -> Self {
+        Self {
+            id: Some(1),
+            name: String::new(),
+            description: String::new(),
+            minimal_age_of_holder: 1,
+            alternative_minimal_age_of_holder: Some(1),
+            condition_for_alternative_minimal_age: Some(String::new()),
+            disabled: 1,
         }
     }
 }

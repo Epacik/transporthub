@@ -50,8 +50,8 @@ pub async fn list(req: HttpRequest) -> Response {
                 None => None,
             },
             user_type: x.user_type(),
-            multi_login: x.multi_login,
-            disabled: x.disabled,
+            multi_login: x.multi_login != 0,
+            disabled: x.disabled != 0,
         })
         .collect::<Vec<_>>();
 
@@ -96,8 +96,8 @@ pub async fn get_user(user_id: web::Path<String>, req: HttpRequest) -> Response 
                 None => None,
             },
             user_type: x.user_type(),
-            multi_login: x.multi_login,
-            disabled: x.disabled,
+            multi_login: x.multi_login != 0,
+            disabled: x.disabled != 0,
         },
     };
 
@@ -170,8 +170,8 @@ pub async fn add(body: web::Json<dto::UserAddDto>, req: HttpRequest) -> Response
                     None => None,
                 },
                 user_type: user.user_type().clone(),
-                multi_login: user.multi_login,
-                disabled: user.disabled
+                multi_login: user.multi_login != 0,
+                disabled: user.disabled != 0,
             };
 
             Ok(HttpResponse::Ok().json(dto))
@@ -287,8 +287,8 @@ pub async fn update_as_admin(user_id: web::Path<String>, body: web::Json<dto::Us
         Some(d) => Some(rbatis::rbdc::datetime::DateTime(d)),
     };
     user.set_user_type(dto.user_type.clone());
-    user.multi_login = dto.multi_login;
-    user.disabled = dto.disabled;
+    user.multi_login = if dto.multi_login { 1 } else { 0 };
+    user.disabled = if dto.disabled { 1 } else { 0 };
 
 
     if let Err(err) = User::update_by_id(&mut context, &user, user_id).await {

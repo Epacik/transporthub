@@ -1,11 +1,17 @@
-use argonautica::{Hasher, Verifier};
+use argonautica::{ Hasher, Verifier };
 use num_derive::FromPrimitive;
-use rbatis::{Rbatis, rbdc::{Error, datetime::DateTime}, crud, impl_select, impl_delete, impl_update};
-use serde::{Deserialize, Serialize};
-use rand::distributions::{Alphanumeric, DistString};
+use rbatis::{
+    RBatis,
+    rbdc::{ Error, datetime::DateTime },
+    crud,
+    impl_select,
+    impl_delete,
+    impl_update,
+};
+use serde::{ Deserialize, Serialize };
+use rand::distributions::{ Alphanumeric, DistString };
 
-use crate::{db_model::table_names, config};
-
+use crate::{ db_model::table_names, config };
 
 #[derive(Copy, Clone, FromPrimitive, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
@@ -31,8 +37,8 @@ pub struct User {
     pub password_hash: String,
     pub password_expiration_date: Option<DateTime>,
     user_type: i16,
-    pub multi_login: bool,
-    pub disabled: bool
+    pub multi_login: i32,
+    pub disabled: i32,
 }
 
 crud!(User {}, table_names::USERS);
@@ -40,19 +46,14 @@ impl_select!(User { select_by_name(name: &str) -> Option => "`where name = #{nam
 impl_select!(User { select_by_id(id: i32) -> Option => "`where id = #{id} limit 1`"}, table_names::USERS);
 impl_update!(User { update_by_id(id: i32) => "`where id = #{id}`"}, table_names::USERS);
 
-
-
 pub enum UserCreateError {
     HashError(argonautica::Error),
     DatabaseError(rbatis::rbdc::Error),
 }
 
-
 impl User {
-    pub async fn count(rb: &Rbatis) -> Result<u64, Error> {
-        rb
-        .query_decode("select count(id) as count from conf.users", vec![])
-        .await
+    pub async fn count(rb: &RBatis) -> Result<u64, Error> {
+        rb.query_decode("select count(id) as count from conf.users", vec![]).await
     }
     pub fn make_salt() -> String {
         Alphanumeric.sample_string(&mut rand::thread_rng(), 64)
@@ -81,7 +82,9 @@ impl User {
 
         let hash = match hash {
             Ok(val) => val,
-            Err(err) => return Err(UserCreateError::HashError(err)),
+            Err(err) => {
+                return Err(UserCreateError::HashError(err));
+            }
         };
 
         let exp_date = match password_expiration_date {
@@ -97,17 +100,20 @@ impl User {
             password_hash: hash,
             password_expiration_date: exp_date,
             user_type: usertype as i16,
-            multi_login,
-            disabled,
+            multi_login: if multi_login { 1 } else { 0 },
+            disabled: if disabled { 1 } else { 0 },
         };
 
-        match User::insert( context, &admin).await {
+        match User::insert(context, &admin).await {
             Ok(ok) => Ok(ok),
             Err(err) => Err(UserCreateError::DatabaseError(err)),
         }
     }
 
-    pub fn set_password<S: AsRef<str>>(&mut self, password: S) -> Result<String, argonautica::Error>{
+    pub fn set_password<S: AsRef<str>>(
+        &mut self,
+        password: S
+    ) -> Result<String, argonautica::Error> {
         let config = config::config();
 
         let salt = self.password_salt.clone();
@@ -118,7 +124,6 @@ impl User {
             .with_secret_key(config.pass_secret())
             .with_salt(&salt)
             .hash();
-
 
         if hash.is_ok() {
             self.password_hash = hash.clone().unwrap();
@@ -136,7 +141,6 @@ impl User {
             }
         }
 
-
         let config = config::config();
         let mut verifier = Verifier::default();
         let ver = verifier
@@ -148,8 +152,7 @@ impl User {
 
         if ver {
             PasswordVerificationResult::Authorized
-        }
-        else {
+        } else {
             PasswordVerificationResult::InvalidPassword
         }
     }
@@ -159,6 +162,22 @@ impl User {
     }
     pub fn set_user_type(&mut self, user_type: UserType) {
         self.user_type = user_type as i16;
+    }
+}
+
+impl Default for User {
+    fn default() -> Self {
+        Self {
+            id: Some(0),
+            name: Default::default(),
+            picture: Some(String::new()),
+            password_salt: Default::default(),
+            password_hash: Default::default(),
+            password_expiration_date: Some(DateTime::now()),
+            user_type: UserType::User as i16,
+            multi_login: Default::default(),
+            disabled: Default::default(),
+        }
     }
 }
 
@@ -179,17 +198,37 @@ impl_select!(UserAccessKeys { select_by_key(key: &str) -> Option => "`where key 
 impl_delete!(UserAccessKeys { delete(id: i32) => "`where id = #{id}`" }, table_names::USER_ACCESS_KEYS);
 
 impl UserAccessKeys {
-    pub(crate) async fn create<S: AsRef<str>>(context: &mut dyn rbatis::executor::Executor, key: S, user_id: i32, device_id: &String) -> Result<(), rbatis::rbdc::Error> {
+    pub(crate) async fn create<S: AsRef<str>>(
+        context: &mut dyn rbatis::executor::Executor,
+        key: S,
+        user_id: i32,
+        device_id: &String
+    ) -> Result<(), rbatis::rbdc::Error> {
         let now = DateTime::utc();
 
-        UserAccessKeys::insert(context, &UserAccessKeys {
-            id: None,
-            user_id,
-            key: String::from(key.as_ref()),
-            last_refreshed: now,
-            device_id: device_id.clone(),
-        }).await?;
+        UserAccessKeys::insert(
+            context,
+            &(UserAccessKeys {
+                id: None,
+                user_id,
+                key: String::from(key.as_ref()),
+                last_refreshed: now,
+                device_id: device_id.clone(),
+            })
+        ).await?;
 
         Ok(())
+    }
+}
+
+impl Default for UserAccessKeys {
+    fn default() -> Self {
+        Self {
+            id: Some(1),
+            user_id: 1,
+            key: String::new(),
+            last_refreshed: DateTime::now(),
+            device_id: String::new(),
+        }
     }
 }

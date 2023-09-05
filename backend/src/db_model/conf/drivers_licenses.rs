@@ -1,15 +1,14 @@
-use rbatis::{Rbatis, rbdc::Error, crud, impl_select, impl_update};
-use serde::{Deserialize, Serialize};
+use rbatis::{ RBatis, rbdc::Error, crud, impl_select, impl_update };
+use serde::{ Deserialize, Serialize };
 
 use crate::db_model::table_names;
-
 
 #[derive(Clone, Debug, Serialize, Deserialize)]
 pub struct DriverLicense {
     pub id: Option<i32>,
     pub driver: i32,
     pub license: i32,
-    pub disabled: bool,
+    pub disabled: i32,
 }
 
 crud!(DriverLicense {}, table_names::DRIVERS_LICENSES);
@@ -18,19 +17,17 @@ impl_select!(DriverLicense { select_by_driver_and_license(driver: i32, license: 
 impl_update!(DriverLicense { update_by_id(id: i32) => "`where id = #{id}`"}, table_names::DRIVERS_LICENSES);
 
 impl DriverLicense {
-    pub async fn count(rb: &Rbatis) -> Result<u64, Error> {
-        rb
-        .query_decode("select count(id) as count from conf.drivers_licenses", vec![])
-        .await
+    pub async fn count(rb: &RBatis) -> Result<u64, Error> {
+        rb.query_decode("select count(id) as count from conf.drivers_licenses", vec![]).await
     }
 
     pub async fn create(
         context: &mut dyn rbatis::executor::Executor,
         driver: i32,
         license: i32,
-        disabled: bool,
+        disabled: bool
     ) -> std::result::Result<rbatis::rbdc::db::ExecResult, rbatis::rbdc::Error> {
-
+        let disabled = if disabled { 1 } else { 0 };
         let license = DriverLicense {
             id: None,
             driver,
@@ -38,9 +35,20 @@ impl DriverLicense {
             disabled,
         };
 
-        match DriverLicense::insert( context, &license).await {
+        match DriverLicense::insert(context, &license).await {
             Ok(ok) => Ok(ok),
             Err(err) => Err(err),
+        }
+    }
+}
+
+impl Default for DriverLicense {
+    fn default() -> Self {
+        Self {
+            id: Some(1),
+            driver: 1,
+            license: 1,
+            disabled: 1,
         }
     }
 }

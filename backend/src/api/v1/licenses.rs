@@ -46,7 +46,7 @@ pub async fn list(req: HttpRequest) -> Response {
             minimal_age_of_holder: x.minimal_age_of_holder.clone(),
             alternative_minimal_age_of_holder: x.alternative_minimal_age_of_holder.clone(),
             condition_for_alternative_minimal_age: x.condition_for_alternative_minimal_age.clone(),
-            disabled: x.disabled,
+            disabled: x.disabled != 0,
         })
         .collect::<Vec<_>>();
 
@@ -113,7 +113,7 @@ pub async fn add(body: web::Json<dto::LicenseTypeUpdateDto>, req: HttpRequest) -
                 minimal_age_of_holder: lic.minimal_age_of_holder.clone(),
                 alternative_minimal_age_of_holder: lic.alternative_minimal_age_of_holder.clone(),
                 condition_for_alternative_minimal_age: lic.condition_for_alternative_minimal_age.clone(),
-                disabled: lic.disabled,
+                disabled: lic.disabled != 0,
             };
 
             Ok(HttpResponse::Ok().json(dto))
@@ -185,7 +185,7 @@ pub async fn update(license_id: web::Path<String>, body: web::Json<dto::LicenseT
     license.minimal_age_of_holder = dto.minimal_age_of_holder.clone();
     license.alternative_minimal_age_of_holder = dto.alternative_minimal_age_of_holder.clone();
     license.condition_for_alternative_minimal_age = dto.condition_for_alternative_minimal_age.clone();
-    license.disabled = dto.disabled;
+    license.disabled = if dto.disabled { 1 } else { 0 };
 
     if let Err(err) = LicenseType::update_by_id(&mut context, &license, license_id).await {
         return Err(errors::database_error(&err));

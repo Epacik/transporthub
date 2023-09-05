@@ -1,7 +1,7 @@
 use actix_web::{post, web, Result, HttpResponse, HttpRequest, dev::HttpServiceFactory};
 use rand::distributions::DistString;
 use rand_distr::Alphanumeric;
-use rbatis::{executor::Executor, rbdc::datetime::DateTime, Rbatis};
+use rbatis::{executor::Executor, rbdc::datetime::DateTime, RBatis};
 use crate::{db_model::{ context, User, UserType, PasswordVerificationResult, UserAccessKeys, UserCreateError }, errors::{self, ErrorResponse}};
 use crate::api::v1::dto;
 use super::{UserInfo, Response};
@@ -61,7 +61,7 @@ async fn login_user(context: &mut dyn Executor, user: &User, disconnect_others: 
     let disconnect_others = disconnect_others.unwrap_or(false);
 
     // is user already logged in?
-    if !user.multi_login {
+    if user.multi_login == 0 {
         log::trace!("User is not allowed to have multiple sessions active");
         let access_keys = match UserAccessKeys::select_all_by_user(context, user.id.unwrap_or_default()).await {
             Ok(keys) => keys,
@@ -118,7 +118,7 @@ async fn login_user(context: &mut dyn Executor, user: &User, disconnect_others: 
 
 
 
-async fn get_access_key(context: &mut Rbatis, user_info: &UserInfo) -> Result<UserAccessKeys, ErrorResponse> {
+async fn get_access_key(context: &mut RBatis, user_info: &UserInfo) -> Result<UserAccessKeys, ErrorResponse> {
     let access_key = match UserAccessKeys::select_by_key( context, &user_info.access_key()).await {
         Err(err) => return Err(errors::database_error(&err)),
         Ok(value) => value,

@@ -27,7 +27,8 @@ pkg-version = "1.0.0"
 #db
 rbs = { version = "4.3"}
 rbatis = { version = "4.3"} #, features = ["debug_mode"]}
-rbdc-pg={version="4.3"}
+rbdc-pg="4.3"
+rbdc-sqlite = "4.3"
 
 serde = { version = "*", features = ["derive"] }
 serde_json = "*"
