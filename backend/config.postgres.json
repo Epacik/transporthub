@@ -1,0 +1,13 @@
+{
+    "pass_secret": "some_secret",
+    "hash_ids_secret": "hash ids to the moooooooon",
+    "database_info": {
+        "PostgresInfo": {
+            "address": "127.0.0.1",
+            "database": "transporthub",
+            "port": "5433",
+            "username": "USER",
+            "password": "PASSWORD"
+        }
+    }
+}

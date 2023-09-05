@@ -8,3 +8,4 @@ backend/config.json
 /Dashboard/.vs/Dashboard
 /Dashboard/Dashboard/bin/Debug/net7.0
 /Dashboard/Dashboard/obj
+/backend/config.postgres copy.json
