@@ -68,7 +68,7 @@ public partial class AdministerViewModel : ObservableObject, INavigationAware
 
     public Task OnNavigatedTo(Dictionary<string, object>? parameters = null)
     {
-        throw new NotImplementedException();
+        return Task.CompletedTask;
     }
 
     public Task OnNavigatedFrom()
