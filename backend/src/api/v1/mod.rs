@@ -47,7 +47,7 @@ async fn check_connection() -> impl Responder {
     HttpResponse::Ok().body("Connected")
 }
 
-fn get_hashid1() -> HashIds {
+fn get_hashid() -> HashIds {
     let config = config::config();
     hash_ids::HashIds::builder()
         .with_salt(config.hash_ids_secret())
@@ -56,14 +56,14 @@ fn get_hashid1() -> HashIds {
 }
 
 fn decode_id<S: AsRef<str>>(string: &S) -> i32 {
-    let hashids = get_hashid1();
+    let hashids = get_hashid();
     let id = hashids.decode(string.as_ref());
 
     if id.len()>= 1 { id[0] as i32 } else { 0 }
 }
 
 fn encode_id(id: i32) -> String {
-    let hashids = get_hashid1();
+    let hashids = get_hashid();
 
     hashids.encode(&[id as u64])
 }
